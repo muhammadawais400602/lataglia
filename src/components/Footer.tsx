@@ -20,24 +20,24 @@ export default function Footer() {
             </div>
           </div>
           <FooterCol title="Collections" items={[
-            { href: '#pistachio', label: 'The Pistachio Edit' },
-            { href: '#pasta', label: 'Artisanal Bronze Pasta' },
-            { href: '#shop', label: 'Traditional Balsamic DOP' },
-            { href: '#shop', label: 'Extra Virgin Olive Oils' },
-            { href: '#bestsellers', label: 'Best Sellers' },
+            { href: '/#pistachio', label: 'The Pistachio Edit' },
+            { href: '/#pasta', label: 'Artisanal Bronze Pasta' },
+            { href: '/shop', label: 'Traditional Balsamic DOP' },
+            { href: '/shop', label: 'Extra Virgin Olive Oils' },
+            { href: '/#bestsellers', label: 'Best Sellers' },
           ]} />
           <FooterCol title="Regions" items={[
-            { href: '#regions', label: 'Sicilia' },
-            { href: '#regions', label: 'Campania' },
-            { href: '#regions', label: 'Emilia-Romagna' },
-            { href: '#regions', label: 'Calabria' },
-            { href: '#regions', label: 'Lombardia' },
-            { href: '#regions', label: 'Piemonte' },
+            { href: '/#regions', label: 'Sicilia' },
+            { href: '/#regions', label: 'Campania' },
+            { href: '/#regions', label: 'Emilia-Romagna' },
+            { href: '/#regions', label: 'Calabria' },
+            { href: '/#regions', label: 'Lombardia' },
+            { href: '/#regions', label: 'Piemonte' },
           ]} />
           <FooterCol title="Assistance" items={[
-            { href: '#corporate', label: 'Corporate Gifting' },
-            { href: '#makers', label: 'Meet the Producers' },
-            { href: '#', label: 'Shipping & Freshness' },
+            { href: '/#corporate', label: 'Corporate Gifting' },
+            { href: '/#makers', label: 'Meet the Producers' },
+            { href: '/shop#shipping', label: 'Shipping & Freshness' },
             { href: '#', label: 'Order Tracking' },
             { href: '#', label: 'Contact Concierge' },
           ]} />

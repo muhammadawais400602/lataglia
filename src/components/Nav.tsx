@@ -1,9 +1,9 @@
 const links = [
-  { href: '#shop', label: 'Shop' },
-  { href: '#regions', label: 'Regions' },
-  { href: '#gifts', label: 'Gifts' },
-  { href: '#stories', label: 'Stories' },
-  { href: '#makers', label: 'About' },
+  { href: '/shop', label: 'Shop' },
+  { href: '/#regions', label: 'Regions' },
+  { href: '/#gifts', label: 'Gifts' },
+  { href: '/#stories', label: 'Stories' },
+  { href: '/#makers', label: 'About' },
 ];
 
 export default function Nav() {
@@ -11,7 +11,7 @@ export default function Nav() {
     <header className="w-full bg-[#fbf9f9] border-b border-solid border-b-[#f1e9ea] sticky top-0 z-50">
       <div className="max-w-[1280px] mx-auto flex items-center justify-between whitespace-nowrap px-6 lg:px-12 py-3">
         <div className="flex items-center gap-8">
-          <a className="flex items-center gap-3 text-[#191011]" href="#">
+          <a className="flex items-center gap-3 text-[#191011]" href="/">
             <div className="size-5 text-primary">
               <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                 <path clipRule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fillRule="evenodd" />
