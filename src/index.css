@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-brand-50 text-brand-900 font-sans antialiased; }
+  h1, h2, h3 { @apply font-display; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-brand-700 text-brand-50 px-6 py-3 rounded-full font-medium hover:bg-brand-900 transition-colors;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 border border-brand-700 text-brand-700 px-6 py-3 rounded-full font-medium hover:bg-brand-700 hover:text-brand-50 transition-colors;
+  }
+  .container-x { @apply max-w-6xl mx-auto px-6; }
+}
