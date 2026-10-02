@@ -4,10 +4,10 @@ import Footer from './Footer';
 
 export default function Layout({ children }: PropsWithChildren) {
   return (
-    <div className="min-h-screen flex flex-col">
+    <>
       <Nav />
-      <main className="flex-1">{children}</main>
+      <main className="flex-grow">{children}</main>
       <Footer />
-    </div>
+    </>
   );
 }
