@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-serif: var(--font-libre-caslon);
+  --font-sans: var(--font-nunito);
+
+  --color-primary: #5b051a;
+  --color-wine-hover: #a3263b;
+  --color-wine-dark: #6e1626;
+  --color-gold: #efa91c;
+  --color-gold-hover: #d8950c;
+  --color-amber: #feb62c;
+  --color-ink: #1b1c1c;
+  --color-ink-secondary: #555555;
+  --color-ink-tertiary: #8a8a8a;
+  --color-parchment: #fbf6ec;
+  --color-surface: #fcf9f8;
+  --color-surface-soft: #f4f4f4;
+  --color-border-line: #e7e7e7;
+  --color-pistachio: #86a33e;
+  --color-pistachio-dark: #4e6a22;
+  --color-coastal: #1c4da6;
+  --color-status-red: #d62f3a;
+  --color-button-ink: #241800;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-ink);
+}
+
+/* Gradient utility backgrounds */
+.b-pist {
+  background: linear-gradient(115deg, #4e6a22 0%, #7f9c38 70%, #93b048 100%);
+}
+.b-wine {
+  background: linear-gradient(115deg, #6e1626 0%, #b3263f 70%, #c9334a 100%);
+}
+
+/* Hero translucent card */
+.hero-card {
+  background-color: rgba(122, 31, 46, 0.9);
+  backdrop-filter: blur(8px);
+}
+
+/* Scroll animations */
+.fade-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.65s ease;
+}
+.fade-up.in-view,
+.fade-in.in-view {
+  opacity: 1;
+  transform: none;
+}
+
+/* Hero entry animation */
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero-animate {
+  animation: heroFadeUp 0.9s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+.hero-animate-delay-1 {
+  animation-delay: 0.15s;
+}
+.hero-animate-delay-2 {
+  animation-delay: 0.3s;
+}
+.hero-animate-delay-3 {
+  animation-delay: 0.45s;
+}
+
+/* Hide scrollbar for horizontal rails */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
