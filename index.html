@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>La Taglia | Exceptional Foods Discovered in Italy</title>
+<!-- Google Fonts: Libre Caslon Text, Nunito Sans & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "badge-ink": "#9A6A00",
+            "secondary": "#7f5700",
+            "error": "#ba1a1a",
+            "ink-secondary": "#555555",
+            "on-background": "#1b1c1c",
+            "surface-container-highest": "#e4e2e1",
+            "secondary-fixed": "#ffdead",
+            "coastal-blue": "#1C4DA6",
+            "button-ink": "#241800",
+            "tertiary-fixed-dim": "#b1d277",
+            "border-line": "#E7E7E7",
+            "wine-hover": "#A3263B",
+            "tertiary-container": "#314800",
+            "on-surface-variant": "#564243",
+            "surface-bright": "#fcf9f8",
+            "on-error": "#ffffff",
+            "surface-parchment": "#FBF6EC",
+            "on-secondary-fixed": "#281900",
+            "inverse-on-surface": "#f3f0ef",
+            "surface-variant": "#e4e2e1",
+            "on-primary-container": "#ff8b96",
+            "error-container": "#ffdad6",
+            "secondary-container": "#feb62c",
+            "inverse-primary": "#ffb2b7",
+            "on-tertiary-fixed-variant": "#354e00",
+            "inverse-surface": "#303030",
+            "background": "#fcf9f8",
+            "on-tertiary-fixed": "#131f00",
+            "gold-hover": "#D8950C",
+            "surface-soft": "#F4F4F4",
+            "on-tertiary": "#ffffff",
+            "primary-fixed": "#ffdadb",
+            "surface": "#fcf9f8",
+            "surface-container-high": "#eae7e7",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f6f3f2",
+            "on-secondary": "#ffffff",
+            "primary-container": "#7a1f2e",
+            "secondary-fixed-dim": "#ffba3c",
+            "surface-tint": "#a03c49",
+            "on-primary-fixed": "#40000e",
+            "on-error-container": "#93000a",
+            "surface-dim": "#dcd9d9",
+            "surface-container": "#f0eded",
+            "status-red": "#D62F3A",
+            "outline-variant": "#dcc0c1",
+            "on-primary": "#ffffff",
+            "on-tertiary-container": "#99b860",
+            "outline": "#897172",
+            "primary-fixed-dim": "#ffb2b7",
+            "pistachio-light": "#86A33E",
+            "wine-dark": "#6E1626",
+            "ink-tertiary": "#8A8A8A",
+            "primary": "#5b051a",
+            "on-secondary-fixed-variant": "#604100",
+            "on-primary-fixed-variant": "#812533",
+            "on-secondary-container": "#6d4a00",
+            "tertiary": "#1f3000",
+            "on-surface": "#1b1c1c",
+            "tertiary-fixed": "#cdee90"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "gutter": "1.5rem",
+            "margin-mobile": "1.125rem",
+            "margin": "2rem",
+            "space-2xl": "3.5rem",
+            "space-lg": "1.5rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-3xl": "5rem",
+            "space-md": "1rem",
+            "gutter-mobile": "1rem",
+            "space-xl": "2.5rem"
+          },
+          "fontFamily": {
+            "display-hero": ["Libre Caslon Text", "serif"],
+            "button-sm": ["Nunito Sans", "sans-serif"],
+            "body-md": ["Nunito Sans", "sans-serif"],
+            "display-hero-mobile": ["Libre Caslon Text", "serif"],
+            "subheading": ["Nunito Sans", "sans-serif"],
+            "body-sm": ["Nunito Sans", "sans-serif"],
+            "body-lg": ["Nunito Sans", "sans-serif"],
+            "headline-lg": ["Libre Caslon Text", "serif"],
+            "headline-sm": ["Libre Caslon Text", "serif"],
+            "button": ["Nunito Sans", "sans-serif"],
+            "headline-md-mobile": ["Libre Caslon Text", "serif"],
+            "headline-md": ["Libre Caslon Text", "serif"],
+            "wordmark-subline": ["Nunito Sans", "sans-serif"],
+            "label-caps": ["Nunito Sans", "sans-serif"],
+            "caption": ["Nunito Sans", "sans-serif"],
+            "headline-lg-mobile": ["Libre Caslon Text", "serif"]
+          },
+          "fontSize": {
+            "display-hero": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "button-sm": ["13px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "700" }],
+            "body-md": ["16px", { "lineHeight": "26px", "fontWeight": "400" }],
+            "display-hero-mobile": ["40px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "subheading": ["18px", { "lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "body-sm": ["14px", { "lineHeight": "22px", "fontWeight": "400" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-lg": ["46px", { "lineHeight": "54px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "700" }],
+            "button": ["15px", { "lineHeight": "18px", "letterSpacing": "0.06em", "fontWeight": "700" }],
+            "headline-md-mobile": ["24px", { "lineHeight": "30px", "fontWeight": "400" }],
+            "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "400" }],
+            "wordmark-subline": ["10px", { "lineHeight": "12px", "letterSpacing": "0.42em", "fontWeight": "600" }],
+            "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "700" }],
+            "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "0.02em", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .b-pist {
+      background: linear-gradient(115deg, #4E6A22 0%, #7F9C38 70%, #93B048 100%);
+    }
+    .b-wine {
+      background: linear-gradient(115deg, #6E1626 0%, #B3263F 70%, #C9334A 100%);
+    }
+    .b-blue {
+      background-color: #1C4DA6;
+    }
+    .hero-translucent-card {
+      background-color: rgba(122, 31, 46, 0.90);
+      backdrop-filter: blur(8px);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TOP HEADER (Immutable Shared Navigation Component) -->
+<header class="w-full bg-[#fbf9f9] border-b border-solid border-b-[#f1e9ea] sticky top-0 z-50">
+<div class="max-w-[1280px] mx-auto flex items-center justify-between whitespace-nowrap px-6 lg:px-12 py-3">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-3 text-[#191011]" href="#">
+<div class="size-5 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-[#191011] text-xl font-bold leading-tight tracking-[-0.015em] font-headline-sm">La Taglia</h2>
+</a>
+<nav class="hidden md:flex items-center gap-7">
+<a class="text-[#191011] text-sm font-medium hover:text-primary transition-colors" href="#shop">Shop</a>
+<a class="text-[#191011] text-sm font-medium hover:text-primary transition-colors" href="#regions">Regions</a>
+<a class="text-[#191011] text-sm font-medium hover:text-primary transition-colors" href="#gifts">Gifts</a>
+<a class="text-[#191011] text-sm font-medium hover:text-primary transition-colors" href="#stories">Stories</a>
+<a class="text-[#191011] text-sm font-medium hover:text-primary transition-colors" href="#makers">About</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end items-center gap-4">
+<label class="hidden sm:flex flex-col min-w-36 !h-10 max-w-60">
+<div class="flex w-full flex-1 items-stretch rounded h-full bg-[#f1e9ea]">
+<div class="text-[#8e5760] flex border-none items-center justify-center pl-3" data-icon="magnifying_glass">
+<span class="material-symbols-outlined text-lg">qr_code_2</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded text-[#191011] focus:outline-none focus:ring-0 border-none bg-transparent h-full placeholder:text-[#8e5760] px-3 text-sm font-normal" placeholder="Search delicacies..." value=""/>
+</div>
+</label>
+<div class="flex items-center gap-2">
+<button class="flex min-w-[76px] cursor-pointer items-center justify-center overflow-hidden rounded h-10 px-4 bg-primary text-on-primary text-sm font-bold tracking-[0.015em] hover:bg-wine-hover transition-colors">
+<span class="truncate">Sign In</span>
+</button>
+<button aria-label="Shopping bag" class="flex cursor-pointer items-center justify-center rounded h-10 w-10 bg-[#f1e9ea] text-[#191011] hover:bg-outline-variant transition-colors">
+<span class="material-symbols-outlined text-xl">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- 1. HERO SECTION -->
+<section class="relative w-full h-[600px] lg:h-[660px] flex items-center bg-cover bg-center overflow-hidden" data-alt="Scenic panoramic shot of the dramatic Sicilian Mediterranean coastline near Taormina, with turquoise crystal-clear sea gently crashing against warm terracotta sunlit cliffs. In the soft golden hour sunlight, lush emerald pine groves and citrus orchards dot the hillside under a hazy azure Italian sky. Elegant light-mode cinematic travel photography with warm earth tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCpGuKrD4FiJ1eQd4rJjRT5ep0EsKwmkU6eoINBRcM6ba5GWinJPfjoWFkwdcSLxrQfDHXHZfGaWG3e7QXI5FBq8FrxtpKBqQk9rQM6p3Q2SSsXZa2cCJT_5zIyAdlaooSiW75mG1SwZ_VVxL-W7ibGyarwdCJoVp7jSoiKFep67jnOcgbFfwpbQVGMKgRyovxM3F7Q4U_7qxKFIz7H_ISW1wZ_q7s2CfZX3U1Cc4SROELw9LLHxCQp');">
+<div class="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/20 pointer-events-none"></div>
+<div class="max-w-[1280px] w-full mx-auto px-6 lg:px-12 relative z-10">
+<div class="hero-translucent-card rounded p-8 sm:p-12 max-w-[620px] shadow-2xl border border-white/10 text-surface-parchment">
+<span class="font-label-caps text-xs tracking-[0.2em] text-secondary-container block mb-3 uppercase">Authentic Italian Providore</span>
+<h1 class="font-headline-lg text-4xl sm:text-[52px] sm:leading-[1.12] text-white font-normal mb-5 tracking-tight">
+            Exceptional foods, discovered in Italy
+          </h1>
+<p class="font-subheading text-surface-parchment text-base sm:text-[17px] leading-relaxed mb-8 opacity-95">
+            From Bronte pistachios to twelve-year traditional balsamic, we find remarkable foods made by Italy's finest producers, so you never have to sort through hundreds of ordinary ones.
+          </p>
+<div>
+<a class="inline-block bg-[#EFA91C] hover:bg-gold-hover text-button-ink font-button text-[14px] sm:text-[15px] font-bold tracking-[0.06em] py-3.5 px-8 rounded-full shadow-lg transition-transform hover:-translate-y-0.5 uppercase" href="#shop">
+              SHOP THE COLLECTION
+            </a>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. PROMO CARDS ROW (4 curated cards) -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 -mt-10 relative z-20 mb-16">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Card 1 -->
+<a class="group flex flex-col justify-between p-6 bg-surface-container-lowest border border-border-line rounded shadow-sm hover:shadow-md transition-shadow" href="#pistachio">
+<div>
+<div class="w-10 h-10 rounded-full bg-surface-parchment flex items-center justify-center text-primary mb-4" data-icon="sparkles">
+<span class="material-symbols-outlined text-xl">arrow_back_ios_new</span>
+</div>
+<h3 class="font-headline-sm text-lg text-on-surface mb-2 group-hover:text-primary transition-colors">The Pistachio Edit</h3>
+<p class="text-ink-secondary text-sm leading-relaxed mb-4">Everything we love from the slopes of Etna, from pure paste to cannoli.</p>
+</div>
+<span class="text-primary font-bold text-sm flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            Shop now <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</a>
+<!-- Card 2 -->
+<a class="group flex flex-col justify-between p-6 bg-surface-container-lowest border border-border-line rounded shadow-sm hover:shadow-md transition-shadow" href="#gifts">
+<div>
+<div class="w-10 h-10 rounded-full bg-surface-parchment flex items-center justify-center text-primary mb-4" data-icon="featured_seasonal_and_gifts">
+<span class="material-symbols-outlined text-xl">featured_seasonal_and_gifts</span>
+</div>
+<h3 class="font-headline-sm text-lg text-on-surface mb-2 group-hover:text-primary transition-colors">Gifts from Italy</h3>
+<p class="text-ink-secondary text-sm leading-relaxed mb-4">Regional gift boxes from $59, sent with the stories behind the food.</p>
+</div>
+<span class="text-primary font-bold text-sm flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            Shop gifts <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</a>
+<!-- Card 3 -->
+<a class="group flex flex-col justify-between p-6 bg-surface-container-lowest border border-border-line rounded shadow-sm hover:shadow-md transition-shadow" href="#shop">
+<div>
+<div class="w-10 h-10 rounded-full bg-surface-parchment flex items-center justify-center text-primary mb-4" data-icon="hourglass_empty">
+<span class="material-symbols-outlined text-xl">hourglass_empty</span>
+</div>
+<h3 class="font-headline-sm text-lg text-on-surface mb-2 group-hover:text-primary transition-colors">Twelve years in wood</h3>
+<p class="text-ink-secondary text-sm leading-relaxed mb-4">Traditional Balsamic of Reggio Emilia DOP, judged by master tasters.</p>
+</div>
+<span class="text-primary font-bold text-sm flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            Discover it <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</a>
+<!-- Card 4 -->
+<a class="group flex flex-col justify-between p-6 bg-surface-container-lowest border border-border-line rounded shadow-sm hover:shadow-md transition-shadow" href="#corporate">
+<div>
+<div class="w-10 h-10 rounded-full bg-surface-parchment flex items-center justify-center text-primary mb-4" data-icon="domain">
+<span class="material-symbols-outlined text-xl">domain</span>
+</div>
+<h3 class="font-headline-sm text-lg text-on-surface mb-2 group-hover:text-primary transition-colors">Corporate gifting</h3>
+<p class="text-ink-secondary text-sm leading-relaxed mb-4">Custom cards, volume pricing and delivery to many addresses on your date.</p>
+</div>
+<span class="text-primary font-bold text-sm flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            Plan an order <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</a>
+</div>
+</section>
+<!-- 3. PRODUCT CATEGORY CIRCLES -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 py-8 mb-16 border-y border-border-line">
+<div class="flex items-center justify-between gap-6 overflow-x-auto pb-4 no-scrollbar">
+<!-- Circle 1: Gifts -->
+<a class="flex flex-col items-center min-w-[80px] group flex-1" href="#gifts">
+<div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden p-1 border-2 border-transparent group-hover:border-secondary transition-all">
+<div class="w-full h-full rounded-full bg-cover bg-center" data-alt="A luxurious curated Italian gourmet gift box placed on a rustic stone table with linen napkin, featuring tied twine ribbon, dried herbs, and authentic Italian bottles. Natural warm diffused daylight in light mode palette with rich burgundy and ivory ribbons." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB9Xy-KzVu-7kChafCDA4kszGFxt6PPto_UqOCHmfXrnNQ4lPDWApZAPnDWO9jfsP4to1OCPKgo-L0KQqUyxMBxfP5LUfXq5mvNFEfdy1Nv0UZz9N1d2U1IDhJmWpQ0UNQJc6NNHc0oFNnekwi3OQ7Af8LTLneN25IaewlgEusZUNJb3SgD8-r3OaxHnwXtpXk-ZekApzA9kOmNKWvAMJBFV8xKMAcoOGV6mdA4nAm5zIOpqm4RZZ1_');"></div>
+</div>
+<span class="mt-3 font-headline-sm text-xs sm:text-sm tracking-wider uppercase text-on-surface group-hover:text-primary text-center">Gifts</span>
+</a>
+<!-- Circle 2: Pistachio -->
+<a class="flex flex-col items-center min-w-[80px] group flex-1" href="#pistachio">
+<div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden p-1 border-2 border-transparent group-hover:border-secondary transition-all">
+<div class="w-full h-full rounded-full bg-cover bg-center" data-alt="Vibrant green Bronte pistachios harvested in volcanic Sicilian terroir, displayed in a small ceramic artisan dish with raw shelled kernels. Clean overhead warm studio lighting showing deep emerald and earthy pistachio hues on stone background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD58vcb-by1KxmHSgGuPt5lyJg1-6-9zXAUBdgN0NU8y4qOS2wv61C2VarZYWBaQxbGTufrf--6jrYky3laT_Hces0SYoLNOMMX6mwMVrVPx81WuPf1HcUdFqpJyiE1Zg6oZMmFhJfXaG8xp8XOk6Dth7vOHCrbcOB1FD_WtIOVqTmKIVnQQCveSmWqon-TF2dpyqHmU9eP_krKNEBSemwRFnExksTHiAp-c-I9GtS6xlxpOfZ9KLqf');"></div>
+</div>
+<span class="mt-3 font-headline-sm text-xs sm:text-sm tracking-wider uppercase text-on-surface group-hover:text-primary text-center">Pistachio</span>
+</a>
+<!-- Circle 3: Balsamic -->
+<a class="flex flex-col items-center min-w-[80px] group flex-1" href="#shop">
+<div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden p-1 border-2 border-transparent group-hover:border-secondary transition-all">
+<div class="w-full h-full rounded-full bg-cover bg-center" data-alt="An antique small glass cruet filled with dense, lustrous aged Traditional Balsamic of Reggio Emilia dripping onto a porcelain tasting spoon. Rich deep dark mahogany and amber tones with warm ambient cellar light." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDv3W3lWBl0C-9UOMRD4RV80qZRPuIFGYJVgKpDS4o30g5gOJ1tlkrjgMEi-7l22QBH2jEEpqT4n7bkIigk-0TfQM3MV_fx4lkTNlwz55Su66EXfMJo0J8vh7HnnglGUslEF7WddgTgU2HuMEAJ1WY1PeJJPNL0fUo_nKjo7rPkoCJbnJVAAtwIaOyDLirSp1LX3y2_yzraRZ2IcsEmQ2YdZFviWBfV58P01MaQh19NZQHQ9Na9ZiCd');"></div>
+</div>
+<span class="mt-3 font-headline-sm text-xs sm:text-sm tracking-wider uppercase text-on-surface group-hover:text-primary text-center">Balsamic</span>
+</a>
+<!-- Circle 4: Pasta -->
+<a class="flex flex-col items-center min-w-[80px] group flex-1" href="#pasta">
+<div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden p-1 border-2 border-transparent group-hover:border-secondary transition-all">
+<div class="w-full h-full rounded-full bg-cover bg-center" data-alt="Artisanal raw bronze-cut paccheri and spaghettoni pasta scattered across a lightly floured wooden prep board. Pale golden semolina texture, rough and porous surface details under crisp soft culinary morning lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDXnUZtPe4PpuxVyjnmlQwEkbhYqCsjGP1dapfHmwWv1kBI2mGLV1DVNCjv_3yG8sr6QEqKCvsjgAkWcEj6hvBjLWTER_rnn8RFOEQF2DUMxq8TQ5gYlSkGWq8BbVWVw0XrtAoFt_FPfUuM9UnjR_eYUICY3R1JYA0rVX_4uLtrQlJUkigLeZ8jy8kUhKhLi1qeqfgYaNAYVir1pVUi27n3ZqD3nVlOsYjgp-uebfWWYstwzhjtHnD6');"></div>
+</div>
+<span class="mt-3 font-headline-sm text-xs sm:text-sm tracking-wider uppercase text-on-surface group-hover:text-primary text-center">Pasta</span>
+</a>
+<!-- Circle 5: Olive Oil -->
+<a class="flex flex-col items-center min-w-[80px] group flex-1" href="#shop">
+<div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden p-1 border-2 border-transparent group-hover:border-secondary transition-all">
+<div class="w-full h-full rounded-full bg-cover bg-center" data-alt="Golden-green unfiltered extra virgin olive oil poured smoothly from a vintage glass flask into a small ceramic tasting bowl with olive branches nearby. Radiant light catching golden highlights on a light marble kitchen slab." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBg51fjkTna9L9c5KwomEX5yKGcx_Uw0tBMB_hV7qrjSyJ7iC4JywifygEwVPW6yJgSiifNMtSWfw2ebRTdMgkOCfnmHWoQpsRUYt52lPSavFzSd1mYpNimudAkMK4Bm7DyYZH1gkGhol7n-4CIMS5mwhi48SAXuESla7QfhYER_PbMrxd6H2dFEoaYJC4nyraj4XZ1Hl4zRn7JmnNFnJgf2TDUD9-mCsZq68W0rLSmPokfUCTNUlIS');"></div>
+</div>
+<span class="mt-3 font-headline-sm text-xs sm:text-sm tracking-wider uppercase text-on-surface group-hover:text-primary text-center">Olive Oil</span>
+</a>
+<!-- Circle 6: Regions -->
+<a class="flex flex-col items-center min-w-[80px] group flex-1" href="#regions">
+<div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden p-1 border-2 border-transparent group-hover:border-secondary transition-all">
+<div class="w-full h-full rounded-full bg-cover bg-center" data-alt="Artistic map illustration and landscape montage of Italian regional hills, rolling vineyards of Campania, and ancient stone farms under warm Mediterranean sunset hues. Sophisticated editorial aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBWWBEKr0s3CLpIqEbC3G_L5aHzooJ1mwJ3WtuWcugsY-nWN_wWxaViC6qyB0fqu4gTJSCHSF0upoVAGlzx3p8X9R3KSzGTDyapxpS_HnszCge1fk515ECfa0oTGMcpnrTr9BamGqi7a0x10k9M-n--QQfY0CzhKPLhqthnUT1bM6ZQgWahOyUWYf-kYTVK89VP7lJExZyogQKrOFTBrrZhv3zi8qL-bu1fqe6TwbL3J9tF-8GmxBKo');"></div>
+</div>
+<span class="mt-3 font-headline-sm text-xs sm:text-sm tracking-wider uppercase text-on-surface group-hover:text-primary text-center">Regions</span>
+</a>
+<!-- Circle 7: Best Sellers -->
+<a class="flex flex-col items-center min-w-[80px] group flex-1" href="#bestsellers">
+<div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden p-1 border-2 border-transparent group-hover:border-secondary transition-all">
+<div class="w-full h-full rounded-full bg-cover bg-center" data-alt="Still life assortment of Italy's premier pantry staples including pistachio spread, carnaroli risotto rice tin, and artisan pasta on a sunny travertine counter. High-end food photography with natural shadows and soft warmth." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD6HqR9V3Klzx5FgFTW0UtWm9D3g7BLyHsO4cc3uekDiv7FSI0tbSaDAgqQ1psXHhTlsUXzlEUBNFYVD9qU30n7HODOYsCltuMupk2YHvSfoV35n87vj_xppG15CRsME0d2NTPXAZZGPqI3efbLEBFcvHYiHuRqx1RpKsyJ97jWJgIGeLio_8GRMRPNoKU_Tjc370-BOO9y0tUIWfhsI7eRZQ_KrNl3GI02NSyLM_ov8ejdTt2o8oqf');"></div>
+</div>
+<span class="mt-3 font-headline-sm text-xs sm:text-sm tracking-wider uppercase text-on-surface group-hover:text-primary text-center">Best Sellers</span>
+</a>
+</div>
+</section>
+<!-- 4. PISTACHIO FEATURE BAND -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 mb-20" id="pistachio">
+<div class="b-pist rounded text-white overflow-hidden shadow-xl grid grid-cols-1 lg:grid-cols-12 items-center">
+<div class="p-8 sm:p-12 lg:p-16 lg:col-span-7 flex flex-col justify-center">
+<span class="text-xs font-bold tracking-[0.2em] text-[#FEB62C] uppercase mb-3">FEATURED DISCOVERY · SICILIA</span>
+<h2 class="font-headline-lg text-3xl sm:text-5xl leading-tight mb-4 text-white">The green gold of Bronte</h2>
+<p class="font-body-lg text-white/90 text-base sm:text-lg leading-relaxed mb-8 max-w-xl">
+            On the western slopes of Mount Etna, in black volcanic soil, grow the pistachios Sicilians call <span class="italic font-serif">oro verde</span>. Smaller, greener and harvested in limited quantities. We built an entire edit around them.
+          </p>
+<div>
+<a class="inline-block bg-[#FEB62C] hover:bg-[#D8950C] text-[#241800] font-button text-sm sm:text-base font-bold tracking-wider py-3.5 px-8 rounded-full shadow-md uppercase transition-transform hover:-translate-y-0.5" href="#shop">
+              SHOP THE PISTACHIO EDIT
+            </a>
+</div>
+</div>
+<div class="lg:col-span-5 relative flex items-center justify-center p-8 bg-black/10 h-full min-h-[340px]">
+<div class="relative w-64 h-64 sm:w-80 sm:h-80">
+<img class="w-full h-full object-cover rounded shadow-2xl border-4 border-white/20" data-alt="An artisanal jar of Gusto Etna 35% Sicilian Pistachio Cream with clean typography label, resting on textured black volcanic basalt rock from Mount Etna, with cracked raw pistachios scattered around. Crisp cinematic lighting highlighting the creamy green texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ8z8TNlPBDnUtOMdvNmbYPE4CZgGQKr57d02cS46Nk5CrzDeoT7rSo-h9UGoESiOghY2W9F4lL4h5CtZYdQqq7AqcguuQ3FQsXnmh0Icgnp8jzsrb06XC5nB_S4i8DW197jAKWLo-AycxsksXwCOCQcJIB8zjkkAmLPFCqEcqEQPmb345oKsWj1sknEEI2ehc6ltqA360zF9JHhrffq8WHElkquv-WwqyOEesKmywe2LcQHLvHuUW"/>
+<div class="absolute -top-3 -right-3 bg-secondary-container text-button-ink font-bold text-xs uppercase px-3 py-1.5 rounded shadow tracking-widest">
+              35% Bronte DOP
+            </div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. 'DISCOVERED THIS MONTH' PRODUCT RAIL / GRID -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 mb-24" id="shop">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<h2 class="font-headline-lg text-3xl sm:text-4xl text-on-surface uppercase tracking-wide mb-3">DISCOVERED THIS MONTH</h2>
+<p class="font-subheading text-ink-secondary text-base sm:text-lg">A small number of things we think are exceptional, and why.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<!-- Product 1 -->
+<div class="bg-surface-container-lowest border border-border-line rounded p-4 flex flex-col justify-between hover:shadow-lg transition-shadow relative group">
+<span class="absolute top-6 left-6 z-10 bg-secondary-container text-button-ink text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded">BEST SELLER</span>
+<div class="aspect-square w-full rounded overflow-hidden mb-4 bg-surface-soft">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Jar of Gusto Etna Sicilian Pistachio Cream 35% on light neutral marble studio backdrop with subtle soft shadows. Light mode clean product packshot with gold foiled lid." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDszTSe7WpUNoo8zbA72r8hbr_jQcjEikm1pi8jJTxXjwG3mDZ6lXA9Zr5GWeOwlqGj4EohsChEsPyZjaf_3rlzl-SLsygOJOK-qSrJOz5JkOLVTmWfmLKhoHtD25TeCHHySTfUtj75J-GQWOknJUJZJ-Te7qYQii7dmYNu2rMcU9hD7YwkvNNDwM1I2VcCmVyWMkreZr9Pf5B_FqECmszFxT1EmS1ezyL1li1DGxIubbTT6Gh0tTmU"/>
+</div>
+<div>
+<span class="text-xs text-ink-tertiary uppercase tracking-wider block mb-1">Gusto Etna · Sicilia</span>
+<h3 class="font-headline-sm text-base text-on-surface mb-1">Sicilian Pistachio Cream, 35%</h3>
+<p class="text-primary font-bold text-base mt-2">$16</p>
+</div>
+<button class="mt-4 w-full py-2 bg-surface-container hover:bg-primary hover:text-white text-on-surface font-button-sm text-xs uppercase tracking-wider rounded transition-colors">Add to Bag</button>
+</div>
+<!-- Product 2 -->
+<div class="bg-surface-container-lowest border border-border-line rounded p-4 flex flex-col justify-between hover:shadow-lg transition-shadow relative group">
+<span class="absolute top-6 left-6 z-10 bg-primary text-white text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded">RARE</span>
+<div class="aspect-square w-full rounded overflow-hidden mb-4 bg-surface-soft">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Il Borgo del Balsamico Traditional Balsamic of Reggio Emilia DOP bottle aged 12 years in traditional wooden barrels. Elegant bulbous bottle with red wax seal on a light cream background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp68m5lSU6-8ZN67UTUCN5BKNv5QSKDC5KizaTIowwYF5M2EkGtvLJaKDKIsQmF41ZNcJsl0T0Znglr7jklxtT-w22t7njnnntvShori47D3GwKrBVh6T3bUeXq2gEQgCFrtLRh0jucqR1Sm-6qrvqHFqckmsOeZaFDwLq5f77THglUO2sMHowN1KTpK-qNejEDxMSlQdVLQF4BEYjm8mECLtCPBUQwoIi2VJf_UMrLqVcvy2eTRfW"/>
+</div>
+<div>
+<span class="text-xs text-ink-tertiary uppercase tracking-wider block mb-1">Il Borgo · Emilia-Romagna</span>
+<h3 class="font-headline-sm text-base text-on-surface mb-1">Traditional Balsamic DOP, 12+ Years</h3>
+<p class="text-primary font-bold text-base mt-2">$89</p>
+</div>
+<button class="mt-4 w-full py-2 bg-surface-container hover:bg-primary hover:text-white text-on-surface font-button-sm text-xs uppercase tracking-wider rounded transition-colors">Add to Bag</button>
+</div>
+<!-- Product 3 -->
+<div class="bg-surface-container-lowest border border-border-line rounded p-4 flex flex-col justify-between hover:shadow-lg transition-shadow relative group">
+<span class="absolute top-6 left-6 z-10 bg-[#4E6A22] text-white text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded">ORGANIC</span>
+<div class="aspect-square w-full rounded overflow-hidden mb-4 bg-surface-soft">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Paper packet of Marulo Organic Paccheri bronze-die cut pasta from Torre Annunziata Campania on rustic light stone counter with natural illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuu-55MbiPe-szWTH9E1hG3CcnVy6to8ZunZKOjIg61w2peM2Vn6ZISQaaH88xpMxtSbDGApSqNZ-OLPhN3mg9K8KULfFusDjfdPqTjPlisxyugwq-e9xqbSDGZ0dai_yPLwmYmP0cz-Fu44oStBWA75QNFXDqida20AXkmaLVYzS7kXJHLN-QEkKqnjEbfJLOMY6x7HMI6inDZ3W03-1wHElpjUxinenBCFsTnNtSq_EVFpyULClr"/>
+</div>
+<div>
+<span class="text-xs text-ink-tertiary uppercase tracking-wider block mb-1">Marulo · Campania</span>
+<h3 class="font-headline-sm text-base text-on-surface mb-1">Organic Paccheri, Bronze-Die</h3>
+<p class="text-primary font-bold text-base mt-2">$12</p>
+</div>
+<button class="mt-4 w-full py-2 bg-surface-container hover:bg-primary hover:text-white text-on-surface font-button-sm text-xs uppercase tracking-wider rounded transition-colors">Add to Bag</button>
+</div>
+<!-- Product 4 -->
+<div class="bg-surface-container-lowest border border-border-line rounded p-4 flex flex-col justify-between hover:shadow-lg transition-shadow relative group">
+<span class="absolute top-6 left-6 z-10 bg-status-red text-white text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded">GIFT READY</span>
+<div class="aspect-square w-full rounded overflow-hidden mb-4 bg-surface-soft">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Crispy handcrafted Sicilian cannoli shells filled with rich emerald green pistachio cream in a decorated presentation box of 8 on a marble surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjU6UvYZUkSS18t8CQRRZnaNRc0VACKEjhPlfVfFdQ5pc54Xgy2GXOEcxNifnA64xYFhIvY_BUqA0MS-JHhIaxXG7ywJwi-c-2MoMLZQYjN7ECQUWQ30CTSnJyq3Tm7zn-7BkZHvprZQ0C9r6FYA64tnvr49FJHlvmY9kt2p8vCcOUoVi5fnGJfnDaU2kugnGZmTBxsCTHRKgMprbhUPLgw98lDHWUqoVhS2_XltgdYBMo8Wdajv2i"/>
+</div>
+<div>
+<span class="text-xs text-ink-tertiary uppercase tracking-wider block mb-1">Gusto Etna · Sicilia</span>
+<h3 class="font-headline-sm text-base text-on-surface mb-1">Sicilian Cannoli with Pistachio Cream, Box of 8</h3>
+<p class="text-primary font-bold text-base mt-2">$22</p>
+</div>
+<button class="mt-4 w-full py-2 bg-surface-container hover:bg-primary hover:text-white text-on-surface font-button-sm text-xs uppercase tracking-wider rounded transition-colors">Add to Bag</button>
+</div>
+<!-- Product 5 -->
+<div class="bg-surface-container-lowest border border-border-line rounded p-4 flex flex-col justify-between hover:shadow-lg transition-shadow relative group">
+<span class="absolute top-6 left-6 z-10 bg-secondary-container text-button-ink text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded">BRONTE</span>
+<div class="aspect-square w-full rounded overflow-hidden mb-4 bg-surface-soft">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Gusto Etna roasted salted Bronte pistachios in a minimalist matte bag alongside loose whole green nuts on pale limestone table in bright daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB62D4E8pa7B0hnJkuzDvXHx0GVlFQFv2_hGBRvTvTi-ob9OL8aWjfVBiOpHdlc9soaH0jqxBKV3zXjEVRiXBrdNxVNc2L0LDehhWNGx0Z3u4sR_iAkOoIUetpDLW_andrWBdL4SAyvQW1Qh7o3Lt2DiF5g0A73VOAC5rGa0PtH1vbMI1lo_lX8Mzid2z3rZdX86BK0Dlnx8UX-RW52b9JVook3He4-OdQZzwtP7RXP_lhbvhMkBkYX"/>
+</div>
+<div>
+<span class="text-xs text-ink-tertiary uppercase tracking-wider block mb-1">Gusto Etna · Sicilia (250g)</span>
+<h3 class="font-headline-sm text-base text-on-surface mb-1">Bronte Pistachios, Roasted</h3>
+<p class="text-primary font-bold text-base mt-2">$42</p>
+</div>
+<button class="mt-4 w-full py-2 bg-surface-container hover:bg-primary hover:text-white text-on-surface font-button-sm text-xs uppercase tracking-wider rounded transition-colors">Add to Bag</button>
+</div>
+<!-- Product 6 -->
+<div class="bg-surface-container-lowest border border-border-line rounded p-4 flex flex-col justify-between hover:shadow-lg transition-shadow relative group">
+<span class="absolute top-6 left-6 z-10 bg-[#9A6A00] text-white text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded">DISCOVERY</span>
+<div class="aspect-square w-full rounded overflow-hidden mb-4 bg-surface-soft">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Così Com'è glass jar filled with vibrant yellow Datterino tomatoes preserved in their own sweet nectar juice, culinary light mode lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFjvRWa-DBPlxV_S8Ks7GNA5P4X6i1CFTAJ7C4mSoGwQ00mOour74TvAfHythsLwS0k-LIo1djI_mqXWWAg5aclBYTgdd_6u4WlUbPsC_rx5ZsFnUG_PsDzsy4gdpU9znzPs83DjfI9VlpJwwTuHEUxq_WAU3pQ-XsuL72Bk4zcV7x_Ef_q01OARW3aAl4aiqgIARwJWA0Z8KD1qj5MQHPM_2gtt-Lh7igH3xqg1EWe7RYSMeb9efu"/>
+</div>
+<div>
+<span class="text-xs text-ink-tertiary uppercase tracking-wider block mb-1">Così Com'è · Campania (350g)</span>
+<h3 class="font-headline-sm text-base text-on-surface mb-1">Yellow Datterino Tomatoes</h3>
+<p class="text-primary font-bold text-base mt-2">$8</p>
+</div>
+<button class="mt-4 w-full py-2 bg-surface-container hover:bg-primary hover:text-white text-on-surface font-button-sm text-xs uppercase tracking-wider rounded transition-colors">Add to Bag</button>
+</div>
+<!-- Product 7 -->
+<div class="bg-surface-container-lowest border border-border-line rounded p-4 flex flex-col justify-between hover:shadow-lg transition-shadow relative group">
+<span class="absolute top-6 left-6 z-10 bg-status-red text-white text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded">HEAT</span>
+<div class="aspect-square w-full rounded overflow-hidden mb-4 bg-surface-soft">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Spicy vibrant ruby red Tutto Calabria Nduja infused olive oil in a glass bottle on light wooden board with dried Calabrian chili peppers beside it." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqttQW7zjo1cWwFJND5H1R5J1e55Q5rqzOx6622p9ChZRxJCb8xLurqHqYoy3DpRD8Pd2vc_OQkXqLR93q4Hcp8Zbjip9v2voXNO8PDkUqm8FCCWrASxAtDv9EfFDNpTaESb0civ-jna_mKEouzaUx2C9YC2Ul2XQGq6qE0Y1LIJAdFZmxC8Of0mUnWKJYUKTQpb9aD6Ev1OYMmaAAD0depHsvlv2uGuOj0e1fSJpPqXULv7XchNxD"/>
+</div>
+<div>
+<span class="text-xs text-ink-tertiary uppercase tracking-wider block mb-1">Tutto Calabria · Calabria (190g)</span>
+<h3 class="font-headline-sm text-base text-on-surface mb-1">'Nduja Oil</h3>
+<p class="text-primary font-bold text-base mt-2">$14</p>
+</div>
+<button class="mt-4 w-full py-2 bg-surface-container hover:bg-primary hover:text-white text-on-surface font-button-sm text-xs uppercase tracking-wider rounded transition-colors">Add to Bag</button>
+</div>
+<!-- Product 8 -->
+<div class="bg-surface-container-lowest border border-border-line rounded p-4 flex flex-col justify-between hover:shadow-lg transition-shadow relative group">
+<div class="aspect-square w-full rounded overflow-hidden mb-4 bg-surface-soft">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Basso 1904 large 1 Liter dark UV protected glass bottle of unfiltered extra virgin olive oil with vintage Italian producer label on ivory stone pedestal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHxR-kmSzAJcz6j4HiehbNHCP6gXQztri0inSb0D0_jvxBn6_roCwVI8i_CUUyJ3I5GLa0m5zMzo6Ez1NLzgmOWaJDQ1ttz78abvvFlocrNQ6MlpqAQizfaOn-blxJyO8ODkbdlQSr_9f1P5DrScLuwHm597gYg7uGUlQ-gcUJuQlE2v3Pk4TRbGohGcYeevjrlnN8vYhSDHWizwR7wBMb0Ts0cm7qUjo192yaV3U5bC90V6mpthgl"/>
+</div>
+<div>
+<span class="text-xs text-ink-tertiary uppercase tracking-wider block mb-1">Basso 1904 · Campania (1L)</span>
+<h3 class="font-headline-sm text-base text-on-surface mb-1">Unfiltered Extra Virgin Olive Oil</h3>
+<p class="text-primary font-bold text-base mt-2">$29</p>
+</div>
+<button class="mt-4 w-full py-2 bg-surface-container hover:bg-primary hover:text-white text-on-surface font-button-sm text-xs uppercase tracking-wider rounded transition-colors">Add to Bag</button>
+</div>
+</div>
+</section>
+<!-- 6. PASTA FEATURE BAND -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 mb-24" id="pasta">
+<div class="b-wine rounded text-white overflow-hidden shadow-xl grid grid-cols-1 lg:grid-cols-12 items-center">
+<div class="p-8 sm:p-12 lg:p-16 lg:col-span-7 flex flex-col justify-center">
+<span class="text-xs font-bold tracking-[0.2em] text-secondary-container uppercase mb-3">CENTURIES OF TRADITION · CAMPANIA</span>
+<h2 class="font-headline-lg text-3xl sm:text-5xl leading-tight mb-4 text-white">Pasta from Torre Annunziata</h2>
+<p class="font-body-lg text-white/90 text-base sm:text-lg leading-relaxed mb-8 max-w-xl">
+            Organic durum wheat, drawn through bronze dies in the historic pasta town near Naples and slow-dried for up to 48 hours. Rough, porous and made to hold every sauce.
+          </p>
+<div>
+<a class="inline-block bg-[#EFA91C] hover:bg-gold-hover text-[#241800] font-button text-sm sm:text-base font-bold tracking-wider py-3.5 px-8 rounded-full shadow-md uppercase transition-transform hover:-translate-y-0.5" href="#shop">
+              SHOP ARTISANAL PASTA
+            </a>
+</div>
+</div>
+<div class="lg:col-span-5 h-full min-h-[340px] relative bg-cover bg-center" data-alt="Artisanal bronze-die pasta drying on traditional wooden racks in an Italian pasta factory in Campania, with golden wheat sheaves in foreground and warm afternoon light filtering through tall arched windows." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCdnm993X9YgnI1GAc-VvSDXcPpfqw-uQAjX7FLF--VDDIKQzmjhFgaUw9o_Zd5K6_mlmGob_cXtvaedjfFpggl01EQe-b7o-9A8F8fiZ6CJYxxi-AdtRrc9aK0nx9PulTeHJApNIRXAgarJnpMCgOPn2cbIkxqQYUdVpE7Tr3-FqJId7kErg40fqO3QAlxY_oVTFJjcXX39ImqeNyL066lvS_dbBMendaY1rJRA9aZNPPPbr6_-lVD');">
+<div class="absolute inset-0 bg-primary/20"></div>
+</div>
+</div>
+</section>
+<!-- 7. 'BEST SELLERS' SHOWCASE -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 mb-24" id="bestsellers">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<h2 class="font-headline-lg text-3xl sm:text-4xl text-on-surface uppercase tracking-wide mb-3">BEST SELLERS</h2>
+<p class="font-subheading text-ink-secondary text-base sm:text-lg">Find your new favorites among ours, from pantry staples to gifts.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+<!-- Best 1 -->
+<div class="flex items-center gap-4 p-4 bg-surface-container-lowest border border-border-line rounded hover:shadow-md transition-shadow">
+<div class="w-24 h-24 rounded bg-surface-soft flex-shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Gusto Etna Pistachio cream jar displayed on a bright marble countertop next to fresh bakery cannoli, natural light photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXlHCtygtg9OE71UI5Kso46a503NDSGAtAmd8VqFL1fUaoiNsErIqRoQcAoHWcv__Q4kXW1eqcx-JOe-rDoPUkr6Q8dEBy2HygP7aPtWne7r5y20iIye90CVPUNTW3IiwNlXi52KbmtL-fwtODFuI6F7dqzOwWJC-PUMkQzpL7JfrgPm6b-xXPY1CFqEV8VvUgrQRqPd8lvUujYMbYXhW8AU4mNzEWKEMsCe-V26edUcFuVj6HKUws"/>
+</div>
+<div class="flex-1 min-w-0">
+<span class="text-xs text-secondary font-bold uppercase tracking-wide">Sicilia</span>
+<h4 class="font-headline-sm text-base truncate">Gusto Etna Pistachio Cream</h4>
+<p class="text-ink-secondary text-sm font-semibold mt-1">$16</p>
+</div>
+</div>
+<!-- Best 2 -->
+<div class="flex items-center gap-4 p-4 bg-surface-container-lowest border border-border-line rounded hover:shadow-md transition-shadow">
+<div class="w-24 h-24 rounded bg-surface-soft flex-shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Marulo Organic Spaghettoni pasta strands wrapped cleanly in craft packaging on rustic wooden flour board." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHIngNXqXC8tcH8ODgpxoOHTYHckQGXn-xfVr6KD5LHNFEKft3VnuYCLLZPvGlxkonCP2clRkP7zRPCikVtFoaoSXxpIQqRh5VAEkRfqsefnukBu8lvQup8712nVVRyrn6GqUzhY4KCE0UjJlE4-ABJnvdYz0aPau9_MStrxSUyeBfCLFvA8Gf9i4mRYqHPqqsIu8EP1p24FKSDIxdWvAIrVrXx2gHbefim2QGENH5Q6D9SLlBL6CE"/>
+</div>
+<div class="flex-1 min-w-0">
+<span class="text-xs text-secondary font-bold uppercase tracking-wide">Campania</span>
+<h4 class="font-headline-sm text-base truncate">Marulo Organic Spaghettoni</h4>
+<p class="text-ink-secondary text-sm font-semibold mt-1">$8</p>
+</div>
+</div>
+<!-- Best 3 -->
+<div class="flex items-center gap-4 p-4 bg-surface-container-lowest border border-border-line rounded hover:shadow-md transition-shadow">
+<div class="w-24 h-24 rounded bg-surface-soft flex-shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Il Borgo Monogram Balsamic IGP bottle with luxury wax stamp on parchment table runner." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADppUJd9LWAsZ00PeDJAgOzH1vvUIaXbMMSWISu9mdyUJK162Zg7gdzcknUAi3CVTNMQWHZWZQToMZgmy3j8F5DbRW32wuGj4UXpsVdEJ5DsBAAFNcaat_J7X0b_Jnq4khHowo02MPWIZ5IjPXbRduzDgjwHgNujKIGsZxaDGl9RwY2807JFgGd0y6QugTckwiJ8gI_a-zmrn2rA7dCUyrP7a3O7URtlL6uZyrAA41iSvDq71BgOmd"/>
+</div>
+<div class="flex-1 min-w-0">
+<span class="text-xs text-secondary font-bold uppercase tracking-wide">Emilia-Romagna</span>
+<h4 class="font-headline-sm text-base truncate">Il Borgo Monogram Balsamic IGP</h4>
+<p class="text-ink-secondary text-sm font-semibold mt-1">$22</p>
+</div>
+</div>
+<!-- Best 4 -->
+<div class="flex items-center gap-4 p-4 bg-surface-container-lowest border border-border-line rounded hover:shadow-md transition-shadow relative">
+<span class="absolute top-2 right-2 bg-secondary-container text-button-ink text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded">CHEF'S CHOICE</span>
+<div class="w-24 h-24 rounded bg-surface-soft flex-shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Riso Scotti Carnaroli Risotto Rice classic burlap and paper vintage box with grains of rice spilling softly onto wood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuOw47CyMWHDfy1LAq7y8_6mlfUhX3sEaCTYRv4qpRLnga9lWW5hwNQ9w_AIrmxk8_0R1H04C8RAhLH9XB9fzSkV-dgKgfS7nbEGJGJK3EuhcwEfgN3tsOD2UPXJNmrmMv9_Wlqx5Tnx0Dg7F_cEC1I3aWKH9xxJQ_SoJsdPaPxfUek-WKbQYSjxR-TxPYHcipLGuNzwiE99IH2fubNMCWvOQYLzXSDW8GSn74soI-lVOr7-Azy12C"/>
+</div>
+<div class="flex-1 min-w-0">
+<span class="text-xs text-secondary font-bold uppercase tracking-wide">Lombardia</span>
+<h4 class="font-headline-sm text-base truncate">Riso Scotti Carnaroli Rice</h4>
+<p class="text-ink-secondary text-sm font-semibold mt-1">$14</p>
+</div>
+</div>
+<!-- Best 5 -->
+<div class="flex items-center gap-4 p-4 bg-surface-container-lowest border border-border-line rounded hover:shadow-md transition-shadow relative">
+<span class="absolute top-2 right-2 bg-primary text-white text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded">RARE</span>
+<div class="w-24 h-24 rounded bg-surface-soft flex-shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Basso 1904 Cold-Pressed Pistachio Oil bottle with green tint in warm ambient culinary studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs7xJhqZXBAwKRkyCVhXUvSewJIQAGra8TaCkh8wcH0vS01IW54fUCowb_l1BgxuW_fyF4fKvUhIbJrZXahWw5ftNLQ9VXb7ns51gJJBaG3kkz0FpnmF5JGXmbilrLc54YKauH7b9XzVvzf2K1hZ5RhPwqBJS7E2KTqZFnc2UHEDW-4Y00Q3ddxHCzG900ArHNfcWTFf4LGEppuPuKKDBFVIUFZKKRmXMwsE6aHXVOmQ0oDAW1Evom"/>
+</div>
+<div class="flex-1 min-w-0">
+<span class="text-xs text-secondary font-bold uppercase tracking-wide">Campania</span>
+<h4 class="font-headline-sm text-base truncate">Basso 1904 Pistachio Oil</h4>
+<p class="text-ink-secondary text-sm font-semibold mt-1">$28</p>
+</div>
+</div>
+<!-- Best 6 -->
+<div class="flex items-center gap-4 p-4 bg-surface-container-lowest border border-border-line rounded hover:shadow-md transition-shadow">
+<div class="w-24 h-24 rounded bg-surface-soft flex-shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Campo D'Oro jar of ruby Sun-Dried Cherry Tomatoes steeped in extra virgin olive oil with aromatic rosemary sprig." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt-m2OCGZk3Sg3g5WcVQPuwIL3InZ_zKBJq1hhZb16C2VzIs1gd6t_wjZ-5RFPf6dsj6s6Kfc7x78HgDqa48IigCMtTjhIKHLOiEY4BXY4k4GD9OSgeBCaNINc0dD_4PKPOdLvMSMbChr31Oe8aqkbHNR3nz2DmhT-RlR-SY2UcCTQ1tgE7WuSNoIb27q61zP33xhOqPuPh3dSBbcttv7dzUQsmxmV3jdXM-Gt23CMk6If8LqSSyQo"/>
+</div>
+<div class="flex-1 min-w-0">
+<span class="text-xs text-secondary font-bold uppercase tracking-wide">Sicilia</span>
+<h4 class="font-headline-sm text-base truncate">Campo D'Oro Cherry Tomatoes</h4>
+<p class="text-ink-secondary text-sm font-semibold mt-1">$12</p>
+</div>
+</div>
+</div>
+<div class="text-center">
+<a class="inline-block border-2 border-primary text-primary hover:bg-primary hover:text-white font-button text-sm font-bold tracking-wider py-3 px-8 rounded-full transition-colors uppercase" href="#shop">
+          SHOP ALL BEST SELLERS
+        </a>
+</div>
+</section>
+<!-- 8. GIFTS BAND -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 mb-24" id="gifts">
+<div class="b-blue rounded text-white overflow-hidden shadow-xl p-8 sm:p-14 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="max-w-2xl">
+<span class="text-xs font-bold tracking-[0.2em] text-[#FEB62C] uppercase mb-2 block">CURATED GIFT BOXES</span>
+<h2 class="font-headline-lg text-3xl sm:text-4xl text-white mb-4">Gifts from Italy</h2>
+<p class="font-body-lg text-white/90 text-base sm:text-lg leading-relaxed">
+            Curation you can give. Each collection brings several producers from one region into a single box, with a note and the stories behind the food.
+          </p>
+</div>
+<div class="flex-shrink-0">
+<a class="inline-block bg-[#FEB62C] hover:bg-gold-hover text-button-ink font-button text-sm sm:text-base font-bold tracking-wider py-4 px-8 rounded-full shadow-lg uppercase transition-transform hover:-translate-y-0.5" href="#gift-boxes">
+            SHOP GIFT BOXES
+          </a>
+</div>
+</div>
+</section>
+<!-- 9. REGIONAL DISCOVERY ATLAS (8 Launch Regions) -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 mb-24" id="regions">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<h2 class="font-headline-lg text-3xl sm:text-4xl text-on-surface uppercase tracking-wide mb-3">SHOP BY REGION</h2>
+<p class="font-subheading text-ink-secondary text-base sm:text-lg">Italian food is regional before it is Italian. Enter through a place and discover what it makes best.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<!-- Region 1: Sicilia -->
+<a class="group relative rounded overflow-hidden aspect-[4/5] bg-surface-container shadow hover:shadow-xl transition-all" data-location="Sicily, Italy" href="#shop">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Sunlit Sicilian hillside village overlooking Mount Etna with lush pistachio and almond groves under a warm radiant Mediterranean blue sky." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDGGoAAQMTy7Z0xxOurJ9rSdAn_aIXBpPyaZT4-pJobqKZFx0YwSHOXzJYeVtpoZK7Eix3hQtLG8HmHvhY7RP99IsWjPqkcqcg4G6Y2E8mA5UiDPKkzgvfKMpIu8oiUPtxDKKyeKnXGREk-g3sc6DyXERzE4g_XviNtq_nR3_DvtVOFcZ4NWGpYZ07vymz4nwD_yhs_3TbzMRJGZE2JbANG9q65hDdbQvemjniv9VbFsPNawHKXsC05');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-6 text-white">
+<h3 class="font-headline-sm text-2xl text-white mb-1">Sicilia</h3>
+<p class="text-xs text-white/80 line-clamp-2">Bronte pistachios, sun-dried tomatoes, busiata and the sweets of the island.</p>
+</div>
+</a>
+<!-- Region 2: Campania -->
+<a class="group relative rounded overflow-hidden aspect-[4/5] bg-surface-container shadow hover:shadow-xl transition-all" data-location="Naples, Italy" href="#shop">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Stunning view of the Gulf of Naples and Mount Vesuvius with lemon terraces, colorful coastal houses, and coastal fishing boats." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCancaWcvr--MM2tr0GDdQuPcAOwypF6zphNOVp4xeYR089Myw4zQfintCrigDfvqHJ4Orccyq3Y9fadY4lV-yTcHvjEqrOpX2YRq7zenTQxLHuOuOei5EIU7sI26-3Up0_WpBmjSD_4qnBTgAZSH05ehZdTGt0ibXvB8CsFPOAePS-m5wjL6kn31Yufdvk8n0wef8jlqS_n0bMAO_TPxPy7AXH_fsXx66ChBs244ezrmGIJ-gV5iF0');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-6 text-white">
+<h3 class="font-headline-sm text-2xl text-white mb-1">Campania</h3>
+<p class="text-xs text-white/80 line-clamp-2">Bronze-die pasta, datterino tomatoes and southern olive oil.</p>
+</div>
+</a>
+<!-- Region 3: Emilia-Romagna -->
+<a class="group relative rounded overflow-hidden aspect-[4/5] bg-surface-container shadow hover:shadow-xl transition-all" data-location="Bologna, Italy" href="#shop">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Historic stone farmhouse in Emilia-Romagna surrounded by rolling green hills, vineyards, and oak trees where traditional vinegar casks rest." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD5Lecz0AdqyBGC2Wq3i1tMYZSsTXZU7rnRZwMIRu30HPom7D4g_MfUW37DkKRblH2w8dWakWoHWyqr8ENG84u6u-6r3rZ5sFwy5-3pgKuhaBtRfx1xXZ31MJFmE3Ztyu_6QMYQgorMv4YPjTiOy8VN_nAPK9T04AYFaZUpz-BBzEi6AsIq4gz8Tz0trhIDutSJ6LvYImgTcxiN81LaVqnYvJT-8z_9n2Qh5WTzL5ehPd45ZbZ8PNie');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-6 text-white">
+<h3 class="font-headline-sm text-2xl text-white mb-1">Emilia-Romagna</h3>
+<p class="text-xs text-white/80 line-clamp-2">Traditional balsamic of Reggio Emilia, aged condiments and saba.</p>
+</div>
+</a>
+<!-- Region 4: Calabria -->
+<a class="group relative rounded overflow-hidden aspect-[4/5] bg-surface-container shadow hover:shadow-xl transition-all" data-location="Calabria, Italy" href="#shop">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Sun-baked dramatic cliffs of Tropea in Calabria with turquoise water and strings of vibrant red chili peppers drying in coastal sunlight." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCNrs681gN72nFEfp-6phdUsxZxTsiO1DTw_3yZcdEFNU98YNQPmUajjE04nmVN4-RJ7ArH45kzIjCheTeGHKsXZHHgSSeEPDs7vfU5J_YuLcXOVSmZuug76j9ZbGqjBE_2ilQ5fAfc2ZvCHtvPSUCQEzJSserRsRDgiw68pBqtx51V5y462K-rzBplOBNLsun6-9Fc1x4JRjWVZCL3MJkFaRLkPaT0iI34d0ItYlP6TjUThtVOv54S');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-6 text-white">
+<h3 class="font-headline-sm text-2xl text-white mb-1">Calabria</h3>
+<p class="text-xs text-white/80 line-clamp-2">Peperoncino, 'nduja and the heat of the south.</p>
+</div>
+</a>
+<!-- Region 5: Lombardia -->
+<a class="group relative rounded overflow-hidden aspect-[4/5] bg-surface-container shadow hover:shadow-xl transition-all" data-location="Milan, Italy" href="#shop">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Serene water reflections over flooded Po Valley rice paddies in Lombardia during early morning mist, framed by distant Alpine peaks." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuASAzDXfTpj8Z-3Pie7yJS1yRvHePfxVaL802wXx0UgBJrd0VJUWltwmw2j6xJwO5TqmEgNnDPB8dZIYjfJNSOsR3tT9ElTZZOkhQmzIXZLW_QqBIicMQUwmdW0b3KTnxviycOTX4jJn2Fhsq5ody5WpPvjnV6fFP9YFJtys1IuENR446FiEccDsrKaKVLaKrrK8Bs2XjzLW7Zyip0YT_2owLFIPg4Q_UMpF8sW7I0epMJ2jcGXidPw');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-6 text-white">
+<h3 class="font-headline-sm text-2xl text-white mb-1">Lombardia</h3>
+<p class="text-xs text-white/80 line-clamp-2">Carnaroli, Vialone Nano and black Venere rice.</p>
+</div>
+</a>
+<!-- Region 6: Piemonte -->
+<a class="group relative rounded overflow-hidden aspect-[4/5] bg-surface-container shadow hover:shadow-xl transition-all" data-location="Piedmont, Italy" href="#shop">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Rolling Langhe hills in Piemonte blanketed in autumn colors, vineyards, and Tonda Gentile hazelnut groves in warm evening light." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB2slSQexHb65wGxM1BmjHsv2HDR0JxYkp1_797_5C6hQ-VssXWRFXHGsZiRVvDRJ0lW5kiMqWb7ov4nVwaBRFu0QudIz8yPk8oDGI5RgetbxYgswJcvlkXDqk43z4jfCzXyDPRCogKAsIQDHpqeJDPnzcWcFVAsff-q-mKrLKbL8xT13RBt-1OfRR1ZjSUkSqLt-E6vZKzMGuvf-bwUBkgICI_iH38dHy50W4tAcvFAoBESck6EwyC');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-6 text-white">
+<h3 class="font-headline-sm text-2xl text-white mb-1">Piemonte</h3>
+<p class="text-xs text-white/80 line-clamp-2">Hazelnuts, holiday cakes and the pastry tradition of the north.</p>
+</div>
+</a>
+<!-- Region 7: Toscana -->
+<div class="relative rounded overflow-hidden aspect-[4/5] bg-surface-container shadow" data-location="Tuscany, Italy" style="">
+<div class="w-full h-full bg-cover bg-center filter grayscale opacity-70" data-alt="Misty cypress trees and winding rural road along golden Tuscan hills at dawn, classical Italian Renaissance landscape view." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDKuapGvtz1m4yEiJmh5vBcthnNoV0P2Se0tF21T9_V_CDVx4pCFbczusX8ypWXZHV1BMlJ0i8sIWb4Z4uEm_A6mQL2mRBARioc6crU1N5rMrXju_nLvqzTJUTIXUY5O6L9zJ0BNDqG3aOp0yPR7VXOtZMd6nJRMXGZKqoKjLXRDwsPQcG9ORNxWV47lsd_1MXkzl4btNUmDZ_yzpVmLL4icT7pv6P8U_xZMrozfeBedIsWkhJCs9r6');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex flex-col justify-end p-6 text-white">
+<span class="inline-block bg-white/20 backdrop-blur text-white text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded w-max mb-2">ARRIVING SOON</span>
+<h3 class="font-headline-sm text-2xl text-white mb-1">Toscana</h3>
+<p class="text-xs text-white/80 line-clamp-2">Estate olive oils, beans, truffles and biscotti.</p>
+</div>
+</div>
+<!-- Region 8: Puglia -->
+<div class="relative rounded overflow-hidden aspect-[4/5] bg-surface-container shadow" data-location="Puglia, Italy" style="">
+<div class="w-full h-full bg-cover bg-center filter grayscale opacity-70" data-alt="Ancient gnarled olive trees in red Pugliese soil against whitewashed stone Trulli houses under brilliant Mediterranean sunshine." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDunLQuG-6h_8WJ-M2XlEUxrS-ocVecY_b9P3SdF074ooFfXHBaLl7zxPZoh1HjviyZzjFW7iLNbWtzE3iZUFh2oM68EWnKqnKhTpTk8On_dIu0lW6moo6IQhwB_V-UItoecU8qJ8jhebJUGtU7hy7Wq1d1fNXT80TVBsNWSESnDJAL1A5y-rdbcu0QrXo43ErY2-ES95TYjfod5y89A1tusxBxSKctojzj8gV48gq4JsPBUtfF6edj');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex flex-col justify-end p-6 text-white">
+<span class="inline-block bg-white/20 backdrop-blur text-white text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded w-max mb-2">ARRIVING SOON</span>
+<h3 class="font-headline-sm text-2xl text-white mb-1">Puglia</h3>
+<p class="text-xs text-white/80 line-clamp-2">Olive oil, orecchiette, taralli and preserves.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 10. CURATED GIFT BOXES -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 mb-24" id="gift-boxes">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<h2 class="font-headline-lg text-3xl sm:text-4xl text-on-surface uppercase tracking-wide mb-3">CURATED GIFT BOXES</h2>
+<p class="font-subheading text-ink-secondary text-base sm:text-lg">Unbox the authentic flavors and traditions of regional Italy.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Box 1 -->
+<div class="bg-surface-container-lowest border border-border-line rounded overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-xl transition-all">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Taste of Sicily luxury gift box open on linen table showing pistachio cream, busiata pasta, and sun-dried tomatoes inside with custom branded Italian tissue paper." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPFjayv47UDsr5p-bB1R5NbkkAFpLjqhvT-ZD1vaBws0f9HqQIm79XJi1KKk_diS4Ai-cOB0kIYIP_T_Vgr3VRZWcV4fFgx5FtrD3VC-wPEkgKKRtmB8nGVZ5JoItms8uL6FwrNI6Clnpo8ZflxPaHdIy1H3Fla27-8RIywxSS0fhtIdBHcOowe4kCnrHh_HIxaaum-5h1wyQ5dDJtUN55zL23OaLeEnx7UTrgALUPpPsa6JbJKVIe"/>
+<span class="absolute top-4 right-4 bg-primary text-white font-bold text-xs px-2.5 py-1 rounded">SICILIA</span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline-sm text-xl text-on-surface">Taste of Sicily</h3>
+<span class="font-bold text-lg text-primary">$89</span>
+</div>
+<p class="text-xs text-ink-secondary mb-4">A complete island journey from savory pasta courses to indulgent dessert spreads.</p>
+<ul class="text-xs text-ink-secondary space-y-1.5 border-t border-border-line pt-3 mb-6">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-pistachio-light">check_circle</span> Gusto Etna Pistachio cream (35%)</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-pistachio-light">check_circle</span> Pistachio pesto with Sicilian EVOO</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-pistachio-light">check_circle</span> Traditional Busiata pasta (Trapani)</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-pistachio-light">check_circle</span> Sun-dried Pachino cherry tomatoes</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-pistachio-light">check_circle</span> Artisanal pistachio brittle</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-pistachio-light">check_circle</span> Regional food guide &amp; recipe booklet</li>
+</ul>
+</div>
+<button class="w-full bg-[#EFA91C] hover:bg-gold-hover text-button-ink font-button text-xs font-bold uppercase tracking-wider py-3 rounded transition-colors">Select Box</button>
+</div>
+</div>
+<!-- Box 2 -->
+<div class="bg-surface-container-lowest border border-border-line rounded overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-xl transition-all">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="The Balsamic Collection luxury presentation wood box containing bottles of aged Traditional Balsamic DOP, glass pipette, and tasting spoons." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFza48hChQYexad1_EPlyTcsVAjK_Wo19ADqaI8-EOgZzS_OKlHarcZ1Om_MC-3S-5Bhk4yPOI6MPfBADKz3d6caiAZO9HTodofP85UfWSMG3jrM9usUVMAhHqZPgipBhTvice1rsZ4THI2ozSpAMdeaE3rTrhkLuSj8SJZySCG06CZMb_wl-hN8u22rs5dF5bbwWegNxKi71CcPFQvHOqU36YmeFLXrKXgvVKkEQL9pWD3tavSMMa"/>
+<span class="absolute top-4 right-4 bg-primary text-white font-bold text-xs px-2.5 py-1 rounded">EMILIA-ROMAGNA</span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline-sm text-xl text-on-surface">The Balsamic Collection</h3>
+<span class="font-bold text-lg text-primary">$149</span>
+</div>
+<p class="text-xs text-ink-secondary mb-4">Dedicated to centuries of cask aging and the master tasters of Reggio Emilia.</p>
+<ul class="text-xs text-ink-secondary space-y-1.5 border-t border-border-line pt-3 mb-6">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-pistachio-light">check_circle</span> Traditional Balsamic DOP 12+ Years</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-pistachio-light">check_circle</span> 3-Bottle aged condiment tasting trio</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-pistachio-light">check_circle</span> Artisanal Saba cooked grape must</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-pistachio-light">check_circle</span> Sommelier tasting ceramic spoon</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-pistachio-light">check_circle</span> History of the battery barrel casks guide</li>
+</ul>
+</div>
+<button class="w-full bg-[#EFA91C] hover:bg-gold-hover text-button-ink font-button text-xs font-bold uppercase tracking-wider py-3 rounded transition-colors">Select Box</button>
+</div>
+</div>
+<!-- Box 3 -->
+<div class="bg-surface-container-lowest border border-border-line rounded overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-xl transition-all">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="The Pistachio Edit gift collection with multiple pistachio delicacies, roasted nuts, pure nut paste, and emerald oil arranged inside dark linen packaging." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl-uZwad-Fd_115dveFTFn0l7YTwPbk7th_lUaOZD5mtq4fCZZfeSL47HyzmClumB0cHBTMV8gC0QXyQzwz9Sd0saU0KLYQFLQU9QW0RPdkkiG68j-4ce5LEFrCYjtFn2IOEB_BvA_h6SQtWvM2FBm4esTGm1ZCzZa1SKbArxtKilv9KdXF5VPwfgtAoUPeH_O28txNrZPtWsQdy450k9IUl7oUDUF2_QrBjCUEiimO-Mw_hyyCmVr"/>
+<span class="absolute top-4 right-4 bg-primary text-white font-bold text-xs px-2.5 py-1 rounded">SICILIA</span>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline-sm text-xl text-on-surface">The Pistachio Edit</h3>
+<span class="font-bold text-lg text-primary">$119</span>
+</div>
+<p class="text-xs text-ink-secondary mb-4">Every facet of the famed volcanic green gold in one extraordinary tasting flight.</p>
+<ul class="text-xs text-ink-secondary space-y-1.5 border-t border-border-line pt-3 mb-6">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-pistachio-light">check_circle</span> Roasted &amp; salted Bronte pistachios (250g)</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-pistachio-light">check_circle</span> 100% Pure Bronte pistachio paste</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-pistachio-light">check_circle</span> Sicilian Pistachio Cream (35%)</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-pistachio-light">check_circle</span> Cold-pressed virgin pistachio oil</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-pistachio-light">check_circle</span> Sicilian pistachio croccante brittle</li>
+</ul>
+</div>
+<button class="w-full bg-[#EFA91C] hover:bg-gold-hover text-button-ink font-button text-xs font-bold uppercase tracking-wider py-3 rounded transition-colors">Select Box</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 11. MEET THE MAKERS -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 mb-24" id="makers">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<h2 class="font-headline-lg text-3xl sm:text-4xl text-on-surface uppercase tracking-wide mb-3">MEET THE MAKERS</h2>
+<p class="font-subheading text-ink-secondary text-base sm:text-lg">The producer's name stays on every label. Ours only vouches for it.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Maker 1 -->
+<div class="bg-surface-container-lowest border border-border-line rounded overflow-hidden">
+<div class="h-56 bg-cover bg-center" data-alt="Sicilian pistachio farmer and producer inspecting harvested green pistachios in Bronte on the rugged slopes of Mount Etna under clear Mediterranean sun." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAXIJVyI6JButcN9YcYHa3bLAtKkJZ4-QC1m9-b8nhLey9Jad7rlYM2_CHiDQhJVMqUvoDIcAdylB9qZgxCZQWZ-345TY42rXBrs0Q7nWQzpZ3qdjxH17A8iL27iyJLfl-T0ewz3zYI12R4RvESEAgMQFyq8wCldPjMiZ7EgYwO1qmSLVN4M89t-4TJt_-7CcB0FEsJforxVfVkQfCfkb9bI9RMjwcotyxJH730TD7nyrsE_KR_YxPm');"></div>
+<div class="p-6">
+<span class="text-xs font-bold uppercase tracking-wider text-secondary">Bronte, Sicilia</span>
+<h3 class="font-headline-sm text-xl text-on-surface mt-1 mb-3">Gusto Etna</h3>
+<p class="text-sm text-ink-secondary leading-relaxed mb-4">
+              Pistachio masters of Mount Etna. Tending rare trees embedded in prehistoric lava beds, harvesting exclusively by hand every other year to preserve soil vitality.
+            </p>
+<a class="text-primary font-bold text-sm flex items-center gap-1 hover:underline" href="#shop">
+              View creations <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Maker 2 -->
+<div class="bg-surface-container-lowest border border-border-line rounded overflow-hidden">
+<div class="h-56 bg-cover bg-center" data-alt="Historic balsamic vinegar loft with batteries of ancient oak, juniper, and chestnut casks in Reggio Emilia with soft shafts of golden afternoon light." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAK9siw8jr61em1yNKkIpGNavwMgZHbYtA0TsGlEI_7VNqTPBLUDHtKR5GkQ3dHWEUPPXSTADBc6UyKIkTlCdrdm7OoBboRPk1K29HqDmqKRSZs3OKdO2YFef5KAyv1CRCUCAvyuCDcoZ8MHwOOSv71WW038BUB5qs4DcB1JFQ4wy5t0JHDbnY2SdfKduzYf-LMxlQw8WBYnWNjMMTFY6zNiRNDuddt2YiGq9ctVquYkpCLUHkljGfm');"></div>
+<div class="p-6">
+<span class="text-xs font-bold uppercase tracking-wider text-secondary">Reggio Emilia, Emilia-Romagna</span>
+<h3 class="font-headline-sm text-xl text-on-surface mt-1 mb-3">Il Borgo del Balsamico</h3>
+<p class="text-sm text-ink-secondary leading-relaxed mb-4">
+              Two sisters continuing a generations-old family battery of precious wood barrels. Their Traditional Balsamic DOP is aged twelve to twenty-five years without compromise.
+            </p>
+<a class="text-primary font-bold text-sm flex items-center gap-1 hover:underline" href="#shop">
+              View creations <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Maker 3 -->
+<div class="bg-surface-container-lowest border border-border-line rounded overflow-hidden">
+<div class="h-56 bg-cover bg-center" data-alt="Traditional master pasta maker in Torre Annunziata checking long bronze-extruded spaghetti strands drying carefully in temperature controlled drying rooms." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBNLulfCNOqIJkwnyUIIoCPTqTY7LEzdTe377AN2rqSLoV4tSIEv_p2xY9BamnnPcgwsbsctoAkCcIAel3LYYgIN9nDCvwCVYBP-VKsMHhCYGsfnwwZ-IiebitE4Woj_3gJgsMimtbfAuuS1eKncJ1cDjLLGE4Nm0fD1WPphwQ2pQehVfn83csjapgIuIL02aYSUM0anZGi_KH7UTGOBbx0Ao-OTdTVgK78XeoXrTmQ03SNA5diF3J_');"></div>
+<div class="p-6">
+<span class="text-xs font-bold uppercase tracking-wider text-secondary">Torre Annunziata, Campania</span>
+<h3 class="font-headline-sm text-xl text-on-surface mt-1 mb-3">Marulo</h3>
+<p class="text-sm text-ink-secondary leading-relaxed mb-4">
+              Reviving the legendary pasta heritage of coastal Campania. Using only 100% Italian certified organic semolina and slow cold water extrusion through custom heavy bronze dies.
+            </p>
+<a class="text-primary font-bold text-sm flex items-center gap-1 hover:underline" href="#shop">
+              View creations <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 12. LA TAGLIA MAGAZINE & INSIDER SIGNUP -->
+<section class="max-w-[1280px] mx-auto px-6 lg:px-12 mb-24" id="stories">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<h2 class="font-headline-lg text-3xl sm:text-4xl text-on-surface uppercase tracking-wide mb-3">STORIES &amp; CRAFT</h2>
+<p class="font-subheading text-ink-secondary text-base sm:text-lg">Read the field notes from our culinary discoveries across the peninsula.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+<!-- Story 1 -->
+<article class="bg-surface-container-lowest border border-border-line rounded overflow-hidden group cursor-pointer">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Farmer's rough hands holding freshly picked Bronte pistachios still in their fuzzy reddish-purple outer husks, bright daylight macro photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuClBQ3-ag1fMJlImAhdUbWPRJ4lMYODPsHQrGDPVIT0DbJt-bm4vg8euoLkrdqq1kW-UyOEXiW5Rfzl9E0idTq9nyq6BRPPlFXQGewHouXNJ_zAQUnOgXMxZb4ktAPQR0q339VMjsSdZ2DWcze7yluCFDoU2Y1vUOcXmrmPrhRUFYjZ2-_6SCg4xHo4f1NqawwLgf7dkP0aj6oZVo5Q--YHiBP_FWX_EEcV5qWjFyg_y-yxoZlYZNl4"/>
+</div>
+<div class="p-6">
+<span class="text-xs uppercase tracking-wider text-secondary font-bold">Sicilia · Gastronomy</span>
+<h3 class="font-headline-sm text-lg text-on-surface mt-1 mb-2 group-hover:text-primary transition-colors">The green gold of Bronte</h3>
+<p class="text-sm text-ink-secondary line-clamp-2 mb-4">Why true volcanic pistachios bear no comparison to commercial California nuts.</p>
+<span class="text-xs text-ink-tertiary">5 min read</span>
+</div>
+</article>
+<!-- Story 2 -->
+<article class="bg-surface-container-lowest border border-border-line rounded overflow-hidden group cursor-pointer">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Traditional glass ampoules containing different classifications of balsamic vinegar against warm backlit amber cellar illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjg0uSsQfTiqnxbDMyH_9YY0o8lYMkYb9MluHo6mJXCYw4913VtD6Q_fy_IJe1TXDwT3nolLSJz62WC63tWo8QEhhLCKLr1M-E0_NTG7c2PcQWjeNZ1XoYCm2_WW7gI_x2wf9rrz7Ep_z62iAhjWkIwn7BIguyErlRBwriBb02qOc0yo7n_CatYSsPg9Oq8Wp_prI6hLUmqpeRy79Y_C2ZvCoSQ0AwCvUM16dX5fo61zojN_1R68UZ"/>
+</div>
+<div class="p-6">
+<span class="text-xs uppercase tracking-wider text-secondary font-bold">Balsamic · Guide</span>
+<h3 class="font-headline-sm text-lg text-on-surface mt-1 mb-2 group-hover:text-primary transition-colors">IGP, condiment, or Tradizionale DOP?</h3>
+<p class="text-sm text-ink-secondary line-clamp-2 mb-4">Deciphering Italian vinegar labels and recognizing real wood barrel aging.</p>
+<span class="text-xs text-ink-tertiary">7 min read</span>
+</div>
+</article>
+<!-- Story 3 -->
+<article class="bg-surface-container-lowest border border-border-line rounded overflow-hidden group cursor-pointer">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Close up macro shot of the chalky porous rough texture of bronze extruded dry rigatoni pasta on a marble slab." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDO2dHEd2gKCpo_yr9KgEF0Tgbqr9F7FlQZxOGwJHyIkfAdtlOgvZNCBIhM3Zn6HZBzp7pcSx3_RjhWX24YDP0p4LzHMNJvLV2XwoUy5dewJqPdUpQghD21Ou3Rjq9cATfIyUmn5qo6WytT82URkho-8Jjl_dynP6pxmSqYVXUn0SFd1tP2CT0vAHgYei0bOd8uTW5co7AHHS8gUL8TI0WSvapJmGqCjgq6dB4rV63LznGuf5irNj5"/>
+</div>
+<div class="p-6">
+<span class="text-xs uppercase tracking-wider text-secondary font-bold">Campania · Technique</span>
+<h3 class="font-headline-sm text-lg text-on-surface mt-1 mb-2 group-hover:text-primary transition-colors">Why bronze-die pasta matters</h3>
+<p class="text-sm text-ink-secondary line-clamp-2 mb-4">The science of starch abrasion, sauce cling and low-temperature static drying.</p>
+<span class="text-xs text-ink-tertiary">4 min read</span>
+</div>
+</article>
+</div>
+<!-- VIP Insider Signup Box -->
+<div class="bg-surface-parchment border border-[#e4d3d6] rounded p-8 sm:p-12 lg:p-16 max-w-4xl mx-auto shadow-sm">
+<div class="text-center max-w-xl mx-auto mb-8">
+<span class="text-xs font-bold tracking-[0.2em] text-primary uppercase block mb-2">JOIN LA TAGLIA INSIDER</span>
+<h3 class="font-headline-lg text-2xl sm:text-3xl text-on-surface mb-3">Be the first to hear about new discoveries</h3>
+<p class="text-sm text-ink-secondary leading-relaxed">
+            Regional features, rare barrel releases and limited harvests directly from Italy. Create an account and receive <strong class="text-primary font-bold">10% off</strong> your first order.
+          </p>
+</div>
+<form class="space-y-4 max-w-lg mx-auto" onsubmit="event.preventDefault(); alert('Grazie! Welcome to La Taglia Insider.');">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<div class="sm:col-span-2">
+<input class="w-full h-12 px-4 rounded bg-surface-container-lowest border border-border-line text-sm focus:ring-1 focus:ring-primary focus:border-primary" placeholder="Enter your email address" required="" type="email"/>
+</div>
+<div>
+<input class="w-full h-12 px-4 rounded bg-surface-container-lowest border border-border-line text-sm focus:ring-1 focus:ring-primary focus:border-primary" placeholder="Zip code" type="text"/>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-6 py-2 text-xs text-ink-secondary">
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="rounded text-primary focus:ring-primary h-4 w-4" type="checkbox"/>
+<span>Pistachio &amp; Sweets</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="rounded text-primary focus:ring-primary h-4 w-4" type="checkbox"/>
+<span>Balsamic &amp; EVOO</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="rounded text-primary focus:ring-primary h-4 w-4" type="checkbox"/>
+<span>Gift Boxes</span>
+</label>
+</div>
+<button class="w-full bg-[#EFA91C] hover:bg-gold-hover text-button-ink font-button text-sm font-bold tracking-wider py-4 rounded uppercase transition-colors shadow" type="submit">
+            SIGN UP &amp; SAVE 10%
+          </button>
+</form>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer class="bg-primary text-white pt-16 pb-12 border-t border-primary-container">
+<div class="max-w-[1280px] mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+<!-- Brand Column -->
+<div class="lg:col-span-2">
+<div class="flex items-center gap-3 text-white mb-4">
+<div class="size-6 text-[#FEB62C]">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h3 class="text-2xl font-bold font-headline-sm tracking-tight">La Taglia</h3>
+</div>
+<p class="text-white/80 text-sm max-w-sm leading-relaxed mb-6 font-body-sm">
+            Curators of fine regional Italian culinary heritage. Direct discovery from multi-generational family producers across Sicilia, Campania, Emilia-Romagna and beyond.
+          </p>
+<div class="text-xs text-white/60">
+            Imported directly under strict cold-chain and protected geographical origin standards.
+          </div>
+</div>
+<!-- Quick Links 1 -->
+<div>
+<h4 class="font-headline-sm text-sm uppercase tracking-widest text-[#FEB62C] mb-4">Collections</h4>
+<ul class="space-y-2 text-sm text-white/80 font-body-sm">
+<li><a class="hover:text-white transition-colors" href="#pistachio">The Pistachio Edit</a></li>
+<li><a class="hover:text-white transition-colors" href="#pasta">Artisanal Bronze Pasta</a></li>
+<li><a class="hover:text-white transition-colors" href="#shop">Traditional Balsamic DOP</a></li>
+<li><a class="hover:text-white transition-colors" href="#shop">Extra Virgin Olive Oils</a></li>
+<li><a class="hover:text-white transition-colors" href="#bestsellers">Best Sellers</a></li>
+</ul>
+</div>
+<!-- Quick Links 2 -->
+<div>
+<h4 class="font-headline-sm text-sm uppercase tracking-widest text-[#FEB62C] mb-4">Regions</h4>
+<ul class="space-y-2 text-sm text-white/80 font-body-sm">
+<li><a class="hover:text-white transition-colors" href="#regions">Sicilia</a></li>
+<li><a class="hover:text-white transition-colors" href="#regions">Campania</a></li>
+<li><a class="hover:text-white transition-colors" href="#regions">Emilia-Romagna</a></li>
+<li><a class="hover:text-white transition-colors" href="#regions">Calabria</a></li>
+<li><a class="hover:text-white transition-colors" href="#regions">Lombardia</a></li>
+<li><a class="hover:text-white transition-colors" href="#regions">Piemonte</a></li>
+</ul>
+</div>
+<!-- Quick Links 3 -->
+<div>
+<h4 class="font-headline-sm text-sm uppercase tracking-widest text-[#FEB62C] mb-4">Assistance</h4>
+<ul class="space-y-2 text-sm text-white/80 font-body-sm">
+<li><a class="hover:text-white transition-colors" href="#corporate">Corporate Gifting</a></li>
+<li><a class="hover:text-white transition-colors" href="#makers">Meet the Producers</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Shipping &amp; Freshness</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Order Tracking</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Concierge</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/60 gap-4">
+<p>© 2025 La Taglia Providore Inc. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:underline" href="#">Privacy Policy</a>
+<a class="hover:underline" href="#">Terms of Service</a>
+<a class="hover:underline" href="#">Accessibility</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
