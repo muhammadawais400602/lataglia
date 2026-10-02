@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const links = [
   { href: '/shop', label: 'Shop' },
-  { href: '/#regions', label: 'Regions' },
+  { href: '/regions/sicilia', label: 'Regions' },
   { href: '/#gifts', label: 'Gifts' },
   { href: '/#stories', label: 'Stories' },
   { href: '/#makers', label: 'About' },

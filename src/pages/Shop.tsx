@@ -1,5 +1,6 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useMemo, useState } from 'react';
 import Layout from '../components/Layout';
+import { Toast, useToast } from '../components/Toast';
 import { shopCategories, shopProducts, type ShopProduct } from '../shopData';
 
 type Sort = 'curated' | 'price-asc' | 'price-desc' | 'rare';
@@ -14,11 +15,8 @@ export default function Shop() {
   const [sort, setSort] = useState<Sort>('curated');
   const [inStockOnly, setInStockOnly] = useState(true);
   const [giftOnly, setGiftOnly] = useState(false);
-  const [toast, setToast] = useState<string | null>(null);
+  const toast = useToast();
   const [loadState, setLoadState] = useState<'idle' | 'loading' | 'done'>('idle');
-  const toastTimer = useRef<number>();
-
-  useEffect(() => () => window.clearTimeout(toastTimer.current), []);
 
   const visible = useMemo(() => {
     const filtered = shopProducts.filter(
@@ -39,9 +37,7 @@ export default function Shop() {
   const lower = visible.slice(8);
 
   function addToBag(p: ShopProduct) {
-    setToast(`Added: ${p.name} ($${p.price})`);
-    window.clearTimeout(toastTimer.current);
-    toastTimer.current = window.setTimeout(() => setToast(null), 2400);
+    toast.show(`Added: ${p.name} ($${p.price})`);
   }
 
   function loadMore() {
@@ -52,13 +48,7 @@ export default function Shop() {
   return (
     <Layout>
       <div className="flex flex-col w-full">
-        <div
-          className={`fixed bottom-8 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 pointer-events-none flex items-center gap-3 px-6 py-3.5 rounded-full bg-surface-container-lowest text-on-surface shadow-xl ${toast ? 'translate-y-0 opacity-100' : 'translate-y-24 opacity-0'}`}
-          role="status"
-        >
-          <span className="material-symbols-outlined text-pistachio-light text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
-          <span className="font-button text-button font-semibold">{toast}</span>
-        </div>
+        <Toast message={toast.message} />
 
         <section className="w-full bg-surface-parchment pt-14 pb-12 px-6 lg:px-12">
           <div className="max-w-[1320px] mx-auto flex flex-col items-start">
