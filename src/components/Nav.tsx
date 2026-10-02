@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 const links = [
   { href: '/shop', label: 'Shop' },
   { href: '/#regions', label: 'Regions' },
@@ -7,6 +9,7 @@ const links = [
 ];
 
 export default function Nav() {
+  const [open, setOpen] = useState(false);
   return (
     <header className="w-full bg-[#fbf9f9] border-b border-solid border-b-[#f1e9ea] sticky top-0 z-50">
       <div className="max-w-[1280px] mx-auto flex items-center justify-between whitespace-nowrap px-6 lg:px-12 py-3">
@@ -41,6 +44,14 @@ export default function Nav() {
             </div>
           </label>
           <div className="flex items-center gap-2">
+            <button
+              aria-label="Menu"
+              aria-expanded={open}
+              onClick={() => setOpen(!open)}
+              className="md:hidden flex items-center justify-center rounded h-10 w-10 bg-[#f1e9ea] text-[#191011]"
+            >
+              <span className="material-symbols-outlined text-xl">{open ? 'close' : 'menu'}</span>
+            </button>
             <button className="flex min-w-[76px] cursor-pointer items-center justify-center overflow-hidden rounded h-10 px-4 bg-primary text-on-primary text-sm font-bold tracking-[0.015em] hover:bg-wine-hover transition-colors">
               <span className="truncate">Sign In</span>
             </button>
@@ -50,6 +61,15 @@ export default function Nav() {
           </div>
         </div>
       </div>
+      {open && (
+        <nav className="md:hidden border-t border-[#f1e9ea] px-6 py-2 flex flex-col">
+          {links.map((l) => (
+            <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="py-3 text-[#191011] text-base font-medium border-b border-[#f1e9ea] last:border-0 hover:text-primary">
+              {l.label}
+            </a>
+          ))}
+        </nav>
+      )}
     </header>
   );
 }
