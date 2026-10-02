@@ -113,7 +113,7 @@ export default function Region() {
                   {p.badge && (
                     <span className={`absolute top-4 left-4 z-10 px-3 py-1 rounded ${label} tracking-wider shadow-sm ${p.badge.className}`}>{p.badge.label}</span>
                   )}
-                  <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src={p.img} alt={p.name} loading="lazy" />
+                  {p.href ? <a href={p.href}><img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src={p.img} alt={p.name} loading="lazy" /></a> : <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src={p.img} alt={p.name} loading="lazy" />}
                 </div>
                 <div className="flex flex-col flex-1 p-6 justify-between gap-4">
                   <div>
@@ -121,7 +121,7 @@ export default function Region() {
                       <span>{p.origin}</span>
                       <span>{p.size}</span>
                     </div>
-                    <h3 className="font-headline-sm text-headline-sm text-on-surface leading-snug">{p.name}</h3>
+                    <h3 className="font-headline-sm text-headline-sm text-on-surface leading-snug">{p.href ? <a href={p.href} className="hover:underline">{p.name}</a> : p.name}</h3>
                     <p className="font-body-sm text-body-sm text-ink-secondary mt-2 line-clamp-2">{p.desc}</p>
                   </div>
                   <div className="flex items-center justify-between bg-surface-container-low/40 -mx-6 -mb-6 px-6 py-4">

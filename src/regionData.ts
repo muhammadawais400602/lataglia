@@ -28,6 +28,7 @@ export type SicilyProduct = {
   badge?: { label: string; className: string };
   img: string;
   tags: SicilyFilter[];
+  href?: string;
 };
 
 const plain = 'bg-surface-container-lowest text-badge-ink';
@@ -42,7 +43,7 @@ export const sicilyProducts: SicilyProduct[] = [
   {
     origin: 'Gusto Etna · Bronte', size: '6.7 oz (190g)', name: 'Sicilian Pistachio Cream, 35%',
     desc: 'Conched slowly with high natural butterfat. Luscious, silken, and naturally fragrant without hydrogenated oils or artificial dyes.',
-    price: 16, perUnit: '$2.38 / oz', badge: { label: 'Best Seller', className: 'bg-secondary-container text-button-ink font-bold' }, tags: ['bronte', 'sweets'],
+    price: 16, perUnit: '$2.38 / oz', badge: { label: 'Best Seller', className: 'bg-secondary-container text-button-ink font-bold' }, tags: ['bronte', 'sweets'], href: '/product/sicilian-pistachio-cream',
     img: `${img}/AB6AXuDOVPSOhGq7Qu3r97jKAyoMSFiNvkfozbmhist1xoGVXS9f4R2tOU08KejLqvftT9YmdahMBYDTJAvwikyhSOMdf9PkELNhmhn64lyINQPnvXfZa3h460Sxza1ou9ix7iDCgVoFCQitGC4dwyO61u3en5fWGzs-7ucfhvVl0yovt-qjGF6yRoH8zzVR5dWcj_XBba4WOZ6MzStJuZrT7R0XwD1CC3npH-ECQ1oI0rkuz7Yd6aZBuSc2`,
   },
   {

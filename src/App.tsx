@@ -145,11 +145,11 @@ function ProductGrid() {
               </span>
             )}
             <div className="aspect-square w-full rounded overflow-hidden mb-4 bg-surface-soft">
-              <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src={p.img} alt={p.name} />
+              {p.href ? <a href={p.href}><img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src={p.img} alt={p.name} /></a> : <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src={p.img} alt={p.name} />}
             </div>
             <div>
               <span className="text-xs text-ink-tertiary uppercase tracking-wider block mb-1">{p.vendor}</span>
-              <h3 className="font-headline-sm text-base text-on-surface mb-1">{p.name}</h3>
+              <h3 className="font-headline-sm text-base text-on-surface mb-1">{p.href ? <a href={p.href} className="hover:underline">{p.name}</a> : p.name}</h3>
               <p className="text-primary font-bold text-base mt-2">{p.price}</p>
             </div>
             <button className="mt-4 w-full py-2 bg-surface-container hover:bg-primary hover:text-white text-on-surface font-button-sm text-xs uppercase tracking-wider rounded transition-colors">
