@@ -7,6 +7,8 @@ import Product from './pages/Product';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Gifts from './pages/Gifts';
+import Signup from './pages/Signup';
+import Login from './pages/Login';
 import './index.css';
 
 const path = window.location.pathname.replace(/\/+$/, '');
@@ -18,6 +20,8 @@ const routes: Record<string, () => JSX.Element> = {
   '/cart': Cart,
   '/checkout': Checkout,
   '/gifts': Gifts,
+  '/signup': Signup,
+  '/login': Login,
 };
 const Page = routes[path] ?? App;
 
