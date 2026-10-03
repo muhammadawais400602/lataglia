@@ -18,6 +18,7 @@ export type ShopProduct = {
   gift: boolean;
   rare: boolean;
   inStock: boolean;
+  href?: string;
 };
 
 export const shopCategories: { value: Category | 'all'; label: string }[] = [
@@ -36,7 +37,7 @@ export const shopProducts: ShopProduct[] = [
     producer: 'Gusto Etna', place: 'Bronte, Sicilia', name: 'Bronte Pistachio Cream DOP', unit: '190g • $2.38 / oz', price: 16,
     badge: { label: 'Best Seller', className: 'bg-surface-container-lowest text-badge-ink' },
     img: `${img}/AB6AXuA50Y5nKfTahqDmQf6hgNWCLr7xZfxXGLEW3FD8w3BDW2gRLb_IiV_nyWmxu4U106llOMKtCYFK1PawL1oLPwA4ttUc2Ss1nU_NtWixdonqSg4uaTh0syy92HCx4spmsfNjNgTIfZoX66c-zy9WapcF4Jf7FkV1OXPm27VfjqMfLWKox5YDawHhKeorL_LFcRqb5CueBUMSM-XK8mj20hs5Q-lb47vTDEbKxW1Wh7H_wZK1UrDiogAI`,
-    category: 'pistachio', region: 'sicilia', cert: 'dop', gift: false, rare: false, inStock: true,
+    category: 'pistachio', region: 'sicilia', cert: 'dop', gift: false, rare: false, inStock: true, href: '/product/sicilian-pistachio-cream',
   },
   {
     producer: 'Il Borgo del Balsamico', place: 'Reggio Emilia', name: 'Traditional Balsamic DOP 12+ Yrs', unit: '100ml • $26.17 / oz', price: 89,
