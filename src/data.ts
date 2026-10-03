@@ -4,13 +4,13 @@ export const heroImg = `${img}/AB6AXuCpGuKrD4FiJ1eQd4rJjRT5ep0EsKwmkU6eoINBRcM6b
 
 export const promoCards = [
   { href: '#pistachio', icon: 'arrow_back_ios_new', title: 'The Pistachio Edit', body: 'Everything we love from the slopes of Etna, from pure paste to cannoli.', cta: 'Shop now' },
-  { href: '#gifts', icon: 'featured_seasonal_and_gifts', title: 'Gifts from Italy', body: 'Regional gift boxes from $59, sent with the stories behind the food.', cta: 'Shop gifts' },
+  { href: '/gifts', icon: 'featured_seasonal_and_gifts', title: 'Gifts from Italy', body: 'Regional gift boxes from $59, sent with the stories behind the food.', cta: 'Shop gifts' },
   { href: '#shop', icon: 'hourglass_empty', title: 'Twelve years in wood', body: 'Traditional Balsamic of Reggio Emilia DOP, judged by master tasters.', cta: 'Discover it' },
-  { href: '#corporate', icon: 'domain', title: 'Corporate gifting', body: 'Custom cards, volume pricing and delivery to many addresses on your date.', cta: 'Plan an order' },
+  { href: '/gifts#corporate', icon: 'domain', title: 'Corporate gifting', body: 'Custom cards, volume pricing and delivery to many addresses on your date.', cta: 'Plan an order' },
 ];
 
 export const categories = [
-  { href: '#gifts', label: 'Gifts', img: `${img}/AB6AXuB9Xy-KzVu-7kChafCDA4kszGFxt6PPto_UqOCHmfXrnNQ4lPDWApZAPnDWO9jfsP4to1OCPKgo-L0KQqUyxMBxfP5LUfXq5mvNFEfdy1Nv0UZz9N1d2U1IDhJmWpQ0UNQJc6NNHc0oFNnekwi3OQ7Af8LTLneN25IaewlgEusZUNJb3SgD8-r3OaxHnwXtpXk-ZekApzA9kOmNKWvAMJBFV8xKMAcoOGV6mdA4nAm5zIOpqm4RZZ1_` },
+  { href: '/gifts', label: 'Gifts', img: `${img}/AB6AXuB9Xy-KzVu-7kChafCDA4kszGFxt6PPto_UqOCHmfXrnNQ4lPDWApZAPnDWO9jfsP4to1OCPKgo-L0KQqUyxMBxfP5LUfXq5mvNFEfdy1Nv0UZz9N1d2U1IDhJmWpQ0UNQJc6NNHc0oFNnekwi3OQ7Af8LTLneN25IaewlgEusZUNJb3SgD8-r3OaxHnwXtpXk-ZekApzA9kOmNKWvAMJBFV8xKMAcoOGV6mdA4nAm5zIOpqm4RZZ1_` },
   { href: '#pistachio', label: 'Pistachio', img: `${img}/AB6AXuD58vcb-by1KxmHSgGuPt5lyJg1-6-9zXAUBdgN0NU8y4qOS2wv61C2VarZYWBaQxbGTufrf--6jrYky3laT_Hces0SYoLNOMMX6mwMVrVPx81WuPf1HcUdFqpJyiE1Zg6oZMmFhJfXaG8xp8XOk6Dth7vOHCrbcOB1FD_WtIOVqTmKIVnQQCveSmWqon-TF2dpyqHmU9eP_krKNEBSemwRFnExksTHiAp-c-I9GtS6xlxpOfZ9KLqf` },
   { href: '#shop', label: 'Balsamic', img: `${img}/AB6AXuDv3W3lWBl0C-9UOMRD4RV80qZRPuIFGYJVgKpDS4o30g5gOJ1tlkrjgMEi-7l22QBH2jEEpqT4n7bkIigk-0TfQM3MV_fx4lkTNlwz55Su66EXfMJo0J8vh7HnnglGUslEF7WddgTgU2HuMEAJ1WY1PeJJPNL0fUo_nKjo7rPkoCJbnJVAAtwIaOyDLirSp1LX3y2_yzraRZ2IcsEmQ2YdZFviWBfV58P01MaQh19NZQHQ9Na9ZiCd` },
   { href: '#pasta', label: 'Pasta', img: `${img}/AB6AXuDXnUZtPe4PpuxVyjnmlQwEkbhYqCsjGP1dapfHmwWv1kBI2mGLV1DVNCjv_3yG8sr6QEqKCvsjgAkWcEj6hvBjLWTER_rnn8RFOEQF2DUMxq8TQ5gYlSkGWq8BbVWVw0XrtAoFt_FPfUuM9UnjR_eYUICY3R1JYA0rVX_4uLtrQlJUkigLeZ8jy8kUhKhLi1qeqfgYaNAYVir1pVUi27n3ZqD3nVlOsYjgp-uebfWWYstwzhjtHnD6` },

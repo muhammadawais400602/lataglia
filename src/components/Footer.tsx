@@ -35,7 +35,7 @@ export default function Footer() {
             { href: '/#regions', label: 'Piemonte' },
           ]} />
           <FooterCol title="Assistance" items={[
-            { href: '/#corporate', label: 'Corporate Gifting' },
+            { href: '/gifts#corporate', label: 'Corporate Gifting' },
             { href: '/#makers', label: 'Meet the Producers' },
             { href: '/shop#shipping', label: 'Shipping & Freshness' },
             { href: '#', label: 'Order Tracking' },
