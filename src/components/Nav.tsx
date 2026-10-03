@@ -55,9 +55,9 @@ export default function Nav() {
             <button className="flex min-w-[76px] cursor-pointer items-center justify-center overflow-hidden rounded h-10 px-4 bg-primary text-on-primary text-sm font-bold tracking-[0.015em] hover:bg-wine-hover transition-colors">
               <span className="truncate">Sign In</span>
             </button>
-            <button aria-label="Shopping bag" className="flex cursor-pointer items-center justify-center rounded h-10 w-10 bg-[#f1e9ea] text-[#191011] hover:bg-outline-variant transition-colors">
+            <a href="/cart" aria-label="Shopping bag" className="flex cursor-pointer items-center justify-center rounded h-10 w-10 bg-[#f1e9ea] text-[#191011] hover:bg-outline-variant transition-colors">
               <span className="material-symbols-outlined text-xl">shopping_bag</span>
-            </button>
+            </a>
           </div>
         </div>
       </div>
