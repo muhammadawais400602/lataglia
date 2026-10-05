@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import Layout from '../components/Layout';
 import { Toast, useToast } from '../components/Toast';
-import { addOns, FREE_FREIGHT_AT, FREIGHT, PROMO, type CartItem } from '../cartData';
+import { addOns, type CartItem } from '../cartData';
+import { useSettings } from '../storeApi';
 import { useBasket } from '../cartStore';
 
 const label = 'font-label-caps text-label-caps uppercase';
@@ -9,6 +10,10 @@ const usd = (n: number) => `$${n.toFixed(2)}`;
 
 export default function Cart() {
   const [basket, setBasket] = useBasket();
+  const settings = useSettings();
+  const FREE_FREIGHT_AT = settings.freeShippingAt;
+  const FREIGHT = settings.freightExpress;
+  const PROMO = settings.promo;
   const items = basket.items;
   const setItems = (fn: (list: CartItem[]) => CartItem[]) => setBasket((b) => ({ ...b, items: fn(b.items) }));
   const [code, setCode] = useState('');
@@ -20,7 +25,7 @@ export default function Cart() {
   const subtotal = items.reduce((s, i) => s + i.unit * i.qty, 0);
   const remaining = Math.max(0, FREE_FREIGHT_AT - subtotal);
   const freight = items.length && remaining > 0 ? FREIGHT : 0;
-  const discount = promo === 'applied' ? subtotal * PROMO.rate : 0;
+  const discount = promo === 'applied' && PROMO.active ? subtotal * PROMO.rate : 0;
   const total = subtotal - discount + freight;
   const pct = Math.min(100, (subtotal / FREE_FREIGHT_AT) * 100);
 
@@ -41,7 +46,7 @@ export default function Cart() {
   }
 
   function applyCode() {
-    const ok = code.trim().toUpperCase() === PROMO.code;
+    const ok = PROMO.active && code.trim().toUpperCase() === PROMO.code;
     setInvalid(!ok);
     if (ok) setBasket((b) => ({ ...b, promo: true }));
   }
@@ -267,7 +272,7 @@ export default function Cart() {
                     <input value={code} onChange={(e) => setCode(e.target.value)} aria-label="Guild code" placeholder="e.g. BRONTE15" type="text" className="w-full text-xs font-body-sm px-3 py-2 bg-surface-container-low rounded border border-transparent focus:border-secondary focus:bg-surface-container-lowest focus:outline-none focus:ring-0 uppercase" />
                     <button type="submit" className="px-4 py-2 bg-secondary text-on-secondary rounded text-xs font-button-sm tracking-wider uppercase hover:bg-gold-hover transition-colors shrink-0">Apply</button>
                   </form>
-                  {promo === 'applied' && <p className="mt-2 text-xs text-pistachio-light font-semibold">{PROMO.code} applied: {PROMO.rate * 100}% off provisions.</p>}
+                  {promo === 'applied' && PROMO.active && <p className="mt-2 text-xs text-pistachio-light font-semibold">{PROMO.code} applied: {PROMO.rate * 100}% off provisions.</p>}
                   {promo === 'invalid' && <p className="mt-2 text-xs text-status-red font-semibold">That code isn't recognised.</p>}
                 </details>
               </div>

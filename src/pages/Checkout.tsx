@@ -1,12 +1,12 @@
 import { useState, type FormEvent, type ReactNode } from 'react';
 import Layout from '../components/Layout';
-import { FREE_FREIGHT_AT, PROMO } from '../cartData';
+import { placeOrder, useSettings } from '../storeApi';
+import { priceOrder } from '../shared/types';
 import { useBasket } from '../cartStore';
 
 const label = 'font-label-caps text-label-caps uppercase';
 const input = 'w-full bg-surface-container-low text-on-background rounded-lg border-0 px-4 py-3 font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary focus:bg-surface-container-lowest shadow-sm placeholder:text-ink-tertiary';
 const cardInput = 'w-full bg-surface-container-lowest text-on-background rounded-lg border-0 px-4 py-3 font-mono text-sm focus:outline-none focus:ring-1 focus:ring-primary shadow-sm placeholder:text-ink-tertiary';
-const DUTY_RATE = 0.08;
 const usd = (n: number) => `$${n.toFixed(2)}`;
 
 const tiers = [
@@ -23,7 +23,14 @@ const tiers = [
 type Pay = 'card' | 'paypal' | 'klarna';
 
 export default function Checkout() {
-  const [{ items, promo }] = useBasket();
+  const [{ items, promo }, setBasket] = useBasket();
+  const settings = useSettings();
+  const FREE_FREIGHT_AT = settings.freeShippingAt;
+  const PROMO = settings.promo;
+  const DUTY_RATE = settings.dutyRate;
+  const tierPrice = (id: string) => (id === 'overnight' ? settings.freightOvernight : settings.freightExpress);
+  const [placed, setPlaced] = useState<{ id: string; total: number } | null>(null);
+  const [failure, setFailure] = useState('');
   const [tier, setTier] = useState<(typeof tiers)[number]['id']>('express');
   const [gift, setGift] = useState(true);
   const [note, setNote] = useState('');
@@ -31,20 +38,36 @@ export default function Checkout() {
   const [state, setState] = useState<'idle' | 'sealing' | 'done'>('idle');
 
   const count = items.reduce((n, i) => n + i.qty, 0);
-  const subtotal = items.reduce((s, i) => s + i.unit * i.qty, 0);
-  const discount = promo ? subtotal * PROMO.rate : 0;
-  const goods = subtotal - discount;
+  const { subtotal, discount, freight, duty, total } = priceOrder(items, { promo, shipping: tier }, settings);
   const remaining = Math.max(0, FREE_FREIGHT_AT - subtotal);
-  const chosen = tiers.find((t) => t.id === tier)!;
-  const freight = tier === 'express' && remaining === 0 ? 0 : chosen.price;
-  const duty = Math.round(goods * DUTY_RATE * 100) / 100;
-  const total = goods + freight + duty;
 
-  function submit(e: FormEvent<HTMLFormElement>) {
+  async function submit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (!items.length || state !== 'idle') return;
+    const f = e.currentTarget.elements;
+    const val = (id: string) => (f.namedItem(id) as HTMLInputElement | null)?.value ?? '';
     setState('sealing');
-    window.setTimeout(() => setState('done'), 1400);
+    setFailure('');
+    try {
+      const result = await placeOrder({
+        customer: {
+          email: val('contact-email'), firstName: val('first-name'), lastName: val('last-name'), street: val('street-address'),
+          city: val('city'), state: val('state'), zip: val('zip'), country: val('country'),
+        },
+        items: items.map((i) => ({ id: i.id, name: i.name, unit: i.unit, qty: i.qty })),
+        shipping: tier,
+        payment: pay,
+        promo,
+        deliveryNote: val('delivery-note'),
+        giftNote: gift ? note : '',
+      });
+      setPlaced(result);
+      setState('done');
+      setBasket({ items: [], promo: false });
+    } catch (err) {
+      setFailure(err instanceof Error ? err.message : 'Order could not be placed.');
+      setState('idle');
+    }
   }
 
   return (
@@ -149,7 +172,7 @@ export default function Checkout() {
               <div className="space-y-3" role="radiogroup" aria-label="Shipping speed">
                 {tiers.map((t) => {
                   const on = tier === t.id;
-                  const price = t.id === 'express' && remaining === 0 ? 0 : t.price;
+                  const price = t.id === 'express' && remaining === 0 ? 0 : tierPrice(t.id);
                   return (
                     <label key={t.id} className={`relative flex items-start gap-4 p-4 rounded-xl text-on-background shadow-sm cursor-pointer transition-all hover:bg-surface-container-low ${on ? 'bg-surface-parchment ring-1 ring-secondary-container' : 'bg-surface-container-lowest'}`}>
                       <input type="radio" name="shipping_tier" checked={on} onChange={() => setTier(t.id)} className="mt-1 text-primary focus:ring-0 cursor-pointer" />
@@ -327,8 +350,9 @@ export default function Checkout() {
                   {state === 'done' && (<><span className="material-symbols-outlined">check_circle</span><span>Consignment Sealed &amp; Confirmed!</span></>)}
                 </button>
                 <p className="font-caption text-caption text-ink-tertiary text-center leading-normal" aria-live="polite">
-                  {state === 'done'
-                    ? 'Preview only: payment is not connected yet, so no charge was made and no order was sent.'
+                  {failure && <span className="block text-status-red font-semibold mb-1" role="alert">{failure}</span>}
+                  {state === 'done' && placed
+                    ? `Order ${placed.id} received (${usd(placed.total)}). Online payment isn't connected yet, so nothing was charged; we'll contact you to arrange payment.`
                     : "By authorizing, you ratify the cellar dispatch guidelines. Orders placed before 1:00 PM CET board tonight's Milan temperature-regulated charter."}
                 </p>
               </div>
