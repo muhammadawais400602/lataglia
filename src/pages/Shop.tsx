@@ -1,7 +1,10 @@
 import { useMemo, useState } from 'react';
 import Layout from '../components/Layout';
 import { Toast, useToast } from '../components/Toast';
-import { shopCategories, shopProducts, type ShopProduct } from '../shopData';
+import { shopCategories, type ShopProduct } from '../shopData';
+import { useProducts } from '../storeApi';
+
+const money = (n: number) => (Number.isInteger(n) ? `$${n}` : `$${n.toFixed(2)}`);
 
 type Sort = 'curated' | 'price-asc' | 'price-desc' | 'rare';
 
@@ -16,10 +19,11 @@ export default function Shop() {
   const [inStockOnly, setInStockOnly] = useState(true);
   const [giftOnly, setGiftOnly] = useState(false);
   const toast = useToast();
+  const catalog = useProducts();
   const [loadState, setLoadState] = useState<'idle' | 'loading' | 'done'>('idle');
 
   const visible = useMemo(() => {
-    const filtered = shopProducts.filter(
+    const filtered = catalog.map((p): ShopProduct => ({ ...p, inStock: p.stock > 0 })).filter(
       (p) =>
         (category === 'all' || p.category === category) &&
         (region === 'all' || p.region === region) &&
@@ -31,13 +35,13 @@ export default function Shop() {
     if (sort === 'price-desc') return [...filtered].sort((a, b) => b.price - a.price);
     if (sort === 'rare') return [...filtered].sort((a, b) => Number(b.rare) - Number(a.rare));
     return filtered;
-  }, [category, region, cert, sort, inStockOnly, giftOnly]);
+  }, [catalog, category, region, cert, sort, inStockOnly, giftOnly]);
 
   const upper = visible.slice(0, 8);
   const lower = visible.slice(8);
 
   function addToBag(p: ShopProduct) {
-    toast.show(`Added: ${p.name} ($${p.price})`);
+    toast.show(`Added: ${p.name} (${money(p.price)})`);
   }
 
   function loadMore() {
@@ -160,10 +164,10 @@ export default function Shop() {
             {lower.length > 0 && <ProductGrid products={lower} onAdd={addToBag} />}
             <div className="mt-16 pt-8 flex flex-col items-center justify-center gap-4 text-center">
               <div className="w-64 h-1 bg-surface-container rounded-full overflow-hidden">
-                <div className="h-full bg-primary rounded-full" style={{ width: `${Math.round((visible.length / 29) * 100)}%` }} />
+                <div className="h-full bg-primary rounded-full" style={{ width: `${Math.round((visible.length / Math.max(1, catalog.length)) * 100)}%` }} />
               </div>
               <div className="font-caption text-caption text-ink-secondary tracking-wide">
-                Displaying <span className="font-bold text-on-surface">{visible.length}</span> of <span className="font-bold text-on-surface">29</span> Verified Regional Provisions
+                Displaying <span className="font-bold text-on-surface">{visible.length}</span> of <span className="font-bold text-on-surface">{catalog.length}</span> Verified Regional Provisions
               </div>
               <button
                 onClick={loadMore}
@@ -212,7 +216,7 @@ function ProductGrid({ products, onAdd }: { products: ShopProduct[]; onAdd: (p: 
               <p className="font-caption text-caption text-ink-secondary mb-4">{p.unit}</p>
             </div>
             <div className="flex items-center justify-between pt-3">
-              <span className="font-headline-sm text-lg font-bold text-on-surface">${p.price}</span>
+              <span className="font-headline-sm text-lg font-bold text-on-surface">{money(p.price)}</span>
               <button
                 onClick={() => onAdd(p)}
                 className="px-4 py-2 rounded-full bg-secondary-container hover:bg-gold-hover text-button-ink font-button-sm text-xs font-bold uppercase tracking-wider transition-colors shadow-sm"

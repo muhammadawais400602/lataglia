@@ -1,36 +1,45 @@
 # La Taglia
 
-Marketing site for La Taglia, built with Vite + React + TypeScript + Tailwind.
+Shop for curated Italian provisions, built with Vite + React + TypeScript + Tailwind, with a small serverless backend in `api/` (Vercel Functions) and an admin dashboard at `/admin`.
 
 ## Dev
 
 ```bash
 npm install
-npm run dev     # http://localhost:5173
+echo "ADMIN_PASSWORD=choose-a-long-password" > .env.local
+npm run dev     # http://localhost:5173  (admin: /admin)
 npm run build   # type-check + production build to dist/
-npm run preview # preview production build
 ```
+
+Locally the API runs inside the Vite dev server and keeps data in memory, so it resets when you restart.
+
+## Going live on Vercel
+
+1. **Admin password:** Project → Settings → Environment Variables → add `ADMIN_PASSWORD` (8+ characters) for Production, and Preview if you want to test there. Redeploy.
+2. **Database:** Project → Storage → Create → *Upstash for Redis* → connect it to this project. This adds `KV_REST_API_URL` and `KV_REST_API_TOKEN`. Redeploy.
+3. Optional: `ADMIN_SESSION_SECRET` (any long random string) to sign admin sessions with a key separate from the password.
+
+Without the database, the shop still shows the built-in catalog, but checkout can't save orders and the admin is read-only.
+
+## Admin (`/admin`)
+
+- **Overview:** revenue, orders, average order value and customers for 7/30/90 days vs. the previous period; revenue chart; orders by status; top products; low-stock alerts; recent orders.
+- **Orders:** search and filter by status or tag, export CSV, open an order to change its status, assign tags, add internal notes or email the customer.
+- **Products:** add, edit (price, stock, badge, image, category…), hide/show in the shop, delete.
+- **Customers:** built from orders, with lifetime spend and tags.
+- **Settings:** store announcement bar, free-shipping threshold, freight and duty, promo code, order tag library.
 
 ## Structure
 
 ```
+api/                 # Vercel Functions (server)
+  _lib/              # auth (signed cookie, lockout), storage (Upstash REST / memory), helpers
+  products.ts        # GET live catalog
+  settings.ts        # GET public store settings
+  orders.ts          # POST new order (re-prices catalog items server-side)
+  admin/             # session, login, orders, products, settings (all require the admin cookie)
 src/
-  App.tsx            # home page
-  main.tsx           # entry + router
-  index.css          # tailwind + base styles
-  components/
-    Layout.tsx       # nav + footer wrapper
-    Nav.tsx
-    Footer.tsx
-  pages/
-    Menu.tsx
-    About.tsx
-    Contact.tsx      # reservation form (stub, no backend yet)
+  shared/            # types, pricing and seed data used by both server and browser
+  admin/             # admin dashboard
+  pages/             # storefront pages
 ```
-
-## Customize
-
-- Brand palette: `tailwind.config.js` → `theme.extend.colors.brand`
-- Fonts: swap the Google Fonts link in `index.html` and `fontFamily` in Tailwind config
-- Menu copy: `src/pages/Menu.tsx`
-- Reservation form: wire the `onSubmit` in `src/pages/Contact.tsx` to your backend of choice
