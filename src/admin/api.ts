@@ -1,5 +1,7 @@
 import type { Order, Product, Settings } from '../shared/types';
 
+export type AmazonLookup = { asin: string; name: string; brand: string; price: number; images: string[]; bullets: string[]; source: 'canopy' | 'link'; note?: string };
+
 export type Session = { signedIn: boolean; passwordConfigured: boolean; storage: 'database' | 'memory' | 'none' };
 
 export class ApiError extends Error {
@@ -29,6 +31,7 @@ export const adminApi = {
   loadSampleOrders: () => call<Order[]>('admin/orders', 'POST', { action: 'load-samples' }),
   products: () => call<Product[]>('admin/products'),
   saveProducts: (products: Product[]) => call<Product[]>('admin/products', 'PUT', products),
+  amazon: (url: string) => call<AmazonLookup>('admin/amazon', 'POST', { url }),
   settings: () => call<Settings>('admin/settings'),
   saveSettings: (s: Settings) => call<Settings>('admin/settings', 'PUT', s),
 };

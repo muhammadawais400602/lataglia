@@ -17,7 +17,8 @@ Locally the API runs inside the Vite dev server and keeps data in memory, so it 
 
 1. **Admin password:** Project → Settings → Environment Variables → add `ADMIN_PASSWORD` (8+ characters) for Production, and Preview if you want to test there. Redeploy.
 2. **Database:** Project → Storage → Create → *Upstash for Redis* → connect it to this project. This adds `KV_REST_API_URL` and `KV_REST_API_TOKEN`. Redeploy.
-3. Optional: `ADMIN_SESSION_SECRET` (any long random string) to sign admin sessions with a key separate from the password.
+3. **Amazon links (optional):** sign up at canopyapi.co (100 free lookups a month, then about $0.01 each), copy the API key and add it as `CANOPY_API_KEY`. Redeploy. Without it, "Add from Amazon link" only fills in the name from the link.
+4. Optional: `ADMIN_SESSION_SECRET` (any long random string) to sign admin sessions with a key separate from the password.
 
 Without the database, the shop still shows the built-in catalog, but checkout can't save orders and the admin is read-only.
 
@@ -25,7 +26,7 @@ Without the database, the shop still shows the built-in catalog, but checkout ca
 
 - **Overview:** revenue, orders, average order value and customers for 7/30/90 days vs. the previous period; revenue chart; orders by status; top products; low-stock alerts; recent orders.
 - **Orders:** search and filter by status or tag, export CSV, open an order to change its status, assign tags, add internal notes or email the customer.
-- **Products:** add, edit (price, stock, badge, image, category…), hide/show in the shop, delete. **Import** from an Amazon Seller Central listings report (All Listings / Active Listings .txt, or an inventory template) or any CSV with name, price, stock, image columns: preview, pick rows, set category/region/visibility and an optional price adjustment; products with the same name get their price, stock and image updated.
+- **Products:** **Add from Amazon link** (paste a product link → name, brand, photos and price are filled in; you set price and stock, then save), add, edit (price, stock, badge, image, category…), hide/show in the shop, delete. **Import** from an Amazon Seller Central listings report (All Listings / Active Listings .txt, or an inventory template) or any CSV with name, price, stock, image columns: preview, pick rows, set category/region/visibility and an optional price adjustment; products with the same name get their price, stock and image updated.
 - **Customers:** built from orders, with lifetime spend and tags.
 - **Settings:** store announcement bar, free-shipping threshold, freight and duty, promo code, order tag library.
 
