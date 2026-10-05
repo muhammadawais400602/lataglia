@@ -25,7 +25,7 @@ Without the database, the shop still shows the built-in catalog, but checkout ca
 
 - **Overview:** revenue, orders, average order value and customers for 7/30/90 days vs. the previous period; revenue chart; orders by status; top products; low-stock alerts; recent orders.
 - **Orders:** search and filter by status or tag, export CSV, open an order to change its status, assign tags, add internal notes or email the customer.
-- **Products:** add, edit (price, stock, badge, image, category…), hide/show in the shop, delete.
+- **Products:** add, edit (price, stock, badge, image, category…), hide/show in the shop, delete. **Import** from an Amazon Seller Central listings report (All Listings / Active Listings .txt, or an inventory template) or any CSV with name, price, stock, image columns: preview, pick rows, set category/region/visibility and an optional price adjustment; products with the same name get their price, stock and image updated.
 - **Customers:** built from orders, with lifetime spend and tags.
 - **Settings:** store announcement bar, free-shipping threshold, freight and duty, promo code, order tag library.
 

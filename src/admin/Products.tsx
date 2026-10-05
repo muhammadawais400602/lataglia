@@ -1,20 +1,8 @@
 import { useMemo, useState, type FormEvent } from 'react';
 import type { Product } from '../shared/types';
 import { Card, Drawer, Empty, btnGhost, btnPrimary, field, label, usd } from './ui';
-
-const CATEGORIES: [Product['category'], string][] = [['pasta', 'Pasta & pantry'], ['balsamics', 'Balsamics & saba'], ['oils', "Olive oils & 'nduja"], ['pistachio', 'Pistachio'], ['rice', 'Rice'], ['sweets', 'Sweets'], ['gifts', 'Gift hampers']];
-const REGIONS: [Product['region'], string][] = [['sicilia', 'Sicilia'], ['campania', 'Campania'], ['emilia', 'Emilia-Romagna'], ['calabria', 'Calabria'], ['lombardia', 'Lombardia'], ['piemonte', 'Piemonte']];
-const CERTS: [Product['cert'], string][] = [['dop', 'DOP'], ['igp', 'IGP'], ['organic', 'Organic'], ['estate', 'Single-estate']];
-const BADGE_STYLES: [string, string][] = [
-  ['bg-surface-container-lowest text-badge-ink', 'Gold on white'],
-  ['bg-wine-dark text-on-primary', 'Wine'],
-  ['bg-tertiary-fixed text-tertiary', 'Pistachio green'],
-  ['bg-secondary-fixed text-on-secondary-fixed', 'Soft gold'],
-  ['bg-error-container text-status-red', 'Chili red'],
-  ['bg-surface-container-lowest text-coastal-blue', 'Coastal blue'],
-];
-
-const slug = (s: string) => s.toLowerCase().normalize('NFD').replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '-').slice(0, 70);
+import { BADGE_STYLES, CATEGORIES, CERTS, REGIONS, slug } from './productOptions';
+import ImportProducts from './ImportProducts';
 
 const blank = (): Product => ({
   id: '', name: '', producer: '', place: '', unit: '', price: 10, category: 'pasta', region: 'sicilia', cert: 'estate',
@@ -25,6 +13,7 @@ export default function Products({ products, onSave, readOnly }: { products: Pro
   const [q, setQ] = useState('');
   const [cat, setCat] = useState('all');
   const [editing, setEditing] = useState<{ product: Product; isNew: boolean } | null>(null);
+  const [importing, setImporting] = useState(false);
   const [busy, setBusy] = useState<string | null>(null);
   const [msg, setMsg] = useState('');
 
@@ -65,6 +54,11 @@ export default function Products({ products, onSave, readOnly }: { products: Pro
               {CATEGORIES.map(([v, l]) => <option key={v} value={v}>{l}</option>)}
             </select>
           </div>
+          {!readOnly && (
+            <button type="button" onClick={() => { setMsg(''); setImporting(true); }} className={btnGhost}>
+              <span aria-hidden="true" className="material-symbols-outlined text-lg">upload_file</span> Import
+            </button>
+          )}
           {!readOnly && (
             <button type="button" onClick={() => setEditing({ product: blank(), isNew: true })} className={btnPrimary}>
               <span aria-hidden="true" className="material-symbols-outlined text-lg">add</span> Add product
@@ -134,6 +128,8 @@ export default function Products({ products, onSave, readOnly }: { products: Pro
         )}
         <p className="mt-4 text-xs text-ink-tertiary">{products.filter((p) => p.status === 'active').length} live · {products.filter((p) => p.status === 'hidden').length} hidden · Changes show in the shop within about a minute.</p>
       </Card>
+
+      {importing && <ImportProducts products={products} error={msg} onClose={() => setImporting(false)} onImport={(next) => commit(next, 'import')} />}
 
       {editing && (
         <ProductEditor
