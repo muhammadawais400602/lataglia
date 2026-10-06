@@ -1,20 +1,9 @@
 import { useMemo, useState, type FormEvent } from 'react';
 import type { Product } from '../shared/types';
 import { Card, Drawer, Empty, btnGhost, btnPrimary, field, label, usd } from './ui';
-
-const CATEGORIES: [Product['category'], string][] = [['pasta', 'Pasta & pantry'], ['balsamics', 'Balsamics & saba'], ['oils', "Olive oils & 'nduja"], ['pistachio', 'Pistachio'], ['rice', 'Rice'], ['sweets', 'Sweets'], ['gifts', 'Gift hampers']];
-const REGIONS: [Product['region'], string][] = [['sicilia', 'Sicilia'], ['campania', 'Campania'], ['emilia', 'Emilia-Romagna'], ['calabria', 'Calabria'], ['lombardia', 'Lombardia'], ['piemonte', 'Piemonte']];
-const CERTS: [Product['cert'], string][] = [['dop', 'DOP'], ['igp', 'IGP'], ['organic', 'Organic'], ['estate', 'Single-estate']];
-const BADGE_STYLES: [string, string][] = [
-  ['bg-surface-container-lowest text-badge-ink', 'Gold on white'],
-  ['bg-wine-dark text-on-primary', 'Wine'],
-  ['bg-tertiary-fixed text-tertiary', 'Pistachio green'],
-  ['bg-secondary-fixed text-on-secondary-fixed', 'Soft gold'],
-  ['bg-error-container text-status-red', 'Chili red'],
-  ['bg-surface-container-lowest text-coastal-blue', 'Coastal blue'],
-];
-
-const slug = (s: string) => s.toLowerCase().normalize('NFD').replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '-').slice(0, 70);
+import { BADGE_STYLES, CATEGORIES, CERTS, REGIONS, slug } from './productOptions';
+import ImportProducts from './ImportProducts';
+import AmazonLink from './AmazonLink';
 
 const blank = (): Product => ({
   id: '', name: '', producer: '', place: '', unit: '', price: 10, category: 'pasta', region: 'sicilia', cert: 'estate',
@@ -24,7 +13,9 @@ const blank = (): Product => ({
 export default function Products({ products, onSave, readOnly }: { products: Product[]; onSave: (next: Product[]) => Promise<void>; readOnly: boolean }) {
   const [q, setQ] = useState('');
   const [cat, setCat] = useState('all');
-  const [editing, setEditing] = useState<{ product: Product; isNew: boolean } | null>(null);
+  const [editing, setEditing] = useState<{ product: Product; isNew: boolean; images?: string[]; notice?: string } | null>(null);
+  const [fromLink, setFromLink] = useState(false);
+  const [importing, setImporting] = useState(false);
   const [busy, setBusy] = useState<string | null>(null);
   const [msg, setMsg] = useState('');
 
@@ -65,6 +56,16 @@ export default function Products({ products, onSave, readOnly }: { products: Pro
               {CATEGORIES.map(([v, l]) => <option key={v} value={v}>{l}</option>)}
             </select>
           </div>
+          {!readOnly && (
+            <button type="button" onClick={() => { setMsg(''); setFromLink(true); }} className={btnGhost}>
+              <span aria-hidden="true" className="material-symbols-outlined text-lg">link</span> Add from Amazon link
+            </button>
+          )}
+          {!readOnly && (
+            <button type="button" onClick={() => { setMsg(''); setImporting(true); }} className={btnGhost}>
+              <span aria-hidden="true" className="material-symbols-outlined text-lg">upload_file</span> Import
+            </button>
+          )}
           {!readOnly && (
             <button type="button" onClick={() => setEditing({ product: blank(), isNew: true })} className={btnPrimary}>
               <span aria-hidden="true" className="material-symbols-outlined text-lg">add</span> Add product
@@ -135,10 +136,33 @@ export default function Products({ products, onSave, readOnly }: { products: Pro
         <p className="mt-4 text-xs text-ink-tertiary">{products.filter((p) => p.status === 'active').length} live · {products.filter((p) => p.status === 'hidden').length} hidden · Changes show in the shop within about a minute.</p>
       </Card>
 
+      {fromLink && (
+        <AmazonLink
+          onClose={() => setFromLink(false)}
+          onFound={(found) => {
+            setFromLink(false);
+            setEditing({
+              product: { ...blank(), name: found.name, producer: found.brand, price: found.price || blank().price, img: found.images[0] ?? '' },
+              isNew: true,
+              images: found.images,
+              notice: [
+                found.note,
+                products.some((p) => p.name.toLowerCase() === found.name.toLowerCase()) ? 'A product with this name is already in the shop.' : '',
+                found.price ? 'Price is Amazon’s current price. Set your own if it differs.' : '',
+              ].filter(Boolean).join(' '),
+            });
+          }}
+        />
+      )}
+
+      {importing && <ImportProducts products={products} error={msg} onClose={() => setImporting(false)} onImport={(next) => commit(next, 'import')} />}
+
       {editing && (
         <ProductEditor
           initial={editing.product}
           isNew={editing.isNew}
+          images={editing.images}
+          notice={editing.notice}
           readOnly={readOnly}
           existingIds={products.map((p) => p.id)}
           onClose={() => setEditing(null)}
@@ -153,8 +177,8 @@ export default function Products({ products, onSave, readOnly }: { products: Pro
   );
 }
 
-function ProductEditor({ initial, isNew, readOnly, existingIds, onClose, onSubmit, error }: {
-  initial: Product; isNew: boolean; readOnly: boolean; existingIds: string[]; error: string;
+function ProductEditor({ initial, isNew, images = [], notice, readOnly, existingIds, onClose, onSubmit, error }: {
+  initial: Product; isNew: boolean; images?: string[]; notice?: string; readOnly: boolean; existingIds: string[]; error: string;
   onClose: () => void; onSubmit: (p: Product) => Promise<void>;
 }) {
   const [p, setP] = useState<Product>(initial);
@@ -184,6 +208,20 @@ function ProductEditor({ initial, isNew, readOnly, existingIds, onClose, onSubmi
   return (
     <Drawer open onClose={onClose} title={<h2 className="font-headline-sm text-xl text-on-surface">{isNew ? 'Add product' : `Edit ${initial.name}`}</h2>}>
       <form onSubmit={submit} className="space-y-6">
+        {notice && <p role="status" className="rounded-lg bg-secondary-fixed px-4 py-3 text-sm text-on-secondary-fixed">{notice}</p>}
+        {images.length > 1 && (
+          <div>
+            <p className={`${label} text-ink-secondary mb-1.5`}>Choose the photo</p>
+            <div className="flex flex-wrap gap-2">
+              {images.map((src) => (
+                <button key={src} type="button" onClick={() => set('img', src)} aria-pressed={p.img === src} aria-label="Use this photo"
+                  className={`size-16 rounded-lg overflow-hidden bg-white ring-2 ${p.img === src ? 'ring-primary' : 'ring-transparent hover:ring-surface-container-highest'}`}>
+                  <img src={src} alt="" className="size-full object-contain" loading="lazy" />
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
         <fieldset disabled={readOnly} className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {F({ id: 'p-name', text: 'Name', wide: true, children: <input id="p-name" required value={p.name} onChange={(e) => set('name', e.target.value)} className={field} /> })}
           {F({ id: 'p-producer', text: 'Producer', children: <input id="p-producer" value={p.producer} onChange={(e) => set('producer', e.target.value)} className={field} /> })}

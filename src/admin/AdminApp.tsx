@@ -253,8 +253,8 @@ function Dashboard({ session, onSignedOut }: { session: Session; onSignedOut: ()
               <p className="font-bold flex items-center gap-2"><span aria-hidden="true" className="material-symbols-outlined text-lg">{readOnly ? 'cloud_off' : 'science'}</span>{readOnly ? 'Database not connected: read-only' : 'Local test mode'}</p>
               <p className="mt-1">
                 {readOnly
-                  ? 'Nothing can be saved and checkout cannot record orders. In Vercel: Storage → Create → Upstash for Redis → connect to this project → redeploy.'
-                  : 'Data lives in the dev server’s memory and resets on restart. Connect Upstash Redis on Vercel to keep it.'}
+                  ? 'Nothing can be saved and checkout cannot record orders. In Vercel, add MONGODB_URI (your MongoDB Atlas connection string) under Settings → Environment Variables, then redeploy.'
+                  : 'Data lives in the dev server’s memory and resets on restart. Set MONGODB_URI to keep it.'}
               </p>
             </div>
           )}

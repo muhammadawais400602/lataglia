@@ -121,7 +121,7 @@ export default function SettingsPanel({ settings, session, onSave, readOnly }: {
           <p className="text-sm text-ink-secondary">
             {session.storage === 'database' && 'Connected. Products, orders and settings are saved permanently.'}
             {session.storage === 'memory' && 'Running on this computer only (local development). Changes reset when the dev server restarts.'}
-            {session.storage === 'none' && 'Not connected, so nothing can be saved. In Vercel, open Storage → Create → Upstash for Redis, connect it to this project, then redeploy.'}
+            {session.storage === 'none' && 'Not connected, so nothing can be saved. In Vercel, add MONGODB_URI (your MongoDB Atlas connection string) under Settings → Environment Variables, then redeploy.'}
           </p>
         </Card>
       </div>
