@@ -21,6 +21,9 @@ function clean(raw: Record<string, unknown>): Product | string {
   const badge = (raw.badge ?? {}) as Record<string, unknown>;
   const pick = <T extends string>(v: unknown, list: string[], fallback: T) => (list.includes(v as string) ? (v as T) : fallback);
   const href = str(raw.href, 200);
+  const description = str(raw.description, 6000);
+  const features = (Array.isArray(raw.features) ? raw.features : []).map((f) => str(f, 500)).filter(Boolean).slice(0, 12);
+  const images = (Array.isArray(raw.images) ? raw.images : []).map((u) => str(u, 1000)).filter((u) => /^https:\/\//.test(u)).slice(0, 10);
   return {
     id,
     name,
@@ -38,6 +41,9 @@ function clean(raw: Record<string, unknown>): Product | string {
     stock,
     status: raw.status === 'hidden' ? 'hidden' : 'active',
     ...(href.startsWith('/') ? { href } : {}),
+    ...(description ? { description } : {}),
+    ...(features.length ? { features } : {}),
+    ...(images.length ? { images } : {}),
   };
 }
 

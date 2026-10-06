@@ -9,6 +9,7 @@ import Checkout from './pages/Checkout';
 import Gifts from './pages/Gifts';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
+import ProductDetail from './pages/ProductDetail';
 const AdminApp = lazy(() => import('./admin/AdminApp'));
 import './index.css';
 
@@ -25,7 +26,8 @@ const routes: Record<string, React.ComponentType> = {
   '/login': Login,
   '/admin': AdminApp,
 };
-const Page = routes[path] ?? App;
+const productId = !routes[path] && path.startsWith('/product/') ? decodeURIComponent(path.slice('/product/'.length)) : '';
+const Page = routes[path] ?? (productId ? () => <ProductDetail id={productId} /> : App);
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
