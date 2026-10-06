@@ -1,6 +1,6 @@
 import type { Order, Product, Settings } from '../shared/types';
 
-export type AmazonLookup = { asin: string; name: string; brand: string; price: number; images: string[]; bullets: string[]; source: 'canopy' | 'link'; note?: string };
+export type AmazonLookup = { asin: string; name: string; brand: string; price: number; images: string[]; bullets: string[]; description: string; source: 'canopy' | 'link'; note?: string };
 
 export type Session = { signedIn: boolean; passwordConfigured: boolean; storage: 'database' | 'memory' | 'none' };
 

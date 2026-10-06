@@ -13,7 +13,7 @@ const blank = (): Product => ({
 export default function Products({ products, onSave, readOnly }: { products: Product[]; onSave: (next: Product[]) => Promise<void>; readOnly: boolean }) {
   const [q, setQ] = useState('');
   const [cat, setCat] = useState('all');
-  const [editing, setEditing] = useState<{ product: Product; isNew: boolean; images?: string[]; notice?: string } | null>(null);
+  const [editing, setEditing] = useState<{ product: Product; isNew: boolean; notice?: string } | null>(null);
   const [fromLink, setFromLink] = useState(false);
   const [importing, setImporting] = useState(false);
   const [busy, setBusy] = useState<string | null>(null);
@@ -142,9 +142,11 @@ export default function Products({ products, onSave, readOnly }: { products: Pro
           onFound={(found) => {
             setFromLink(false);
             setEditing({
-              product: { ...blank(), name: found.name, producer: found.brand, price: found.price || blank().price, img: found.images[0] ?? '' },
+              product: {
+                ...blank(), name: found.name, producer: found.brand, price: found.price || blank().price, img: found.images[0] ?? '',
+                description: found.description || undefined, features: found.bullets.length ? found.bullets : undefined, images: found.images.length ? found.images : undefined,
+              },
               isNew: true,
-              images: found.images,
               notice: [
                 found.note,
                 products.some((p) => p.name.toLowerCase() === found.name.toLowerCase()) ? 'A product with this name is already in the shop.' : '',
@@ -161,7 +163,6 @@ export default function Products({ products, onSave, readOnly }: { products: Pro
         <ProductEditor
           initial={editing.product}
           isNew={editing.isNew}
-          images={editing.images}
           notice={editing.notice}
           readOnly={readOnly}
           existingIds={products.map((p) => p.id)}
@@ -177,13 +178,15 @@ export default function Products({ products, onSave, readOnly }: { products: Pro
   );
 }
 
-function ProductEditor({ initial, isNew, images = [], notice, readOnly, existingIds, onClose, onSubmit, error }: {
-  initial: Product; isNew: boolean; images?: string[]; notice?: string; readOnly: boolean; existingIds: string[]; error: string;
+function ProductEditor({ initial, isNew, notice, readOnly, existingIds, onClose, onSubmit, error }: {
+  initial: Product; isNew: boolean; notice?: string; readOnly: boolean; existingIds: string[]; error: string;
   onClose: () => void; onSubmit: (p: Product) => Promise<void>;
 }) {
   const [p, setP] = useState<Product>(initial);
   const [saving, setSaving] = useState(false);
   const set = <K extends keyof Product>(k: K, v: Product[K]) => setP((cur) => ({ ...cur, [k]: v }));
+  const images = p.images ?? [];
+  const [featuresText, setFeaturesText] = useState((initial.features ?? []).join('\n'));
 
   async function submit(e: FormEvent) {
     e.preventDefault();
@@ -193,8 +196,10 @@ function ProductEditor({ initial, isNew, images = [], notice, readOnly, existing
       id = base;
       for (let n = 2; existingIds.includes(id); n++) id = `${base}-${n}`;
     }
+    const features = featuresText.split('\n').map((f) => f.replace(/^[\s•*-]+/, '').trim()).filter(Boolean);
+    const description = p.description?.trim();
     setSaving(true);
-    await onSubmit({ ...p, id });
+    await onSubmit({ ...p, id, description: description || undefined, features: features.length ? features : undefined });
     setSaving(false);
   }
 
@@ -236,6 +241,8 @@ function ProductEditor({ initial, isNew, images = [], notice, readOnly, existing
           {F({ id: 'p-badge', text: 'Badge text', children: <input id="p-badge" value={p.badge.label} maxLength={30} onChange={(e) => set('badge', { ...p.badge, label: e.target.value })} placeholder="Best Seller" className={field} /> })}
           {F({ id: 'p-badge-style', text: 'Badge colour', children: <select id="p-badge-style" value={p.badge.className} onChange={(e) => set('badge', { ...p.badge, className: e.target.value })} className={field}>{BADGE_STYLES.map(([v, l]) => <option key={v} value={v}>{l}</option>)}</select> })}
           {F({ id: 'p-img', text: 'Image URL (https)', wide: true, children: <input id="p-img" type="url" pattern="https://.*" value={p.img} onChange={(e) => set('img', e.target.value)} placeholder="https://…" className={field} /> })}
+          {F({ id: 'p-desc', text: 'Description', wide: true, children: <textarea id="p-desc" rows={6} maxLength={6000} value={p.description ?? ''} onChange={(e) => set('description', e.target.value)} placeholder="What it is, how it’s made, how to use it…" className={field} /> })}
+          {F({ id: 'p-features', text: 'About this item (one point per line)', wide: true, children: <textarea id="p-features" rows={5} value={featuresText} onChange={(e) => setFeaturesText(e.target.value)} placeholder={'Stone-ground Bronte pistachios\nNo palm oil'} className={field} /> })}
           <div className="sm:col-span-2 flex flex-wrap gap-6">
             <label className="flex items-center gap-2 text-sm text-on-surface"><input type="checkbox" checked={p.gift} onChange={(e) => set('gift', e.target.checked)} className="rounded text-primary focus:ring-primary" /> Gift ready</label>
             <label className="flex items-center gap-2 text-sm text-on-surface"><input type="checkbox" checked={p.rare} onChange={(e) => set('rare', e.target.checked)} className="rounded text-primary focus:ring-primary" /> Rare allocation</label>

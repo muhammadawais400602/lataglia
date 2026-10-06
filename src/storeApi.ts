@@ -24,20 +24,22 @@ export function useSettings() {
   return settings;
 }
 
-export function useProducts() {
-  const [products, setProducts] = useState<Product[]>(seedProducts);
+export function useCatalog() {
+  const [state, setState] = useState<{ products: Product[]; loaded: boolean }>({ products: seedProducts, loaded: false });
   useEffect(() => {
     let live = true;
     fetch('/api/products')
       .then((r) => (r.ok ? r.json() : Promise.reject()))
-      .then((list: Product[]) => live && Array.isArray(list) && setProducts(list))
-      .catch(() => {});
+      .then((list: Product[]) => live && setState({ products: Array.isArray(list) ? list : seedProducts, loaded: true }))
+      .catch(() => live && setState((s) => ({ ...s, loaded: true })));
     return () => {
       live = false;
     };
   }, []);
-  return products;
+  return state;
 }
+
+export const useProducts = () => useCatalog().products;
 
 export async function placeOrder(payload: unknown): Promise<{ id: string; total: number }> {
   const res = await fetch('/api/orders', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });

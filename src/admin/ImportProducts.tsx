@@ -8,7 +8,7 @@ const MAX_PRODUCTS = 500;
 const MAX_FILE_BYTES = 8 * 1024 * 1024;
 const key = (name: string) => name.toLowerCase().replace(/[^a-z0-9]/g, '');
 
-const SAMPLE = 'name,price,stock,image_url,brand,size,place\n"Pistachio cream, 190g",16.00,24,https://example.com/cream.jpg,Bronte Dolci,190g jar,Bronte\n';
+const SAMPLE = 'name,price,stock,image_url,brand,size,place,description,bullet_point1,bullet_point2\n"Pistachio cream, 190g",16.00,24,https://example.com/cream.jpg,Bronte Dolci,190g jar,Bronte,"Stone-ground Bronte pistachios blended with cane sugar and olive oil.",35% pistachio,No palm oil\n';
 
 export default function ImportProducts({ products, onClose, onImport, error }: {
   products: Product[]; error: string; onClose: () => void; onImport: (next: Product[]) => Promise<boolean>;
@@ -55,7 +55,7 @@ export default function ImportProducts({ products, onClose, onImport, error }: {
     const byKey = new Map(chosen.map((r) => [key(r.name), r]));
     let next = products.map((p) => {
       const r = opts.duplicates === 'update' ? byKey.get(key(p.name)) : undefined;
-      return r ? { ...p, price: adjust(r.price), stock: r.stock, img: r.img || p.img } : p;
+      return r ? { ...p, price: adjust(r.price), stock: r.stock, img: r.img || p.img, description: r.description || p.description, features: r.features.length ? r.features : p.features } : p;
     });
     for (const r of adds) {
       const base = slug(r.name) || 'product';
@@ -66,6 +66,7 @@ export default function ImportProducts({ products, onClose, onImport, error }: {
         id, name: r.name, producer: r.producer, place: r.place, unit: r.unit, price: adjust(r.price),
         category: opts.category, region: opts.region, cert: opts.cert, badge: { label: '', className: BADGE_STYLES[0][0] },
         img: r.img, gift: false, rare: false, stock: r.stock, status: opts.status,
+        ...(r.description ? { description: r.description } : {}), ...(r.features.length ? { features: r.features } : {}),
       }];
     }
     setSaving(true);
@@ -96,7 +97,7 @@ export default function ImportProducts({ products, onClose, onImport, error }: {
           <li>Pick <b>All Listings Report</b> (or Active Listings) → <b>Request report</b>, then <b>Download</b> it when ready.</li>
           <li>Upload the downloaded <b>.txt</b> file below. Inventory template files (.csv/.txt) work too.</li>
         </ol>
-        <p>Any other CSV works if it has columns like <b>name, price, stock, image_url, brand, size</b>. <a href={sampleHref} download="lataglia-products-sample.csv" className="font-bold text-primary underline">Download a sample</a>.</p>
+        <p>Any other CSV works if it has columns like <b>name, price, stock, image_url, brand, size, description, bullet_point1…</b>. <a href={sampleHref} download="lataglia-products-sample.csv" className="font-bold text-primary underline">Download a sample</a>.</p>
       </div>
 
       <div>

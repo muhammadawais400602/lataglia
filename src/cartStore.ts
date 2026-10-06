@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { initialCart, type CartItem } from './cartData';
+import type { Product } from './shared/types';
 
 const KEY = 'lataglia-basket-v1';
 
@@ -28,4 +29,15 @@ export function useBasket() {
     }
   }, [basket]);
   return [basket, setBasket] as const;
+}
+
+export function addProduct(basket: Basket, p: Product, qty = 1): Basket {
+  const found = basket.items.find((i) => i.id === p.id);
+  const items = found
+    ? basket.items.map((i) => (i.id === p.id ? { ...i, qty: Math.min(99, i.qty + qty) } : i))
+    : [...basket.items, {
+        id: p.id, maker: [p.producer, p.place].filter(Boolean).join(' · '), name: p.name, meta: p.unit, unit: p.price, qty,
+        wrap: false, badge: { label: p.badge.label, className: 'text-badge-ink' }, img: p.img, href: p.href ?? `/product/${p.id}`,
+      }];
+  return { ...basket, items };
 }
