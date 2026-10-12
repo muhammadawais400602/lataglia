@@ -10,7 +10,7 @@ const CERTS = ['dop', 'igp', 'organic', 'estate'];
 
 function clean(raw: Record<string, unknown>): Product | string {
   const name = str(raw.name, 120);
-  const id = str(raw.id, 80).toLowerCase().replace(/[^a-z0-9-]/g, '');
+  const id = str(raw.id, 120).toLowerCase().replace(/[^a-z0-9-]/g, '');
   const price = num(raw.price);
   const stock = Math.floor(num(raw.stock));
   const img = str(raw.img, 1000);

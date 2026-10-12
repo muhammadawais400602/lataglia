@@ -12,6 +12,7 @@ import {
   regions,
   stories,
 } from './data';
+import { regionHref } from './regions';
 
 export default function App() {
   return (
@@ -249,7 +250,7 @@ function RegionsGrid() {
         {regions.map((r) => {
           const Tag = r.comingSoon ? 'div' : 'a';
           return (
-            <Tag key={r.name} href={r.comingSoon ? undefined : r.name === 'Sicilia' ? '/regions/sicilia' : '/shop'} className="group relative rounded overflow-hidden aspect-[4/5] bg-surface-container shadow hover:shadow-xl transition-all block">
+            <Tag key={r.name} href={r.comingSoon ? undefined : regionHref(r.name) ?? '/shop'} className="group relative rounded overflow-hidden aspect-[4/5] bg-surface-container shadow hover:shadow-xl transition-all block">
               <div
                 className={`w-full h-full bg-cover bg-center transition-transform duration-500 ${r.comingSoon ? 'filter grayscale opacity-70' : 'group-hover:scale-105'}`}
                 style={{ backgroundImage: `url('${r.img}')` }}

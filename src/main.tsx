@@ -2,7 +2,9 @@ import { lazy, StrictMode, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App';
 import Shop from './pages/Shop';
-import Region from './pages/Region';
+import Regions from './pages/Regions';
+import RegionStory from './pages/RegionStory';
+import { stories } from './regions';
 import Product from './pages/Product';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
@@ -16,8 +18,7 @@ import './index.css';
 const path = window.location.pathname.replace(/\/+$/, '');
 const routes: Record<string, React.ComponentType> = {
   '/shop': Shop,
-  '/regions': Region,
-  '/regions/sicilia': Region,
+  '/regions': Regions,
   '/product/sicilian-pistachio-cream': Product,
   '/cart': Cart,
   '/checkout': Checkout,
@@ -27,7 +28,8 @@ const routes: Record<string, React.ComponentType> = {
   '/admin': AdminApp,
 };
 const productId = !routes[path] && path.startsWith('/product/') ? decodeURIComponent(path.slice('/product/'.length)) : '';
-const Page = routes[path] ?? (productId ? () => <ProductDetail id={productId} /> : App);
+const story = path.startsWith('/regions/') ? stories[path.slice('/regions/'.length)] : undefined;
+const Page = routes[path] ?? (productId ? () => <ProductDetail id={productId} /> : story ? () => <RegionStory story={story} /> : path.startsWith('/regions/') ? Regions : App);
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
