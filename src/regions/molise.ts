@@ -1,0 +1,177 @@
+import type { RegionStory, StoryProduct } from './types';
+
+const p = {
+  caciocavallo: { id: 'di-nucci-caciocavallo-di-agnone', name: 'Caciocavallo di Agnone', meta: 'Aged 12–24 months · Whole 2 kg', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy', tag: 'DOP Method', tagTone: 'green', origin: 'Alto Molise' },
+  stracciata: { id: 'di-nucci-stracciata', name: 'Stracciata Molisana', meta: 'Hand-pulled daily · Fresh 500 g', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDqmbMaaWotLnqd7h746aY6nsFALWzvjqbkrArYOxWH0YaS3R83fCAwa_zPopqfTC19b2rndKbS0X7Nj0tC5mW1iAtX3KmPVZsS3ZsFiP0HIvHEAkj179Jhwx4pyyijMtfmbJUWOuzPdOd5gogteAa_cNezVDsRpXU2pkT0vo_nXW3O0JbzNZUqjoeSjms0C0zSftPsOjvMIjrOBbhGg700irDxZk2EN0lXZPe4eI9aZMgxn7bkIl7z', tag: 'Cold Ship', tagTone: 'red', origin: 'Alto Molise' },
+  pecorino: { id: 'pecorino-di-capracotta', name: 'Pecorino di Capracotta', meta: 'Aged 8 months · Wedge 300 g', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAl_5nHHJIzoS-WsCluRQYcsvFaCEJgLpMKhF74uchwSFZaiasRvF2QgOGb8yQIioI-Tl012aRJqnvzUfYVXVIN42AtBrqz67jqjAH3CbxmYm6uEHRkYdah0q_WAQSgW93YHOemOcCRZN921JwihtDRxkKHN7PzTEk88hPG_P2AV7Y_dSVKxmfxeIubOnR3JAqjFS_dXGAzG2xxfQE3VDOGzRjZcEhJ1T-LSazL8n3fCCvhoP3Kr76d', tag: 'Mountain Milk', tagTone: 'neutral', origin: 'Capracotta' },
+  truffle: { id: 'molise-fresh-white-truffle', name: 'Fresh White Truffle', meta: 'Tuber magnatum Pico · 25 g', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDtz4nC-_Ocop-ZSNl-oDRC-xid0fbJjTqVPUEMGXDc-UbWWdybXrqmu31H6mlNxK4JZOSsBI_3IAP1pL-W1sqt1ikgMdtTPYAT0fiJGYVfiXm7UE6JSLZGJ-xb1o2egOuz7ozHvr2e63HG1-ErCgCkLhUPU-GdEtqrYqG00tazkWu8J6e4OugEKo2UbKYbn45zRYHOGVhj2I5_DSh4G0FKDs3o_7WoAfI3PI8c74tSjobPIsG3e2gB', tag: 'Rare Reserve', tagTone: 'gold', origin: 'Isernia' },
+  oil: { id: 'molise-dop-extra-virgin-olive-oil', name: 'Molise DOP Extra Virgin', meta: 'Estate harvest 2024 · 500 ml', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w', tag: 'Cold Pressed', tagTone: 'green', origin: 'Larino' },
+  cavatelli: { id: 'molise-artisanal-cavatelli', name: 'Artisanal Cavatelli', meta: 'Slow dried 48 hrs · 500 g', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl', tag: 'Bronze Drawn', tagTone: 'gold', origin: 'Campobasso' },
+  fusilli: { id: 'molise-fusilli', name: 'Molisan Fusilli', meta: '500 g', img: 'https://lh3.googleusercontent.com/aida/AEtjO1XH3ztoRKkRdH9fjeZ7zGSvG7Z5lVtTJVcPxnxpnLlAyQgVptrChhD3aGe8eyAqVjd0t1vRNzKDPEjlQjVZ-Eo-tmswH65MCECJXC1QT7I-lJ124iYZKFjt2HHrSOK_zqbBcVos3Jg8CZW5bSAW6GQ8NC2GTMPbtiRRx9g9oxW6L3gS7A49QEWznJIYITZoOmWrGC6LiYi1Idw4k1vthGnlg7ZvP6f6Il5_lhaoAml5HXicCLGHPJRAbg', origin: 'Campobasso' },
+  confetti: { id: 'confetti-ricci-di-agnone', name: 'Confetti ricci di Agnone', meta: 'Box 250 g', origin: 'Agnone' },
+  passata: { id: 'molise-tomato-passata-rustica', name: 'Tomato passata rustica', meta: 'Jar 700 g', origin: 'Montenero' },
+} satisfies Record<string, StoryProduct>;
+
+const molise: RegionStory = {
+  slug: 'molise',
+  name: 'Molise',
+  seoTitle: 'Molisan Food and Pantry Ingredients | Italy Region by Region | La Taglia',
+  seoDescription: 'Cook Molise from its pantry: Caciocavallo di Agnone, stracciata, Pecorino di Capracotta, white truffles and cavatelli, with a recipe for cavatelli al ragù di maiale.',
+  kicker: 'Region nineteen: the land of the tratturi',
+  subtitle: 'Shepherds’ roads, stretched-curd cheese, and white truffles.',
+  hero: {
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDM3HpPPNBxXbPDc0sP8_npr_sZLlloM_We1KuwEvKftHq7OhCf-K_Ry7b7XdS7DCRHJWlnqegbA3gvRYJ7QC-m9uy0SIS-vtSpHpnMn_lmAeD6XDSAkY_IeK3EbfEs8RG99-XMzxKVfKYRLVBMKgRLOOFJodvjNeL2jAW-S-t4Z7sg_jppMI5-IQD7dM-ZwgCxH2NzY3YZ3ZpOF5Y_YEMefJ1rK3ySALbPiMovvMBi_xiDESl4Jemr',
+    imageAlt: 'Rolling green Apennine hills of Molise crossed by the grassy tratturi drove roads',
+    dossier: 'Terroir archive · Dossier N° 19',
+    badge: 'UNESCO pastoral heritage',
+    metrics: [
+      { icon: 'map', label: 'Provinces', value: 'Campobasso & Isernia' },
+      { icon: 'hiking', label: 'Trail artery', value: 'Tratturo Magno' },
+      { icon: 'terrain', label: 'Elevation', value: 'Highest 1,421 m' },
+      { icon: 'waves', label: 'Coastline', value: 'Adriatic 35 km' },
+    ],
+    heritage: 'Transhumance heritage',
+    heritageNote: 'campanacci dei tratturi',
+    imageCaption: { title: 'I Tratturi del Molise', body: 'Ancient transhumance pastures and grassy drove trails crossing the Apennine ridge.' },
+    imageTag: 'Alto Molise & Frentani Hills',
+  },
+  intro: [
+    'Molise is one of Italy’s smallest regions, born from its separation from Abruzzo, with just two provinces, Campobasso and Isernia, a short stretch of Adriatic coast, and a mostly mountainous interior. Its landscape is crossed by *tratturi*: the wide grassy drove roads that shepherds followed for centuries as they moved their flocks between seasonal pastures, a tradition of transhumance now recognized by UNESCO.',
+    'That pastoral life shaped the food: sheep and pork, stretched-curd cheeses from mountain milk, and simple farmhouse dishes. Molise sits between Abruzzo and Puglia, and its cooking carries traces of both, from chitarra pasta to cavatelli. Along the coast, Termoli has its own fish soup; inland, the woods yield prized white truffles. The result is honest, hearty country cooking from the region Italians like to joke “doesn’t exist.”',
+  ],
+  introQuote: 'Molise rewards the curious. Start with the ingredients that define it, learn the dishes they make possible, and meet a dairy family that dates its cheesemaking to 1662.',
+  pantry: {
+    eyebrow: 'Essential terroir goods',
+    lede: 'Six ingredients behind Molise’s best-known dishes, where each comes from, and how to recognize them.',
+    items: [
+      {
+        title: 'Caciocavallo di Agnone', place: 'Agnone, Capracotta, and the Alto Molise',
+        body: 'A pear-shaped, stretched-curd cow’s-milk cheese weighing 1.5 to 3 kilos, with a hazel-colored rind that darkens with age. Notarial records show Agnone specializing in caciocavallo as early as the 1500s.',
+        lookFor: 'caciocavallo di Agnone from the Alto Molise, listed among Molise’s traditional food products.',
+        products: [p.caciocavallo],
+      },
+      {
+        title: 'Stracciata', place: 'The Alto Molise',
+        body: 'A fresh stretched-curd cheese made from raw cow’s milk from Molisan pastures, gleaming white with cream-colored streaks and the clean taste of fresh milk.',
+        lookFor: 'stracciata molisana, one of the region’s traditional food products.',
+        products: [p.stracciata],
+      },
+      {
+        title: 'Pecorino di Capracotta', place: 'Capracotta and nearby villages',
+        body: 'A sheep’s-milk cheese from the high Alto Molise, made in Capracotta and in villages such as Agnone and Vastogirardi, each giving it slightly different notes.',
+        lookFor: 'pecorino made in Capracotta or the surrounding Alto Molise.',
+        products: [p.pecorino],
+      },
+      {
+        title: 'White truffle', place: 'Inland valleys of Isernia & Campobasso',
+        body: 'Molise’s damp inland valleys, around Carovilli, San Pietro Avellana, Capracotta, and Bojano, yield white truffles as well as black. Regional producers say Molise now supplies a large share of Italy’s truffle harvest.',
+        lookFor: '*Tuber magnatum Pico* for the prized white truffle, with Molise named as the origin.',
+        shelfLabel: 'In season',
+        products: [p.truffle],
+      },
+      {
+        title: 'Olive oil', place: 'Across the region',
+        body: 'Olives are grown on a limited scale in Molise, but the region produces a prized extra-virgin oil from gentile di Larino and rosciola cultivars.',
+        lookFor: 'Molise DOP designation on harvest seals.',
+        products: [p.oil],
+      },
+      {
+        title: 'Cavatelli', place: 'Across the region',
+        body: 'Small, curled shells of semolina pasta that Molise counts among its proudest creations, alongside long fusilli. In Campobasso they are served traditionally with rich pork ragù.',
+        lookFor: 'cavatelli bronze-extruded in Molise using 100% Italian durum wheat.',
+        products: [p.cavatelli],
+      },
+    ],
+  },
+  dishes: {
+    eyebrow: 'Culinary canon',
+    lede: 'Four dishes Molise makes its own.',
+    items: [
+      { title: 'Cavatelli al ragù di maiale', where: 'Campobasso', image: 'https://lh3.googleusercontent.com/aida/AEtjO1XjupcvBWdrJsFC9HLFt2bdjFwhoJ85whWBzKtrr1ef014BXL3EQAm_fmOb1fEB4RPsDq4Be4nT7lB8EyN-Khw50pKABjDapJE9fn8rLum3xOvn8C4k1mpU8BKJEteQfChNcf7S1gRth5ff-RiJNJxhKE3rngOcXbv19QhXGmTmUz8syhx060Tq7rgu7KGJzEIagxQhAupMukHw7SSmaGtyD187PnpqzGV4I58EtbbYLpzQ9N1KAwcXeQ', body: 'Cavatelli with a slow pork ragù, known locally as *cavatielle e carne e puorche*.', tip: '[Cook it below](#cavatelli-ragu)' },
+      { title: 'Pampanella', where: 'San Martino in Pensilis', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAPcC0a36PdQKRFN67N9n4iWBfhvVaOYD4lAqKygnUjTrscttDOYLVoI8x1mJHXJybsSr0etHTwY4pU0A01kN4o1IfpMOvEBAXOIrB8eZ11ou4LrSyCjELVvYNkcTxy0DtPWugtK_maKrpF1S29ogN-YzCyzhDGWnfH4HdQ3jXFuv8h73Z3GNxqFxYhHzG5euOwWXNcUn83KLa8hc2NC2nQFY3TdtlSPgMj0otF-z9Yn-C7fprrBLWX', body: 'Pork slow-cooked under a coating of sweet and hot ground pepper, garlic, and salt, splashed with wine vinegar at the end. Farm workers once wrapped it in vine leaves.', note: 'Traditional feast food' },
+      { title: 'Pezzata', where: 'Capracotta', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD3DyLWjHZNnUahIXVRqFuwGgYJBdyZm09UGDnl9cXdl6H6UU-Pl1gDXv1bLWsXseTdwuiujzAsWyj9bvxPR1CAJQ04u9iac5o5XBSAm-OHuk41AFvTp3mgciUZ6LQJZxFGgmgutgDDoQfkKMXnfg2UjCCYPPf06y4eK5F08c5c7bX4ZeqGT2I0gLJcVPbnyHaJ73geG9GreqIzaSTdWVO5L5D7fWpS3je3wDAORcXER6iiX2rkYkQn', body: 'A mutton stew tied to the transhumance, made when sheep injured on the journey had to be butchered over open copper cauldrons.', note: 'Transhumance staple' },
+      { title: 'U’vedrette', where: 'Termoli', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBxg7ZeusKi1XJ_YIbUpf7bMvUDHPzrJBa0kGGcUmiEWQXn5vyYqb10N5ExBRlYr2yJ0WfsFPe7URckqO8PDwMH0UDSwVm6XQCF-NoeAM33s50RkHXH5cUKTQIls7nyQjkd8xFb7E1CVsnD4Hx0oK8so72g2UalmTdOWlUWCd2mUYhcv42IUIFm1cqLKE69xjZ96SmNApFtb-zmua5MK2Erwp7yfRDiKgHOwIebR0rdf84T1bYeSwKl', body: 'Termoli’s fish soup, the signature of Molise’s short Adriatic coast, infused with green bell peppers and wild vinegar.', note: 'Adriatic coastal tradition' },
+    ],
+  },
+  maker: {
+    name: 'Caseificio Di Nucci',
+    place: 'Agnone',
+    paragraphs: [
+      'The Di Nucci family were herders from Capracotta, one of the highest towns in the Apennines, who three centuries ago moved their flocks along the transhumance routes and soon turned to cheesemaking. The family dates its dairy to 1662, making it one of Europe’s oldest cheesemakers still in business. Today it is based in Agnone and run by Franco and Rosetta Di Nucci with their children Serena, Antonia, and Francesco.',
+      'Its entire production is stretched-curd cheese made from the milk of nearby Alto Molise farms, worked within a couple of hours of milking. The Caciocavallo di Agnone ages for up to 24 months in a cellar lined with local stone. The dairy is an official supplier to the Vatican and has been named among the world’s top 100 cheese producers by TasteAtlas.',
+    ],
+    photos: [
+      { src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAnmv_x6pp8pedaJCwB3KpOyHiwoux-_Zw7UEg-8tHQA_WJGaPfnDtGodkrZjSiPXFoiIM0lbvgYcoOUCfJSy5AbEl111xwfxRWxfyGgSnyKAinmiguDsYDuxWCvIiDR15Qwm2ZKdjCzGHWmTjzYB1abwN7YqA65e_DwIc2qf_h09V0xMNEdJKbcLMYZFXc3RN2UXvi9uOgM0JYY1X1L5Wl1aUwDP0dBBQfz6uOjhWBl1K0MoFePgpE', alt: 'Stone-vaulted cellar lined with aging cheeses at Caseificio Di Nucci', caption: 'Stone aging cellar · Agnone' },
+      { src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAup5gyH9Bp1XqQHaEiiC2B1SMPipV2xRwTcLm3TOGA0GNCv09xIIXehf9soQONqLtE55IpSKVV2vHbgUGmJpQGnLTCLLBiSDB4BzU5aSlKcLM_PDsskj_fEE8ltBLZQZhyrs-dYKsuNKchbMwpLJMYSI2vVUylZTp-dsa3zyy3uTSMiK0wnx-2X3Ysz7VqVfaaThUKNGkbndeXigoGcraHgSmABSDkqfrMdAr3lNvPrubRpDapuBIf', alt: 'Cheesemakers of the Di Nucci family holding wooden curd paddles', caption: 'Family diary' },
+      { src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBGGA07_nVlJTgYjeOzddTmBAt_mQvF0cv95LcrTGPEO6-6raIvXpZgg-koQ4qOVeP1jiLYGlAdSTfXDKHZZWDT6aGHcJ0jevd6i9a6ibtaO2yKbgKXDNucq_e-bUd67XQTaVuy4bc9lK3eqgnHo7vM_sQTXfS2tdPJY5iAokx4CnvlgV3u63v0o_PkIci80Zan3yKGMrXJwxvFGqC8U06n6d_GubZWR3pz1EFI_56pkgqTCAM9iPf6', alt: 'Hands shaping hot stretched curd into a caciocavallo', caption: 'Hand shaping' },
+    ],
+    facts: [
+      { label: 'Founded', value: '1662' },
+      { label: 'Town', value: 'Agnone' },
+      { label: 'Aging', value: 'Up to 24 mos' },
+    ],
+    productsLabel: 'Direct provisions from Caseificio Di Nucci',
+    products: [p.caciocavallo, p.stracciata],
+  },
+  cook: {
+    eyebrow: 'Terroir kitchen',
+    lede: 'One classic from scratch and one ten-minute shortcut from Agnone.',
+    recipe: {
+      id: 'cavatelli-ragu',
+      title: 'Cavatelli al ragù di maiale',
+      serves: '4–6',
+      time: 'about 2¼ hours, mostly simmering',
+      from: 'Campobasso',
+      image: 'https://lh3.googleusercontent.com/aida/AEtjO1XjupcvBWdrJsFC9HLFt2bdjFwhoJ85whWBzKtrr1ef014BXL3EQAm_fmOb1fEB4RPsDq4Be4nT7lB8EyN-Khw50pKABjDapJE9fn8rLum3xOvn8C4k1mpU8BKJEteQfChNcf7S1gRth5ff-RiJNJxhKE3rngOcXbv19QhXGmTmUz8syhx060Tq7rgu7KGJzEIagxQhAupMukHw7SSmaGtyD187PnpqzGV4I58EtbbYLpzQ9N1KAwcXeQ',
+      imageCaption: 'Campobasso classic · slow braised 2¼ hours',
+      steps: [
+        { title: 'Brown the pork.', body: 'In a heavy pot, soften the onion in olive oil, then add the pork pieces and brown them well on all sides over medium-high heat.' },
+        { title: 'Simmer the ragù.', body: 'Pour in the wine and let it evaporate. Add the passata, basil, and a little salt, and simmer gently, partly covered, for about 2 hours, until the meat is very tender.' },
+        { title: 'Cook the cavatelli.', body: 'Boil the cavatelli in generously salted water until al dente (about 8–10 minutes), then drain thoroughly.' },
+        { title: 'Serve.', body: 'Toss the cavatelli with the rich red sauce and grated pecorino, and serve the succulent pork alongside or afterward as a second course.' },
+      ],
+      touch: 'Let the ragù simmer slowly so the pork gives its deep savor to the sauce. Finish the pasta with grated [Pecorino di Capracotta](product:pecorino-di-capracotta) rather than standard parmigiano for an unmistakable Alto Molise tang.',
+      shoppingList: [
+        '400 g [cavatelli](product:molise-artisanal-cavatelli)',
+        '500 g pork ribs & sausages',
+        '1 yellow onion, finely diced',
+        '3 tbsp extra-virgin olive oil',
+        'A glass of dry red wine (Tintilia)',
+        '700 g tomato passata',
+        'Fresh basil and sea salt',
+        '**Pecorino di Capracotta, to serve**',
+      ],
+      products: [p.cavatelli, p.pecorino],
+    },
+    shortcut: {
+      eyebrow: 'Aperitivo shortcut',
+      title: 'Ten minutes in Agnone',
+      body: 'Lay out fresh stracciata and slices of aged caciocavallo on a wooden board. Drizzle the stracciata with Molise olive oil and a pinch of salt, and serve both with warm crusty bread.',
+      button: 'Get the aperitivo pair',
+      products: [p.stracciata, p.caciocavallo],
+    },
+  },
+  readTheLabel: 'Many of Molise’s finest foods are small-scale traditional products rather than DOP or IGP, so the producer and place of origin matter most. Check the place of production, the ingredient list, and any DOP or IGP seal. Every product we carry states where it is made and the families behind it.',
+  set: {
+    eyebrow: 'Limited curation · Parcel N° 19',
+    title: 'Bring Molise home',
+    body: 'A Molisan table is built on mountain cheese, good oil, and pasta with a slow sauce. We’ve gathered eight ingredients from this story into one set: enough for cavatelli with ragù and a board of Agnone cheeses.',
+    button: 'Add the Molise pantry set',
+    products: [
+      { ...p.caciocavallo, name: 'Di Nucci Caciocavallo di Agnone', meta: 'Whole 2 kg', img: 'https://lh3.googleusercontent.com/aida/AEtjO1XWLjABkN9JNdg2bMlYH0fIp3xRDXJYWo5LVly80wovSC1tTyvX-HHS1Z91q401b7ynxsVkhS-vyRNVTzYxLLT2ewPKyZ1N57DPMd9UpCRVoUk_lHtsprvCectHtmhxNOyZDy6MYysvgWyJSSTLw7Yw1UPq9h1QL-MIHwdcpwKXYxlGNp_XW673nd9VsUbx3Cs0zt7NLyEcNI4GNFIhU0lMAgUvh5IIl2qctPoY_gs89gr5IUNqpbhokFY' },
+      { ...p.stracciata, name: 'Di Nucci Stracciata', meta: 'Fresh 500 g', img: 'https://lh3.googleusercontent.com/aida/AEtjO1WCqfgrfdVz10TTAP4VHAbWME_F1icDwiMcZJc3FwdBoNE-HJiDHW2oyjy7XzEyhB0mkGG44POcgoOyITpRmkWUZ76Ce7OK41whkiNGdbAWJFlbmMI4olD_v92PooJMs8r0tgwObte6kb-qNx7J5uO_5GEfgBTBiebJj0ClhTXqCR9EASOBPk436WXX1DVYi5-rUP8ywg1-cCLt_LoNpfCL_IXu0guKuMvRj_5qv-IDaQNjtGYDxqbiig' },
+      { ...p.pecorino, meta: 'Wedge 300 g', img: 'https://lh3.googleusercontent.com/aida/AEtjO1UEXWbKadtpI_Fu7cQydJr5RDFeVECGew6RZnCCxsfBnOKbr1X-wRHmQBuPCy3MXYzcHpcyagLuGFL3zxNaYTUC8fadV127fWTlVCg8i6Os4g1zoqjiCBxjvQbPo4XK5qodDhK_z4dMcyIW_2F9TF17Vz5LbCBn3IOdoExCjnSAJHh6gGm2AJDikIo75a8S4RwdTz9fgz1bZ_0AM5EfzK9-bFjCZ8VBq8LO1SMK7vFifWGVk53G8Z5ECqw' },
+      { ...p.oil, name: 'Molise DOP olive oil', meta: 'Bottle 500 ml', img: 'https://lh3.googleusercontent.com/aida/AEtjO1UGaqDggIi3G7sIgIf0_eKWQUrjTiO4829HFnphdKotI21OyoXWY9wGL1lcZ-1iBcFoPdpPECFdmXrBsBYb7fpBdfU-sLxaW72c8eMu0iRXFRRqoXxvR77zKCvV2K6bSVrXK10C38pYILAkf3WAKGmFac2FHIpLMWlYBI-9SyO3Owz0ICJ76DPk5KQk40HBt7c5EK4d5zbSPxmji-wqP2WomT2fZUxTbiME8vrMcqmxae7ChNI8PqHqALA' },
+      { ...p.cavatelli, meta: '500 g', img: 'https://lh3.googleusercontent.com/aida/AEtjO1XH3ztoRKkRdH9fjeZ7zGSvG7Z5lVtTJVcPxnxpnLlAyQgVptrChhD3aGe8eyAqVjd0t1vRNzKDPEjlQjVZ-Eo-tmswH65MCECJXC1QT7I-lJ124iYZKFjt2HHrSOK_zqbBcVos3Jg8CZW5bSAW6GQ8NC2GTMPbtiRRx9g9oxW6L3gS7A49QEWznJIYITZoOmWrGC6LiYi1Idw4k1vthGnlg7ZvP6f6Il5_lhaoAml5HXicCLGHPJRAbg' },
+      p.fusilli,
+      p.confetti,
+      p.passata,
+    ],
+  },
+  about: [
+    'La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources and our direct field visits.',
+  ],
+  sources: 'Italia.it (ENIT) on Molisan food and dishes; Zanichelli regional cuisine notes on Molise; ONAF on Caciocavallo di Agnone; Touring Club Italiano on Agnone; Scatti di Gusto on Molisan traditional products; AGI on Molise truffles; Spiagge.it and Roadsurfer on the tratturi and transhumance; The International Kitchen and Pizza e Pasta Italiana on pampanella; Gazzetta del Gusto, 9colonne, and Expedia listing on Caseificio Di Nucci.',
+};
+
+export default molise;

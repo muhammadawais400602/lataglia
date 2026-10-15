@@ -27,6 +27,16 @@ const sicilia: RegionStory = {
   seoDescription: 'Cook Sicily from its pantry: Bronte pistachios, Pantelleria capers, Avola almonds, Modica chocolate and the dishes they make, with recipes for pasta alla Norma and caponata.',
   kicker: 'Region one: the island',
   subtitle: 'A table shaped by the sea, the sun and centuries of exchange.',
+  hero: {
+    dossier: 'Terroir archive · Dossier N° 01',
+    badge: 'Mediterranean crossroads',
+    metrics: [
+      { icon: 'volcano', label: 'Landmark', value: 'Mount Etna' },
+      { icon: 'waves', label: 'Island', value: 'Largest in the Med' },
+      { icon: 'eco', label: 'Signature', value: 'Bronte pistachio' },
+      { icon: 'sailing', label: 'Influences', value: 'Greek, Arab, Spanish' },
+    ],
+  },
   intro: [
     'Sicily sits at the toe of Italy’s boot, separated from Calabria by the narrow Strait of Messina and closer to the coast of Tunisia than to Naples. It is the largest island in the Mediterranean: hot, dry, and ringed by sea, with Mount Etna, Europe’s tallest active volcano, rising over the east. That position made it a crossroads. Greeks planted olives and vines, Arabs brought citrus, sugar cane, and saffron, and Spanish rule carried tomatoes and cacao from the Americas. Sicilians absorbed all of it, farming volcanic slopes and sunbaked plains and fishing the waters on every side. The result is a cuisine of sea and sun, thrifty and festive at once, where North African couscous and Spanish-era chocolate sit comfortably beside the pasta.',
     'Sicily tastes of many things at once: bright citrus and tomato, toasted almonds, sea salt, wild fennel, and the surprise of raisins folded into savory dishes. The simplest ingredients here carry a remarkable amount of history.',

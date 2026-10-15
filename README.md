@@ -33,7 +33,7 @@ Without the database, the shop still shows the built-in catalog, but checkout ca
 
 ## Region stories (`/regions/<slug>`)
 
-Each region page is one data file in `src/regions/` (see `sicilia.ts`), rendered by `src/pages/RegionStory.tsx` in the site's design. To add a region: copy `sicilia.ts`, change the text, products and recipe, and add it to `stories` in `src/regions/index.ts`. Its card on the home page, `/regions` and the footer then links to it.
+Each region page is one data file in `src/regions/` (see `sicilia.ts`), rendered by `src/pages/RegionStory.tsx` in the site's design. To add a region: copy `molise.ts`, change the text, photos, products and recipe, and add it to `stories` in `src/regions/index.ts`. Its card on the home page, `/regions` and the footer then links to it.
 
 Product tiles in a story point at a catalog product by its page address. In Admin → Products, set a product's **Page address** to the same value as the story's `id` to connect them: the tile then shows the price, links to the product page and is included in the story's set. Tiles without a matching product show "arriving soon".
 
