@@ -287,7 +287,7 @@ export default function Signup() {
               <p className="font-caption text-caption text-ink-tertiary">Verified Micro-Producers Only</p>
             </div>
             <div className="h-10 w-px bg-surface-container-highest hidden sm:block" />
-            <a href="/#makers" className="px-5 py-2.5 rounded-full bg-on-surface text-surface font-button-sm text-button-sm hover:bg-wine-dark transition-colors whitespace-nowrap">Read Provenance Manifesto</a>
+            <a href="/about" className="px-5 py-2.5 rounded-full bg-on-surface text-surface font-button-sm text-button-sm hover:bg-wine-dark transition-colors whitespace-nowrap">Read Provenance Manifesto</a>
           </div>
         </div>
       </div>
