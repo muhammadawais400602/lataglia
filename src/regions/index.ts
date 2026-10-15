@@ -10,7 +10,11 @@ export const hasStory = (slug: string) => regionMeta.some((m) => m.slug === slug
 
 export async function loadStory(slug: string): Promise<RegionStory | null> {
   const load = hasStory(slug) ? loaders[`./${slug}.ts`] : undefined;
-  return load ? (await load()).default : null;
+  if (!load) return null;
+  const story = (await load()).default;
+  // The site's own region photo (home-page card) wins over a described Unsplash banner.
+  const card = baseCards.find((c) => regionSlug(c.name) === slug);
+  return card && typeof story.hero.image !== 'string' ? { ...story, hero: { ...story.hero, image: card.img } } : story;
 }
 
 export const regionSlug = (name: string) => name.toLowerCase().normalize('NFD').replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '-');
