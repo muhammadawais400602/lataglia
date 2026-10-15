@@ -22,10 +22,10 @@ export default function Footer() {
             </div>
           </div>
           <FooterCol title="Collections" items={[
-            { href: '/#pistachio', label: 'The Pistachio Edit' },
-            { href: '/#pasta', label: 'Artisanal Bronze Pasta' },
-            { href: '/shop', label: 'Traditional Balsamic DOP' },
-            { href: '/shop', label: 'Extra Virgin Olive Oils' },
+            { href: '/shop?category=pistachio', label: 'The Pistachio Edit' },
+            { href: '/shop?category=pasta', label: 'Artisanal Bronze Pasta' },
+            { href: '/shop?category=balsamics', label: 'Traditional Balsamic DOP' },
+            { href: '/shop?category=oils', label: 'Extra Virgin Olive Oils' },
             { href: '/#bestsellers', label: 'Best Sellers' },
           ]} />
           <FooterCol title="Regions" items={featuredRegions.slice(0, 6).map((r) => ({ href: regionHref(r.name) ?? '/regions', label: r.name }))} />
