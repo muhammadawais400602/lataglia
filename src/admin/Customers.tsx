@@ -111,3 +111,37 @@ export function Subscribers() {
     </Card>
   );
 }
+
+type Inquiry = { id: string; name: string; email: string; type: string; message: string; createdAt: string };
+
+/** Messages sent from the concierge form on the About page. */
+export function Inquiries() {
+  const [list, setList] = useState<Inquiry[] | null>(null);
+  useEffect(() => {
+    fetch('/api/admin/inquiries', { credentials: 'same-origin' })
+      .then((r) => (r.ok ? r.json() : []))
+      .then(setList)
+      .catch(() => setList([]));
+  }, []);
+  return (
+    <Card title={`Concierge messages${list ? ` (${list.length})` : ''}`}>
+      {!list ? (
+        <p className="text-sm text-ink-tertiary">Loading…</p>
+      ) : list.length === 0 ? (
+        <Empty icon="support_agent" title="No messages yet">Messages sent from the About page appear here.</Empty>
+      ) : (
+        <ul className="divide-y divide-surface-container text-sm">
+          {list.map((m) => (
+            <li key={m.id} className="py-3 space-y-1">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <span className="font-semibold text-on-surface">{m.name} · <a href={`mailto:${m.email}?subject=${encodeURIComponent('Your message to La Taglia')}`} className="text-primary hover:underline">{m.email}</a></span>
+                <span className="text-xs text-ink-tertiary">{m.type} · {shortDate(m.createdAt)}</span>
+              </div>
+              <p className="text-ink-secondary whitespace-pre-line">{m.message}</p>
+            </li>
+          ))}
+        </ul>
+      )}
+    </Card>
+  );
+}

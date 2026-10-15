@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState, type FormEvent } from 'react';
 import type { Order, Product, Settings } from '../shared/types';
 import { adminApi, ApiError, type Session } from './api';
-import Customers, { Subscribers } from './Customers';
+import Customers, { Inquiries, Subscribers } from './Customers';
 import Orders from './Orders';
 import Overview from './Overview';
 import Products from './Products';
@@ -278,7 +278,7 @@ function Dashboard({ session, onSignedOut }: { session: Session; onSignedOut: ()
                 />
               )}
               {tab === 'products' && <Products products={products} readOnly={readOnly} onSave={async (next) => setProducts(await guard(adminApi.saveProducts(next)))} />}
-              {tab === 'customers' && <div className="space-y-6"><Customers orders={orders} onOpenOrder={openOrder} /><Subscribers /></div>}
+              {tab === 'customers' && <div className="space-y-6"><Customers orders={orders} onOpenOrder={openOrder} /><Inquiries /><Subscribers /></div>}
               {tab === 'settings' && <SettingsPanel settings={settings} session={session} readOnly={readOnly} onSave={async (s) => setSettings(await guard(adminApi.saveSettings(s)))} />}
             </>
           )}

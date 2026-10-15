@@ -6,7 +6,7 @@ const links = [
   { href: '/regions', label: 'Regions' },
   { href: '/gifts', label: 'Gifts' },
   { href: '/story', label: 'Our Story' },
-  { href: '/#makers', label: 'About' },
+  { href: '/about', label: 'About' },
 ];
 
 function RegionCard({ r, compact, onPick }: { r: (typeof featuredRegions)[number]; compact?: boolean; onPick?: () => void }) {

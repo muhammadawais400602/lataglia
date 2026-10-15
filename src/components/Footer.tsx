@@ -30,11 +30,12 @@ export default function Footer() {
           ]} />
           <FooterCol title="Regions" items={featuredRegions.slice(0, 6).map((r) => ({ href: regionHref(r.name) ?? '/regions', label: r.name }))} />
           <FooterCol title="Assistance" items={[
+            { href: '/about', label: 'About Us' },
+            { href: '/story', label: 'Our Story' },
+            { href: '/about#people', label: 'Meet the Producers' },
             { href: '/gifts#corporate', label: 'Corporate Gifting' },
-            { href: '/#makers', label: 'Meet the Producers' },
-            { href: '/shop#shipping', label: 'Shipping & Freshness' },
-            { href: '#', label: 'Order Tracking' },
-            { href: '#', label: 'Contact Concierge' },
+            { href: '/about#faq', label: 'Shipping & Freshness' },
+            { href: '/about#contact', label: 'Contact Concierge' },
           ]} />
         </div>
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/60 gap-4">
