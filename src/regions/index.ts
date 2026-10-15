@@ -36,3 +36,6 @@ export const regionCards: Card[] = [
 
 /** Eight regions for the menu and home grid: those with a story first, then the rest in order. */
 export const featuredRegions: Card[] = [...regionCards.filter((c) => regionHref(c.name)), ...regionCards.filter((c) => !regionHref(c.name))].slice(0, 8);
+
+/** Every region in A–Z order, for the Regions mega menu. */
+export const allRegions: Card[] = [...regionCards].sort((a, b) => a.name.localeCompare(b.name));
