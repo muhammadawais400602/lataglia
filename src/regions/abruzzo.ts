@@ -11,7 +11,43 @@ const abruzzo: RegionStory = {
   "subtitle": "Shepherds’ trails, saffron fields, and sugared almonds.",
   "hero": {
     "color": "#2E3350",
-    "colorDeep": "#1F2338"
+    "colorDeep": "#1F2338",
+    "dossier": "Terroir archive · Dossier N° 15",
+    "badge": "Transhumance shepherd heritage",
+    "metrics": [
+      {
+        "icon": "waves",
+        "label": "Coastline",
+        "value": "130 km of Adriatic"
+      },
+      {
+        "icon": "terrain",
+        "label": "Mountains",
+        "value": "Gran Sasso & Majella"
+      },
+      {
+        "icon": "agriculture",
+        "label": "Red gold",
+        "value": "Navelli saffron"
+      },
+      {
+        "icon": "history_edu",
+        "label": "Confetti",
+        "value": "Sulmona, from 1492"
+      }
+    ],
+    "heritage": "Transhumance heritage",
+    "imageCaption": {
+      "title": "Gran Sasso and Majella",
+      "body": "The highest peaks of the Apennines, so close to the coast you can reach the sea in under two hours."
+    },
+    "imageTag": "Apennines · Gran Sasso",
+    "heritageNote": "forte e gentile",
+    "image": {
+      "q": "Gran Sasso and Majella Abruzzo || Abruzzo landscape",
+      "orientation": "landscape"
+    },
+    "imageAlt": "The highest peaks of the Apennines, so close to the coast you can reach the sea in under two hours."
   },
   "intro": [
     "Abruzzo rises from 130 kilometers of Adriatic coast to the highest peaks of the Apennines, the Gran Sasso and the Majella, so close together that you can eat in the mountains in the morning and reach the sea in under two hours. For centuries its people lived by sheep. Each year shepherds drove their flocks along the great transhumance trails between the cool summer pastures of the Abruzzo mountains and the plains of Puglia, and their cooking still shapes the region: lamb and mutton grilled over embers or stewed for hours in copper pots, and pecorino made from raw sheep’s milk. On the high plateaus, farmers grew saffron and lentils; in towns like Teramo and Sulmona, cooks and confectioners turned simple ingredients into festive specialties. Italians describe Abruzzo as “forte e gentile,” strong and gentle, and its food is both.",
@@ -29,7 +65,14 @@ const abruzzo: RegionStory = {
           {
             "id": "abr-zafferano",
             "name": "Zafferano dell’Aquila DOP",
-            "meta": "Threads"
+            "meta": "Threads",
+            "tag": "DOP",
+            "tagTone": "gold",
+            "origin": "Navelli plateau",
+            "img": {
+              "q": "Zafferano dell’Aquila Abruzzo || Zafferano dell’Aquila || Saffron food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -42,7 +85,14 @@ const abruzzo: RegionStory = {
           {
             "id": "abr-chitarra",
             "name": "Maccheroni alla chitarra",
-            "meta": "500 g"
+            "meta": "500 g",
+            "tag": "Egg pasta",
+            "tagTone": "neutral",
+            "origin": "Abruzzo",
+            "img": {
+              "q": "Maccheroni alla chitarra Abruzzo || Maccheroni alla chitarra || Chitarra pasta food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -55,7 +105,14 @@ const abruzzo: RegionStory = {
           {
             "id": "abr-pecorino-farindola",
             "name": "Pecorino di Farindola",
-            "meta": "Wedge"
+            "meta": "Wedge",
+            "tag": "Slow Food",
+            "tagTone": "green",
+            "origin": "Farindola",
+            "img": {
+              "q": "Pecorino di Farindola Abruzzo || Pecorino di Farindola || Pecorino food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -68,7 +125,14 @@ const abruzzo: RegionStory = {
           {
             "id": "abr-lenticchie",
             "name": "Lentils of Santo Stefano di Sessanio",
-            "meta": "500 g"
+            "meta": "500 g",
+            "tag": "Pantry staple",
+            "tagTone": "neutral",
+            "origin": "Santo Stefano",
+            "img": {
+              "q": "Lentils of Santo Stefano di Sessanio Abruzzo || Lentils of Santo Stefano di Sessanio || Lentils food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -81,7 +145,14 @@ const abruzzo: RegionStory = {
           {
             "id": "abr-olio",
             "name": "Aprutino Pescarese DOP extra-virgin olive oil",
-            "meta": "Bottle"
+            "meta": "Bottle",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Pescara hills",
+            "img": {
+              "q": "Aprutino Pescarese extra-virgin olive oil Abruzzo || Aprutino Pescarese extra-virgin olive oil || Olive oil food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -94,11 +165,19 @@ const abruzzo: RegionStory = {
           {
             "id": "abr-confetti",
             "name": "Confetti di Sulmona",
-            "meta": "Box"
+            "meta": "Box",
+            "tag": "Wedding sweet",
+            "tagTone": "neutral",
+            "origin": "Sulmona",
+            "img": {
+              "q": "Confetti di Sulmona Abruzzo || Confetti di Sulmona || Confetti food",
+              "orientation": "squarish"
+            }
           }
         ]
       }
-    ]
+    ],
+    "eyebrow": "Mountain-to-sea pantry"
   },
   "dishes": {
     "lede": "Four dishes Abruzzo makes its own.",
@@ -107,26 +186,44 @@ const abruzzo: RegionStory = {
         "title": "Scrippelle ’mbusse",
         "where": "Teramo",
         "body": "Thin crepes sprinkled with cheese, rolled up, and served in hot chicken broth. A festive first course in Teramo.",
-        "tip": "[Cook it below](#scrippelle)"
+        "tip": "[Cook it below](#scrippelle)",
+        "image": {
+          "q": "Scrippelle ’mbusse Abruzzo food || Scrippelle ’mbusse food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Chitarra con le pallottine",
         "where": "Across the region",
         "body": "Square-edged chitarra pasta in tomato sauce with tiny meatballs, the classic Abruzzese Sunday lunch. It is also served with lamb ragù.",
-        "tip": "Start with [maccheroni alla chitarra](product:abr-chitarra)."
+        "tip": "Start with [maccheroni alla chitarra](product:abr-chitarra).",
+        "image": {
+          "q": "Chitarra con le pallottine Abruzzo food || Chitarra con le pallottine food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Arrosticini",
         "where": "The Gran Sasso and beyond",
         "body": "Small skewers of sheep meat grilled over embers on a brazier called a fornacella. Born as a shepherds’ way to use the less noble cuts, eaten by the dozen.",
-        "tip": "[Make them below](#shortcut)"
+        "tip": "[Make them below](#shortcut)",
+        "image": {
+          "q": "Arrosticini Abruzzo food || Arrosticini food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Pecora alla callara",
         "where": "The mountains",
-        "body": "Mutton stewed for hours in a copper pot, once hung over the fire on the hearth chain. A dish of the transhumance."
+        "body": "Mutton stewed for hours in a copper pot, once hung over the fire on the hearth chain. A dish of the transhumance.",
+        "note": "A dish of the transhumance",
+        "image": {
+          "q": "Pecora alla callara Abruzzo food || Pecora alla callara food",
+          "orientation": "landscape"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Culinary canon"
   },
   "maker": {
     "name": "Confetti Pelino",
@@ -135,7 +232,32 @@ const abruzzo: RegionStory = {
       "In 1783, Berardino Pelino started a business trading almonds in Introdacqua, just outside Sulmona. Over the generations it became a confetti maker and, in the second half of the 1800s, moved into the heart of Sulmona, by then home to a dozen confetti workshops. The company is still run by the Pelino family, today led by Mario Pelino.",
       "Pelino makes confetti from almonds and sugar, without flour or starch. Next to the factory, the family runs a free museum of confetti making, with the old machines and tools, documents, family photographs, and the first telephone installed in Sulmona."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": {
+          "q": "museum workshop Sulmona Abruzzo || museum workshop Abruzzo || Sulmona Abruzzo",
+          "orientation": "landscape"
+        },
+        "alt": "Confetti museum · Sulmona",
+        "caption": "Confetti museum · Sulmona"
+      },
+      {
+        "src": {
+          "q": "confetti Sulmona Abruzzo || confetti Abruzzo || Sulmona Abruzzo",
+          "orientation": "landscape"
+        },
+        "alt": "Almond confetti · no starch",
+        "caption": "Almond confetti · no starch"
+      },
+      {
+        "src": {
+          "q": "Pelino almond confetti Sulmona Abruzzo || Pelino almond confetti Abruzzo || Sulmona Abruzzo",
+          "orientation": "landscape"
+        },
+        "alt": "Pelino confetti · since 1783",
+        "caption": "Pelino confetti · since 1783"
+      }
+    ],
     "facts": [
       {
         "label": "Founded",
@@ -155,12 +277,26 @@ const abruzzo: RegionStory = {
       {
         "id": "abr-pelino-classici",
         "name": "Pelino almond confetti",
-        "meta": "Box"
+        "meta": "Box",
+        "tag": "Since 1783",
+        "tagTone": "gold",
+        "origin": "Sulmona",
+        "img": {
+          "q": "Pelino almond confetti Abruzzo || Pelino almond confetti",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "abr-pelino-assortiti",
         "name": "Pelino assorted confetti",
-        "meta": "Box"
+        "meta": "Box",
+        "tag": "Since 1783",
+        "tagTone": "gold",
+        "origin": "Sulmona",
+        "img": {
+          "q": "Pelino assorted confetti Abruzzo || Pelino assorted confetti",
+          "orientation": "squarish"
+        }
       }
     ]
   },
@@ -205,7 +341,14 @@ const abruzzo: RegionStory = {
         {
           "id": "abr-pecorino-farindola",
           "name": "Pecorino di Farindola",
-          "meta": "Wedge"
+          "meta": "Wedge",
+          "tag": "Slow Food",
+          "tagTone": "green",
+          "origin": "Farindola",
+          "img": {
+            "q": "Pecorino di Farindola Abruzzo || Pecorino di Farindola || Pecorino food",
+            "orientation": "squarish"
+          }
         }
       ],
       "schema": {
@@ -223,6 +366,11 @@ const abruzzo: RegionStory = {
           "About 1.2 L hot chicken broth",
           "60 g grated pecorino and Parmigiano Reggiano, mixed"
         ]
+      },
+      "imageCaption": "Teramo classic · ready in about 40 minutes",
+      "image": {
+        "q": "Scrippelle ’mbusse Abruzzo food || Scrippelle ’mbusse food",
+        "orientation": "landscape"
       }
     },
     "shortcut": {
@@ -232,15 +380,32 @@ const abruzzo: RegionStory = {
         {
           "id": "abr-arrosticini",
           "name": "Arrosticini",
-          "meta": "Skewers"
+          "meta": "Skewers",
+          "tag": "Sheep skewers",
+          "tagTone": "neutral",
+          "origin": "Gran Sasso",
+          "img": {
+            "q": "Arrosticini Abruzzo || Arrosticini",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "abr-olio",
           "name": "Aprutino Pescarese DOP extra-virgin olive oil",
-          "meta": "Bottle"
+          "meta": "Bottle",
+          "tag": "DOP",
+          "tagTone": "green",
+          "origin": "Pescara hills",
+          "img": {
+            "q": "Aprutino Pescarese extra-virgin olive oil Abruzzo || Aprutino Pescarese extra-virgin olive oil || Olive oil food",
+            "orientation": "squarish"
+          }
         }
-      ]
-    }
+      ],
+      "eyebrow": "Gran Sasso shortcut",
+      "button": "Get the arrosticini pair"
+    },
+    "eyebrow": "Terroir kitchen"
   },
   "readTheLabel": "Saffron sold without a named origin may come from anywhere; whole threads from a protected origin are easier to trust. Confetti made with starch are cheaper, but not the same. Check the place of production, the ingredient list, and any DOP or IGP seal. Every product we carry states where it is made.",
   "set": {
@@ -251,44 +416,101 @@ const abruzzo: RegionStory = {
       {
         "id": "abr-zafferano",
         "name": "Zafferano dell’Aquila DOP",
-        "meta": "Threads"
+        "meta": "Threads",
+        "tag": "DOP",
+        "tagTone": "gold",
+        "origin": "Navelli plateau",
+        "img": {
+          "q": "Zafferano dell’Aquila Abruzzo || Zafferano dell’Aquila || Saffron food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "abr-chitarra",
         "name": "Maccheroni alla chitarra",
-        "meta": "500 g"
+        "meta": "500 g",
+        "tag": "Egg pasta",
+        "tagTone": "neutral",
+        "origin": "Abruzzo",
+        "img": {
+          "q": "Maccheroni alla chitarra Abruzzo || Maccheroni alla chitarra || Chitarra pasta food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "abr-lenticchie",
         "name": "Santo Stefano lentils",
-        "meta": "500 g"
+        "meta": "500 g",
+        "tag": "Pantry staple",
+        "tagTone": "neutral",
+        "origin": "Santo Stefano",
+        "img": {
+          "q": "Lentils of Santo Stefano di Sessanio Abruzzo || Lentils of Santo Stefano di Sessanio || Lentils food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "abr-ceci-navelli",
         "name": "Navelli chickpeas",
-        "meta": "500 g"
+        "meta": "500 g",
+        "tag": "Pantry staple",
+        "tagTone": "neutral",
+        "origin": "Navelli",
+        "img": {
+          "q": "Navelli chickpeas Abruzzo || Navelli chickpeas",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "abr-pecorino-farindola",
         "name": "Pecorino di Farindola",
-        "meta": "Wedge"
+        "meta": "Wedge",
+        "tag": "Slow Food",
+        "tagTone": "green",
+        "origin": "Farindola",
+        "img": {
+          "q": "Pecorino di Farindola Abruzzo || Pecorino di Farindola || Pecorino food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "abr-olio",
         "name": "Aprutino Pescarese DOP oil",
-        "meta": "Bottle"
+        "meta": "Bottle",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Pescara hills",
+        "img": {
+          "q": "Aprutino Pescarese extra-virgin olive oil Abruzzo || Aprutino Pescarese extra-virgin olive oil || Olive oil food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "abr-pelino-classici",
         "name": "Pelino almond confetti",
-        "meta": "Box"
+        "meta": "Box",
+        "tag": "Since 1783",
+        "tagTone": "gold",
+        "origin": "Sulmona",
+        "img": {
+          "q": "Pelino almond confetti Abruzzo || Pelino almond confetti",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "abr-confetti",
         "name": "Confetti di Sulmona",
-        "meta": "Box"
+        "meta": "Box",
+        "tag": "Wedding sweet",
+        "tagTone": "neutral",
+        "origin": "Sulmona",
+        "img": {
+          "q": "Confetti di Sulmona Abruzzo || Confetti di Sulmona || Confetti food",
+          "orientation": "squarish"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Limited curation · Parcel N° 15"
   },
   "about": [
     "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."

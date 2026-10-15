@@ -5,12 +5,15 @@
 
 export type Tone = 'green' | 'red' | 'gold' | 'neutral';
 
+/** A photo: a direct image URL, or a description that the site looks up once on Unsplash and then keeps. */
+export type Photo = string | { q: string; orientation?: 'landscape' | 'portrait' | 'squarish' };
+
 export type StoryProduct = {
   /** Catalog product id (the part after /product/). Set the same Page address in Admin → Products to link it. */
   id: string;
   name: string;
   meta: string;
-  img?: string;
+  img?: Photo;
   /** Small label on the pantry card, e.g. "DOP Method" or "Cold Ship". */
   tag?: string;
   tagTone?: Tone;
@@ -33,7 +36,7 @@ export type RegionStory = {
     color?: string;
     colorDeep?: string;
     /** Landscape photo. Without one, a maiolica tile pattern in the banner colour is shown. */
-    image?: string;
+    image?: Photo;
     imageAlt?: string;
     dossier?: string;
     badge?: string;
@@ -54,13 +57,13 @@ export type RegionStory = {
   dishes: {
     eyebrow?: string;
     lede: string;
-    items: { title: string; where: string; body: string; image?: string; tip?: string; note?: string }[];
+    items: { title: string; where: string; body: string; image?: Photo; tip?: string; note?: string }[];
   };
   maker?: {
     name: string;
     place: string;
     paragraphs: string[];
-    photos: { src: string; alt: string; caption?: string }[];
+    photos: { src: Photo; alt: string; caption?: string }[];
     facts: { label: string; value: string }[];
     productsLabel?: string;
     products: StoryProduct[];
@@ -76,7 +79,7 @@ export type RegionStory = {
       serves: string;
       time: string;
       from: string;
-      image?: string;
+      image?: Photo;
       imageCaption?: string;
       steps: { title: string; body: string }[];
       touch: string;
@@ -85,7 +88,7 @@ export type RegionStory = {
       /** schema.org Recipe fields for search engines (optional). */
       schema?: { yield: string; prepTime: string; cookTime: string; totalTime: string; ingredients: string[] };
     };
-    shortcut?: { eyebrow?: string; title: string; body: string; image?: string; button?: string; products: StoryProduct[] };
+    shortcut?: { eyebrow?: string; title: string; body: string; image?: Photo; button?: string; products: StoryProduct[] };
   };
   readTheLabel?: string;
   set: { eyebrow?: string; title: string; body: string; button: string; products: StoryProduct[] };

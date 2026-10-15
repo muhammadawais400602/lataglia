@@ -11,7 +11,43 @@ const toscana: RegionStory = {
   "subtitle": "Great oil, honest bread, and nothing wasted.",
   "hero": {
     "color": "#3F5A2E",
-    "colorDeep": "#2B3F1F"
+    "colorDeep": "#2B3F1F",
+    "dossier": "Terroir archive · Dossier N° 04",
+    "badge": "Cradle of the Renaissance",
+    "metrics": [
+      {
+        "icon": "landscape",
+        "label": "Hills",
+        "value": "Chianti, Val d’Orcia"
+      },
+      {
+        "icon": "terrain",
+        "label": "Mountains",
+        "value": "Carrara marble"
+      },
+      {
+        "icon": "waves",
+        "label": "Coastline",
+        "value": "Tyrrhenian"
+      },
+      {
+        "icon": "restaurant",
+        "label": "Signature",
+        "value": "Ribollita"
+      }
+    ],
+    "heritage": "Sharecropper thrift",
+    "imageCaption": {
+      "title": "Val d’Orcia",
+      "body": "Rolling hills in the heart of central Italy, between the Apennine ridge and the Tyrrhenian coast."
+    },
+    "imageTag": "Chianti and the Val d’Orcia",
+    "heritageNote": "mangiafagioli",
+    "image": {
+      "q": "Val d’Orcia Tuscany || Tuscany landscape",
+      "orientation": "landscape"
+    },
+    "imageAlt": "Rolling hills in the heart of central Italy, between the Apennine ridge and the Tyrrhenian coast."
   },
   "intro": [
     "Tuscany fills the heart of central Italy, from the Apennine ridge in the north and east to the Tyrrhenian coast in the west, with the rolling hills of Chianti and the Val d’Orcia between, the marble mountains of Carrara above the sea, and the wild Maremma to the south. The Etruscans farmed here before Rome, and Florence later became the banking capital of Europe and the cradle of the Renaissance. But for centuries most Tuscans lived as sharecroppers, splitting each harvest with the landowner, and their cooking learned to waste nothing. Bread is traditionally baked without salt, a habit often traced to medieval quarrels over salt taxes, and yesterday’s loaf becomes today’s soup or salad. Beans are eaten so often that Tuscans are nicknamed mangiafagioli, “bean eaters.” The result is cooking of real restraint: peppery new oil, good bread, beans, grilled meat, and little else.",
@@ -29,7 +65,14 @@ const toscana: RegionStory = {
           {
             "id": "tos-olio-igp",
             "name": "Toscano IGP extra-virgin olive oil",
-            "meta": "Bottle, new harvest"
+            "meta": "Bottle, new harvest",
+            "tag": "IGP · new oil",
+            "tagTone": "green",
+            "origin": "Across the region",
+            "img": {
+              "q": "Toscano extra-virgin olive oil Tuscany || Toscano extra-virgin olive oil || Olive oil food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -42,7 +85,14 @@ const toscana: RegionStory = {
           {
             "id": "tos-pecorino",
             "name": "Pecorino Toscano DOP stagionato",
-            "meta": "Wedge"
+            "meta": "Wedge",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Tuscany’s south",
+            "img": {
+              "q": "Pecorino Toscano stagionato Tuscany || Pecorino Toscano stagionato || Pecorino Toscano food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -55,7 +105,14 @@ const toscana: RegionStory = {
           {
             "id": "tos-fagioli",
             "name": "Tuscan cannellini beans",
-            "meta": "Dried"
+            "meta": "Dried",
+            "tag": "Pantry staple",
+            "tagTone": "neutral",
+            "origin": "Tuscany",
+            "img": {
+              "q": "Tuscan cannellini beans Tuscany || Tuscan cannellini beans || Beans food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -68,7 +125,14 @@ const toscana: RegionStory = {
           {
             "id": "tos-finocchiona",
             "name": "Finocchiona IGP",
-            "meta": "Sliced"
+            "meta": "Sliced",
+            "tag": "IGP",
+            "tagTone": "green",
+            "origin": "Chianti hills",
+            "img": {
+              "q": "Finocchiona Tuscany || Finocchiona || Finocchiona food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -81,7 +145,14 @@ const toscana: RegionStory = {
           {
             "id": "tos-lardo",
             "name": "Lardo di Colonnata IGP",
-            "meta": "Sliced"
+            "meta": "Sliced",
+            "tag": "Marble cured",
+            "tagTone": "gold",
+            "origin": "Colonnata",
+            "img": {
+              "q": "Lardo di Colonnata Tuscany || Lardo di Colonnata || Lardo food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -94,11 +165,19 @@ const toscana: RegionStory = {
           {
             "id": "tos-farro",
             "name": "Farro della Garfagnana IGP",
-            "meta": "Bag"
+            "meta": "Bag",
+            "tag": "IGP",
+            "tagTone": "green",
+            "origin": "Garfagnana",
+            "img": {
+              "q": "Farro della Garfagnana Tuscany || Farro della Garfagnana || Farro food",
+              "orientation": "squarish"
+            }
           }
         ]
       }
-    ]
+    ],
+    "eyebrow": "Essential terroir goods"
   },
   "dishes": {
     "lede": "Four dishes Tuscany makes its own.",
@@ -107,27 +186,44 @@ const toscana: RegionStory = {
         "title": "Ribollita",
         "where": "Florence",
         "body": "A thick soup of beans, cavolo nero, and stale bread, made one day and “reboiled” the next, which is what its name means. Better on the second day, and on the third.",
-        "tip": "[Cook it below](#ribollita)"
+        "tip": "[Cook it below](#ribollita)",
+        "image": {
+          "q": "Ribollita Tuscany food || Ribollita food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Bistecca alla fiorentina",
         "where": "Florence and the Val di Chiana",
         "body": "A T-bone at least three fingers thick, traditionally from white Chianina cattle, grilled over embers until charred outside and rare within, then finished with salt and oil.",
-        "tip": "Serve with beans dressed in [new olive oil](product:tos-olio-igp) on the side."
+        "tip": "Serve with beans dressed in [new olive oil](product:tos-olio-igp) on the side.",
+        "image": {
+          "q": "Bistecca alla fiorentina Tuscany food || Bistecca alla fiorentina food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Pici all’aglione",
         "where": "Siena",
         "body": "Thick, hand-rolled spaghetti in a slow tomato sauce made with aglione, the giant, mild garlic of the Val di Chiana.",
-        "tip": "Look for [dried pici](product:tos-pici) from Siena if you don’t roll your own."
+        "tip": "Look for [dried pici](product:tos-pici) from Siena if you don’t roll your own.",
+        "image": {
+          "q": "Pici all’aglione Tuscany food || Pici all’aglione food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Cantucci and Vin Santo",
         "where": "Prato",
         "body": "Twice-baked almond biscuits dipped in Vin Santo, Tuscany’s amber dessert wine. The traditional way to end a meal, and to linger over it.",
-        "tip": "Start with [the original from Prato](product:tos-mattei-prato)."
+        "tip": "Start with [the original from Prato](product:tos-mattei-prato).",
+        "image": {
+          "q": "Cantucci and Vin Santo Tuscany food || Cantucci and Vin Santo food",
+          "orientation": "landscape"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Culinary canon"
   },
   "maker": {
     "name": "Biscottificio Antonio Mattei",
@@ -136,7 +232,32 @@ const toscana: RegionStory = {
       "In 1858, Antonio Mattei opened a bakery in the center of Prato, the old textile town just northwest of Florence, and began making the almond biscuits now known around the world as cantucci. The business still bears his name, but since the early 1900s it has been run by the Pandolfini family, and it still bakes every day in the same building on Via Ricasoli.",
       "The original Biscotti di Prato use just five ingredients: flour, sugar, fresh eggs, almonds, and pine nuts. The dough is baked as a loaf, sliced, and baked again until crisp. The biscuits still leave the shop in the deep-blue paper bag, tied by hand, that has become a trademark of its own."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": {
+          "q": "shop on Via Ricasoli Prato Tuscany || shop on Via Ricasoli Tuscany || Prato Tuscany",
+          "orientation": "landscape"
+        },
+        "alt": "Shop on Via Ricasoli · Prato",
+        "caption": "Shop on Via Ricasoli · Prato"
+      },
+      {
+        "src": {
+          "q": "baking Prato Tuscany || baking Tuscany || Prato Tuscany",
+          "orientation": "landscape"
+        },
+        "alt": "Twice-baked biscotti · Prato",
+        "caption": "Twice-baked biscotti · Prato"
+      },
+      {
+        "src": {
+          "q": "blue bag Prato Tuscany || blue bag Tuscany || Prato Tuscany",
+          "orientation": "landscape"
+        },
+        "alt": "The blue paper bag · Mattei",
+        "caption": "The blue paper bag · Mattei"
+      }
+    ],
     "facts": [
       {
         "label": "Founded",
@@ -156,12 +277,26 @@ const toscana: RegionStory = {
       {
         "id": "tos-mattei-prato",
         "name": "Mattei Biscotti di Prato",
-        "meta": "Blue bag"
+        "meta": "Blue bag",
+        "tag": "Since 1858",
+        "tagTone": "gold",
+        "origin": "Prato",
+        "img": {
+          "q": "Mattei Biscotti di Prato Tuscany || Mattei Biscotti di Prato",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "tos-mattei-cioccolato",
         "name": "Mattei biscotti with dark chocolate",
-        "meta": "Bag"
+        "meta": "Bag",
+        "tag": "Dark chocolate",
+        "tagTone": "neutral",
+        "origin": "Prato",
+        "img": {
+          "q": "Mattei biscotti with dark chocolate Tuscany || Mattei biscotti with dark chocolate",
+          "orientation": "squarish"
+        }
       }
     ]
   },
@@ -214,12 +349,26 @@ const toscana: RegionStory = {
         {
           "id": "tos-fagioli",
           "name": "Tuscan cannellini beans",
-          "meta": "Dried"
+          "meta": "Dried",
+          "tag": "Pantry staple",
+          "tagTone": "neutral",
+          "origin": "Tuscany",
+          "img": {
+            "q": "Tuscan cannellini beans Tuscany || Tuscan cannellini beans || Beans food",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "tos-olio-igp",
           "name": "Toscano IGP extra-virgin olive oil",
-          "meta": "Bottle, new harvest"
+          "meta": "Bottle, new harvest",
+          "tag": "IGP · new oil",
+          "tagTone": "green",
+          "origin": "Across the region",
+          "img": {
+            "q": "Toscano extra-virgin olive oil Tuscany || Toscano extra-virgin olive oil || Olive oil food",
+            "orientation": "squarish"
+          }
         }
       ],
       "schema": {
@@ -242,6 +391,11 @@ const toscana: RegionStory = {
           "Salt and black pepper",
           "Red onion, to serve (optional)"
         ]
+      },
+      "imageCaption": "Florence classic · 3 hours, plus overnight",
+      "image": {
+        "q": "Ribollita Tuscany food || Ribollita food",
+        "orientation": "landscape"
       }
     },
     "shortcut": {
@@ -251,15 +405,32 @@ const toscana: RegionStory = {
         {
           "id": "tos-olio-igp",
           "name": "Toscano IGP extra-virgin olive oil",
-          "meta": "Bottle, new harvest"
+          "meta": "Bottle, new harvest",
+          "tag": "IGP · new oil",
+          "tagTone": "green",
+          "origin": "Across the region",
+          "img": {
+            "q": "Toscano extra-virgin olive oil Tuscany || Toscano extra-virgin olive oil || Olive oil food",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "tos-finocchiona",
           "name": "Finocchiona IGP",
-          "meta": "Sliced"
+          "meta": "Sliced",
+          "tag": "IGP",
+          "tagTone": "green",
+          "origin": "Chianti hills",
+          "img": {
+            "q": "Finocchiona Tuscany || Finocchiona || Finocchiona food",
+            "orientation": "squarish"
+          }
         }
-      ]
-    }
+      ],
+      "eyebrow": "Fettunta shortcut",
+      "button": "Get the fettunta pair"
+    },
+    "eyebrow": "Hill country kitchen"
   },
   "readTheLabel": "“Bottled in Italy” or “imported from Italy” on olive oil is not the same as oil grown in Tuscany, and “Tuscan-style” means nothing at all. Check the place of production, the harvest date, and any DOP or IGP seal. Every product we carry states where it is made.",
   "set": {
@@ -270,44 +441,101 @@ const toscana: RegionStory = {
       {
         "id": "tos-olio-igp",
         "name": "Toscano IGP olive oil",
-        "meta": "New harvest"
+        "meta": "New harvest",
+        "tag": "IGP · new oil",
+        "tagTone": "green",
+        "origin": "Across the region",
+        "img": {
+          "q": "Toscano extra-virgin olive oil Tuscany || Toscano extra-virgin olive oil || Olive oil food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "tos-pecorino",
         "name": "Pecorino Toscano DOP",
-        "meta": "Stagionato"
+        "meta": "Stagionato",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Tuscany’s south",
+        "img": {
+          "q": "Pecorino Toscano stagionato Tuscany || Pecorino Toscano stagionato || Pecorino Toscano food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "tos-fagioli",
         "name": "Tuscan cannellini beans",
-        "meta": "Dried"
+        "meta": "Dried",
+        "tag": "Pantry staple",
+        "tagTone": "neutral",
+        "origin": "Tuscany",
+        "img": {
+          "q": "Tuscan cannellini beans Tuscany || Tuscan cannellini beans || Beans food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "tos-farro",
         "name": "Farro della Garfagnana IGP",
-        "meta": "Bag"
+        "meta": "Bag",
+        "tag": "IGP",
+        "tagTone": "green",
+        "origin": "Garfagnana",
+        "img": {
+          "q": "Farro della Garfagnana Tuscany || Farro della Garfagnana || Farro food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "tos-finocchiona",
         "name": "Finocchiona IGP",
-        "meta": "Sliced"
+        "meta": "Sliced",
+        "tag": "IGP",
+        "tagTone": "green",
+        "origin": "Chianti hills",
+        "img": {
+          "q": "Finocchiona Tuscany || Finocchiona || Finocchiona food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "tos-lardo",
         "name": "Lardo di Colonnata IGP",
-        "meta": "Sliced"
+        "meta": "Sliced",
+        "tag": "Marble cured",
+        "tagTone": "gold",
+        "origin": "Colonnata",
+        "img": {
+          "q": "Lardo di Colonnata Tuscany || Lardo di Colonnata || Lardo food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "tos-pici",
         "name": "Pici from Siena",
-        "meta": "Dried"
+        "meta": "Dried",
+        "tag": "Dried pasta",
+        "tagTone": "neutral",
+        "origin": "Siena",
+        "img": {
+          "q": "Pici from Siena Tuscany || Pici from Siena",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "tos-mattei-prato",
         "name": "Mattei Biscotti di Prato",
-        "meta": "Blue bag"
+        "meta": "Blue bag",
+        "tag": "Since 1858",
+        "tagTone": "gold",
+        "origin": "Prato",
+        "img": {
+          "q": "Mattei Biscotti di Prato Tuscany || Mattei Biscotti di Prato",
+          "orientation": "squarish"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Limited curation · Parcel N° 04"
   },
   "about": [
     "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."

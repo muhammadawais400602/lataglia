@@ -11,7 +11,43 @@ const piemonte: RegionStory = {
   "subtitle": "Truffles, hazelnuts, and a royal appetite.",
   "hero": {
     "color": "#5B2A4A",
-    "colorDeep": "#3E1C33"
+    "colorDeep": "#3E1C33",
+    "dossier": "Terroir archive · Dossier N° 05",
+    "badge": "Birthplace of Slow Food",
+    "metrics": [
+      {
+        "icon": "castle",
+        "label": "First capital",
+        "value": "Turin, 1861"
+      },
+      {
+        "icon": "terrain",
+        "label": "Mountains",
+        "value": "Alps on three sides"
+      },
+      {
+        "icon": "water",
+        "label": "River",
+        "value": "The Po"
+      },
+      {
+        "icon": "eco",
+        "label": "Slow Food",
+        "value": "Born in Bra"
+      }
+    ],
+    "heritage": "Savoy royal court",
+    "imageCaption": {
+      "title": "The Langhe",
+      "body": "Vineyard hills of the Langhe, Roero, and Monferrato roll south toward the sea."
+    },
+    "imageTag": "Langhe, Roero, Monferrato",
+    "heritageNote": "at the foot of the mountains",
+    "image": {
+      "q": "Langhe Piedmont || Piedmont landscape",
+      "orientation": "landscape"
+    },
+    "imageAlt": "Vineyard hills of the Langhe, Roero, and Monferrato roll south toward the sea."
   },
   "intro": [
     "Piedmont means “at the foot of the mountains,” and the Alps wrap around it on three sides, along the borders with France and Switzerland. The Po river rises here, flowing east past Turin into flat plains flooded each spring for rice, while to the south the vineyard hills of the Langhe, Roero, and Monferrato roll toward the sea. For centuries the House of Savoy ruled from Turin, which became the first capital of a united Italy in 1861, and its court borrowed freely from France: butter, cream, sauces, and a taste for elaborate dishes. Below the palaces, mountain herders made cheese, hill farmers grew hazelnuts and grapes, and mule trains on the salt roads from Liguria carried in the anchovies still central to the local kitchen. The Slow Food movement was born here, in the town of Bra. The result is a rich, patient cuisine of eggs and butter, slow braises in Barolo, and in autumn, the white truffle.",
@@ -29,7 +65,14 @@ const piemonte: RegionStory = {
           {
             "id": "pie-nocciole",
             "name": "Nocciola Piemonte IGP hazelnuts",
-            "meta": "Toasted"
+            "meta": "Toasted",
+            "tag": "IGP",
+            "tagTone": "green",
+            "origin": "The Langhe",
+            "img": {
+              "q": "Nocciola Piemonte hazelnuts Piedmont || Nocciola Piemonte hazelnuts || Hazelnuts food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -42,7 +85,14 @@ const piemonte: RegionStory = {
           {
             "id": "pie-tartufo-bianco",
             "name": "Fresh white truffle, Alba",
-            "meta": "Autumn only"
+            "meta": "Autumn only",
+            "tag": "Autumn only",
+            "tagTone": "gold",
+            "origin": "Alba",
+            "img": {
+              "q": "Fresh white truffle Piedmont || Fresh white truffle || White truffle food",
+              "orientation": "squarish"
+            }
           }
         ],
         "shelfLabel": "In season"
@@ -56,7 +106,14 @@ const piemonte: RegionStory = {
           {
             "id": "pie-carnaroli",
             "name": "Carnaroli rice from Vercelli",
-            "meta": "1 kg"
+            "meta": "1 kg",
+            "tag": "Risotto rice",
+            "tagTone": "neutral",
+            "origin": "Vercelli",
+            "img": {
+              "q": "Carnaroli rice from Vercelli Piedmont || Carnaroli rice from Vercelli || Rice food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -69,7 +126,14 @@ const piemonte: RegionStory = {
           {
             "id": "pie-castelmagno",
             "name": "Castelmagno DOP",
-            "meta": "Wedge"
+            "meta": "Wedge",
+            "tag": "Rare · DOP",
+            "tagTone": "gold",
+            "origin": "Grana valley",
+            "img": {
+              "q": "Castelmagno Piedmont || Castelmagno || Castelmagno food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -82,7 +146,14 @@ const piemonte: RegionStory = {
           {
             "id": "pie-robiola",
             "name": "Robiola di Roccaverano DOP",
-            "meta": "Single round"
+            "meta": "Single round",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Langa Astigiana",
+            "img": {
+              "q": "Robiola di Roccaverano Piedmont || Robiola di Roccaverano || Robiola di Roccaverano food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -95,11 +166,19 @@ const piemonte: RegionStory = {
           {
             "id": "pie-grissini",
             "name": "Hand-stretched grissini rubatà",
-            "meta": "Bag"
+            "meta": "Bag",
+            "tag": "Hand-stretched",
+            "tagTone": "neutral",
+            "origin": "Turin",
+            "img": {
+              "q": "Hand-stretched grissini rubatà Piedmont || Hand-stretched grissini rubatà || Grissini food",
+              "orientation": "squarish"
+            }
           }
         ]
       }
-    ]
+    ],
+    "eyebrow": "Essential terroir goods"
   },
   "dishes": {
     "lede": "Four dishes Piedmont makes its own.",
@@ -108,26 +187,44 @@ const piemonte: RegionStory = {
         "title": "Risotto al Castelmagno",
         "where": "The Cuneo valleys",
         "body": "Creamy Carnaroli risotto finished with crumbled Castelmagno, rich, sharp, and simple. A mountain dish made with the plain’s rice.",
-        "tip": "[Cook it below](#risotto)"
+        "tip": "[Cook it below](#risotto)",
+        "image": {
+          "q": "Risotto al Castelmagno Piedmont food || Risotto al Castelmagno food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Tajarin",
         "where": "Alba and the Langhe",
         "body": "Thin golden ribbons of pasta made with an extravagant number of egg yolks, tossed in butter or a light meat sauce. In autumn, the classic base for shaved white truffle.",
-        "tip": "Try [dried egg tajarin](product:pie-tajarin) for a ten-minute version."
+        "tip": "Try [dried egg tajarin](product:pie-tajarin) for a ten-minute version.",
+        "image": {
+          "q": "Tajarin Piedmont food || Tajarin food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Vitello tonnato",
         "where": "Turin and across Piedmont",
-        "body": "Thin slices of cold poached veal under a creamy sauce of tuna, capers, and anchovy. A summer antipasto that sounds unlikely and tastes perfect."
+        "body": "Thin slices of cold poached veal under a creamy sauce of tuna, capers, and anchovy. A summer antipasto that sounds unlikely and tastes perfect.",
+        "note": "A summer antipasto",
+        "image": {
+          "q": "Vitello tonnato Piedmont food || Vitello tonnato food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Bagna càuda",
         "where": "Asti and the Langhe",
         "body": "A warm dip of garlic, anchovies, and olive oil kept hot at the table for raw and cooked autumn vegetables. A communal, garlicky feast that marks the end of the grape harvest.",
-        "tip": "Serve with [hand-stretched grissini](product:pie-grissini) for dipping."
+        "tip": "Serve with [hand-stretched grissini](product:pie-grissini) for dipping.",
+        "image": {
+          "q": "Bagna càuda Piedmont food || Bagna càuda food",
+          "orientation": "landscape"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Culinary canon"
   },
   "maker": {
     "name": "Guido Gobino",
@@ -136,7 +233,32 @@ const piemonte: RegionStory = {
       "Turin gave the world gianduja. As the story goes, when Napoleon’s blockades made cocoa scarce in the early 1800s, the city’s chocolate makers stretched it with ground Piedmont hazelnuts. The Gobino family’s chapter began in 1964, when Giuseppe Gobino became production manager of a small chocolate workshop on Via Cagliari. He bought it in 1980, and his son Guido took it over a few years later.",
       "Guido made the giandujotto, Turin’s ingot-shaped hazelnut chocolate, his specialty. In 1995 he introduced the Tourinot, a 5-gram giandujotto extruded rather than molded and made with Nocciola Piemonte IGP hazelnuts. The original Via Cagliari workshop still produces the chocolates, and the company also runs a shop in the center of Turin on Via Lagrange."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": {
+          "q": "workshop Turin Piedmont || workshop Piedmont || Turin Piedmont",
+          "orientation": "landscape"
+        },
+        "alt": "Via Cagliari workshop · Turin",
+        "caption": "Via Cagliari workshop · Turin"
+      },
+      {
+        "src": {
+          "q": "hazelnuts chocolate Turin Piedmont || hazelnuts chocolate Piedmont || Turin Piedmont",
+          "orientation": "landscape"
+        },
+        "alt": "Piedmont hazelnuts · gianduja",
+        "caption": "Piedmont hazelnuts · gianduja"
+      },
+      {
+        "src": {
+          "q": "Guido Gobino Tourinot giandujotti Turin Piedmont || Guido Gobino Tourinot giandujotti Piedmont || Turin Piedmont",
+          "orientation": "landscape"
+        },
+        "alt": "Tourinot giandujotti · Gobino",
+        "caption": "Tourinot giandujotti · Gobino"
+      }
+    ],
     "facts": [
       {
         "label": "Workshop",
@@ -156,12 +278,26 @@ const piemonte: RegionStory = {
       {
         "id": "pie-gobino-tourinot",
         "name": "Guido Gobino Tourinot giandujotti",
-        "meta": "Box"
+        "meta": "Box",
+        "tag": "5 grams",
+        "tagTone": "gold",
+        "origin": "Turin",
+        "img": {
+          "q": "Guido Gobino Tourinot giandujotti Piedmont || Guido Gobino Tourinot giandujotti",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "pie-gobino-crema",
         "name": "Guido Gobino gianduja spread",
-        "meta": "Jar"
+        "meta": "Jar",
+        "tag": "Gianduja",
+        "tagTone": "neutral",
+        "origin": "Turin",
+        "img": {
+          "q": "Guido Gobino gianduja spread Piedmont || Guido Gobino gianduja spread",
+          "orientation": "squarish"
+        }
       }
     ]
   },
@@ -208,12 +344,26 @@ const piemonte: RegionStory = {
         {
           "id": "pie-carnaroli",
           "name": "Carnaroli rice from Vercelli",
-          "meta": "1 kg"
+          "meta": "1 kg",
+          "tag": "Risotto rice",
+          "tagTone": "neutral",
+          "origin": "Vercelli",
+          "img": {
+            "q": "Carnaroli rice from Vercelli Piedmont || Carnaroli rice from Vercelli || Rice food",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "pie-castelmagno",
           "name": "Castelmagno DOP",
-          "meta": "Wedge"
+          "meta": "Wedge",
+          "tag": "Rare · DOP",
+          "tagTone": "gold",
+          "origin": "Grana valley",
+          "img": {
+            "q": "Castelmagno Piedmont || Castelmagno || Castelmagno food",
+            "orientation": "squarish"
+          }
         }
       ],
       "schema": {
@@ -232,6 +382,11 @@ const piemonte: RegionStory = {
           "Salt and black pepper",
           "Optional: a handful of toasted Piedmont hazelnuts, chopped"
         ]
+      },
+      "imageCaption": "Cuneo valleys classic · about 35 minutes",
+      "image": {
+        "q": "Risotto al Castelmagno Piedmont food || Risotto al Castelmagno food",
+        "orientation": "landscape"
       }
     },
     "shortcut": {
@@ -241,15 +396,32 @@ const piemonte: RegionStory = {
         {
           "id": "pie-tajarin",
           "name": "Egg tajarin from the Langhe",
-          "meta": "Dried nests"
+          "meta": "Dried nests",
+          "tag": "Egg pasta",
+          "tagTone": "neutral",
+          "origin": "The Langhe",
+          "img": {
+            "q": "Egg tajarin from the Langhe Piedmont || Egg tajarin from the Langhe",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "pie-tartufo-bianco",
           "name": "Fresh white truffle, Alba",
-          "meta": "Autumn only"
+          "meta": "Autumn only",
+          "tag": "Autumn only",
+          "tagTone": "gold",
+          "origin": "Alba",
+          "img": {
+            "q": "Fresh white truffle Piedmont || Fresh white truffle || White truffle food",
+            "orientation": "squarish"
+          }
         }
-      ]
-    }
+      ],
+      "eyebrow": "Alba shortcut",
+      "button": "Get the tajarin pair"
+    },
+    "eyebrow": "Seasonal kitchen"
   },
   "readTheLabel": "“Truffle flavor” and most truffle oils contain no truffle at all, and “Italian hazelnuts” is not Nocciola Piemonte IGP. Check the place of production, the ingredient list, and any DOP or IGP seal. Every product we carry states where it is made.",
   "set": {
@@ -260,44 +432,101 @@ const piemonte: RegionStory = {
       {
         "id": "pie-nocciole",
         "name": "Nocciola Piemonte IGP",
-        "meta": "Toasted"
+        "meta": "Toasted",
+        "tag": "IGP",
+        "tagTone": "green",
+        "origin": "The Langhe",
+        "img": {
+          "q": "Nocciola Piemonte hazelnuts Piedmont || Nocciola Piemonte hazelnuts || Hazelnuts food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "pie-carnaroli",
         "name": "Carnaroli rice",
-        "meta": "1 kg"
+        "meta": "1 kg",
+        "tag": "Risotto rice",
+        "tagTone": "neutral",
+        "origin": "Vercelli",
+        "img": {
+          "q": "Carnaroli rice from Vercelli Piedmont || Carnaroli rice from Vercelli || Rice food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "pie-castelmagno",
         "name": "Castelmagno DOP",
-        "meta": "Wedge"
+        "meta": "Wedge",
+        "tag": "Rare · DOP",
+        "tagTone": "gold",
+        "origin": "Grana valley",
+        "img": {
+          "q": "Castelmagno Piedmont || Castelmagno || Castelmagno food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "pie-robiola",
         "name": "Robiola di Roccaverano DOP",
-        "meta": "Single round"
+        "meta": "Single round",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Langa Astigiana",
+        "img": {
+          "q": "Robiola di Roccaverano Piedmont || Robiola di Roccaverano || Robiola di Roccaverano food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "pie-grissini",
         "name": "Grissini rubatà",
-        "meta": "Bag"
+        "meta": "Bag",
+        "tag": "Hand-stretched",
+        "tagTone": "neutral",
+        "origin": "Turin",
+        "img": {
+          "q": "Hand-stretched grissini rubatà Piedmont || Hand-stretched grissini rubatà || Grissini food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "pie-tajarin",
         "name": "Egg tajarin",
-        "meta": "Dried nests"
+        "meta": "Dried nests",
+        "tag": "Egg pasta",
+        "tagTone": "neutral",
+        "origin": "The Langhe",
+        "img": {
+          "q": "Egg tajarin from the Langhe Piedmont || Egg tajarin from the Langhe",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "pie-gobino-tourinot",
         "name": "Gobino Tourinot giandujotti",
-        "meta": "Box"
+        "meta": "Box",
+        "tag": "5 grams",
+        "tagTone": "gold",
+        "origin": "Turin",
+        "img": {
+          "q": "Guido Gobino Tourinot giandujotti Piedmont || Guido Gobino Tourinot giandujotti",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "pie-gobino-crema",
         "name": "Gobino gianduja spread",
-        "meta": "Jar"
+        "meta": "Jar",
+        "tag": "Gianduja",
+        "tagTone": "neutral",
+        "origin": "Turin",
+        "img": {
+          "q": "Guido Gobino gianduja spread Piedmont || Guido Gobino gianduja spread",
+          "orientation": "squarish"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Limited curation · Parcel N° 05"
   },
   "about": [
     "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."

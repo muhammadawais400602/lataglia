@@ -11,7 +11,43 @@ const sardegna: RegionStory = {
   "subtitle": "Sheep’s cheese, saffron, and the salt of the lagoons.",
   "hero": {
     "color": "#5C5248",
-    "colorDeep": "#3F3832"
+    "colorDeep": "#3F3832",
+    "dossier": "Terroir archive · Dossier N° 11",
+    "badge": "Island of shepherds",
+    "metrics": [
+      {
+        "icon": "castle",
+        "label": "Landmark",
+        "value": "Some 7,000 nuraghi"
+      },
+      {
+        "icon": "waves",
+        "label": "Sea",
+        "value": "Tyrrhenian Sea"
+      },
+      {
+        "icon": "agriculture",
+        "label": "Oldest farming",
+        "value": "Shepherding"
+      },
+      {
+        "icon": "location_city",
+        "label": "Dialect",
+        "value": "Catalan in Alghero"
+      }
+    ],
+    "heritage": "Shepherding heritage",
+    "imageCaption": {
+      "title": "Lagoon of Cabras",
+      "body": "In the Sinis peninsula on the west coast, one of the island’s great fishing waters."
+    },
+    "imageTag": "Cabras lagoon, Sinis peninsula",
+    "heritageNote": "carta da musica",
+    "image": {
+      "q": "Lagoon of Cabras Sardinia || Sardinia landscape",
+      "orientation": "landscape"
+    },
+    "imageAlt": "In the Sinis peninsula on the west coast, one of the island’s great fishing waters."
   },
   "intro": [
     "Sardinia sits alone in the Tyrrhenian Sea, west of the Italian mainland, an island that geologically and culturally evolved apart from the peninsula. Some 7,000 stone towers called nuraghi still stand across its hills, left by a Bronze Age civilization that flourished here from the second millennium BC. Phoenicians, Romans, Genoese, Catalans, and Spanish all came and went, and a Catalan dialect has been spoken in the town of Alghero for nearly 700 years. Through all of it, the heart of island life was the flock: shepherding is Sardinia’s oldest form of farming, and shepherds on the move with their sheep needed bread that kept for weeks and cheese that could survive the journey. The result is a cuisine of sheep’s cheese and thin, crisp bread, hand-shaped pastas, spit-roasted pork, and, along the coast, lagoon fish and their cured roe.",
@@ -29,7 +65,14 @@ const sardegna: RegionStory = {
           {
             "id": "sar-fiore-sardo",
             "name": "Fiore Sardo DOP",
-            "meta": "Wedge"
+            "meta": "Wedge",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Across the island",
+            "img": {
+              "q": "Fiore Sardo Sardinia || Fiore Sardo || Fiore Sardo food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -42,7 +85,14 @@ const sardegna: RegionStory = {
           {
             "id": "sar-carasau",
             "name": "Pane carasau",
-            "meta": "Pack"
+            "meta": "Pack",
+            "tag": "Twice baked",
+            "tagTone": "neutral",
+            "origin": "Island interior",
+            "img": {
+              "q": "Pane carasau Sardinia || Pane carasau || Pane carasau food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -55,7 +105,14 @@ const sardegna: RegionStory = {
           {
             "id": "sar-malloreddus",
             "name": "Malloreddus",
-            "meta": "500 g"
+            "meta": "500 g",
+            "tag": "Durum semolina",
+            "tagTone": "neutral",
+            "origin": "Campidano plain",
+            "img": {
+              "q": "Malloreddus Sardinia || Malloreddus || Malloreddus food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -68,7 +125,14 @@ const sardegna: RegionStory = {
           {
             "id": "sar-fregola",
             "name": "Fregola",
-            "meta": "500 g"
+            "meta": "500 g",
+            "tag": "Toasted",
+            "tagTone": "neutral",
+            "origin": "Across the island",
+            "img": {
+              "q": "Fregola Sardinia || Fregola || Fregola food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -81,7 +145,14 @@ const sardegna: RegionStory = {
           {
             "id": "sar-bottarga",
             "name": "Bottarga di muggine",
-            "meta": "Whole"
+            "meta": "Whole",
+            "tag": "Cured roe",
+            "tagTone": "gold",
+            "origin": "Cabras",
+            "img": {
+              "q": "Bottarga di muggine Sardinia || Bottarga di muggine || Bottarga food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -94,11 +165,19 @@ const sardegna: RegionStory = {
           {
             "id": "sar-zafferano",
             "name": "Zafferano di Sardegna DOP",
-            "meta": "Threads"
+            "meta": "Threads",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Southern plains",
+            "img": {
+              "q": "Zafferano di Sardegna Sardinia || Zafferano di Sardegna || Saffron food",
+              "orientation": "squarish"
+            }
           }
         ]
       }
-    ]
+    ],
+    "eyebrow": "Shepherds’ pantry"
   },
   "dishes": {
     "lede": "Four dishes Sardinia makes its own.",
@@ -107,25 +186,44 @@ const sardegna: RegionStory = {
         "title": "Malloreddus alla campidanese",
         "where": "The Campidano",
         "body": "Malloreddus in a sauce of crumbled pork sausage with fennel, tomato, onion, and saffron, finished with plenty of grated pecorino. The island’s best-known pasta dish.",
-        "tip": "[Cook it below](#malloreddus)"
+        "tip": "[Cook it below](#malloreddus)",
+        "image": {
+          "q": "Malloreddus alla campidanese Sardinia food || Malloreddus alla campidanese food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Culurgiones",
         "where": "Ogliastra",
         "body": "Plump pasta parcels filled with potato, pecorino, and mint, sealed with a braided edge that looks like an ear of wheat. The braid was once believed to bring a good harvest.",
-        "tip": "Protected as Culurgiones d’Ogliastra IGP."
+        "tip": "Protected as Culurgiones d’Ogliastra IGP.",
+        "image": {
+          "q": "Culurgiones Sardinia food || Culurgiones food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Porceddu",
         "where": "Across the island",
-        "body": "Suckling pig roasted slowly on a spit beside an open fire until the skin crackles, then served on cork boards over myrtle leaves."
+        "body": "Suckling pig roasted slowly on a spit beside an open fire until the skin crackles, then served on cork boards over myrtle leaves.",
+        "note": "Served over myrtle leaves",
+        "image": {
+          "q": "Porceddu Sardinia food || Porceddu food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Seadas",
         "where": "Across the island",
-        "body": "A round pastry filled with sheep’s cheese, fried until golden and drizzled with honey. Sweet, salty, and served hot."
+        "body": "A round pastry filled with sheep’s cheese, fried until golden and drizzled with honey. Sweet, salty, and served hot.",
+        "note": "Sweet, salty, served hot",
+        "image": {
+          "q": "Seadas Sardinia food || Seadas food",
+          "orientation": "landscape"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Island canon"
   },
   "maker": {
     "name": "Consorzio Pontis",
@@ -134,7 +232,32 @@ const sardegna: RegionStory = {
       "On Sardinia’s west coast, in the Sinis peninsula, the lagoon of Cabras has long been one of the island’s great fishing waters. Its fishermen work together as the Nuovo Consorzio Cooperative Pontis, formed in 1993 when eleven fishing cooperatives joined forces to manage the Mar’e Pontis lagoon. Around 130 fishermen belong to it today.",
       "Their bottarga is made from the roe of mullet caught in the lagoon itself, salted and air-dried into amber slabs. That sets it apart: almost all bottarga sold as “di Cabras” is made in town from imported mullet. In 2025 the lagoon’s bottarga and traditional fishing became a Slow Food Presidium, recognition reserved for mullet fished in these waters."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": {
+          "q": "Cabras lagoon Sardinia || Cabras Sardinia",
+          "orientation": "landscape"
+        },
+        "alt": "Mar’e Pontis lagoon · Cabras",
+        "caption": "Mar’e Pontis lagoon · Cabras"
+      },
+      {
+        "src": {
+          "q": "fishermen Cabras Sardinia || fishermen Sardinia || Cabras Sardinia",
+          "orientation": "landscape"
+        },
+        "alt": "Pontis fishermen · Sinis",
+        "caption": "Pontis fishermen · Sinis"
+      },
+      {
+        "src": {
+          "q": "Pontis bottarga Cabras Sardinia || Pontis bottarga Sardinia || Cabras Sardinia",
+          "orientation": "landscape"
+        },
+        "alt": "Lagoon bottarga · amber slabs",
+        "caption": "Lagoon bottarga · amber slabs"
+      }
+    ],
     "facts": [
       {
         "label": "Formed",
@@ -154,12 +277,26 @@ const sardegna: RegionStory = {
       {
         "id": "sar-pontis-bottarga",
         "name": "Pontis bottarga, Cabras lagoon",
-        "meta": "Whole"
+        "meta": "Whole",
+        "tag": "Slow Food",
+        "tagTone": "gold",
+        "origin": "Cabras lagoon",
+        "img": {
+          "q": "Pontis bottarga Sardinia || Pontis bottarga",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "sar-pontis-grattugiata",
         "name": "Pontis bottarga, grated",
-        "meta": "Jar"
+        "meta": "Jar",
+        "tag": "Lagoon mullet",
+        "tagTone": "gold",
+        "origin": "Cabras lagoon",
+        "img": {
+          "q": "Pontis bottarga Sardinia || Pontis bottarga",
+          "orientation": "squarish"
+        }
       }
     ]
   },
@@ -206,12 +343,26 @@ const sardegna: RegionStory = {
         {
           "id": "sar-malloreddus",
           "name": "Malloreddus",
-          "meta": "500 g"
+          "meta": "500 g",
+          "tag": "Durum semolina",
+          "tagTone": "neutral",
+          "origin": "Campidano plain",
+          "img": {
+            "q": "Malloreddus Sardinia || Malloreddus || Malloreddus food",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "sar-zafferano",
           "name": "Zafferano di Sardegna DOP",
-          "meta": "Threads"
+          "meta": "Threads",
+          "tag": "DOP",
+          "tagTone": "green",
+          "origin": "Southern plains",
+          "img": {
+            "q": "Zafferano di Sardegna Sardinia || Zafferano di Sardegna || Saffron food",
+            "orientation": "squarish"
+          }
         }
       ],
       "schema": {
@@ -230,6 +381,11 @@ const sardegna: RegionStory = {
           "60 g Pecorino Sardo or Fiore Sardo, grated",
           "Salt"
         ]
+      },
+      "imageCaption": "Campidano classic · about 55 minutes",
+      "image": {
+        "q": "Malloreddus alla campidanese Sardinia food || Malloreddus alla campidanese food",
+        "orientation": "landscape"
       }
     },
     "shortcut": {
@@ -239,15 +395,32 @@ const sardegna: RegionStory = {
         {
           "id": "sar-pontis-grattugiata",
           "name": "Pontis bottarga, grated",
-          "meta": "Jar"
+          "meta": "Jar",
+          "tag": "Lagoon mullet",
+          "tagTone": "gold",
+          "origin": "Cabras lagoon",
+          "img": {
+            "q": "Pontis bottarga Sardinia || Pontis bottarga",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "sar-bottarga",
           "name": "Bottarga di muggine",
-          "meta": "Whole"
+          "meta": "Whole",
+          "tag": "Cured roe",
+          "tagTone": "gold",
+          "origin": "Cabras",
+          "img": {
+            "q": "Bottarga di muggine Sardinia || Bottarga di muggine || Bottarga food",
+            "orientation": "squarish"
+          }
         }
-      ]
-    }
+      ],
+      "eyebrow": "Ten minutes in Cabras",
+      "button": "Get the bottarga pair"
+    },
+    "eyebrow": "Island kitchen"
   },
   "readTheLabel": "“Bottarga di Cabras” usually means made in Cabras, not caught there, and “Sardinian-style” pasta can be made anywhere. Check the place of production, the ingredient list, and any DOP or IGP seal. Every product we carry states where it is made.",
   "set": {
@@ -258,44 +431,101 @@ const sardegna: RegionStory = {
       {
         "id": "sar-fiore-sardo",
         "name": "Fiore Sardo DOP",
-        "meta": "Wedge"
+        "meta": "Wedge",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Across the island",
+        "img": {
+          "q": "Fiore Sardo Sardinia || Fiore Sardo || Fiore Sardo food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "sar-pecorino-sardo",
         "name": "Pecorino Sardo DOP",
-        "meta": "Wedge"
+        "meta": "Wedge",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Sardinia",
+        "img": {
+          "q": "Pecorino Sardo Sardinia || Pecorino Sardo",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "sar-carasau",
         "name": "Pane carasau",
-        "meta": "Pack"
+        "meta": "Pack",
+        "tag": "Twice baked",
+        "tagTone": "neutral",
+        "origin": "Island interior",
+        "img": {
+          "q": "Pane carasau Sardinia || Pane carasau || Pane carasau food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "sar-malloreddus",
         "name": "Malloreddus",
-        "meta": "500 g"
+        "meta": "500 g",
+        "tag": "Durum semolina",
+        "tagTone": "neutral",
+        "origin": "Campidano plain",
+        "img": {
+          "q": "Malloreddus Sardinia || Malloreddus || Malloreddus food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "sar-fregola",
         "name": "Fregola",
-        "meta": "500 g"
+        "meta": "500 g",
+        "tag": "Toasted",
+        "tagTone": "neutral",
+        "origin": "Across the island",
+        "img": {
+          "q": "Fregola Sardinia || Fregola || Fregola food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "sar-zafferano",
         "name": "Zafferano di Sardegna DOP",
-        "meta": "Threads"
+        "meta": "Threads",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Southern plains",
+        "img": {
+          "q": "Zafferano di Sardegna Sardinia || Zafferano di Sardegna || Saffron food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "sar-pontis-bottarga",
         "name": "Pontis bottarga",
-        "meta": "Whole"
+        "meta": "Whole",
+        "tag": "Slow Food",
+        "tagTone": "gold",
+        "origin": "Cabras lagoon",
+        "img": {
+          "q": "Pontis bottarga Sardinia || Pontis bottarga",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "sar-miele",
         "name": "Sardinian honey",
-        "meta": "Jar"
+        "meta": "Jar",
+        "tag": "Pantry staple",
+        "tagTone": "neutral",
+        "origin": "Sardinia",
+        "img": {
+          "q": "Sardinian honey Sardinia || Sardinian honey",
+          "orientation": "squarish"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Limited curation · Parcel N° 11"
   },
   "about": [
     "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."

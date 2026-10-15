@@ -11,7 +11,43 @@ const veneto: RegionStory = {
   "subtitle": "Rice, polenta, radicchio, and the spice routes of Venice.",
   "hero": {
     "color": "#2F5D50",
-    "colorDeep": "#1F4038"
+    "colorDeep": "#1F4038",
+    "dossier": "Terroir archive · Dossier N° 09",
+    "badge": "Venetian spice routes",
+    "metrics": [
+      {
+        "icon": "sailing",
+        "label": "Republic",
+        "value": "Venice, until 1797"
+      },
+      {
+        "icon": "terrain",
+        "label": "Mountains",
+        "value": "The Dolomites"
+      },
+      {
+        "icon": "water",
+        "label": "Lake",
+        "value": "Lake Garda"
+      },
+      {
+        "icon": "agriculture",
+        "label": "Rice",
+        "value": "Farmed since the 1500s"
+      }
+    ],
+    "heritage": "Spice trade heritage",
+    "imageCaption": {
+      "title": "The Venetian lagoon",
+      "body": "Where the plain of rivers meets the Adriatic, home of the Republic’s trading ships."
+    },
+    "imageTag": "Venetian lagoon · Adriatic",
+    "heritageNote": "all’onda",
+    "image": {
+      "q": "Venetian lagoon Veneto Italy || Veneto Italy landscape",
+      "orientation": "landscape"
+    },
+    "imageAlt": "Where the plain of rivers meets the Adriatic, home of the Republic’s trading ships."
   },
   "intro": [
     "Veneto runs from the Dolomites in the north across a broad plain of rivers to the Venetian lagoon and the Po delta on the Adriatic, with Lake Garda on its western edge. For more than a thousand years, until 1797, it was the heartland of the Venetian Republic, and Venice’s ships brought home pepper, spices, sugar, and dried fruit that still season its cooking. The Republic also reshaped the land: from the 1500s its officials drained marshes south of Verona and turned them into rice paddies. Later, corn from the Americas became the staple of the countryside, eaten as polenta; a Venetian merchant shipwrecked in Norway in 1432 began the region’s long love of dried cod; and on the mountain plateaus, herders made cheese. The result is a cuisine of rice and polenta, fish from the lagoon, sweet-and-sour flavors from the spice trade, and, in winter, the bittersweet red radicchio of Treviso.",
@@ -29,7 +65,14 @@ const veneto: RegionStory = {
           {
             "id": "ven-radicchio-tardivo",
             "name": "Radicchio Rosso di Treviso IGP Tardivo",
-            "meta": "Winter only"
+            "meta": "Winter only",
+            "tag": "Winter only",
+            "tagTone": "green",
+            "origin": "Treviso",
+            "img": {
+              "q": "Radicchio Rosso di Treviso Tardivo Veneto Italy || Radicchio Rosso di Treviso Tardivo || Radicchio di Treviso food",
+              "orientation": "squarish"
+            }
           }
         ],
         "shelfLabel": "In season"
@@ -43,7 +86,14 @@ const veneto: RegionStory = {
           {
             "id": "ven-vialone",
             "name": "Vialone Nano Veronese IGP rice",
-            "meta": "1 kg"
+            "meta": "1 kg",
+            "tag": "IGP",
+            "tagTone": "green",
+            "origin": "Veronese plain",
+            "img": {
+              "q": "Vialone Nano Veronese rice Veneto Italy || Vialone Nano Veronese rice || Vialone Nano rice food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -56,12 +106,26 @@ const veneto: RegionStory = {
           {
             "id": "ven-asiago-stagionato",
             "name": "Asiago DOP Stagionato",
-            "meta": "Wedge"
+            "meta": "Wedge",
+            "tag": "Aged 90+ days",
+            "tagTone": "gold",
+            "origin": "Asiago plateau",
+            "img": {
+              "q": "Asiago Stagionato Veneto Italy || Asiago Stagionato || Asiago food",
+              "orientation": "squarish"
+            }
           },
           {
             "id": "ven-asiago-fresco",
             "name": "Asiago DOP Fresco",
-            "meta": "Wedge"
+            "meta": "Wedge",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Asiago plateau",
+            "img": {
+              "q": "Asiago Fresco Veneto Italy || Asiago Fresco || Asiago food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -74,7 +138,14 @@ const veneto: RegionStory = {
           {
             "id": "ven-stoccafisso",
             "name": "Stockfish",
-            "meta": "Dried"
+            "meta": "Dried",
+            "tag": "Air-dried",
+            "tagTone": "neutral",
+            "origin": "Norway to Venice",
+            "img": {
+              "q": "Stockfish Veneto Italy || Stockfish || Stockfish food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -87,7 +158,14 @@ const veneto: RegionStory = {
           {
             "id": "ven-polenta-bianca",
             "name": "White polenta flour",
-            "meta": "Bag"
+            "meta": "Bag",
+            "tag": "White corn",
+            "tagTone": "neutral",
+            "origin": "Venetian plain",
+            "img": {
+              "q": "White polenta flour Veneto Italy || White polenta flour || Polenta food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -100,11 +178,19 @@ const veneto: RegionStory = {
           {
             "id": "ven-sopressa",
             "name": "Sopressa Vicentina DOP",
-            "meta": "Sliced"
+            "meta": "Sliced",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Vicenza",
+            "img": {
+              "q": "Sopressa Vicentina Veneto Italy || Sopressa Vicentina || Sopressa food",
+              "orientation": "squarish"
+            }
           }
         ]
       }
-    ]
+    ],
+    "eyebrow": "Essential terroir goods"
   },
   "dishes": {
     "lede": "Four dishes Veneto makes its own.",
@@ -113,26 +199,44 @@ const veneto: RegionStory = {
         "title": "Risotto al radicchio",
         "where": "Treviso",
         "body": "Creamy Vialone Nano risotto with wilted radicchio, its bitterness softened by butter and cheese. A winter dish, made when the tardivo is at its best.",
-        "tip": "[Cook it below](#risotto)"
+        "tip": "[Cook it below](#risotto)",
+        "image": {
+          "q": "Risotto al radicchio Veneto Italy food || Risotto al radicchio food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Baccalà",
         "where": "Venice and Vicenza",
         "body": "In Venice’s wine bars, stockfish is whipped with olive oil into baccalà mantecato and spread on bread or grilled polenta. In Vicenza it is stewed slowly with milk, onions, and anchovies, and served over polenta.",
-        "tip": "Both start with [stockfish](product:ven-stoccafisso) soaked for several days."
+        "tip": "Both start with [stockfish](product:ven-stoccafisso) soaked for several days.",
+        "image": {
+          "q": "Baccalà Veneto Italy food || Baccalà food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Sarde in saor",
         "where": "Venice",
-        "body": "Fried sardines layered with onions cooked in vinegar, a way to keep fish for days before refrigeration. Raisins and pine nuts, arrivals from the spice trade, soften the sourness."
+        "body": "Fried sardines layered with onions cooked in vinegar, a way to keep fish for days before refrigeration. Raisins and pine nuts, arrivals from the spice trade, soften the sourness.",
+        "note": "Kept for days in vinegar",
+        "image": {
+          "q": "Sarde in saor Veneto Italy food || Sarde in saor food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Risi e bisi",
         "where": "Venice",
         "body": "Rice and young peas cooked to a consistency between soup and risotto. It was traditionally presented to the Doge on April 25, the feast of St. Mark, with the first peas of spring.",
-        "tip": "Make it with [Vialone Nano](product:ven-vialone) and the freshest peas you can find."
+        "tip": "Make it with [Vialone Nano](product:ven-vialone) and the freshest peas you can find.",
+        "image": {
+          "q": "Risi e bisi Veneto Italy food || Risi e bisi food",
+          "orientation": "landscape"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Culinary canon"
   },
   "maker": {
     "name": "Riseria Ferron",
@@ -141,7 +245,32 @@ const veneto: RegionStory = {
       "When rice came to the lowlands south of Verona in the 1500s, the Venetian Republic also allowed farmers to build pile, mills where water-powered wooden pestles husked the grain. One of them, the Pila Vecia at Isola della Scala, dates to the mid-1600s. The Ferron family took it over in the early twentieth century, and five generations have run it since.",
       "The old mill is protected as a historic monument and still works: a water wheel drives nine wooden pestles that whiten the rice the traditional way. The family sells Vialone Nano under two names, Riso Ferron and the higher-end Pila Vecia, and has long helped organize Isola della Scala’s rice fair, held every year since 1967."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": {
+          "q": "Pila Vecia mill Isola della Scala Veneto Italy || Pila Vecia mill Veneto Italy || Isola della Scala Veneto Italy",
+          "orientation": "landscape"
+        },
+        "alt": "Pila Vecia · Isola della Scala",
+        "caption": "Pila Vecia · Isola della Scala"
+      },
+      {
+        "src": {
+          "q": "rice fields Isola della Scala Veneto Italy || rice fields Veneto Italy || Isola della Scala Veneto Italy",
+          "orientation": "landscape"
+        },
+        "alt": "Rice paddies south of Verona",
+        "caption": "Rice paddies south of Verona"
+      },
+      {
+        "src": {
+          "q": "Riso Ferron Vialone Nano Isola della Scala Veneto Italy || Riso Ferron Vialone Nano Veneto Italy || Isola della Scala Veneto Italy",
+          "orientation": "landscape"
+        },
+        "alt": "Ferron Vialone Nano",
+        "caption": "Ferron Vialone Nano"
+      }
+    ],
     "facts": [
       {
         "label": "Mill",
@@ -161,12 +290,26 @@ const veneto: RegionStory = {
       {
         "id": "ven-ferron-vialone",
         "name": "Riso Ferron Vialone Nano",
-        "meta": "1 kg"
+        "meta": "1 kg",
+        "tag": "Pestle-milled",
+        "tagTone": "neutral",
+        "origin": "Isola della Scala",
+        "img": {
+          "q": "Riso Ferron Vialone Nano Veneto Italy || Riso Ferron Vialone Nano",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "ven-pila-vecia",
         "name": "Pila Vecia Vialone Nano",
-        "meta": "1 kg"
+        "meta": "1 kg",
+        "tag": "Higher-end",
+        "tagTone": "gold",
+        "origin": "Isola della Scala",
+        "img": {
+          "q": "Pila Vecia Vialone Nano Veneto Italy || Pila Vecia Vialone Nano",
+          "orientation": "squarish"
+        }
       }
     ]
   },
@@ -216,12 +359,26 @@ const veneto: RegionStory = {
         {
           "id": "ven-vialone",
           "name": "Vialone Nano Veronese IGP rice",
-          "meta": "1 kg"
+          "meta": "1 kg",
+          "tag": "IGP",
+          "tagTone": "green",
+          "origin": "Veronese plain",
+          "img": {
+            "q": "Vialone Nano Veronese rice Veneto Italy || Vialone Nano Veronese rice || Vialone Nano rice food",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "ven-asiago-stagionato",
           "name": "Asiago DOP Stagionato",
-          "meta": "Wedge"
+          "meta": "Wedge",
+          "tag": "Aged 90+ days",
+          "tagTone": "gold",
+          "origin": "Asiago plateau",
+          "img": {
+            "q": "Asiago Stagionato Veneto Italy || Asiago Stagionato || Asiago food",
+            "orientation": "squarish"
+          }
         }
       ],
       "schema": {
@@ -239,6 +396,11 @@ const veneto: RegionStory = {
           "50 g Asiago stagionato or Grana Padano, grated",
           "Salt and black pepper"
         ]
+      },
+      "imageCaption": "Treviso classic · about 35 minutes",
+      "image": {
+        "q": "Risotto al radicchio di Treviso Veneto Italy food || Risotto al radicchio di Treviso food",
+        "orientation": "landscape"
       }
     },
     "shortcut": {
@@ -248,15 +410,32 @@ const veneto: RegionStory = {
         {
           "id": "ven-radicchio-tardivo",
           "name": "Radicchio Rosso di Treviso IGP Tardivo",
-          "meta": "Winter only"
+          "meta": "Winter only",
+          "tag": "Winter only",
+          "tagTone": "green",
+          "origin": "Treviso",
+          "img": {
+            "q": "Radicchio Rosso di Treviso Tardivo Veneto Italy || Radicchio Rosso di Treviso Tardivo || Radicchio di Treviso food",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "ven-sopressa",
           "name": "Sopressa Vicentina DOP",
-          "meta": "Sliced"
+          "meta": "Sliced",
+          "tag": "DOP",
+          "tagTone": "green",
+          "origin": "Vicenza",
+          "img": {
+            "q": "Sopressa Vicentina Veneto Italy || Sopressa Vicentina || Sopressa food",
+            "orientation": "squarish"
+          }
         }
-      ]
-    }
+      ],
+      "eyebrow": "Winter grill shortcut",
+      "button": "Get the radicchio pair"
+    },
+    "eyebrow": "Terroir kitchen"
   },
   "readTheLabel": "“Asiago” without the DOP seal can be made anywhere, and “baccalà” can mean salt cod or stockfish depending on who is selling it. Check the place of production, the ingredient list, and any DOP or IGP seal. Every product we carry states where it is made.",
   "set": {
@@ -267,44 +446,101 @@ const veneto: RegionStory = {
       {
         "id": "ven-vialone",
         "name": "Vialone Nano IGP rice",
-        "meta": "1 kg"
+        "meta": "1 kg",
+        "tag": "IGP",
+        "tagTone": "green",
+        "origin": "Veronese plain",
+        "img": {
+          "q": "Vialone Nano Veronese rice Veneto Italy || Vialone Nano Veronese rice || Vialone Nano rice food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "ven-pila-vecia",
         "name": "Pila Vecia Vialone Nano",
-        "meta": "1 kg"
+        "meta": "1 kg",
+        "tag": "Higher-end",
+        "tagTone": "gold",
+        "origin": "Isola della Scala",
+        "img": {
+          "q": "Pila Vecia Vialone Nano Veneto Italy || Pila Vecia Vialone Nano",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "ven-asiago-stagionato",
         "name": "Asiago DOP Stagionato",
-        "meta": "Wedge"
+        "meta": "Wedge",
+        "tag": "Aged 90+ days",
+        "tagTone": "gold",
+        "origin": "Asiago plateau",
+        "img": {
+          "q": "Asiago Stagionato Veneto Italy || Asiago Stagionato || Asiago food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "ven-asiago-fresco",
         "name": "Asiago DOP Fresco",
-        "meta": "Wedge"
+        "meta": "Wedge",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Asiago plateau",
+        "img": {
+          "q": "Asiago Fresco Veneto Italy || Asiago Fresco || Asiago food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "ven-sopressa",
         "name": "Sopressa Vicentina DOP",
-        "meta": "Sliced"
+        "meta": "Sliced",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Vicenza",
+        "img": {
+          "q": "Sopressa Vicentina Veneto Italy || Sopressa Vicentina || Sopressa food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "ven-polenta-bianca",
         "name": "White polenta flour",
-        "meta": "Bag"
+        "meta": "Bag",
+        "tag": "White corn",
+        "tagTone": "neutral",
+        "origin": "Venetian plain",
+        "img": {
+          "q": "White polenta flour Veneto Italy || White polenta flour || Polenta food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "ven-stoccafisso",
         "name": "Stockfish",
-        "meta": "Dried"
+        "meta": "Dried",
+        "tag": "Air-dried",
+        "tagTone": "neutral",
+        "origin": "Norway to Venice",
+        "img": {
+          "q": "Stockfish Veneto Italy || Stockfish || Stockfish food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "ven-radicchio-tardivo",
         "name": "Radicchio Tardivo IGP",
-        "meta": "Winter only"
+        "meta": "Winter only",
+        "tag": "Winter only",
+        "tagTone": "green",
+        "origin": "Treviso",
+        "img": {
+          "q": "Radicchio Rosso di Treviso Tardivo Veneto Italy || Radicchio Rosso di Treviso Tardivo || Radicchio di Treviso food",
+          "orientation": "squarish"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Limited curation · Parcel N° 09"
   },
   "about": [
     "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."

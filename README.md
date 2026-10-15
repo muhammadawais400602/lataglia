@@ -19,7 +19,8 @@ Locally the API runs inside the Vite dev server and keeps data in memory, so it 
 2. **Database (MongoDB Atlas):** in Atlas → Network Access allow `0.0.0.0/0` (Vercel has no fixed IP); Connect → Drivers → copy the `mongodb+srv://…` string with your DB user's password filled in. In Vercel add it as `MONGODB_URI` (Production + Preview). Optional `MONGODB_DB` (default `lataglia`). Redeploy. Data appears in Atlas as collections `kv` (products, settings, counters) and `orders`.
    *Alternative:* Storage → Upstash for Redis (`KV_REST_API_URL` / `KV_REST_API_TOKEN`) also works; MongoDB wins if both are set.
 3. **Amazon links (optional):** sign up at canopyapi.co (100 free lookups a month, then about $0.01 each), copy the API key and add it as `CANOPY_API_KEY`. Redeploy. Without it, "Add from Amazon link" only fills in the name from the link.
-4. Optional: `ADMIN_SESSION_SECRET` (any long random string) to sign admin sessions with a key separate from the password.
+4. **Region photos:** create a free app at unsplash.com/developers, copy its **Access Key** and add it as `UNSPLASH_ACCESS_KEY`. Region pages describe each photo ("Sassi of Matera Basilicata"); the first visit looks it up on Unsplash and the choice is kept in the database (`photos` collection), so it never changes afterwards. Credits appear under each story. Delete a row in `photos` to make the site pick again.
+5. Optional: `ADMIN_SESSION_SECRET` (any long random string) to sign admin sessions with a key separate from the password.
 
 Without the database, the shop still shows the built-in catalog, but checkout can't save orders and the admin is read-only.
 

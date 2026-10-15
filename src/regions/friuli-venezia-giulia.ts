@@ -11,7 +11,43 @@ const friuliVeneziaGiulia: RegionStory = {
   "subtitle": "Prosciutto, mountain cheese, and the coffeehouses of Trieste.",
   "hero": {
     "color": "#4A3428",
-    "colorDeep": "#32231B"
+    "colorDeep": "#32231B",
+    "dossier": "Terroir archive · Dossier N° 16",
+    "badge": "Three-culture crossroads",
+    "metrics": [
+      {
+        "icon": "map",
+        "label": "Borders",
+        "value": "Austria & Slovenia"
+      },
+      {
+        "icon": "terrain",
+        "label": "Mountains",
+        "value": "Carnic & Julian Alps"
+      },
+      {
+        "icon": "sailing",
+        "label": "Port",
+        "value": "Trieste"
+      },
+      {
+        "icon": "restaurant",
+        "label": "Signature",
+        "value": "San Daniele prosciutto"
+      }
+    ],
+    "heritage": "Habsburg port kitchen",
+    "imageCaption": {
+      "title": "Sauris, Carnic Alps",
+      "body": "An isolated Alpine village 1,200 meters up, where people still speak a dialect of German origin."
+    },
+    "imageTag": "Carnic Alps · Sauris",
+    "heritageNote": "half alpine, half adriatic",
+    "image": {
+      "q": "Sauris, Carnic Alps Friuli || Friuli landscape",
+      "orientation": "landscape"
+    },
+    "imageAlt": "An isolated Alpine village 1,200 meters up, where people still speak a dialect of German origin."
   },
   "intro": [
     "Friuli-Venezia Giulia occupies Italy’s northeastern corner, bordering Austria and Slovenia, and runs from the Carnic and Julian Alps across a broad plain to the Adriatic at Trieste. Its cooking is the meeting point of three traditions: Central European, Venetian, and Slavic. Trieste spent some five centuries under Habsburg rule and grew into the empire’s great port, which is why it has Viennese pastries, sauerkraut soups, and a coffeehouse culture all its own. Up in Carnia, the mountain economy rested on dairy cattle, and cooks made cheese go a long way. The old spice routes from the port to the Alpine passes ran straight through the region, and Carnia’s cjarsons, filled with raisins and dusted with cinnamon, are among its most distinctive dishes. The result is one of Italy’s most surprising cuisines, half Alpine, half Adriatic.",
@@ -29,7 +65,14 @@ const friuliVeneziaGiulia: RegionStory = {
           {
             "id": "fvg-san-daniele",
             "name": "Prosciutto di San Daniele DOP",
-            "meta": "Sliced"
+            "meta": "Sliced",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "San Daniele",
+            "img": {
+              "q": "Prosciutto di San Daniele Friuli || Prosciutto di San Daniele || Prosciutto di San Daniele food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -42,12 +85,26 @@ const friuliVeneziaGiulia: RegionStory = {
           {
             "id": "fvg-montasio-fresco",
             "name": "Montasio DOP Fresco",
-            "meta": "Wedge"
+            "meta": "Wedge",
+            "tag": "DOP · fresco",
+            "tagTone": "green",
+            "origin": "Friulian Alps",
+            "img": {
+              "q": "Montasio Fresco Friuli || Montasio Fresco || Montasio food",
+              "orientation": "squarish"
+            }
           },
           {
             "id": "fvg-montasio-stagionato",
             "name": "Montasio DOP Stagionato",
-            "meta": "Wedge"
+            "meta": "Wedge",
+            "tag": "Aged 10 mos",
+            "tagTone": "gold",
+            "origin": "Friulian Alps",
+            "img": {
+              "q": "Montasio Stagionato Friuli || Montasio Stagionato || Montasio food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -60,7 +117,14 @@ const friuliVeneziaGiulia: RegionStory = {
           {
             "id": "fvg-sauris",
             "name": "Prosciutto di Sauris IGP",
-            "meta": "Sliced"
+            "meta": "Sliced",
+            "tag": "IGP",
+            "tagTone": "green",
+            "origin": "Sauris",
+            "img": {
+              "q": "Prosciutto di Sauris Friuli || Prosciutto di Sauris || Prosciutto di Sauris food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -73,7 +137,14 @@ const friuliVeneziaGiulia: RegionStory = {
           {
             "id": "fvg-brovada",
             "name": "Brovada DOP",
-            "meta": "Pack"
+            "meta": "Pack",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Friulian plain",
+            "img": {
+              "q": "Brovada Friuli || Brovada || Brovada food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -86,7 +157,14 @@ const friuliVeneziaGiulia: RegionStory = {
           {
             "id": "fvg-ricotta-affumicata",
             "name": "Ricotta affumicata",
-            "meta": "Piece"
+            "meta": "Piece",
+            "tag": "Smoked",
+            "tagTone": "neutral",
+            "origin": "Carnia",
+            "img": {
+              "q": "Ricotta affumicata Friuli || Ricotta affumicata || Smoked ricotta food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -99,11 +177,19 @@ const friuliVeneziaGiulia: RegionStory = {
           {
             "id": "fvg-gubana",
             "name": "Gubana",
-            "meta": "Whole"
+            "meta": "Whole",
+            "tag": "Holiday cake",
+            "tagTone": "neutral",
+            "origin": "Natisone valleys",
+            "img": {
+              "q": "Gubana Friuli || Gubana || Gubana food",
+              "orientation": "squarish"
+            }
           }
         ]
       }
-    ]
+    ],
+    "eyebrow": "Essential terroir goods"
   },
   "dishes": {
     "lede": "Four dishes Friuli-Venezia Giulia makes its own.",
@@ -112,26 +198,44 @@ const friuliVeneziaGiulia: RegionStory = {
         "title": "Frico con patate",
         "where": "Across Friuli",
         "body": "A potato and Montasio cake, crisp outside and molten within. There is also a thin, crunchy frico of cheese alone.",
-        "tip": "[Cook it below](#frico)"
+        "tip": "[Cook it below](#frico)",
+        "image": {
+          "q": "Frico con patate Friuli food || Frico con patate food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Jota",
         "where": "Trieste",
-        "body": "A thick soup of sauerkraut, beans, potatoes, and pork, seasoned with cumin and simmered for hours. Trieste’s signature dish, served in its informal buffet taverns."
+        "body": "A thick soup of sauerkraut, beans, potatoes, and pork, seasoned with cumin and simmered for hours. Trieste’s signature dish, served in its informal buffet taverns.",
+        "note": "Trieste’s signature dish",
+        "image": {
+          "q": "Jota Friuli food || Jota food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Cjarsons",
         "where": "Carnia",
         "body": "Ravioli with fillings that mix sweet and savory, from ricotta, potatoes, and spinach to raisins, cinnamon, and cocoa, served with melted butter, smoked ricotta, sugar, and cinnamon.",
-        "tip": "Finish with grated [smoked ricotta](product:fvg-ricotta-affumicata)."
+        "tip": "Finish with grated [smoked ricotta](product:fvg-ricotta-affumicata).",
+        "image": {
+          "q": "Cjarsons Friuli food || Cjarsons food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Brovada e muset",
         "where": "The Friulian plain",
         "body": "Fermented turnips cooked with oil and garlic and served with muset, Friuli’s cotechino sausage.",
-        "tip": "Start with [Brovada DOP](product:fvg-brovada)."
+        "tip": "Start with [Brovada DOP](product:fvg-brovada).",
+        "image": {
+          "q": "Brovada e muset Friuli food || Brovada e muset food",
+          "orientation": "landscape"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Alpine-Adriatic canon"
   },
   "maker": {
     "name": "Prosciuttificio Wolf",
@@ -140,7 +244,32 @@ const friuliVeneziaGiulia: RegionStory = {
       "Pietro Schneider, known as “Wolf,” was born in Sauris in 1862 and became a skilled curer of hams and salumi in this isolated Alpine village. His grandson Giuseppe Petris learned the craft and, in the 1960s, founded the prosciuttificio that bears his nickname. It is still run by the Petris family.",
       "Wolf makes Prosciutto di Sauris IGP and speck, smoked the traditional way in real chimneys burning only beech wood, then aged in the cool mountain air at 1,200 meters. The ham’s growth helped bring new life to the village itself."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": {
+          "q": "Sauris village Friuli || Sauris Friuli",
+          "orientation": "landscape"
+        },
+        "alt": "Sauris village · 1,200 meters",
+        "caption": "Sauris village · 1,200 meters"
+      },
+      {
+        "src": {
+          "q": "smoking room Sauris Friuli || smoking room Friuli || Sauris Friuli",
+          "orientation": "landscape"
+        },
+        "alt": "Beech-wood smoking room",
+        "caption": "Beech-wood smoking room"
+      },
+      {
+        "src": {
+          "q": "Wolf Prosciutto di Sauris Friuli || Sauris Friuli",
+          "orientation": "landscape"
+        },
+        "alt": "Wolf Prosciutto di Sauris",
+        "caption": "Wolf Prosciutto di Sauris"
+      }
+    ],
     "facts": [
       {
         "label": "Family tradition",
@@ -160,12 +289,26 @@ const friuliVeneziaGiulia: RegionStory = {
       {
         "id": "fvg-wolf-sauris",
         "name": "Wolf Prosciutto di Sauris IGP",
-        "meta": "Sliced"
+        "meta": "Sliced",
+        "tag": "Beech smoked",
+        "tagTone": "gold",
+        "origin": "Sauris",
+        "img": {
+          "q": "Wolf Prosciutto di Sauris Friuli || Wolf Prosciutto di Sauris",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "fvg-wolf-speck",
         "name": "Wolf Sauris speck",
-        "meta": "Piece"
+        "meta": "Piece",
+        "tag": "Beech smoked",
+        "tagTone": "gold",
+        "origin": "Sauris",
+        "img": {
+          "q": "Wolf Sauris speck Friuli || Wolf Sauris speck",
+          "orientation": "squarish"
+        }
       }
     ]
   },
@@ -209,12 +352,26 @@ const friuliVeneziaGiulia: RegionStory = {
         {
           "id": "fvg-montasio-fresco",
           "name": "Montasio DOP Fresco",
-          "meta": "Wedge"
+          "meta": "Wedge",
+          "tag": "DOP · fresco",
+          "tagTone": "green",
+          "origin": "Friulian Alps",
+          "img": {
+            "q": "Montasio Fresco Friuli || Montasio Fresco || Montasio food",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "fvg-montasio-stagionato",
           "name": "Montasio DOP Stagionato",
-          "meta": "Wedge"
+          "meta": "Wedge",
+          "tag": "Aged 10 mos",
+          "tagTone": "gold",
+          "origin": "Friulian Alps",
+          "img": {
+            "q": "Montasio Stagionato Friuli || Montasio Stagionato || Montasio food",
+            "orientation": "squarish"
+          }
         }
       ],
       "schema": {
@@ -229,6 +386,11 @@ const friuliVeneziaGiulia: RegionStory = {
           "300 g Montasio, half fresco and half stagionato, cut into small cubes",
           "Salt and black pepper"
         ]
+      },
+      "imageCaption": "Friulian classic · about 55 minutes",
+      "image": {
+        "q": "Frico con patate Friuli food || Frico con patate food",
+        "orientation": "landscape"
       }
     },
     "shortcut": {
@@ -238,15 +400,32 @@ const friuliVeneziaGiulia: RegionStory = {
         {
           "id": "fvg-montasio-stagionato",
           "name": "Montasio DOP Stagionato",
-          "meta": "Wedge"
+          "meta": "Wedge",
+          "tag": "Aged 10 mos",
+          "tagTone": "gold",
+          "origin": "Friulian Alps",
+          "img": {
+            "q": "Montasio Stagionato Friuli || Montasio Stagionato || Montasio food",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "fvg-san-daniele",
           "name": "Prosciutto di San Daniele DOP",
-          "meta": "Sliced"
+          "meta": "Sliced",
+          "tag": "DOP",
+          "tagTone": "green",
+          "origin": "San Daniele",
+          "img": {
+            "q": "Prosciutto di San Daniele Friuli || Prosciutto di San Daniele || Prosciutto di San Daniele food",
+            "orientation": "squarish"
+          }
         }
-      ]
-    }
+      ],
+      "eyebrow": "Carnia shortcut",
+      "button": "Get the frico pair"
+    },
+    "eyebrow": "Terroir kitchen"
   },
   "readTheLabel": "Only ham cured in San Daniele itself can be called Prosciutto di San Daniele, and only cheese made under the DOP can be called Montasio. Check the place of production, the ingredient list, and any DOP or IGP seal. Every product we carry states where it is made.",
   "set": {
@@ -257,44 +436,101 @@ const friuliVeneziaGiulia: RegionStory = {
       {
         "id": "fvg-san-daniele",
         "name": "Prosciutto di San Daniele DOP",
-        "meta": "Sliced"
+        "meta": "Sliced",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "San Daniele",
+        "img": {
+          "q": "Prosciutto di San Daniele Friuli || Prosciutto di San Daniele || Prosciutto di San Daniele food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "fvg-wolf-sauris",
         "name": "Wolf Prosciutto di Sauris IGP",
-        "meta": "Sliced"
+        "meta": "Sliced",
+        "tag": "Beech smoked",
+        "tagTone": "gold",
+        "origin": "Sauris",
+        "img": {
+          "q": "Wolf Prosciutto di Sauris Friuli || Wolf Prosciutto di Sauris",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "fvg-montasio-fresco",
         "name": "Montasio DOP Fresco",
-        "meta": "Wedge"
+        "meta": "Wedge",
+        "tag": "DOP · fresco",
+        "tagTone": "green",
+        "origin": "Friulian Alps",
+        "img": {
+          "q": "Montasio Fresco Friuli || Montasio Fresco || Montasio food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "fvg-montasio-stagionato",
         "name": "Montasio DOP Stagionato",
-        "meta": "Wedge"
+        "meta": "Wedge",
+        "tag": "Aged 10 mos",
+        "tagTone": "gold",
+        "origin": "Friulian Alps",
+        "img": {
+          "q": "Montasio Stagionato Friuli || Montasio Stagionato || Montasio food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "fvg-ricotta-affumicata",
         "name": "Smoked ricotta",
-        "meta": "Piece"
+        "meta": "Piece",
+        "tag": "Smoked",
+        "tagTone": "neutral",
+        "origin": "Carnia",
+        "img": {
+          "q": "Ricotta affumicata Friuli || Ricotta affumicata || Smoked ricotta food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "fvg-brovada",
         "name": "Brovada DOP",
-        "meta": "Pack"
+        "meta": "Pack",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Friulian plain",
+        "img": {
+          "q": "Brovada Friuli || Brovada || Brovada food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "fvg-gubana",
         "name": "Gubana",
-        "meta": "Whole"
+        "meta": "Whole",
+        "tag": "Holiday cake",
+        "tagTone": "neutral",
+        "origin": "Natisone valleys",
+        "img": {
+          "q": "Gubana Friuli || Gubana || Gubana food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "fvg-caffe-trieste",
         "name": "Trieste coffee",
-        "meta": "Bag"
+        "meta": "Bag",
+        "tag": "Coffeehouse",
+        "tagTone": "neutral",
+        "origin": "Trieste",
+        "img": {
+          "q": "Trieste coffee Friuli || Trieste coffee",
+          "orientation": "squarish"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Limited curation · Parcel N° 16"
   },
   "about": [
     "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."

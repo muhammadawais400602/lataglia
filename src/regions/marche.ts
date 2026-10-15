@@ -11,7 +11,43 @@ const marche: RegionStory = {
   "subtitle": "Stuffed olives, fine egg pasta, and fish soup by the sea.",
   "hero": {
     "color": "#8A3B4A",
-    "colorDeep": "#5E2833"
+    "colorDeep": "#5E2833",
+    "dossier": "Terroir archive · Dossier N° 14",
+    "badge": "Mountains to the Adriatic",
+    "metrics": [
+      {
+        "icon": "terrain",
+        "label": "Peak",
+        "value": "Monte Vettore, 2,476 m"
+      },
+      {
+        "icon": "waves",
+        "label": "Sea",
+        "value": "Adriatic coast"
+      },
+      {
+        "icon": "castle",
+        "label": "Court",
+        "value": "Urbino Renaissance"
+      },
+      {
+        "icon": "agriculture",
+        "label": "Wheat",
+        "value": "Once grown for export"
+      }
+    ],
+    "heritage": "Renaissance court table",
+    "imageCaption": {
+      "title": "The Sibillini mountains",
+      "body": "Past fishing ports and rolling hills rise the Sibillini, where Monte Vettore reaches 2,476 meters."
+    },
+    "imageTag": "Sibillini mountains, Marche",
+    "heritageNote": "michelangelo’s favorite",
+    "image": {
+      "q": "Sibillini mountains Marche Italy || Marche Italy landscape",
+      "orientation": "landscape"
+    },
+    "imageAlt": "Past fishing ports and rolling hills rise the Sibillini, where Monte Vettore reaches 2,476 meters."
   },
   "intro": [
     "The Marche lie on Italy’s Adriatic side, between the Apennines and the sea, with Emilia-Romagna to the north and Abruzzo to the south. The land climbs from a long coastline of fishing ports through rolling hills to the Sibillini mountains, where Monte Vettore rises to 2,476 meters. Urbino’s Renaissance court left its mark at the table, and the region once grew and exported so much wheat that wealthy families invested in it. The cooking changes as you travel: in the north around Pesaro, Emilian-style cappelletti; in the south around Ascoli, stuffed fried olives; inland, farmhouse dishes like rabbit roasted with wild fennel, rich pork salumi, and generous meat sauces; and along the coast, a different fish soup in nearly every port. The result is a cuisine of real variety, at once hearty and refined.",
@@ -29,12 +65,26 @@ const marche: RegionStory = {
           {
             "id": "mar-olive-ripiene",
             "name": "Oliva Ascolana del Piceno DOP, stuffed",
-            "meta": "Ready to fry"
+            "meta": "Ready to fry",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Ascoli Piceno",
+            "img": {
+              "q": "Oliva Ascolana del Piceno Marche Italy || Oliva Ascolana del Piceno || Ascolana olives food",
+              "orientation": "squarish"
+            }
           },
           {
             "id": "mar-olive-salamoia",
             "name": "Oliva Ascolana del Piceno DOP",
-            "meta": "Jar, in brine"
+            "meta": "Jar, in brine",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Piceno hills",
+            "img": {
+              "q": "Oliva Ascolana del Piceno Marche Italy || Oliva Ascolana del Piceno || Ascolana olives food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -47,7 +97,14 @@ const marche: RegionStory = {
           {
             "id": "mar-ciauscolo",
             "name": "Ciauscolo IGP",
-            "meta": "Whole"
+            "meta": "Whole",
+            "tag": "IGP",
+            "tagTone": "green",
+            "origin": "Visso",
+            "img": {
+              "q": "Ciauscolo Marche Italy || Ciauscolo || Ciauscolo food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -60,7 +117,14 @@ const marche: RegionStory = {
           {
             "id": "mar-maccheroncini",
             "name": "Maccheroncini di Campofilone IGP",
-            "meta": "250 g"
+            "meta": "250 g",
+            "tag": "IGP",
+            "tagTone": "green",
+            "origin": "Campofilone",
+            "img": {
+              "q": "Maccheroncini di Campofilone Marche Italy || Maccheroncini di Campofilone || Maccheroncini food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -73,7 +137,14 @@ const marche: RegionStory = {
           {
             "id": "mar-casciotta",
             "name": "Casciotta d’Urbino DOP",
-            "meta": "Whole"
+            "meta": "Whole",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Urbino",
+            "img": {
+              "q": "Casciotta d’Urbino Marche Italy || Casciotta d’Urbino || Casciotta d’Urbino food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -86,7 +157,14 @@ const marche: RegionStory = {
           {
             "id": "mar-carpegna",
             "name": "Prosciutto di Carpegna DOP",
-            "meta": "Sliced"
+            "meta": "Sliced",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Carpegna",
+            "img": {
+              "q": "Prosciutto di Carpegna Marche Italy || Prosciutto di Carpegna || Prosciutto di Carpegna food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -99,11 +177,19 @@ const marche: RegionStory = {
           {
             "id": "mar-olio-cartoceto",
             "name": "Cartoceto DOP extra-virgin olive oil",
-            "meta": "Bottle"
+            "meta": "Bottle",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Cartoceto",
+            "img": {
+              "q": "Cartoceto extra-virgin olive oil Marche Italy || Cartoceto extra-virgin olive oil || Olive oil food",
+              "orientation": "squarish"
+            }
           }
         ]
       }
-    ]
+    ],
+    "eyebrow": "Essential terroir goods"
   },
   "dishes": {
     "lede": "Four dishes the Marche make their own.",
@@ -112,25 +198,44 @@ const marche: RegionStory = {
         "title": "Maccheroncini al ragù",
         "where": "Campofilone",
         "body": "Fine egg maccheroncini with the Marche’s meat ragù, made from beef and pork cut in pieces rather than minced, spiced with clove and nutmeg.",
-        "tip": "[Cook it below](#ragu)"
+        "tip": "[Cook it below](#ragu)",
+        "image": {
+          "q": "Maccheroncini al ragù Marche Italy food || Maccheroncini al ragù food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Olive all’ascolana",
         "where": "Ascoli Piceno",
         "body": "Stuffed, breaded, and fried olives, served hot as an antipasto or as part of the fritto misto all’ascolana with fried custard cubes and lamb chops.",
-        "tip": "[Make them below](#shortcut)"
+        "tip": "[Make them below](#shortcut)",
+        "image": {
+          "q": "Olive all’ascolana Marche Italy food || Olive all’ascolana food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Vincisgrassi",
         "where": "Macerata",
-        "body": "The Marche’s answer to lasagna, dating from the 1700s: at least seven layers of egg pasta with béchamel and a ragù of mixed meats and chicken giblets."
+        "body": "The Marche’s answer to lasagna, dating from the 1700s: at least seven layers of egg pasta with béchamel and a ragù of mixed meats and chicken giblets.",
+        "note": "Layered since the 1700s",
+        "image": {
+          "q": "Vincisgrassi Marche Italy food || Vincisgrassi food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Brodetto",
         "where": "The Adriatic coast",
-        "body": "Fish soup, made differently in every port: with tomato and vinegar in Fano, without tomato but with wild saffron in Porto Recanati, with green peppers and green tomatoes in San Benedetto del Tronto."
+        "body": "Fish soup, made differently in every port: with tomato and vinegar in Fano, without tomato but with wild saffron in Porto Recanati, with green peppers and green tomatoes in San Benedetto del Tronto.",
+        "note": "Different in every port",
+        "image": {
+          "q": "Brodetto Marche Italy food || Brodetto food",
+          "orientation": "landscape"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Culinary canon"
   },
   "maker": {
     "name": "Spinosi",
@@ -139,7 +244,32 @@ const marche: RegionStory = {
       "Campofilone, a small medieval town in the province of Fermo, has been making maccheroncini for centuries. The Spinosi story began in 1933, when Nello Spinosi took his wife’s homemade maccheroncini to Rome as a gift and found people wanting more. In 1960 his son Vincenzo opened the family’s first artisan workshop in Campofilone.",
       "The method follows the old way: fresh eggs broken by hand, no water in the dough, the fine strands combed over the back of a knife, laid by hand on folded sheets of white paper, and dried slowly at low temperature for at least 24 hours. Vincenzo has done much to carry Campofilone’s pasta to Europe, the United States, and Asia, and has chaired the association of its producers."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": {
+          "q": "workshop Campofilone Marche Italy || workshop Marche Italy || Campofilone Marche Italy",
+          "orientation": "landscape"
+        },
+        "alt": "Spinosi workshop · Campofilone",
+        "caption": "Spinosi workshop · Campofilone"
+      },
+      {
+        "src": {
+          "q": "pasta on paper Campofilone Marche Italy || pasta on paper Marche Italy || Campofilone Marche Italy",
+          "orientation": "landscape"
+        },
+        "alt": "Strands on folded white paper",
+        "caption": "Strands on folded white paper"
+      },
+      {
+        "src": {
+          "q": "Spinosi Maccheroncini di Campofilone Marche Italy || Campofilone Marche Italy",
+          "orientation": "landscape"
+        },
+        "alt": "Spinosi maccheroncini IGP",
+        "caption": "Spinosi maccheroncini IGP"
+      }
+    ],
     "facts": [
       {
         "label": "Since",
@@ -159,12 +289,26 @@ const marche: RegionStory = {
       {
         "id": "mar-spinosi-maccheroncini",
         "name": "Spinosi Maccheroncini di Campofilone IGP",
-        "meta": "250 g"
+        "meta": "250 g",
+        "tag": "Dried 24+ hrs",
+        "tagTone": "gold",
+        "origin": "Campofilone",
+        "img": {
+          "q": "Spinosi Maccheroncini di Campofilone Marche Italy || Spinosi Maccheroncini di Campofilone",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "mar-spinosi-spinosini",
         "name": "Spinosi Spinosini",
-        "meta": "250 g"
+        "meta": "250 g",
+        "tag": "Since 1933",
+        "tagTone": "gold",
+        "origin": "Campofilone",
+        "img": {
+          "q": "Spinosi Spinosini Marche Italy || Spinosi Spinosini",
+          "orientation": "squarish"
+        }
       }
     ]
   },
@@ -211,12 +355,26 @@ const marche: RegionStory = {
         {
           "id": "mar-maccheroncini",
           "name": "Maccheroncini di Campofilone IGP",
-          "meta": "250 g"
+          "meta": "250 g",
+          "tag": "IGP",
+          "tagTone": "green",
+          "origin": "Campofilone",
+          "img": {
+            "q": "Maccheroncini di Campofilone Marche Italy || Maccheroncini di Campofilone || Maccheroncini food",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "mar-olio-cartoceto",
           "name": "Cartoceto DOP extra-virgin olive oil",
-          "meta": "Bottle"
+          "meta": "Bottle",
+          "tag": "DOP",
+          "tagTone": "green",
+          "origin": "Cartoceto",
+          "img": {
+            "q": "Cartoceto extra-virgin olive oil Marche Italy || Cartoceto extra-virgin olive oil || Olive oil food",
+            "orientation": "squarish"
+          }
         }
       ],
       "schema": {
@@ -235,6 +393,11 @@ const marche: RegionStory = {
           "1 clove and a grating of nutmeg",
           "Salt, pepper, and grated Parmigiano Reggiano"
         ]
+      },
+      "imageCaption": "Campofilone classic · about 2¼ hours",
+      "image": {
+        "q": "Maccheroncini di Campofilone al ragù marchigiano Marche Italy food || Maccheroncini di Campofilone al ragù marchigiano food",
+        "orientation": "landscape"
       }
     },
     "shortcut": {
@@ -244,15 +407,32 @@ const marche: RegionStory = {
         {
           "id": "mar-olive-ripiene",
           "name": "Oliva Ascolana del Piceno DOP, stuffed",
-          "meta": "Ready to fry"
+          "meta": "Ready to fry",
+          "tag": "DOP",
+          "tagTone": "green",
+          "origin": "Ascoli Piceno",
+          "img": {
+            "q": "Oliva Ascolana del Piceno Marche Italy || Oliva Ascolana del Piceno || Ascolana olives food",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "mar-ciauscolo",
           "name": "Ciauscolo IGP",
-          "meta": "Whole"
+          "meta": "Whole",
+          "tag": "IGP",
+          "tagTone": "green",
+          "origin": "Visso",
+          "img": {
+            "q": "Ciauscolo Marche Italy || Ciauscolo || Ciauscolo food",
+            "orientation": "squarish"
+          }
         }
-      ]
-    }
+      ],
+      "eyebrow": "Ten minutes in Ascoli",
+      "button": "Get the Ascoli pair"
+    },
+    "eyebrow": "Farmhouse kitchen"
   },
   "readTheLabel": "Stuffed olives sold as “ascolana-style” may use any olive and any filling, and egg pasta labeled “Campofilone-style” can be made anywhere. Check the place of production, the ingredient list, and any DOP or IGP seal. Every product we carry states where it is made.",
   "set": {
@@ -263,44 +443,101 @@ const marche: RegionStory = {
       {
         "id": "mar-maccheroncini",
         "name": "Maccheroncini di Campofilone IGP",
-        "meta": "250 g"
+        "meta": "250 g",
+        "tag": "IGP",
+        "tagTone": "green",
+        "origin": "Campofilone",
+        "img": {
+          "q": "Maccheroncini di Campofilone Marche Italy || Maccheroncini di Campofilone || Maccheroncini food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "mar-spinosi-spinosini",
         "name": "Spinosi Spinosini",
-        "meta": "250 g"
+        "meta": "250 g",
+        "tag": "Since 1933",
+        "tagTone": "gold",
+        "origin": "Campofilone",
+        "img": {
+          "q": "Spinosi Spinosini Marche Italy || Spinosi Spinosini",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "mar-olive-ripiene",
         "name": "Stuffed Ascolana olives DOP",
-        "meta": "Ready to fry"
+        "meta": "Ready to fry",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Ascoli Piceno",
+        "img": {
+          "q": "Oliva Ascolana del Piceno Marche Italy || Oliva Ascolana del Piceno || Ascolana olives food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "mar-olive-salamoia",
         "name": "Ascolana olives DOP",
-        "meta": "Brine"
+        "meta": "Brine",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Piceno hills",
+        "img": {
+          "q": "Oliva Ascolana del Piceno Marche Italy || Oliva Ascolana del Piceno || Ascolana olives food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "mar-ciauscolo",
         "name": "Ciauscolo IGP",
-        "meta": "Whole"
+        "meta": "Whole",
+        "tag": "IGP",
+        "tagTone": "green",
+        "origin": "Visso",
+        "img": {
+          "q": "Ciauscolo Marche Italy || Ciauscolo || Ciauscolo food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "mar-carpegna",
         "name": "Prosciutto di Carpegna DOP",
-        "meta": "Sliced"
+        "meta": "Sliced",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Carpegna",
+        "img": {
+          "q": "Prosciutto di Carpegna Marche Italy || Prosciutto di Carpegna || Prosciutto di Carpegna food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "mar-casciotta",
         "name": "Casciotta d’Urbino DOP",
-        "meta": "Whole"
+        "meta": "Whole",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Urbino",
+        "img": {
+          "q": "Casciotta d’Urbino Marche Italy || Casciotta d’Urbino || Casciotta d’Urbino food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "mar-olio-cartoceto",
         "name": "Cartoceto DOP oil",
-        "meta": "Bottle"
+        "meta": "Bottle",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Cartoceto",
+        "img": {
+          "q": "Cartoceto extra-virgin olive oil Marche Italy || Cartoceto extra-virgin olive oil || Olive oil food",
+          "orientation": "squarish"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Limited curation · Parcel N° 14"
   },
   "about": [
     "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
