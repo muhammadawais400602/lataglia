@@ -1,5 +1,6 @@
 import type { RegionStory } from './types';
 
+// Photos are stand-ins from elsewhere on the site, to be replaced.
 // Content from the Toscana story artifact. Product ids are the artifact's product slots:
 // set a product's Page address in Admin → Products to the same id to connect it.
 const toscana: RegionStory = {
@@ -43,10 +44,7 @@ const toscana: RegionStory = {
     },
     "imageTag": "Chianti and the Val d’Orcia",
     "heritageNote": "mangiafagioli",
-    "image": {
-      "q": "Val d’Orcia Tuscany || Tuscany landscape",
-      "orientation": "landscape"
-    },
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDKuapGvtz1m4yEiJmh5vBcthnNoV0P2Se0tF21T9_V_CDVx4pCFbczusX8ypWXZHV1BMlJ0i8sIWb4Z4uEm_A6mQL2mRBARioc6crU1N5rMrXju_nLvqzTJUTIXUY5O6L9zJ0BNDqG3aOp0yPR7VXOtZMd6nJRMXGZKqoKjLXRDwsPQcG9ORNxWV47lsd_1MXkzl4btNUmDZ_yzpVmLL4icT7pv6P8U_xZMrozfeBedIsWkhJCs9r6",
     "imageAlt": "Rolling hills in the heart of central Italy, between the Apennine ridge and the Tyrrhenian coast."
   },
   "intro": [
@@ -69,10 +67,7 @@ const toscana: RegionStory = {
             "tag": "IGP · new oil",
             "tagTone": "green",
             "origin": "Across the region",
-            "img": {
-              "q": "Toscano extra-virgin olive oil Tuscany || Toscano extra-virgin olive oil || Olive oil food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w"
           }
         ]
       },
@@ -89,10 +84,7 @@ const toscana: RegionStory = {
             "tag": "DOP",
             "tagTone": "green",
             "origin": "Tuscany’s south",
-            "img": {
-              "q": "Pecorino Toscano stagionato Tuscany || Pecorino Toscano stagionato || Pecorino Toscano food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
           }
         ]
       },
@@ -109,10 +101,7 @@ const toscana: RegionStory = {
             "tag": "Pantry staple",
             "tagTone": "neutral",
             "origin": "Tuscany",
-            "img": {
-              "q": "Tuscan cannellini beans Tuscany || Tuscan cannellini beans || Beans food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
           }
         ]
       },
@@ -129,10 +118,7 @@ const toscana: RegionStory = {
             "tag": "IGP",
             "tagTone": "green",
             "origin": "Chianti hills",
-            "img": {
-              "q": "Finocchiona Tuscany || Finocchiona || Finocchiona food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
           }
         ]
       },
@@ -149,10 +135,7 @@ const toscana: RegionStory = {
             "tag": "Marble cured",
             "tagTone": "gold",
             "origin": "Colonnata",
-            "img": {
-              "q": "Lardo di Colonnata Tuscany || Lardo di Colonnata || Lardo food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo"
           }
         ]
       },
@@ -169,10 +152,7 @@ const toscana: RegionStory = {
             "tag": "IGP",
             "tagTone": "green",
             "origin": "Garfagnana",
-            "img": {
-              "q": "Farro della Garfagnana Tuscany || Farro della Garfagnana || Farro food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDMH2M-VN1-Pz9hCbkXgdgup639qKPj1bgJo2jf1PgPm9NKzrgAY_T6MZujPmHAC4Z5W83H6bgIwaOrwcCLEuI-3an8k7c44fESuTzHNkXQYSCN_pESKkZUsjfCP-01ZMORW4JuJXmElmpAAAxPwRTi5o5Crpmlu_bVRSOXjhggx377vb87iOfKRdkb1LjsaiX1pF73K7pXrg-DIruRvIfEPidPaOJoOlRNnbEwUK6fqguV0N3VVklu"
           }
         ]
       }
@@ -187,40 +167,28 @@ const toscana: RegionStory = {
         "where": "Florence",
         "body": "A thick soup of beans, cavolo nero, and stale bread, made one day and “reboiled” the next, which is what its name means. Better on the second day, and on the third.",
         "tip": "[Cook it below](#ribollita)",
-        "image": {
-          "q": "Ribollita Tuscany food || Ribollita food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBxg7ZeusKi1XJ_YIbUpf7bMvUDHPzrJBa0kGGcUmiEWQXn5vyYqb10N5ExBRlYr2yJ0WfsFPe7URckqO8PDwMH0UDSwVm6XQCF-NoeAM33s50RkHXH5cUKTQIls7nyQjkd8xFb7E1CVsnD4Hx0oK8so72g2UalmTdOWlUWCd2mUYhcv42IUIFm1cqLKE69xjZ96SmNApFtb-zmua5MK2Erwp7yfRDiKgHOwIebR0rdf84T1bYeSwKl"
       },
       {
         "title": "Bistecca alla fiorentina",
         "where": "Florence and the Val di Chiana",
         "body": "A T-bone at least three fingers thick, traditionally from white Chianina cattle, grilled over embers until charred outside and rare within, then finished with salt and oil.",
         "tip": "Serve with beans dressed in [new olive oil](product:tos-olio-igp) on the side.",
-        "image": {
-          "q": "Bistecca alla fiorentina Tuscany food || Bistecca alla fiorentina food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAPcC0a36PdQKRFN67N9n4iWBfhvVaOYD4lAqKygnUjTrscttDOYLVoI8x1mJHXJybsSr0etHTwY4pU0A01kN4o1IfpMOvEBAXOIrB8eZ11ou4LrSyCjELVvYNkcTxy0DtPWugtK_maKrpF1S29ogN-YzCyzhDGWnfH4HdQ3jXFuv8h73Z3GNxqFxYhHzG5euOwWXNcUn83KLa8hc2NC2nQFY3TdtlSPgMj0otF-z9Yn-C7fprrBLWX"
       },
       {
         "title": "Pici all’aglione",
         "where": "Siena",
         "body": "Thick, hand-rolled spaghetti in a slow tomato sauce made with aglione, the giant, mild garlic of the Val di Chiana.",
         "tip": "Look for [dried pici](product:tos-pici) from Siena if you don’t roll your own.",
-        "image": {
-          "q": "Pici all’aglione Tuscany food || Pici all’aglione food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
       },
       {
         "title": "Cantucci and Vin Santo",
         "where": "Prato",
         "body": "Twice-baked almond biscuits dipped in Vin Santo, Tuscany’s amber dessert wine. The traditional way to end a meal, and to linger over it.",
         "tip": "Start with [the original from Prato](product:tos-mattei-prato).",
-        "image": {
-          "q": "Cantucci and Vin Santo Tuscany food || Cantucci and Vin Santo food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuC66Qz_O1vxGNBZSyhKBG7E11V9J_ynfSiGuUL5GLDjS-pp7xx0eqw_gmnVIRMXOEiaJ2wLNz9eDe-dRv1HJffGFDGWKIH-9TlU0UBDIw940qDCkUbeXjZjdsjLtKuD3B7Gg0GWHngYfm0d0u9xYun-FrttGnejAkzJLWV7HyuC_ZCA_QHWryHtkt4PkqDJFzQjJqtsSDMMGOLlU2E8sTTNiKXafW91SYmjA9P72M1cR5KetKzCi5cq"
       }
     ],
     "eyebrow": "Culinary canon"
@@ -234,26 +202,17 @@ const toscana: RegionStory = {
     ],
     "photos": [
       {
-        "src": {
-          "q": "shop on Via Ricasoli Prato Tuscany || shop on Via Ricasoli Tuscany || Prato Tuscany",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuC66Qz_O1vxGNBZSyhKBG7E11V9J_ynfSiGuUL5GLDjS-pp7xx0eqw_gmnVIRMXOEiaJ2wLNz9eDe-dRv1HJffGFDGWKIH-9TlU0UBDIw940qDCkUbeXjZjdsjLtKuD3B7Gg0GWHngYfm0d0u9xYun-FrttGnejAkzJLWV7HyuC_ZCA_QHWryHtkt4PkqDJFzQjJqtsSDMMGOLlU2E8sTTNiKXafW91SYmjA9P72M1cR5KetKzCi5cq",
         "alt": "Shop on Via Ricasoli · Prato",
         "caption": "Shop on Via Ricasoli · Prato"
       },
       {
-        "src": {
-          "q": "baking Prato Tuscany || baking Tuscany || Prato Tuscany",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDjU6UvYZUkSS18t8CQRRZnaNRc0VACKEjhPlfVfFdQ5pc54Xgy2GXOEcxNifnA64xYFhIvY_BUqA0MS-JHhIaxXG7ywJwi-c-2MoMLZQYjN7ECQUWQ30CTSnJyq3Tm7zn-7BkZHvprZQ0C9r6FYA64tnvr49FJHlvmY9kt2p8vCcOUoVi5fnGJfnDaU2kugnGZmTBxsCTHRKgMprbhUPLgw98lDHWUqoVhS2_XltgdYBMo8Wdajv2i",
         "alt": "Twice-baked biscotti · Prato",
         "caption": "Twice-baked biscotti · Prato"
       },
       {
-        "src": {
-          "q": "blue bag Prato Tuscany || blue bag Tuscany || Prato Tuscany",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq",
         "alt": "The blue paper bag · Mattei",
         "caption": "The blue paper bag · Mattei"
       }
@@ -281,10 +240,7 @@ const toscana: RegionStory = {
         "tag": "Since 1858",
         "tagTone": "gold",
         "origin": "Prato",
-        "img": {
-          "q": "Mattei Biscotti di Prato Tuscany || Mattei Biscotti di Prato",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuC66Qz_O1vxGNBZSyhKBG7E11V9J_ynfSiGuUL5GLDjS-pp7xx0eqw_gmnVIRMXOEiaJ2wLNz9eDe-dRv1HJffGFDGWKIH-9TlU0UBDIw940qDCkUbeXjZjdsjLtKuD3B7Gg0GWHngYfm0d0u9xYun-FrttGnejAkzJLWV7HyuC_ZCA_QHWryHtkt4PkqDJFzQjJqtsSDMMGOLlU2E8sTTNiKXafW91SYmjA9P72M1cR5KetKzCi5cq"
       },
       {
         "id": "tos-mattei-cioccolato",
@@ -293,10 +249,7 @@ const toscana: RegionStory = {
         "tag": "Dark chocolate",
         "tagTone": "neutral",
         "origin": "Prato",
-        "img": {
-          "q": "Mattei biscotti with dark chocolate Tuscany || Mattei biscotti with dark chocolate",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDjU6UvYZUkSS18t8CQRRZnaNRc0VACKEjhPlfVfFdQ5pc54Xgy2GXOEcxNifnA64xYFhIvY_BUqA0MS-JHhIaxXG7ywJwi-c-2MoMLZQYjN7ECQUWQ30CTSnJyq3Tm7zn-7BkZHvprZQ0C9r6FYA64tnvr49FJHlvmY9kt2p8vCcOUoVi5fnGJfnDaU2kugnGZmTBxsCTHRKgMprbhUPLgw98lDHWUqoVhS2_XltgdYBMo8Wdajv2i"
       }
     ]
   },
@@ -353,10 +306,7 @@ const toscana: RegionStory = {
           "tag": "Pantry staple",
           "tagTone": "neutral",
           "origin": "Tuscany",
-          "img": {
-            "q": "Tuscan cannellini beans Tuscany || Tuscan cannellini beans || Beans food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
         },
         {
           "id": "tos-olio-igp",
@@ -365,10 +315,7 @@ const toscana: RegionStory = {
           "tag": "IGP · new oil",
           "tagTone": "green",
           "origin": "Across the region",
-          "img": {
-            "q": "Toscano extra-virgin olive oil Tuscany || Toscano extra-virgin olive oil || Olive oil food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w"
         }
       ],
       "schema": {
@@ -393,10 +340,7 @@ const toscana: RegionStory = {
         ]
       },
       "imageCaption": "Florence classic · 3 hours, plus overnight",
-      "image": {
-        "q": "Ribollita Tuscany food || Ribollita food",
-        "orientation": "landscape"
-      }
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBxg7ZeusKi1XJ_YIbUpf7bMvUDHPzrJBa0kGGcUmiEWQXn5vyYqb10N5ExBRlYr2yJ0WfsFPe7URckqO8PDwMH0UDSwVm6XQCF-NoeAM33s50RkHXH5cUKTQIls7nyQjkd8xFb7E1CVsnD4Hx0oK8so72g2UalmTdOWlUWCd2mUYhcv42IUIFm1cqLKE69xjZ96SmNApFtb-zmua5MK2Erwp7yfRDiKgHOwIebR0rdf84T1bYeSwKl"
     },
     "shortcut": {
       "title": "Ten minutes in Florence",
@@ -409,10 +353,7 @@ const toscana: RegionStory = {
           "tag": "IGP · new oil",
           "tagTone": "green",
           "origin": "Across the region",
-          "img": {
-            "q": "Toscano extra-virgin olive oil Tuscany || Toscano extra-virgin olive oil || Olive oil food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w"
         },
         {
           "id": "tos-finocchiona",
@@ -421,10 +362,7 @@ const toscana: RegionStory = {
           "tag": "IGP",
           "tagTone": "green",
           "origin": "Chianti hills",
-          "img": {
-            "q": "Finocchiona Tuscany || Finocchiona || Finocchiona food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
         }
       ],
       "eyebrow": "Fettunta shortcut",
@@ -445,10 +383,7 @@ const toscana: RegionStory = {
         "tag": "IGP · new oil",
         "tagTone": "green",
         "origin": "Across the region",
-        "img": {
-          "q": "Toscano extra-virgin olive oil Tuscany || Toscano extra-virgin olive oil || Olive oil food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w"
       },
       {
         "id": "tos-pecorino",
@@ -457,10 +392,7 @@ const toscana: RegionStory = {
         "tag": "DOP",
         "tagTone": "green",
         "origin": "Tuscany’s south",
-        "img": {
-          "q": "Pecorino Toscano stagionato Tuscany || Pecorino Toscano stagionato || Pecorino Toscano food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
       },
       {
         "id": "tos-fagioli",
@@ -469,10 +401,7 @@ const toscana: RegionStory = {
         "tag": "Pantry staple",
         "tagTone": "neutral",
         "origin": "Tuscany",
-        "img": {
-          "q": "Tuscan cannellini beans Tuscany || Tuscan cannellini beans || Beans food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
       },
       {
         "id": "tos-farro",
@@ -481,10 +410,7 @@ const toscana: RegionStory = {
         "tag": "IGP",
         "tagTone": "green",
         "origin": "Garfagnana",
-        "img": {
-          "q": "Farro della Garfagnana Tuscany || Farro della Garfagnana || Farro food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDMH2M-VN1-Pz9hCbkXgdgup639qKPj1bgJo2jf1PgPm9NKzrgAY_T6MZujPmHAC4Z5W83H6bgIwaOrwcCLEuI-3an8k7c44fESuTzHNkXQYSCN_pESKkZUsjfCP-01ZMORW4JuJXmElmpAAAxPwRTi5o5Crpmlu_bVRSOXjhggx377vb87iOfKRdkb1LjsaiX1pF73K7pXrg-DIruRvIfEPidPaOJoOlRNnbEwUK6fqguV0N3VVklu"
       },
       {
         "id": "tos-finocchiona",
@@ -493,10 +419,7 @@ const toscana: RegionStory = {
         "tag": "IGP",
         "tagTone": "green",
         "origin": "Chianti hills",
-        "img": {
-          "q": "Finocchiona Tuscany || Finocchiona || Finocchiona food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
       },
       {
         "id": "tos-lardo",
@@ -505,10 +428,7 @@ const toscana: RegionStory = {
         "tag": "Marble cured",
         "tagTone": "gold",
         "origin": "Colonnata",
-        "img": {
-          "q": "Lardo di Colonnata Tuscany || Lardo di Colonnata || Lardo food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo"
       },
       {
         "id": "tos-pici",
@@ -517,10 +437,7 @@ const toscana: RegionStory = {
         "tag": "Dried pasta",
         "tagTone": "neutral",
         "origin": "Siena",
-        "img": {
-          "q": "Pici from Siena Tuscany || Pici from Siena",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
       },
       {
         "id": "tos-mattei-prato",
@@ -529,10 +446,7 @@ const toscana: RegionStory = {
         "tag": "Since 1858",
         "tagTone": "gold",
         "origin": "Prato",
-        "img": {
-          "q": "Mattei Biscotti di Prato Tuscany || Mattei Biscotti di Prato",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuC66Qz_O1vxGNBZSyhKBG7E11V9J_ynfSiGuUL5GLDjS-pp7xx0eqw_gmnVIRMXOEiaJ2wLNz9eDe-dRv1HJffGFDGWKIH-9TlU0UBDIw940qDCkUbeXjZjdsjLtKuD3B7Gg0GWHngYfm0d0u9xYun-FrttGnejAkzJLWV7HyuC_ZCA_QHWryHtkt4PkqDJFzQjJqtsSDMMGOLlU2E8sTTNiKXafW91SYmjA9P72M1cR5KetKzCi5cq"
       }
     ],
     "eyebrow": "Limited curation · Parcel N° 04"

@@ -1,5 +1,6 @@
 import type { RegionStory } from './types';
 
+// Photos are stand-ins from elsewhere on the site, to be replaced.
 // Content from the Puglia story artifact. Product ids are the artifact's product slots:
 // set a product's Page address in Admin → Products to the same id to connect it.
 const puglia: RegionStory = {
@@ -43,10 +44,7 @@ const puglia: RegionStory = {
     },
     "imageTag": "Itria valley · Murgia",
     "heritageNote": "granary of italy",
-    "image": {
-      "q": "Itria valley Puglia || Puglia landscape",
-      "orientation": "landscape"
-    },
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDunLQuG-6h_8WJ-M2XlEUxrS-ocVecY_b9P3SdF074ooFfXHBaLl7zxPZoh1HjviyZzjFW7iLNbWtzE3iZUFh2oM68EWnKqnKhTpTk8On_dIu0lW6moo6IQhwB_V-UItoecU8qJ8jhebJUGtU7hy7Wq1d1fNXT80TVBsNWSESnDJAL1A5y-rdbcu0QrXo43ErY2-ES95TYjfod5y89A1tusxBxSKctojzj8gV48gq4JsPBUtfF6edj",
     "imageAlt": "Cone-roofed stone trulli and fortified masserie, where Puglians worked the land."
   },
   "intro": [
@@ -69,10 +67,7 @@ const puglia: RegionStory = {
             "tag": "New harvest",
             "tagTone": "green",
             "origin": "Bari hills",
-            "img": {
-              "q": "Puglian Coratina extra-virgin olive oil Puglia || Puglian Coratina extra-virgin olive oil || Olive oil food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w"
           }
         ]
       },
@@ -89,10 +84,7 @@ const puglia: RegionStory = {
             "tag": "IGP",
             "tagTone": "green",
             "origin": "Andria",
-            "img": {
-              "q": "Burrata di Andria Puglia || Burrata di Andria || Burrata food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDqmbMaaWotLnqd7h746aY6nsFALWzvjqbkrArYOxWH0YaS3R83fCAwa_zPopqfTC19b2rndKbS0X7Nj0tC5mW1iAtX3KmPVZsS3ZsFiP0HIvHEAkj179Jhwx4pyyijMtfmbJUWOuzPdOd5gogteAa_cNezVDsRpXU2pkT0vo_nXW3O0JbzNZUqjoeSjms0C0zSftPsOjvMIjrOBbhGg700irDxZk2EN0lXZPe4eI9aZMgxn7bkIl7z"
           }
         ]
       },
@@ -109,10 +101,7 @@ const puglia: RegionStory = {
             "tag": "Durum wheat",
             "tagTone": "neutral",
             "origin": "Bari",
-            "img": {
-              "q": "Orecchiette from Puglia || Orecchiette food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
           }
         ]
       },
@@ -129,10 +118,7 @@ const puglia: RegionStory = {
             "tag": "Fennel seed",
             "tagTone": "neutral",
             "origin": "Puglia",
-            "img": {
-              "q": "Taralli with fennel seed Puglia || Taralli with fennel seed || Taralli food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
           }
         ]
       },
@@ -149,10 +135,7 @@ const puglia: RegionStory = {
             "tag": "Table olive",
             "tagTone": "neutral",
             "origin": "Cerignola",
-            "img": {
-              "q": "Bella di Cerignola olives Puglia || Bella di Cerignola olives || Bella di Cerignola olives food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
           }
         ]
       },
@@ -169,10 +152,7 @@ const puglia: RegionStory = {
             "tag": "DOP",
             "tagTone": "green",
             "origin": "Foggia and Bari",
-            "img": {
-              "q": "Canestrato Pugliese Puglia || Canestrato Pugliese || Canestrato Pugliese food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
           }
         ]
       }
@@ -187,40 +167,28 @@ const puglia: RegionStory = {
         "where": "Bari",
         "body": "Orecchiette and bitter turnip greens cooked in the same pot, then tossed with garlic, anchovy, chili, and plenty of olive oil. The defining dish of Puglia.",
         "tip": "[Cook it below](#orecchiette)",
-        "image": {
-          "q": "Orecchiette con le cime di rapa Puglia food || Orecchiette con le cime di rapa food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
       },
       {
         "title": "Fave e cicoria",
         "where": "Across the region",
         "body": "A smooth purée of dried fava beans served with bitter wild chicory and a pool of raw olive oil. Peasant food at its most elegant.",
         "tip": "Dress it with your best [Coratina oil](product:pug-olio-coratina).",
-        "image": {
-          "q": "Fave e cicoria Puglia food || Fave e cicoria food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w"
       },
       {
         "title": "Tiella barese",
         "where": "Bari",
         "body": "Rice, potatoes, and mussels layered in a pan with tomato, onion, and pecorino, then baked until the top crisps. A Spanish-era cousin of paella.",
         "note": "Spanish-era cousin of paella",
-        "image": {
-          "q": "Tiella barese Puglia food || Tiella barese food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMFgCdqzLvdJxYGaDAFlEDMYMT857D05ZZADK6F6LJbmst8APC4Nl4JYWyknq_CXy-wFoodx0MUTgMC0CntsIT7QemPR1DFgTLpY8U5WaTySi2AMxuyA04SwrYM2r3qDPPxCLOcyksMQ7bLZwM15ouLGkJeE9C1OWinZ6B7mwQYAmW_rezg2MqBTu7ntbCcLZlJzaaNWjiRvS33b7WJEC_xWcEO70o30NIuOjdMNQabBFxLaWU-Jhc"
       },
       {
         "title": "Focaccia barese",
         "where": "Bari",
         "body": "Thick, soft focaccia with a crisp, oily base, studded with cherry tomatoes and olives and scattered with oregano. Often made with a little potato in the dough.",
         "note": "Crisp, oily base",
-        "image": {
-          "q": "Focaccia barese Puglia food || Focaccia barese food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBRbfN3ec2j13IDm1PE1_z3XTGyEgtwGUUYTjZPOlr_XSHYQdySu4eni5eOXqrKG29Cl-GM6BIwsg8jt21ndJ7dF_v2T_t34PpNXh1wUwoN-V5yhIMZncJmE1BWFeStFpQRFpjHHXybHWqPAayZearG1M3sELhCkVAU7iqwesHOgc4x6uRnjfY8lqlAzgNDJ36Qk1zYHDXFvRI-S0rfWP25ciszdOMP1PMUS7ci3vjNMzI863KvNVVu"
       }
     ],
     "eyebrow": "Culinary canon"
@@ -234,26 +202,17 @@ const puglia: RegionStory = {
     ],
     "photos": [
       {
-        "src": {
-          "q": "olive grove Andria Puglia || olive grove Puglia || Andria Puglia",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCC3hXgtO47-HYlfWhixDmIvGeTORmhXWh-0mhqJFRiG405EoadpsWrNrhqsLIFFpDAqYH1QIdFzwMR73JQb-HxmTHFSFFnC0WNxh4tOQIEZA_nZacNem5iBUWjnfVgmUFcjBLMehUCESqr6VmxEEbhF2pMviwfwNweiWbDiMgyIPAj7_QO7izWh74iILXcxADKdMDXfSyYvtfRhhGhUHPdVyTJPDYQm_d646dur2oNjr8M78rgogJx",
         "alt": "Coratina groves · the Murgia",
         "caption": "Coratina groves · the Murgia"
       },
       {
-        "src": {
-          "q": "mill harvest Andria Puglia || mill harvest Puglia || Andria Puglia",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq",
         "alt": "Hand-picked, cold-pressed",
         "caption": "Hand-picked, cold-pressed"
       },
       {
-        "src": {
-          "q": "Frantoio Muraglia Coratina extra-virgin olive oil Andria Puglia || Frantoio Muraglia Coratina extra-virgin olive oil Puglia || Andria Puglia",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w",
         "alt": "Muraglia Coratina oil",
         "caption": "Muraglia Coratina oil"
       }
@@ -281,10 +240,7 @@ const puglia: RegionStory = {
         "tag": "Cold-pressed",
         "tagTone": "gold",
         "origin": "Andria",
-        "img": {
-          "q": "Frantoio Muraglia Coratina extra-virgin olive oil Puglia || Frantoio Muraglia Coratina extra-virgin olive oil",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida/AEtjO1UGaqDggIi3G7sIgIf0_eKWQUrjTiO4829HFnphdKotI21OyoXWY9wGL1lcZ-1iBcFoPdpPECFdmXrBsBYb7fpBdfU-sLxaW72c8eMu0iRXFRRqoXxvR77zKCvV2K6bSVrXK10C38pYILAkf3WAKGmFac2FHIpLMWlYBI-9SyO3Owz0ICJ76DPk5KQk40HBt7c5EK4d5zbSPxmji-wqP2WomT2fZUxTbiME8vrMcqmxae7ChNI8PqHqALA"
       }
     ]
   },
@@ -334,10 +290,7 @@ const puglia: RegionStory = {
           "tag": "Durum wheat",
           "tagTone": "neutral",
           "origin": "Bari",
-          "img": {
-            "q": "Orecchiette from Puglia || Orecchiette food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
         },
         {
           "id": "pug-olio-coratina",
@@ -346,10 +299,7 @@ const puglia: RegionStory = {
           "tag": "New harvest",
           "tagTone": "green",
           "origin": "Bari hills",
-          "img": {
-            "q": "Puglian Coratina extra-virgin olive oil Puglia || Puglian Coratina extra-virgin olive oil || Olive oil food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w"
         }
       ],
       "schema": {
@@ -369,10 +319,7 @@ const puglia: RegionStory = {
         ]
       },
       "imageCaption": "Bari classic · about 30 minutes",
-      "image": {
-        "q": "Orecchiette con le cime di rapa Puglia food || Orecchiette con le cime di rapa food",
-        "orientation": "landscape"
-      }
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
     },
     "shortcut": {
       "title": "Ten minutes in Andria",
@@ -385,10 +332,7 @@ const puglia: RegionStory = {
           "tag": "IGP",
           "tagTone": "green",
           "origin": "Andria",
-          "img": {
-            "q": "Burrata di Andria Puglia || Burrata di Andria || Burrata food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDqmbMaaWotLnqd7h746aY6nsFALWzvjqbkrArYOxWH0YaS3R83fCAwa_zPopqfTC19b2rndKbS0X7Nj0tC5mW1iAtX3KmPVZsS3ZsFiP0HIvHEAkj179Jhwx4pyyijMtfmbJUWOuzPdOd5gogteAa_cNezVDsRpXU2pkT0vo_nXW3O0JbzNZUqjoeSjms0C0zSftPsOjvMIjrOBbhGg700irDxZk2EN0lXZPe4eI9aZMgxn7bkIl7z"
         },
         {
           "id": "pug-taralli",
@@ -397,10 +341,7 @@ const puglia: RegionStory = {
           "tag": "Fennel seed",
           "tagTone": "neutral",
           "origin": "Puglia",
-          "img": {
-            "q": "Taralli with fennel seed Puglia || Taralli with fennel seed || Taralli food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
         }
       ],
       "eyebrow": "Aperitivo shortcut",
@@ -421,10 +362,7 @@ const puglia: RegionStory = {
         "tag": "New harvest",
         "tagTone": "green",
         "origin": "Bari hills",
-        "img": {
-          "q": "Puglian Coratina extra-virgin olive oil Puglia || Puglian Coratina extra-virgin olive oil || Olive oil food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w"
       },
       {
         "id": "pug-burrata",
@@ -433,10 +371,7 @@ const puglia: RegionStory = {
         "tag": "IGP",
         "tagTone": "green",
         "origin": "Andria",
-        "img": {
-          "q": "Burrata di Andria Puglia || Burrata di Andria || Burrata food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDqmbMaaWotLnqd7h746aY6nsFALWzvjqbkrArYOxWH0YaS3R83fCAwa_zPopqfTC19b2rndKbS0X7Nj0tC5mW1iAtX3KmPVZsS3ZsFiP0HIvHEAkj179Jhwx4pyyijMtfmbJUWOuzPdOd5gogteAa_cNezVDsRpXU2pkT0vo_nXW3O0JbzNZUqjoeSjms0C0zSftPsOjvMIjrOBbhGg700irDxZk2EN0lXZPe4eI9aZMgxn7bkIl7z"
       },
       {
         "id": "pug-orecchiette",
@@ -445,10 +380,7 @@ const puglia: RegionStory = {
         "tag": "Durum wheat",
         "tagTone": "neutral",
         "origin": "Bari",
-        "img": {
-          "q": "Orecchiette from Puglia || Orecchiette food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
       },
       {
         "id": "pug-taralli",
@@ -457,10 +389,7 @@ const puglia: RegionStory = {
         "tag": "Fennel seed",
         "tagTone": "neutral",
         "origin": "Puglia",
-        "img": {
-          "q": "Taralli with fennel seed Puglia || Taralli with fennel seed || Taralli food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
       },
       {
         "id": "pug-cerignola",
@@ -469,10 +398,7 @@ const puglia: RegionStory = {
         "tag": "Table olive",
         "tagTone": "neutral",
         "origin": "Cerignola",
-        "img": {
-          "q": "Bella di Cerignola olives Puglia || Bella di Cerignola olives || Bella di Cerignola olives food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
       },
       {
         "id": "pug-canestrato",
@@ -481,10 +407,7 @@ const puglia: RegionStory = {
         "tag": "DOP",
         "tagTone": "green",
         "origin": "Foggia and Bari",
-        "img": {
-          "q": "Canestrato Pugliese Puglia || Canestrato Pugliese || Canestrato Pugliese food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
       },
       {
         "id": "pug-fave",
@@ -493,10 +416,7 @@ const puglia: RegionStory = {
         "tag": "Pantry staple",
         "tagTone": "neutral",
         "origin": "For fave e cicoria",
-        "img": {
-          "q": "Dried split fava beans Puglia || Dried split fava beans",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo"
       },
       {
         "id": "pug-muraglia-coratina",
@@ -505,10 +425,7 @@ const puglia: RegionStory = {
         "tag": "Cold-pressed",
         "tagTone": "gold",
         "origin": "Andria",
-        "img": {
-          "q": "Frantoio Muraglia Coratina extra-virgin olive oil Puglia || Frantoio Muraglia Coratina extra-virgin olive oil",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida/AEtjO1UGaqDggIi3G7sIgIf0_eKWQUrjTiO4829HFnphdKotI21OyoXWY9wGL1lcZ-1iBcFoPdpPECFdmXrBsBYb7fpBdfU-sLxaW72c8eMu0iRXFRRqoXxvR77zKCvV2K6bSVrXK10C38pYILAkf3WAKGmFac2FHIpLMWlYBI-9SyO3Owz0ICJ76DPk5KQk40HBt7c5EK4d5zbSPxmji-wqP2WomT2fZUxTbiME8vrMcqmxae7ChNI8PqHqALA"
       }
     ],
     "eyebrow": "Limited curation · Parcel N° 06"

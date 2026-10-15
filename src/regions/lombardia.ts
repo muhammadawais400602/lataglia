@@ -1,5 +1,6 @@
 import type { RegionStory } from './types';
 
+// Photos are stand-ins from elsewhere on the site, to be replaced.
 // Content from the Lombardia story artifact. Product ids are the artifact's product slots:
 // set a product's Page address in Admin → Products to the same id to connect it.
 const lombardia: RegionStory = {
@@ -43,10 +44,7 @@ const lombardia: RegionStory = {
     },
     "imageTag": "Valtellina · Lake Como",
     "heritageNote": "taleggio di grotta",
-    "image": {
-      "q": "Valtellina Lombardy || Lombardy landscape",
-      "orientation": "landscape"
-    },
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuASAzDXfTpj8Z-3Pie7yJS1yRvHePfxVaL802wXx0UgBJrd0VJUWltwmw2j6xJwO5TqmEgNnDPB8dZIYjfJNSOsR3tT9ElTZZOkhQmzIXZLW_QqBIicMQUwmdW0b3KTnxviycOTX4jJn2Fhsq5ody5WpPvjnV6fFP9YFJtys1IuENR446FiEccDsrKaKVLaKrrK8Bs2XjzLW7Zyip0YT_2owLFIPg4Q_UMpF8sW7I0epMJ2jcGXidPw",
     "imageAlt": "An Alpine valley where buckwheat filled the gap and cool mountain air cures beef."
   },
   "intro": [
@@ -69,10 +67,7 @@ const lombardia: RegionStory = {
             "tag": "DOP",
             "tagTone": "green",
             "origin": "Val Taleggio",
-            "img": {
-              "q": "Taleggio Lombardy || Taleggio || Taleggio food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
           }
         ]
       },
@@ -89,10 +84,7 @@ const lombardia: RegionStory = {
             "tag": "Aged 50+ days",
             "tagTone": "green",
             "origin": "Lombardy",
-            "img": {
-              "q": "Gorgonzola Dolce Lombardy || Gorgonzola Dolce || Gorgonzola food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAl_5nHHJIzoS-WsCluRQYcsvFaCEJgLpMKhF74uchwSFZaiasRvF2QgOGb8yQIioI-Tl012aRJqnvzUfYVXVIN42AtBrqz67jqjAH3CbxmYm6uEHRkYdah0q_WAQSgW93YHOemOcCRZN921JwihtDRxkKHN7PzTEk88hPG_P2AV7Y_dSVKxmfxeIubOnR3JAqjFS_dXGAzG2xxfQE3VDOGzRjZcEhJ1T-LSazL8n3fCCvhoP3Kr76d"
           },
           {
             "id": "lom-gorgonzola-piccante",
@@ -101,10 +93,7 @@ const lombardia: RegionStory = {
             "tag": "Aged 80+ days",
             "tagTone": "gold",
             "origin": "Lombardy",
-            "img": {
-              "q": "Gorgonzola Piccante Lombardy || Gorgonzola Piccante || Gorgonzola food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida/AEtjO1XWLjABkN9JNdg2bMlYH0fIp3xRDXJYWo5LVly80wovSC1tTyvX-HHS1Z91q401b7ynxsVkhS-vyRNVTzYxLLT2ewPKyZ1N57DPMd9UpCRVoUk_lHtsprvCectHtmhxNOyZDy6MYysvgWyJSSTLw7Yw1UPq9h1QL-MIHwdcpwKXYxlGNp_XW673nd9VsUbx3Cs0zt7NLyEcNI4GNFIhU0lMAgUvh5IIl2qctPoY_gs89gr5IUNqpbhokFY"
           }
         ]
       },
@@ -121,10 +110,7 @@ const lombardia: RegionStory = {
             "tag": "Aged 9+ mos",
             "tagTone": "gold",
             "origin": "Po valley",
-            "img": {
-              "q": "Grana Padano Lombardy || Grana Padano || Grana Padano food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
           }
         ]
       },
@@ -141,10 +127,7 @@ const lombardia: RegionStory = {
             "tag": "IGP",
             "tagTone": "green",
             "origin": "Sondrio",
-            "img": {
-              "q": "Bresaola della Valtellina Lombardy || Bresaola della Valtellina || Bresaola food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
           }
         ]
       },
@@ -161,10 +144,7 @@ const lombardia: RegionStory = {
             "tag": "Buckwheat",
             "tagTone": "green",
             "origin": "Teglio",
-            "img": {
-              "q": "Pizzoccheri della Valtellina Lombardy || Pizzoccheri della Valtellina || Pizzoccheri food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
           }
         ]
       },
@@ -181,10 +161,7 @@ const lombardia: RegionStory = {
             "tag": "Christmas",
             "tagTone": "neutral",
             "origin": "Milan",
-            "img": {
-              "q": "Milanese panettone Lombardy || Milanese panettone || Panettone food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuC66Qz_O1vxGNBZSyhKBG7E11V9J_ynfSiGuUL5GLDjS-pp7xx0eqw_gmnVIRMXOEiaJ2wLNz9eDe-dRv1HJffGFDGWKIH-9TlU0UBDIw940qDCkUbeXjZjdsjLtKuD3B7Gg0GWHngYfm0d0u9xYun-FrttGnejAkzJLWV7HyuC_ZCA_QHWryHtkt4PkqDJFzQjJqtsSDMMGOLlU2E8sTTNiKXafW91SYmjA9P72M1cR5KetKzCi5cq"
           }
         ],
         "shelfLabel": "In season"
@@ -200,40 +177,28 @@ const lombardia: RegionStory = {
         "where": "Milan",
         "body": "Rice cooked in butter with beef marrow and broth, colored deep gold with saffron. Milan granted it a municipal designation, De.Co., in 2007. It is traditionally served with ossobuco.",
         "tip": "[Cook it below](#risotto)",
-        "image": {
-          "q": "Risotto alla milanese Lombardy food || Risotto alla milanese food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMFgCdqzLvdJxYGaDAFlEDMYMT857D05ZZADK6F6LJbmst8APC4Nl4JYWyknq_CXy-wFoodx0MUTgMC0CntsIT7QemPR1DFgTLpY8U5WaTySi2AMxuyA04SwrYM2r3qDPPxCLOcyksMQ7bLZwM15ouLGkJeE9C1OWinZ6B7mwQYAmW_rezg2MqBTu7ntbCcLZlJzaaNWjiRvS33b7WJEC_xWcEO70o30NIuOjdMNQabBFxLaWU-Jhc"
       },
       {
         "title": "Ossobuco",
         "where": "Milan",
         "body": "Thick slices of veal shank, bone and marrow included, braised slowly with white wine and broth until the meat falls away. Finished with gremolata, a mix of parsley, garlic, and lemon zest.",
         "note": "Finished with gremolata",
-        "image": {
-          "q": "Ossobuco Lombardy food || Ossobuco food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAPcC0a36PdQKRFN67N9n4iWBfhvVaOYD4lAqKygnUjTrscttDOYLVoI8x1mJHXJybsSr0etHTwY4pU0A01kN4o1IfpMOvEBAXOIrB8eZ11ou4LrSyCjELVvYNkcTxy0DtPWugtK_maKrpF1S29ogN-YzCyzhDGWnfH4HdQ3jXFuv8h73Z3GNxqFxYhHzG5euOwWXNcUn83KLa8hc2NC2nQFY3TdtlSPgMj0otF-z9Yn-C7fprrBLWX"
       },
       {
         "title": "Cotoletta alla milanese",
         "where": "Milan",
         "body": "A thick veal chop on the bone, dipped in egg and breadcrumbs and fried in clarified butter. The thin, boneless “elephant ear” is a popular cousin, but not the canonical version.",
         "note": "Fried in clarified butter",
-        "image": {
-          "q": "Cotoletta alla milanese Lombardy food || Cotoletta alla milanese food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD3DyLWjHZNnUahIXVRqFuwGgYJBdyZm09UGDnl9cXdl6H6UU-Pl1gDXv1bLWsXseTdwuiujzAsWyj9bvxPR1CAJQ04u9iac5o5XBSAm-OHuk41AFvTp3mgciUZ6LQJZxFGgmgutgDDoQfkKMXnfg2UjCCYPPf06y4eK5F08c5c7bX4ZeqGT2I0gLJcVPbnyHaJ73geG9GreqIzaSTdWVO5L5D7fWpS3je3wDAORcXER6iiX2rkYkQn"
       },
       {
         "title": "Pizzoccheri",
         "where": "Teglio",
         "body": "Buckwheat pasta boiled with potatoes and savoy cabbage, then layered with Valtellina Casera cheese and butter sizzled with garlic. Teglio’s Accademia del Pizzocchero guards the recipe.",
         "tip": "Start with [Pizzoccheri della Valtellina IGP](product:lom-pizzoccheri).",
-        "image": {
-          "q": "Pizzoccheri Lombardy food || Pizzoccheri food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
       }
     ],
     "eyebrow": "Milanese canon"
@@ -247,26 +212,17 @@ const lombardia: RegionStory = {
     ],
     "photos": [
       {
-        "src": {
-          "q": "aging caves Pasturo Lombardy || aging caves Lombardy || Pasturo Lombardy",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy",
         "alt": "Aging caves under the Grigna",
         "caption": "Aging caves under the Grigna"
       },
       {
-        "src": {
-          "q": "Valsassina dairy Pasturo Lombardy || Valsassina dairy Lombardy || Pasturo Lombardy",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq",
         "alt": "Valsassina · Pasturo",
         "caption": "Valsassina · Pasturo"
       },
       {
-        "src": {
-          "q": "Mauri Taleggio Pasturo Lombardy || Mauri Taleggio Lombardy || Pasturo Lombardy",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAl_5nHHJIzoS-WsCluRQYcsvFaCEJgLpMKhF74uchwSFZaiasRvF2QgOGb8yQIioI-Tl012aRJqnvzUfYVXVIN42AtBrqz67jqjAH3CbxmYm6uEHRkYdah0q_WAQSgW93YHOemOcCRZN921JwihtDRxkKHN7PzTEk88hPG_P2AV7Y_dSVKxmfxeIubOnR3JAqjFS_dXGAzG2xxfQE3VDOGzRjZcEhJ1T-LSazL8n3fCCvhoP3Kr76d",
         "alt": "Mauri Taleggio di Grotta",
         "caption": "Mauri Taleggio di Grotta"
       }
@@ -294,10 +250,7 @@ const lombardia: RegionStory = {
         "tag": "DOP",
         "tagTone": "green",
         "origin": "Pasturo",
-        "img": {
-          "q": "Mauri Taleggio Lombardy || Mauri Taleggio",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
       },
       {
         "id": "lom-mauri-grotta",
@@ -306,10 +259,7 @@ const lombardia: RegionStory = {
         "tag": "Cave aged",
         "tagTone": "gold",
         "origin": "Pasturo",
-        "img": {
-          "q": "Mauri Taleggio di Grotta Lombardy || Mauri Taleggio di Grotta",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
       }
     ]
   },
@@ -360,10 +310,7 @@ const lombardia: RegionStory = {
           "tag": "Risotto rice",
           "tagTone": "neutral",
           "origin": "For risotto",
-          "img": {
-            "q": "Carnaroli rice Lombardy || Carnaroli rice",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMFgCdqzLvdJxYGaDAFlEDMYMT857D05ZZADK6F6LJbmst8APC4Nl4JYWyknq_CXy-wFoodx0MUTgMC0CntsIT7QemPR1DFgTLpY8U5WaTySi2AMxuyA04SwrYM2r3qDPPxCLOcyksMQ7bLZwM15ouLGkJeE9C1OWinZ6B7mwQYAmW_rezg2MqBTu7ntbCcLZlJzaaNWjiRvS33b7WJEC_xWcEO70o30NIuOjdMNQabBFxLaWU-Jhc"
         },
         {
           "id": "lom-grana",
@@ -372,10 +319,7 @@ const lombardia: RegionStory = {
           "tag": "Aged 9+ mos",
           "tagTone": "gold",
           "origin": "Po valley",
-          "img": {
-            "q": "Grana Padano Lombardy || Grana Padano || Grana Padano food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
         }
       ],
       "schema": {
@@ -396,10 +340,7 @@ const lombardia: RegionStory = {
         ]
       },
       "imageCaption": "Milan classic · about 35 minutes",
-      "image": {
-        "q": "Risotto alla milanese Lombardy food || Risotto alla milanese food",
-        "orientation": "landscape"
-      }
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMFgCdqzLvdJxYGaDAFlEDMYMT857D05ZZADK6F6LJbmst8APC4Nl4JYWyknq_CXy-wFoodx0MUTgMC0CntsIT7QemPR1DFgTLpY8U5WaTySi2AMxuyA04SwrYM2r3qDPPxCLOcyksMQ7bLZwM15ouLGkJeE9C1OWinZ6B7mwQYAmW_rezg2MqBTu7ntbCcLZlJzaaNWjiRvS33b7WJEC_xWcEO70o30NIuOjdMNQabBFxLaWU-Jhc"
     },
     "shortcut": {
       "title": "Ten minutes in the Valtellina",
@@ -412,10 +353,7 @@ const lombardia: RegionStory = {
           "tag": "IGP",
           "tagTone": "green",
           "origin": "Sondrio",
-          "img": {
-            "q": "Bresaola della Valtellina Lombardy || Bresaola della Valtellina || Bresaola food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
         },
         {
           "id": "lom-grana",
@@ -424,10 +362,7 @@ const lombardia: RegionStory = {
           "tag": "Aged 9+ mos",
           "tagTone": "gold",
           "origin": "Po valley",
-          "img": {
-            "q": "Grana Padano Lombardy || Grana Padano || Grana Padano food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
         }
       ],
       "eyebrow": "Valtellina shortcut",
@@ -448,10 +383,7 @@ const lombardia: RegionStory = {
         "tag": "Risotto rice",
         "tagTone": "neutral",
         "origin": "For risotto",
-        "img": {
-          "q": "Carnaroli rice Lombardy || Carnaroli rice",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMFgCdqzLvdJxYGaDAFlEDMYMT857D05ZZADK6F6LJbmst8APC4Nl4JYWyknq_CXy-wFoodx0MUTgMC0CntsIT7QemPR1DFgTLpY8U5WaTySi2AMxuyA04SwrYM2r3qDPPxCLOcyksMQ7bLZwM15ouLGkJeE9C1OWinZ6B7mwQYAmW_rezg2MqBTu7ntbCcLZlJzaaNWjiRvS33b7WJEC_xWcEO70o30NIuOjdMNQabBFxLaWU-Jhc"
       },
       {
         "id": "lom-zafferano",
@@ -460,10 +392,7 @@ const lombardia: RegionStory = {
         "tag": "Saffron",
         "tagTone": "gold",
         "origin": "For risotto",
-        "img": {
-          "q": "Saffron threads Lombardy || Saffron threads",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo"
       },
       {
         "id": "lom-grana",
@@ -472,10 +401,7 @@ const lombardia: RegionStory = {
         "tag": "Aged 9+ mos",
         "tagTone": "gold",
         "origin": "Po valley",
-        "img": {
-          "q": "Grana Padano Lombardy || Grana Padano || Grana Padano food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
       },
       {
         "id": "lom-mauri-taleggio",
@@ -484,10 +410,7 @@ const lombardia: RegionStory = {
         "tag": "DOP",
         "tagTone": "green",
         "origin": "Pasturo",
-        "img": {
-          "q": "Mauri Taleggio Lombardy || Mauri Taleggio",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
       },
       {
         "id": "lom-gorgonzola-dolce",
@@ -496,10 +419,7 @@ const lombardia: RegionStory = {
         "tag": "Aged 50+ days",
         "tagTone": "green",
         "origin": "Lombardy",
-        "img": {
-          "q": "Gorgonzola Dolce Lombardy || Gorgonzola Dolce || Gorgonzola food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAl_5nHHJIzoS-WsCluRQYcsvFaCEJgLpMKhF74uchwSFZaiasRvF2QgOGb8yQIioI-Tl012aRJqnvzUfYVXVIN42AtBrqz67jqjAH3CbxmYm6uEHRkYdah0q_WAQSgW93YHOemOcCRZN921JwihtDRxkKHN7PzTEk88hPG_P2AV7Y_dSVKxmfxeIubOnR3JAqjFS_dXGAzG2xxfQE3VDOGzRjZcEhJ1T-LSazL8n3fCCvhoP3Kr76d"
       },
       {
         "id": "lom-bresaola",
@@ -508,10 +428,7 @@ const lombardia: RegionStory = {
         "tag": "IGP",
         "tagTone": "green",
         "origin": "Sondrio",
-        "img": {
-          "q": "Bresaola della Valtellina Lombardy || Bresaola della Valtellina || Bresaola food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
       },
       {
         "id": "lom-pizzoccheri",
@@ -520,10 +437,7 @@ const lombardia: RegionStory = {
         "tag": "Buckwheat",
         "tagTone": "green",
         "origin": "Teglio",
-        "img": {
-          "q": "Pizzoccheri della Valtellina Lombardy || Pizzoccheri della Valtellina || Pizzoccheri food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
       },
       {
         "id": "lom-casera",
@@ -532,10 +446,7 @@ const lombardia: RegionStory = {
         "tag": "DOP",
         "tagTone": "green",
         "origin": "Valtellina",
-        "img": {
-          "q": "Valtellina Casera Lombardy || Valtellina Casera",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
       }
     ],
     "eyebrow": "Limited curation · Parcel N° 10"

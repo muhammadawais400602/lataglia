@@ -1,5 +1,6 @@
 import type { RegionStory } from './types';
 
+// Photos are stand-ins from elsewhere on the site, to be replaced.
 // Content from the Calabria story artifact. Product ids are the artifact's product slots:
 // set a product's Page address in Admin → Products to the same id to connect it.
 const calabria: RegionStory = {
@@ -43,10 +44,7 @@ const calabria: RegionStory = {
     },
     "imageTag": "Sila plateau, Calabria",
     "heritageNote": "the toe of the boot",
-    "image": {
-      "q": "Sila plateau Calabria || Calabria landscape",
-      "orientation": "landscape"
-    },
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCNrs681gN72nFEfp-6phdUsxZxTsiO1DTw_3yZcdEFNU98YNQPmUajjE04nmVN4-RJ7ArH45kzIjCheTeGHKsXZHHgSSeEPDs7vfU5J_YuLcXOVSmZuug76j9ZbGqjBE_2ilQ5fAfc2ZvCHtvPSUCQEzJSserRsRDgiw68pBqtx51V5y462K-rzBplOBNLsun6-9Fc1x4JRjWVZCL3MJkFaRLkPaT0iI34d0ItYlP6TjUThtVOv54S",
     "imageAlt": "The Sila range runs down Calabria’s mountainous spine, home of Caciocavallo Silano."
   },
   "intro": [
@@ -69,10 +67,7 @@ const calabria: RegionStory = {
             "tag": "Chili-cured",
             "tagTone": "red",
             "origin": "Spilinga",
-            "img": {
-              "q": "’Nduja di Spilinga Calabria || ’Nduja di Spilinga || ’Nduja food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCC3hXgtO47-HYlfWhixDmIvGeTORmhXWh-0mhqJFRiG405EoadpsWrNrhqsLIFFpDAqYH1QIdFzwMR73JQb-HxmTHFSFFnC0WNxh4tOQIEZA_nZacNem5iBUWjnfVgmUFcjBLMehUCESqr6VmxEEbhF2pMviwfwNweiWbDiMgyIPAj7_QO7izWh74iILXcxADKdMDXfSyYvtfRhhGhUHPdVyTJPDYQm_d646dur2oNjr8M78rgogJx"
           }
         ]
       },
@@ -89,10 +84,7 @@ const calabria: RegionStory = {
             "tag": "IGP",
             "tagTone": "green",
             "origin": "Tropea",
-            "img": {
-              "q": "Cipolla Rossa di Tropea Calabria || Cipolla Rossa di Tropea || Red onions food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
           }
         ]
       },
@@ -109,10 +101,7 @@ const calabria: RegionStory = {
             "tag": "Chili",
             "tagTone": "red",
             "origin": "Across the region",
-            "img": {
-              "q": "Calabrian dried chili Calabria || Calabrian dried chili || Chili food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDUkq6TgfKOwjF2ahABZJgDKtC894gDZY8GKNiQPJ_MoIkulL3tvTpZl1ouHlSnOUIzStVyQn1gA36A68G7N7dOBGYe_Prtvhk5490gOHHUtwKMidPAvub6mNTxg1jTXprEtNacMowXVRBQqPgeiij-358JiScZ_OjUDH94BnwD-CZSGmZ1ztElrosH9nHqweXxYn7-z8jRTnONLS2ZON9OLtS_uR_CVysQEzR404aqkOMi79NEqmAN"
           }
         ]
       },
@@ -129,10 +118,7 @@ const calabria: RegionStory = {
             "tag": "DOP",
             "tagTone": "green",
             "origin": "Sila plateau",
-            "img": {
-              "q": "Caciocavallo Silano Calabria || Caciocavallo Silano || Caciocavallo Silano food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
           }
         ]
       },
@@ -149,10 +135,7 @@ const calabria: RegionStory = {
             "tag": "DOP",
             "tagTone": "green",
             "origin": "Ionian coast",
-            "img": {
-              "q": "Liquirizia di Calabria || Licorice food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMFgCdqzLvdJxYGaDAFlEDMYMT857D05ZZADK6F6LJbmst8APC4Nl4JYWyknq_CXy-wFoodx0MUTgMC0CntsIT7QemPR1DFgTLpY8U5WaTySi2AMxuyA04SwrYM2r3qDPPxCLOcyksMQ7bLZwM15ouLGkJeE9C1OWinZ6B7mwQYAmW_rezg2MqBTu7ntbCcLZlJzaaNWjiRvS33b7WJEC_xWcEO70o30NIuOjdMNQabBFxLaWU-Jhc"
           }
         ]
       },
@@ -169,10 +152,7 @@ const calabria: RegionStory = {
             "tag": "Bergamot",
             "tagTone": "neutral",
             "origin": "Reggio Calabria",
-            "img": {
-              "q": "Bergamot marmalade Calabria || Bergamot marmalade || Bergamot food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuC66Qz_O1vxGNBZSyhKBG7E11V9J_ynfSiGuUL5GLDjS-pp7xx0eqw_gmnVIRMXOEiaJ2wLNz9eDe-dRv1HJffGFDGWKIH-9TlU0UBDIw940qDCkUbeXjZjdsjLtKuD3B7Gg0GWHngYfm0d0u9xYun-FrttGnejAkzJLWV7HyuC_ZCA_QHWryHtkt4PkqDJFzQjJqtsSDMMGOLlU2E8sTTNiKXafW91SYmjA9P72M1cR5KetKzCi5cq"
           }
         ]
       }
@@ -187,40 +167,28 @@ const calabria: RegionStory = {
         "where": "Vibo Valentia",
         "body": "Tropea onion softened in olive oil, ’nduja melted into it, and pasta finished in the pan until glossy and fiery. The region’s best-known pasta.",
         "tip": "[Cook it below](#nduja)",
-        "image": {
-          "q": "Pasta con la ’nduja Calabria food || Pasta con la ’nduja food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
       },
       {
         "title": "Stroncatura",
         "where": "Reggio Calabria",
         "body": "A pasta dressed simply with garlic, olive oil, chili, olives, and fennel seeds, served in Reggio Calabria’s traditional trattorias.",
         "note": "Reggio’s trattoria pasta",
-        "image": {
-          "q": "Stroncatura Calabria food || Stroncatura food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida/AEtjO1XH3ztoRKkRdH9fjeZ7zGSvG7Z5lVtTJVcPxnxpnLlAyQgVptrChhD3aGe8eyAqVjd0t1vRNzKDPEjlQjVZ-Eo-tmswH65MCECJXC1QT7I-lJ124iYZKFjt2HHrSOK_zqbBcVos3Jg8CZW5bSAW6GQ8NC2GTMPbtiRRx9g9oxW6L3gS7A49QEWznJIYITZoOmWrGC6LiYi1Idw4k1vthGnlg7ZvP6f6Il5_lhaoAml5HXicCLGHPJRAbg"
       },
       {
         "title": "Caciocavallo alla piastra",
         "where": "The Sila",
         "body": "Thick slices of caciocavallo cooked in a hot pan until golden outside and soft within. Simple, quick, and very Calabrian.",
         "tip": "[Make it below](#shortcut)",
-        "image": {
-          "q": "Caciocavallo alla piastra Calabria food || Caciocavallo alla piastra food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
       },
       {
         "title": "Torrone di Bagnara",
         "where": "Bagnara Calabra",
         "body": "The nougat of Bagnara Calabra is one of the region’s protected specialties, and a fine way to end a Calabrian meal.",
         "tip": "Look for Torrone di Bagnara IGP.",
-        "image": {
-          "q": "Torrone di Bagnara Calabria food || Torrone di Bagnara food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuC66Qz_O1vxGNBZSyhKBG7E11V9J_ynfSiGuUL5GLDjS-pp7xx0eqw_gmnVIRMXOEiaJ2wLNz9eDe-dRv1HJffGFDGWKIH-9TlU0UBDIw940qDCkUbeXjZjdsjLtKuD3B7Gg0GWHngYfm0d0u9xYun-FrttGnejAkzJLWV7HyuC_ZCA_QHWryHtkt4PkqDJFzQjJqtsSDMMGOLlU2E8sTTNiKXafW91SYmjA9P72M1cR5KetKzCi5cq"
       }
     ],
     "eyebrow": "Culinary canon"
@@ -234,26 +202,17 @@ const calabria: RegionStory = {
     ],
     "photos": [
       {
-        "src": {
-          "q": "the 1731 concio Rossano Calabria || the 1731 concio Calabria || Rossano Calabria",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMFgCdqzLvdJxYGaDAFlEDMYMT857D05ZZADK6F6LJbmst8APC4Nl4JYWyknq_CXy-wFoodx0MUTgMC0CntsIT7QemPR1DFgTLpY8U5WaTySi2AMxuyA04SwrYM2r3qDPPxCLOcyksMQ7bLZwM15ouLGkJeE9C1OWinZ6B7mwQYAmW_rezg2MqBTu7ntbCcLZlJzaaNWjiRvS33b7WJEC_xWcEO70o30NIuOjdMNQabBFxLaWU-Jhc",
         "alt": "The 1731 concio · Rossano",
         "caption": "The 1731 concio · Rossano"
       },
       {
-        "src": {
-          "q": "licorice roots Rossano Calabria || licorice roots Calabria || Rossano Calabria",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBuOw47CyMWHDfy1LAq7y8_6mlfUhX3sEaCTYRv4qpRLnga9lWW5hwNQ9w_AIrmxk8_0R1H04C8RAhLH9XB9fzSkV-dgKgfS7nbEGJGJK3EuhcwEfgN3tsOD2UPXJNmrmMv9_Wlqx5Tnx0Dg7F_cEC1I3aWKH9xxJQ_SoJsdPaPxfUek-WKbQYSjxR-TxPYHcipLGuNzwiE99IH2fubNMCWvOQYLzXSDW8GSn74soI-lVOr7-Azy12C",
         "alt": "Licorice roots · Ionian coast",
         "caption": "Licorice roots · Ionian coast"
       },
       {
-        "src": {
-          "q": "Amarelli pure licorice Rossano Calabria || Amarelli pure licorice Calabria || Rossano Calabria",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuA4EH7PBxM5mkGtU_hUOJIWGkBVxZJn4EFpJjF38EOKBU7wo_ddyMCFm271EacOGO5w4Xv6DGSB-7_saGCFJU5iM16suJDjSS0a_VzFQbhUmwPL8egJ5XILWwdPmz-_POZdud-1IbUhFmWHh2snwuV7-TAFb5uKZfOhuCAAC57-6VjgZFhqO7vaYO8y1vEORke8lGfQXTjEtIhhnE1cknP388wuircWvsS4xPwHGOMZ7oIWF5WLtCf7",
         "alt": "Pure licorice in metal tins",
         "caption": "Pure licorice in metal tins"
       }
@@ -281,10 +240,7 @@ const calabria: RegionStory = {
         "tag": "Since 1731",
         "tagTone": "gold",
         "origin": "Rossano",
-        "img": {
-          "q": "Amarelli pure licorice Calabria || Amarelli pure licorice",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBuOw47CyMWHDfy1LAq7y8_6mlfUhX3sEaCTYRv4qpRLnga9lWW5hwNQ9w_AIrmxk8_0R1H04C8RAhLH9XB9fzSkV-dgKgfS7nbEGJGJK3EuhcwEfgN3tsOD2UPXJNmrmMv9_Wlqx5Tnx0Dg7F_cEC1I3aWKH9xxJQ_SoJsdPaPxfUek-WKbQYSjxR-TxPYHcipLGuNzwiE99IH2fubNMCWvOQYLzXSDW8GSn74soI-lVOr7-Azy12C"
       }
     ]
   },
@@ -331,10 +287,7 @@ const calabria: RegionStory = {
           "tag": "Chili-cured",
           "tagTone": "red",
           "origin": "Spilinga",
-          "img": {
-            "q": "’Nduja di Spilinga Calabria || ’Nduja di Spilinga || ’Nduja food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCC3hXgtO47-HYlfWhixDmIvGeTORmhXWh-0mhqJFRiG405EoadpsWrNrhqsLIFFpDAqYH1QIdFzwMR73JQb-HxmTHFSFFnC0WNxh4tOQIEZA_nZacNem5iBUWjnfVgmUFcjBLMehUCESqr6VmxEEbhF2pMviwfwNweiWbDiMgyIPAj7_QO7izWh74iILXcxADKdMDXfSyYvtfRhhGhUHPdVyTJPDYQm_d646dur2oNjr8M78rgogJx"
         },
         {
           "id": "cal-fileja",
@@ -343,10 +296,7 @@ const calabria: RegionStory = {
           "tag": "Pantry staple",
           "tagTone": "neutral",
           "origin": "Calabria",
-          "img": {
-            "q": "Fileja Calabria || Fileja",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
         }
       ],
       "schema": {
@@ -363,10 +313,7 @@ const calabria: RegionStory = {
         ]
       },
       "imageCaption": "Vibo Valentia classic · about 30 minutes",
-      "image": {
-        "q": "Pasta con la ’nduja e cipolla di Tropea Calabria food || Pasta con la ’nduja e cipolla di Tropea food",
-        "orientation": "landscape"
-      }
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
     },
     "shortcut": {
       "title": "Ten minutes in the Sila",
@@ -379,10 +326,7 @@ const calabria: RegionStory = {
           "tag": "DOP",
           "tagTone": "green",
           "origin": "Sila plateau",
-          "img": {
-            "q": "Caciocavallo Silano Calabria || Caciocavallo Silano || Caciocavallo Silano food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
         },
         {
           "id": "cal-cipolla-tropea",
@@ -391,10 +335,7 @@ const calabria: RegionStory = {
           "tag": "IGP",
           "tagTone": "green",
           "origin": "Tropea",
-          "img": {
-            "q": "Cipolla Rossa di Tropea Calabria || Cipolla Rossa di Tropea || Red onions food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
         }
       ],
       "eyebrow": "Ten minutes in the Sila",
@@ -415,10 +356,7 @@ const calabria: RegionStory = {
         "tag": "Chili-cured",
         "tagTone": "red",
         "origin": "Spilinga",
-        "img": {
-          "q": "’Nduja di Spilinga Calabria || ’Nduja di Spilinga || ’Nduja food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCC3hXgtO47-HYlfWhixDmIvGeTORmhXWh-0mhqJFRiG405EoadpsWrNrhqsLIFFpDAqYH1QIdFzwMR73JQb-HxmTHFSFFnC0WNxh4tOQIEZA_nZacNem5iBUWjnfVgmUFcjBLMehUCESqr6VmxEEbhF2pMviwfwNweiWbDiMgyIPAj7_QO7izWh74iILXcxADKdMDXfSyYvtfRhhGhUHPdVyTJPDYQm_d646dur2oNjr8M78rgogJx"
       },
       {
         "id": "cal-cipolla-tropea",
@@ -427,10 +365,7 @@ const calabria: RegionStory = {
         "tag": "IGP",
         "tagTone": "green",
         "origin": "Tropea",
-        "img": {
-          "q": "Cipolla Rossa di Tropea Calabria || Cipolla Rossa di Tropea || Red onions food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
       },
       {
         "id": "cal-peperoncino",
@@ -439,10 +374,7 @@ const calabria: RegionStory = {
         "tag": "Chili",
         "tagTone": "red",
         "origin": "Across the region",
-        "img": {
-          "q": "Calabrian dried chili Calabria || Calabrian dried chili || Chili food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDUkq6TgfKOwjF2ahABZJgDKtC894gDZY8GKNiQPJ_MoIkulL3tvTpZl1ouHlSnOUIzStVyQn1gA36A68G7N7dOBGYe_Prtvhk5490gOHHUtwKMidPAvub6mNTxg1jTXprEtNacMowXVRBQqPgeiij-358JiScZ_OjUDH94BnwD-CZSGmZ1ztElrosH9nHqweXxYn7-z8jRTnONLS2ZON9OLtS_uR_CVysQEzR404aqkOMi79NEqmAN"
       },
       {
         "id": "cal-fileja",
@@ -451,10 +383,7 @@ const calabria: RegionStory = {
         "tag": "Pantry staple",
         "tagTone": "neutral",
         "origin": "Calabria",
-        "img": {
-          "q": "Fileja Calabria || Fileja",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
       },
       {
         "id": "cal-caciocavallo",
@@ -463,10 +392,7 @@ const calabria: RegionStory = {
         "tag": "DOP",
         "tagTone": "green",
         "origin": "Sila plateau",
-        "img": {
-          "q": "Caciocavallo Silano Calabria || Caciocavallo Silano || Caciocavallo Silano food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
       },
       {
         "id": "cal-soppressata",
@@ -475,10 +401,7 @@ const calabria: RegionStory = {
         "tag": "DOP",
         "tagTone": "green",
         "origin": "Calabria",
-        "img": {
-          "q": "Soppressata di Calabria",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo"
       },
       {
         "id": "cal-bergamotto",
@@ -487,10 +410,7 @@ const calabria: RegionStory = {
         "tag": "Bergamot",
         "tagTone": "neutral",
         "origin": "Reggio Calabria",
-        "img": {
-          "q": "Bergamot marmalade Calabria || Bergamot marmalade || Bergamot food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuC66Qz_O1vxGNBZSyhKBG7E11V9J_ynfSiGuUL5GLDjS-pp7xx0eqw_gmnVIRMXOEiaJ2wLNz9eDe-dRv1HJffGFDGWKIH-9TlU0UBDIw940qDCkUbeXjZjdsjLtKuD3B7Gg0GWHngYfm0d0u9xYun-FrttGnejAkzJLWV7HyuC_ZCA_QHWryHtkt4PkqDJFzQjJqtsSDMMGOLlU2E8sTTNiKXafW91SYmjA9P72M1cR5KetKzCi5cq"
       },
       {
         "id": "cal-amarelli",
@@ -499,10 +419,7 @@ const calabria: RegionStory = {
         "tag": "Since 1731",
         "tagTone": "gold",
         "origin": "Rossano",
-        "img": {
-          "q": "Amarelli pure licorice Calabria || Amarelli pure licorice",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBuOw47CyMWHDfy1LAq7y8_6mlfUhX3sEaCTYRv4qpRLnga9lWW5hwNQ9w_AIrmxk8_0R1H04C8RAhLH9XB9fzSkV-dgKgfS7nbEGJGJK3EuhcwEfgN3tsOD2UPXJNmrmMv9_Wlqx5Tnx0Dg7F_cEC1I3aWKH9xxJQ_SoJsdPaPxfUek-WKbQYSjxR-TxPYHcipLGuNzwiE99IH2fubNMCWvOQYLzXSDW8GSn74soI-lVOr7-Azy12C"
       }
     ],
     "eyebrow": "Limited curation · Parcel N° 12"

@@ -1,5 +1,6 @@
 import type { RegionStory } from './types';
 
+// Photos are stand-ins from elsewhere on the site, to be replaced.
 // Content from the Abruzzo story artifact. Product ids are the artifact's product slots:
 // set a product's Page address in Admin → Products to the same id to connect it.
 const abruzzo: RegionStory = {
@@ -43,10 +44,7 @@ const abruzzo: RegionStory = {
     },
     "imageTag": "Apennines · Gran Sasso",
     "heritageNote": "forte e gentile",
-    "image": {
-      "q": "Gran Sasso and Majella Abruzzo || Abruzzo landscape",
-      "orientation": "landscape"
-    },
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDM3HpPPNBxXbPDc0sP8_npr_sZLlloM_We1KuwEvKftHq7OhCf-K_Ry7b7XdS7DCRHJWlnqegbA3gvRYJ7QC-m9uy0SIS-vtSpHpnMn_lmAeD6XDSAkY_IeK3EbfEs8RG99-XMzxKVfKYRLVBMKgRLOOFJodvjNeL2jAW-S-t4Z7sg_jppMI5-IQD7dM-ZwgCxH2NzY3YZ3ZpOF5Y_YEMefJ1rK3ySALbPiMovvMBi_xiDESl4Jemr",
     "imageAlt": "The highest peaks of the Apennines, so close to the coast you can reach the sea in under two hours."
   },
   "intro": [
@@ -69,10 +67,7 @@ const abruzzo: RegionStory = {
             "tag": "DOP",
             "tagTone": "gold",
             "origin": "Navelli plateau",
-            "img": {
-              "q": "Zafferano dell’Aquila Abruzzo || Zafferano dell’Aquila || Saffron food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
           }
         ]
       },
@@ -89,10 +84,7 @@ const abruzzo: RegionStory = {
             "tag": "Egg pasta",
             "tagTone": "neutral",
             "origin": "Abruzzo",
-            "img": {
-              "q": "Maccheroni alla chitarra Abruzzo || Maccheroni alla chitarra || Chitarra pasta food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
           }
         ]
       },
@@ -109,10 +101,7 @@ const abruzzo: RegionStory = {
             "tag": "Slow Food",
             "tagTone": "green",
             "origin": "Farindola",
-            "img": {
-              "q": "Pecorino di Farindola Abruzzo || Pecorino di Farindola || Pecorino food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
           }
         ]
       },
@@ -129,10 +118,7 @@ const abruzzo: RegionStory = {
             "tag": "Pantry staple",
             "tagTone": "neutral",
             "origin": "Santo Stefano",
-            "img": {
-              "q": "Lentils of Santo Stefano di Sessanio Abruzzo || Lentils of Santo Stefano di Sessanio || Lentils food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
           }
         ]
       },
@@ -149,10 +135,7 @@ const abruzzo: RegionStory = {
             "tag": "DOP",
             "tagTone": "green",
             "origin": "Pescara hills",
-            "img": {
-              "q": "Aprutino Pescarese extra-virgin olive oil Abruzzo || Aprutino Pescarese extra-virgin olive oil || Olive oil food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w"
           }
         ]
       },
@@ -169,10 +152,7 @@ const abruzzo: RegionStory = {
             "tag": "Wedding sweet",
             "tagTone": "neutral",
             "origin": "Sulmona",
-            "img": {
-              "q": "Confetti di Sulmona Abruzzo || Confetti di Sulmona || Confetti food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuC66Qz_O1vxGNBZSyhKBG7E11V9J_ynfSiGuUL5GLDjS-pp7xx0eqw_gmnVIRMXOEiaJ2wLNz9eDe-dRv1HJffGFDGWKIH-9TlU0UBDIw940qDCkUbeXjZjdsjLtKuD3B7Gg0GWHngYfm0d0u9xYun-FrttGnejAkzJLWV7HyuC_ZCA_QHWryHtkt4PkqDJFzQjJqtsSDMMGOLlU2E8sTTNiKXafW91SYmjA9P72M1cR5KetKzCi5cq"
           }
         ]
       }
@@ -187,40 +167,28 @@ const abruzzo: RegionStory = {
         "where": "Teramo",
         "body": "Thin crepes sprinkled with cheese, rolled up, and served in hot chicken broth. A festive first course in Teramo.",
         "tip": "[Cook it below](#scrippelle)",
-        "image": {
-          "q": "Scrippelle ’mbusse Abruzzo food || Scrippelle ’mbusse food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
       },
       {
         "title": "Chitarra con le pallottine",
         "where": "Across the region",
         "body": "Square-edged chitarra pasta in tomato sauce with tiny meatballs, the classic Abruzzese Sunday lunch. It is also served with lamb ragù.",
         "tip": "Start with [maccheroni alla chitarra](product:abr-chitarra).",
-        "image": {
-          "q": "Chitarra con le pallottine Abruzzo food || Chitarra con le pallottine food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
       },
       {
         "title": "Arrosticini",
         "where": "The Gran Sasso and beyond",
         "body": "Small skewers of sheep meat grilled over embers on a brazier called a fornacella. Born as a shepherds’ way to use the less noble cuts, eaten by the dozen.",
         "tip": "[Make them below](#shortcut)",
-        "image": {
-          "q": "Arrosticini Abruzzo food || Arrosticini food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAPcC0a36PdQKRFN67N9n4iWBfhvVaOYD4lAqKygnUjTrscttDOYLVoI8x1mJHXJybsSr0etHTwY4pU0A01kN4o1IfpMOvEBAXOIrB8eZ11ou4LrSyCjELVvYNkcTxy0DtPWugtK_maKrpF1S29ogN-YzCyzhDGWnfH4HdQ3jXFuv8h73Z3GNxqFxYhHzG5euOwWXNcUn83KLa8hc2NC2nQFY3TdtlSPgMj0otF-z9Yn-C7fprrBLWX"
       },
       {
         "title": "Pecora alla callara",
         "where": "The mountains",
         "body": "Mutton stewed for hours in a copper pot, once hung over the fire on the hearth chain. A dish of the transhumance.",
         "note": "A dish of the transhumance",
-        "image": {
-          "q": "Pecora alla callara Abruzzo food || Pecora alla callara food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD3DyLWjHZNnUahIXVRqFuwGgYJBdyZm09UGDnl9cXdl6H6UU-Pl1gDXv1bLWsXseTdwuiujzAsWyj9bvxPR1CAJQ04u9iac5o5XBSAm-OHuk41AFvTp3mgciUZ6LQJZxFGgmgutgDDoQfkKMXnfg2UjCCYPPf06y4eK5F08c5c7bX4ZeqGT2I0gLJcVPbnyHaJ73geG9GreqIzaSTdWVO5L5D7fWpS3je3wDAORcXER6iiX2rkYkQn"
       }
     ],
     "eyebrow": "Culinary canon"
@@ -234,26 +202,17 @@ const abruzzo: RegionStory = {
     ],
     "photos": [
       {
-        "src": {
-          "q": "museum workshop Sulmona Abruzzo || museum workshop Abruzzo || Sulmona Abruzzo",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuC66Qz_O1vxGNBZSyhKBG7E11V9J_ynfSiGuUL5GLDjS-pp7xx0eqw_gmnVIRMXOEiaJ2wLNz9eDe-dRv1HJffGFDGWKIH-9TlU0UBDIw940qDCkUbeXjZjdsjLtKuD3B7Gg0GWHngYfm0d0u9xYun-FrttGnejAkzJLWV7HyuC_ZCA_QHWryHtkt4PkqDJFzQjJqtsSDMMGOLlU2E8sTTNiKXafW91SYmjA9P72M1cR5KetKzCi5cq",
         "alt": "Confetti museum · Sulmona",
         "caption": "Confetti museum · Sulmona"
       },
       {
-        "src": {
-          "q": "confetti Sulmona Abruzzo || confetti Abruzzo || Sulmona Abruzzo",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDjU6UvYZUkSS18t8CQRRZnaNRc0VACKEjhPlfVfFdQ5pc54Xgy2GXOEcxNifnA64xYFhIvY_BUqA0MS-JHhIaxXG7ywJwi-c-2MoMLZQYjN7ECQUWQ30CTSnJyq3Tm7zn-7BkZHvprZQ0C9r6FYA64tnvr49FJHlvmY9kt2p8vCcOUoVi5fnGJfnDaU2kugnGZmTBxsCTHRKgMprbhUPLgw98lDHWUqoVhS2_XltgdYBMo8Wdajv2i",
         "alt": "Almond confetti · no starch",
         "caption": "Almond confetti · no starch"
       },
       {
-        "src": {
-          "q": "Pelino almond confetti Sulmona Abruzzo || Pelino almond confetti Abruzzo || Sulmona Abruzzo",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuB9KdsnwGCpWvNRlpZyOzLEYTXEAFdyIVWr1UpOd7i95C2r61j2yffgRazUo0rWyrSOvSQQER-84ujoZB30P978QV8pntkOSXklx_Q6f5_wjxCijHumQN3adhVSauWJO3DjrWwjXP0pgnt2EnW6DHhoFNLVu9DToYt4qMGpCxqu-wGP3hytKi_8EYo_pRFcFZHhsT94JDwSfttZG_eLT1i1yO5v6qbCQu26nHAEOCYaVVhFIqv4dqsB",
         "alt": "Pelino confetti · since 1783",
         "caption": "Pelino confetti · since 1783"
       }
@@ -281,10 +240,7 @@ const abruzzo: RegionStory = {
         "tag": "Since 1783",
         "tagTone": "gold",
         "origin": "Sulmona",
-        "img": {
-          "q": "Pelino almond confetti Abruzzo || Pelino almond confetti",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDjU6UvYZUkSS18t8CQRRZnaNRc0VACKEjhPlfVfFdQ5pc54Xgy2GXOEcxNifnA64xYFhIvY_BUqA0MS-JHhIaxXG7ywJwi-c-2MoMLZQYjN7ECQUWQ30CTSnJyq3Tm7zn-7BkZHvprZQ0C9r6FYA64tnvr49FJHlvmY9kt2p8vCcOUoVi5fnGJfnDaU2kugnGZmTBxsCTHRKgMprbhUPLgw98lDHWUqoVhS2_XltgdYBMo8Wdajv2i"
       },
       {
         "id": "abr-pelino-assortiti",
@@ -293,10 +249,7 @@ const abruzzo: RegionStory = {
         "tag": "Since 1783",
         "tagTone": "gold",
         "origin": "Sulmona",
-        "img": {
-          "q": "Pelino assorted confetti Abruzzo || Pelino assorted confetti",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuB9KdsnwGCpWvNRlpZyOzLEYTXEAFdyIVWr1UpOd7i95C2r61j2yffgRazUo0rWyrSOvSQQER-84ujoZB30P978QV8pntkOSXklx_Q6f5_wjxCijHumQN3adhVSauWJO3DjrWwjXP0pgnt2EnW6DHhoFNLVu9DToYt4qMGpCxqu-wGP3hytKi_8EYo_pRFcFZHhsT94JDwSfttZG_eLT1i1yO5v6qbCQu26nHAEOCYaVVhFIqv4dqsB"
       }
     ]
   },
@@ -345,10 +298,7 @@ const abruzzo: RegionStory = {
           "tag": "Slow Food",
           "tagTone": "green",
           "origin": "Farindola",
-          "img": {
-            "q": "Pecorino di Farindola Abruzzo || Pecorino di Farindola || Pecorino food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
         }
       ],
       "schema": {
@@ -368,10 +318,7 @@ const abruzzo: RegionStory = {
         ]
       },
       "imageCaption": "Teramo classic · ready in about 40 minutes",
-      "image": {
-        "q": "Scrippelle ’mbusse Abruzzo food || Scrippelle ’mbusse food",
-        "orientation": "landscape"
-      }
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
     },
     "shortcut": {
       "title": "Ten minutes on the Gran Sasso",
@@ -384,10 +331,7 @@ const abruzzo: RegionStory = {
           "tag": "Sheep skewers",
           "tagTone": "neutral",
           "origin": "Gran Sasso",
-          "img": {
-            "q": "Arrosticini Abruzzo || Arrosticini",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo"
         },
         {
           "id": "abr-olio",
@@ -396,10 +340,7 @@ const abruzzo: RegionStory = {
           "tag": "DOP",
           "tagTone": "green",
           "origin": "Pescara hills",
-          "img": {
-            "q": "Aprutino Pescarese extra-virgin olive oil Abruzzo || Aprutino Pescarese extra-virgin olive oil || Olive oil food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w"
         }
       ],
       "eyebrow": "Gran Sasso shortcut",
@@ -420,10 +361,7 @@ const abruzzo: RegionStory = {
         "tag": "DOP",
         "tagTone": "gold",
         "origin": "Navelli plateau",
-        "img": {
-          "q": "Zafferano dell’Aquila Abruzzo || Zafferano dell’Aquila || Saffron food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
       },
       {
         "id": "abr-chitarra",
@@ -432,10 +370,7 @@ const abruzzo: RegionStory = {
         "tag": "Egg pasta",
         "tagTone": "neutral",
         "origin": "Abruzzo",
-        "img": {
-          "q": "Maccheroni alla chitarra Abruzzo || Maccheroni alla chitarra || Chitarra pasta food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
       },
       {
         "id": "abr-lenticchie",
@@ -444,10 +379,7 @@ const abruzzo: RegionStory = {
         "tag": "Pantry staple",
         "tagTone": "neutral",
         "origin": "Santo Stefano",
-        "img": {
-          "q": "Lentils of Santo Stefano di Sessanio Abruzzo || Lentils of Santo Stefano di Sessanio || Lentils food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
       },
       {
         "id": "abr-ceci-navelli",
@@ -456,10 +388,7 @@ const abruzzo: RegionStory = {
         "tag": "Pantry staple",
         "tagTone": "neutral",
         "origin": "Navelli",
-        "img": {
-          "q": "Navelli chickpeas Abruzzo || Navelli chickpeas",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDMH2M-VN1-Pz9hCbkXgdgup639qKPj1bgJo2jf1PgPm9NKzrgAY_T6MZujPmHAC4Z5W83H6bgIwaOrwcCLEuI-3an8k7c44fESuTzHNkXQYSCN_pESKkZUsjfCP-01ZMORW4JuJXmElmpAAAxPwRTi5o5Crpmlu_bVRSOXjhggx377vb87iOfKRdkb1LjsaiX1pF73K7pXrg-DIruRvIfEPidPaOJoOlRNnbEwUK6fqguV0N3VVklu"
       },
       {
         "id": "abr-pecorino-farindola",
@@ -468,10 +397,7 @@ const abruzzo: RegionStory = {
         "tag": "Slow Food",
         "tagTone": "green",
         "origin": "Farindola",
-        "img": {
-          "q": "Pecorino di Farindola Abruzzo || Pecorino di Farindola || Pecorino food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
       },
       {
         "id": "abr-olio",
@@ -480,10 +406,7 @@ const abruzzo: RegionStory = {
         "tag": "DOP",
         "tagTone": "green",
         "origin": "Pescara hills",
-        "img": {
-          "q": "Aprutino Pescarese extra-virgin olive oil Abruzzo || Aprutino Pescarese extra-virgin olive oil || Olive oil food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w"
       },
       {
         "id": "abr-pelino-classici",
@@ -492,10 +415,7 @@ const abruzzo: RegionStory = {
         "tag": "Since 1783",
         "tagTone": "gold",
         "origin": "Sulmona",
-        "img": {
-          "q": "Pelino almond confetti Abruzzo || Pelino almond confetti",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDjU6UvYZUkSS18t8CQRRZnaNRc0VACKEjhPlfVfFdQ5pc54Xgy2GXOEcxNifnA64xYFhIvY_BUqA0MS-JHhIaxXG7ywJwi-c-2MoMLZQYjN7ECQUWQ30CTSnJyq3Tm7zn-7BkZHvprZQ0C9r6FYA64tnvr49FJHlvmY9kt2p8vCcOUoVi5fnGJfnDaU2kugnGZmTBxsCTHRKgMprbhUPLgw98lDHWUqoVhS2_XltgdYBMo8Wdajv2i"
       },
       {
         "id": "abr-confetti",
@@ -504,10 +424,7 @@ const abruzzo: RegionStory = {
         "tag": "Wedding sweet",
         "tagTone": "neutral",
         "origin": "Sulmona",
-        "img": {
-          "q": "Confetti di Sulmona Abruzzo || Confetti di Sulmona || Confetti food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuC66Qz_O1vxGNBZSyhKBG7E11V9J_ynfSiGuUL5GLDjS-pp7xx0eqw_gmnVIRMXOEiaJ2wLNz9eDe-dRv1HJffGFDGWKIH-9TlU0UBDIw940qDCkUbeXjZjdsjLtKuD3B7Gg0GWHngYfm0d0u9xYun-FrttGnejAkzJLWV7HyuC_ZCA_QHWryHtkt4PkqDJFzQjJqtsSDMMGOLlU2E8sTTNiKXafW91SYmjA9P72M1cR5KetKzCi5cq"
       }
     ],
     "eyebrow": "Limited curation · Parcel N° 15"
