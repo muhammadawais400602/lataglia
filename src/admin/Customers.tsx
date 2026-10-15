@@ -118,7 +118,7 @@ type Inquiry = { id: string; name: string; email: string; type: string; message:
 export function Inquiries() {
   const [list, setList] = useState<Inquiry[] | null>(null);
   useEffect(() => {
-    fetch('/api/admin/inquiries', { credentials: 'same-origin' })
+    fetch('/api/admin/subscribers?list=inquiries', { credentials: 'same-origin' })
       .then((r) => (r.ok ? r.json() : []))
       .then(setList)
       .catch(() => setList([]));
