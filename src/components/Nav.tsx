@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { featuredRegions, regionHref } from '../regions';
+import { allRegions, regionHref } from '../regions';
 
 const links = [
   { href: '/shop', label: 'Shop' },
@@ -9,17 +9,17 @@ const links = [
   { href: '/about', label: 'About' },
 ];
 
-function RegionCard({ r, compact, onPick }: { r: (typeof featuredRegions)[number]; compact?: boolean; onPick?: () => void }) {
+function RegionCard({ r, compact, onPick }: { r: (typeof allRegions)[number]; compact?: boolean; onPick?: () => void }) {
   const href = regionHref(r.name);
   return (
-    <a href={href ?? '/regions'} onClick={onPick} className={`group flex items-start rounded-lg transition-colors hover:bg-surface-parchment focus-visible:bg-surface-parchment ${compact ? 'gap-3 p-2' : 'gap-4 p-3'}`}>
-      <span className={`relative block shrink-0 overflow-hidden rounded-md bg-surface-container ${compact ? 'size-12' : 'size-[72px]'}`}>
+    <a href={href ?? '/regions'} onClick={onPick} className={`group flex items-start rounded-lg transition-colors hover:bg-surface-parchment focus-visible:bg-surface-parchment ${compact ? 'gap-3 p-2' : 'gap-3 p-2.5'}`}>
+      <span className={`relative block shrink-0 overflow-hidden rounded-md bg-surface-container ${compact ? 'size-12' : 'size-14'}`}>
         <img src={r.img} alt="" loading="lazy" className="size-full object-cover transition-transform duration-500 group-hover:scale-110" />
         {!href && !compact && <span className="absolute inset-x-0 bottom-0 bg-black/55 py-0.5 text-center text-[9px] font-bold uppercase tracking-widest text-white">Soon</span>}
       </span>
       <span className="min-w-0 flex-1 whitespace-normal">
         <span className="block truncate font-headline-sm text-base leading-tight text-on-surface group-hover:text-primary">{r.name}</span>
-        <span className={`block text-xs leading-relaxed text-ink-secondary mt-1 ${compact ? 'line-clamp-1' : 'line-clamp-2'}`}>{compact && !href ? 'Story coming soon' : r.blurb}</span>
+        <span className={`text-xs leading-relaxed text-ink-secondary mt-1 ${compact ? 'line-clamp-1' : 'line-clamp-2'}`}>{compact && !href ? 'Story coming soon' : r.blurb}</span>
       </span>
     </a>
   );
@@ -59,13 +59,13 @@ export default function Nav() {
                     <span aria-hidden="true" className={`material-symbols-outlined text-base transition-transform ${mega ? 'rotate-180' : ''}`}>expand_more</span>
                   </a>
                   <div id="regions-menu" className={`absolute inset-x-0 top-full border-t border-[#f1e9ea] bg-surface-container-lowest shadow-xl transition-all duration-200 ${mega ? 'visible opacity-100 translate-y-0' : 'invisible opacity-0 -translate-y-1'}`}>
-                    <div className="max-w-[1280px] mx-auto px-6 lg:px-12 py-5">
+                    <div className="max-w-[1280px] mx-auto px-6 lg:px-12 py-5 max-h-[calc(100vh-5rem)] overflow-y-auto">
                       <div className="flex items-baseline justify-between mb-2 px-3">
-                        <p className="font-label-caps text-label-caps uppercase tracking-widest text-ink-tertiary">Italy, region by region</p>
+                        <p className="font-label-caps text-label-caps uppercase tracking-widest text-ink-tertiary">Italy, region by region · {allRegions.length} regions</p>
                         <a href="/regions" className="text-sm font-bold text-primary hover:underline underline-offset-4">All regions →</a>
                       </div>
-                      <div className="grid grid-cols-4 gap-x-3 gap-y-2">
-                        {featuredRegions.map((r) => <RegionCard key={r.name} r={r} onPick={() => setMega(false)} />)}
+                      <div className="grid grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-x-2 gap-y-1">
+                        {allRegions.map((r) => <RegionCard key={r.name} r={r} onPick={() => setMega(false)} />)}
                       </div>
                     </div>
                   </div>
@@ -121,7 +121,7 @@ export default function Nav() {
                 </button>
                 {mobileRegions && (
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 pb-3">
-                    {featuredRegions.map((r) => <RegionCard key={r.name} r={r} compact onPick={() => setOpen(false)} />)}
+                    {allRegions.map((r) => <RegionCard key={r.name} r={r} compact onPick={() => setOpen(false)} />)}
                     <a href="/regions" onClick={() => setOpen(false)} className="p-2 text-sm font-bold text-primary">All regions →</a>
                   </div>
                 )}
