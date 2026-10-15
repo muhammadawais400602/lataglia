@@ -32,6 +32,17 @@ export default function Nav() {
   const [mega, setMega] = useState(false);
   const [mobileRegions, setMobileRegions] = useState(false);
   const closeTimer = useRef<number>();
+
+  // The header is sticky, so an open mobile menu taller than the screen must scroll on its own.
+  // Lock the page behind it so a swipe moves the menu, not the page.
+  useEffect(() => {
+    if (!open) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, [open]);
   const show = () => { window.clearTimeout(closeTimer.current); setMega(true); };
   const hide = () => { window.clearTimeout(closeTimer.current); closeTimer.current = window.setTimeout(() => setMega(false), 140); };
   useEffect(() => {
@@ -112,7 +123,7 @@ export default function Nav() {
         </div>
       </div>
       {open && (
-        <nav className="md:hidden border-t border-[#f1e9ea] px-6 py-2 flex flex-col">
+        <nav className="md:hidden border-t border-[#f1e9ea] px-6 py-2 flex flex-col max-h-[calc(100dvh-65px)] overflow-y-auto overscroll-contain">
           {links.map((l) =>
             l.href === '/regions' ? (
               <div key={l.href} className="border-b border-[#f1e9ea]">
