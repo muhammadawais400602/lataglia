@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { allRegions, regionHref } from '../regions';
+import { useRegionImage } from '../regions/regionPhotos';
 
 const links = [
   { href: '/shop', label: 'Shop' },
@@ -10,11 +11,12 @@ const links = [
 ];
 
 function RegionCard({ r, compact, onPick }: { r: (typeof allRegions)[number]; compact?: boolean; onPick?: () => void }) {
+  const imgOf = useRegionImage();
   const href = regionHref(r.name);
   return (
     <a href={href ?? '/regions'} onClick={onPick} className={`group flex items-start rounded-lg transition-colors hover:bg-surface-parchment focus-visible:bg-surface-parchment ${compact ? 'gap-3 p-2' : 'gap-3 p-2.5'}`}>
       <span className={`relative block shrink-0 overflow-hidden rounded-md bg-surface-container ${compact ? 'size-12' : 'size-14'}`}>
-        <img src={r.img} alt="" loading="lazy" className="size-full object-cover transition-transform duration-500 group-hover:scale-110" />
+        <img src={imgOf(r)} alt="" loading="lazy" className="size-full object-cover transition-transform duration-500 group-hover:scale-110" />
         {!href && !compact && <span className="absolute inset-x-0 bottom-0 bg-black/55 py-0.5 text-center text-[9px] font-bold uppercase tracking-widest text-white">Soon</span>}
       </span>
       <span className="min-w-0 flex-1 whitespace-normal">
