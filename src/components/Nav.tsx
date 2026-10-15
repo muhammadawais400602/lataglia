@@ -12,16 +12,14 @@ const links = [
 function RegionCard({ r, compact, onPick }: { r: (typeof regionCards)[number]; compact?: boolean; onPick?: () => void }) {
   const href = regionHref(r.name);
   return (
-    <a href={href ?? '/regions'} onClick={onPick} className={`group flex items-center rounded-lg transition-colors hover:bg-surface-parchment focus-visible:bg-surface-parchment ${compact ? 'gap-3 p-2' : 'gap-4 p-3'}`}>
-      <span className={`block shrink-0 overflow-hidden rounded-md bg-surface-container ${compact ? 'size-12' : 'size-[72px]'}`}>
-        <img src={r.img} alt="" loading="lazy" className={`size-full object-cover transition-transform duration-500 group-hover:scale-110 ${href ? '' : 'grayscale opacity-80'}`} />
+    <a href={href ?? '/regions'} onClick={onPick} className={`group flex items-start rounded-lg transition-colors hover:bg-surface-parchment focus-visible:bg-surface-parchment ${compact ? 'gap-3 p-2' : 'gap-4 p-3'}`}>
+      <span className={`relative block shrink-0 overflow-hidden rounded-md bg-surface-container ${compact ? 'size-12' : 'size-[72px]'}`}>
+        <img src={r.img} alt="" loading="lazy" className="size-full object-cover transition-transform duration-500 group-hover:scale-110" />
+        {!href && !compact && <span className="absolute inset-x-0 bottom-0 bg-black/55 py-0.5 text-center text-[9px] font-bold uppercase tracking-widest text-white">Soon</span>}
       </span>
-      <span className="min-w-0 whitespace-normal">
-        <span className="flex flex-wrap items-center gap-x-2 gap-y-0.5 font-headline-sm text-base leading-tight text-on-surface group-hover:text-primary">
-          {r.name}
-          {!href && <span className="rounded bg-surface-container px-1.5 py-0.5 font-body-sm text-[9px] font-bold uppercase tracking-widest text-ink-tertiary">Soon</span>}
-        </span>
-        <span className={`block text-xs leading-relaxed text-ink-secondary mt-1 ${compact ? 'line-clamp-1' : 'line-clamp-2'}`}>{r.blurb}</span>
+      <span className="min-w-0 flex-1 whitespace-normal">
+        <span className="block truncate font-headline-sm text-base leading-tight text-on-surface group-hover:text-primary">{r.name}</span>
+        <span className={`block text-xs leading-relaxed text-ink-secondary mt-1 ${compact ? 'line-clamp-1' : 'line-clamp-2'}`}>{compact && !href ? 'Story coming soon' : r.blurb}</span>
       </span>
     </a>
   );
