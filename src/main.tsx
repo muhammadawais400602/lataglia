@@ -11,6 +11,7 @@ import Gifts from './pages/Gifts';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
 import ProductDetail from './pages/ProductDetail';
+import Story from './pages/Story';
 const AdminApp = lazy(() => import('./admin/AdminApp'));
 import './index.css';
 
@@ -25,6 +26,7 @@ const routes: Record<string, React.ComponentType> = {
   '/signup': Signup,
   '/login': Login,
   '/admin': AdminApp,
+  '/story': Story,
 };
 const productId = !routes[path] && path.startsWith('/product/') ? decodeURIComponent(path.slice('/product/'.length)) : '';
 const regionSlug = path.startsWith('/regions/') ? path.slice('/regions/'.length) : '';

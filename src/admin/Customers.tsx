@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import type { Order } from '../shared/types';
 import { Card, Empty, TagChip, field, label, shortDate, usd } from './ui';
 
@@ -72,6 +72,41 @@ export default function Customers({ orders, onOpenOrder }: { orders: Order[]; on
             </tbody>
           </table>
         </div>
+      )}
+    </Card>
+  );
+}
+
+type Subscriber = { email: string; topics: string[]; createdAt: string };
+const topicNames: Record<string, string> = { harvest: 'Harvest releases', letters: 'Producer letters', gifting: 'Gift ideas' };
+
+/** Newsletter sign-ups from the Our Story page. */
+export function Subscribers() {
+  const [list, setList] = useState<Subscriber[] | null>(null);
+  useEffect(() => {
+    fetch('/api/admin/subscribers', { credentials: 'same-origin' })
+      .then((r) => (r.ok ? r.json() : []))
+      .then(setList)
+      .catch(() => setList([]));
+  }, []);
+  const csv = list?.length
+    ? `data:text/csv;charset=utf-8,${encodeURIComponent(['email,topics,signed up', ...list.map((s) => `${s.email},"${s.topics.join(' ')}",${s.createdAt.slice(0, 10)}`)].join('\n'))}`
+    : '';
+  return (
+    <Card title={`Newsletter subscribers${list ? ` (${list.length})` : ''}`} action={csv ? <a href={csv} download="la-taglia-subscribers.csv" className="text-sm font-bold text-primary hover:underline">Download CSV</a> : undefined}>
+      {!list ? (
+        <p className="text-sm text-ink-tertiary">Loading…</p>
+      ) : list.length === 0 ? (
+        <Empty icon="mark_email_read" title="No subscribers yet">People who sign up on the Our Story page appear here.</Empty>
+      ) : (
+        <ul className="divide-y divide-surface-container text-sm">
+          {list.map((s) => (
+            <li key={s.email} className="flex flex-wrap items-center justify-between gap-2 py-2.5">
+              <a href={`mailto:${s.email}`} className="font-semibold text-on-surface hover:text-primary">{s.email}</a>
+              <span className="text-xs text-ink-tertiary">{s.topics.map((t) => topicNames[t] ?? t).join(' · ') || 'All news'} · {shortDate(s.createdAt)}</span>
+            </li>
+          ))}
+        </ul>
       )}
     </Card>
   );
