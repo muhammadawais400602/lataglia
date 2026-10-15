@@ -95,7 +95,7 @@ export default function Product() {
             <span className="text-ink-tertiary">/</span>
             <a className="hover:text-primary transition-colors" href="/#pistachio">The Pistachio Edit</a>
             <span className="text-ink-tertiary">/</span>
-            <a className="hover:text-primary transition-colors" href="/regions/sicilia#producer-dossier">Gusto Etna</a>
+            <a className="hover:text-primary transition-colors" href="/regions/sicilia">Gusto Etna</a>
             <span className="text-ink-tertiary">/</span>
             <span className="text-on-surface font-semibold truncate max-w-[200px] sm:max-w-none">Sicilian Pistachio Cream (35%)</span>
           </nav>

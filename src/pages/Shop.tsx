@@ -1,8 +1,12 @@
 import { useMemo, useState } from 'react';
 import Layout from '../components/Layout';
 import { Toast, useToast } from '../components/Toast';
-import { shopCategories, type ShopProduct } from '../shopData';
+import { shopCategories } from '../shopData';
+import type { Product } from '../shared/types';
 import { useProducts } from '../storeApi';
+import { addProduct, useBasket } from '../cartStore';
+
+type ShopProduct = Product & { inStock: boolean };
 
 const money = (n: number) => (Number.isInteger(n) ? `$${n}` : `$${n.toFixed(2)}`);
 
@@ -40,7 +44,9 @@ export default function Shop() {
   const upper = visible.slice(0, 8);
   const lower = visible.slice(8);
 
+  const [, setBasket] = useBasket();
   function addToBag(p: ShopProduct) {
+    setBasket((b) => addProduct(b, p));
     toast.show(`Added: ${p.name} (${money(p.price)})`);
   }
 
@@ -204,7 +210,7 @@ function ProductGrid({ products, onAdd }: { products: ShopProduct[]; onAdd: (p: 
         <article key={p.name} className="flex flex-col justify-between bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden group">
           <div className="relative w-full aspect-square bg-surface-parchment overflow-hidden p-6 flex items-center justify-center">
             <span className={`absolute top-3 left-3 z-10 px-2.5 py-1 rounded font-label-caps text-[10px] tracking-wider uppercase shadow-sm ${p.badge.className}`}>{p.badge.label}</span>
-            {p.href ? <a href={p.href}><img className="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500 ease-out" src={p.img} alt={p.name} loading="lazy" /></a> : <img className="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500 ease-out" src={p.img} alt={p.name} loading="lazy" />}
+            <a href={p.href ?? `/product/${p.id}`}><img className="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-500 ease-out" src={p.img} alt={p.name} loading="lazy" /></a>
           </div>
           <div className="p-5 flex flex-col flex-grow justify-between">
             <div>
@@ -212,7 +218,7 @@ function ProductGrid({ products, onAdd }: { products: ShopProduct[]; onAdd: (p: 
                 <span className="font-label-caps uppercase tracking-wider">{p.producer}</span>
                 <span className="font-body-sm text-right">{p.place}</span>
               </div>
-              <h3 className="font-headline-sm text-base text-primary mb-1 line-clamp-1 group-hover:text-wine-hover transition-colors">{p.href ? <a href={p.href} className="hover:underline">{p.name}</a> : p.name}</h3>
+              <h3 className="font-headline-sm text-base text-primary mb-1 line-clamp-1 group-hover:text-wine-hover transition-colors"><a href={p.href ?? `/product/${p.id}`} className="hover:underline">{p.name}</a></h3>
               <p className="font-caption text-caption text-ink-secondary mb-4">{p.unit}</p>
             </div>
             <div className="flex items-center justify-between pt-3">

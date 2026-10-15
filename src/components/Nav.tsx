@@ -1,15 +1,44 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { regionCards, regionHref } from '../regions';
 
 const links = [
   { href: '/shop', label: 'Shop' },
-  { href: '/regions/sicilia', label: 'Regions' },
+  { href: '/regions', label: 'Regions' },
   { href: '/gifts', label: 'Gifts' },
   { href: '/#stories', label: 'Stories' },
   { href: '/#makers', label: 'About' },
 ];
 
+function RegionCard({ r, compact, onPick }: { r: (typeof regionCards)[number]; compact?: boolean; onPick?: () => void }) {
+  const href = regionHref(r.name);
+  return (
+    <a href={href ?? '/regions'} onClick={onPick} className={`group flex items-center rounded-lg transition-colors hover:bg-surface-parchment focus-visible:bg-surface-parchment ${compact ? 'gap-3 p-2' : 'gap-4 p-3'}`}>
+      <span className={`block shrink-0 overflow-hidden rounded-md bg-surface-container ${compact ? 'size-12' : 'size-[72px]'}`}>
+        <img src={r.img} alt="" loading="lazy" className={`size-full object-cover transition-transform duration-500 group-hover:scale-110 ${href ? '' : 'grayscale opacity-80'}`} />
+      </span>
+      <span className="min-w-0 whitespace-normal">
+        <span className="flex flex-wrap items-center gap-x-2 gap-y-0.5 font-headline-sm text-base leading-tight text-on-surface group-hover:text-primary">
+          {r.name}
+          {!href && <span className="rounded bg-surface-container px-1.5 py-0.5 font-body-sm text-[9px] font-bold uppercase tracking-widest text-ink-tertiary">Soon</span>}
+        </span>
+        <span className={`block text-xs leading-relaxed text-ink-secondary mt-1 ${compact ? 'line-clamp-1' : 'line-clamp-2'}`}>{r.blurb}</span>
+      </span>
+    </a>
+  );
+}
+
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const [mega, setMega] = useState(false);
+  const [mobileRegions, setMobileRegions] = useState(false);
+  const closeTimer = useRef<number>();
+  const show = () => { window.clearTimeout(closeTimer.current); setMega(true); };
+  const hide = () => { window.clearTimeout(closeTimer.current); closeTimer.current = window.setTimeout(() => setMega(false), 140); };
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setMega(false);
+    window.addEventListener('keydown', onKey);
+    return () => { window.removeEventListener('keydown', onKey); window.clearTimeout(closeTimer.current); };
+  }, []);
   return (
     <header className="w-full bg-[#fbf9f9] border-b border-solid border-b-[#f1e9ea] sticky top-0 z-50">
       <div className="max-w-[1280px] mx-auto flex items-center justify-between whitespace-nowrap px-6 lg:px-12 py-3">
@@ -23,11 +52,32 @@ export default function Nav() {
             <h2 className="text-[#191011] text-xl font-bold leading-tight tracking-[-0.015em] font-headline-sm">La Taglia</h2>
           </a>
           <nav className="hidden md:flex items-center gap-7">
-            {links.map((l) => (
-              <a key={l.href} className="text-[#191011] text-sm font-medium hover:text-primary transition-colors" href={l.href}>
-                {l.label}
-              </a>
-            ))}
+            {links.map((l) =>
+              l.href === '/regions' ? (
+                <div key={l.href} onMouseEnter={show} onMouseLeave={hide} onFocus={show} onBlur={(e) => !e.currentTarget.contains(e.relatedTarget) && hide()}>
+                  <a href={l.href} aria-haspopup="true" aria-expanded={mega} aria-controls="regions-menu"
+                    className={`inline-flex items-center gap-0.5 text-sm font-medium transition-colors ${mega ? 'text-primary' : 'text-[#191011] hover:text-primary'}`}>
+                    {l.label}
+                    <span aria-hidden="true" className={`material-symbols-outlined text-base transition-transform ${mega ? 'rotate-180' : ''}`}>expand_more</span>
+                  </a>
+                  <div id="regions-menu" className={`absolute inset-x-0 top-full border-t border-[#f1e9ea] bg-surface-container-lowest shadow-xl transition-all duration-200 ${mega ? 'visible opacity-100 translate-y-0' : 'invisible opacity-0 -translate-y-1'}`}>
+                    <div className="max-w-[1280px] mx-auto px-6 lg:px-12 py-5">
+                      <div className="flex items-baseline justify-between mb-2 px-3">
+                        <p className="font-label-caps text-label-caps uppercase tracking-widest text-ink-tertiary">Italy, region by region</p>
+                        <a href="/regions" className="text-sm font-bold text-primary hover:underline underline-offset-4">All regions →</a>
+                      </div>
+                      <div className="grid grid-cols-4 gap-x-3 gap-y-2">
+                        {regionCards.slice(0, 8).map((r) => <RegionCard key={r.name} r={r} onPick={() => setMega(false)} />)}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <a key={l.href} className="text-[#191011] text-sm font-medium hover:text-primary transition-colors" href={l.href}>
+                  {l.label}
+                </a>
+              ),
+            )}
           </nav>
         </div>
         <div className="flex flex-1 justify-end items-center gap-4">
@@ -63,11 +113,27 @@ export default function Nav() {
       </div>
       {open && (
         <nav className="md:hidden border-t border-[#f1e9ea] px-6 py-2 flex flex-col">
-          {links.map((l) => (
-            <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="py-3 text-[#191011] text-base font-medium border-b border-[#f1e9ea] last:border-0 hover:text-primary">
-              {l.label}
-            </a>
-          ))}
+          {links.map((l) =>
+            l.href === '/regions' ? (
+              <div key={l.href} className="border-b border-[#f1e9ea]">
+                <button type="button" onClick={() => setMobileRegions((v) => !v)} aria-expanded={mobileRegions}
+                  className="w-full flex items-center justify-between py-3 text-[#191011] text-base font-medium hover:text-primary">
+                  {l.label}
+                  <span aria-hidden="true" className={`material-symbols-outlined text-xl transition-transform ${mobileRegions ? 'rotate-180' : ''}`}>expand_more</span>
+                </button>
+                {mobileRegions && (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 pb-3">
+                    {regionCards.slice(0, 8).map((r) => <RegionCard key={r.name} r={r} compact onPick={() => setOpen(false)} />)}
+                    <a href="/regions" onClick={() => setOpen(false)} className="p-2 text-sm font-bold text-primary">All regions →</a>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="py-3 text-[#191011] text-base font-medium border-b border-[#f1e9ea] last:border-0 hover:text-primary">
+                {l.label}
+              </a>
+            ),
+          )}
         </nav>
       )}
     </header>

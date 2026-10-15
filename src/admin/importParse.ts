@@ -12,10 +12,12 @@ export type ImportRow = {
   unit: string;
   place: string;
   sku: string;
+  description: string;
+  features: string[];
   problem: string;
 };
 
-type Field = 'name' | 'price' | 'stock' | 'img' | 'producer' | 'unit' | 'place' | 'sku';
+type Field = 'name' | 'price' | 'stock' | 'img' | 'producer' | 'unit' | 'place' | 'sku' | 'description';
 
 const ALIASES: Record<Field, string[]> = {
   name: ['itemname', 'title', 'producttitle', 'productname', 'name'],
@@ -26,6 +28,7 @@ const ALIASES: Record<Field, string[]> = {
   unit: ['sizename', 'size', 'unit', 'itemsize', 'variant'],
   place: ['place', 'origin', 'countryoforigin'],
   sku: ['sellersku', 'itemsku', 'sku', 'asin1', 'asin'],
+  description: ['productdescription', 'itemdescription', 'description', 'longdescription', 'about'],
 };
 
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -100,6 +103,8 @@ export function rowsToProducts(table: string[][]): { rows: ImportRow[]; columns:
   }
   const header = table[headerAt];
   const columns = Object.fromEntries(Object.entries(map).map(([f, i]) => [f, header[i as number].trim()])) as Partial<Record<Field, string>>;
+  // Amazon templates spread selling points over bullet_point1…5.
+  const bulletCols = header.map((h, i) => (/^(bulletpoint|keyproductfeatures|feature)\d*$/.test(norm(h)) ? i : -1)).filter((i) => i >= 0);
   const get = (cells: string[], f: Field) => (map[f] === undefined ? '' : (cells[map[f]!] ?? '').trim());
 
   const rows: ImportRow[] = [];
@@ -118,6 +123,8 @@ export function rowsToProducts(table: string[][]): { rows: ImportRow[]; columns:
       line: r + 1, name, price: price > 0 ? price : 0, stock: Math.min(stock, 99_999), img: img.slice(0, 1000),
       producer: shorten(get(cells, 'producer'), 80), unit: shorten(get(cells, 'unit'), 80), place: shorten(get(cells, 'place'), 80),
       sku: get(cells, 'sku').slice(0, 80), problem,
+      description: get(cells, 'description').replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]+>/g, '').trim().slice(0, 6000),
+      features: bulletCols.map((i) => (cells[i] ?? '').trim().slice(0, 500)).filter(Boolean).slice(0, 12),
     });
   }
   return { rows, columns };

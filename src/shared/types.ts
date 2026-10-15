@@ -17,6 +17,9 @@ export type Product = {
   stock: number;
   status: ProductStatus;
   href?: string;
+  description?: string;
+  features?: string[];
+  images?: string[];
 };
 
 export const ORDER_STATUSES = ['new', 'processing', 'shipped', 'delivered', 'cancelled'] as const;

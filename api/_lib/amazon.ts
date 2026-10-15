@@ -9,6 +9,7 @@ export type AmazonLookup = {
   price: number;
   images: string[];
   bullets: string[];
+  description: string;
   source: 'canopy' | 'link';
   note?: string;
 };
@@ -68,6 +69,11 @@ const shorten = (s: string, max: number) => {
 };
 
 const asString = (v: unknown) => (typeof v === 'string' ? v : '');
+// Amazon descriptions sometimes carry HTML; keep paragraphs, drop tags and entities.
+const plain = (s: string) => s
+  .replace(/<\s*(\/p|\/div|\/h\d)\s*>/gi, '\n\n').replace(/<\s*(br|\/li)\s*\/?>/gi, '\n').replace(/<[^>]+>/g, '')
+  .replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+  .replace(/[ \t]+/g, ' ').replace(/\n\s*\n\s*/g, '\n\n').trim();
 const https = (u: string) => (u.startsWith('http://') ? `https://${u.slice(7)}` : u);
 
 function priceOf(p: unknown): number {
@@ -84,7 +90,7 @@ function priceOf(p: unknown): number {
 }
 
 export async function lookupAmazon(asin: string, domain: string, slugName: string): Promise<AmazonLookup> {
-  const fallback = (note: string): AmazonLookup => ({ asin, name: shorten(slugName, 120), brand: '', price: 0, images: [], bullets: [], source: 'link', note });
+  const fallback = (note: string): AmazonLookup => ({ asin, name: shorten(slugName, 120), brand: '', price: 0, images: [], bullets: [], description: '', source: 'link', note });
   const key = process.env.CANOPY_API_KEY;
   if (!key) return fallback('Only the name could be read from the link. Add CANOPY_API_KEY in Vercel to fill in photos, brand and price automatically.');
 
@@ -108,9 +114,11 @@ export async function lookupAmazon(asin: string, domain: string, slugName: strin
   const more = Array.isArray(p.imageUrls) ? p.imageUrls : Array.isArray(p.images) ? p.images : [];
   const images = [...new Set([main, ...more.map((i) => (typeof i === 'string' ? i : asString((i as Record<string, unknown>)?.link) || asString((i as Record<string, unknown>)?.url)))]
     .map(https).filter((u) => u.startsWith('https://')))].slice(0, 8);
-  const bullets = (Array.isArray(p.featureBullets) ? p.featureBullets : []).filter((b): b is string => typeof b === 'string').slice(0, 8);
+  const bulletsRaw = Array.isArray(p.featureBullets) ? p.featureBullets : Array.isArray(p.feature_bullets) ? p.feature_bullets : Array.isArray(p.bullets) ? p.bullets : [];
+  const bullets = bulletsRaw.filter((b): b is string => typeof b === 'string').map((b) => plain(b).slice(0, 500)).filter(Boolean).slice(0, 12);
+  const description = plain(asString(p.description) || asString(p.productDescription) || asString(p.bookDescription)).slice(0, 6000);
   const name = shorten(asString(p.title) || slugName, 120);
   if (!name) return fallback('Amazon didn’t return this product. Check the link, or fill in the details below.');
   const price = Math.round(priceOf(p.price) * 100) / 100;
-  return { asin, name, brand: shorten(asString(p.brand), 80), price, images, bullets, source: 'canopy' };
+  return { asin, name, brand: shorten(asString(p.brand), 80), price, images, bullets, description, source: 'canopy' };
 }
