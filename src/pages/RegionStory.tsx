@@ -173,8 +173,6 @@ export default function RegionStory({ story }: { story: Story }) {
   }
 
   const { hero } = story;
-  // Trying the edge-to-edge hero on one region first before rolling it out to all.
-  const fullHero = story.slug === 'calabria';
   const { src: pic, credits } = usePhotos(storyPhotoQueries(story));
   const heroImg = pic(hero.image, 2000);
   const r = story.cook?.recipe;
@@ -201,9 +199,9 @@ export default function RegionStory({ story }: { story: Story }) {
 
       {/* Split hero */}
       <section className="w-full text-white overflow-hidden" style={{ backgroundColor: hero.colorDeep ?? '#1b1718' }}>
-        <div className={`${fullHero ? '' : 'max-w-[1280px] mx-auto '}grid grid-cols-1 lg:grid-cols-12 lg:min-h-[580px]`}>
+        <div className="grid grid-cols-1 lg:grid-cols-12 lg:min-h-[580px]">
           {/* Full-width hero: the text still lines up with the 1280px content column on wide screens. */}
-          <div className={`lg:col-span-5 p-8 lg:p-14 ${fullHero ? 'lg:pl-[max(3.5rem,calc((100vw-1280px)/2+3.5rem))]' : ''} flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-white/10 relative z-10`} style={{ backgroundColor: hero.color ?? '#191011' }}>
+          <div className={`lg:col-span-5 p-8 lg:p-14 lg:pl-[max(3.5rem,calc((100vw-1280px)/2+3.5rem))] flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-white/10 relative z-10`} style={{ backgroundColor: hero.color ?? '#191011' }}>
             <div>
               {!hero.dossier && !hero.badge && <p className="text-secondary-fixed text-[11px] uppercase tracking-[0.22em] font-semibold mb-6">{story.kicker}</p>}
               {(hero.dossier || hero.badge) && (
