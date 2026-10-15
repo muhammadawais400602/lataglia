@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { regionCards, regionHref } from '../regions';
+import { featuredRegions, regionHref } from '../regions';
 
 const links = [
   { href: '/shop', label: 'Shop' },
@@ -9,7 +9,7 @@ const links = [
   { href: '/#makers', label: 'About' },
 ];
 
-function RegionCard({ r, compact, onPick }: { r: (typeof regionCards)[number]; compact?: boolean; onPick?: () => void }) {
+function RegionCard({ r, compact, onPick }: { r: (typeof featuredRegions)[number]; compact?: boolean; onPick?: () => void }) {
   const href = regionHref(r.name);
   return (
     <a href={href ?? '/regions'} onClick={onPick} className={`group flex items-start rounded-lg transition-colors hover:bg-surface-parchment focus-visible:bg-surface-parchment ${compact ? 'gap-3 p-2' : 'gap-4 p-3'}`}>
@@ -65,7 +65,7 @@ export default function Nav() {
                         <a href="/regions" className="text-sm font-bold text-primary hover:underline underline-offset-4">All regions →</a>
                       </div>
                       <div className="grid grid-cols-4 gap-x-3 gap-y-2">
-                        {regionCards.slice(0, 8).map((r) => <RegionCard key={r.name} r={r} onPick={() => setMega(false)} />)}
+                        {featuredRegions.map((r) => <RegionCard key={r.name} r={r} onPick={() => setMega(false)} />)}
                       </div>
                     </div>
                   </div>
@@ -121,7 +121,7 @@ export default function Nav() {
                 </button>
                 {mobileRegions && (
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 pb-3">
-                    {regionCards.slice(0, 8).map((r) => <RegionCard key={r.name} r={r} compact onPick={() => setOpen(false)} />)}
+                    {featuredRegions.map((r) => <RegionCard key={r.name} r={r} compact onPick={() => setOpen(false)} />)}
                     <a href="/regions" onClick={() => setOpen(false)} className="p-2 text-sm font-bold text-primary">All regions →</a>
                   </div>
                 )}

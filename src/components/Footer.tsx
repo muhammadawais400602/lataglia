@@ -1,4 +1,4 @@
-import { regionHref } from '../regions';
+import { featuredRegions, regionHref } from '../regions';
 
 export default function Footer() {
   return (
@@ -28,7 +28,7 @@ export default function Footer() {
             { href: '/shop', label: 'Extra Virgin Olive Oils' },
             { href: '/#bestsellers', label: 'Best Sellers' },
           ]} />
-          <FooterCol title="Regions" items={['Sicilia', 'Campania', 'Emilia-Romagna', 'Calabria', 'Lombardia', 'Piemonte'].map((label) => ({ href: regionHref(label) ?? '/regions', label }))} />
+          <FooterCol title="Regions" items={featuredRegions.slice(0, 6).map((r) => ({ href: regionHref(r.name) ?? '/regions', label: r.name }))} />
           <FooterCol title="Assistance" items={[
             { href: '/gifts#corporate', label: 'Corporate Gifting' },
             { href: '/#makers', label: 'Meet the Producers' },

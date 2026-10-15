@@ -9,10 +9,9 @@ import {
   pistachioHeroImg,
   products,
   promoCards,
-  regions,
   stories,
 } from './data';
-import { regionHref } from './regions';
+import { featuredRegions, regionHref } from './regions';
 
 export default function App() {
   return (
@@ -247,7 +246,7 @@ function RegionsGrid() {
         <p className="font-subheading text-ink-secondary text-base sm:text-lg">Italian food is regional before it is Italian. Enter through a place and discover what it makes best.</p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {regions.map((r) => {
+        {featuredRegions.map((r) => {
           const Tag = r.comingSoon ? 'div' : 'a';
           return (
             <Tag key={r.name} href={r.comingSoon ? undefined : regionHref(r.name) ?? '/shop'} className="group relative rounded overflow-hidden aspect-[4/5] bg-surface-container shadow hover:shadow-xl transition-all block">
