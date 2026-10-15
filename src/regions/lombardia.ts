@@ -11,7 +11,43 @@ const lombardia: RegionStory = {
   "subtitle": "Butter, rice, saffron, and the cheeses of the Alps.",
   "hero": {
     "color": "#3C4A5C",
-    "colorDeep": "#2A3442"
+    "colorDeep": "#2A3442",
+    "dossier": "Terroir archive · Dossier N° 10",
+    "badge": "Alpine dairy country",
+    "metrics": [
+      {
+        "icon": "location_city",
+        "label": "Capital",
+        "value": "Milan"
+      },
+      {
+        "icon": "terrain",
+        "label": "Mountains",
+        "value": "The Alps"
+      },
+      {
+        "icon": "water",
+        "label": "Lake",
+        "value": "Lake Como"
+      },
+      {
+        "icon": "workspace_premium",
+        "label": "Bergamo",
+        "value": "Nine protected cheeses"
+      }
+    ],
+    "heritage": "Alpine dairy heritage",
+    "imageCaption": {
+      "title": "The Valtellina",
+      "body": "An Alpine valley where buckwheat filled the gap and cool mountain air cures beef."
+    },
+    "imageTag": "Valtellina · Lake Como",
+    "heritageNote": "taleggio di grotta",
+    "image": {
+      "q": "Valtellina Lombardy || Lombardy landscape",
+      "orientation": "landscape"
+    },
+    "imageAlt": "An Alpine valley where buckwheat filled the gap and cool mountain air cures beef."
   },
   "intro": [
     "Lombardy stretches from the Alps on the Swiss border, through the valleys of the Valtellina and the shores of Lake Como, down to the flat, well-watered Po plain, with Milan at its center. It is dairy country above all: Alpine herders moved their cows to high pastures each summer, and the plain grew rich on milk and cattle. The province of Bergamo alone has nine protected cheeses, more than any other part of Italy. Milanese cooks traditionally reach for butter rather than olive oil, and the city’s kitchen is built on rice and slow-braised meat more than pasta. Up in the Valtellina, where wheat grew poorly, buckwheat filled the gap, and the long, cool mountain air proved ideal for curing beef. The result is a rich, generous cuisine of golden risotto, braised veal, buttery cutlets, and some of Italy’s greatest cheeses.",
@@ -29,7 +65,14 @@ const lombardia: RegionStory = {
           {
             "id": "lom-taleggio",
             "name": "Taleggio DOP",
-            "meta": "Wedge"
+            "meta": "Wedge",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Val Taleggio",
+            "img": {
+              "q": "Taleggio Lombardy || Taleggio || Taleggio food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -42,12 +85,26 @@ const lombardia: RegionStory = {
           {
             "id": "lom-gorgonzola-dolce",
             "name": "Gorgonzola DOP Dolce",
-            "meta": "Wedge"
+            "meta": "Wedge",
+            "tag": "Aged 50+ days",
+            "tagTone": "green",
+            "origin": "Lombardy",
+            "img": {
+              "q": "Gorgonzola Dolce Lombardy || Gorgonzola Dolce || Gorgonzola food",
+              "orientation": "squarish"
+            }
           },
           {
             "id": "lom-gorgonzola-piccante",
             "name": "Gorgonzola DOP Piccante",
-            "meta": "Wedge"
+            "meta": "Wedge",
+            "tag": "Aged 80+ days",
+            "tagTone": "gold",
+            "origin": "Lombardy",
+            "img": {
+              "q": "Gorgonzola Piccante Lombardy || Gorgonzola Piccante || Gorgonzola food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -60,7 +117,14 @@ const lombardia: RegionStory = {
           {
             "id": "lom-grana",
             "name": "Grana Padano DOP",
-            "meta": "Wedge"
+            "meta": "Wedge",
+            "tag": "Aged 9+ mos",
+            "tagTone": "gold",
+            "origin": "Po valley",
+            "img": {
+              "q": "Grana Padano Lombardy || Grana Padano || Grana Padano food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -73,7 +137,14 @@ const lombardia: RegionStory = {
           {
             "id": "lom-bresaola",
             "name": "Bresaola della Valtellina IGP",
-            "meta": "Sliced"
+            "meta": "Sliced",
+            "tag": "IGP",
+            "tagTone": "green",
+            "origin": "Sondrio",
+            "img": {
+              "q": "Bresaola della Valtellina Lombardy || Bresaola della Valtellina || Bresaola food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -86,7 +157,14 @@ const lombardia: RegionStory = {
           {
             "id": "lom-pizzoccheri",
             "name": "Pizzoccheri della Valtellina IGP",
-            "meta": "500 g"
+            "meta": "500 g",
+            "tag": "Buckwheat",
+            "tagTone": "green",
+            "origin": "Teglio",
+            "img": {
+              "q": "Pizzoccheri della Valtellina Lombardy || Pizzoccheri della Valtellina || Pizzoccheri food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -99,12 +177,20 @@ const lombardia: RegionStory = {
           {
             "id": "lom-panettone",
             "name": "Milanese panettone",
-            "meta": "Christmas"
+            "meta": "Christmas",
+            "tag": "Christmas",
+            "tagTone": "neutral",
+            "origin": "Milan",
+            "img": {
+              "q": "Milanese panettone Lombardy || Milanese panettone || Panettone food",
+              "orientation": "squarish"
+            }
           }
         ],
         "shelfLabel": "In season"
       }
-    ]
+    ],
+    "eyebrow": "Essential terroir goods"
   },
   "dishes": {
     "lede": "Four dishes Lombardy makes its own.",
@@ -113,25 +199,44 @@ const lombardia: RegionStory = {
         "title": "Risotto alla milanese",
         "where": "Milan",
         "body": "Rice cooked in butter with beef marrow and broth, colored deep gold with saffron. Milan granted it a municipal designation, De.Co., in 2007. It is traditionally served with ossobuco.",
-        "tip": "[Cook it below](#risotto)"
+        "tip": "[Cook it below](#risotto)",
+        "image": {
+          "q": "Risotto alla milanese Lombardy food || Risotto alla milanese food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Ossobuco",
         "where": "Milan",
-        "body": "Thick slices of veal shank, bone and marrow included, braised slowly with white wine and broth until the meat falls away. Finished with gremolata, a mix of parsley, garlic, and lemon zest."
+        "body": "Thick slices of veal shank, bone and marrow included, braised slowly with white wine and broth until the meat falls away. Finished with gremolata, a mix of parsley, garlic, and lemon zest.",
+        "note": "Finished with gremolata",
+        "image": {
+          "q": "Ossobuco Lombardy food || Ossobuco food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Cotoletta alla milanese",
         "where": "Milan",
-        "body": "A thick veal chop on the bone, dipped in egg and breadcrumbs and fried in clarified butter. The thin, boneless “elephant ear” is a popular cousin, but not the canonical version."
+        "body": "A thick veal chop on the bone, dipped in egg and breadcrumbs and fried in clarified butter. The thin, boneless “elephant ear” is a popular cousin, but not the canonical version.",
+        "note": "Fried in clarified butter",
+        "image": {
+          "q": "Cotoletta alla milanese Lombardy food || Cotoletta alla milanese food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Pizzoccheri",
         "where": "Teglio",
         "body": "Buckwheat pasta boiled with potatoes and savoy cabbage, then layered with Valtellina Casera cheese and butter sizzled with garlic. Teglio’s Accademia del Pizzocchero guards the recipe.",
-        "tip": "Start with [Pizzoccheri della Valtellina IGP](product:lom-pizzoccheri)."
+        "tip": "Start with [Pizzoccheri della Valtellina IGP](product:lom-pizzoccheri).",
+        "image": {
+          "q": "Pizzoccheri Lombardy food || Pizzoccheri food",
+          "orientation": "landscape"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Milanese canon"
   },
   "maker": {
     "name": "Mauri",
@@ -140,7 +245,32 @@ const lombardia: RegionStory = {
       "In 1920, Emilio Mauri began making cheese in Pasturo, a village in the Valsassina at the foot of the Grigna mountains, an Alpine valley long devoted to dairy and one of the two traditional homes of Taleggio. The family business still has its heart there, alongside a newer plant in Treviglio, and makes the classic cheeses of Lombardy, from Taleggio and Gorgonzola to fresh quartirolo.",
       "What sets Mauri apart is its caves. Its Taleggio is washed and brushed several times in its first month; selected wheels then age further in caves beneath the Grigna, where cool, humid mountain air gives a firmer, richer cheese with a heavier rind, sold as Taleggio di Grotta."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": {
+          "q": "aging caves Pasturo Lombardy || aging caves Lombardy || Pasturo Lombardy",
+          "orientation": "landscape"
+        },
+        "alt": "Aging caves under the Grigna",
+        "caption": "Aging caves under the Grigna"
+      },
+      {
+        "src": {
+          "q": "Valsassina dairy Pasturo Lombardy || Valsassina dairy Lombardy || Pasturo Lombardy",
+          "orientation": "landscape"
+        },
+        "alt": "Valsassina · Pasturo",
+        "caption": "Valsassina · Pasturo"
+      },
+      {
+        "src": {
+          "q": "Mauri Taleggio Pasturo Lombardy || Mauri Taleggio Lombardy || Pasturo Lombardy",
+          "orientation": "landscape"
+        },
+        "alt": "Mauri Taleggio di Grotta",
+        "caption": "Mauri Taleggio di Grotta"
+      }
+    ],
     "facts": [
       {
         "label": "Founded",
@@ -160,12 +290,26 @@ const lombardia: RegionStory = {
       {
         "id": "lom-mauri-taleggio",
         "name": "Mauri Taleggio DOP",
-        "meta": "Wedge"
+        "meta": "Wedge",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Pasturo",
+        "img": {
+          "q": "Mauri Taleggio Lombardy || Mauri Taleggio",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "lom-mauri-grotta",
         "name": "Mauri Taleggio di Grotta DOP",
-        "meta": "Wedge"
+        "meta": "Wedge",
+        "tag": "Cave aged",
+        "tagTone": "gold",
+        "origin": "Pasturo",
+        "img": {
+          "q": "Mauri Taleggio di Grotta Lombardy || Mauri Taleggio di Grotta",
+          "orientation": "squarish"
+        }
       }
     ]
   },
@@ -212,12 +356,26 @@ const lombardia: RegionStory = {
         {
           "id": "lom-carnaroli",
           "name": "Carnaroli rice",
-          "meta": "1 kg"
+          "meta": "1 kg",
+          "tag": "Risotto rice",
+          "tagTone": "neutral",
+          "origin": "For risotto",
+          "img": {
+            "q": "Carnaroli rice Lombardy || Carnaroli rice",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "lom-grana",
           "name": "Grana Padano DOP",
-          "meta": "Wedge"
+          "meta": "Wedge",
+          "tag": "Aged 9+ mos",
+          "tagTone": "gold",
+          "origin": "Po valley",
+          "img": {
+            "q": "Grana Padano Lombardy || Grana Padano || Grana Padano food",
+            "orientation": "squarish"
+          }
         }
       ],
       "schema": {
@@ -236,6 +394,11 @@ const lombardia: RegionStory = {
           "50 g Grana Padano DOP, grated",
           "Salt"
         ]
+      },
+      "imageCaption": "Milan classic · about 35 minutes",
+      "image": {
+        "q": "Risotto alla milanese Lombardy food || Risotto alla milanese food",
+        "orientation": "landscape"
       }
     },
     "shortcut": {
@@ -245,15 +408,32 @@ const lombardia: RegionStory = {
         {
           "id": "lom-bresaola",
           "name": "Bresaola della Valtellina IGP",
-          "meta": "Sliced"
+          "meta": "Sliced",
+          "tag": "IGP",
+          "tagTone": "green",
+          "origin": "Sondrio",
+          "img": {
+            "q": "Bresaola della Valtellina Lombardy || Bresaola della Valtellina || Bresaola food",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "lom-grana",
           "name": "Grana Padano DOP",
-          "meta": "Wedge"
+          "meta": "Wedge",
+          "tag": "Aged 9+ mos",
+          "tagTone": "gold",
+          "origin": "Po valley",
+          "img": {
+            "q": "Grana Padano Lombardy || Grana Padano || Grana Padano food",
+            "orientation": "squarish"
+          }
         }
-      ]
-    }
+      ],
+      "eyebrow": "Valtellina shortcut",
+      "button": "Get the bresaola pair"
+    },
+    "eyebrow": "Terroir kitchen"
   },
   "readTheLabel": "“Blue cheese” is not Gorgonzola DOP, “bresaola” without the Valtellina IGP can be made anywhere, and “grana-style” cheese is not Grana Padano. Check the place of production, the ingredient list, and any DOP or IGP seal. Every product we carry states where it is made.",
   "set": {
@@ -264,44 +444,101 @@ const lombardia: RegionStory = {
       {
         "id": "lom-carnaroli",
         "name": "Carnaroli rice",
-        "meta": "1 kg"
+        "meta": "1 kg",
+        "tag": "Risotto rice",
+        "tagTone": "neutral",
+        "origin": "For risotto",
+        "img": {
+          "q": "Carnaroli rice Lombardy || Carnaroli rice",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "lom-zafferano",
         "name": "Saffron threads",
-        "meta": "Jar"
+        "meta": "Jar",
+        "tag": "Saffron",
+        "tagTone": "gold",
+        "origin": "For risotto",
+        "img": {
+          "q": "Saffron threads Lombardy || Saffron threads",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "lom-grana",
         "name": "Grana Padano DOP",
-        "meta": "Wedge"
+        "meta": "Wedge",
+        "tag": "Aged 9+ mos",
+        "tagTone": "gold",
+        "origin": "Po valley",
+        "img": {
+          "q": "Grana Padano Lombardy || Grana Padano || Grana Padano food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "lom-mauri-taleggio",
         "name": "Mauri Taleggio DOP",
-        "meta": "Wedge"
+        "meta": "Wedge",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Pasturo",
+        "img": {
+          "q": "Mauri Taleggio Lombardy || Mauri Taleggio",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "lom-gorgonzola-dolce",
         "name": "Gorgonzola DOP Dolce",
-        "meta": "Wedge"
+        "meta": "Wedge",
+        "tag": "Aged 50+ days",
+        "tagTone": "green",
+        "origin": "Lombardy",
+        "img": {
+          "q": "Gorgonzola Dolce Lombardy || Gorgonzola Dolce || Gorgonzola food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "lom-bresaola",
         "name": "Bresaola della Valtellina IGP",
-        "meta": "Sliced"
+        "meta": "Sliced",
+        "tag": "IGP",
+        "tagTone": "green",
+        "origin": "Sondrio",
+        "img": {
+          "q": "Bresaola della Valtellina Lombardy || Bresaola della Valtellina || Bresaola food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "lom-pizzoccheri",
         "name": "Pizzoccheri della Valtellina IGP",
-        "meta": "500 g"
+        "meta": "500 g",
+        "tag": "Buckwheat",
+        "tagTone": "green",
+        "origin": "Teglio",
+        "img": {
+          "q": "Pizzoccheri della Valtellina Lombardy || Pizzoccheri della Valtellina || Pizzoccheri food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "lom-casera",
         "name": "Valtellina Casera DOP",
-        "meta": "Wedge"
+        "meta": "Wedge",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Valtellina",
+        "img": {
+          "q": "Valtellina Casera Lombardy || Valtellina Casera",
+          "orientation": "squarish"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Limited curation · Parcel N° 10"
   },
   "about": [
     "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."

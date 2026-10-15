@@ -11,7 +11,43 @@ const lazio: RegionStory = {
   "subtitle": "Shepherds’ cheese, pork cheek, and the cooking of Rome.",
   "hero": {
     "color": "#B5531E",
-    "colorDeep": "#7E3712"
+    "colorDeep": "#7E3712",
+    "dossier": "Terroir archive · Dossier N° 08",
+    "badge": "Roman shepherds’ kitchen",
+    "metrics": [
+      {
+        "icon": "location_city",
+        "label": "Capital",
+        "value": "Rome"
+      },
+      {
+        "icon": "water",
+        "label": "River",
+        "value": "The Tiber"
+      },
+      {
+        "icon": "landscape",
+        "label": "Countryside",
+        "value": "The Agro Romano"
+      },
+      {
+        "icon": "local_dining",
+        "label": "Signature",
+        "value": "Amatriciana"
+      }
+    ],
+    "heritage": "Pastoral Roman heritage",
+    "imageCaption": {
+      "title": "The Agro Romano",
+      "body": "The open countryside around Rome, where shepherds grazed their flocks for millennia."
+    },
+    "imageTag": "Agro Romano · Rome",
+    "heritageNote": "quinto quarto",
+    "image": {
+      "q": "Agro Romano Rome Italy || Rome Italy landscape",
+      "orientation": "landscape"
+    },
+    "imageAlt": "The open countryside around Rome, where shepherds grazed their flocks for millennia."
   },
   "intro": [
     "Lazio lies on Italy’s Tyrrhenian coast, halfway down the peninsula, with Rome and the Tiber at its heart. Around the city spreads the Agro Romano, the open countryside where shepherds grazed their flocks for millennia; to the north lie volcanic lakes and hills, to the south the Castelli Romani, and inland the olive hills of the Sabina and the mountains around Amatrice, which only became part of Lazio in 1927. For centuries Rome was ruled by the popes, and its cooking was shaped less by courts than by working people. Shepherds gave it pecorino and guanciale. Rome’s Jewish community, confined to a walled ghetto from 1555 to 1870, gave it fried artichokes and a whole kitchen of its own. Workers at the Testaccio slaughterhouse, paid partly in offal, gave it the “fifth quarter” dishes that still fill Roman menus. The result is direct, salty, deeply satisfying food, built on a handful of ingredients used with confidence.",
@@ -29,7 +65,14 @@ const lazio: RegionStory = {
           {
             "id": "laz-pecorino",
             "name": "Pecorino Romano DOP made in Lazio",
-            "meta": "Wedge"
+            "meta": "Wedge",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Lazio",
+            "img": {
+              "q": "Pecorino Romano Rome Italy || Pecorino Romano || Pecorino Romano food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -42,7 +85,14 @@ const lazio: RegionStory = {
           {
             "id": "laz-guanciale",
             "name": "Guanciale",
-            "meta": "Whole piece"
+            "meta": "Whole piece",
+            "tag": "Cured cheek",
+            "tagTone": "neutral",
+            "origin": "Amatrice",
+            "img": {
+              "q": "Guanciale Rome Italy || Guanciale || Guanciale food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -55,7 +105,14 @@ const lazio: RegionStory = {
           {
             "id": "laz-carciofi",
             "name": "Carciofo Romanesco del Lazio IGP",
-            "meta": "Spring only"
+            "meta": "Spring only",
+            "tag": "Spring only",
+            "tagTone": "green",
+            "origin": "Lazio countryside",
+            "img": {
+              "q": "Carciofo Romanesco del Lazio Rome Italy || Carciofo Romanesco del Lazio || Romanesco artichokes food",
+              "orientation": "squarish"
+            }
           }
         ],
         "shelfLabel": "In season"
@@ -69,7 +126,14 @@ const lazio: RegionStory = {
           {
             "id": "laz-porchetta",
             "name": "Porchetta di Ariccia IGP",
-            "meta": "Sliced"
+            "meta": "Sliced",
+            "tag": "IGP",
+            "tagTone": "green",
+            "origin": "Ariccia",
+            "img": {
+              "q": "Porchetta di Ariccia Rome Italy || Porchetta di Ariccia || Porchetta food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -82,7 +146,14 @@ const lazio: RegionStory = {
           {
             "id": "laz-ricotta",
             "name": "Ricotta Romana DOP",
-            "meta": "Fresh"
+            "meta": "Fresh",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Lazio",
+            "img": {
+              "q": "Ricotta Romana Rome Italy || Ricotta Romana || Ricotta Romana food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -95,11 +166,19 @@ const lazio: RegionStory = {
           {
             "id": "laz-olio-sabina",
             "name": "Sabina DOP extra-virgin olive oil",
-            "meta": "Bottle"
+            "meta": "Bottle",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Sabina hills",
+            "img": {
+              "q": "Sabina extra-virgin olive oil Rome Italy || Sabina extra-virgin olive oil || Olive oil food",
+              "orientation": "squarish"
+            }
           }
         ]
       }
-    ]
+    ],
+    "eyebrow": "Essential terroir goods"
   },
   "dishes": {
     "lede": "Four dishes Lazio makes its own.",
@@ -108,26 +187,44 @@ const lazio: RegionStory = {
         "title": "All’amatriciana",
         "where": "Amatrice and Rome",
         "body": "Guanciale, white wine, tomato, and pecorino. It grew from gricia, the same dish without tomato, and in 2020 “Amatriciana tradizionale” became a protected Traditional Speciality Guaranteed. In Amatrice it is made with spaghetti; in Rome, often with bucatini.",
-        "tip": "[Cook it below](#amatriciana)"
+        "tip": "[Cook it below](#amatriciana)",
+        "image": {
+          "q": "All’amatriciana Rome Italy food || All’amatriciana food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Carbonara",
         "where": "Rome",
         "body": "Crisp guanciale, egg yolks, Pecorino Romano, and plenty of black pepper, tossed with hot pasta until creamy. Roman carbonara uses no cream.",
-        "tip": "The same [guanciale](product:laz-guanciale) and [Pecorino Romano](product:laz-pecorino) you need for amatriciana."
+        "tip": "The same [guanciale](product:laz-guanciale) and [Pecorino Romano](product:laz-pecorino) you need for amatriciana.",
+        "image": {
+          "q": "Carbonara Rome Italy food || Carbonara food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Carciofi alla giudia",
         "where": "The Jewish ghetto",
         "body": "Whole Romanesco artichokes fried in olive oil until the leaves open like a crisp golden flower, then salted. Born in Rome’s Jewish ghetto in the sixteenth century. Carciofi alla romana, braised with mint, parsley, and garlic, are the gentler cousin.",
-        "tip": "A spring dish, February to April."
+        "tip": "A spring dish, February to April.",
+        "image": {
+          "q": "Carciofi alla giudia Rome Italy food || Carciofi alla giudia food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Coda alla vaccinara",
         "where": "Testaccio",
-        "body": "Oxtail braised for hours in tomato, often finished with raisins, pine nuts, and sometimes bitter cocoa. The signature of the quinto quarto, the offal and lesser cuts that fed Testaccio’s slaughterhouse workers from 1890."
+        "body": "Oxtail braised for hours in tomato, often finished with raisins, pine nuts, and sometimes bitter cocoa. The signature of the quinto quarto, the offal and lesser cuts that fed Testaccio’s slaughterhouse workers from 1890.",
+        "note": "The quinto quarto signature",
+        "image": {
+          "q": "Coda alla vaccinara Rome Italy food || Coda alla vaccinara food",
+          "orientation": "landscape"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Roman canon"
   },
   "maker": {
     "name": "Casearia Agri In",
@@ -136,7 +233,32 @@ const lazio: RegionStory = {
       "Pecorino Romano is named for Rome, but almost all of it is now made in Sardinia. Production began moving there in the late 1800s, after Rome banned the salting of pecorino in the city’s shops. Casearia Agri In is one of the few dairies still making it near the city, in the Tiber valley north of Rome, inside the Nazzano Tevere-Farfa nature reserve.",
       "Its Deroma pecorino, named for the owner, is made from the milk of Lazio sheep farms, one of them run by the family, with nothing added but rennet and salt. The rind carries the dairy code RM7, marking it as made in the province of Rome. In a Gambero Rosso tasting of Pecorino Romano, it took first place for its powerful, distinctly Roman character."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": {
+          "q": "dairy flock Torrita Tiberina Rome Italy || dairy flock Rome Italy || Torrita Tiberina Rome Italy",
+          "orientation": "landscape"
+        },
+        "alt": "Lazio sheep · Tiber valley",
+        "caption": "Lazio sheep · Tiber valley"
+      },
+      {
+        "src": {
+          "q": "aging room Torrita Tiberina Rome Italy || aging room Rome Italy || Torrita Tiberina Rome Italy",
+          "orientation": "landscape"
+        },
+        "alt": "Pecorino aging room",
+        "caption": "Pecorino aging room"
+      },
+      {
+        "src": {
+          "q": "Deroma Pecorino Romano Torrita Tiberina Rome Italy || Deroma Pecorino Romano Rome Italy || Torrita Tiberina Rome Italy",
+          "orientation": "landscape"
+        },
+        "alt": "Deroma Pecorino Romano",
+        "caption": "Deroma Pecorino Romano"
+      }
+    ],
     "facts": [
       {
         "label": "Dairy",
@@ -156,7 +278,14 @@ const lazio: RegionStory = {
       {
         "id": "laz-deroma",
         "name": "Deroma Pecorino Romano DOP",
-        "meta": "Wedge"
+        "meta": "Wedge",
+        "tag": "Rind code RM7",
+        "tagTone": "gold",
+        "origin": "Torrita Tiberina",
+        "img": {
+          "q": "Deroma Pecorino Romano Rome Italy || Deroma Pecorino Romano",
+          "orientation": "squarish"
+        }
       }
     ]
   },
@@ -202,12 +331,26 @@ const lazio: RegionStory = {
         {
           "id": "laz-guanciale",
           "name": "Guanciale",
-          "meta": "Whole piece"
+          "meta": "Whole piece",
+          "tag": "Cured cheek",
+          "tagTone": "neutral",
+          "origin": "Amatrice",
+          "img": {
+            "q": "Guanciale Rome Italy || Guanciale || Guanciale food",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "laz-pecorino",
           "name": "Pecorino Romano DOP made in Lazio",
-          "meta": "Wedge"
+          "meta": "Wedge",
+          "tag": "DOP",
+          "tagTone": "green",
+          "origin": "Lazio",
+          "img": {
+            "q": "Pecorino Romano Rome Italy || Pecorino Romano || Pecorino Romano food",
+            "orientation": "squarish"
+          }
         }
       ],
       "schema": {
@@ -225,6 +368,11 @@ const lazio: RegionStory = {
           "80 g Pecorino Romano DOP, finely grated, plus more to serve",
           "Salt"
         ]
+      },
+      "imageCaption": "Amatrice classic · about 35 minutes",
+      "image": {
+        "q": "Spaghetti all’amatriciana Rome Italy food || Spaghetti all’amatriciana food",
+        "orientation": "landscape"
       }
     },
     "shortcut": {
@@ -234,15 +382,32 @@ const lazio: RegionStory = {
         {
           "id": "laz-pecorino",
           "name": "Pecorino Romano DOP made in Lazio",
-          "meta": "Wedge"
+          "meta": "Wedge",
+          "tag": "DOP",
+          "tagTone": "green",
+          "origin": "Lazio",
+          "img": {
+            "q": "Pecorino Romano Rome Italy || Pecorino Romano || Pecorino Romano food",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "laz-spaghetti",
           "name": "Spaghetti",
-          "meta": "500 g"
+          "meta": "500 g",
+          "tag": "Pantry staple",
+          "tagTone": "neutral",
+          "origin": "For cacio e pepe",
+          "img": {
+            "q": "Spaghetti Rome Italy || Spaghetti",
+            "orientation": "squarish"
+          }
         }
-      ]
-    }
+      ],
+      "eyebrow": "Cacio e pepe shortcut",
+      "button": "Get the cacio e pepe pair"
+    },
+    "eyebrow": "Terroir kitchen"
   },
   "readTheLabel": "“Romano” on its own is not Pecorino Romano DOP, and porchetta or ricotta sold without Ariccia IGP or Romana DOP can be made anywhere. Check the place of production, the ingredient list, and any DOP or IGP seal. Every product we carry states where it is made.",
   "set": {
@@ -253,44 +418,101 @@ const lazio: RegionStory = {
       {
         "id": "laz-pecorino",
         "name": "Pecorino Romano DOP",
-        "meta": "Made in Lazio"
+        "meta": "Made in Lazio",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Lazio",
+        "img": {
+          "q": "Pecorino Romano Rome Italy || Pecorino Romano || Pecorino Romano food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "laz-guanciale",
         "name": "Guanciale",
-        "meta": "Whole piece"
+        "meta": "Whole piece",
+        "tag": "Cured cheek",
+        "tagTone": "neutral",
+        "origin": "Amatrice",
+        "img": {
+          "q": "Guanciale Rome Italy || Guanciale || Guanciale food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "laz-olio-sabina",
         "name": "Sabina DOP olive oil",
-        "meta": "Bottle"
+        "meta": "Bottle",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Sabina hills",
+        "img": {
+          "q": "Sabina extra-virgin olive oil Rome Italy || Sabina extra-virgin olive oil || Olive oil food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "laz-spaghetti",
         "name": "Spaghetti",
-        "meta": "500 g"
+        "meta": "500 g",
+        "tag": "Pantry staple",
+        "tagTone": "neutral",
+        "origin": "For cacio e pepe",
+        "img": {
+          "q": "Spaghetti Rome Italy || Spaghetti",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "laz-bucatini",
         "name": "Bucatini",
-        "meta": "500 g"
+        "meta": "500 g",
+        "tag": "Pantry staple",
+        "tagTone": "neutral",
+        "origin": "For amatriciana",
+        "img": {
+          "q": "Bucatini Rome Italy || Bucatini",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "laz-pelati",
         "name": "Peeled San Marzano tomatoes",
-        "meta": "Can"
+        "meta": "Can",
+        "tag": "San Marzano",
+        "tagTone": "neutral",
+        "origin": "For amatriciana",
+        "img": {
+          "q": "Peeled San Marzano tomatoes Rome Italy || Peeled San Marzano tomatoes",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "laz-porchetta",
         "name": "Porchetta di Ariccia IGP",
-        "meta": "Sliced"
+        "meta": "Sliced",
+        "tag": "IGP",
+        "tagTone": "green",
+        "origin": "Ariccia",
+        "img": {
+          "q": "Porchetta di Ariccia Rome Italy || Porchetta di Ariccia || Porchetta food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "laz-ricotta",
         "name": "Ricotta Romana DOP",
-        "meta": "Fresh"
+        "meta": "Fresh",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Lazio",
+        "img": {
+          "q": "Ricotta Romana Rome Italy || Ricotta Romana || Ricotta Romana food",
+          "orientation": "squarish"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Limited curation · Parcel N° 08"
   },
   "about": [
     "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP, IGP, and STG) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."

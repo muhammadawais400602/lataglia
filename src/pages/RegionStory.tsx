@@ -4,7 +4,10 @@ import { Toast, useToast } from '../components/Toast';
 import { addProduct, useBasket } from '../cartStore';
 import { useCatalog } from '../storeApi';
 import type { Product } from '../shared/types';
-import type { RegionStory as Story, StoryProduct, Tone } from '../regions/types';
+import type { Photo, RegionStory as Story, StoryProduct, Tone } from '../regions/types';
+import { storyPhotoQueries, usePhotos } from '../regions/photos';
+
+type Pic = (p: Photo | undefined, width?: number) => string | undefined;
 
 const wrap = 'max-w-[1280px] mx-auto px-6 lg:px-12';
 const eyebrow = 'text-caption text-primary uppercase font-bold tracking-widest block mb-2';
@@ -53,8 +56,10 @@ function SectionHead({ kicker, title, lede, split }: { kicker: string; title: st
 }
 
 /** Product card in the pantry: photo, name, size and a buy button wired to the catalog. */
-function BuyCard({ sp, shelf, catalog, onAdd }: { sp: StoryProduct; shelf: string; catalog: Catalog; onAdd: (p: Product) => void }) {
+function BuyCard({ sp, shelf, catalog, onAdd, pic }: { sp: StoryProduct; shelf: string; catalog: Catalog; onAdd: (p: Product) => void; pic: Pic }) {
   const live = catalog.get(sp.id);
+  // The real product photo wins once the product is in the shop.
+  const img = live?.img || pic(sp.img, 600);
   const soldOut = live && live.stock <= 0;
   return (
     <div className="w-full max-w-[260px] bg-surface-bright border border-border-line rounded p-4 flex flex-col shadow-sm">
@@ -62,9 +67,9 @@ function BuyCard({ sp, shelf, catalog, onAdd }: { sp: StoryProduct; shelf: strin
         <span className="uppercase tracking-widest text-[10px]">{shelf}</span>
         {sp.tag && <span className={`text-xs font-bold ${toneClass[sp.tagTone ?? 'neutral']}`}>{sp.tag}</span>}
       </div>
-      {(sp.img || live?.img) && (
+      {img && (
         <a href={live ? `/product/${live.id}` : '/shop'} className="block w-full h-28 bg-surface-container rounded mb-3 overflow-hidden">
-          <img className="size-full object-cover transition-transform duration-500 hover:scale-105" src={sp.img || live?.img} alt={sp.name} loading="lazy" />
+          <img className="size-full object-cover transition-transform duration-500 hover:scale-105" src={img} alt={sp.name} loading="lazy" />
         </a>
       )}
       <h4 className="font-headline-sm text-sm text-on-surface font-bold">
@@ -130,7 +135,7 @@ function useSeo(story: Story) {
         ...(r.schema
           ? { recipeYield: r.schema.yield, prepTime: r.schema.prepTime, cookTime: r.schema.cookTime, totalTime: r.schema.totalTime, recipeIngredient: r.schema.ingredients }
           : { recipeYield: `${r.serves} servings`, recipeIngredient: r.shoppingList.map(plain) }),
-        ...(r.image ? { image: r.image } : {}),
+        ...(typeof r.image === 'string' ? { image: r.image } : {}),
         recipeInstructions: r.steps.map((s) => ({ '@type': 'HowToStep', name: s.title.replace(/\.$/, ''), text: s.body })),
       });
     }
@@ -168,6 +173,8 @@ export default function RegionStory({ story }: { story: Story }) {
   }
 
   const { hero } = story;
+  const { src: pic, credits } = usePhotos(storyPhotoQueries(story));
+  const heroImg = pic(hero.image, 2000);
   const r = story.cook?.recipe;
   const setItems = available(story.set.products);
   const setTotal = setItems.reduce((n, p) => n + p.price, 0);
@@ -230,9 +237,9 @@ export default function RegionStory({ story }: { story: Story }) {
             )}
           </div>
           <div className="lg:col-span-7 relative min-h-[360px] sm:min-h-[420px] overflow-hidden flex items-end">
-            {hero.image ? (
+            {heroImg ? (
               <>
-                <img className="absolute inset-0 size-full object-cover" src={hero.image} alt={hero.imageAlt ?? ''} />
+                <img className="absolute inset-0 size-full object-cover" src={heroImg} alt={hero.imageAlt ?? ''} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent pointer-events-none" />
                 <div className="absolute inset-0 pointer-events-none hidden lg:block" style={{ background: `linear-gradient(to right, ${hero.color ?? '#191011'}, transparent 45%, rgba(0,0,0,.3))` }} />
               </>
@@ -295,7 +302,7 @@ export default function RegionStory({ story }: { story: Story }) {
                   </div>
                 </div>
                 <div className="lg:col-span-3 flex flex-wrap lg:flex-col items-start lg:items-end gap-4">
-                  {item.products.map((sp) => <BuyCard key={sp.id} sp={sp} shelf={item.shelfLabel ?? 'In the pantry'} catalog={catalog} onAdd={addOne} />)}
+                  {item.products.map((sp) => <BuyCard key={sp.id} sp={sp} shelf={item.shelfLabel ?? 'In the pantry'} catalog={catalog} onAdd={addOne} pic={pic} />)}
                 </div>
               </div>
             ))}
@@ -313,7 +320,7 @@ export default function RegionStory({ story }: { story: Story }) {
                 <div>
                   {d.image && (
                     <div className="w-full h-44 rounded overflow-hidden mb-4 bg-surface-container">
-                      <img src={d.image} alt={d.title} loading="lazy" className="size-full object-cover" />
+                      {pic(d.image, 700) && <img src={pic(d.image, 700)} alt={d.title} loading="lazy" className="size-full object-cover" />}
                     </div>
                   )}
                   <span className="text-[11px] font-bold uppercase tracking-wider text-primary">{d.where}</span>
@@ -341,16 +348,16 @@ export default function RegionStory({ story }: { story: Story }) {
           <div className={`${wrap} grid grid-cols-1 lg:grid-cols-12 gap-12 items-center`}>
             {story.maker.photos.length > 0 && <div className="lg:col-span-5 space-y-4">
               {story.maker.photos.map((ph, i) => i === 0 && (
-                <figure key={ph.src} className="w-full h-64 bg-stone-800 rounded overflow-hidden relative">
-                  <img className="size-full object-cover" src={ph.src} alt={ph.alt} loading="lazy" />
+                <figure key={i} className="w-full h-64 bg-stone-800 rounded overflow-hidden relative">
+                  {pic(ph.src, 1000) && <img className="size-full object-cover" src={pic(ph.src, 1000)} alt={ph.alt} loading="lazy" />}
                   {ph.caption && <figcaption className="absolute bottom-3 left-3 text-[10px] uppercase tracking-wider bg-black/60 px-2 py-1 rounded">{ph.caption}</figcaption>}
                 </figure>
               ))}
               {story.maker.photos.length > 1 && (
                 <div className="grid grid-cols-2 gap-4">
-                  {story.maker.photos.slice(1, 3).map((ph) => (
-                    <figure key={ph.src} className="h-44 bg-stone-800 rounded overflow-hidden relative">
-                      <img className="size-full object-cover" src={ph.src} alt={ph.alt} loading="lazy" />
+                  {story.maker.photos.slice(1, 3).map((ph, i) => (
+                    <figure key={i} className="h-44 bg-stone-800 rounded overflow-hidden relative">
+                      {pic(ph.src, 600) && <img className="size-full object-cover" src={pic(ph.src, 600)} alt={ph.alt} loading="lazy" />}
                       {ph.caption && <figcaption className="absolute bottom-2 left-2 text-[9px] uppercase tracking-wider bg-black/60 px-1.5 py-0.5 rounded">{ph.caption}</figcaption>}
                     </figure>
                   ))}
@@ -400,7 +407,7 @@ export default function RegionStory({ story }: { story: Story }) {
             <article id={r.id} className="bg-white rounded border border-border-line p-6 sm:p-8 lg:p-12 shadow-sm mb-12 scroll-mt-24">
               {r.image && (
                 <div className="w-full h-64 md:h-80 rounded overflow-hidden relative mb-8">
-                  <img src={r.image} alt={r.title} className="size-full object-cover" loading="lazy" />
+                  {pic(r.image, 1600) && <img src={pic(r.image, 1600)} alt={r.title} className="size-full object-cover" loading="lazy" />}
                   {r.imageCaption && (
                     <div className="absolute bottom-4 left-4 bg-black/60 backdrop-blur px-3 py-1.5 rounded text-white text-xs tracking-wider uppercase flex items-center gap-2">
                       <Icon name="restaurant" className="text-sm text-secondary-container" /> {r.imageCaption}
@@ -467,7 +474,7 @@ export default function RegionStory({ story }: { story: Story }) {
             {story.cook.shortcut && (
               <div className="bg-white rounded border border-border-line p-6 sm:p-8 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-8">
                 {story.cook.shortcut.image && (
-                  <div className="w-full md:w-64 h-44 rounded overflow-hidden shrink-0"><img src={story.cook.shortcut.image} alt={story.cook.shortcut.title} className="size-full object-cover" loading="lazy" /></div>
+                  <div className="w-full md:w-64 h-44 rounded overflow-hidden shrink-0 bg-surface-container">{pic(story.cook.shortcut.image, 600) && <img src={pic(story.cook.shortcut.image, 600)} alt={story.cook.shortcut.title} className="size-full object-cover" loading="lazy" />}</div>
                 )}
                 <div className="max-w-2xl">
                   <span className="text-caption text-primary uppercase font-bold tracking-widest block mb-1">{story.cook.shortcut.eyebrow ?? 'The shortcut'}</span>
@@ -524,8 +531,8 @@ export default function RegionStory({ story }: { story: Story }) {
               const live = catalog.get(sp.id);
               return (
                 <a key={sp.id} href={live ? `/product/${live.id}` : '/shop'} className="bg-white p-3 rounded shadow-sm flex flex-col justify-between text-center min-h-[150px] hover:shadow-md transition-shadow">
-                  {sp.img || live?.img ? (
-                    <div className="w-full h-20 rounded overflow-hidden mb-2 bg-surface-container"><img src={sp.img || live?.img} alt="" className="size-full object-cover" loading="lazy" /></div>
+                  {live?.img || pic(sp.img, 400) ? (
+                    <div className="w-full h-20 rounded overflow-hidden mb-2 bg-surface-container"><img src={live?.img || pic(sp.img, 400)} alt="" className="size-full object-cover" loading="lazy" /></div>
                   ) : (
                     <div className="w-full h-20 rounded mb-2 bg-surface-parchment flex items-center justify-center"><Icon name="inventory_2" className="text-2xl text-secondary-container" /></div>
                   )}
@@ -544,6 +551,19 @@ export default function RegionStory({ story }: { story: Story }) {
           <h5 className="text-[11px] uppercase tracking-widest font-bold text-on-surface">About this story</h5>
           {story.about.map((t, i) => <p key={i}>{t}</p>)}
           <p className="text-ink-tertiary"><strong>Sources:</strong> {story.sources}</p>
+          {credits.length > 0 && (
+            <p className="text-ink-tertiary">
+              <strong>Photos:</strong>{' '}
+              {credits.map((c, i) => (
+                <Fragment key={c.link}>
+                  {i > 0 && ', '}
+                  <a href={c.link} className="underline underline-offset-2 hover:text-primary" rel="noopener" target="_blank">{c.alt.length > 40 ? 'Photo' : c.alt}</a> by{' '}
+                  <a href={c.profile} className="underline underline-offset-2 hover:text-primary" rel="noopener" target="_blank">{c.author}</a>
+                </Fragment>
+              ))}{' '}
+              on <a href="https://unsplash.com/?utm_source=la_taglia&utm_medium=referral" className="underline underline-offset-2 hover:text-primary" rel="noopener" target="_blank">Unsplash</a>.
+            </p>
+          )}
         </div>
       </section>
     </Layout>

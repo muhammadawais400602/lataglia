@@ -11,7 +11,43 @@ const sicilia: RegionStory = {
   "subtitle": "A table shaped by the sea, the sun and centuries of exchange.",
   "hero": {
     "color": "#1B3C8C",
-    "colorDeep": "#132B66"
+    "colorDeep": "#132B66",
+    "dossier": "Terroir archive · Dossier N° 01",
+    "badge": "Mediterranean crossroads",
+    "metrics": [
+      {
+        "icon": "volcano",
+        "label": "Landmark",
+        "value": "Mount Etna"
+      },
+      {
+        "icon": "waves",
+        "label": "Coastline",
+        "value": "Ringed by sea"
+      },
+      {
+        "icon": "sailing",
+        "label": "Strait",
+        "value": "Strait of Messina"
+      },
+      {
+        "icon": "restaurant",
+        "label": "Signature",
+        "value": "Pasta alla Norma"
+      }
+    ],
+    "heritage": "Centuries of exchange",
+    "imageCaption": {
+      "title": "Mount Etna",
+      "body": "Europe’s tallest active volcano rises over the east, above volcanic slopes and sunbaked plains."
+    },
+    "imageTag": "Mount Etna · eastern Sicily",
+    "heritageNote": "agrodolce",
+    "image": {
+      "q": "Mount Etna Sicily || Sicily landscape",
+      "orientation": "landscape"
+    },
+    "imageAlt": "Europe’s tallest active volcano rises over the east, above volcanic slopes and sunbaked plains."
   },
   "intro": [
     "Sicily sits at the toe of Italy’s boot, separated from Calabria by the narrow Strait of Messina and closer to the coast of Tunisia than to Naples. It is the largest island in the Mediterranean: hot, dry, and ringed by sea, with Mount Etna, Europe’s tallest active volcano, rising over the east. That position made it a crossroads. Greeks planted olives and vines, Arabs brought citrus, sugar cane, and saffron, and Spanish rule carried tomatoes and cacao from the Americas. Sicilians absorbed all of it, farming volcanic slopes and sunbaked plains and fishing the waters on every side. The result is a cuisine of sea and sun, thrifty and festive at once, where North African couscous and Spanish-era chocolate sit comfortably beside the pasta.",
@@ -30,12 +66,26 @@ const sicilia: RegionStory = {
           {
             "id": "sic-pistachios-bronte",
             "name": "Bronte pistachios",
-            "meta": "Shelled"
+            "meta": "Shelled",
+            "tag": "Volcanic soil",
+            "tagTone": "gold",
+            "origin": "Bronte",
+            "img": {
+              "q": "Bronte pistachios Sicily || Bronte pistachios || Pistachio food",
+              "orientation": "squarish"
+            }
           },
           {
             "id": "sic-pistachio-cream",
             "name": "Sicilian pistachio cream",
-            "meta": "Jar"
+            "meta": "Jar",
+            "tag": "Sweet cream",
+            "tagTone": "neutral",
+            "origin": "Sicily",
+            "img": {
+              "q": "Sicilian pistachio cream Sicily || Sicilian pistachio cream || Pistachio food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -48,12 +98,26 @@ const sicilia: RegionStory = {
           {
             "id": "sic-sundried-tomatoes",
             "name": "Sun-dried cherry tomatoes",
-            "meta": "Jar, in oil"
+            "meta": "Jar, in oil",
+            "tag": "In oil",
+            "tagTone": "neutral",
+            "origin": "Sciacca",
+            "img": {
+              "q": "Sun-dried cherry tomatoes Sicily || Sun-dried cherry tomatoes || Tomato food",
+              "orientation": "squarish"
+            }
           },
           {
             "id": "sic-datterino-sauce",
             "name": "Datterino tomato sauce",
-            "meta": "Jar"
+            "meta": "Jar",
+            "tag": "Pantry staple",
+            "tagTone": "neutral",
+            "origin": "Southeast Sicily",
+            "img": {
+              "q": "Datterino tomato sauce Sicily || Datterino tomato sauce || Tomato food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -66,12 +130,26 @@ const sicilia: RegionStory = {
           {
             "id": "sic-capers-pantelleria",
             "name": "Pantelleria IGP capers",
-            "meta": "Salt-packed"
+            "meta": "Salt-packed",
+            "tag": "IGP",
+            "tagTone": "green",
+            "origin": "Pantelleria",
+            "img": {
+              "q": "Pantelleria capers Sicily || Pantelleria capers || Capers food",
+              "orientation": "squarish"
+            }
           },
           {
             "id": "sic-castelvetrano-olives",
             "name": "Castelvetrano olives",
-            "meta": "Jar"
+            "meta": "Jar",
+            "tag": "Nocellara",
+            "tagTone": "neutral",
+            "origin": "Valle del Belice",
+            "img": {
+              "q": "Castelvetrano olives Sicily || Castelvetrano olives || Capers food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -84,7 +162,14 @@ const sicilia: RegionStory = {
           {
             "id": "sic-pesto-trapanese",
             "name": "Pesto alla trapanese",
-            "meta": "With Avola almonds"
+            "meta": "With Avola almonds",
+            "tag": "Avola almonds",
+            "tagTone": "neutral",
+            "origin": "Sciacca",
+            "img": {
+              "q": "Pesto alla trapanese Sicily || Pesto alla trapanese || Almond food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -97,7 +182,14 @@ const sicilia: RegionStory = {
           {
             "id": "sic-evoo-dop",
             "name": "Sicilian DOP extra-virgin olive oil",
-            "meta": "Bottle"
+            "meta": "Bottle",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Across the island",
+            "img": {
+              "q": "Sicilian extra-virgin olive oil Sicily || Sicilian extra-virgin olive oil || Olive oil food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -110,11 +202,19 @@ const sicilia: RegionStory = {
           {
             "id": "sic-modica-chocolate",
             "name": "Cioccolato di Modica IGP",
-            "meta": "Bar"
+            "meta": "Bar",
+            "tag": "IGP",
+            "tagTone": "green",
+            "origin": "Modica",
+            "img": {
+              "q": "Cioccolato di Modica Sicily || Cioccolato di Modica || Chocolate food",
+              "orientation": "squarish"
+            }
           }
         ]
       }
-    ]
+    ],
+    "eyebrow": "Essential island goods"
   },
   "dishes": {
     "lede": "Four dishes Sicily makes its own.",
@@ -123,27 +223,44 @@ const sicilia: RegionStory = {
         "title": "Pasta alla Norma",
         "where": "Catania",
         "body": "Tomato, fried eggplant, basil, and salty ricotta salata. Generous and restrained at once, and the best first dish for anyone new to Sicilian cooking.",
-        "tip": "[Cook it below](#norma)"
+        "tip": "[Cook it below](#norma)",
+        "image": {
+          "q": "Pasta alla Norma Sicily food || Pasta alla Norma food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Caponata",
         "where": "Across the island",
         "body": "Eggplant, celery, tomato, olives, and capers in a sweet-and-sour agrodolce. Serve at room temperature as an antipasto, beside grilled fish, or on toasted bread. In Palermo, many cooks add raisins and pine nuts.",
-        "tip": "Skip the hour at the stove with [a ready-made jar](product:sic-caponata)."
+        "tip": "Skip the hour at the stove with [a ready-made jar](product:sic-caponata).",
+        "image": {
+          "q": "Caponata Sicily food || Caponata food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Pasta con le sarde",
         "where": "Palermo",
         "body": "Sardines, wild fennel, raisins, pine nuts, saffron, and toasted breadcrumbs. The raisins, pine nuts, and saffron arrived with Arab rule in the ninth century and never left Palermo’s kitchens.",
-        "tip": "Can’t find wild fennel? Use cultivated fennel fronds plus a pinch of [wild fennel seed](product:sic-wild-fennel)."
+        "tip": "Can’t find wild fennel? Use cultivated fennel fronds plus a pinch of [wild fennel seed](product:sic-wild-fennel).",
+        "image": {
+          "q": "Pasta con le sarde Sicily food || Pasta con le sarde food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Cannoli and granita",
         "where": "Sweet Sicily",
         "body": "Crisp fried shells with sweetened sheep’s-milk ricotta; icy granita of coffee, almond, or lemon. Both are built on contrast.",
-        "tip": "For the table: [pistachio-filled cannoli](product:sic-cannoli)."
+        "tip": "For the table: [pistachio-filled cannoli](product:sic-cannoli).",
+        "image": {
+          "q": "Cannoli and granita Sicily food || Cannoli and granita food",
+          "orientation": "landscape"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Culinary canon"
   },
   "maker": {
     "name": "Campo D’Oro",
@@ -152,7 +269,32 @@ const sicilia: RegionStory = {
       "On Sicily’s southwest coast, about 50 kilometers from the Valley of the Temples, Paolo Licata founded Campo D’Oro more than three decades ago. Today it is a second-generation family business making preserves, pestos, sauces, and sweet creams from Sicilian recipes.",
       "Most of the vegetables come from the family’s own organic farm: eggplant, tomatoes, basil, garlic, and onions, processed within a day of harvest and without artificial additives or colorings. The facility runs on solar and wind power. Several recipes build on protected Sicilian ingredients, including Pantelleria IGP capers in the caponata and Avola almonds in the pesto alla trapanese."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": {
+          "q": "farm fields Sciacca Sicily || farm fields Sicily || Sciacca Sicily",
+          "orientation": "landscape"
+        },
+        "alt": "Organic family farm · Sciacca",
+        "caption": "Organic family farm · Sciacca"
+      },
+      {
+        "src": {
+          "q": "kitchen family Sciacca Sicily || kitchen family Sicily || Sciacca Sicily",
+          "orientation": "landscape"
+        },
+        "alt": "Family kitchen · Campo D’Oro",
+        "caption": "Family kitchen · Campo D’Oro"
+      },
+      {
+        "src": {
+          "q": "Campo D’Oro caponata Sciacca Sicily || Campo D’Oro caponata Sicily || Sciacca Sicily",
+          "orientation": "landscape"
+        },
+        "alt": "Campo D’Oro jars · Sciacca",
+        "caption": "Campo D’Oro jars · Sciacca"
+      }
+    ],
     "facts": [
       {
         "label": "Based in",
@@ -172,22 +314,50 @@ const sicilia: RegionStory = {
       {
         "id": "sic-caponata",
         "name": "Campo D’Oro caponata",
-        "meta": "Jar"
+        "meta": "Jar",
+        "tag": "Family recipe",
+        "tagTone": "neutral",
+        "origin": "Sciacca",
+        "img": {
+          "q": "Campo D’Oro caponata Sicily || Campo D’Oro caponata",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "sic-pesto-trapanese",
         "name": "Campo D’Oro pesto alla trapanese",
-        "meta": "With Avola almonds"
+        "meta": "With Avola almonds",
+        "tag": "Avola almonds",
+        "tagTone": "neutral",
+        "origin": "Sciacca",
+        "img": {
+          "q": "Pesto alla trapanese Sicily || Pesto alla trapanese || Almond food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "sic-sundried-tomatoes",
         "name": "Campo D’Oro sun-dried cherry tomatoes",
-        "meta": "Jar, in oil"
+        "meta": "Jar, in oil",
+        "tag": "In oil",
+        "tagTone": "neutral",
+        "origin": "Sciacca",
+        "img": {
+          "q": "Sun-dried cherry tomatoes Sicily || Sun-dried cherry tomatoes || Tomato food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "sic-blood-orange-marmalade",
         "name": "Campo D’Oro blood orange marmalade",
-        "meta": "Jar"
+        "meta": "Jar",
+        "tag": "Marmalade",
+        "tagTone": "neutral",
+        "origin": "Sciacca",
+        "img": {
+          "q": "Campo D’Oro blood orange marmalade Sicily || Campo D’Oro blood orange marmalade",
+          "orientation": "squarish"
+        }
       }
     ]
   },
@@ -237,12 +407,26 @@ const sicilia: RegionStory = {
         {
           "id": "sic-passata",
           "name": "Tomato passata",
-          "meta": "Jar"
+          "meta": "Jar",
+          "tag": "Pantry staple",
+          "tagTone": "neutral",
+          "origin": "Sicily",
+          "img": {
+            "q": "Tomato passata Sicily || Tomato passata",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "sic-trapani-salt",
           "name": "Trapani sea salt",
-          "meta": "Hand-harvested"
+          "meta": "Hand-harvested",
+          "tag": "Hand-harvested",
+          "tagTone": "neutral",
+          "origin": "Trapani",
+          "img": {
+            "q": "Trapani sea salt Sicily || Trapani sea salt",
+            "orientation": "squarish"
+          }
         }
       ],
       "schema": {
@@ -260,6 +444,11 @@ const sicilia: RegionStory = {
           "80 g ricotta salata",
           "Fine sea salt and black pepper"
         ]
+      },
+      "imageCaption": "Catania classic · about 50 minutes",
+      "image": {
+        "q": "Pasta alla Norma Sicily food || Pasta alla Norma food",
+        "orientation": "landscape"
       }
     },
     "shortcut": {
@@ -269,15 +458,32 @@ const sicilia: RegionStory = {
         {
           "id": "sic-busiate",
           "name": "Busiate pasta",
-          "meta": "Durum wheat"
+          "meta": "Durum wheat",
+          "tag": "Durum wheat",
+          "tagTone": "neutral",
+          "origin": "Western Sicily",
+          "img": {
+            "q": "Busiate pasta Sicily || Busiate pasta",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "sic-pesto-trapanese",
           "name": "Pesto alla trapanese",
-          "meta": "With Avola almonds"
+          "meta": "With Avola almonds",
+          "tag": "Avola almonds",
+          "tagTone": "neutral",
+          "origin": "Sciacca",
+          "img": {
+            "q": "Pesto alla trapanese Sicily || Pesto alla trapanese || Almond food",
+            "orientation": "squarish"
+          }
         }
-      ]
-    }
+      ],
+      "eyebrow": "Trapani shortcut",
+      "button": "Get the busiate pair"
+    },
+    "eyebrow": "Island kitchen"
   },
   "readTheLabel": "“Sicilian-style” is not the same as made in Sicily. Check the place of production, the ingredient list, and any DOP or IGP seal. Every product we carry states where it is made.",
   "set": {
@@ -288,44 +494,101 @@ const sicilia: RegionStory = {
       {
         "id": "sic-pistachios-bronte",
         "name": "Bronte pistachios",
-        "meta": "Shelled"
+        "meta": "Shelled",
+        "tag": "Volcanic soil",
+        "tagTone": "gold",
+        "origin": "Bronte",
+        "img": {
+          "q": "Bronte pistachios Sicily || Bronte pistachios || Pistachio food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "sic-pesto-trapanese",
         "name": "Pesto alla trapanese",
-        "meta": "With Avola almonds"
+        "meta": "With Avola almonds",
+        "tag": "Avola almonds",
+        "tagTone": "neutral",
+        "origin": "Sciacca",
+        "img": {
+          "q": "Pesto alla trapanese Sicily || Pesto alla trapanese || Almond food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "sic-caponata",
         "name": "Caponata",
-        "meta": "Jar"
+        "meta": "Jar",
+        "tag": "Family recipe",
+        "tagTone": "neutral",
+        "origin": "Sciacca",
+        "img": {
+          "q": "Campo D’Oro caponata Sicily || Campo D’Oro caponata",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "sic-castelvetrano-olives",
         "name": "Castelvetrano olives",
-        "meta": "Jar"
+        "meta": "Jar",
+        "tag": "Nocellara",
+        "tagTone": "neutral",
+        "origin": "Valle del Belice",
+        "img": {
+          "q": "Castelvetrano olives Sicily || Castelvetrano olives || Capers food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "sic-busiate",
         "name": "Busiate pasta",
-        "meta": "Durum wheat"
+        "meta": "Durum wheat",
+        "tag": "Durum wheat",
+        "tagTone": "neutral",
+        "origin": "Western Sicily",
+        "img": {
+          "q": "Busiate pasta Sicily || Busiate pasta",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "sic-trapani-salt",
         "name": "Trapani sea salt",
-        "meta": "Hand-harvested"
+        "meta": "Hand-harvested",
+        "tag": "Hand-harvested",
+        "tagTone": "neutral",
+        "origin": "Trapani",
+        "img": {
+          "q": "Trapani sea salt Sicily || Trapani sea salt",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "sic-oregano",
         "name": "Sicilian oregano",
-        "meta": "On the stem"
+        "meta": "On the stem",
+        "tag": "On the stem",
+        "tagTone": "neutral",
+        "origin": "Sicily",
+        "img": {
+          "q": "Sicilian oregano Sicily || Sicilian oregano",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "sic-blood-orange-marmalade",
         "name": "Blood orange marmalade",
-        "meta": "Jar"
+        "meta": "Jar",
+        "tag": "Marmalade",
+        "tagTone": "neutral",
+        "origin": "Sciacca",
+        "img": {
+          "q": "Campo D’Oro blood orange marmalade Sicily || Campo D’Oro blood orange marmalade",
+          "orientation": "squarish"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Limited curation · Parcel N° 01"
   },
   "about": [
     "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."

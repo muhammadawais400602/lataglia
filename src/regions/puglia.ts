@@ -11,7 +11,43 @@ const puglia: RegionStory = {
   "subtitle": "Olive groves, golden wheat, and two seas.",
   "hero": {
     "color": "#8A5A1F",
-    "colorDeep": "#5E3C12"
+    "colorDeep": "#5E3C12",
+    "dossier": "Terroir archive · Dossier N° 06",
+    "badge": "Granary of Italy",
+    "metrics": [
+      {
+        "icon": "waves",
+        "label": "Seas",
+        "value": "Adriatic and Ionian"
+      },
+      {
+        "icon": "agriculture",
+        "label": "Granary",
+        "value": "The Tavoliere"
+      },
+      {
+        "icon": "castle",
+        "label": "Landmark",
+        "value": "Trulli of the Itria"
+      },
+      {
+        "icon": "eco",
+        "label": "Olive oil",
+        "value": "Italy’s top producer"
+      }
+    ],
+    "heritage": "Cucina povera heritage",
+    "imageCaption": {
+      "title": "The Itria valley",
+      "body": "Cone-roofed stone trulli and fortified masserie, where Puglians worked the land."
+    },
+    "imageTag": "Itria valley · Murgia",
+    "heritageNote": "granary of italy",
+    "image": {
+      "q": "Itria valley Puglia || Puglia landscape",
+      "orientation": "landscape"
+    },
+    "imageAlt": "Cone-roofed stone trulli and fortified masserie, where Puglians worked the land."
   },
   "intro": [
     "Puglia is the heel of Italy’s boot, a long, mostly flat region with a longer coastline than any other on the mainland, washed by the Adriatic on one side and the Ionian on the other. In the north, the wheat fields of the Tavoliere earned it the name “granary of Italy”; in the middle rise the limestone uplands of the Murgia; and in the south, the Salento peninsula reaches toward Greece. Greek colonists founded Taranto, the Via Appia ended at Brindisi, and Normans, the emperor Frederick II, and Spanish viceroys all left castles and churches behind. Most Puglians, though, worked the land from fortified farmhouses called masserie and the cone-roofed stone trulli of the Itria valley, and their cooking made the most of what grew: durum wheat, vegetables, beans, and olive oil from tens of millions of trees. It is Italy’s great cucina povera, humble ingredients turned into some of the most satisfying food in the country.",
@@ -29,7 +65,14 @@ const puglia: RegionStory = {
           {
             "id": "pug-olio-coratina",
             "name": "Puglian Coratina extra-virgin olive oil",
-            "meta": "Bottle, new harvest"
+            "meta": "Bottle, new harvest",
+            "tag": "New harvest",
+            "tagTone": "green",
+            "origin": "Bari hills",
+            "img": {
+              "q": "Puglian Coratina extra-virgin olive oil Puglia || Puglian Coratina extra-virgin olive oil || Olive oil food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -42,7 +85,14 @@ const puglia: RegionStory = {
           {
             "id": "pug-burrata",
             "name": "Burrata di Andria IGP",
-            "meta": "Fresh"
+            "meta": "Fresh",
+            "tag": "IGP",
+            "tagTone": "green",
+            "origin": "Andria",
+            "img": {
+              "q": "Burrata di Andria Puglia || Burrata di Andria || Burrata food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -55,7 +105,14 @@ const puglia: RegionStory = {
           {
             "id": "pug-orecchiette",
             "name": "Orecchiette from Puglia",
-            "meta": "500 g"
+            "meta": "500 g",
+            "tag": "Durum wheat",
+            "tagTone": "neutral",
+            "origin": "Bari",
+            "img": {
+              "q": "Orecchiette from Puglia || Orecchiette food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -68,7 +125,14 @@ const puglia: RegionStory = {
           {
             "id": "pug-taralli",
             "name": "Taralli with fennel seed",
-            "meta": "Bag"
+            "meta": "Bag",
+            "tag": "Fennel seed",
+            "tagTone": "neutral",
+            "origin": "Puglia",
+            "img": {
+              "q": "Taralli with fennel seed Puglia || Taralli with fennel seed || Taralli food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -81,7 +145,14 @@ const puglia: RegionStory = {
           {
             "id": "pug-cerignola",
             "name": "Bella di Cerignola olives",
-            "meta": "Jar"
+            "meta": "Jar",
+            "tag": "Table olive",
+            "tagTone": "neutral",
+            "origin": "Cerignola",
+            "img": {
+              "q": "Bella di Cerignola olives Puglia || Bella di Cerignola olives || Bella di Cerignola olives food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -94,11 +165,19 @@ const puglia: RegionStory = {
           {
             "id": "pug-canestrato",
             "name": "Canestrato Pugliese DOP",
-            "meta": "Wedge"
+            "meta": "Wedge",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Foggia and Bari",
+            "img": {
+              "q": "Canestrato Pugliese Puglia || Canestrato Pugliese || Canestrato Pugliese food",
+              "orientation": "squarish"
+            }
           }
         ]
       }
-    ]
+    ],
+    "eyebrow": "Essential terroir goods"
   },
   "dishes": {
     "lede": "Four dishes Puglia makes its own.",
@@ -107,25 +186,44 @@ const puglia: RegionStory = {
         "title": "Orecchiette con le cime di rapa",
         "where": "Bari",
         "body": "Orecchiette and bitter turnip greens cooked in the same pot, then tossed with garlic, anchovy, chili, and plenty of olive oil. The defining dish of Puglia.",
-        "tip": "[Cook it below](#orecchiette)"
+        "tip": "[Cook it below](#orecchiette)",
+        "image": {
+          "q": "Orecchiette con le cime di rapa Puglia food || Orecchiette con le cime di rapa food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Fave e cicoria",
         "where": "Across the region",
         "body": "A smooth purée of dried fava beans served with bitter wild chicory and a pool of raw olive oil. Peasant food at its most elegant.",
-        "tip": "Dress it with your best [Coratina oil](product:pug-olio-coratina)."
+        "tip": "Dress it with your best [Coratina oil](product:pug-olio-coratina).",
+        "image": {
+          "q": "Fave e cicoria Puglia food || Fave e cicoria food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Tiella barese",
         "where": "Bari",
-        "body": "Rice, potatoes, and mussels layered in a pan with tomato, onion, and pecorino, then baked until the top crisps. A Spanish-era cousin of paella."
+        "body": "Rice, potatoes, and mussels layered in a pan with tomato, onion, and pecorino, then baked until the top crisps. A Spanish-era cousin of paella.",
+        "note": "Spanish-era cousin of paella",
+        "image": {
+          "q": "Tiella barese Puglia food || Tiella barese food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Focaccia barese",
         "where": "Bari",
-        "body": "Thick, soft focaccia with a crisp, oily base, studded with cherry tomatoes and olives and scattered with oregano. Often made with a little potato in the dough."
+        "body": "Thick, soft focaccia with a crisp, oily base, studded with cherry tomatoes and olives and scattered with oregano. Often made with a little potato in the dough.",
+        "note": "Crisp, oily base",
+        "image": {
+          "q": "Focaccia barese Puglia food || Focaccia barese food",
+          "orientation": "landscape"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Culinary canon"
   },
   "maker": {
     "name": "Frantoio Muraglia",
@@ -134,7 +232,32 @@ const puglia: RegionStory = {
       "In Andria, which calls itself the capital of Puglian olive oil, the Muraglia family has been pressing olives for five generations. The story begins with a single tree: a Coratina olive believed to be more than 450 years old, which Savino Muraglia senior bought to make oil despite being told there was no fortune in land and olives.",
       "Today the family’s groves spread across the limestone uplands of the Murgia. The olives are still picked by hand and cold-pressed, mostly Coratina, the local variety known for its bitterness, pepper, and unusually high polyphenols. The oil that began with one stubborn great-great-grandfather is now sold in dozens of countries."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": {
+          "q": "olive grove Andria Puglia || olive grove Puglia || Andria Puglia",
+          "orientation": "landscape"
+        },
+        "alt": "Coratina groves · the Murgia",
+        "caption": "Coratina groves · the Murgia"
+      },
+      {
+        "src": {
+          "q": "mill harvest Andria Puglia || mill harvest Puglia || Andria Puglia",
+          "orientation": "landscape"
+        },
+        "alt": "Hand-picked, cold-pressed",
+        "caption": "Hand-picked, cold-pressed"
+      },
+      {
+        "src": {
+          "q": "Frantoio Muraglia Coratina extra-virgin olive oil Andria Puglia || Frantoio Muraglia Coratina extra-virgin olive oil Puglia || Andria Puglia",
+          "orientation": "landscape"
+        },
+        "alt": "Muraglia Coratina oil",
+        "caption": "Muraglia Coratina oil"
+      }
+    ],
     "facts": [
       {
         "label": "Based in",
@@ -154,7 +277,14 @@ const puglia: RegionStory = {
       {
         "id": "pug-muraglia-coratina",
         "name": "Frantoio Muraglia Coratina extra-virgin olive oil",
-        "meta": "Bottle"
+        "meta": "Bottle",
+        "tag": "Cold-pressed",
+        "tagTone": "gold",
+        "origin": "Andria",
+        "img": {
+          "q": "Frantoio Muraglia Coratina extra-virgin olive oil Puglia || Frantoio Muraglia Coratina extra-virgin olive oil",
+          "orientation": "squarish"
+        }
       }
     ]
   },
@@ -200,12 +330,26 @@ const puglia: RegionStory = {
         {
           "id": "pug-orecchiette",
           "name": "Orecchiette from Puglia",
-          "meta": "500 g"
+          "meta": "500 g",
+          "tag": "Durum wheat",
+          "tagTone": "neutral",
+          "origin": "Bari",
+          "img": {
+            "q": "Orecchiette from Puglia || Orecchiette food",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "pug-olio-coratina",
           "name": "Puglian Coratina extra-virgin olive oil",
-          "meta": "Bottle, new harvest"
+          "meta": "Bottle, new harvest",
+          "tag": "New harvest",
+          "tagTone": "green",
+          "origin": "Bari hills",
+          "img": {
+            "q": "Puglian Coratina extra-virgin olive oil Puglia || Puglian Coratina extra-virgin olive oil || Olive oil food",
+            "orientation": "squarish"
+          }
         }
       ],
       "schema": {
@@ -223,6 +367,11 @@ const puglia: RegionStory = {
           "40 g dried breadcrumbs, toasted in a little oil (optional)",
           "Salt"
         ]
+      },
+      "imageCaption": "Bari classic · about 30 minutes",
+      "image": {
+        "q": "Orecchiette con le cime di rapa Puglia food || Orecchiette con le cime di rapa food",
+        "orientation": "landscape"
       }
     },
     "shortcut": {
@@ -232,15 +381,32 @@ const puglia: RegionStory = {
         {
           "id": "pug-burrata",
           "name": "Burrata di Andria IGP",
-          "meta": "Fresh"
+          "meta": "Fresh",
+          "tag": "IGP",
+          "tagTone": "green",
+          "origin": "Andria",
+          "img": {
+            "q": "Burrata di Andria Puglia || Burrata di Andria || Burrata food",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "pug-taralli",
           "name": "Taralli with fennel seed",
-          "meta": "Bag"
+          "meta": "Bag",
+          "tag": "Fennel seed",
+          "tagTone": "neutral",
+          "origin": "Puglia",
+          "img": {
+            "q": "Taralli with fennel seed Puglia || Taralli with fennel seed || Taralli food",
+            "orientation": "squarish"
+          }
         }
-      ]
-    }
+      ],
+      "eyebrow": "Aperitivo shortcut",
+      "button": "Get the aperitivo pair"
+    },
+    "eyebrow": "Terroir kitchen"
   },
   "readTheLabel": "“Packed in Italy” on olive oil can mean olives grown anywhere, and most burrata sold in the US is made far from Puglia. Check the place of production, the harvest date, and any DOP or IGP seal. Every product we carry states where it is made.",
   "set": {
@@ -251,44 +417,101 @@ const puglia: RegionStory = {
       {
         "id": "pug-olio-coratina",
         "name": "Coratina olive oil",
-        "meta": "New harvest"
+        "meta": "New harvest",
+        "tag": "New harvest",
+        "tagTone": "green",
+        "origin": "Bari hills",
+        "img": {
+          "q": "Puglian Coratina extra-virgin olive oil Puglia || Puglian Coratina extra-virgin olive oil || Olive oil food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "pug-burrata",
         "name": "Burrata di Andria IGP",
-        "meta": "Fresh"
+        "meta": "Fresh",
+        "tag": "IGP",
+        "tagTone": "green",
+        "origin": "Andria",
+        "img": {
+          "q": "Burrata di Andria Puglia || Burrata di Andria || Burrata food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "pug-orecchiette",
         "name": "Orecchiette",
-        "meta": "500 g"
+        "meta": "500 g",
+        "tag": "Durum wheat",
+        "tagTone": "neutral",
+        "origin": "Bari",
+        "img": {
+          "q": "Orecchiette from Puglia || Orecchiette food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "pug-taralli",
         "name": "Taralli with fennel",
-        "meta": "Bag"
+        "meta": "Bag",
+        "tag": "Fennel seed",
+        "tagTone": "neutral",
+        "origin": "Puglia",
+        "img": {
+          "q": "Taralli with fennel seed Puglia || Taralli with fennel seed || Taralli food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "pug-cerignola",
         "name": "Bella di Cerignola olives",
-        "meta": "Jar"
+        "meta": "Jar",
+        "tag": "Table olive",
+        "tagTone": "neutral",
+        "origin": "Cerignola",
+        "img": {
+          "q": "Bella di Cerignola olives Puglia || Bella di Cerignola olives || Bella di Cerignola olives food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "pug-canestrato",
         "name": "Canestrato Pugliese DOP",
-        "meta": "Wedge"
+        "meta": "Wedge",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Foggia and Bari",
+        "img": {
+          "q": "Canestrato Pugliese Puglia || Canestrato Pugliese || Canestrato Pugliese food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "pug-fave",
         "name": "Dried split fava beans",
-        "meta": "Bag"
+        "meta": "Bag",
+        "tag": "Pantry staple",
+        "tagTone": "neutral",
+        "origin": "For fave e cicoria",
+        "img": {
+          "q": "Dried split fava beans Puglia || Dried split fava beans",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "pug-muraglia-coratina",
         "name": "Frantoio Muraglia oil",
-        "meta": "Bottle"
+        "meta": "Bottle",
+        "tag": "Cold-pressed",
+        "tagTone": "gold",
+        "origin": "Andria",
+        "img": {
+          "q": "Frantoio Muraglia Coratina extra-virgin olive oil Puglia || Frantoio Muraglia Coratina extra-virgin olive oil",
+          "orientation": "squarish"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Limited curation · Parcel N° 06"
   },
   "about": [
     "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."

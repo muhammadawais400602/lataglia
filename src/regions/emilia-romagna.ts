@@ -11,7 +11,43 @@ const emiliaRomagna: RegionStory = {
   "subtitle": "Patience, pork, and the richest plain in Italy.",
   "hero": {
     "color": "#8C2A1C",
-    "colorDeep": "#5F1C13"
+    "colorDeep": "#5F1C13",
+    "dossier": "Terroir archive · Dossier N° 02",
+    "badge": "Italy’s food valley",
+    "metrics": [
+      {
+        "icon": "history_edu",
+        "label": "Roman road",
+        "value": "Via Emilia, 187 BC"
+      },
+      {
+        "icon": "landscape",
+        "label": "Plain",
+        "value": "Po Valley"
+      },
+      {
+        "icon": "waves",
+        "label": "Coastline",
+        "value": "Adriatic"
+      },
+      {
+        "icon": "location_city",
+        "label": "Nickname",
+        "value": "Bologna la grassa"
+      }
+    ],
+    "heritage": "Ducal court kitchens",
+    "imageCaption": {
+      "title": "Po Valley",
+      "body": "A broad, flat plain between the Apennines and the Adriatic, some of the most fertile land in Europe."
+    },
+    "imageTag": "The Po Valley plain",
+    "heritageNote": "la grassa",
+    "image": {
+      "q": "Po Valley Emilia-Romagna Italy || Emilia-Romagna Italy landscape",
+      "orientation": "landscape"
+    },
+    "imageAlt": "A broad, flat plain between the Apennines and the Adriatic, some of the most fertile land in Europe."
   },
   "intro": [
     "Emilia-Romagna stretches across northern Italy from the Apennine ridge to the Adriatic, with the broad, flat Po Valley at its heart. It is two old lands joined by one road: the Via Emilia, laid by the Romans in 187 BC, still runs straight from Piacenza to Rimini, stringing together Parma, Reggio Emilia, Modena, and Bologna. The plain is some of the most fertile land in Europe, and its farmers built a cuisine around what it does best: dairy cattle, wheat, and pigs, with the whey left from cheesemaking traditionally fed to the pigs that become prosciutto. The ducal courts of Parma and Modena refined that abundance, Bologna earned the nickname la grassa, “the fat one,” and Romagna, toward the sea, kept a simpler table of flatbreads, fish, and grilled meat. The result is a cuisine of patience: cheese aged for years, ham for more than a year, vinegar for decades.",
@@ -29,7 +65,14 @@ const emiliaRomagna: RegionStory = {
           {
             "id": "er-parmigiano-24",
             "name": "Parmigiano Reggiano DOP, 24 months",
-            "meta": "Wedge, cut to order"
+            "meta": "Wedge, cut to order",
+            "tag": "Aged 24 mos",
+            "tagTone": "gold",
+            "origin": "Parma, Reggio",
+            "img": {
+              "q": "Parmigiano Reggiano Emilia-Romagna Italy || Parmigiano Reggiano || Parmigiano Reggiano food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -42,7 +85,14 @@ const emiliaRomagna: RegionStory = {
           {
             "id": "er-prosciutto-parma",
             "name": "Prosciutto di Parma DOP",
-            "meta": "Sliced, aged 14+ months"
+            "meta": "Sliced, aged 14+ months",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Langhirano",
+            "img": {
+              "q": "Prosciutto di Parma Emilia-Romagna Italy || Prosciutto di Parma || Prosciutto di Parma food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -55,12 +105,26 @@ const emiliaRomagna: RegionStory = {
           {
             "id": "er-balsamico-tradizionale",
             "name": "Aceto Balsamico Tradizionale di Modena DOP",
-            "meta": "100 ml, aged 12+ years"
+            "meta": "100 ml, aged 12+ years",
+            "tag": "Aged 12+ yrs",
+            "tagTone": "gold",
+            "origin": "Modena",
+            "img": {
+              "q": "Aceto Balsamico Tradizionale di Modena Emilia-Romagna Italy || Aceto Balsamico Tradizionale di Modena || Balsamic vinegar food",
+              "orientation": "squarish"
+            }
           },
           {
             "id": "er-balsamico-igp",
             "name": "Aceto Balsamico di Modena IGP",
-            "meta": "250 ml"
+            "meta": "250 ml",
+            "tag": "IGP",
+            "tagTone": "green",
+            "origin": "Modena",
+            "img": {
+              "q": "Aceto Balsamico di Modena Emilia-Romagna Italy || Aceto Balsamico di Modena || Balsamic vinegar food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -73,7 +137,14 @@ const emiliaRomagna: RegionStory = {
           {
             "id": "er-mortadella",
             "name": "Mortadella Bologna IGP",
-            "meta": "Sliced"
+            "meta": "Sliced",
+            "tag": "IGP",
+            "tagTone": "green",
+            "origin": "Bologna",
+            "img": {
+              "q": "Mortadella Bologna Emilia-Romagna Italy || Mortadella Bologna || Mortadella food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -86,7 +157,14 @@ const emiliaRomagna: RegionStory = {
           {
             "id": "er-culatello",
             "name": "Culatello di Zibello DOP",
-            "meta": "Sliced"
+            "meta": "Sliced",
+            "tag": "Rare · DOP",
+            "tagTone": "gold",
+            "origin": "Zibello",
+            "img": {
+              "q": "Culatello di Zibello Emilia-Romagna Italy || Culatello di Zibello || Culatello food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -99,16 +177,31 @@ const emiliaRomagna: RegionStory = {
           {
             "id": "er-tagliatelle",
             "name": "Egg tagliatelle",
-            "meta": "Dried nests"
+            "meta": "Dried nests",
+            "tag": "Egg pasta",
+            "tagTone": "neutral",
+            "origin": "Bologna",
+            "img": {
+              "q": "Egg tagliatelle Emilia-Romagna Italy || Egg tagliatelle || Egg pasta food",
+              "orientation": "squarish"
+            }
           },
           {
             "id": "er-tortellini",
             "name": "Tortellini",
-            "meta": "Pork and Parmigiano filling"
+            "meta": "Pork and Parmigiano filling",
+            "tag": "Filled pasta",
+            "tagTone": "neutral",
+            "origin": "Bologna, Modena",
+            "img": {
+              "q": "Tortellini Emilia-Romagna Italy || Tortellini || Egg pasta food",
+              "orientation": "squarish"
+            }
           }
         ]
       }
-    ]
+    ],
+    "eyebrow": "Essential terroir goods"
   },
   "dishes": {
     "lede": "Four dishes Emilia-Romagna makes its own.",
@@ -117,27 +210,44 @@ const emiliaRomagna: RegionStory = {
         "title": "Tagliatelle al ragù",
         "where": "Bologna",
         "body": "A slow ragù of beef, pancetta, a little tomato, wine, and milk, tossed with wide ribbons of egg pasta. This is the real dish behind “spaghetti bolognese,” which you won’t find in Bologna.",
-        "tip": "[Cook it below](#ragu)"
+        "tip": "[Cook it below](#ragu)",
+        "image": {
+          "q": "Tagliatelle al ragù Emilia-Romagna Italy food || Tagliatelle al ragù food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Tortellini in brodo",
         "where": "Bologna and Modena",
         "body": "Tiny folded pasta filled with pork loin, prosciutto, mortadella, and Parmigiano, served in a clear capon or beef broth. The Christmas dish across Emilia.",
-        "tip": "Buy [good tortellini](product:er-tortellini) and put your effort into the broth."
+        "tip": "Buy [good tortellini](product:er-tortellini) and put your effort into the broth.",
+        "image": {
+          "q": "Tortellini in brodo Emilia-Romagna Italy food || Tortellini in brodo food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Lasagne verdi",
         "where": "Bologna",
         "body": "Spinach-green egg pasta layered with ragù, béchamel, and Parmigiano, baked until the edges crisp. Lighter than the American version and better for it.",
-        "tip": "Make a double batch of ragù on Saturday; this is Sunday lunch."
+        "tip": "Make a double batch of ragù on Saturday; this is Sunday lunch.",
+        "image": {
+          "q": "Lasagne verdi Emilia-Romagna Italy food || Lasagne verdi food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Piadina",
         "where": "Romagna",
         "body": "A thin flatbread cooked on a griddle and folded around prosciutto, soft squacquerone cheese, and arugula. Romagna’s beach-kiosk street food.",
-        "tip": "Look for Piadina Romagnola IGP, or [ready-made piadine](product:er-piadina) to warm at home."
+        "tip": "Look for Piadina Romagnola IGP, or [ready-made piadine](product:er-piadina) to warm at home.",
+        "image": {
+          "q": "Piadina Emilia-Romagna Italy food || Piadina food",
+          "orientation": "landscape"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Culinary canon"
   },
   "maker": {
     "name": "Acetaia Giusti",
@@ -146,7 +256,32 @@ const emiliaRomagna: RegionStory = {
       "Just outside Modena, the Giusti family has been making balsamic vinegar for more than four centuries. Their records go back to 1605, when Giuseppe and Francesco Maria Giusti were registered in the city as sausage and lard makers under the Este dukes. The business has passed through 17 generations since and is led today by Claudio Stefani Giusti.",
       "The vinegar ages in a collection of thousands of wooden casks, some centuries old, made from oak, chestnut, cherry, mulberry, and juniper, each leaving its own mark on the flavor. In the late 1800s, Giusti balsamic won a run of gold medals at European exhibitions and a royal warrant from the King of Italy, both still shown on the label. The acetaia also runs a museum where visitors can see how balsamic is made."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": {
+          "q": "barrel room Modena Emilia-Romagna Italy || barrel room Emilia-Romagna Italy || Modena Emilia-Romagna Italy",
+          "orientation": "landscape"
+        },
+        "alt": "Barrel room · Modena",
+        "caption": "Barrel room · Modena"
+      },
+      {
+        "src": {
+          "q": "family cellar Modena Emilia-Romagna Italy || family cellar Emilia-Romagna Italy || Modena Emilia-Romagna Italy",
+          "orientation": "landscape"
+        },
+        "alt": "Family cellar · Acetaia Giusti",
+        "caption": "Family cellar · Acetaia Giusti"
+      },
+      {
+        "src": {
+          "q": "Giusti Aceto Balsamico di Modena Emilia-Romagna Italy || Modena Emilia-Romagna Italy",
+          "orientation": "landscape"
+        },
+        "alt": "Giusti balsamic · Modena",
+        "caption": "Giusti balsamic · Modena"
+      }
+    ],
     "facts": [
       {
         "label": "Founded",
@@ -166,12 +301,26 @@ const emiliaRomagna: RegionStory = {
       {
         "id": "er-giusti-igp",
         "name": "Giusti Aceto Balsamico di Modena IGP",
-        "meta": "250 ml"
+        "meta": "250 ml",
+        "tag": "IGP",
+        "tagTone": "green",
+        "origin": "Modena",
+        "img": {
+          "q": "Giusti Aceto Balsamico di Modena Emilia-Romagna Italy || Giusti Aceto Balsamico di Modena",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "er-giusti-tradizionale",
         "name": "Giusti Aceto Balsamico Tradizionale DOP",
-        "meta": "100 ml"
+        "meta": "100 ml",
+        "tag": "DOP · 100 ml",
+        "tagTone": "gold",
+        "origin": "Modena",
+        "img": {
+          "q": "Giusti Aceto Balsamico Tradizionale Emilia-Romagna Italy || Giusti Aceto Balsamico Tradizionale",
+          "orientation": "squarish"
+        }
       }
     ]
   },
@@ -223,12 +372,26 @@ const emiliaRomagna: RegionStory = {
         {
           "id": "er-tagliatelle",
           "name": "Egg tagliatelle",
-          "meta": "Dried nests"
+          "meta": "Dried nests",
+          "tag": "Egg pasta",
+          "tagTone": "neutral",
+          "origin": "Bologna",
+          "img": {
+            "q": "Egg tagliatelle Emilia-Romagna Italy || Egg tagliatelle || Egg pasta food",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "er-parmigiano-24",
           "name": "Parmigiano Reggiano DOP, 24 months",
-          "meta": "Wedge, cut to order"
+          "meta": "Wedge, cut to order",
+          "tag": "Aged 24 mos",
+          "tagTone": "gold",
+          "origin": "Parma, Reggio",
+          "img": {
+            "q": "Parmigiano Reggiano Emilia-Romagna Italy || Parmigiano Reggiano || Parmigiano Reggiano food",
+            "orientation": "squarish"
+          }
         }
       ],
       "schema": {
@@ -251,6 +414,11 @@ const emiliaRomagna: RegionStory = {
           "500 g fresh egg tagliatelle, or 400 g dried",
           "Parmigiano Reggiano, to serve"
         ]
+      },
+      "imageCaption": "Bologna classic · simmered about 3½ hours",
+      "image": {
+        "q": "Tagliatelle al ragù Emilia-Romagna Italy food || Tagliatelle al ragù food",
+        "orientation": "landscape"
       }
     },
     "shortcut": {
@@ -260,15 +428,32 @@ const emiliaRomagna: RegionStory = {
         {
           "id": "er-parmigiano-24",
           "name": "Parmigiano Reggiano DOP, 24 months",
-          "meta": "Wedge, cut to order"
+          "meta": "Wedge, cut to order",
+          "tag": "Aged 24 mos",
+          "tagTone": "gold",
+          "origin": "Parma, Reggio",
+          "img": {
+            "q": "Parmigiano Reggiano Emilia-Romagna Italy || Parmigiano Reggiano || Parmigiano Reggiano food",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "er-balsamico-igp",
           "name": "Aceto Balsamico di Modena IGP",
-          "meta": "250 ml"
+          "meta": "250 ml",
+          "tag": "IGP",
+          "tagTone": "green",
+          "origin": "Modena",
+          "img": {
+            "q": "Aceto Balsamico di Modena Emilia-Romagna Italy || Aceto Balsamico di Modena || Balsamic vinegar food",
+            "orientation": "squarish"
+          }
         }
-      ]
-    }
+      ],
+      "eyebrow": "Modena shortcut",
+      "button": "Get the tasting pair"
+    },
+    "eyebrow": "Food valley kitchen"
   },
   "readTheLabel": "“Parmesan,” “bologna,” and “balsamic glaze” are not Parmigiano Reggiano, Mortadella Bologna, or Aceto Balsamico Tradizionale. Check the place of production, the ingredient list, and any DOP or IGP seal. Every product we carry states where it is made.",
   "set": {
@@ -279,44 +464,101 @@ const emiliaRomagna: RegionStory = {
       {
         "id": "er-parmigiano-24",
         "name": "Parmigiano Reggiano DOP",
-        "meta": "24 months"
+        "meta": "24 months",
+        "tag": "Aged 24 mos",
+        "tagTone": "gold",
+        "origin": "Parma, Reggio",
+        "img": {
+          "q": "Parmigiano Reggiano Emilia-Romagna Italy || Parmigiano Reggiano || Parmigiano Reggiano food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "er-prosciutto-parma",
         "name": "Prosciutto di Parma DOP",
-        "meta": "Sliced"
+        "meta": "Sliced",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Langhirano",
+        "img": {
+          "q": "Prosciutto di Parma Emilia-Romagna Italy || Prosciutto di Parma || Prosciutto di Parma food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "er-mortadella",
         "name": "Mortadella Bologna IGP",
-        "meta": "Sliced"
+        "meta": "Sliced",
+        "tag": "IGP",
+        "tagTone": "green",
+        "origin": "Bologna",
+        "img": {
+          "q": "Mortadella Bologna Emilia-Romagna Italy || Mortadella Bologna || Mortadella food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "er-culatello",
         "name": "Culatello di Zibello DOP",
-        "meta": "Sliced"
+        "meta": "Sliced",
+        "tag": "Rare · DOP",
+        "tagTone": "gold",
+        "origin": "Zibello",
+        "img": {
+          "q": "Culatello di Zibello Emilia-Romagna Italy || Culatello di Zibello || Culatello food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "er-balsamico-igp",
         "name": "Aceto Balsamico di Modena IGP",
-        "meta": "250 ml"
+        "meta": "250 ml",
+        "tag": "IGP",
+        "tagTone": "green",
+        "origin": "Modena",
+        "img": {
+          "q": "Aceto Balsamico di Modena Emilia-Romagna Italy || Aceto Balsamico di Modena || Balsamic vinegar food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "er-tagliatelle",
         "name": "Egg tagliatelle",
-        "meta": "Dried nests"
+        "meta": "Dried nests",
+        "tag": "Egg pasta",
+        "tagTone": "neutral",
+        "origin": "Bologna",
+        "img": {
+          "q": "Egg tagliatelle Emilia-Romagna Italy || Egg tagliatelle || Egg pasta food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "er-tortellini",
         "name": "Tortellini",
-        "meta": "Pork and Parmigiano"
+        "meta": "Pork and Parmigiano",
+        "tag": "Filled pasta",
+        "tagTone": "neutral",
+        "origin": "Bologna, Modena",
+        "img": {
+          "q": "Tortellini Emilia-Romagna Italy || Tortellini || Egg pasta food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "er-piadina",
         "name": "Piadina Romagnola IGP",
-        "meta": "Pack of flatbreads"
+        "meta": "Pack of flatbreads",
+        "tag": "IGP",
+        "tagTone": "green",
+        "origin": "Romagna",
+        "img": {
+          "q": "Piadina Romagnola Emilia-Romagna Italy || Piadina Romagnola",
+          "orientation": "squarish"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Limited curation · Parcel N° 02"
   },
   "about": [
     "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."

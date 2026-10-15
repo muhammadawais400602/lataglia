@@ -11,7 +11,43 @@ const trentinoAltoAdige: RegionStory = {
   "subtitle": "Speck, mountain cheese, and the apples of the Alps.",
   "hero": {
     "color": "#1F3D2E",
-    "colorDeep": "#142A1F"
+    "colorDeep": "#142A1F",
+    "dossier": "Terroir archive · Dossier N° 17",
+    "badge": "Bilingual Alpine kitchen",
+    "metrics": [
+      {
+        "icon": "terrain",
+        "label": "Mountains",
+        "value": "The Dolomites"
+      },
+      {
+        "icon": "location_city",
+        "label": "Provinces",
+        "value": "Trento & Bolzano"
+      },
+      {
+        "icon": "agriculture",
+        "label": "Orchards",
+        "value": "7,000 hectares"
+      },
+      {
+        "icon": "restaurant",
+        "label": "Signature",
+        "value": "Speck Alto Adige IGP"
+      }
+    ],
+    "heritage": "Tyrolean mountain heritage",
+    "imageCaption": {
+      "title": "The Dolomites",
+      "body": "High valleys where orchards and vineyards cover the slopes and dairy cows graze summer pastures."
+    },
+    "imageTag": "Dolomites · high valleys",
+    "heritageNote": "a little salt, a little smoke",
+    "image": {
+      "q": "Dolomites South Tyrol || South Tyrol landscape",
+      "orientation": "landscape"
+    },
+    "imageAlt": "High valleys where orchards and vineyards cover the slopes and dairy cows graze summer pastures."
   },
   "intro": [
     "Trentino-Alto Adige is Italy’s northernmost region, a world of high valleys among the Dolomites made of two self-governing provinces: Italian-speaking Trentino around Trento in the south, and Alto Adige, or South Tyrol, around Bolzano in the north, where most people speak German. South Tyrol belonged to Austria until after the First World War, and its kitchen still feels Tyrolean. In the valleys, orchards and vineyards cover the slopes; higher up, dairy cows graze summer pastures that give the region its cheeses. Its signature cured meat, speck, joins two traditions: the salt-curing and air-drying of the Mediterranean and the smoking of northern Europe. The result is a cuisine of bread dumplings and rye bread, smoked ham and mountain cheese, apples and strudel, equal parts Italian and Alpine.",
@@ -29,7 +65,14 @@ const trentinoAltoAdige: RegionStory = {
           {
             "id": "taa-speck",
             "name": "Speck Alto Adige IGP",
-            "meta": "Piece"
+            "meta": "Piece",
+            "tag": "IGP",
+            "tagTone": "green",
+            "origin": "Alto Adige",
+            "img": {
+              "q": "Speck Alto Adige South Tyrol || Speck Alto Adige || Speck food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -42,7 +85,14 @@ const trentinoAltoAdige: RegionStory = {
           {
             "id": "taa-mele",
             "name": "Mela Val di Non DOP",
-            "meta": "Bag"
+            "meta": "Bag",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Val di Non",
+            "img": {
+              "q": "Mela Val di Non South Tyrol || Mela Val di Non || Apples food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -55,7 +105,14 @@ const trentinoAltoAdige: RegionStory = {
           {
             "id": "taa-schuttelbrot",
             "name": "Schüttelbrot Alto Adige IGP",
-            "meta": "Pack"
+            "meta": "Pack",
+            "tag": "IGP",
+            "tagTone": "green",
+            "origin": "South Tyrol",
+            "img": {
+              "q": "Schüttelbrot Alto Adige South Tyrol || Schüttelbrot Alto Adige || Schüttelbrot food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -68,7 +125,14 @@ const trentinoAltoAdige: RegionStory = {
           {
             "id": "taa-trentingrana",
             "name": "Trentingrana",
-            "meta": "Wedge"
+            "meta": "Wedge",
+            "tag": "Mountain grana",
+            "tagTone": "neutral",
+            "origin": "Trentino",
+            "img": {
+              "q": "Trentingrana South Tyrol || Trentingrana || Trentingrana food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -81,7 +145,14 @@ const trentinoAltoAdige: RegionStory = {
           {
             "id": "taa-puzzone",
             "name": "Puzzone di Moena DOP",
-            "meta": "Wedge"
+            "meta": "Wedge",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Val di Fassa",
+            "img": {
+              "q": "Puzzone di Moena South Tyrol || Puzzone di Moena || Puzzone di Moena food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -94,11 +165,19 @@ const trentinoAltoAdige: RegionStory = {
           {
             "id": "taa-stelvio",
             "name": "Stelvio DOP",
-            "meta": "Wedge"
+            "meta": "Wedge",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "South Tyrol",
+            "img": {
+              "q": "Stelvio South Tyrol || Stelvio || Stelvio food",
+              "orientation": "squarish"
+            }
           }
         ]
       }
-    ]
+    ],
+    "eyebrow": "Essential terroir goods"
   },
   "dishes": {
     "lede": "Four dishes Trentino-Alto Adige makes its own.",
@@ -107,26 +186,44 @@ const trentinoAltoAdige: RegionStory = {
         "title": "Canederli",
         "where": "Across the region",
         "body": "Bread dumplings, Knödel in German, made with stale bread and speck and served in meat broth with chives.",
-        "tip": "[Cook it below](#canederli)"
+        "tip": "[Cook it below](#canederli)",
+        "image": {
+          "q": "Canederli South Tyrol food || Canederli food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Strangolapreti",
         "where": "Trento",
-        "body": "Trentino’s green gnocchi made with spinach, whose name means “priest stranglers.”"
+        "body": "Trentino’s green gnocchi made with spinach, whose name means “priest stranglers.”",
+        "note": "“Priest stranglers”",
+        "image": {
+          "q": "Strangolapreti South Tyrol food || Strangolapreti food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Apple strudel",
         "where": "Across the region",
         "body": "Thin pastry rolled around apples, the dessert South Tyrol shares with Austria, made with fruit from the region’s own orchards.",
-        "tip": "Bake it with [Val di Non apples](product:taa-mele)."
+        "tip": "Bake it with [Val di Non apples](product:taa-mele).",
+        "image": {
+          "q": "Apple strudel South Tyrol food || Apple strudel food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "The South Tyrolean board",
         "where": "South Tyrol",
         "body": "Speck, cheese, crisp rye bread, and a glass of local wine: the classic mountain snack after a hike.",
-        "tip": "[Make it below](#shortcut)"
+        "tip": "[Make it below](#shortcut)",
+        "image": {
+          "q": "The South Tyrolean board Tyrol food || The South Tyrolean board food",
+          "orientation": "landscape"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Alpine canon"
   },
   "maker": {
     "name": "Recla",
@@ -135,7 +232,32 @@ const trentinoAltoAdige: RegionStory = {
       "Recla began as a village butcher’s shop opened by Gino Recla in the Val Venosta, in western South Tyrol. In 1985 his sons, Gino and Franz, took over and moved the business to Silandro, turning it toward export, and in 2004 it began shipping speck to the United States. Today the company is run by the third generation, the brothers Robert and Paul Recla, and is still wholly owned by the family.",
       "Recla makes Speck Alto Adige IGP in four traditional steps: careful selection of the meat, seasoning with the family’s spice mix, light smoking over beech wood, and slow natural aging of at least 22 weeks. The dry mountain air of the Val Venosta, among the glaciers of the Ortles and Palla Bianca, does the rest."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": {
+          "q": "Val Venosta Silandro South Tyrol || Val Venosta South Tyrol || Silandro South Tyrol",
+          "orientation": "landscape"
+        },
+        "alt": "Val Venosta · Silandro",
+        "caption": "Val Venosta · Silandro"
+      },
+      {
+        "src": {
+          "q": "aging speck Silandro South Tyrol || aging speck South Tyrol || Silandro South Tyrol",
+          "orientation": "landscape"
+        },
+        "alt": "Speck aging 22+ weeks",
+        "caption": "Speck aging 22+ weeks"
+      },
+      {
+        "src": {
+          "q": "Recla Speck Alto Adige Silandro South Tyrol || Recla Speck Alto Adige South Tyrol || Silandro South Tyrol",
+          "orientation": "landscape"
+        },
+        "alt": "Recla Speck Alto Adige IGP",
+        "caption": "Recla Speck Alto Adige IGP"
+      }
+    ],
     "facts": [
       {
         "label": "Valley",
@@ -155,12 +277,26 @@ const trentinoAltoAdige: RegionStory = {
       {
         "id": "taa-recla-speck",
         "name": "Recla Speck Alto Adige IGP",
-        "meta": "Piece"
+        "meta": "Piece",
+        "tag": "Aged 22+ wks",
+        "tagTone": "gold",
+        "origin": "Val Venosta",
+        "img": {
+          "q": "Recla Speck Alto Adige South Tyrol || Recla Speck Alto Adige",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "taa-recla-speck-sliced",
         "name": "Recla Speck Alto Adige IGP, sliced",
-        "meta": "Pack"
+        "meta": "Pack",
+        "tag": "Beech smoked",
+        "tagTone": "gold",
+        "origin": "Val Venosta",
+        "img": {
+          "q": "Recla Speck Alto Adige South Tyrol || Recla Speck Alto Adige",
+          "orientation": "squarish"
+        }
       }
     ]
   },
@@ -207,7 +343,14 @@ const trentinoAltoAdige: RegionStory = {
         {
           "id": "taa-speck",
           "name": "Speck Alto Adige IGP",
-          "meta": "Piece"
+          "meta": "Piece",
+          "tag": "IGP",
+          "tagTone": "green",
+          "origin": "Alto Adige",
+          "img": {
+            "q": "Speck Alto Adige South Tyrol || Speck Alto Adige || Speck food",
+            "orientation": "squarish"
+          }
         }
       ],
       "schema": {
@@ -226,6 +369,11 @@ const trentinoAltoAdige: RegionStory = {
           "Salt",
           "About 1.5 L hot meat broth"
         ]
+      },
+      "imageCaption": "South Tyrol classic · about 45 minutes",
+      "image": {
+        "q": "Canederli allo speck in brodo South Tyrol food || Canederli allo speck in brodo food",
+        "orientation": "landscape"
       }
     },
     "shortcut": {
@@ -235,15 +383,32 @@ const trentinoAltoAdige: RegionStory = {
         {
           "id": "taa-schuttelbrot",
           "name": "Schüttelbrot Alto Adige IGP",
-          "meta": "Pack"
+          "meta": "Pack",
+          "tag": "IGP",
+          "tagTone": "green",
+          "origin": "South Tyrol",
+          "img": {
+            "q": "Schüttelbrot Alto Adige South Tyrol || Schüttelbrot Alto Adige || Schüttelbrot food",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "taa-stelvio",
           "name": "Stelvio DOP",
-          "meta": "Wedge"
+          "meta": "Wedge",
+          "tag": "DOP",
+          "tagTone": "green",
+          "origin": "South Tyrol",
+          "img": {
+            "q": "Stelvio South Tyrol || Stelvio || Stelvio food",
+            "orientation": "squarish"
+          }
         }
-      ]
-    }
+      ],
+      "eyebrow": "Alpine board shortcut",
+      "button": "Get the board pair"
+    },
+    "eyebrow": "Mountain kitchen"
   },
   "readTheLabel": "Not every speck from the region is Speck Alto Adige IGP, and plenty of “speck” sold abroad is made elsewhere. Check the place of production, the brand on the rind, and any DOP or IGP seal. Every product we carry states where it is made.",
   "set": {
@@ -254,44 +419,101 @@ const trentinoAltoAdige: RegionStory = {
       {
         "id": "taa-recla-speck",
         "name": "Recla Speck Alto Adige IGP",
-        "meta": "Piece"
+        "meta": "Piece",
+        "tag": "Aged 22+ wks",
+        "tagTone": "gold",
+        "origin": "Val Venosta",
+        "img": {
+          "q": "Recla Speck Alto Adige South Tyrol || Recla Speck Alto Adige",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "taa-schuttelbrot",
         "name": "Schüttelbrot Alto Adige IGP",
-        "meta": "Pack"
+        "meta": "Pack",
+        "tag": "IGP",
+        "tagTone": "green",
+        "origin": "South Tyrol",
+        "img": {
+          "q": "Schüttelbrot Alto Adige South Tyrol || Schüttelbrot Alto Adige || Schüttelbrot food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "taa-trentingrana",
         "name": "Trentingrana",
-        "meta": "Wedge"
+        "meta": "Wedge",
+        "tag": "Mountain grana",
+        "tagTone": "neutral",
+        "origin": "Trentino",
+        "img": {
+          "q": "Trentingrana South Tyrol || Trentingrana || Trentingrana food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "taa-puzzone",
         "name": "Puzzone di Moena DOP",
-        "meta": "Wedge"
+        "meta": "Wedge",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Val di Fassa",
+        "img": {
+          "q": "Puzzone di Moena South Tyrol || Puzzone di Moena || Puzzone di Moena food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "taa-stelvio",
         "name": "Stelvio DOP",
-        "meta": "Wedge"
+        "meta": "Wedge",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "South Tyrol",
+        "img": {
+          "q": "Stelvio South Tyrol || Stelvio || Stelvio food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "taa-mele",
         "name": "Mela Val di Non DOP",
-        "meta": "Bag"
+        "meta": "Bag",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Val di Non",
+        "img": {
+          "q": "Mela Val di Non South Tyrol || Mela Val di Non || Apples food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "taa-succo-mela",
         "name": "Apple juice from the valleys",
-        "meta": "Bottle"
+        "meta": "Bottle",
+        "tag": "Apple juice",
+        "tagTone": "neutral",
+        "origin": "The valleys",
+        "img": {
+          "q": "Apple juice from the valleys South Tyrol || Apple juice from the valleys",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "taa-canederli-pane",
         "name": "Bread for canederli",
-        "meta": "Bag"
+        "meta": "Bag",
+        "tag": "For canederli",
+        "tagTone": "neutral",
+        "origin": "The region",
+        "img": {
+          "q": "Bread for canederli South Tyrol || Bread for canederli",
+          "orientation": "squarish"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Limited curation · Parcel N° 17"
   },
   "about": [
     "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."

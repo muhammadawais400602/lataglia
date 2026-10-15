@@ -11,7 +11,43 @@ const umbria: RegionStory = {
   "subtitle": "Black truffles, tiny lentils, and the butchers of Norcia.",
   "hero": {
     "color": "#2F4F5A",
-    "colorDeep": "#203840"
+    "colorDeep": "#203840",
+    "dossier": "Terroir archive · Dossier N° 13",
+    "badge": "The green heart",
+    "metrics": [
+      {
+        "icon": "map",
+        "label": "Location",
+        "value": "Center of Italy"
+      },
+      {
+        "icon": "water",
+        "label": "River",
+        "value": "The Tiber"
+      },
+      {
+        "icon": "terrain",
+        "label": "Mountains",
+        "value": "Apennines and Sibillini"
+      },
+      {
+        "icon": "history_edu",
+        "label": "Saints",
+        "value": "Francis and Benedict"
+      }
+    ],
+    "heritage": "Land of saints",
+    "imageCaption": {
+      "title": "Castelluccio plain",
+      "body": "A karst plain about 1,500 meters up, where lentil flowers bloom with poppies each summer."
+    },
+    "imageTag": "Castelluccio, Monti Sibillini",
+    "heritageNote": "black diamond",
+    "image": {
+      "q": "Castelluccio plain Umbria || Umbria landscape",
+      "orientation": "landscape"
+    },
+    "imageAlt": "A karst plain about 1,500 meters up, where lentil flowers bloom with poppies each summer."
   },
   "intro": [
     "Umbria sits at the very center of Italy, the only region with neither a coastline nor a border with another country, which is why Italians call it the green heart of the peninsula. The Apennines and the Sibillini mountains rise to the east, the Tiber runs through its middle, and between them lie wooded hills, olive groves, and the high Castelluccio plain. It is a land of saints, home to Francis of Assisi and Benedict of Norcia, and of farmers rather than courts. Umbrian cooking grew from what the land gave: egg-free pastas of flour and water, unsalted bread, legumes and ancient grains, pork cured by the butchers of Norcia, peppery olive oil, and black truffles from the oak woods. The result is earthy, honest food, where a few superb ingredients do all the work.",
@@ -29,7 +65,14 @@ const umbria: RegionStory = {
           {
             "id": "umb-tartufo-nero",
             "name": "Fresh black truffle, Tuber melanosporum",
-            "meta": "Winter only"
+            "meta": "Winter only",
+            "tag": "Winter only",
+            "tagTone": "gold",
+            "origin": "Norcia, Spoleto",
+            "img": {
+              "q": "Fresh black truffle Umbria || Fresh black truffle || Black truffle food",
+              "orientation": "squarish"
+            }
           }
         ],
         "shelfLabel": "In season"
@@ -43,7 +86,14 @@ const umbria: RegionStory = {
           {
             "id": "umb-lenticchie",
             "name": "Lenticchia di Castelluccio IGP",
-            "meta": "500 g"
+            "meta": "500 g",
+            "tag": "IGP",
+            "tagTone": "green",
+            "origin": "Castelluccio",
+            "img": {
+              "q": "Lenticchia di Castelluccio Umbria || Lenticchia di Castelluccio || Lentils food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -56,7 +106,14 @@ const umbria: RegionStory = {
           {
             "id": "umb-prosciutto",
             "name": "Prosciutto di Norcia IGP",
-            "meta": "Sliced"
+            "meta": "Sliced",
+            "tag": "IGP",
+            "tagTone": "green",
+            "origin": "Norcia",
+            "img": {
+              "q": "Prosciutto di Norcia Umbria || Prosciutto di Norcia || Prosciutto di Norcia food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -69,7 +126,14 @@ const umbria: RegionStory = {
           {
             "id": "umb-olio",
             "name": "Umbria DOP extra-virgin olive oil",
-            "meta": "Bottle"
+            "meta": "Bottle",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Assisi to Spoleto",
+            "img": {
+              "q": "Umbria extra-virgin olive oil || Olive oil food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -82,7 +146,14 @@ const umbria: RegionStory = {
           {
             "id": "umb-farro",
             "name": "Farro di Monteleone di Spoleto DOP",
-            "meta": "Bag"
+            "meta": "Bag",
+            "tag": "DOP",
+            "tagTone": "green",
+            "origin": "Monteleone",
+            "img": {
+              "q": "Farro di Monteleone Spoleto Umbria || Farro di Monteleone Spoleto || Farro food",
+              "orientation": "squarish"
+            }
           }
         ]
       },
@@ -95,11 +166,19 @@ const umbria: RegionStory = {
           {
             "id": "umb-strangozzi",
             "name": "Strangozzi",
-            "meta": "500 g"
+            "meta": "500 g",
+            "tag": "Egg-free",
+            "tagTone": "neutral",
+            "origin": "Spoleto, Foligno",
+            "img": {
+              "q": "Strangozzi Umbria || Strangozzi || Strangozzi food",
+              "orientation": "squarish"
+            }
           }
         ]
       }
-    ]
+    ],
+    "eyebrow": "Green heart pantry"
   },
   "dishes": {
     "lede": "Four dishes Umbria makes its own.",
@@ -108,25 +187,44 @@ const umbria: RegionStory = {
         "title": "Lenticchie di Castelluccio",
         "where": "Norcia",
         "body": "The plateau’s tiny lentils, simmered with a soft vegetable base until tender but whole, and finished with raw olive oil.",
-        "tip": "[Cook it below](#lenticchie)"
+        "tip": "[Cook it below](#lenticchie)",
+        "image": {
+          "q": "Lenticchie di Castelluccio Umbria food || Lenticchie di Castelluccio food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Strangozzi al tartufo",
         "where": "Spoleto and Norcia",
         "body": "Thick flour-and-water ribbons dressed with black truffle, the region’s signature pasta.",
-        "tip": "[Make it below](#shortcut)"
+        "tip": "[Make it below](#shortcut)",
+        "image": {
+          "q": "Strangozzi al tartufo Umbria food || Strangozzi al tartufo food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Pasta alla norcina",
         "where": "Norcia",
-        "body": "Short pasta with crumbled pork sausage and ricotta, often finished with black truffle. A dish built on Norcia’s pork tradition."
+        "body": "Short pasta with crumbled pork sausage and ricotta, often finished with black truffle. A dish built on Norcia’s pork tradition.",
+        "note": "Norcia’s pork tradition",
+        "image": {
+          "q": "Pasta alla norcina Umbria food || Pasta alla norcina food",
+          "orientation": "landscape"
+        }
       },
       {
         "title": "Torta al testo",
         "where": "Across the region",
-        "body": "A flatbread of flour, water, and salt, cooked on a hot stone or iron griddle called a testo and eaten filled with cured meats such as Prosciutto di Norcia. In Gubbio it is called crescia."
+        "body": "A flatbread of flour, water, and salt, cooked on a hot stone or iron griddle called a testo and eaten filled with cured meats such as Prosciutto di Norcia. In Gubbio it is called crescia.",
+        "note": "Called crescia in Gubbio",
+        "image": {
+          "q": "Torta al testo Umbria food || Torta al testo food",
+          "orientation": "landscape"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Culinary canon"
   },
   "maker": {
     "name": "Urbani Tartufi",
@@ -135,7 +233,32 @@ const umbria: RegionStory = {
       "In 1852, Costantino Urbani began sending fresh truffles from the Valnerina to Carpentras, in Provence, from Scheggino, a small village on the river Nera. Trade soon spread to Germany, Switzerland, and beyond, and later generations took the business to the United States and pioneered truffle cultivation in Italy.",
       "The company is still run by the Urbani family, with a sixth generation now joining, and has become the world’s largest truffle business. Its first production site, in the family home in Scheggino, now houses the Urbani Truffle Museum, telling the story of the Valnerina’s “black diamond.”"
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": {
+          "q": "Scheggino Valnerina Umbria || Scheggino Umbria",
+          "orientation": "landscape"
+        },
+        "alt": "Scheggino on the river Nera",
+        "caption": "Scheggino on the river Nera"
+      },
+      {
+        "src": {
+          "q": "truffles Scheggino Umbria || truffles Umbria || Scheggino Umbria",
+          "orientation": "landscape"
+        },
+        "alt": "Valnerina black truffles",
+        "caption": "Valnerina black truffles"
+      },
+      {
+        "src": {
+          "q": "Urbani black truffle Scheggino Umbria || Urbani black truffle Umbria || Scheggino Umbria",
+          "orientation": "landscape"
+        },
+        "alt": "Urbani preserved truffle",
+        "caption": "Urbani preserved truffle"
+      }
+    ],
     "facts": [
       {
         "label": "Founded",
@@ -155,12 +278,26 @@ const umbria: RegionStory = {
       {
         "id": "umb-urbani-nero",
         "name": "Urbani black truffle, preserved",
-        "meta": "Jar"
+        "meta": "Jar",
+        "tag": "Black truffle",
+        "tagTone": "gold",
+        "origin": "Scheggino",
+        "img": {
+          "q": "Urbani black truffle Umbria || Urbani black truffle",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "umb-urbani-salsa",
         "name": "Urbani black truffle sauce",
-        "meta": "Jar"
+        "meta": "Jar",
+        "tag": "Truffle sauce",
+        "tagTone": "gold",
+        "origin": "Scheggino",
+        "img": {
+          "q": "Urbani black truffle sauce Umbria || Urbani black truffle sauce",
+          "orientation": "squarish"
+        }
       }
     ]
   },
@@ -205,12 +342,26 @@ const umbria: RegionStory = {
         {
           "id": "umb-lenticchie",
           "name": "Lenticchia di Castelluccio IGP",
-          "meta": "500 g"
+          "meta": "500 g",
+          "tag": "IGP",
+          "tagTone": "green",
+          "origin": "Castelluccio",
+          "img": {
+            "q": "Lenticchia di Castelluccio Umbria || Lenticchia di Castelluccio || Lentils food",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "umb-olio",
           "name": "Umbria DOP extra-virgin olive oil",
-          "meta": "Bottle"
+          "meta": "Bottle",
+          "tag": "DOP",
+          "tagTone": "green",
+          "origin": "Assisi to Spoleto",
+          "img": {
+            "q": "Umbria extra-virgin olive oil || Olive oil food",
+            "orientation": "squarish"
+          }
         }
       ],
       "schema": {
@@ -228,6 +379,11 @@ const umbria: RegionStory = {
           "Salt and black pepper",
           "Toasted bread, to serve"
         ]
+      },
+      "imageCaption": "Norcia classic · about 50 minutes",
+      "image": {
+        "q": "Lenticchie di Castelluccio Umbria food || Lenticchie di Castelluccio food",
+        "orientation": "landscape"
       }
     },
     "shortcut": {
@@ -237,15 +393,32 @@ const umbria: RegionStory = {
         {
           "id": "umb-strangozzi",
           "name": "Strangozzi",
-          "meta": "500 g"
+          "meta": "500 g",
+          "tag": "Egg-free",
+          "tagTone": "neutral",
+          "origin": "Spoleto, Foligno",
+          "img": {
+            "q": "Strangozzi Umbria || Strangozzi || Strangozzi food",
+            "orientation": "squarish"
+          }
         },
         {
           "id": "umb-urbani-nero",
           "name": "Urbani black truffle, preserved",
-          "meta": "Jar"
+          "meta": "Jar",
+          "tag": "Black truffle",
+          "tagTone": "gold",
+          "origin": "Scheggino",
+          "img": {
+            "q": "Urbani black truffle Umbria || Urbani black truffle",
+            "orientation": "squarish"
+          }
         }
-      ]
-    }
+      ],
+      "eyebrow": "Ten minutes in Spoleto",
+      "button": "Get the truffle pair"
+    },
+    "eyebrow": "Terroir kitchen"
   },
   "readTheLabel": "“Black truffle” can mean the prized Tuber melanosporum or the cheaper summer truffle, so check the species. Lentils sold as “Castelluccio-style” may be grown anywhere. Check the species, the place of production, and any DOP or IGP seal. Every product we carry states where it is made.",
   "set": {
@@ -256,44 +429,101 @@ const umbria: RegionStory = {
       {
         "id": "umb-lenticchie",
         "name": "Lenticchia di Castelluccio IGP",
-        "meta": "500 g"
+        "meta": "500 g",
+        "tag": "IGP",
+        "tagTone": "green",
+        "origin": "Castelluccio",
+        "img": {
+          "q": "Lenticchia di Castelluccio Umbria || Lenticchia di Castelluccio || Lentils food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "umb-farro",
         "name": "Farro di Monteleone DOP",
-        "meta": "Bag"
+        "meta": "Bag",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Monteleone",
+        "img": {
+          "q": "Farro di Monteleone Spoleto Umbria || Farro di Monteleone Spoleto || Farro food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "umb-strangozzi",
         "name": "Strangozzi",
-        "meta": "500 g"
+        "meta": "500 g",
+        "tag": "Egg-free",
+        "tagTone": "neutral",
+        "origin": "Spoleto, Foligno",
+        "img": {
+          "q": "Strangozzi Umbria || Strangozzi || Strangozzi food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "umb-olio",
         "name": "Umbria DOP olive oil",
-        "meta": "Bottle"
+        "meta": "Bottle",
+        "tag": "DOP",
+        "tagTone": "green",
+        "origin": "Assisi to Spoleto",
+        "img": {
+          "q": "Umbria extra-virgin olive oil || Olive oil food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "umb-prosciutto",
         "name": "Prosciutto di Norcia IGP",
-        "meta": "Sliced"
+        "meta": "Sliced",
+        "tag": "IGP",
+        "tagTone": "green",
+        "origin": "Norcia",
+        "img": {
+          "q": "Prosciutto di Norcia Umbria || Prosciutto di Norcia || Prosciutto di Norcia food",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "umb-salumi-norcia",
         "name": "Norcia salami",
-        "meta": "Whole"
+        "meta": "Whole",
+        "tag": "Norcino craft",
+        "tagTone": "neutral",
+        "origin": "Norcia",
+        "img": {
+          "q": "Norcia salami Umbria || Norcia salami",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "umb-urbani-nero",
         "name": "Urbani black truffle",
-        "meta": "Jar"
+        "meta": "Jar",
+        "tag": "Black truffle",
+        "tagTone": "gold",
+        "origin": "Scheggino",
+        "img": {
+          "q": "Urbani black truffle Umbria || Urbani black truffle",
+          "orientation": "squarish"
+        }
       },
       {
         "id": "umb-urbani-salsa",
         "name": "Urbani truffle sauce",
-        "meta": "Jar"
+        "meta": "Jar",
+        "tag": "Truffle sauce",
+        "tagTone": "gold",
+        "origin": "Scheggino",
+        "img": {
+          "q": "Urbani black truffle sauce Umbria || Urbani black truffle sauce",
+          "orientation": "squarish"
+        }
       }
-    ]
+    ],
+    "eyebrow": "Limited curation · Parcel N° 13"
   },
   "about": [
     "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
