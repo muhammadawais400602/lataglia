@@ -5,7 +5,7 @@ const links = [
   { href: '/shop', label: 'Shop' },
   { href: '/regions', label: 'Regions' },
   { href: '/gifts', label: 'Gifts' },
-  { href: '/#stories', label: 'Stories' },
+  { href: '/story', label: 'Our Story' },
   { href: '/#makers', label: 'About' },
 ];
 
