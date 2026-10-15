@@ -3,8 +3,7 @@ import { createRoot } from 'react-dom/client';
 import App from './App';
 import Shop from './pages/Shop';
 import Regions from './pages/Regions';
-import RegionStory from './pages/RegionStory';
-import { stories } from './regions';
+import { hasStory, loadStory } from './regions';
 import Product from './pages/Product';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
@@ -28,8 +27,15 @@ const routes: Record<string, React.ComponentType> = {
   '/admin': AdminApp,
 };
 const productId = !routes[path] && path.startsWith('/product/') ? decodeURIComponent(path.slice('/product/'.length)) : '';
-const story = path.startsWith('/regions/') ? stories[path.slice('/regions/'.length)] : undefined;
-const Page = routes[path] ?? (productId ? () => <ProductDetail id={productId} /> : story ? () => <RegionStory story={story} /> : path.startsWith('/regions/') ? Regions : App);
+const regionSlug = path.startsWith('/regions/') ? path.slice('/regions/'.length) : '';
+// Each region story is its own download, fetched only when its page opens.
+const StoryPage = hasStory(regionSlug)
+  ? lazy(async () => {
+      const [story, { default: RegionStory }] = await Promise.all([loadStory(regionSlug), import('./pages/RegionStory')]);
+      return { default: () => <RegionStory story={story!} /> };
+    })
+  : null;
+const Page = routes[path] ?? (productId ? () => <ProductDetail id={productId} /> : StoryPage ?? (regionSlug ? Regions : App));
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
