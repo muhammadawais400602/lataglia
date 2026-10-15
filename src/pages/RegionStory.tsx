@@ -62,9 +62,9 @@ function BuyCard({ sp, shelf, catalog, onAdd }: { sp: StoryProduct; shelf: strin
         <span className="uppercase tracking-widest text-[10px]">{shelf}</span>
         {sp.tag && <span className={`text-xs font-bold ${toneClass[sp.tagTone ?? 'neutral']}`}>{sp.tag}</span>}
       </div>
-      {sp.img && (
+      {(sp.img || live?.img) && (
         <a href={live ? `/product/${live.id}` : '/shop'} className="block w-full h-28 bg-surface-container rounded mb-3 overflow-hidden">
-          <img className="size-full object-cover transition-transform duration-500 hover:scale-105" src={sp.img} alt={sp.name} loading="lazy" />
+          <img className="size-full object-cover transition-transform duration-500 hover:scale-105" src={sp.img || live?.img} alt={sp.name} loading="lazy" />
         </a>
       )}
       <h4 className="font-headline-sm text-sm text-on-surface font-bold">
@@ -85,13 +85,13 @@ function BuyCard({ sp, shelf, catalog, onAdd }: { sp: StoryProduct; shelf: strin
 }
 
 // Maiolica tile in the site palette, used when a story has no landscape photo.
-function Maiolica() {
+function Maiolica({ color = '#6E1626' }: { color?: string }) {
   return (
     <svg viewBox="0 0 400 560" preserveAspectRatio="xMidYMid slice" className="absolute inset-0 size-full" aria-hidden="true">
       <defs>
         <pattern id="maiolica" width="100" height="100" patternUnits="userSpaceOnUse">
           <rect width="100" height="100" fill="#FBF6EC" />
-          <g fill="#6E1626"><circle cx="0" cy="0" r="26" /><circle cx="100" cy="0" r="26" /><circle cx="0" cy="100" r="26" /><circle cx="100" cy="100" r="26" /></g>
+          <g fill={color}><circle cx="0" cy="0" r="26" /><circle cx="100" cy="0" r="26" /><circle cx="0" cy="100" r="26" /><circle cx="100" cy="100" r="26" /></g>
           <g fill="#FBF6EC"><circle cx="0" cy="0" r="14" /><circle cx="100" cy="0" r="14" /><circle cx="0" cy="100" r="14" /><circle cx="100" cy="100" r="14" /></g>
           <g fill="#FEB62C"><ellipse cx="50" cy="31" rx="9" ry="17" /><ellipse cx="50" cy="69" rx="9" ry="17" /><ellipse cx="31" cy="50" rx="17" ry="9" /><ellipse cx="69" cy="50" rx="17" ry="9" /></g>
           <g fill="#86A33E">
@@ -99,7 +99,7 @@ function Maiolica() {
             <ellipse cx="30" cy="70" rx="4" ry="10" transform="rotate(45 30 70)" /><ellipse cx="70" cy="70" rx="4" ry="10" transform="rotate(-45 70 70)" />
           </g>
           <circle cx="50" cy="50" r="8" fill="#D62F3A" /><circle cx="50" cy="50" r="3" fill="#FBF6EC" />
-          <path d="M0 50h6M94 50h6M50 0v6M50 94v6" stroke="#6E1626" strokeWidth="2" />
+          <path d="M0 50h6M94 50h6M50 0v6M50 94v6" stroke={color} strokeWidth="2" />
         </pattern>
       </defs>
       <rect width="400" height="560" fill="url(#maiolica)" />
@@ -191,10 +191,11 @@ export default function RegionStory({ story }: { story: Story }) {
       </section>
 
       {/* Split hero */}
-      <section className="w-full bg-[#1b1718] text-white overflow-hidden">
+      <section className="w-full text-white overflow-hidden" style={{ backgroundColor: hero.colorDeep ?? '#1b1718' }}>
         <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-12 lg:min-h-[580px]">
-          <div className="lg:col-span-5 p-8 lg:p-14 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-white/10 bg-[#191011] relative z-10">
+          <div className="lg:col-span-5 p-8 lg:p-14 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-white/10 relative z-10" style={{ backgroundColor: hero.color ?? '#191011' }}>
             <div>
+              {!hero.dossier && !hero.badge && <p className="text-secondary-fixed text-[11px] uppercase tracking-[0.22em] font-semibold mb-6">{story.kicker}</p>}
               {(hero.dossier || hero.badge) && (
                 <div className="flex flex-wrap items-center gap-3 mb-6">
                   {hero.dossier && <span className="text-secondary-fixed text-[11px] uppercase tracking-[0.22em] font-semibold">{hero.dossier}</span>}
@@ -233,10 +234,10 @@ export default function RegionStory({ story }: { story: Story }) {
               <>
                 <img className="absolute inset-0 size-full object-cover" src={hero.image} alt={hero.imageAlt ?? ''} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent pointer-events-none" />
-                <div className="absolute inset-0 bg-gradient-to-r from-[#191011] via-transparent to-black/30 pointer-events-none hidden lg:block" />
+                <div className="absolute inset-0 pointer-events-none hidden lg:block" style={{ background: `linear-gradient(to right, ${hero.color ?? '#191011'}, transparent 45%, rgba(0,0,0,.3))` }} />
               </>
             ) : (
-              <Maiolica />
+              <Maiolica color={hero.color} />
             )}
             {(hero.imageCaption || hero.imageTag) && (
               <div className="relative z-10 p-6 lg:p-10 w-full flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4">
@@ -338,7 +339,7 @@ export default function RegionStory({ story }: { story: Story }) {
       {story.maker && (
         <section id="maker" className="w-full bg-[#1b1c1c] text-white py-16 lg:py-24 scroll-mt-20">
           <div className={`${wrap} grid grid-cols-1 lg:grid-cols-12 gap-12 items-center`}>
-            <div className="lg:col-span-5 space-y-4">
+            {story.maker.photos.length > 0 && <div className="lg:col-span-5 space-y-4">
               {story.maker.photos.map((ph, i) => i === 0 && (
                 <figure key={ph.src} className="w-full h-64 bg-stone-800 rounded overflow-hidden relative">
                   <img className="size-full object-cover" src={ph.src} alt={ph.alt} loading="lazy" />
@@ -355,8 +356,8 @@ export default function RegionStory({ story }: { story: Story }) {
                   ))}
                 </div>
               )}
-            </div>
-            <div className="lg:col-span-7 lg:pl-6 space-y-6">
+            </div>}
+            <div className={story.maker.photos.length ? 'lg:col-span-7 lg:pl-6 space-y-6' : 'lg:col-span-10 space-y-6'}>
               <span className="text-secondary-fixed text-caption uppercase tracking-[0.2em] font-bold">Meet the maker</span>
               <h2 className="font-headline-lg text-4xl lg:text-5xl text-white">{story.maker.name}, {story.maker.place}</h2>
               <div className="space-y-4 text-white/80 leading-relaxed">
@@ -395,7 +396,7 @@ export default function RegionStory({ story }: { story: Story }) {
       {story.cook && r && (
         <section id="cook" className="w-full bg-[#fbf9f9] py-16 lg:py-24 border-b border-border-line">
           <div className={wrap}>
-            <SectionHead kicker={story.cook.eyebrow ?? 'Terroir kitchen'} title={`Cook ${story.name}`} lede={story.cook.lede} />
+            <SectionHead kicker={story.cook.eyebrow ?? 'Terroir kitchen'} title={story.cook.title ?? `Cook ${story.name}`} lede={story.cook.lede} />
             <article id={r.id} className="bg-white rounded border border-border-line p-6 sm:p-8 lg:p-12 shadow-sm mb-12 scroll-mt-24">
               {r.image && (
                 <div className="w-full h-64 md:h-80 rounded overflow-hidden relative mb-8">
@@ -523,8 +524,8 @@ export default function RegionStory({ story }: { story: Story }) {
               const live = catalog.get(sp.id);
               return (
                 <a key={sp.id} href={live ? `/product/${live.id}` : '/shop'} className="bg-white p-3 rounded shadow-sm flex flex-col justify-between text-center min-h-[150px] hover:shadow-md transition-shadow">
-                  {sp.img ? (
-                    <div className="w-full h-20 rounded overflow-hidden mb-2 bg-surface-container"><img src={sp.img} alt="" className="size-full object-cover" loading="lazy" /></div>
+                  {sp.img || live?.img ? (
+                    <div className="w-full h-20 rounded overflow-hidden mb-2 bg-surface-container"><img src={sp.img || live?.img} alt="" className="size-full object-cover" loading="lazy" /></div>
                   ) : (
                     <div className="w-full h-20 rounded mb-2 bg-surface-parchment flex items-center justify-center"><Icon name="inventory_2" className="text-2xl text-secondary-container" /></div>
                   )}

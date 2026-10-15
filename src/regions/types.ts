@@ -29,7 +29,10 @@ export type RegionStory = {
   /** Card blurb for menus; defaults to the subtitle. */
   blurb?: string;
   hero: {
-    /** Landscape photo. Without one, a maiolica tile pattern is shown. */
+    /** Banner colours from the story's design; default is the site's dark wine-black. */
+    color?: string;
+    colorDeep?: string;
+    /** Landscape photo. Without one, a maiolica tile pattern in the banner colour is shown. */
     image?: string;
     imageAlt?: string;
     dossier?: string;
@@ -63,6 +66,8 @@ export type RegionStory = {
     products: StoryProduct[];
   };
   cook?: {
+    /** Section title, e.g. "Cook Sicily"; defaults to "Cook <name>". */
+    title?: string;
     eyebrow?: string;
     lede: string;
     recipe: {
