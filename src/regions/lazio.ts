@@ -1,5 +1,6 @@
 import type { RegionStory } from './types';
 
+// Photos are stand-ins from elsewhere on the site, to be replaced.
 // Content from the Lazio story artifact. Product ids are the artifact's product slots:
 // set a product's Page address in Admin → Products to the same id to connect it.
 const lazio: RegionStory = {
@@ -43,10 +44,7 @@ const lazio: RegionStory = {
     },
     "imageTag": "Agro Romano · Rome",
     "heritageNote": "quinto quarto",
-    "image": {
-      "q": "Agro Romano Rome Italy || Rome Italy landscape",
-      "orientation": "landscape"
-    },
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDKuapGvtz1m4yEiJmh5vBcthnNoV0P2Se0tF21T9_V_CDVx4pCFbczusX8ypWXZHV1BMlJ0i8sIWb4Z4uEm_A6mQL2mRBARioc6crU1N5rMrXju_nLvqzTJUTIXUY5O6L9zJ0BNDqG3aOp0yPR7VXOtZMd6nJRMXGZKqoKjLXRDwsPQcG9ORNxWV47lsd_1MXkzl4btNUmDZ_yzpVmLL4icT7pv6P8U_xZMrozfeBedIsWkhJCs9r6",
     "imageAlt": "The open countryside around Rome, where shepherds grazed their flocks for millennia."
   },
   "intro": [
@@ -69,10 +67,7 @@ const lazio: RegionStory = {
             "tag": "DOP",
             "tagTone": "green",
             "origin": "Lazio",
-            "img": {
-              "q": "Pecorino Romano Rome Italy || Pecorino Romano || Pecorino Romano food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
           }
         ]
       },
@@ -89,10 +84,7 @@ const lazio: RegionStory = {
             "tag": "Cured cheek",
             "tagTone": "neutral",
             "origin": "Amatrice",
-            "img": {
-              "q": "Guanciale Rome Italy || Guanciale || Guanciale food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
           }
         ]
       },
@@ -109,10 +101,7 @@ const lazio: RegionStory = {
             "tag": "Spring only",
             "tagTone": "green",
             "origin": "Lazio countryside",
-            "img": {
-              "q": "Carciofo Romanesco del Lazio Rome Italy || Carciofo Romanesco del Lazio || Romanesco artichokes food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
           }
         ],
         "shelfLabel": "In season"
@@ -130,10 +119,7 @@ const lazio: RegionStory = {
             "tag": "IGP",
             "tagTone": "green",
             "origin": "Ariccia",
-            "img": {
-              "q": "Porchetta di Ariccia Rome Italy || Porchetta di Ariccia || Porchetta food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAPcC0a36PdQKRFN67N9n4iWBfhvVaOYD4lAqKygnUjTrscttDOYLVoI8x1mJHXJybsSr0etHTwY4pU0A01kN4o1IfpMOvEBAXOIrB8eZ11ou4LrSyCjELVvYNkcTxy0DtPWugtK_maKrpF1S29ogN-YzCyzhDGWnfH4HdQ3jXFuv8h73Z3GNxqFxYhHzG5euOwWXNcUn83KLa8hc2NC2nQFY3TdtlSPgMj0otF-z9Yn-C7fprrBLWX"
           }
         ]
       },
@@ -150,10 +136,7 @@ const lazio: RegionStory = {
             "tag": "DOP",
             "tagTone": "green",
             "origin": "Lazio",
-            "img": {
-              "q": "Ricotta Romana Rome Italy || Ricotta Romana || Ricotta Romana food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDqmbMaaWotLnqd7h746aY6nsFALWzvjqbkrArYOxWH0YaS3R83fCAwa_zPopqfTC19b2rndKbS0X7Nj0tC5mW1iAtX3KmPVZsS3ZsFiP0HIvHEAkj179Jhwx4pyyijMtfmbJUWOuzPdOd5gogteAa_cNezVDsRpXU2pkT0vo_nXW3O0JbzNZUqjoeSjms0C0zSftPsOjvMIjrOBbhGg700irDxZk2EN0lXZPe4eI9aZMgxn7bkIl7z"
           }
         ]
       },
@@ -170,10 +153,7 @@ const lazio: RegionStory = {
             "tag": "DOP",
             "tagTone": "green",
             "origin": "Sabina hills",
-            "img": {
-              "q": "Sabina extra-virgin olive oil Rome Italy || Sabina extra-virgin olive oil || Olive oil food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w"
           }
         ]
       }
@@ -188,40 +168,28 @@ const lazio: RegionStory = {
         "where": "Amatrice and Rome",
         "body": "Guanciale, white wine, tomato, and pecorino. It grew from gricia, the same dish without tomato, and in 2020 “Amatriciana tradizionale” became a protected Traditional Speciality Guaranteed. In Amatrice it is made with spaghetti; in Rome, often with bucatini.",
         "tip": "[Cook it below](#amatriciana)",
-        "image": {
-          "q": "All’amatriciana Rome Italy food || All’amatriciana food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
       },
       {
         "title": "Carbonara",
         "where": "Rome",
         "body": "Crisp guanciale, egg yolks, Pecorino Romano, and plenty of black pepper, tossed with hot pasta until creamy. Roman carbonara uses no cream.",
         "tip": "The same [guanciale](product:laz-guanciale) and [Pecorino Romano](product:laz-pecorino) you need for amatriciana.",
-        "image": {
-          "q": "Carbonara Rome Italy food || Carbonara food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida/AEtjO1XH3ztoRKkRdH9fjeZ7zGSvG7Z5lVtTJVcPxnxpnLlAyQgVptrChhD3aGe8eyAqVjd0t1vRNzKDPEjlQjVZ-Eo-tmswH65MCECJXC1QT7I-lJ124iYZKFjt2HHrSOK_zqbBcVos3Jg8CZW5bSAW6GQ8NC2GTMPbtiRRx9g9oxW6L3gS7A49QEWznJIYITZoOmWrGC6LiYi1Idw4k1vthGnlg7ZvP6f6Il5_lhaoAml5HXicCLGHPJRAbg"
       },
       {
         "title": "Carciofi alla giudia",
         "where": "The Jewish ghetto",
         "body": "Whole Romanesco artichokes fried in olive oil until the leaves open like a crisp golden flower, then salted. Born in Rome’s Jewish ghetto in the sixteenth century. Carciofi alla romana, braised with mint, parsley, and garlic, are the gentler cousin.",
         "tip": "A spring dish, February to April.",
-        "image": {
-          "q": "Carciofi alla giudia Rome Italy food || Carciofi alla giudia food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAPcC0a36PdQKRFN67N9n4iWBfhvVaOYD4lAqKygnUjTrscttDOYLVoI8x1mJHXJybsSr0etHTwY4pU0A01kN4o1IfpMOvEBAXOIrB8eZ11ou4LrSyCjELVvYNkcTxy0DtPWugtK_maKrpF1S29ogN-YzCyzhDGWnfH4HdQ3jXFuv8h73Z3GNxqFxYhHzG5euOwWXNcUn83KLa8hc2NC2nQFY3TdtlSPgMj0otF-z9Yn-C7fprrBLWX"
       },
       {
         "title": "Coda alla vaccinara",
         "where": "Testaccio",
         "body": "Oxtail braised for hours in tomato, often finished with raisins, pine nuts, and sometimes bitter cocoa. The signature of the quinto quarto, the offal and lesser cuts that fed Testaccio’s slaughterhouse workers from 1890.",
         "note": "The quinto quarto signature",
-        "image": {
-          "q": "Coda alla vaccinara Rome Italy food || Coda alla vaccinara food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD3DyLWjHZNnUahIXVRqFuwGgYJBdyZm09UGDnl9cXdl6H6UU-Pl1gDXv1bLWsXseTdwuiujzAsWyj9bvxPR1CAJQ04u9iac5o5XBSAm-OHuk41AFvTp3mgciUZ6LQJZxFGgmgutgDDoQfkKMXnfg2UjCCYPPf06y4eK5F08c5c7bX4ZeqGT2I0gLJcVPbnyHaJ73geG9GreqIzaSTdWVO5L5D7fWpS3je3wDAORcXER6iiX2rkYkQn"
       }
     ],
     "eyebrow": "Roman canon"
@@ -235,26 +203,17 @@ const lazio: RegionStory = {
     ],
     "photos": [
       {
-        "src": {
-          "q": "dairy flock Torrita Tiberina Rome Italy || dairy flock Rome Italy || Torrita Tiberina Rome Italy",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy",
         "alt": "Lazio sheep · Tiber valley",
         "caption": "Lazio sheep · Tiber valley"
       },
       {
-        "src": {
-          "q": "aging room Torrita Tiberina Rome Italy || aging room Rome Italy || Torrita Tiberina Rome Italy",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAl_5nHHJIzoS-WsCluRQYcsvFaCEJgLpMKhF74uchwSFZaiasRvF2QgOGb8yQIioI-Tl012aRJqnvzUfYVXVIN42AtBrqz67jqjAH3CbxmYm6uEHRkYdah0q_WAQSgW93YHOemOcCRZN921JwihtDRxkKHN7PzTEk88hPG_P2AV7Y_dSVKxmfxeIubOnR3JAqjFS_dXGAzG2xxfQE3VDOGzRjZcEhJ1T-LSazL8n3fCCvhoP3Kr76d",
         "alt": "Pecorino aging room",
         "caption": "Pecorino aging room"
       },
       {
-        "src": {
-          "q": "Deroma Pecorino Romano Torrita Tiberina Rome Italy || Deroma Pecorino Romano Rome Italy || Torrita Tiberina Rome Italy",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida/AEtjO1XWLjABkN9JNdg2bMlYH0fIp3xRDXJYWo5LVly80wovSC1tTyvX-HHS1Z91q401b7ynxsVkhS-vyRNVTzYxLLT2ewPKyZ1N57DPMd9UpCRVoUk_lHtsprvCectHtmhxNOyZDy6MYysvgWyJSSTLw7Yw1UPq9h1QL-MIHwdcpwKXYxlGNp_XW673nd9VsUbx3Cs0zt7NLyEcNI4GNFIhU0lMAgUvh5IIl2qctPoY_gs89gr5IUNqpbhokFY",
         "alt": "Deroma Pecorino Romano",
         "caption": "Deroma Pecorino Romano"
       }
@@ -282,10 +241,7 @@ const lazio: RegionStory = {
         "tag": "Rind code RM7",
         "tagTone": "gold",
         "origin": "Torrita Tiberina",
-        "img": {
-          "q": "Deroma Pecorino Romano Rome Italy || Deroma Pecorino Romano",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAl_5nHHJIzoS-WsCluRQYcsvFaCEJgLpMKhF74uchwSFZaiasRvF2QgOGb8yQIioI-Tl012aRJqnvzUfYVXVIN42AtBrqz67jqjAH3CbxmYm6uEHRkYdah0q_WAQSgW93YHOemOcCRZN921JwihtDRxkKHN7PzTEk88hPG_P2AV7Y_dSVKxmfxeIubOnR3JAqjFS_dXGAzG2xxfQE3VDOGzRjZcEhJ1T-LSazL8n3fCCvhoP3Kr76d"
       }
     ]
   },
@@ -335,10 +291,7 @@ const lazio: RegionStory = {
           "tag": "Cured cheek",
           "tagTone": "neutral",
           "origin": "Amatrice",
-          "img": {
-            "q": "Guanciale Rome Italy || Guanciale || Guanciale food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
         },
         {
           "id": "laz-pecorino",
@@ -347,10 +300,7 @@ const lazio: RegionStory = {
           "tag": "DOP",
           "tagTone": "green",
           "origin": "Lazio",
-          "img": {
-            "q": "Pecorino Romano Rome Italy || Pecorino Romano || Pecorino Romano food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
         }
       ],
       "schema": {
@@ -370,10 +320,7 @@ const lazio: RegionStory = {
         ]
       },
       "imageCaption": "Amatrice classic · about 35 minutes",
-      "image": {
-        "q": "Spaghetti all’amatriciana Rome Italy food || Spaghetti all’amatriciana food",
-        "orientation": "landscape"
-      }
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
     },
     "shortcut": {
       "title": "Ten minutes in Rome",
@@ -386,10 +333,7 @@ const lazio: RegionStory = {
           "tag": "DOP",
           "tagTone": "green",
           "origin": "Lazio",
-          "img": {
-            "q": "Pecorino Romano Rome Italy || Pecorino Romano || Pecorino Romano food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
         },
         {
           "id": "laz-spaghetti",
@@ -398,10 +342,7 @@ const lazio: RegionStory = {
           "tag": "Pantry staple",
           "tagTone": "neutral",
           "origin": "For cacio e pepe",
-          "img": {
-            "q": "Spaghetti Rome Italy || Spaghetti",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
         }
       ],
       "eyebrow": "Cacio e pepe shortcut",
@@ -422,10 +363,7 @@ const lazio: RegionStory = {
         "tag": "DOP",
         "tagTone": "green",
         "origin": "Lazio",
-        "img": {
-          "q": "Pecorino Romano Rome Italy || Pecorino Romano || Pecorino Romano food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
       },
       {
         "id": "laz-guanciale",
@@ -434,10 +372,7 @@ const lazio: RegionStory = {
         "tag": "Cured cheek",
         "tagTone": "neutral",
         "origin": "Amatrice",
-        "img": {
-          "q": "Guanciale Rome Italy || Guanciale || Guanciale food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
       },
       {
         "id": "laz-olio-sabina",
@@ -446,10 +381,7 @@ const lazio: RegionStory = {
         "tag": "DOP",
         "tagTone": "green",
         "origin": "Sabina hills",
-        "img": {
-          "q": "Sabina extra-virgin olive oil Rome Italy || Sabina extra-virgin olive oil || Olive oil food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w"
       },
       {
         "id": "laz-spaghetti",
@@ -458,10 +390,7 @@ const lazio: RegionStory = {
         "tag": "Pantry staple",
         "tagTone": "neutral",
         "origin": "For cacio e pepe",
-        "img": {
-          "q": "Spaghetti Rome Italy || Spaghetti",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
       },
       {
         "id": "laz-bucatini",
@@ -470,10 +399,7 @@ const lazio: RegionStory = {
         "tag": "Pantry staple",
         "tagTone": "neutral",
         "origin": "For amatriciana",
-        "img": {
-          "q": "Bucatini Rome Italy || Bucatini",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida/AEtjO1XH3ztoRKkRdH9fjeZ7zGSvG7Z5lVtTJVcPxnxpnLlAyQgVptrChhD3aGe8eyAqVjd0t1vRNzKDPEjlQjVZ-Eo-tmswH65MCECJXC1QT7I-lJ124iYZKFjt2HHrSOK_zqbBcVos3Jg8CZW5bSAW6GQ8NC2GTMPbtiRRx9g9oxW6L3gS7A49QEWznJIYITZoOmWrGC6LiYi1Idw4k1vthGnlg7ZvP6f6Il5_lhaoAml5HXicCLGHPJRAbg"
       },
       {
         "id": "laz-pelati",
@@ -482,10 +408,7 @@ const lazio: RegionStory = {
         "tag": "San Marzano",
         "tagTone": "neutral",
         "origin": "For amatriciana",
-        "img": {
-          "q": "Peeled San Marzano tomatoes Rome Italy || Peeled San Marzano tomatoes",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBRbfN3ec2j13IDm1PE1_z3XTGyEgtwGUUYTjZPOlr_XSHYQdySu4eni5eOXqrKG29Cl-GM6BIwsg8jt21ndJ7dF_v2T_t34PpNXh1wUwoN-V5yhIMZncJmE1BWFeStFpQRFpjHHXybHWqPAayZearG1M3sELhCkVAU7iqwesHOgc4x6uRnjfY8lqlAzgNDJ36Qk1zYHDXFvRI-S0rfWP25ciszdOMP1PMUS7ci3vjNMzI863KvNVVu"
       },
       {
         "id": "laz-porchetta",
@@ -494,10 +417,7 @@ const lazio: RegionStory = {
         "tag": "IGP",
         "tagTone": "green",
         "origin": "Ariccia",
-        "img": {
-          "q": "Porchetta di Ariccia Rome Italy || Porchetta di Ariccia || Porchetta food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAPcC0a36PdQKRFN67N9n4iWBfhvVaOYD4lAqKygnUjTrscttDOYLVoI8x1mJHXJybsSr0etHTwY4pU0A01kN4o1IfpMOvEBAXOIrB8eZ11ou4LrSyCjELVvYNkcTxy0DtPWugtK_maKrpF1S29ogN-YzCyzhDGWnfH4HdQ3jXFuv8h73Z3GNxqFxYhHzG5euOwWXNcUn83KLa8hc2NC2nQFY3TdtlSPgMj0otF-z9Yn-C7fprrBLWX"
       },
       {
         "id": "laz-ricotta",
@@ -506,10 +426,7 @@ const lazio: RegionStory = {
         "tag": "DOP",
         "tagTone": "green",
         "origin": "Lazio",
-        "img": {
-          "q": "Ricotta Romana Rome Italy || Ricotta Romana || Ricotta Romana food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDqmbMaaWotLnqd7h746aY6nsFALWzvjqbkrArYOxWH0YaS3R83fCAwa_zPopqfTC19b2rndKbS0X7Nj0tC5mW1iAtX3KmPVZsS3ZsFiP0HIvHEAkj179Jhwx4pyyijMtfmbJUWOuzPdOd5gogteAa_cNezVDsRpXU2pkT0vo_nXW3O0JbzNZUqjoeSjms0C0zSftPsOjvMIjrOBbhGg700irDxZk2EN0lXZPe4eI9aZMgxn7bkIl7z"
       }
     ],
     "eyebrow": "Limited curation · Parcel N° 08"

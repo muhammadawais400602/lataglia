@@ -1,5 +1,6 @@
 import type { RegionStory } from './types';
 
+// Photos are stand-ins from elsewhere on the site, to be replaced.
 // Content from the Piemonte story artifact. Product ids are the artifact's product slots:
 // set a product's Page address in Admin → Products to the same id to connect it.
 const piemonte: RegionStory = {
@@ -43,10 +44,7 @@ const piemonte: RegionStory = {
     },
     "imageTag": "Langhe, Roero, Monferrato",
     "heritageNote": "at the foot of the mountains",
-    "image": {
-      "q": "Langhe Piedmont || Piedmont landscape",
-      "orientation": "landscape"
-    },
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB2slSQexHb65wGxM1BmjHsv2HDR0JxYkp1_797_5C6hQ-VssXWRFXHGsZiRVvDRJ0lW5kiMqWb7ov4nVwaBRFu0QudIz8yPk8oDGI5RgetbxYgswJcvlkXDqk43z4jfCzXyDPRCogKAsIQDHpqeJDPnzcWcFVAsff-q-mKrLKbL8xT13RBt-1OfRR1ZjSUkSqLt-E6vZKzMGuvf-bwUBkgICI_iH38dHy50W4tAcvFAoBESck6EwyC",
     "imageAlt": "Vineyard hills of the Langhe, Roero, and Monferrato roll south toward the sea."
   },
   "intro": [
@@ -69,10 +67,7 @@ const piemonte: RegionStory = {
             "tag": "IGP",
             "tagTone": "green",
             "origin": "The Langhe",
-            "img": {
-              "q": "Nocciola Piemonte hazelnuts Piedmont || Nocciola Piemonte hazelnuts || Hazelnuts food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
           }
         ]
       },
@@ -89,10 +84,7 @@ const piemonte: RegionStory = {
             "tag": "Autumn only",
             "tagTone": "gold",
             "origin": "Alba",
-            "img": {
-              "q": "Fresh white truffle Piedmont || Fresh white truffle || White truffle food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtz4nC-_Ocop-ZSNl-oDRC-xid0fbJjTqVPUEMGXDc-UbWWdybXrqmu31H6mlNxK4JZOSsBI_3IAP1pL-W1sqt1ikgMdtTPYAT0fiJGYVfiXm7UE6JSLZGJ-xb1o2egOuz7ozHvr2e63HG1-ErCgCkLhUPU-GdEtqrYqG00tazkWu8J6e4OugEKo2UbKYbn45zRYHOGVhj2I5_DSh4G0FKDs3o_7WoAfI3PI8c74tSjobPIsG3e2gB"
           }
         ],
         "shelfLabel": "In season"
@@ -110,10 +102,7 @@ const piemonte: RegionStory = {
             "tag": "Risotto rice",
             "tagTone": "neutral",
             "origin": "Vercelli",
-            "img": {
-              "q": "Carnaroli rice from Vercelli Piedmont || Carnaroli rice from Vercelli || Rice food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMFgCdqzLvdJxYGaDAFlEDMYMT857D05ZZADK6F6LJbmst8APC4Nl4JYWyknq_CXy-wFoodx0MUTgMC0CntsIT7QemPR1DFgTLpY8U5WaTySi2AMxuyA04SwrYM2r3qDPPxCLOcyksMQ7bLZwM15ouLGkJeE9C1OWinZ6B7mwQYAmW_rezg2MqBTu7ntbCcLZlJzaaNWjiRvS33b7WJEC_xWcEO70o30NIuOjdMNQabBFxLaWU-Jhc"
           }
         ]
       },
@@ -130,10 +119,7 @@ const piemonte: RegionStory = {
             "tag": "Rare · DOP",
             "tagTone": "gold",
             "origin": "Grana valley",
-            "img": {
-              "q": "Castelmagno Piedmont || Castelmagno || Castelmagno food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
           }
         ]
       },
@@ -150,10 +136,7 @@ const piemonte: RegionStory = {
             "tag": "DOP",
             "tagTone": "green",
             "origin": "Langa Astigiana",
-            "img": {
-              "q": "Robiola di Roccaverano Piedmont || Robiola di Roccaverano || Robiola di Roccaverano food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
           }
         ]
       },
@@ -170,10 +153,7 @@ const piemonte: RegionStory = {
             "tag": "Hand-stretched",
             "tagTone": "neutral",
             "origin": "Turin",
-            "img": {
-              "q": "Hand-stretched grissini rubatà Piedmont || Hand-stretched grissini rubatà || Grissini food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo"
           }
         ]
       }
@@ -188,40 +168,28 @@ const piemonte: RegionStory = {
         "where": "The Cuneo valleys",
         "body": "Creamy Carnaroli risotto finished with crumbled Castelmagno, rich, sharp, and simple. A mountain dish made with the plain’s rice.",
         "tip": "[Cook it below](#risotto)",
-        "image": {
-          "q": "Risotto al Castelmagno Piedmont food || Risotto al Castelmagno food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMFgCdqzLvdJxYGaDAFlEDMYMT857D05ZZADK6F6LJbmst8APC4Nl4JYWyknq_CXy-wFoodx0MUTgMC0CntsIT7QemPR1DFgTLpY8U5WaTySi2AMxuyA04SwrYM2r3qDPPxCLOcyksMQ7bLZwM15ouLGkJeE9C1OWinZ6B7mwQYAmW_rezg2MqBTu7ntbCcLZlJzaaNWjiRvS33b7WJEC_xWcEO70o30NIuOjdMNQabBFxLaWU-Jhc"
       },
       {
         "title": "Tajarin",
         "where": "Alba and the Langhe",
         "body": "Thin golden ribbons of pasta made with an extravagant number of egg yolks, tossed in butter or a light meat sauce. In autumn, the classic base for shaved white truffle.",
         "tip": "Try [dried egg tajarin](product:pie-tajarin) for a ten-minute version.",
-        "image": {
-          "q": "Tajarin Piedmont food || Tajarin food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
       },
       {
         "title": "Vitello tonnato",
         "where": "Turin and across Piedmont",
         "body": "Thin slices of cold poached veal under a creamy sauce of tuna, capers, and anchovy. A summer antipasto that sounds unlikely and tastes perfect.",
         "note": "A summer antipasto",
-        "image": {
-          "q": "Vitello tonnato Piedmont food || Vitello tonnato food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAPcC0a36PdQKRFN67N9n4iWBfhvVaOYD4lAqKygnUjTrscttDOYLVoI8x1mJHXJybsSr0etHTwY4pU0A01kN4o1IfpMOvEBAXOIrB8eZ11ou4LrSyCjELVvYNkcTxy0DtPWugtK_maKrpF1S29ogN-YzCyzhDGWnfH4HdQ3jXFuv8h73Z3GNxqFxYhHzG5euOwWXNcUn83KLa8hc2NC2nQFY3TdtlSPgMj0otF-z9Yn-C7fprrBLWX"
       },
       {
         "title": "Bagna càuda",
         "where": "Asti and the Langhe",
         "body": "A warm dip of garlic, anchovies, and olive oil kept hot at the table for raw and cooked autumn vegetables. A communal, garlicky feast that marks the end of the grape harvest.",
         "tip": "Serve with [hand-stretched grissini](product:pie-grissini) for dipping.",
-        "image": {
-          "q": "Bagna càuda Piedmont food || Bagna càuda food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBxg7ZeusKi1XJ_YIbUpf7bMvUDHPzrJBa0kGGcUmiEWQXn5vyYqb10N5ExBRlYr2yJ0WfsFPe7URckqO8PDwMH0UDSwVm6XQCF-NoeAM33s50RkHXH5cUKTQIls7nyQjkd8xFb7E1CVsnD4Hx0oK8so72g2UalmTdOWlUWCd2mUYhcv42IUIFm1cqLKE69xjZ96SmNApFtb-zmua5MK2Erwp7yfRDiKgHOwIebR0rdf84T1bYeSwKl"
       }
     ],
     "eyebrow": "Culinary canon"
@@ -235,26 +203,17 @@ const piemonte: RegionStory = {
     ],
     "photos": [
       {
-        "src": {
-          "q": "workshop Turin Piedmont || workshop Piedmont || Turin Piedmont",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCC3hXgtO47-HYlfWhixDmIvGeTORmhXWh-0mhqJFRiG405EoadpsWrNrhqsLIFFpDAqYH1QIdFzwMR73JQb-HxmTHFSFFnC0WNxh4tOQIEZA_nZacNem5iBUWjnfVgmUFcjBLMehUCESqr6VmxEEbhF2pMviwfwNweiWbDiMgyIPAj7_QO7izWh74iILXcxADKdMDXfSyYvtfRhhGhUHPdVyTJPDYQm_d646dur2oNjr8M78rgogJx",
         "alt": "Via Cagliari workshop · Turin",
         "caption": "Via Cagliari workshop · Turin"
       },
       {
-        "src": {
-          "q": "hazelnuts chocolate Turin Piedmont || hazelnuts chocolate Piedmont || Turin Piedmont",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDUkq6TgfKOwjF2ahABZJgDKtC894gDZY8GKNiQPJ_MoIkulL3tvTpZl1ouHlSnOUIzStVyQn1gA36A68G7N7dOBGYe_Prtvhk5490gOHHUtwKMidPAvub6mNTxg1jTXprEtNacMowXVRBQqPgeiij-358JiScZ_OjUDH94BnwD-CZSGmZ1ztElrosH9nHqweXxYn7-z8jRTnONLS2ZON9OLtS_uR_CVysQEzR404aqkOMi79NEqmAN",
         "alt": "Piedmont hazelnuts · gianduja",
         "caption": "Piedmont hazelnuts · gianduja"
       },
       {
-        "src": {
-          "q": "Guido Gobino Tourinot giandujotti Turin Piedmont || Guido Gobino Tourinot giandujotti Piedmont || Turin Piedmont",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq",
         "alt": "Tourinot giandujotti · Gobino",
         "caption": "Tourinot giandujotti · Gobino"
       }
@@ -282,10 +241,7 @@ const piemonte: RegionStory = {
         "tag": "5 grams",
         "tagTone": "gold",
         "origin": "Turin",
-        "img": {
-          "q": "Guido Gobino Tourinot giandujotti Piedmont || Guido Gobino Tourinot giandujotti",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDMH2M-VN1-Pz9hCbkXgdgup639qKPj1bgJo2jf1PgPm9NKzrgAY_T6MZujPmHAC4Z5W83H6bgIwaOrwcCLEuI-3an8k7c44fESuTzHNkXQYSCN_pESKkZUsjfCP-01ZMORW4JuJXmElmpAAAxPwRTi5o5Crpmlu_bVRSOXjhggx377vb87iOfKRdkb1LjsaiX1pF73K7pXrg-DIruRvIfEPidPaOJoOlRNnbEwUK6fqguV0N3VVklu"
       },
       {
         "id": "pie-gobino-crema",
@@ -294,10 +250,7 @@ const piemonte: RegionStory = {
         "tag": "Gianduja",
         "tagTone": "neutral",
         "origin": "Turin",
-        "img": {
-          "q": "Guido Gobino gianduja spread Piedmont || Guido Gobino gianduja spread",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCC3hXgtO47-HYlfWhixDmIvGeTORmhXWh-0mhqJFRiG405EoadpsWrNrhqsLIFFpDAqYH1QIdFzwMR73JQb-HxmTHFSFFnC0WNxh4tOQIEZA_nZacNem5iBUWjnfVgmUFcjBLMehUCESqr6VmxEEbhF2pMviwfwNweiWbDiMgyIPAj7_QO7izWh74iILXcxADKdMDXfSyYvtfRhhGhUHPdVyTJPDYQm_d646dur2oNjr8M78rgogJx"
       }
     ]
   },
@@ -348,10 +301,7 @@ const piemonte: RegionStory = {
           "tag": "Risotto rice",
           "tagTone": "neutral",
           "origin": "Vercelli",
-          "img": {
-            "q": "Carnaroli rice from Vercelli Piedmont || Carnaroli rice from Vercelli || Rice food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMFgCdqzLvdJxYGaDAFlEDMYMT857D05ZZADK6F6LJbmst8APC4Nl4JYWyknq_CXy-wFoodx0MUTgMC0CntsIT7QemPR1DFgTLpY8U5WaTySi2AMxuyA04SwrYM2r3qDPPxCLOcyksMQ7bLZwM15ouLGkJeE9C1OWinZ6B7mwQYAmW_rezg2MqBTu7ntbCcLZlJzaaNWjiRvS33b7WJEC_xWcEO70o30NIuOjdMNQabBFxLaWU-Jhc"
         },
         {
           "id": "pie-castelmagno",
@@ -360,10 +310,7 @@ const piemonte: RegionStory = {
           "tag": "Rare · DOP",
           "tagTone": "gold",
           "origin": "Grana valley",
-          "img": {
-            "q": "Castelmagno Piedmont || Castelmagno || Castelmagno food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
         }
       ],
       "schema": {
@@ -384,10 +331,7 @@ const piemonte: RegionStory = {
         ]
       },
       "imageCaption": "Cuneo valleys classic · about 35 minutes",
-      "image": {
-        "q": "Risotto al Castelmagno Piedmont food || Risotto al Castelmagno food",
-        "orientation": "landscape"
-      }
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMFgCdqzLvdJxYGaDAFlEDMYMT857D05ZZADK6F6LJbmst8APC4Nl4JYWyknq_CXy-wFoodx0MUTgMC0CntsIT7QemPR1DFgTLpY8U5WaTySi2AMxuyA04SwrYM2r3qDPPxCLOcyksMQ7bLZwM15ouLGkJeE9C1OWinZ6B7mwQYAmW_rezg2MqBTu7ntbCcLZlJzaaNWjiRvS33b7WJEC_xWcEO70o30NIuOjdMNQabBFxLaWU-Jhc"
     },
     "shortcut": {
       "title": "Ten minutes in Alba",
@@ -400,10 +344,7 @@ const piemonte: RegionStory = {
           "tag": "Egg pasta",
           "tagTone": "neutral",
           "origin": "The Langhe",
-          "img": {
-            "q": "Egg tajarin from the Langhe Piedmont || Egg tajarin from the Langhe",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCZhnC6OD1VrmeoAkesXcV61vBh25ZoqFu3NKi1EWxScFq08esuCcNzj28MeLyPLME1eJ4rqHGka5Va1TpbBHJJjtXPwJCp0j6OcrdBzYqdqkNECgc1aIdIrdUQ-3yQ49QItc5wh4ZkdvFaJm6-EOJLmg_-fEa9Y74OCjgdx1yeFqlC35iIO1cg2THDFfbVWTTKfIfoC35P_lksCF2Ua-5Tn5iAP5Amgfwuc-v6kUOIJSkESvhpWyfq"
         },
         {
           "id": "pie-tartufo-bianco",
@@ -412,10 +353,7 @@ const piemonte: RegionStory = {
           "tag": "Autumn only",
           "tagTone": "gold",
           "origin": "Alba",
-          "img": {
-            "q": "Fresh white truffle Piedmont || Fresh white truffle || White truffle food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtz4nC-_Ocop-ZSNl-oDRC-xid0fbJjTqVPUEMGXDc-UbWWdybXrqmu31H6mlNxK4JZOSsBI_3IAP1pL-W1sqt1ikgMdtTPYAT0fiJGYVfiXm7UE6JSLZGJ-xb1o2egOuz7ozHvr2e63HG1-ErCgCkLhUPU-GdEtqrYqG00tazkWu8J6e4OugEKo2UbKYbn45zRYHOGVhj2I5_DSh4G0FKDs3o_7WoAfI3PI8c74tSjobPIsG3e2gB"
         }
       ],
       "eyebrow": "Alba shortcut",
@@ -436,10 +374,7 @@ const piemonte: RegionStory = {
         "tag": "IGP",
         "tagTone": "green",
         "origin": "The Langhe",
-        "img": {
-          "q": "Nocciola Piemonte hazelnuts Piedmont || Nocciola Piemonte hazelnuts || Hazelnuts food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
       },
       {
         "id": "pie-carnaroli",
@@ -448,10 +383,7 @@ const piemonte: RegionStory = {
         "tag": "Risotto rice",
         "tagTone": "neutral",
         "origin": "Vercelli",
-        "img": {
-          "q": "Carnaroli rice from Vercelli Piedmont || Carnaroli rice from Vercelli || Rice food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMFgCdqzLvdJxYGaDAFlEDMYMT857D05ZZADK6F6LJbmst8APC4Nl4JYWyknq_CXy-wFoodx0MUTgMC0CntsIT7QemPR1DFgTLpY8U5WaTySi2AMxuyA04SwrYM2r3qDPPxCLOcyksMQ7bLZwM15ouLGkJeE9C1OWinZ6B7mwQYAmW_rezg2MqBTu7ntbCcLZlJzaaNWjiRvS33b7WJEC_xWcEO70o30NIuOjdMNQabBFxLaWU-Jhc"
       },
       {
         "id": "pie-castelmagno",
@@ -460,10 +392,7 @@ const piemonte: RegionStory = {
         "tag": "Rare · DOP",
         "tagTone": "gold",
         "origin": "Grana valley",
-        "img": {
-          "q": "Castelmagno Piedmont || Castelmagno || Castelmagno food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
       },
       {
         "id": "pie-robiola",
@@ -472,10 +401,7 @@ const piemonte: RegionStory = {
         "tag": "DOP",
         "tagTone": "green",
         "origin": "Langa Astigiana",
-        "img": {
-          "q": "Robiola di Roccaverano Piedmont || Robiola di Roccaverano || Robiola di Roccaverano food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
       },
       {
         "id": "pie-grissini",
@@ -484,10 +410,7 @@ const piemonte: RegionStory = {
         "tag": "Hand-stretched",
         "tagTone": "neutral",
         "origin": "Turin",
-        "img": {
-          "q": "Hand-stretched grissini rubatà Piedmont || Hand-stretched grissini rubatà || Grissini food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo"
       },
       {
         "id": "pie-tajarin",
@@ -496,10 +419,7 @@ const piemonte: RegionStory = {
         "tag": "Egg pasta",
         "tagTone": "neutral",
         "origin": "The Langhe",
-        "img": {
-          "q": "Egg tajarin from the Langhe Piedmont || Egg tajarin from the Langhe",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCZhnC6OD1VrmeoAkesXcV61vBh25ZoqFu3NKi1EWxScFq08esuCcNzj28MeLyPLME1eJ4rqHGka5Va1TpbBHJJjtXPwJCp0j6OcrdBzYqdqkNECgc1aIdIrdUQ-3yQ49QItc5wh4ZkdvFaJm6-EOJLmg_-fEa9Y74OCjgdx1yeFqlC35iIO1cg2THDFfbVWTTKfIfoC35P_lksCF2Ua-5Tn5iAP5Amgfwuc-v6kUOIJSkESvhpWyfq"
       },
       {
         "id": "pie-gobino-tourinot",
@@ -508,10 +428,7 @@ const piemonte: RegionStory = {
         "tag": "5 grams",
         "tagTone": "gold",
         "origin": "Turin",
-        "img": {
-          "q": "Guido Gobino Tourinot giandujotti Piedmont || Guido Gobino Tourinot giandujotti",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDMH2M-VN1-Pz9hCbkXgdgup639qKPj1bgJo2jf1PgPm9NKzrgAY_T6MZujPmHAC4Z5W83H6bgIwaOrwcCLEuI-3an8k7c44fESuTzHNkXQYSCN_pESKkZUsjfCP-01ZMORW4JuJXmElmpAAAxPwRTi5o5Crpmlu_bVRSOXjhggx377vb87iOfKRdkb1LjsaiX1pF73K7pXrg-DIruRvIfEPidPaOJoOlRNnbEwUK6fqguV0N3VVklu"
       },
       {
         "id": "pie-gobino-crema",
@@ -520,10 +437,7 @@ const piemonte: RegionStory = {
         "tag": "Gianduja",
         "tagTone": "neutral",
         "origin": "Turin",
-        "img": {
-          "q": "Guido Gobino gianduja spread Piedmont || Guido Gobino gianduja spread",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCC3hXgtO47-HYlfWhixDmIvGeTORmhXWh-0mhqJFRiG405EoadpsWrNrhqsLIFFpDAqYH1QIdFzwMR73JQb-HxmTHFSFFnC0WNxh4tOQIEZA_nZacNem5iBUWjnfVgmUFcjBLMehUCESqr6VmxEEbhF2pMviwfwNweiWbDiMgyIPAj7_QO7izWh74iILXcxADKdMDXfSyYvtfRhhGhUHPdVyTJPDYQm_d646dur2oNjr8M78rgogJx"
       }
     ],
     "eyebrow": "Limited curation · Parcel N° 05"

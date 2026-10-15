@@ -1,5 +1,6 @@
 import type { RegionStory } from './types';
 
+// Photos are stand-ins from elsewhere on the site, to be replaced.
 // Content from the Sardegna story artifact. Product ids are the artifact's product slots:
 // set a product's Page address in Admin → Products to the same id to connect it.
 const sardegna: RegionStory = {
@@ -43,10 +44,7 @@ const sardegna: RegionStory = {
     },
     "imageTag": "Cabras lagoon, Sinis peninsula",
     "heritageNote": "carta da musica",
-    "image": {
-      "q": "Lagoon of Cabras Sardinia || Sardinia landscape",
-      "orientation": "landscape"
-    },
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDGGoAAQMTy7Z0xxOurJ9rSdAn_aIXBpPyaZT4-pJobqKZFx0YwSHOXzJYeVtpoZK7Eix3hQtLG8HmHvhY7RP99IsWjPqkcqcg4G6Y2E8mA5UiDPKkzgvfKMpIu8oiUPtxDKKyeKnXGREk-g3sc6DyXERzE4g_XviNtq_nR3_DvtVOFcZ4NWGpYZ07vymz4nwD_yhs_3TbzMRJGZE2JbANG9q65hDdbQvemjniv9VbFsPNawHKXsC05",
     "imageAlt": "In the Sinis peninsula on the west coast, one of the island’s great fishing waters."
   },
   "intro": [
@@ -69,10 +67,7 @@ const sardegna: RegionStory = {
             "tag": "DOP",
             "tagTone": "green",
             "origin": "Across the island",
-            "img": {
-              "q": "Fiore Sardo Sardinia || Fiore Sardo || Fiore Sardo food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
           }
         ]
       },
@@ -89,10 +84,7 @@ const sardegna: RegionStory = {
             "tag": "Twice baked",
             "tagTone": "neutral",
             "origin": "Island interior",
-            "img": {
-              "q": "Pane carasau Sardinia || Pane carasau || Pane carasau food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
           }
         ]
       },
@@ -109,10 +101,7 @@ const sardegna: RegionStory = {
             "tag": "Durum semolina",
             "tagTone": "neutral",
             "origin": "Campidano plain",
-            "img": {
-              "q": "Malloreddus Sardinia || Malloreddus || Malloreddus food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
           }
         ]
       },
@@ -129,10 +118,7 @@ const sardegna: RegionStory = {
             "tag": "Toasted",
             "tagTone": "neutral",
             "origin": "Across the island",
-            "img": {
-              "q": "Fregola Sardinia || Fregola || Fregola food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
           }
         ]
       },
@@ -149,10 +135,7 @@ const sardegna: RegionStory = {
             "tag": "Cured roe",
             "tagTone": "gold",
             "origin": "Cabras",
-            "img": {
-              "q": "Bottarga di muggine Sardinia || Bottarga di muggine || Bottarga food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBxg7ZeusKi1XJ_YIbUpf7bMvUDHPzrJBa0kGGcUmiEWQXn5vyYqb10N5ExBRlYr2yJ0WfsFPe7URckqO8PDwMH0UDSwVm6XQCF-NoeAM33s50RkHXH5cUKTQIls7nyQjkd8xFb7E1CVsnD4Hx0oK8so72g2UalmTdOWlUWCd2mUYhcv42IUIFm1cqLKE69xjZ96SmNApFtb-zmua5MK2Erwp7yfRDiKgHOwIebR0rdf84T1bYeSwKl"
           }
         ]
       },
@@ -169,10 +152,7 @@ const sardegna: RegionStory = {
             "tag": "DOP",
             "tagTone": "green",
             "origin": "Southern plains",
-            "img": {
-              "q": "Zafferano di Sardegna Sardinia || Zafferano di Sardegna || Saffron food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo"
           }
         ]
       }
@@ -187,40 +167,28 @@ const sardegna: RegionStory = {
         "where": "The Campidano",
         "body": "Malloreddus in a sauce of crumbled pork sausage with fennel, tomato, onion, and saffron, finished with plenty of grated pecorino. The island’s best-known pasta dish.",
         "tip": "[Cook it below](#malloreddus)",
-        "image": {
-          "q": "Malloreddus alla campidanese Sardinia food || Malloreddus alla campidanese food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
       },
       {
         "title": "Culurgiones",
         "where": "Ogliastra",
         "body": "Plump pasta parcels filled with potato, pecorino, and mint, sealed with a braided edge that looks like an ear of wheat. The braid was once believed to bring a good harvest.",
         "tip": "Protected as Culurgiones d’Ogliastra IGP.",
-        "image": {
-          "q": "Culurgiones Sardinia food || Culurgiones food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida/AEtjO1XH3ztoRKkRdH9fjeZ7zGSvG7Z5lVtTJVcPxnxpnLlAyQgVptrChhD3aGe8eyAqVjd0t1vRNzKDPEjlQjVZ-Eo-tmswH65MCECJXC1QT7I-lJ124iYZKFjt2HHrSOK_zqbBcVos3Jg8CZW5bSAW6GQ8NC2GTMPbtiRRx9g9oxW6L3gS7A49QEWznJIYITZoOmWrGC6LiYi1Idw4k1vthGnlg7ZvP6f6Il5_lhaoAml5HXicCLGHPJRAbg"
       },
       {
         "title": "Porceddu",
         "where": "Across the island",
         "body": "Suckling pig roasted slowly on a spit beside an open fire until the skin crackles, then served on cork boards over myrtle leaves.",
         "note": "Served over myrtle leaves",
-        "image": {
-          "q": "Porceddu Sardinia food || Porceddu food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida/AEtjO1XjupcvBWdrJsFC9HLFt2bdjFwhoJ85whWBzKtrr1ef014BXL3EQAm_fmOb1fEB4RPsDq4Be4nT7lB8EyN-Khw50pKABjDapJE9fn8rLum3xOvn8C4k1mpU8BKJEteQfChNcf7S1gRth5ff-RiJNJxhKE3rngOcXbv19QhXGmTmUz8syhx060Tq7rgu7KGJzEIagxQhAupMukHw7SSmaGtyD187PnpqzGV4I58EtbbYLpzQ9N1KAwcXeQ"
       },
       {
         "title": "Seadas",
         "where": "Across the island",
         "body": "A round pastry filled with sheep’s cheese, fried until golden and drizzled with honey. Sweet, salty, and served hot.",
         "note": "Sweet, salty, served hot",
-        "image": {
-          "q": "Seadas Sardinia food || Seadas food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuC66Qz_O1vxGNBZSyhKBG7E11V9J_ynfSiGuUL5GLDjS-pp7xx0eqw_gmnVIRMXOEiaJ2wLNz9eDe-dRv1HJffGFDGWKIH-9TlU0UBDIw940qDCkUbeXjZjdsjLtKuD3B7Gg0GWHngYfm0d0u9xYun-FrttGnejAkzJLWV7HyuC_ZCA_QHWryHtkt4PkqDJFzQjJqtsSDMMGOLlU2E8sTTNiKXafW91SYmjA9P72M1cR5KetKzCi5cq"
       }
     ],
     "eyebrow": "Island canon"
@@ -234,26 +202,17 @@ const sardegna: RegionStory = {
     ],
     "photos": [
       {
-        "src": {
-          "q": "Cabras lagoon Sardinia || Cabras Sardinia",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBxg7ZeusKi1XJ_YIbUpf7bMvUDHPzrJBa0kGGcUmiEWQXn5vyYqb10N5ExBRlYr2yJ0WfsFPe7URckqO8PDwMH0UDSwVm6XQCF-NoeAM33s50RkHXH5cUKTQIls7nyQjkd8xFb7E1CVsnD4Hx0oK8so72g2UalmTdOWlUWCd2mUYhcv42IUIFm1cqLKE69xjZ96SmNApFtb-zmua5MK2Erwp7yfRDiKgHOwIebR0rdf84T1bYeSwKl",
         "alt": "Mar’e Pontis lagoon · Cabras",
         "caption": "Mar’e Pontis lagoon · Cabras"
       },
       {
-        "src": {
-          "q": "fishermen Cabras Sardinia || fishermen Sardinia || Cabras Sardinia",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBxg7ZeusKi1XJ_YIbUpf7bMvUDHPzrJBa0kGGcUmiEWQXn5vyYqb10N5ExBRlYr2yJ0WfsFPe7URckqO8PDwMH0UDSwVm6XQCF-NoeAM33s50RkHXH5cUKTQIls7nyQjkd8xFb7E1CVsnD4Hx0oK8so72g2UalmTdOWlUWCd2mUYhcv42IUIFm1cqLKE69xjZ96SmNApFtb-zmua5MK2Erwp7yfRDiKgHOwIebR0rdf84T1bYeSwKl",
         "alt": "Pontis fishermen · Sinis",
         "caption": "Pontis fishermen · Sinis"
       },
       {
-        "src": {
-          "q": "Pontis bottarga Cabras Sardinia || Pontis bottarga Sardinia || Cabras Sardinia",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBxg7ZeusKi1XJ_YIbUpf7bMvUDHPzrJBa0kGGcUmiEWQXn5vyYqb10N5ExBRlYr2yJ0WfsFPe7URckqO8PDwMH0UDSwVm6XQCF-NoeAM33s50RkHXH5cUKTQIls7nyQjkd8xFb7E1CVsnD4Hx0oK8so72g2UalmTdOWlUWCd2mUYhcv42IUIFm1cqLKE69xjZ96SmNApFtb-zmua5MK2Erwp7yfRDiKgHOwIebR0rdf84T1bYeSwKl",
         "alt": "Lagoon bottarga · amber slabs",
         "caption": "Lagoon bottarga · amber slabs"
       }
@@ -281,10 +240,7 @@ const sardegna: RegionStory = {
         "tag": "Slow Food",
         "tagTone": "gold",
         "origin": "Cabras lagoon",
-        "img": {
-          "q": "Pontis bottarga Sardinia || Pontis bottarga",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBxg7ZeusKi1XJ_YIbUpf7bMvUDHPzrJBa0kGGcUmiEWQXn5vyYqb10N5ExBRlYr2yJ0WfsFPe7URckqO8PDwMH0UDSwVm6XQCF-NoeAM33s50RkHXH5cUKTQIls7nyQjkd8xFb7E1CVsnD4Hx0oK8so72g2UalmTdOWlUWCd2mUYhcv42IUIFm1cqLKE69xjZ96SmNApFtb-zmua5MK2Erwp7yfRDiKgHOwIebR0rdf84T1bYeSwKl"
       },
       {
         "id": "sar-pontis-grattugiata",
@@ -293,10 +249,7 @@ const sardegna: RegionStory = {
         "tag": "Lagoon mullet",
         "tagTone": "gold",
         "origin": "Cabras lagoon",
-        "img": {
-          "q": "Pontis bottarga Sardinia || Pontis bottarga",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBxg7ZeusKi1XJ_YIbUpf7bMvUDHPzrJBa0kGGcUmiEWQXn5vyYqb10N5ExBRlYr2yJ0WfsFPe7URckqO8PDwMH0UDSwVm6XQCF-NoeAM33s50RkHXH5cUKTQIls7nyQjkd8xFb7E1CVsnD4Hx0oK8so72g2UalmTdOWlUWCd2mUYhcv42IUIFm1cqLKE69xjZ96SmNApFtb-zmua5MK2Erwp7yfRDiKgHOwIebR0rdf84T1bYeSwKl"
       }
     ]
   },
@@ -347,10 +300,7 @@ const sardegna: RegionStory = {
           "tag": "Durum semolina",
           "tagTone": "neutral",
           "origin": "Campidano plain",
-          "img": {
-            "q": "Malloreddus Sardinia || Malloreddus || Malloreddus food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
         },
         {
           "id": "sar-zafferano",
@@ -359,10 +309,7 @@ const sardegna: RegionStory = {
           "tag": "DOP",
           "tagTone": "green",
           "origin": "Southern plains",
-          "img": {
-            "q": "Zafferano di Sardegna Sardinia || Zafferano di Sardegna || Saffron food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo"
         }
       ],
       "schema": {
@@ -383,10 +330,7 @@ const sardegna: RegionStory = {
         ]
       },
       "imageCaption": "Campidano classic · about 55 minutes",
-      "image": {
-        "q": "Malloreddus alla campidanese Sardinia food || Malloreddus alla campidanese food",
-        "orientation": "landscape"
-      }
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
     },
     "shortcut": {
       "title": "Ten minutes in Cabras",
@@ -399,10 +343,7 @@ const sardegna: RegionStory = {
           "tag": "Lagoon mullet",
           "tagTone": "gold",
           "origin": "Cabras lagoon",
-          "img": {
-            "q": "Pontis bottarga Sardinia || Pontis bottarga",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBxg7ZeusKi1XJ_YIbUpf7bMvUDHPzrJBa0kGGcUmiEWQXn5vyYqb10N5ExBRlYr2yJ0WfsFPe7URckqO8PDwMH0UDSwVm6XQCF-NoeAM33s50RkHXH5cUKTQIls7nyQjkd8xFb7E1CVsnD4Hx0oK8so72g2UalmTdOWlUWCd2mUYhcv42IUIFm1cqLKE69xjZ96SmNApFtb-zmua5MK2Erwp7yfRDiKgHOwIebR0rdf84T1bYeSwKl"
         },
         {
           "id": "sar-bottarga",
@@ -411,10 +352,7 @@ const sardegna: RegionStory = {
           "tag": "Cured roe",
           "tagTone": "gold",
           "origin": "Cabras",
-          "img": {
-            "q": "Bottarga di muggine Sardinia || Bottarga di muggine || Bottarga food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBxg7ZeusKi1XJ_YIbUpf7bMvUDHPzrJBa0kGGcUmiEWQXn5vyYqb10N5ExBRlYr2yJ0WfsFPe7URckqO8PDwMH0UDSwVm6XQCF-NoeAM33s50RkHXH5cUKTQIls7nyQjkd8xFb7E1CVsnD4Hx0oK8so72g2UalmTdOWlUWCd2mUYhcv42IUIFm1cqLKE69xjZ96SmNApFtb-zmua5MK2Erwp7yfRDiKgHOwIebR0rdf84T1bYeSwKl"
         }
       ],
       "eyebrow": "Ten minutes in Cabras",
@@ -435,10 +373,7 @@ const sardegna: RegionStory = {
         "tag": "DOP",
         "tagTone": "green",
         "origin": "Across the island",
-        "img": {
-          "q": "Fiore Sardo Sardinia || Fiore Sardo || Fiore Sardo food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
       },
       {
         "id": "sar-pecorino-sardo",
@@ -447,10 +382,7 @@ const sardegna: RegionStory = {
         "tag": "DOP",
         "tagTone": "green",
         "origin": "Sardinia",
-        "img": {
-          "q": "Pecorino Sardo Sardinia || Pecorino Sardo",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAl_5nHHJIzoS-WsCluRQYcsvFaCEJgLpMKhF74uchwSFZaiasRvF2QgOGb8yQIioI-Tl012aRJqnvzUfYVXVIN42AtBrqz67jqjAH3CbxmYm6uEHRkYdah0q_WAQSgW93YHOemOcCRZN921JwihtDRxkKHN7PzTEk88hPG_P2AV7Y_dSVKxmfxeIubOnR3JAqjFS_dXGAzG2xxfQE3VDOGzRjZcEhJ1T-LSazL8n3fCCvhoP3Kr76d"
       },
       {
         "id": "sar-carasau",
@@ -459,10 +391,7 @@ const sardegna: RegionStory = {
         "tag": "Twice baked",
         "tagTone": "neutral",
         "origin": "Island interior",
-        "img": {
-          "q": "Pane carasau Sardinia || Pane carasau || Pane carasau food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
       },
       {
         "id": "sar-malloreddus",
@@ -471,10 +400,7 @@ const sardegna: RegionStory = {
         "tag": "Durum semolina",
         "tagTone": "neutral",
         "origin": "Campidano plain",
-        "img": {
-          "q": "Malloreddus Sardinia || Malloreddus || Malloreddus food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
       },
       {
         "id": "sar-fregola",
@@ -483,10 +409,7 @@ const sardegna: RegionStory = {
         "tag": "Toasted",
         "tagTone": "neutral",
         "origin": "Across the island",
-        "img": {
-          "q": "Fregola Sardinia || Fregola || Fregola food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
       },
       {
         "id": "sar-zafferano",
@@ -495,10 +418,7 @@ const sardegna: RegionStory = {
         "tag": "DOP",
         "tagTone": "green",
         "origin": "Southern plains",
-        "img": {
-          "q": "Zafferano di Sardegna Sardinia || Zafferano di Sardegna || Saffron food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo"
       },
       {
         "id": "sar-pontis-bottarga",
@@ -507,10 +427,7 @@ const sardegna: RegionStory = {
         "tag": "Slow Food",
         "tagTone": "gold",
         "origin": "Cabras lagoon",
-        "img": {
-          "q": "Pontis bottarga Sardinia || Pontis bottarga",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBxg7ZeusKi1XJ_YIbUpf7bMvUDHPzrJBa0kGGcUmiEWQXn5vyYqb10N5ExBRlYr2yJ0WfsFPe7URckqO8PDwMH0UDSwVm6XQCF-NoeAM33s50RkHXH5cUKTQIls7nyQjkd8xFb7E1CVsnD4Hx0oK8so72g2UalmTdOWlUWCd2mUYhcv42IUIFm1cqLKE69xjZ96SmNApFtb-zmua5MK2Erwp7yfRDiKgHOwIebR0rdf84T1bYeSwKl"
       },
       {
         "id": "sar-miele",
@@ -519,10 +436,7 @@ const sardegna: RegionStory = {
         "tag": "Pantry staple",
         "tagTone": "neutral",
         "origin": "Sardinia",
-        "img": {
-          "q": "Sardinian honey Sardinia || Sardinian honey",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuC66Qz_O1vxGNBZSyhKBG7E11V9J_ynfSiGuUL5GLDjS-pp7xx0eqw_gmnVIRMXOEiaJ2wLNz9eDe-dRv1HJffGFDGWKIH-9TlU0UBDIw940qDCkUbeXjZjdsjLtKuD3B7Gg0GWHngYfm0d0u9xYun-FrttGnejAkzJLWV7HyuC_ZCA_QHWryHtkt4PkqDJFzQjJqtsSDMMGOLlU2E8sTTNiKXafW91SYmjA9P72M1cR5KetKzCi5cq"
       }
     ],
     "eyebrow": "Limited curation · Parcel N° 11"

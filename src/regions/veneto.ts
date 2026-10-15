@@ -1,5 +1,6 @@
 import type { RegionStory } from './types';
 
+// Photos are stand-ins from elsewhere on the site, to be replaced.
 // Content from the Veneto story artifact. Product ids are the artifact's product slots:
 // set a product's Page address in Admin → Products to the same id to connect it.
 const veneto: RegionStory = {
@@ -43,10 +44,7 @@ const veneto: RegionStory = {
     },
     "imageTag": "Venetian lagoon · Adriatic",
     "heritageNote": "all’onda",
-    "image": {
-      "q": "Venetian lagoon Veneto Italy || Veneto Italy landscape",
-      "orientation": "landscape"
-    },
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuASAzDXfTpj8Z-3Pie7yJS1yRvHePfxVaL802wXx0UgBJrd0VJUWltwmw2j6xJwO5TqmEgNnDPB8dZIYjfJNSOsR3tT9ElTZZOkhQmzIXZLW_QqBIicMQUwmdW0b3KTnxviycOTX4jJn2Fhsq5ody5WpPvjnV6fFP9YFJtys1IuENR446FiEccDsrKaKVLaKrrK8Bs2XjzLW7Zyip0YT_2owLFIPg4Q_UMpF8sW7I0epMJ2jcGXidPw",
     "imageAlt": "Where the plain of rivers meets the Adriatic, home of the Republic’s trading ships."
   },
   "intro": [
@@ -69,10 +67,7 @@ const veneto: RegionStory = {
             "tag": "Winter only",
             "tagTone": "green",
             "origin": "Treviso",
-            "img": {
-              "q": "Radicchio Rosso di Treviso Tardivo Veneto Italy || Radicchio Rosso di Treviso Tardivo || Radicchio di Treviso food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
           }
         ],
         "shelfLabel": "In season"
@@ -90,10 +85,7 @@ const veneto: RegionStory = {
             "tag": "IGP",
             "tagTone": "green",
             "origin": "Veronese plain",
-            "img": {
-              "q": "Vialone Nano Veronese rice Veneto Italy || Vialone Nano Veronese rice || Vialone Nano rice food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMFgCdqzLvdJxYGaDAFlEDMYMT857D05ZZADK6F6LJbmst8APC4Nl4JYWyknq_CXy-wFoodx0MUTgMC0CntsIT7QemPR1DFgTLpY8U5WaTySi2AMxuyA04SwrYM2r3qDPPxCLOcyksMQ7bLZwM15ouLGkJeE9C1OWinZ6B7mwQYAmW_rezg2MqBTu7ntbCcLZlJzaaNWjiRvS33b7WJEC_xWcEO70o30NIuOjdMNQabBFxLaWU-Jhc"
           }
         ]
       },
@@ -110,10 +102,7 @@ const veneto: RegionStory = {
             "tag": "Aged 90+ days",
             "tagTone": "gold",
             "origin": "Asiago plateau",
-            "img": {
-              "q": "Asiago Stagionato Veneto Italy || Asiago Stagionato || Asiago food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
           },
           {
             "id": "ven-asiago-fresco",
@@ -122,10 +111,7 @@ const veneto: RegionStory = {
             "tag": "DOP",
             "tagTone": "green",
             "origin": "Asiago plateau",
-            "img": {
-              "q": "Asiago Fresco Veneto Italy || Asiago Fresco || Asiago food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAl_5nHHJIzoS-WsCluRQYcsvFaCEJgLpMKhF74uchwSFZaiasRvF2QgOGb8yQIioI-Tl012aRJqnvzUfYVXVIN42AtBrqz67jqjAH3CbxmYm6uEHRkYdah0q_WAQSgW93YHOemOcCRZN921JwihtDRxkKHN7PzTEk88hPG_P2AV7Y_dSVKxmfxeIubOnR3JAqjFS_dXGAzG2xxfQE3VDOGzRjZcEhJ1T-LSazL8n3fCCvhoP3Kr76d"
           }
         ]
       },
@@ -142,10 +128,7 @@ const veneto: RegionStory = {
             "tag": "Air-dried",
             "tagTone": "neutral",
             "origin": "Norway to Venice",
-            "img": {
-              "q": "Stockfish Veneto Italy || Stockfish || Stockfish food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBxg7ZeusKi1XJ_YIbUpf7bMvUDHPzrJBa0kGGcUmiEWQXn5vyYqb10N5ExBRlYr2yJ0WfsFPe7URckqO8PDwMH0UDSwVm6XQCF-NoeAM33s50RkHXH5cUKTQIls7nyQjkd8xFb7E1CVsnD4Hx0oK8so72g2UalmTdOWlUWCd2mUYhcv42IUIFm1cqLKE69xjZ96SmNApFtb-zmua5MK2Erwp7yfRDiKgHOwIebR0rdf84T1bYeSwKl"
           }
         ]
       },
@@ -162,10 +145,7 @@ const veneto: RegionStory = {
             "tag": "White corn",
             "tagTone": "neutral",
             "origin": "Venetian plain",
-            "img": {
-              "q": "White polenta flour Veneto Italy || White polenta flour || Polenta food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
           }
         ]
       },
@@ -182,10 +162,7 @@ const veneto: RegionStory = {
             "tag": "DOP",
             "tagTone": "green",
             "origin": "Vicenza",
-            "img": {
-              "q": "Sopressa Vicentina Veneto Italy || Sopressa Vicentina || Sopressa food",
-              "orientation": "squarish"
-            }
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo"
           }
         ]
       }
@@ -200,40 +177,28 @@ const veneto: RegionStory = {
         "where": "Treviso",
         "body": "Creamy Vialone Nano risotto with wilted radicchio, its bitterness softened by butter and cheese. A winter dish, made when the tardivo is at its best.",
         "tip": "[Cook it below](#risotto)",
-        "image": {
-          "q": "Risotto al radicchio Veneto Italy food || Risotto al radicchio food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMFgCdqzLvdJxYGaDAFlEDMYMT857D05ZZADK6F6LJbmst8APC4Nl4JYWyknq_CXy-wFoodx0MUTgMC0CntsIT7QemPR1DFgTLpY8U5WaTySi2AMxuyA04SwrYM2r3qDPPxCLOcyksMQ7bLZwM15ouLGkJeE9C1OWinZ6B7mwQYAmW_rezg2MqBTu7ntbCcLZlJzaaNWjiRvS33b7WJEC_xWcEO70o30NIuOjdMNQabBFxLaWU-Jhc"
       },
       {
         "title": "Baccalà",
         "where": "Venice and Vicenza",
         "body": "In Venice’s wine bars, stockfish is whipped with olive oil into baccalà mantecato and spread on bread or grilled polenta. In Vicenza it is stewed slowly with milk, onions, and anchovies, and served over polenta.",
         "tip": "Both start with [stockfish](product:ven-stoccafisso) soaked for several days.",
-        "image": {
-          "q": "Baccalà Veneto Italy food || Baccalà food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBxg7ZeusKi1XJ_YIbUpf7bMvUDHPzrJBa0kGGcUmiEWQXn5vyYqb10N5ExBRlYr2yJ0WfsFPe7URckqO8PDwMH0UDSwVm6XQCF-NoeAM33s50RkHXH5cUKTQIls7nyQjkd8xFb7E1CVsnD4Hx0oK8so72g2UalmTdOWlUWCd2mUYhcv42IUIFm1cqLKE69xjZ96SmNApFtb-zmua5MK2Erwp7yfRDiKgHOwIebR0rdf84T1bYeSwKl"
       },
       {
         "title": "Sarde in saor",
         "where": "Venice",
         "body": "Fried sardines layered with onions cooked in vinegar, a way to keep fish for days before refrigeration. Raisins and pine nuts, arrivals from the spice trade, soften the sourness.",
         "note": "Kept for days in vinegar",
-        "image": {
-          "q": "Sarde in saor Veneto Italy food || Sarde in saor food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBxg7ZeusKi1XJ_YIbUpf7bMvUDHPzrJBa0kGGcUmiEWQXn5vyYqb10N5ExBRlYr2yJ0WfsFPe7URckqO8PDwMH0UDSwVm6XQCF-NoeAM33s50RkHXH5cUKTQIls7nyQjkd8xFb7E1CVsnD4Hx0oK8so72g2UalmTdOWlUWCd2mUYhcv42IUIFm1cqLKE69xjZ96SmNApFtb-zmua5MK2Erwp7yfRDiKgHOwIebR0rdf84T1bYeSwKl"
       },
       {
         "title": "Risi e bisi",
         "where": "Venice",
         "body": "Rice and young peas cooked to a consistency between soup and risotto. It was traditionally presented to the Doge on April 25, the feast of St. Mark, with the first peas of spring.",
         "tip": "Make it with [Vialone Nano](product:ven-vialone) and the freshest peas you can find.",
-        "image": {
-          "q": "Risi e bisi Veneto Italy food || Risi e bisi food",
-          "orientation": "landscape"
-        }
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBuOw47CyMWHDfy1LAq7y8_6mlfUhX3sEaCTYRv4qpRLnga9lWW5hwNQ9w_AIrmxk8_0R1H04C8RAhLH9XB9fzSkV-dgKgfS7nbEGJGJK3EuhcwEfgN3tsOD2UPXJNmrmMv9_Wlqx5Tnx0Dg7F_cEC1I3aWKH9xxJQ_SoJsdPaPxfUek-WKbQYSjxR-TxPYHcipLGuNzwiE99IH2fubNMCWvOQYLzXSDW8GSn74soI-lVOr7-Azy12C"
       }
     ],
     "eyebrow": "Culinary canon"
@@ -247,26 +212,17 @@ const veneto: RegionStory = {
     ],
     "photos": [
       {
-        "src": {
-          "q": "Pila Vecia mill Isola della Scala Veneto Italy || Pila Vecia mill Veneto Italy || Isola della Scala Veneto Italy",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMFgCdqzLvdJxYGaDAFlEDMYMT857D05ZZADK6F6LJbmst8APC4Nl4JYWyknq_CXy-wFoodx0MUTgMC0CntsIT7QemPR1DFgTLpY8U5WaTySi2AMxuyA04SwrYM2r3qDPPxCLOcyksMQ7bLZwM15ouLGkJeE9C1OWinZ6B7mwQYAmW_rezg2MqBTu7ntbCcLZlJzaaNWjiRvS33b7WJEC_xWcEO70o30NIuOjdMNQabBFxLaWU-Jhc",
         "alt": "Pila Vecia · Isola della Scala",
         "caption": "Pila Vecia · Isola della Scala"
       },
       {
-        "src": {
-          "q": "rice fields Isola della Scala Veneto Italy || rice fields Veneto Italy || Isola della Scala Veneto Italy",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBuOw47CyMWHDfy1LAq7y8_6mlfUhX3sEaCTYRv4qpRLnga9lWW5hwNQ9w_AIrmxk8_0R1H04C8RAhLH9XB9fzSkV-dgKgfS7nbEGJGJK3EuhcwEfgN3tsOD2UPXJNmrmMv9_Wlqx5Tnx0Dg7F_cEC1I3aWKH9xxJQ_SoJsdPaPxfUek-WKbQYSjxR-TxPYHcipLGuNzwiE99IH2fubNMCWvOQYLzXSDW8GSn74soI-lVOr7-Azy12C",
         "alt": "Rice paddies south of Verona",
         "caption": "Rice paddies south of Verona"
       },
       {
-        "src": {
-          "q": "Riso Ferron Vialone Nano Isola della Scala Veneto Italy || Riso Ferron Vialone Nano Veneto Italy || Isola della Scala Veneto Italy",
-          "orientation": "landscape"
-        },
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuA4EH7PBxM5mkGtU_hUOJIWGkBVxZJn4EFpJjF38EOKBU7wo_ddyMCFm271EacOGO5w4Xv6DGSB-7_saGCFJU5iM16suJDjSS0a_VzFQbhUmwPL8egJ5XILWwdPmz-_POZdud-1IbUhFmWHh2snwuV7-TAFb5uKZfOhuCAAC57-6VjgZFhqO7vaYO8y1vEORke8lGfQXTjEtIhhnE1cknP388wuircWvsS4xPwHGOMZ7oIWF5WLtCf7",
         "alt": "Ferron Vialone Nano",
         "caption": "Ferron Vialone Nano"
       }
@@ -294,10 +250,7 @@ const veneto: RegionStory = {
         "tag": "Pestle-milled",
         "tagTone": "neutral",
         "origin": "Isola della Scala",
-        "img": {
-          "q": "Riso Ferron Vialone Nano Veneto Italy || Riso Ferron Vialone Nano",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBuOw47CyMWHDfy1LAq7y8_6mlfUhX3sEaCTYRv4qpRLnga9lWW5hwNQ9w_AIrmxk8_0R1H04C8RAhLH9XB9fzSkV-dgKgfS7nbEGJGJK3EuhcwEfgN3tsOD2UPXJNmrmMv9_Wlqx5Tnx0Dg7F_cEC1I3aWKH9xxJQ_SoJsdPaPxfUek-WKbQYSjxR-TxPYHcipLGuNzwiE99IH2fubNMCWvOQYLzXSDW8GSn74soI-lVOr7-Azy12C"
       },
       {
         "id": "ven-pila-vecia",
@@ -306,10 +259,7 @@ const veneto: RegionStory = {
         "tag": "Higher-end",
         "tagTone": "gold",
         "origin": "Isola della Scala",
-        "img": {
-          "q": "Pila Vecia Vialone Nano Veneto Italy || Pila Vecia Vialone Nano",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuA4EH7PBxM5mkGtU_hUOJIWGkBVxZJn4EFpJjF38EOKBU7wo_ddyMCFm271EacOGO5w4Xv6DGSB-7_saGCFJU5iM16suJDjSS0a_VzFQbhUmwPL8egJ5XILWwdPmz-_POZdud-1IbUhFmWHh2snwuV7-TAFb5uKZfOhuCAAC57-6VjgZFhqO7vaYO8y1vEORke8lGfQXTjEtIhhnE1cknP388wuircWvsS4xPwHGOMZ7oIWF5WLtCf7"
       }
     ]
   },
@@ -363,10 +313,7 @@ const veneto: RegionStory = {
           "tag": "IGP",
           "tagTone": "green",
           "origin": "Veronese plain",
-          "img": {
-            "q": "Vialone Nano Veronese rice Veneto Italy || Vialone Nano Veronese rice || Vialone Nano rice food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMFgCdqzLvdJxYGaDAFlEDMYMT857D05ZZADK6F6LJbmst8APC4Nl4JYWyknq_CXy-wFoodx0MUTgMC0CntsIT7QemPR1DFgTLpY8U5WaTySi2AMxuyA04SwrYM2r3qDPPxCLOcyksMQ7bLZwM15ouLGkJeE9C1OWinZ6B7mwQYAmW_rezg2MqBTu7ntbCcLZlJzaaNWjiRvS33b7WJEC_xWcEO70o30NIuOjdMNQabBFxLaWU-Jhc"
         },
         {
           "id": "ven-asiago-stagionato",
@@ -375,10 +322,7 @@ const veneto: RegionStory = {
           "tag": "Aged 90+ days",
           "tagTone": "gold",
           "origin": "Asiago plateau",
-          "img": {
-            "q": "Asiago Stagionato Veneto Italy || Asiago Stagionato || Asiago food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
         }
       ],
       "schema": {
@@ -398,10 +342,7 @@ const veneto: RegionStory = {
         ]
       },
       "imageCaption": "Treviso classic · about 35 minutes",
-      "image": {
-        "q": "Risotto al radicchio di Treviso Veneto Italy food || Risotto al radicchio di Treviso food",
-        "orientation": "landscape"
-      }
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMFgCdqzLvdJxYGaDAFlEDMYMT857D05ZZADK6F6LJbmst8APC4Nl4JYWyknq_CXy-wFoodx0MUTgMC0CntsIT7QemPR1DFgTLpY8U5WaTySi2AMxuyA04SwrYM2r3qDPPxCLOcyksMQ7bLZwM15ouLGkJeE9C1OWinZ6B7mwQYAmW_rezg2MqBTu7ntbCcLZlJzaaNWjiRvS33b7WJEC_xWcEO70o30NIuOjdMNQabBFxLaWU-Jhc"
     },
     "shortcut": {
       "title": "Ten minutes in Treviso",
@@ -414,10 +355,7 @@ const veneto: RegionStory = {
           "tag": "Winter only",
           "tagTone": "green",
           "origin": "Treviso",
-          "img": {
-            "q": "Radicchio Rosso di Treviso Tardivo Veneto Italy || Radicchio Rosso di Treviso Tardivo || Radicchio di Treviso food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
         },
         {
           "id": "ven-sopressa",
@@ -426,10 +364,7 @@ const veneto: RegionStory = {
           "tag": "DOP",
           "tagTone": "green",
           "origin": "Vicenza",
-          "img": {
-            "q": "Sopressa Vicentina Veneto Italy || Sopressa Vicentina || Sopressa food",
-            "orientation": "squarish"
-          }
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo"
         }
       ],
       "eyebrow": "Winter grill shortcut",
@@ -450,10 +385,7 @@ const veneto: RegionStory = {
         "tag": "IGP",
         "tagTone": "green",
         "origin": "Veronese plain",
-        "img": {
-          "q": "Vialone Nano Veronese rice Veneto Italy || Vialone Nano Veronese rice || Vialone Nano rice food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCMFgCdqzLvdJxYGaDAFlEDMYMT857D05ZZADK6F6LJbmst8APC4Nl4JYWyknq_CXy-wFoodx0MUTgMC0CntsIT7QemPR1DFgTLpY8U5WaTySi2AMxuyA04SwrYM2r3qDPPxCLOcyksMQ7bLZwM15ouLGkJeE9C1OWinZ6B7mwQYAmW_rezg2MqBTu7ntbCcLZlJzaaNWjiRvS33b7WJEC_xWcEO70o30NIuOjdMNQabBFxLaWU-Jhc"
       },
       {
         "id": "ven-pila-vecia",
@@ -462,10 +394,7 @@ const veneto: RegionStory = {
         "tag": "Higher-end",
         "tagTone": "gold",
         "origin": "Isola della Scala",
-        "img": {
-          "q": "Pila Vecia Vialone Nano Veneto Italy || Pila Vecia Vialone Nano",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuA4EH7PBxM5mkGtU_hUOJIWGkBVxZJn4EFpJjF38EOKBU7wo_ddyMCFm271EacOGO5w4Xv6DGSB-7_saGCFJU5iM16suJDjSS0a_VzFQbhUmwPL8egJ5XILWwdPmz-_POZdud-1IbUhFmWHh2snwuV7-TAFb5uKZfOhuCAAC57-6VjgZFhqO7vaYO8y1vEORke8lGfQXTjEtIhhnE1cknP388wuircWvsS4xPwHGOMZ7oIWF5WLtCf7"
       },
       {
         "id": "ven-asiago-stagionato",
@@ -474,10 +403,7 @@ const veneto: RegionStory = {
         "tag": "Aged 90+ days",
         "tagTone": "gold",
         "origin": "Asiago plateau",
-        "img": {
-          "q": "Asiago Stagionato Veneto Italy || Asiago Stagionato || Asiago food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
       },
       {
         "id": "ven-asiago-fresco",
@@ -486,10 +412,7 @@ const veneto: RegionStory = {
         "tag": "DOP",
         "tagTone": "green",
         "origin": "Asiago plateau",
-        "img": {
-          "q": "Asiago Fresco Veneto Italy || Asiago Fresco || Asiago food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAl_5nHHJIzoS-WsCluRQYcsvFaCEJgLpMKhF74uchwSFZaiasRvF2QgOGb8yQIioI-Tl012aRJqnvzUfYVXVIN42AtBrqz67jqjAH3CbxmYm6uEHRkYdah0q_WAQSgW93YHOemOcCRZN921JwihtDRxkKHN7PzTEk88hPG_P2AV7Y_dSVKxmfxeIubOnR3JAqjFS_dXGAzG2xxfQE3VDOGzRjZcEhJ1T-LSazL8n3fCCvhoP3Kr76d"
       },
       {
         "id": "ven-sopressa",
@@ -498,10 +421,7 @@ const veneto: RegionStory = {
         "tag": "DOP",
         "tagTone": "green",
         "origin": "Vicenza",
-        "img": {
-          "q": "Sopressa Vicentina Veneto Italy || Sopressa Vicentina || Sopressa food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo"
       },
       {
         "id": "ven-polenta-bianca",
@@ -510,10 +430,7 @@ const veneto: RegionStory = {
         "tag": "White corn",
         "tagTone": "neutral",
         "origin": "Venetian plain",
-        "img": {
-          "q": "White polenta flour Veneto Italy || White polenta flour || Polenta food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
       },
       {
         "id": "ven-stoccafisso",
@@ -522,10 +439,7 @@ const veneto: RegionStory = {
         "tag": "Air-dried",
         "tagTone": "neutral",
         "origin": "Norway to Venice",
-        "img": {
-          "q": "Stockfish Veneto Italy || Stockfish || Stockfish food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBxg7ZeusKi1XJ_YIbUpf7bMvUDHPzrJBa0kGGcUmiEWQXn5vyYqb10N5ExBRlYr2yJ0WfsFPe7URckqO8PDwMH0UDSwVm6XQCF-NoeAM33s50RkHXH5cUKTQIls7nyQjkd8xFb7E1CVsnD4Hx0oK8so72g2UalmTdOWlUWCd2mUYhcv42IUIFm1cqLKE69xjZ96SmNApFtb-zmua5MK2Erwp7yfRDiKgHOwIebR0rdf84T1bYeSwKl"
       },
       {
         "id": "ven-radicchio-tardivo",
@@ -534,10 +448,7 @@ const veneto: RegionStory = {
         "tag": "Winter only",
         "tagTone": "green",
         "origin": "Treviso",
-        "img": {
-          "q": "Radicchio Rosso di Treviso Tardivo Veneto Italy || Radicchio Rosso di Treviso Tardivo || Radicchio di Treviso food",
-          "orientation": "squarish"
-        }
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
       }
     ],
     "eyebrow": "Limited curation · Parcel N° 09"
