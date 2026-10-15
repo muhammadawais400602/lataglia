@@ -12,6 +12,7 @@ import {
   stories,
 } from './data';
 import { featuredRegions, regionHref } from './regions';
+import { useRegionImage } from './regions/regionPhotos';
 
 export default function App() {
   return (
@@ -239,6 +240,7 @@ function GiftsBand() {
 }
 
 function RegionsGrid() {
+  const regionImg = useRegionImage();
   return (
     <section id="regions" className="max-w-[1280px] mx-auto px-6 lg:px-12 mb-24">
       <div className="text-center max-w-2xl mx-auto mb-12">
@@ -252,7 +254,7 @@ function RegionsGrid() {
             <Tag key={r.name} href={r.comingSoon ? undefined : regionHref(r.name) ?? '/shop'} className="group relative rounded overflow-hidden aspect-[4/5] bg-surface-container shadow hover:shadow-xl transition-all block">
               <div
                 className={`w-full h-full bg-cover bg-center transition-transform duration-500 ${r.comingSoon ? 'filter grayscale opacity-70' : 'group-hover:scale-105'}`}
-                style={{ backgroundImage: `url('${r.img}')` }}
+                style={{ backgroundImage: `url('${regionImg(r)}')` }}
               />
               <div className={`absolute inset-0 bg-gradient-to-t from-black/${r.comingSoon ? '90' : '85'} via-black/${r.comingSoon ? '50' : '30'} to-transparent flex flex-col justify-end p-6 text-white`}>
                 {r.comingSoon && (
