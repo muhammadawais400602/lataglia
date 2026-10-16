@@ -292,7 +292,7 @@ export default function Story() {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
             <div className="flex flex-col gap-2">
               <span className={`${label} text-wine-dark`}>The everyday essentials</span>
-              <h2 className="font-headline-lg text-[34px] leading-[40px] lg:text-[46px] lg:leading-[54px] text-primary">MJ &amp; Jennifer’s kitchen staples</h2>
+              <h2 className="font-headline-lg text-[34px] leading-[40px] lg:text-[46px] lg:leading-[54px] text-primary">La Taglia kitchen staples</h2>
               <p className="text-ink-secondary">The four things we never let run out at home.</p>
             </div>
             <a href="/shop" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-secondary-container hover:bg-gold-hover text-button-ink font-bold text-sm uppercase tracking-wider transition-colors shadow-sm self-start">
