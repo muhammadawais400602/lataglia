@@ -60,13 +60,8 @@ export default function Story() {
     };
   }, []);
 
-  const years = new Date().getFullYear() - FOUNDED;
-  const stats = [
-    { value: String(years), label: 'Years of discovery', note: `Searching Italy since ${FOUNDED}` },
-    { value: String(regionMeta.length), label: 'Regions explored', note: 'From the Alps of Alto Adige to Sicily' },
-    { value: String(products.length), label: 'Provisions in the shop', note: 'Each one from a named producer' },
-    { value: '100%', label: 'Producer-named labels', note: 'No private labels, ever' },
-  ];
+  // Set by the owner; not derived from FOUNDED.
+  const years = 25;
 
   async function subscribe(e: FormEvent) {
     e.preventDefault();
@@ -139,15 +134,6 @@ export default function Story() {
             </figcaption>
           </figure>
 
-          <dl className="grid grid-cols-2 lg:grid-cols-4 gap-6 bg-surface-parchment p-6 sm:p-8 rounded-xl shadow-sm">
-            {stats.map((s, i) => (
-              <div key={s.label} className={`flex flex-col gap-1 pr-4 ${i < stats.length - 1 ? 'lg:border-r border-border-line/60' : ''}`}>
-                <dd className="font-display-hero text-[40px] leading-[46px] text-primary">{s.value}</dd>
-                <dt className="text-lg font-semibold text-on-surface">{s.label}</dt>
-                <span className="text-xs text-ink-tertiary">{s.note}</span>
-              </div>
-            ))}
-          </dl>
         </div>
       </section>
 
