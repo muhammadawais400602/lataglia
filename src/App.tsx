@@ -114,7 +114,7 @@ function PistachioBand() {
             On the western slopes of Mount Etna, in black volcanic soil, grow the pistachios Sicilians call <span className="italic">oro verde</span>. Smaller, greener and harvested in limited quantities. We built an entire edit around them.
           </p>
           <a className="inline-block self-start bg-[#FEB62C] hover:bg-[#D8950C] text-[#241800] font-button text-sm sm:text-base font-bold tracking-wider py-3.5 px-8 rounded-full shadow-md uppercase transition-transform hover:-translate-y-0.5" href="#shop">
-            SHOP THE PISTACHIO EDIT
+            SHOP THE WORLD’S GREATEST PISTACHIO
           </a>
         </div>
         <div className="lg:col-span-5 relative flex items-center justify-center p-8 bg-black/10 h-full min-h-[340px]">
