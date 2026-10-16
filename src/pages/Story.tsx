@@ -230,7 +230,6 @@ export default function Story() {
               <li key={t.year}>
                 <a href={t.href} className="h-full flex flex-col gap-4 bg-surface-container-lowest p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center justify-between">
-                    <span className="font-display-hero text-[40px] leading-[46px] text-primary">{t.year}</span>
                     <span className="px-2 py-0.5 rounded bg-surface-parchment text-xs text-badge-ink font-bold">{t.region}</span>
                   </div>
                   <h3 className="font-headline-sm text-xl text-on-surface">{t.title}</h3>
