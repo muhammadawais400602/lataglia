@@ -24,12 +24,7 @@ const tabFromHash = (): Tab => {
 
 function Logo({ light }: { light?: boolean }) {
   return (
-    <span className="flex items-center gap-3">
-      <span className={`size-6 ${light ? 'text-secondary-container' : 'text-primary'}`}>
-        <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path clipRule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fillRule="evenodd" /></svg>
-      </span>
-      <span className={`font-headline-sm text-xl font-bold ${light ? 'text-white' : 'text-on-surface'}`}>La Taglia</span>
-    </span>
+    <img src={light ? '/logo-white.png' : '/logo.png'} alt="La Taglia" width={1057} height={259} className="h-8 w-auto" />
   );
 }
 

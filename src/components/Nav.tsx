@@ -54,13 +54,8 @@ export default function Nav() {
     <header className="w-full bg-[#fbf9f9] border-b border-solid border-b-[#f1e9ea] sticky top-0 z-50">
       <div className="max-w-[1280px] mx-auto flex items-center justify-between whitespace-nowrap px-6 lg:px-12 py-3">
         <div className="flex items-center gap-8">
-          <a className="flex items-center gap-3 text-[#191011]" href="/">
-            <div className="size-5 text-primary">
-              <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                <path clipRule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fillRule="evenodd" />
-              </svg>
-            </div>
-            <h2 className="text-[#191011] text-xl font-bold leading-tight tracking-[-0.015em] font-headline-sm">La Taglia</h2>
+          <a className="flex items-center shrink-0" href="/" aria-label="La Taglia, home">
+            <img src="/logo.png" alt="La Taglia · Artisanal Italy" width={1057} height={259} className="h-9 sm:h-11 w-auto" />
           </a>
           <nav className="hidden md:flex items-center gap-7">
             {links.map((l) =>
