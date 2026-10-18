@@ -11,7 +11,7 @@ import {
   promoCards,
   stories,
 } from './data';
-import { featuredRegions, regionHref } from './regions';
+import { allRegions, regionHref } from './regions';
 import { useRegionImage } from './regions/regionPhotos';
 
 export default function App() {
@@ -241,33 +241,41 @@ function GiftsBand() {
 
 function RegionsGrid() {
   const regionImg = useRegionImage();
+  const card = (r: (typeof allRegions)[number], copy: boolean) => {
+    const href = regionHref(r.name);
+    const Tag = href ? 'a' : 'div';
+    return (
+      <Tag key={`${copy ? 'b' : 'a'}-${r.name}`} href={href ?? undefined} tabIndex={copy ? -1 : undefined}
+        className="group relative shrink-0 w-60 sm:w-72 rounded overflow-hidden aspect-[4/5] bg-surface-container shadow hover:shadow-xl transition-shadow block">
+        <div
+          className={`w-full h-full bg-cover bg-center transition-transform duration-500 ${href ? 'group-hover:scale-105' : 'grayscale opacity-70'}`}
+          style={{ backgroundImage: `url('${regionImg(r)}')` }}
+        />
+        <div className={`absolute inset-0 bg-gradient-to-t ${href ? 'from-black/85 via-black/30' : 'from-black/90 via-black/50'} to-transparent flex flex-col justify-end p-6 text-white`}>
+          {!href && <span className="inline-block bg-white/20 backdrop-blur text-white text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded w-max mb-2">ARRIVING SOON</span>}
+          <h3 className="font-headline-sm text-2xl text-white mb-1">{r.name}</h3>
+          <p className="text-xs text-white/80 line-clamp-2">{r.blurb}</p>
+        </div>
+      </Tag>
+    );
+  };
   return (
-    <section id="regions" className="max-w-[1280px] mx-auto px-6 lg:px-12 mb-24">
-      <div className="text-center max-w-2xl mx-auto mb-12">
+    <section id="regions" className="mb-24">
+      <div className="text-center max-w-2xl mx-auto mb-12 px-6">
         <h2 className="font-headline-lg text-3xl sm:text-4xl text-on-surface uppercase tracking-wide mb-3">SHOP BY REGION</h2>
         <p className="font-subheading text-ink-secondary text-base sm:text-lg">Italian food is regional before it is Italian. Enter through a place and discover what it makes best.</p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {featuredRegions.map((r) => {
-          const Tag = r.comingSoon ? 'div' : 'a';
-          return (
-            <Tag key={r.name} href={r.comingSoon ? undefined : regionHref(r.name) ?? '/shop'} className="group relative rounded overflow-hidden aspect-[4/5] bg-surface-container shadow hover:shadow-xl transition-all block">
-              <div
-                className={`w-full h-full bg-cover bg-center transition-transform duration-500 ${r.comingSoon ? 'filter grayscale opacity-70' : 'group-hover:scale-105'}`}
-                style={{ backgroundImage: `url('${regionImg(r)}')` }}
-              />
-              <div className={`absolute inset-0 bg-gradient-to-t from-black/${r.comingSoon ? '90' : '85'} via-black/${r.comingSoon ? '50' : '30'} to-transparent flex flex-col justify-end p-6 text-white`}>
-                {r.comingSoon && (
-                  <span className="inline-block bg-white/20 backdrop-blur text-white text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded w-max mb-2">
-                    ARRIVING SOON
-                  </span>
-                )}
-                <h3 className="font-headline-sm text-2xl text-white mb-1">{r.name}</h3>
-                <p className="text-xs text-white/80 line-clamp-2">{r.blurb}</p>
-              </div>
-            </Tag>
-          );
-        })}
+      {/* All regions, sliding right to left; hover to pause. */}
+      <div className="marquee overflow-hidden" style={{ ['--marquee-duration' as string]: `${allRegions.length * 5}s` }}>
+        <div className="marquee-track flex w-max">
+          <div className="flex gap-6 pr-6">{allRegions.map((r) => card(r, false))}</div>
+          <div className="flex gap-6 pr-6" aria-hidden="true">{allRegions.map((r) => card(r, true))}</div>
+        </div>
+      </div>
+      <div className="text-center mt-10">
+        <a href="/regions" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary hover:bg-wine-hover text-on-primary text-sm font-bold transition-colors">
+          See all {allRegions.length} regions <span aria-hidden="true" className="material-symbols-outlined text-base">arrow_forward</span>
+        </a>
       </div>
     </section>
   );
