@@ -2,12 +2,19 @@ import { useEffect, useRef, useState } from 'react';
 import { allRegions, regionHref } from '../regions';
 import { useRegionImage } from '../regions/regionPhotos';
 
-const links = [
+type NavLink = { href: string; label: string; children?: { href: string; label: string }[] };
+const links: NavLink[] = [
   { href: '/shop', label: 'Shop' },
   { href: '/regions', label: 'Regions' },
   { href: '/gifts', label: 'Gifts' },
-  { href: '/story', label: 'Our Story' },
-  { href: '/about', label: 'About' },
+  {
+    href: '/about',
+    label: 'About Us',
+    children: [
+      { href: '/about#our-story', label: 'Our Story' },
+      { href: '/about#about-us', label: 'About Us' },
+    ],
+  },
 ];
 
 function RegionCard({ r, compact, onPick }: { r: (typeof allRegions)[number]; compact?: boolean; onPick?: () => void }) {
@@ -78,6 +85,21 @@ export default function Nav() {
                     </div>
                   </div>
                 </div>
+              ) : l.children ? (
+                <div key={l.href} className="relative group">
+                  <a href={l.href} aria-haspopup="true" className="inline-flex items-center gap-0.5 text-sm font-medium text-[#191011] hover:text-primary group-hover:text-primary transition-colors">
+                    {l.label}
+                    <span aria-hidden="true" className="material-symbols-outlined text-base transition-transform group-hover:rotate-180">expand_more</span>
+                  </a>
+                  {/* pt-3 bridges the gap so the pointer can move from the link into the panel */}
+                  <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-opacity duration-150">
+                    <div className="min-w-44 rounded-lg bg-surface-container-lowest shadow-xl border border-[#f1e9ea] py-2">
+                      {l.children.map((c) => (
+                        <a key={c.href} href={c.href} className="block px-4 py-2 text-sm text-[#191011] hover:bg-surface-parchment hover:text-primary transition-colors">{c.label}</a>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               ) : (
                 <a key={l.href} className="text-[#191011] text-sm font-medium hover:text-primary transition-colors" href={l.href}>
                   {l.label}
@@ -133,6 +155,15 @@ export default function Nav() {
                     <a href="/regions" onClick={() => setOpen(false)} className="p-2 text-sm font-bold text-primary">All regions →</a>
                   </div>
                 )}
+              </div>
+            ) : l.children ? (
+              <div key={l.href} className="py-3 border-b border-[#f1e9ea] last:border-0">
+                <span className="block text-[#191011] text-base font-medium">{l.label}</span>
+                <div className="mt-1 flex flex-col">
+                  {l.children.map((c) => (
+                    <a key={c.href} href={c.href} onClick={() => setOpen(false)} className="pl-4 py-2 text-[15px] text-ink-secondary hover:text-primary">{c.label}</a>
+                  ))}
+                </div>
               </div>
             ) : (
               <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="py-3 text-[#191011] text-base font-medium border-b border-[#f1e9ea] last:border-0 hover:text-primary">
