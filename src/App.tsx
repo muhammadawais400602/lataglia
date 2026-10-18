@@ -25,8 +25,8 @@ export default function App() {
       <PastaBand />
       <BestSellers />
       <GiftsBand />
-      <RegionsGrid />
       <GiftBoxes />
+      <RegionsGrid />
       <FromTheBlog />
     </Layout>
   );
