@@ -12,6 +12,8 @@ import Signup from './pages/Signup';
 import Login from './pages/Login';
 import ProductDetail from './pages/ProductDetail';
 import About from './pages/About';
+import Blog, { BlogPost } from './pages/Blog';
+import { findPost } from './blog/posts';
 const AdminApp = lazy(() => import('./admin/AdminApp'));
 import './index.css';
 
@@ -29,8 +31,10 @@ const routes: Record<string, React.ComponentType> = {
   // The Our Story page now lives at the top of About Us.
   '/story': () => { window.location.replace('/about#our-story'); return null; },
   '/about': About,
+  '/blog': Blog,
 };
 const productId = !routes[path] && path.startsWith('/product/') ? decodeURIComponent(path.slice('/product/'.length)) : '';
+const post = path.startsWith('/blog/') ? findPost(decodeURIComponent(path.slice('/blog/'.length))) : undefined;
 const regionSlug = path.startsWith('/regions/') ? path.slice('/regions/'.length) : '';
 // Each region story is its own download, fetched only when its page opens.
 const StoryPage = hasStory(regionSlug)
@@ -39,7 +43,7 @@ const StoryPage = hasStory(regionSlug)
       return { default: () => <RegionStory story={story!} /> };
     })
   : null;
-const Page = routes[path] ?? (productId ? () => <ProductDetail id={productId} /> : StoryPage ?? (regionSlug ? Regions : App));
+const Page = routes[path] ?? (post ? () => <BlogPost post={post} /> : path.startsWith('/blog/') ? Blog : null) ?? (productId ? () => <ProductDetail id={productId} /> : StoryPage ?? (regionSlug ? Regions : App));
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

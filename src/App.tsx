@@ -4,15 +4,15 @@ import {
   categories,
   giftBoxes,
   heroImg,
-  makers,
   pastaImg,
   pistachioHeroImg,
   products,
   promoCards,
-  stories,
 } from './data';
 import { allRegions, regionHref } from './regions';
 import { useRegionImage } from './regions/regionPhotos';
+import { posts } from './blog/posts';
+import { PostCard } from './pages/Blog';
 
 export default function App() {
   return (
@@ -27,8 +27,7 @@ export default function App() {
       <GiftsBand />
       <RegionsGrid />
       <GiftBoxes />
-      <Makers />
-      <Stories />
+      <FromTheBlog />
     </Layout>
   );
 }
@@ -321,96 +320,21 @@ function GiftBoxes() {
   );
 }
 
-function Makers() {
+function FromTheBlog() {
   return (
-    <section id="makers" className="max-w-[1280px] mx-auto px-6 lg:px-12 mb-24">
+    <section id="blog" className="max-w-[1280px] mx-auto px-6 lg:px-12 mb-24">
       <div className="text-center max-w-2xl mx-auto mb-12">
-        <h2 className="font-headline-lg text-3xl sm:text-4xl text-on-surface uppercase tracking-wide mb-3">MEET THE MAKERS</h2>
-        <p className="font-subheading text-ink-secondary text-base sm:text-lg">The producer's name stays on every label. Ours only vouches for it.</p>
+        <h2 className="font-headline-lg text-3xl sm:text-4xl text-on-surface uppercase tracking-wide mb-3">FROM THE BLOG</h2>
+        <p className="font-subheading text-ink-secondary text-base sm:text-lg">How Italy’s great foods are made, how to read their labels, and how to cook with them.</p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {makers.map((m) => (
-          <div key={m.name} className="bg-surface-container-lowest border border-border-line rounded overflow-hidden">
-            <div className="h-56 bg-cover bg-center" style={{ backgroundImage: `url('${m.img}')` }} />
-            <div className="p-6">
-              <span className="text-xs font-bold uppercase tracking-wider text-secondary">{m.location}</span>
-              <h3 className="font-headline-sm text-xl text-on-surface mt-1 mb-3">{m.name}</h3>
-              <p className="text-sm text-ink-secondary leading-relaxed mb-4">{m.bio}</p>
-              <a className="text-primary font-bold text-sm flex items-center gap-1 hover:underline" href="#shop">
-                View creations <span className="material-symbols-outlined text-sm">arrow_forward</span>
-              </a>
-            </div>
-          </div>
-        ))}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {posts.slice(0, 3).map((p) => <PostCard key={p.slug} p={p} />)}
+      </div>
+      <div className="text-center mt-10">
+        <a href="/blog" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary hover:bg-wine-hover text-on-primary text-sm font-bold transition-colors">
+          Read the blog <span aria-hidden="true" className="material-symbols-outlined text-base">arrow_forward</span>
+        </a>
       </div>
     </section>
-  );
-}
-
-function Stories() {
-  return (
-    <section id="stories" className="max-w-[1280px] mx-auto px-6 lg:px-12 mb-24">
-      <div className="text-center max-w-2xl mx-auto mb-12">
-        <h2 className="font-headline-lg text-3xl sm:text-4xl text-on-surface uppercase tracking-wide mb-3">STORIES &amp; CRAFT</h2>
-        <p className="font-subheading text-ink-secondary text-base sm:text-lg">Read the field notes from our culinary discoveries across the peninsula.</p>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-        {stories.map((s) => (
-          <article key={s.title} className="bg-surface-container-lowest border border-border-line rounded overflow-hidden group cursor-pointer">
-            <div className="h-48 overflow-hidden">
-              <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src={s.img} alt={s.title} />
-            </div>
-            <div className="p-6">
-              <span className="text-xs uppercase tracking-wider text-secondary font-bold">{s.tag}</span>
-              <h3 className="font-headline-sm text-lg text-on-surface mt-1 mb-2 group-hover:text-primary transition-colors">{s.title}</h3>
-              <p className="text-sm text-ink-secondary line-clamp-2 mb-4">{s.body}</p>
-              <span className="text-xs text-ink-tertiary">{s.read}</span>
-            </div>
-          </article>
-        ))}
-      </div>
-      <InsiderSignup />
-    </section>
-  );
-}
-
-function InsiderSignup() {
-  return (
-    <div className="bg-surface-parchment border border-[#e4d3d6] rounded p-8 sm:p-12 lg:p-16 max-w-4xl mx-auto shadow-sm">
-      <div className="text-center max-w-xl mx-auto mb-8">
-        <span className="text-xs font-bold tracking-[0.2em] text-primary uppercase block mb-2">JOIN LA TAGLIA INSIDER</span>
-        <h3 className="font-headline-lg text-2xl sm:text-3xl text-on-surface mb-3">Be the first to hear about new discoveries</h3>
-        <p className="text-sm text-ink-secondary leading-relaxed">
-          Regional features, rare barrel releases and limited harvests directly from Italy. Create an account and receive <strong className="text-primary font-bold">10% off</strong> your first order.
-        </p>
-      </div>
-      <form
-        className="space-y-4 max-w-lg mx-auto"
-        onSubmit={(e) => {
-          e.preventDefault();
-          alert('Grazie! Welcome to La Taglia Insider.');
-        }}
-      >
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <div className="sm:col-span-2">
-            <input className="w-full h-12 px-4 rounded bg-surface-container-lowest border border-border-line text-sm focus:ring-1 focus:ring-primary focus:border-primary" placeholder="Enter your email address" required type="email" />
-          </div>
-          <div>
-            <input className="w-full h-12 px-4 rounded bg-surface-container-lowest border border-border-line text-sm focus:ring-1 focus:ring-primary focus:border-primary" placeholder="Zip code" type="text" />
-          </div>
-        </div>
-        <div className="flex flex-wrap items-center justify-center gap-6 py-2 text-xs text-ink-secondary">
-          {['Pistachio & Sweets', 'Balsamic & EVOO', 'Gift Boxes'].map((label) => (
-            <label key={label} className="flex items-center gap-2 cursor-pointer">
-              <input defaultChecked className="rounded text-primary focus:ring-primary h-4 w-4" type="checkbox" />
-              <span>{label}</span>
-            </label>
-          ))}
-        </div>
-        <button type="submit" className="w-full bg-[#EFA91C] hover:bg-gold-hover text-button-ink font-button text-sm font-bold tracking-wider py-4 rounded uppercase transition-colors shadow">
-          SIGN UP &amp; SAVE 10%
-        </button>
-      </form>
-    </div>
   );
 }
