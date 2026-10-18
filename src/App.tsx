@@ -111,7 +111,7 @@ function PistachioBand() {
           <span className="text-xs font-bold tracking-[0.2em] text-[#FEB62C] uppercase mb-3">FEATURED DISCOVERY · SICILIA</span>
           <h2 className="font-headline-lg text-3xl sm:text-5xl leading-tight mb-4 text-white">The green gold of Bronte</h2>
           <p className="font-body-lg text-white/90 text-base sm:text-lg leading-relaxed mb-8 max-w-xl">
-            On the western slopes of Mount Etna, in black volcanic soil, grow the pistachios Sicilians call <span className="italic">oro verde</span>. Smaller, greener and harvested in limited quantities. We built an entire edit around them.
+            On the western slopes of Mount Etna, in black volcanic soil, grow the pistachios Sicilians call <span className="italic">oro verde</span>. Smaller, greener and harvested in limited quantities.
           </p>
           <a className="inline-block self-start bg-[#FEB62C] hover:bg-[#D8950C] text-[#241800] font-button text-sm sm:text-base font-bold tracking-wider py-3.5 px-8 rounded-full shadow-md uppercase transition-transform hover:-translate-y-0.5" href="#shop">
             SHOP THE WORLD’S GREATEST PISTACHIO
