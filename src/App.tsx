@@ -86,17 +86,25 @@ function PromoCards() {
 }
 
 function Categories() {
+  const item = (c: (typeof categories)[number], copy = false) => (
+    <a key={`${copy ? 'b' : 'a'}-${c.label}`} href={c.href} tabIndex={copy ? -1 : undefined} className="flex flex-col items-center min-w-[80px] group md:flex-1">
+      <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden p-1 border-2 border-transparent group-hover:border-secondary transition-all">
+        <div className="w-full h-full rounded-full bg-cover bg-center" style={{ backgroundImage: `url('${c.img}')` }} />
+      </div>
+      <span className="mt-3 font-headline-sm text-xs sm:text-sm tracking-wider uppercase text-on-surface group-hover:text-primary text-center">{c.label}</span>
+    </a>
+  );
   return (
-    <section className="max-w-[1280px] mx-auto px-6 lg:px-12 py-8 mb-16 border-y border-border-line">
-      <div className="flex items-center justify-between gap-6 overflow-x-auto pb-4 no-scrollbar">
-        {categories.map((c) => (
-          <a key={c.label} href={c.href} className="flex flex-col items-center min-w-[80px] group flex-1">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden p-1 border-2 border-transparent group-hover:border-secondary transition-all">
-              <div className="w-full h-full rounded-full bg-cover bg-center" style={{ backgroundImage: `url('${c.img}')` }} />
-            </div>
-            <span className="mt-3 font-headline-sm text-xs sm:text-sm tracking-wider uppercase text-on-surface group-hover:text-primary text-center">{c.label}</span>
-          </a>
-        ))}
+    <section className="max-w-[1280px] mx-auto md:px-6 lg:px-12 py-8 mb-16 border-y border-border-line">
+      {/* Phones: the categories slide right to left on their own (same strip as Shop by region). */}
+      <div className="md:hidden marquee overflow-hidden" style={{ ['--marquee-duration' as string]: `${categories.length * 4}s` }}>
+        <div className="marquee-track flex w-max">
+          <div className="flex gap-6 pr-6">{categories.map((c) => item(c))}</div>
+          <div className="flex gap-6 pr-6" aria-hidden="true">{categories.map((c) => item(c, true))}</div>
+        </div>
+      </div>
+      <div className="hidden md:flex items-center justify-between gap-6 overflow-x-auto pb-4 no-scrollbar">
+        {categories.map((c) => item(c))}
       </div>
     </section>
   );
