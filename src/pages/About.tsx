@@ -120,7 +120,6 @@ export default function About() {
     { icon: 'diversity_3', tag: 'Makers', tone: 'text-primary', value: String(producers), title: 'Family producers', note: 'Each one found and visited by Jennifer.' },
     { icon: 'map', tag: 'Geography', tone: 'text-secondary', value: String(regionMeta.length), title: 'Regions explored', note: 'From the Alpine pastures of Alto Adige to the volcanic slopes of Sicily.' },
     { icon: 'verified_user', tag: 'Honesty', tone: 'text-primary-container', value: '0', title: 'Relabelled products', note: 'Every product keeps its maker’s own label, name and seal.' },
-    { icon: 'storefront', tag: 'Pantry', tone: 'text-coastal-blue', value: String(products.length), title: 'Provisions in the shop', note: 'Each one from a producer we have visited ourselves.' },
   ];
 
   return (
@@ -184,7 +183,7 @@ export default function About() {
 
       {/* Metrics */}
       <section className="w-full bg-surface-parchment py-10 lg:py-14">
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-12 grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8">
           {metrics.map((m) => (
             <div key={m.title} className="bg-surface-container-lowest p-6 rounded-lg shadow-sm flex flex-col justify-between">
               <div className="flex items-center justify-between mb-4">
