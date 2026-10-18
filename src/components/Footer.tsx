@@ -1,10 +1,8 @@
-import { featuredRegions, regionHref } from '../regions';
-
 export default function Footer() {
   return (
     <footer className="bg-primary text-white pt-16 pb-12 border-t border-primary-container">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
           <div className="lg:col-span-2">
             <a href="/" className="inline-block mb-5" aria-label="La Taglia, home">
               <img src="/logo-white.png" alt="La Taglia · Artisanal Italy" width={1057} height={259} loading="lazy" className="h-14 w-auto" />
@@ -23,7 +21,6 @@ export default function Footer() {
             { href: '/shop?category=oils', label: 'Extra Virgin Olive Oils' },
             { href: '/#bestsellers', label: 'Best Sellers' },
           ]} />
-          <FooterCol title="Regions" items={featuredRegions.slice(0, 6).map((r) => ({ href: regionHref(r.name) ?? '/regions', label: r.name }))} />
           <FooterCol title="Assistance" items={[
             { href: '/about', label: 'About Us' },
             { href: '/about#our-story', label: 'Our Story' },
