@@ -7,6 +7,7 @@ const links: NavLink[] = [
   { href: '/shop', label: 'Shop' },
   { href: '/regions', label: 'Regions' },
   { href: '/gifts', label: 'Gifts' },
+  { href: '/blog', label: 'Blog' },
   {
     href: '/about',
     label: 'About Us',

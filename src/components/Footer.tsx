@@ -27,6 +27,7 @@ export default function Footer() {
           <FooterCol title="Assistance" items={[
             { href: '/about', label: 'About Us' },
             { href: '/about#our-story', label: 'Our Story' },
+            { href: '/blog', label: 'Blog' },
             { href: '/about#people', label: 'Meet the Producers' },
             { href: '/gifts#corporate', label: 'Corporate Gifting' },
             { href: '/about#faq', label: 'Shipping & Freshness' },
