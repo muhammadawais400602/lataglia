@@ -32,7 +32,7 @@ export default function Footer() {
           ]} />
         </div>
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/60 gap-4">
-          <p>© {new Date().getFullYear()} La Taglia Providore Inc. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} La Taglia Artisanal LLC. All rights reserved.</p>
           <div className="flex gap-6">
             <a className="hover:underline" href="#">Privacy Policy</a>
             <a className="hover:underline" href="#">Terms of Service</a>
