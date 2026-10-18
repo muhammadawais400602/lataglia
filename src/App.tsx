@@ -136,23 +136,23 @@ function ProductGrid() {
         <h2 className="font-headline-lg text-3xl sm:text-4xl text-on-surface uppercase tracking-wide mb-3">DISCOVERED THIS MONTH</h2>
         <p className="font-subheading text-ink-secondary text-base sm:text-lg">A small number of things we think are exceptional, and why.</p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
         {products.map((p) => (
-          <div key={p.name} className="bg-surface-container-lowest border border-border-line rounded p-4 flex flex-col justify-between hover:shadow-lg transition-shadow relative group">
+          <div key={p.name} className="bg-surface-container-lowest border border-border-line rounded p-2.5 sm:p-4 flex flex-col justify-between hover:shadow-lg transition-shadow relative group">
             {p.badge && (
-              <span className={`absolute top-6 left-6 z-10 text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded ${p.badge.className}`}>
+              <span className={`absolute top-4 left-4 sm:top-6 sm:left-6 z-10 max-w-[calc(100%-2rem)] truncate text-[10px] sm:text-[11px] font-bold uppercase tracking-wider px-2 py-0.5 rounded ${p.badge.className}`}>
                 {p.badge.label}
               </span>
             )}
-            <div className="aspect-square w-full rounded overflow-hidden mb-4 bg-surface-soft">
+            <div className="aspect-square w-full rounded overflow-hidden mb-3 sm:mb-4 bg-surface-soft">
               {p.href ? <a href={p.href}><img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src={p.img} alt={p.name} /></a> : <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src={p.img} alt={p.name} />}
             </div>
             <div>
-              <span className="text-xs text-ink-tertiary uppercase tracking-wider block mb-1">{p.vendor}</span>
-              <h3 className="font-headline-sm text-base text-on-surface mb-1">{p.href ? <a href={p.href} className="hover:underline">{p.name}</a> : p.name}</h3>
+              <span className="text-[10px] sm:text-xs text-ink-tertiary uppercase tracking-wider block mb-1 truncate">{p.vendor}</span>
+              <h3 className="font-headline-sm text-sm sm:text-base text-on-surface mb-1 line-clamp-2">{p.href ? <a href={p.href} className="hover:underline">{p.name}</a> : p.name}</h3>
               <p className="text-primary font-bold text-base mt-2">{p.price}</p>
             </div>
-            <button className="mt-4 w-full py-2 bg-surface-container hover:bg-primary hover:text-white text-on-surface font-button-sm text-xs uppercase tracking-wider rounded transition-colors">
+            <button className="mt-3 sm:mt-4 w-full py-2 bg-surface-container hover:bg-primary hover:text-white text-on-surface font-button-sm text-xs uppercase tracking-wider rounded transition-colors">
               Add to Bag
             </button>
           </div>

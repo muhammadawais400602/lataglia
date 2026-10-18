@@ -159,27 +159,27 @@ export default function Gifts() {
         )}
 
         {grid.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-8">
             {grid.map((h) => (
               <article key={h.id} className="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
                 <div className="relative aspect-square overflow-hidden bg-surface-container-low">
                   <div className="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style={{ backgroundImage: `url('${h.img}')` }} role="img" aria-label={h.name} />
-                  <span className={`absolute top-4 left-4 px-3 py-1 rounded bg-surface-container-lowest ${h.badgeClass ?? 'text-badge-ink'} ${label} tracking-wider shadow-sm`}>{h.badge}</span>
-                  <div className="absolute bottom-4 right-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-full font-headline-sm text-headline-sm text-primary">${h.price}</div>
+                  <span className={`absolute top-2 left-2 sm:top-4 sm:left-4 max-w-[calc(100%-1rem)] truncate px-2 sm:px-3 py-1 rounded bg-surface-container-lowest ${h.badgeClass ?? 'text-badge-ink'} ${label} tracking-wider shadow-sm`}>{h.badge}</span>
+                  <div className="absolute bottom-2 right-2 sm:bottom-4 sm:right-4 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full font-headline-sm text-base sm:text-headline-sm text-primary">${h.price}</div>
                 </div>
-                <div className="p-6 flex-1 flex flex-col justify-between">
+                <div className="p-3 sm:p-6 flex-1 flex flex-col justify-between">
                   <div>
-                    <span className={`${label} text-secondary tracking-widest block mb-1`}>{h.eyebrow}</span>
-                    <h3 className="font-headline-sm text-headline-sm text-on-surface mb-2">{h.name}</h3>
-                    <p className="font-body-sm text-body-sm text-ink-secondary mb-4 line-clamp-2">{h.blurb}</p>
-                    <div className="bg-surface-parchment p-4 rounded-lg mb-6 space-y-2 text-on-surface font-body-sm text-body-sm">
+                    <span className={`${label} text-secondary tracking-widest block mb-1 truncate`}>{h.eyebrow}</span>
+                    <h3 className="font-headline-sm text-[15px] leading-5 sm:text-headline-sm text-on-surface mb-2">{h.name}</h3>
+                    <p className="font-body-sm text-xs sm:text-body-sm text-ink-secondary mb-3 sm:mb-4 line-clamp-2">{h.blurb}</p>
+                    <div className="hidden sm:block bg-surface-parchment p-4 rounded-lg mb-6 space-y-2 text-on-surface font-body-sm text-body-sm">
                       {h.items.map((it) => (
                         <div key={it} className="flex items-start gap-2"><span className="material-symbols-outlined text-secondary text-sm mt-1">check</span><span>{it}</span></div>
                       ))}
                     </div>
                   </div>
-                  <button onClick={() => reserve(h)} className="w-full bg-secondary-container hover:bg-gold-hover text-button-ink font-button-sm text-button-sm uppercase tracking-wider py-3.5 px-6 rounded-full shadow-sm hover:shadow-md transition-all">
-                    Reserve Gift Hamper
+                  <button onClick={() => reserve(h)} className="w-full bg-secondary-container hover:bg-gold-hover text-button-ink font-button-sm text-[11px] sm:text-button-sm uppercase tracking-wider py-2.5 sm:py-3.5 px-3 sm:px-6 rounded-full shadow-sm hover:shadow-md transition-all">
+                    <span className="sm:hidden">Reserve</span><span className="hidden sm:inline">Reserve Gift Hamper</span>
                   </button>
                 </div>
               </article>

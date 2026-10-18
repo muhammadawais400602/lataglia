@@ -62,9 +62,9 @@ function BuyCard({ sp, shelf, catalog, onAdd, pic }: { sp: StoryProduct; shelf: 
   const img = live?.img || pic(sp.img, 600);
   const soldOut = live && live.stock <= 0;
   return (
-    <div className="w-full max-w-[260px] bg-surface-bright border border-border-line rounded p-4 flex flex-col shadow-sm">
+    <div className="w-full max-w-[260px] bg-surface-bright border border-border-line rounded p-3 sm:p-4 flex flex-col shadow-sm">
       <div className="flex items-center justify-between gap-2 text-ink-tertiary mb-3">
-        <span className="uppercase tracking-widest text-[10px]">{shelf}</span>
+        <span className="uppercase tracking-widest text-[10px] truncate">{shelf}</span>
         {sp.tag && <span className={`text-xs font-bold ${toneClass[sp.tagTone ?? 'neutral']}`}>{sp.tag}</span>}
       </div>
       {img && (
@@ -302,7 +302,7 @@ export default function RegionStory({ story }: { story: Story }) {
                     <span><strong>Look for:</strong> <Rich text={item.lookFor} catalog={catalog} /></span>
                   </div>
                 </div>
-                <div className="lg:col-span-3 flex flex-wrap lg:flex-col items-start lg:items-end gap-4">
+                <div className="lg:col-span-3 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap lg:flex-col sm:items-start lg:items-end sm:gap-4">
                   {item.products.map((sp) => <BuyCard key={sp.id} sp={sp} shelf={item.shelfLabel ?? 'In the pantry'} catalog={catalog} onAdd={addOne} pic={pic} />)}
                 </div>
               </div>
