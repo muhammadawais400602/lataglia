@@ -51,7 +51,7 @@ export const hampers: Hamper[] = [
     img: `${img}/AB6AXuDMH2M-VN1-Pz9hCbkXgdgup639qKPj1bgJo2jf1PgPm9NKzrgAY_T6MZujPmHAC4Z5W83H6bgIwaOrwcCLEuI-3an8k7c44fESuTzHNkXQYSCN_pESKkZUsjfCP-01ZMORW4JuJXmElmpAAAxPwRTi5o5Crpmlu_bVRSOXjhggx377vb87iOfKRdkb1LjsaiX1pF73K7pXrg-DIruRvIfEPidPaOJoOlRNnbEwUK6fqguV0N3VVklu`,
   },
   {
-    id: 'pistachio-edit', name: 'The Pistachio Edit', price: 119, kind: 'ingredient', eyebrow: 'Bronte DOP Monograph', badge: 'Connoisseur',
+    id: 'pistachio-edit', name: 'The World’s Greatest Pistachio', price: 119, kind: 'ingredient', eyebrow: 'Bronte DOP Monograph', badge: 'Connoisseur',
     blurb: "The 'Green Gold' of Sicily harvested from the volcanic crags of Etna, spanning savory to confection.",
     items: ['Roasted Pistacchio Verde di Bronte DOP (250g Jar)', '100% Pure Stone-Milled Bronte Paste & 35% Crema', 'Cold-Pressed Bronte Pistachio Finishing Oil & Croccante'],
     img: `${img}/AB6AXuCZhnC6OD1VrmeoAkesXcV61vBh25ZoqFu3NKi1EWxScFq08esuCcNzj28MeLyPLME1eJ4rqHGka5Va1TpbBHJJjtXPwJCp0j6OcrdBzYqdqkNECgc1aIdIrdUQ-3yQ49QItc5wh4ZkdvFaJm6-EOJLmg_-fEa9Y74OCjgdx1yeFqlC35iIO1cg2THDFfbVWTTKfIfoC35P_lksCF2Ua-5Tn5iAP5Amgfwuc-v6kUOIJSkESvhpWyfq`,
