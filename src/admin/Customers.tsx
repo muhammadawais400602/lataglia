@@ -80,7 +80,7 @@ export default function Customers({ orders, onOpenOrder }: { orders: Order[]; on
 type Subscriber = { email: string; topics: string[]; createdAt: string };
 const topicNames: Record<string, string> = { harvest: 'Harvest releases', letters: 'Producer letters', gifting: 'Gift ideas' };
 
-/** Newsletter sign-ups from the Our Story page. */
+/** Newsletter sign-ups. */
 export function Subscribers() {
   const [list, setList] = useState<Subscriber[] | null>(null);
   useEffect(() => {
@@ -97,7 +97,7 @@ export function Subscribers() {
       {!list ? (
         <p className="text-sm text-ink-tertiary">Loading…</p>
       ) : list.length === 0 ? (
-        <Empty icon="mark_email_read" title="No subscribers yet">People who sign up on the Our Story page appear here.</Empty>
+        <Empty icon="mark_email_read" title="No subscribers yet">Newsletter sign-ups appear here.</Empty>
       ) : (
         <ul className="divide-y divide-surface-container text-sm">
           {list.map((s) => (

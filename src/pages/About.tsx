@@ -6,7 +6,6 @@ import { regionMeta } from '../regions/meta';
 const img = 'https://lh3.googleusercontent.com/aida-public';
 const label = 'font-label-caps text-label-caps uppercase';
 const Icon = ({ name, className = '' }: { name: string; className?: string }) => <span aria-hidden="true" className={`material-symbols-outlined ${className}`}>{name}</span>;
-const FOUNDED = 1999;
 
 const pillars = [
   {
@@ -37,7 +36,7 @@ const seals = [
 ];
 
 const people = [
-  { name: 'MJ & Jennifer Taglia', role: 'Founders', tone: 'text-primary', photo: `${img}/AB6AXuB82CaSu_9NtzXBDI65gtbiV5ypc9x_tgOAHHGcvLplUAJwTWu7gM0vZ29W8iUbuP2iIsdT1e7xly4CFn2zEi_Ew6Ed3zqjGyqYY6c34AiPawsfvtmdIt84edn5Os6vXFW0t2HAX2-zqddFwQI3Nk7Om-JsHymVv5xjdFDFJoHxYZG4K_Hl3XWpQcNohHpMaokS0WLLSjlYeYYDbcCuOuIa4eVQFI3GUpOGMAUp_l6yGcqgIG2fielh`, body: `Started La Taglia in ${FOUNDED} after a road trip across the Apennines. They still visit every producer in person before anything reaches the shop.`, href: '/story', link: 'Read our story' },
+  { name: 'MJ & Jennifer Taglia', role: 'Founders', tone: 'text-primary', photo: `${img}/AB6AXuB82CaSu_9NtzXBDI65gtbiV5ypc9x_tgOAHHGcvLplUAJwTWu7gM0vZ29W8iUbuP2iIsdT1e7xly4CFn2zEi_Ew6Ed3zqjGyqYY6c34AiPawsfvtmdIt84edn5Os6vXFW0t2HAX2-zqddFwQI3Nk7Om-JsHymVv5xjdFDFJoHxYZG4K_Hl3XWpQcNohHpMaokS0WLLSjlYeYYDbcCuOuIa4eVQFI3GUpOGMAUp_l6yGcqgIG2fielh`, body: 'La Taglia began as an anniversary gift from MJ to Jennifer. Today Jennifer leads the search for the foods and families we bring home.', href: '#our-story', link: 'Read our story' },
   { name: 'Il Borgo del Balsamico', role: 'Balsamic vinegar · Reggio Emilia', tone: 'text-secondary', photo: `${img}/AB6AXuALmcb79Ylnq012GLBxz50Ru0RrX-f_CDq9v5D7GrYG4VYaDUftxJcMek7AK3r_UVf3zxoClSX5-h_AofVyXV3PHPm9Ry7YentNOa6rHMzeWCMiJKjoqbPBiE26jCYRZmTIbKP7UkAFyHw6b_a2tytQWf4p_KeUCYlGCphzX5G3jG1u_NBMyr78TWcNYAhGK1vFatz6u4Dmu-UhGuJffQPhhnRJzu2smJafIAse8l5fBeNWr0JtdAcJ`, contain: true, body: 'The family whose decades-old Aceto Balsamico Tradizionale started it all. Their vinegar ages in a series of wooden barrels in the loft above the house.', href: '/regions/emilia-romagna', link: 'Emilia-Romagna' },
   { name: 'Gusto Etna', role: 'Pistachios · Bronte, Sicily', tone: 'text-coastal-blue', photo: `${img}/AB6AXuCB5J_zjD0IeWCwHRjf0sG4lJAd0GHcNlDHLaX1kPIDRUvJLwh-3LmLGda_6CdNv2yPGX3hh3c-78U4ZRIFZt3jI9PsBS_7hp7i9BjE4FbNpETByK6wJum9XYpMQr81mWFX70BIFYoGbW8hJKc1kplDMozH4hz_cJkmHrsIbUH5n0AhUzx6DC_83aUATV9VqUWc4jMwuJje8ewlbrtT5cagqzyNfUGS1J0pa1yv9CmR9sCMVLrQFuvs`, contain: true, body: 'Pistachios grown on the lava slopes of Mount Etna and picked by hand every other year, made into the creams and spreads in our shop.', href: '/regions/sicilia', link: 'Sicilia' },
   { name: 'Caseificio Di Nucci', role: 'Cheesemakers · Agnone, Molise', tone: 'text-tertiary-container', photo: `${img}/AB6AXuCCmKt0KNZ0ZVs0XegxaaFO6gZmpB0I3t0eN-F0bmWiJOyE2FCk1P6zroUcVP2CX43Nh2zwBFV4tdj6t54RZccUEjSYuLujiWxd2mCahuH6DP0SVRcwjm9qWb24Lv8DoD-UIIZeHA9vO_sDgO413bRgudVZTVkUEEda1gu5pShkPoRlFm5fQH2QziQuyZGEMmDriDxkslw6nujyY9sSQLoi7YmTKWR3c1d3lfgcw-WrcL-JM6H0fgt_`, body: 'A family dairy dating to 1662, still stretching curd by hand and ageing caciocavallo in a cellar of local stone.', href: '/regions/molise', link: 'Molise' },
@@ -73,6 +72,9 @@ export default function About() {
     document.title = 'About Us | La Taglia';
     const fromHash = () => window.location.hash === '#contact' && setModal(true);
     fromHash();
+    // The page renders after the browser's own jump to #our-story / #about-us, so scroll once it exists.
+    const target = window.location.hash.slice(1);
+    if (target && target !== 'contact') requestAnimationFrame(() => document.getElementById(target)?.scrollIntoView());
     window.addEventListener('hashchange', fromHash);
     return () => {
       document.title = prev;
@@ -113,9 +115,9 @@ export default function About() {
     }
   }
 
-  const years = new Date().getFullYear() - FOUNDED;
+  const producers = new Set(products.map((p) => p.producer).filter(Boolean)).size;
   const metrics = [
-    { icon: 'calendar_month', tag: 'Heritage', tone: 'text-primary', value: String(years), title: 'Years of discovery', note: `Searching Italy for honest food since ${FOUNDED}.` },
+    { icon: 'diversity_3', tag: 'Makers', tone: 'text-primary', value: String(producers), title: 'Family producers', note: 'Each one found and visited by Jennifer.' },
     { icon: 'map', tag: 'Geography', tone: 'text-secondary', value: String(regionMeta.length), title: 'Regions explored', note: 'From the Alpine pastures of Alto Adige to the volcanic slopes of Sicily.' },
     { icon: 'verified_user', tag: 'Honesty', tone: 'text-primary-container', value: '0', title: 'Relabelled products', note: 'Every product keeps its maker’s own label, name and seal.' },
     { icon: 'storefront', tag: 'Pantry', tone: 'text-coastal-blue', value: String(products.length), title: 'Provisions in the shop', note: 'Each one from a producer we have visited ourselves.' },
@@ -123,22 +125,56 @@ export default function About() {
 
   return (
     <Layout>
-      {/* Intro */}
-      <section className="w-full bg-surface-bright py-8 lg:py-12">
+      {/* Our Story */}
+      <section id="our-story" className="w-full bg-surface-parchment py-8 lg:py-14 scroll-mt-20">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-12">
           <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-caption text-ink-secondary mb-8">
             <a className="hover:text-primary transition-colors" href="/">Home</a>
             <Icon name="chevron_right" className="text-xs" />
             <span className="text-primary font-semibold">About Us</span>
           </nav>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+            <figure className="lg:col-span-5">
+              <img
+                src="/jennifer.jpg"
+                width={1100}
+                height={1006}
+                alt="Jennifer Taglia at a Tuscan market, holding a bottle of extra virgin olive oil"
+                className="w-full aspect-[4/5] object-cover object-top rounded-xl shadow-xl"
+              />
+              <figcaption className="mt-3 text-caption text-ink-tertiary">Jennifer at a market in Tuscany.</figcaption>
+            </figure>
+            <div className="lg:col-span-7">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-lowest rounded-sm mb-4">
+                <span className="size-2 rounded-full bg-secondary-container" />
+                <span className={`${label} text-secondary tracking-[0.18em]`}>Our Story</span>
+              </div>
+              <h1 className="font-display-hero text-[36px] leading-[42px] lg:text-[52px] lg:leading-[60px] text-primary tracking-tight mb-6 [text-wrap:balance]">
+                La Taglia began as a love letter to my wife.
+              </h1>
+              <div className="space-y-4 text-body-lg text-ink-secondary leading-relaxed max-w-2xl">
+                <p>For our 25th anniversary, Jennifer and I found ourselves talking about what we wanted the next chapter of our lives to look like. We knew we wanted to build something together, and we wanted it to be inspired by two things we have always loved sharing: beautiful food and our travels through Italy.</p>
+                <p>So, for our anniversary, I gave Jennifer La Taglia.</p>
+                <p>What began as a gift became her passion. With her remarkable taste, curiosity and instinct for finding something special, Jennifer began discovering extraordinary foods and the people throughout Italy who make them.</p>
+                <p className="text-on-surface font-semibold">Today, we get to share those discoveries with you.</p>
+              </div>
+              <p className="mt-8 font-headline-sm text-xl italic text-primary">— MJ Taglia</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Us */}
+      <section id="about-us" className="w-full bg-surface-bright py-12 lg:py-16 scroll-mt-20">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-12">
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-surface-parchment rounded-sm mb-4">
               <span className="size-2 rounded-full bg-secondary-container" />
               <span className={`${label} text-secondary tracking-[0.18em]`}>About La Taglia</span>
             </div>
-            <h1 className="font-display-hero text-[40px] leading-[46px] lg:text-[64px] lg:leading-[72px] text-on-surface tracking-tight mb-6 [text-wrap:balance]">
+            <h2 className="font-display-hero text-[36px] leading-[42px] lg:text-[56px] lg:leading-[64px] text-on-surface tracking-tight mb-6 [text-wrap:balance]">
               Connecting good kitchens with Italy’s small family producers.
-            </h1>
+            </h2>
             <p className="text-body-lg text-ink-secondary max-w-3xl leading-relaxed">
               We are an independent importer of regional Italian food. We find families who still make things the traditional way, buy from them directly, and bring their oils, vinegars, pasta and cheeses to your table with their names still on the label.
             </p>

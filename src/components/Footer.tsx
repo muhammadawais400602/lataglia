@@ -26,7 +26,7 @@ export default function Footer() {
           <FooterCol title="Regions" items={featuredRegions.slice(0, 6).map((r) => ({ href: regionHref(r.name) ?? '/regions', label: r.name }))} />
           <FooterCol title="Assistance" items={[
             { href: '/about', label: 'About Us' },
-            { href: '/story', label: 'Our Story' },
+            { href: '/about#our-story', label: 'Our Story' },
             { href: '/about#people', label: 'Meet the Producers' },
             { href: '/gifts#corporate', label: 'Corporate Gifting' },
             { href: '/about#faq', label: 'Shipping & Freshness' },
