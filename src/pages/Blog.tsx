@@ -76,22 +76,22 @@ export function BlogPost({ post }: { post: Post }) {
       <Toast message={toast.message} />
       <article>
         <header className="w-full bg-surface-parchment pt-8 pb-10">
-          <div className="max-w-[860px] mx-auto px-6">
+          <div className="max-w-[1280px] mx-auto px-6 lg:px-12">
             <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-caption text-ink-secondary mb-6">
               <a className="hover:text-primary transition-colors" href="/">Home</a>
               <span className="text-outline-variant">/</span>
               <a className="hover:text-primary transition-colors" href="/blog">Blog</a>
             </nav>
             <span className={`${label} text-secondary`}>{post.tag}</span>
-            <h1 className="font-display-hero text-[36px] leading-[42px] lg:text-[52px] lg:leading-[60px] text-primary tracking-tight mt-2 mb-4 [text-wrap:balance]">{post.title}</h1>
+            <h1 className="font-display-hero text-[36px] leading-[42px] lg:text-[56px] lg:leading-[64px] text-primary tracking-tight mt-2 mb-4 [text-wrap:balance]">{post.title}</h1>
             <p className="text-body-lg text-ink-secondary">{post.excerpt}</p>
             <p className="mt-4 text-xs text-ink-tertiary flex items-center gap-1"><Icon name="schedule" className="text-sm" /> {post.read}</p>
           </div>
         </header>
-        <div className="max-w-[1080px] mx-auto px-6 -mb-4">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-12 -mb-4">
           <img src={post.img} alt="" className="w-full aspect-[16/8] object-cover rounded-xl shadow-lg -mt-2" />
         </div>
-        <div className="max-w-[720px] mx-auto px-6 py-12 lg:py-16 space-y-8">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-12 py-12 lg:py-16 space-y-8">
           {post.sections.map((s, i) => (
             <section key={i} className="space-y-4">
               {s.heading && <h2 className="font-headline-md text-2xl lg:text-3xl text-on-surface">{s.heading}</h2>}
