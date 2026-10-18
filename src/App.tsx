@@ -191,20 +191,20 @@ function BestSellers() {
         <h2 className="font-headline-lg text-3xl sm:text-4xl text-on-surface uppercase tracking-wide mb-3">BEST SELLERS</h2>
         <p className="font-subheading text-ink-secondary text-base sm:text-lg">Find your new favorites among ours, from pantry staples to gifts.</p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 mb-12">
         {bestSellers.map((b) => (
-          <div key={b.name} className="flex items-center gap-4 p-4 bg-surface-container-lowest border border-border-line rounded hover:shadow-md transition-shadow relative">
+          <div key={b.name} className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 p-2.5 sm:p-4 bg-surface-container-lowest border border-border-line rounded hover:shadow-md transition-shadow relative">
             {b.badge && (
-              <span className={`absolute top-2 right-2 text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded ${b.badge.className}`}>
+              <span className={`absolute top-4 left-4 sm:left-auto sm:top-2 sm:right-2 z-10 max-w-[calc(100%-2rem)] truncate text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded ${b.badge.className}`}>
                 {b.badge.label}
               </span>
             )}
-            <div className="w-24 h-24 rounded bg-surface-soft flex-shrink-0 overflow-hidden">
+            <div className="w-full aspect-square sm:w-24 sm:h-24 sm:aspect-auto rounded bg-surface-soft flex-shrink-0 overflow-hidden">
               <img className="w-full h-full object-cover" src={b.img} alt={b.name} />
             </div>
             <div className="flex-1 min-w-0">
-              <span className="text-xs text-secondary font-bold uppercase tracking-wide">{b.region}</span>
-              <h4 className="font-headline-sm text-base truncate">{b.name}</h4>
+              <span className="block text-[10px] sm:text-xs text-secondary font-bold uppercase tracking-wide truncate">{b.region}</span>
+              <h4 className="font-headline-sm text-sm sm:text-base line-clamp-2 sm:truncate">{b.name}</h4>
               <p className="text-ink-secondary text-sm font-semibold mt-1">{b.price}</p>
             </div>
           </div>
