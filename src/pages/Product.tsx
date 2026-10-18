@@ -93,7 +93,7 @@ export default function Product() {
           <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-2 font-body-sm text-body-sm text-ink-secondary">
             <a className="hover:text-primary transition-colors" href="/">Home</a>
             <span className="text-ink-tertiary">/</span>
-            <a className="hover:text-primary transition-colors" href="/#pistachio">The Pistachio Edit</a>
+            <a className="hover:text-primary transition-colors" href="/#pistachio">The World’s Greatest Pistachio</a>
             <span className="text-ink-tertiary">/</span>
             <a className="hover:text-primary transition-colors" href="/regions/sicilia">Gusto Etna</a>
             <span className="text-ink-tertiary">/</span>

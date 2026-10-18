@@ -7,7 +7,7 @@ const label = 'font-label-caps text-label-caps uppercase';
 const input = 'w-full pl-11 pr-4 py-3.5 rounded-md border-0 bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-ink-tertiary focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:outline-none transition-all';
 
 const perks = [
-  ['spa', 'Bronte Pistachio Edit', 'Guaranteed priority access to biennial volcanic slope harvests.'],
+  ['spa', 'The World’s Greatest Pistachio', 'Guaranteed priority access to biennial volcanic slope harvests.'],
   ['liquor', 'Balsamico Tradizionale', 'Direct cask disbursements from 25-year Reggio Emilia attics.'],
   ['nature', 'Alba White Truffles', 'Autumn morning courier dispatch within 48 hours of forage.'],
   ['wine_bar', 'Sommelier Concierge', 'Bespoke cellar pairing guidance and seasonal dinner curation.'],

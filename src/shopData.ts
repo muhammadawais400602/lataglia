@@ -26,7 +26,7 @@ export const shopCategories: { value: Category | 'all'; label: string }[] = [
   { value: 'pasta', label: 'Bronze-Die Pasta (3)' },
   { value: 'balsamics', label: 'Aged Balsamics & Saba (4)' },
   { value: 'oils', label: "Estate Olive Oils & 'Nduja (5)" },
-  { value: 'pistachio', label: 'Bronte Pistachio Edit (8)' },
+  { value: 'pistachio', label: 'The World’s Greatest Pistachio (8)' },
   { value: 'rice', label: 'Heirloom Rice (3)' },
   { value: 'sweets', label: 'Artisanal Sweets (3)' },
   { value: 'gifts', label: 'Gift Hampers (7)' },

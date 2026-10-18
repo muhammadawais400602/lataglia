@@ -87,7 +87,7 @@ export const giftBoxes = [
     img: `${img}/AB6AXuCFza48hChQYexad1_EPlyTcsVAjK_Wo19ADqaI8-EOgZzS_OKlHarcZ1Om_MC-3S-5Bhk4yPOI6MPfBADKz3d6caiAZO9HTodofP85UfWSMG3jrM9usUVMAhHqZPgipBhTvice1rsZ4THI2ozSpAMdeaE3rTrhkLuSj8SJZySCG06CZMb_wl-hN8u22rs5dF5bbwWegNxKi71CcPFQvHOqU36YmeFLXrKXgvVKkEQL9pWD3tavSMMa`,
   },
   {
-    name: 'The Pistachio Edit',
+    name: 'The World’s Greatest Pistachio',
     region: 'SICILIA',
     price: '$119',
     tagline: 'Every facet of the famed volcanic green gold in one extraordinary tasting flight.',

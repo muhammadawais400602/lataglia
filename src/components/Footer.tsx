@@ -15,7 +15,7 @@ export default function Footer() {
             </div>
           </div>
           <FooterCol title="Collections" items={[
-            { href: '/shop?category=pistachio', label: 'The Pistachio Edit' },
+            { href: '/shop?category=pistachio', label: 'The World’s Greatest Pistachio' },
             { href: '/shop?category=pasta', label: 'Artisanal Bronze Pasta' },
             { href: '/shop?category=balsamics', label: 'Traditional Balsamic DOP' },
             { href: '/shop?category=oils', label: 'Extra Virgin Olive Oils' },
