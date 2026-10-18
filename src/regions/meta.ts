@@ -5,6 +5,7 @@ export type RegionMeta = { slug: string; name: string; blurb: string; color?: st
 export const regionMeta: RegionMeta[] = [
   {"slug": "abruzzo", "name": "Abruzzo", "blurb": "Shepherds’ trails, saffron fields, and sugared almonds.", "color": "#2E3350"},
   {"slug": "basilicata", "name": "Basilicata", "blurb": "Crisp red peppers, durum-wheat bread, and the cave city of Matera.", "color": "#5A5A2E"},
+  {"slug": "campania", "name": "Campania", "blurb": "Volcanic soil, a turquoise bay, and the genius of Naples.", "color": "#0F5E63"},
   {"slug": "calabria", "name": "Calabria", "blurb": "Chili, red onions, and a coastline of citrus.", "color": "#A8321F"},
   {"slug": "emilia-romagna", "name": "Emilia-Romagna", "blurb": "Patience, pork, and the richest plain in Italy.", "color": "#8C2A1C"},
   {"slug": "friuli-venezia-giulia", "name": "Friuli-Venezia Giulia", "blurb": "Prosciutto, mountain cheese, and the coffeehouses of Trieste.", "color": "#4A3428"},
