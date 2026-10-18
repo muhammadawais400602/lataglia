@@ -137,7 +137,7 @@ export default function Shop() {
     `px-2.5 py-1 rounded text-caption whitespace-nowrap transition-colors ${on ? 'bg-secondary-fixed text-on-secondary-fixed font-bold' : 'bg-surface-container-low text-ink-secondary hover:bg-surface-container-high'}`;
 
   const grid = (list: Product[]) => (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
       {list.map((p) => <Card key={p.id} p={p} fav={favs.includes(p.id)} onFav={() => toggleFav(p.id)} onAdd={() => add(p)} />)}
     </div>
   );
@@ -349,9 +349,9 @@ function Card({ p, fav, onFav, onAdd }: { p: Product; fav: boolean; onFav: () =>
   const href = p.href ?? `/product/${p.id}`;
   const soldOut = p.stock <= 0;
   return (
-    <article className="group bg-surface-container-lowest rounded-lg p-4 shadow-sm hover:shadow-md transition-all flex flex-col justify-between relative">
-      <div className="relative w-full aspect-square bg-surface-soft rounded overflow-hidden mb-4 flex items-center justify-center p-3">
-        {p.badge?.label && <span className={`absolute top-2 left-2 z-10 px-2 py-0.5 rounded bg-surface-container-lowest text-badge-ink ${label} shadow-sm`}>{p.badge.label}</span>}
+    <article className="group bg-surface-container-lowest rounded-lg p-2.5 sm:p-4 shadow-sm hover:shadow-md transition-all flex flex-col justify-between relative">
+      <div className="relative w-full aspect-square bg-surface-soft rounded overflow-hidden mb-3 sm:mb-4 flex items-center justify-center p-2 sm:p-3">
+        {p.badge?.label && <span className={`absolute top-2 left-2 z-10 max-w-[calc(100%-3rem)] truncate px-2 py-0.5 rounded bg-surface-container-lowest text-badge-ink ${label} shadow-sm`}>{p.badge.label}</span>}
         <button aria-label={fav ? 'Remove from favourites' : 'Save to favourites'} aria-pressed={fav} onClick={onFav} className={`absolute top-2 right-2 z-10 size-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center transition-colors ${fav ? 'text-primary' : 'text-ink-secondary hover:text-primary'}`}>
           <span aria-hidden="true" className="material-symbols-outlined text-lg" style={fav ? { fontVariationSettings: "'FILL' 1" } : undefined}>favorite</span>
         </button>
@@ -360,17 +360,17 @@ function Card({ p, fav, onFav, onAdd }: { p: Product; fav: boolean; onFav: () =>
       <div className="space-y-1.5 flex-grow">
         <div className="flex items-center justify-between gap-2 text-caption text-ink-tertiary">
           <span className="truncate">{p.producer}</span>
-          <span className="truncate text-right">{p.place}</span>
+          <span className="hidden sm:block truncate text-right">{p.place}</span>
         </div>
-        <h3 className="font-headline-sm text-headline-sm text-on-surface line-clamp-2 group-hover:text-primary transition-colors"><a href={href}>{p.name}</a></h3>
+        <h3 className="font-headline-sm text-[15px] leading-5 sm:text-headline-sm text-on-surface line-clamp-2 group-hover:text-primary transition-colors"><a href={href}>{p.name}</a></h3>
         <p className="text-caption text-ink-secondary">{p.unit}</p>
       </div>
-      <div className="pt-4 mt-3 flex items-center justify-between">
-        <span className="font-headline-sm text-headline-sm text-primary font-bold">{money(p.price)}</span>
+      <div className="pt-3 sm:pt-4 mt-2 sm:mt-3 flex items-center justify-between gap-2">
+        <span className="font-headline-sm text-lg sm:text-headline-sm text-primary font-bold">{money(p.price)}</span>
         {soldOut ? (
-          <span className="px-4 py-2 rounded-full bg-surface-container text-ink-tertiary text-button-sm font-bold">Sold out</span>
+          <span className="px-3 sm:px-4 py-2 rounded-full bg-surface-container text-ink-tertiary text-xs sm:text-button-sm font-bold whitespace-nowrap">Sold out</span>
         ) : (
-          <button onClick={onAdd} className="px-4 py-2 rounded-full bg-secondary-container text-button-ink text-button-sm font-bold hover:bg-gold-hover transition-colors shadow-sm flex items-center gap-1.5">
+          <button onClick={onAdd} className="px-3 sm:px-4 py-2 rounded-full bg-secondary-container text-button-ink text-xs sm:text-button-sm font-bold hover:bg-gold-hover transition-colors shadow-sm flex items-center gap-1.5">
             <Icon name="add" className="text-sm" /> Add
           </button>
         )}
