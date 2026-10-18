@@ -11,7 +11,6 @@ const landmark: Record<string, string> = {
   lazio: 'Civita di Bagnoregio',
   marche: 'Urbino',
   sardegna: 'Bosa',
-  'trentino-alto-adige': 'Lake Prags',
   umbria: 'Assisi',
   veneto: 'Grand Canal (Venice)',
   liguria: 'Cinque Terre',

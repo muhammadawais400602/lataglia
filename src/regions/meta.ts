@@ -17,7 +17,7 @@ export const regionMeta: RegionMeta[] = [
   {"slug": "sardegna", "name": "Sardegna", "blurb": "Sheep’s cheese, saffron, and the salt of the lagoons.", "color": "#5C5248"},
   {"slug": "sicilia", "name": "Sicilia", "blurb": "A table shaped by the sea, the sun and centuries of exchange.", "color": "#1B3C8C"},
   {"slug": "toscana", "name": "Toscana", "blurb": "Great oil, honest bread, and nothing wasted.", "color": "#3F5A2E"},
-  {"slug": "trentino-alto-adige", "name": "Trentino-Alto Adige", "blurb": "Speck, mountain cheese, and the apples of the Alps.", "color": "#1F3D2E"},
+  {"slug": "trentino-alto-adige", "name": "Trentino-Alto Adige", "blurb": "Speck, mountain cheese, and the apples of the Alps.", "color": "#1F3D2E", "image": "/img/regions/trentino-alto-adige.jpg"},
   {"slug": "umbria", "name": "Umbria", "blurb": "Black truffles, tiny lentils, and the butchers of Norcia.", "color": "#2F4F5A"},
   {"slug": "veneto", "name": "Veneto", "blurb": "Rice, polenta, radicchio, and the spice routes of Venice.", "color": "#2F5D50"},
 ];

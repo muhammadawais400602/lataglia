@@ -44,8 +44,8 @@ const trentinoAltoAdige: RegionStory = {
     },
     "imageTag": "Dolomites · high valleys",
     "heritageNote": "a little salt, a little smoke",
-    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB2slSQexHb65wGxM1BmjHsv2HDR0JxYkp1_797_5C6hQ-VssXWRFXHGsZiRVvDRJ0lW5kiMqWb7ov4nVwaBRFu0QudIz8yPk8oDGI5RgetbxYgswJcvlkXDqk43z4jfCzXyDPRCogKAsIQDHpqeJDPnzcWcFVAsff-q-mKrLKbL8xT13RBt-1OfRR1ZjSUkSqLt-E6vZKzMGuvf-bwUBkgICI_iH38dHy50W4tAcvFAoBESck6EwyC",
-    "imageAlt": "High valleys where orchards and vineyards cover the slopes and dairy cows graze summer pastures."
+    "image": "/img/regions/trentino-alto-adige.jpg",
+    "imageAlt": "Val di Funes in the Dolomites: green pastures, a village church and the jagged Odle peaks."
   },
   "intro": [
     "Trentino-Alto Adige is Italy’s northernmost region, a world of high valleys among the Dolomites made of two self-governing provinces: Italian-speaking Trentino around Trento in the south, and Alto Adige, or South Tyrol, around Bolzano in the north, where most people speak German. South Tyrol belonged to Austria until after the First World War, and its kitchen still feels Tyrolean. In the valleys, orchards and vineyards cover the slopes; higher up, dairy cows graze summer pastures that give the region its cheeses. Its signature cured meat, speck, joins two traditions: the salt-curing and air-drying of the Mediterranean and the smoking of northern Europe. The result is a cuisine of bread dumplings and rye bread, smoked ham and mountain cheese, apples and strudel, equal parts Italian and Alpine.",
