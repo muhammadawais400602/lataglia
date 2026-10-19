@@ -44,7 +44,7 @@ const umbria: RegionStory = {
     },
     "imageTag": "Castelluccio, Monti Sibillini",
     "heritageNote": "black diamond",
-    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDKuapGvtz1m4yEiJmh5vBcthnNoV0P2Se0tF21T9_V_CDVx4pCFbczusX8ypWXZHV1BMlJ0i8sIWb4Z4uEm_A6mQL2mRBARioc6crU1N5rMrXju_nLvqzTJUTIXUY5O6L9zJ0BNDqG3aOp0yPR7VXOtZMd6nJRMXGZKqoKjLXRDwsPQcG9ORNxWV47lsd_1MXkzl4btNUmDZ_yzpVmLL4icT7pv6P8U_xZMrozfeBedIsWkhJCs9r6",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDKuapGvtz1m4yEiJmh5vBcthnNoV0P2Se0tF21T9_V_CDVx4pCFbczusX8ypWXZHV1BMlJ0i8sIWb4Z4uEm_A6mQL2mRBARioc6crU1N5rMrXju_nLvqzTJUTIXUY5O6L9zJ0BNDqG3aOp0yPR7VXOtZMd6nJRMXGZKqoKjLXRDwsPQcG9ORNxWV47lsd_1MXkzl4btNUmDZ_yzpVmLL4icT7pv6P8U_xZMrozfeBedIsWkhJCs9r6=w1600",
     "imageAlt": "A karst plain about 1,500 meters up, where lentil flowers bloom with poppies each summer."
   },
   "intro": [
@@ -67,7 +67,7 @@ const umbria: RegionStory = {
             "tag": "Winter only",
             "tagTone": "gold",
             "origin": "Norcia, Spoleto",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtz4nC-_Ocop-ZSNl-oDRC-xid0fbJjTqVPUEMGXDc-UbWWdybXrqmu31H6mlNxK4JZOSsBI_3IAP1pL-W1sqt1ikgMdtTPYAT0fiJGYVfiXm7UE6JSLZGJ-xb1o2egOuz7ozHvr2e63HG1-ErCgCkLhUPU-GdEtqrYqG00tazkWu8J6e4OugEKo2UbKYbn45zRYHOGVhj2I5_DSh4G0FKDs3o_7WoAfI3PI8c74tSjobPIsG3e2gB"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtz4nC-_Ocop-ZSNl-oDRC-xid0fbJjTqVPUEMGXDc-UbWWdybXrqmu31H6mlNxK4JZOSsBI_3IAP1pL-W1sqt1ikgMdtTPYAT0fiJGYVfiXm7UE6JSLZGJ-xb1o2egOuz7ozHvr2e63HG1-ErCgCkLhUPU-GdEtqrYqG00tazkWu8J6e4OugEKo2UbKYbn45zRYHOGVhj2I5_DSh4G0FKDs3o_7WoAfI3PI8c74tSjobPIsG3e2gB=w1600"
           }
         ],
         "shelfLabel": "In season"
@@ -85,7 +85,7 @@ const umbria: RegionStory = {
             "tag": "IGP",
             "tagTone": "green",
             "origin": "Castelluccio",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq=w1600"
           }
         ]
       },
@@ -102,7 +102,7 @@ const umbria: RegionStory = {
             "tag": "IGP",
             "tagTone": "green",
             "origin": "Norcia",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr=w1600"
           }
         ]
       },
@@ -119,7 +119,7 @@ const umbria: RegionStory = {
             "tag": "DOP",
             "tagTone": "green",
             "origin": "Assisi to Spoleto",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w=w1600"
           }
         ]
       },
@@ -136,7 +136,7 @@ const umbria: RegionStory = {
             "tag": "DOP",
             "tagTone": "green",
             "origin": "Monteleone",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo=w1600"
           }
         ]
       },
@@ -153,7 +153,7 @@ const umbria: RegionStory = {
             "tag": "Egg-free",
             "tagTone": "neutral",
             "origin": "Spoleto, Foligno",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDMH2M-VN1-Pz9hCbkXgdgup639qKPj1bgJo2jf1PgPm9NKzrgAY_T6MZujPmHAC4Z5W83H6bgIwaOrwcCLEuI-3an8k7c44fESuTzHNkXQYSCN_pESKkZUsjfCP-01ZMORW4JuJXmElmpAAAxPwRTi5o5Crpmlu_bVRSOXjhggx377vb87iOfKRdkb1LjsaiX1pF73K7pXrg-DIruRvIfEPidPaOJoOlRNnbEwUK6fqguV0N3VVklu"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDMH2M-VN1-Pz9hCbkXgdgup639qKPj1bgJo2jf1PgPm9NKzrgAY_T6MZujPmHAC4Z5W83H6bgIwaOrwcCLEuI-3an8k7c44fESuTzHNkXQYSCN_pESKkZUsjfCP-01ZMORW4JuJXmElmpAAAxPwRTi5o5Crpmlu_bVRSOXjhggx377vb87iOfKRdkb1LjsaiX1pF73K7pXrg-DIruRvIfEPidPaOJoOlRNnbEwUK6fqguV0N3VVklu=w1600"
           }
         ]
       }
@@ -168,28 +168,28 @@ const umbria: RegionStory = {
         "where": "Norcia",
         "body": "The plateau’s tiny lentils, simmered with a soft vegetable base until tender but whole, and finished with raw olive oil.",
         "tip": "[Cook it below](#lenticchie)",
-        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w"
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w=w1600"
       },
       {
         "title": "Strangozzi al tartufo",
         "where": "Spoleto and Norcia",
         "body": "Thick flour-and-water ribbons dressed with black truffle, the region’s signature pasta.",
         "tip": "[Make it below](#shortcut)",
-        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl=w1600"
       },
       {
         "title": "Pasta alla norcina",
         "where": "Norcia",
         "body": "Short pasta with crumbled pork sausage and ricotta, often finished with black truffle. A dish built on Norcia’s pork tradition.",
         "note": "Norcia’s pork tradition",
-        "image": "https://lh3.googleusercontent.com/aida/AEtjO1XH3ztoRKkRdH9fjeZ7zGSvG7Z5lVtTJVcPxnxpnLlAyQgVptrChhD3aGe8eyAqVjd0t1vRNzKDPEjlQjVZ-Eo-tmswH65MCECJXC1QT7I-lJ124iYZKFjt2HHrSOK_zqbBcVos3Jg8CZW5bSAW6GQ8NC2GTMPbtiRRx9g9oxW6L3gS7A49QEWznJIYITZoOmWrGC6LiYi1Idw4k1vthGnlg7ZvP6f6Il5_lhaoAml5HXicCLGHPJRAbg"
+        "image": "https://lh3.googleusercontent.com/aida/AEtjO1XH3ztoRKkRdH9fjeZ7zGSvG7Z5lVtTJVcPxnxpnLlAyQgVptrChhD3aGe8eyAqVjd0t1vRNzKDPEjlQjVZ-Eo-tmswH65MCECJXC1QT7I-lJ124iYZKFjt2HHrSOK_zqbBcVos3Jg8CZW5bSAW6GQ8NC2GTMPbtiRRx9g9oxW6L3gS7A49QEWznJIYITZoOmWrGC6LiYi1Idw4k1vthGnlg7ZvP6f6Il5_lhaoAml5HXicCLGHPJRAbg=w1600"
       },
       {
         "title": "Torta al testo",
         "where": "Across the region",
         "body": "A flatbread of flour, water, and salt, cooked on a hot stone or iron griddle called a testo and eaten filled with cured meats such as Prosciutto di Norcia. In Gubbio it is called crescia.",
         "note": "Called crescia in Gubbio",
-        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAPcC0a36PdQKRFN67N9n4iWBfhvVaOYD4lAqKygnUjTrscttDOYLVoI8x1mJHXJybsSr0etHTwY4pU0A01kN4o1IfpMOvEBAXOIrB8eZ11ou4LrSyCjELVvYNkcTxy0DtPWugtK_maKrpF1S29ogN-YzCyzhDGWnfH4HdQ3jXFuv8h73Z3GNxqFxYhHzG5euOwWXNcUn83KLa8hc2NC2nQFY3TdtlSPgMj0otF-z9Yn-C7fprrBLWX"
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAPcC0a36PdQKRFN67N9n4iWBfhvVaOYD4lAqKygnUjTrscttDOYLVoI8x1mJHXJybsSr0etHTwY4pU0A01kN4o1IfpMOvEBAXOIrB8eZ11ou4LrSyCjELVvYNkcTxy0DtPWugtK_maKrpF1S29ogN-YzCyzhDGWnfH4HdQ3jXFuv8h73Z3GNxqFxYhHzG5euOwWXNcUn83KLa8hc2NC2nQFY3TdtlSPgMj0otF-z9Yn-C7fprrBLWX=w1600"
       }
     ],
     "eyebrow": "Culinary canon"
@@ -203,17 +203,17 @@ const umbria: RegionStory = {
     ],
     "photos": [
       {
-        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtz4nC-_Ocop-ZSNl-oDRC-xid0fbJjTqVPUEMGXDc-UbWWdybXrqmu31H6mlNxK4JZOSsBI_3IAP1pL-W1sqt1ikgMdtTPYAT0fiJGYVfiXm7UE6JSLZGJ-xb1o2egOuz7ozHvr2e63HG1-ErCgCkLhUPU-GdEtqrYqG00tazkWu8J6e4OugEKo2UbKYbn45zRYHOGVhj2I5_DSh4G0FKDs3o_7WoAfI3PI8c74tSjobPIsG3e2gB",
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtz4nC-_Ocop-ZSNl-oDRC-xid0fbJjTqVPUEMGXDc-UbWWdybXrqmu31H6mlNxK4JZOSsBI_3IAP1pL-W1sqt1ikgMdtTPYAT0fiJGYVfiXm7UE6JSLZGJ-xb1o2egOuz7ozHvr2e63HG1-ErCgCkLhUPU-GdEtqrYqG00tazkWu8J6e4OugEKo2UbKYbn45zRYHOGVhj2I5_DSh4G0FKDs3o_7WoAfI3PI8c74tSjobPIsG3e2gB=w1600",
         "alt": "Scheggino on the river Nera",
         "caption": "Scheggino on the river Nera"
       },
       {
-        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtz4nC-_Ocop-ZSNl-oDRC-xid0fbJjTqVPUEMGXDc-UbWWdybXrqmu31H6mlNxK4JZOSsBI_3IAP1pL-W1sqt1ikgMdtTPYAT0fiJGYVfiXm7UE6JSLZGJ-xb1o2egOuz7ozHvr2e63HG1-ErCgCkLhUPU-GdEtqrYqG00tazkWu8J6e4OugEKo2UbKYbn45zRYHOGVhj2I5_DSh4G0FKDs3o_7WoAfI3PI8c74tSjobPIsG3e2gB",
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtz4nC-_Ocop-ZSNl-oDRC-xid0fbJjTqVPUEMGXDc-UbWWdybXrqmu31H6mlNxK4JZOSsBI_3IAP1pL-W1sqt1ikgMdtTPYAT0fiJGYVfiXm7UE6JSLZGJ-xb1o2egOuz7ozHvr2e63HG1-ErCgCkLhUPU-GdEtqrYqG00tazkWu8J6e4OugEKo2UbKYbn45zRYHOGVhj2I5_DSh4G0FKDs3o_7WoAfI3PI8c74tSjobPIsG3e2gB=w1600",
         "alt": "Valnerina black truffles",
         "caption": "Valnerina black truffles"
       },
       {
-        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtz4nC-_Ocop-ZSNl-oDRC-xid0fbJjTqVPUEMGXDc-UbWWdybXrqmu31H6mlNxK4JZOSsBI_3IAP1pL-W1sqt1ikgMdtTPYAT0fiJGYVfiXm7UE6JSLZGJ-xb1o2egOuz7ozHvr2e63HG1-ErCgCkLhUPU-GdEtqrYqG00tazkWu8J6e4OugEKo2UbKYbn45zRYHOGVhj2I5_DSh4G0FKDs3o_7WoAfI3PI8c74tSjobPIsG3e2gB",
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtz4nC-_Ocop-ZSNl-oDRC-xid0fbJjTqVPUEMGXDc-UbWWdybXrqmu31H6mlNxK4JZOSsBI_3IAP1pL-W1sqt1ikgMdtTPYAT0fiJGYVfiXm7UE6JSLZGJ-xb1o2egOuz7ozHvr2e63HG1-ErCgCkLhUPU-GdEtqrYqG00tazkWu8J6e4OugEKo2UbKYbn45zRYHOGVhj2I5_DSh4G0FKDs3o_7WoAfI3PI8c74tSjobPIsG3e2gB=w1600",
         "alt": "Urbani preserved truffle",
         "caption": "Urbani preserved truffle"
       }
@@ -241,7 +241,7 @@ const umbria: RegionStory = {
         "tag": "Black truffle",
         "tagTone": "gold",
         "origin": "Scheggino",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtz4nC-_Ocop-ZSNl-oDRC-xid0fbJjTqVPUEMGXDc-UbWWdybXrqmu31H6mlNxK4JZOSsBI_3IAP1pL-W1sqt1ikgMdtTPYAT0fiJGYVfiXm7UE6JSLZGJ-xb1o2egOuz7ozHvr2e63HG1-ErCgCkLhUPU-GdEtqrYqG00tazkWu8J6e4OugEKo2UbKYbn45zRYHOGVhj2I5_DSh4G0FKDs3o_7WoAfI3PI8c74tSjobPIsG3e2gB"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtz4nC-_Ocop-ZSNl-oDRC-xid0fbJjTqVPUEMGXDc-UbWWdybXrqmu31H6mlNxK4JZOSsBI_3IAP1pL-W1sqt1ikgMdtTPYAT0fiJGYVfiXm7UE6JSLZGJ-xb1o2egOuz7ozHvr2e63HG1-ErCgCkLhUPU-GdEtqrYqG00tazkWu8J6e4OugEKo2UbKYbn45zRYHOGVhj2I5_DSh4G0FKDs3o_7WoAfI3PI8c74tSjobPIsG3e2gB=w1600"
       },
       {
         "id": "umb-urbani-salsa",
@@ -250,7 +250,7 @@ const umbria: RegionStory = {
         "tag": "Truffle sauce",
         "tagTone": "gold",
         "origin": "Scheggino",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtz4nC-_Ocop-ZSNl-oDRC-xid0fbJjTqVPUEMGXDc-UbWWdybXrqmu31H6mlNxK4JZOSsBI_3IAP1pL-W1sqt1ikgMdtTPYAT0fiJGYVfiXm7UE6JSLZGJ-xb1o2egOuz7ozHvr2e63HG1-ErCgCkLhUPU-GdEtqrYqG00tazkWu8J6e4OugEKo2UbKYbn45zRYHOGVhj2I5_DSh4G0FKDs3o_7WoAfI3PI8c74tSjobPIsG3e2gB"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtz4nC-_Ocop-ZSNl-oDRC-xid0fbJjTqVPUEMGXDc-UbWWdybXrqmu31H6mlNxK4JZOSsBI_3IAP1pL-W1sqt1ikgMdtTPYAT0fiJGYVfiXm7UE6JSLZGJ-xb1o2egOuz7ozHvr2e63HG1-ErCgCkLhUPU-GdEtqrYqG00tazkWu8J6e4OugEKo2UbKYbn45zRYHOGVhj2I5_DSh4G0FKDs3o_7WoAfI3PI8c74tSjobPIsG3e2gB=w1600"
       }
     ]
   },
@@ -299,7 +299,7 @@ const umbria: RegionStory = {
           "tag": "IGP",
           "tagTone": "green",
           "origin": "Castelluccio",
-          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq=w1600"
         },
         {
           "id": "umb-olio",
@@ -308,7 +308,7 @@ const umbria: RegionStory = {
           "tag": "DOP",
           "tagTone": "green",
           "origin": "Assisi to Spoleto",
-          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w"
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w=w1600"
         }
       ],
       "schema": {
@@ -328,7 +328,7 @@ const umbria: RegionStory = {
         ]
       },
       "imageCaption": "Norcia classic · about 50 minutes",
-      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w"
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w=w1600"
     },
     "shortcut": {
       "title": "Ten minutes in Spoleto",
@@ -341,7 +341,7 @@ const umbria: RegionStory = {
           "tag": "Egg-free",
           "tagTone": "neutral",
           "origin": "Spoleto, Foligno",
-          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDMH2M-VN1-Pz9hCbkXgdgup639qKPj1bgJo2jf1PgPm9NKzrgAY_T6MZujPmHAC4Z5W83H6bgIwaOrwcCLEuI-3an8k7c44fESuTzHNkXQYSCN_pESKkZUsjfCP-01ZMORW4JuJXmElmpAAAxPwRTi5o5Crpmlu_bVRSOXjhggx377vb87iOfKRdkb1LjsaiX1pF73K7pXrg-DIruRvIfEPidPaOJoOlRNnbEwUK6fqguV0N3VVklu"
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDMH2M-VN1-Pz9hCbkXgdgup639qKPj1bgJo2jf1PgPm9NKzrgAY_T6MZujPmHAC4Z5W83H6bgIwaOrwcCLEuI-3an8k7c44fESuTzHNkXQYSCN_pESKkZUsjfCP-01ZMORW4JuJXmElmpAAAxPwRTi5o5Crpmlu_bVRSOXjhggx377vb87iOfKRdkb1LjsaiX1pF73K7pXrg-DIruRvIfEPidPaOJoOlRNnbEwUK6fqguV0N3VVklu=w1600"
         },
         {
           "id": "umb-urbani-nero",
@@ -350,7 +350,7 @@ const umbria: RegionStory = {
           "tag": "Black truffle",
           "tagTone": "gold",
           "origin": "Scheggino",
-          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtz4nC-_Ocop-ZSNl-oDRC-xid0fbJjTqVPUEMGXDc-UbWWdybXrqmu31H6mlNxK4JZOSsBI_3IAP1pL-W1sqt1ikgMdtTPYAT0fiJGYVfiXm7UE6JSLZGJ-xb1o2egOuz7ozHvr2e63HG1-ErCgCkLhUPU-GdEtqrYqG00tazkWu8J6e4OugEKo2UbKYbn45zRYHOGVhj2I5_DSh4G0FKDs3o_7WoAfI3PI8c74tSjobPIsG3e2gB"
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtz4nC-_Ocop-ZSNl-oDRC-xid0fbJjTqVPUEMGXDc-UbWWdybXrqmu31H6mlNxK4JZOSsBI_3IAP1pL-W1sqt1ikgMdtTPYAT0fiJGYVfiXm7UE6JSLZGJ-xb1o2egOuz7ozHvr2e63HG1-ErCgCkLhUPU-GdEtqrYqG00tazkWu8J6e4OugEKo2UbKYbn45zRYHOGVhj2I5_DSh4G0FKDs3o_7WoAfI3PI8c74tSjobPIsG3e2gB=w1600"
         }
       ],
       "eyebrow": "Ten minutes in Spoleto",
@@ -371,7 +371,7 @@ const umbria: RegionStory = {
         "tag": "IGP",
         "tagTone": "green",
         "origin": "Castelluccio",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq=w1600"
       },
       {
         "id": "umb-farro",
@@ -380,7 +380,7 @@ const umbria: RegionStory = {
         "tag": "DOP",
         "tagTone": "green",
         "origin": "Monteleone",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo=w1600"
       },
       {
         "id": "umb-strangozzi",
@@ -389,7 +389,7 @@ const umbria: RegionStory = {
         "tag": "Egg-free",
         "tagTone": "neutral",
         "origin": "Spoleto, Foligno",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDMH2M-VN1-Pz9hCbkXgdgup639qKPj1bgJo2jf1PgPm9NKzrgAY_T6MZujPmHAC4Z5W83H6bgIwaOrwcCLEuI-3an8k7c44fESuTzHNkXQYSCN_pESKkZUsjfCP-01ZMORW4JuJXmElmpAAAxPwRTi5o5Crpmlu_bVRSOXjhggx377vb87iOfKRdkb1LjsaiX1pF73K7pXrg-DIruRvIfEPidPaOJoOlRNnbEwUK6fqguV0N3VVklu"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDMH2M-VN1-Pz9hCbkXgdgup639qKPj1bgJo2jf1PgPm9NKzrgAY_T6MZujPmHAC4Z5W83H6bgIwaOrwcCLEuI-3an8k7c44fESuTzHNkXQYSCN_pESKkZUsjfCP-01ZMORW4JuJXmElmpAAAxPwRTi5o5Crpmlu_bVRSOXjhggx377vb87iOfKRdkb1LjsaiX1pF73K7pXrg-DIruRvIfEPidPaOJoOlRNnbEwUK6fqguV0N3VVklu=w1600"
       },
       {
         "id": "umb-olio",
@@ -398,7 +398,7 @@ const umbria: RegionStory = {
         "tag": "DOP",
         "tagTone": "green",
         "origin": "Assisi to Spoleto",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w=w1600"
       },
       {
         "id": "umb-prosciutto",
@@ -407,7 +407,7 @@ const umbria: RegionStory = {
         "tag": "IGP",
         "tagTone": "green",
         "origin": "Norcia",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr=w1600"
       },
       {
         "id": "umb-salumi-norcia",
@@ -416,7 +416,7 @@ const umbria: RegionStory = {
         "tag": "Norcino craft",
         "tagTone": "neutral",
         "origin": "Norcia",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCZhnC6OD1VrmeoAkesXcV61vBh25ZoqFu3NKi1EWxScFq08esuCcNzj28MeLyPLME1eJ4rqHGka5Va1TpbBHJJjtXPwJCp0j6OcrdBzYqdqkNECgc1aIdIrdUQ-3yQ49QItc5wh4ZkdvFaJm6-EOJLmg_-fEa9Y74OCjgdx1yeFqlC35iIO1cg2THDFfbVWTTKfIfoC35P_lksCF2Ua-5Tn5iAP5Amgfwuc-v6kUOIJSkESvhpWyfq"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCZhnC6OD1VrmeoAkesXcV61vBh25ZoqFu3NKi1EWxScFq08esuCcNzj28MeLyPLME1eJ4rqHGka5Va1TpbBHJJjtXPwJCp0j6OcrdBzYqdqkNECgc1aIdIrdUQ-3yQ49QItc5wh4ZkdvFaJm6-EOJLmg_-fEa9Y74OCjgdx1yeFqlC35iIO1cg2THDFfbVWTTKfIfoC35P_lksCF2Ua-5Tn5iAP5Amgfwuc-v6kUOIJSkESvhpWyfq=w1600"
       },
       {
         "id": "umb-urbani-nero",
@@ -425,7 +425,7 @@ const umbria: RegionStory = {
         "tag": "Black truffle",
         "tagTone": "gold",
         "origin": "Scheggino",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtz4nC-_Ocop-ZSNl-oDRC-xid0fbJjTqVPUEMGXDc-UbWWdybXrqmu31H6mlNxK4JZOSsBI_3IAP1pL-W1sqt1ikgMdtTPYAT0fiJGYVfiXm7UE6JSLZGJ-xb1o2egOuz7ozHvr2e63HG1-ErCgCkLhUPU-GdEtqrYqG00tazkWu8J6e4OugEKo2UbKYbn45zRYHOGVhj2I5_DSh4G0FKDs3o_7WoAfI3PI8c74tSjobPIsG3e2gB"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtz4nC-_Ocop-ZSNl-oDRC-xid0fbJjTqVPUEMGXDc-UbWWdybXrqmu31H6mlNxK4JZOSsBI_3IAP1pL-W1sqt1ikgMdtTPYAT0fiJGYVfiXm7UE6JSLZGJ-xb1o2egOuz7ozHvr2e63HG1-ErCgCkLhUPU-GdEtqrYqG00tazkWu8J6e4OugEKo2UbKYbn45zRYHOGVhj2I5_DSh4G0FKDs3o_7WoAfI3PI8c74tSjobPIsG3e2gB=w1600"
       },
       {
         "id": "umb-urbani-salsa",
@@ -434,7 +434,7 @@ const umbria: RegionStory = {
         "tag": "Truffle sauce",
         "tagTone": "gold",
         "origin": "Scheggino",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtz4nC-_Ocop-ZSNl-oDRC-xid0fbJjTqVPUEMGXDc-UbWWdybXrqmu31H6mlNxK4JZOSsBI_3IAP1pL-W1sqt1ikgMdtTPYAT0fiJGYVfiXm7UE6JSLZGJ-xb1o2egOuz7ozHvr2e63HG1-ErCgCkLhUPU-GdEtqrYqG00tazkWu8J6e4OugEKo2UbKYbn45zRYHOGVhj2I5_DSh4G0FKDs3o_7WoAfI3PI8c74tSjobPIsG3e2gB"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDtz4nC-_Ocop-ZSNl-oDRC-xid0fbJjTqVPUEMGXDc-UbWWdybXrqmu31H6mlNxK4JZOSsBI_3IAP1pL-W1sqt1ikgMdtTPYAT0fiJGYVfiXm7UE6JSLZGJ-xb1o2egOuz7ozHvr2e63HG1-ErCgCkLhUPU-GdEtqrYqG00tazkWu8J6e4OugEKo2UbKYbn45zRYHOGVhj2I5_DSh4G0FKDs3o_7WoAfI3PI8c74tSjobPIsG3e2gB=w1600"
       }
     ],
     "eyebrow": "Limited curation · Parcel N° 13"

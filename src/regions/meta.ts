@@ -12,7 +12,7 @@ export const regionMeta: RegionMeta[] = [
   {"slug": "lazio", "name": "Lazio", "blurb": "Shepherds’ cheese, pork cheek, and the cooking of Rome.", "color": "#B5531E"},
   {"slug": "lombardia", "name": "Lombardia", "blurb": "Butter, rice, saffron, and the cheeses of the Alps.", "color": "#3C4A5C"},
   {"slug": "marche", "name": "Marche", "blurb": "Stuffed olives, fine egg pasta, and fish soup by the sea.", "color": "#8A3B4A"},
-  {"slug": "molise", "name": "Molise", "blurb": "Shepherds’ roads, stretched-curd cheese, and white truffles.", "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDM3HpPPNBxXbPDc0sP8_npr_sZLlloM_We1KuwEvKftHq7OhCf-K_Ry7b7XdS7DCRHJWlnqegbA3gvRYJ7QC-m9uy0SIS-vtSpHpnMn_lmAeD6XDSAkY_IeK3EbfEs8RG99-XMzxKVfKYRLVBMKgRLOOFJodvjNeL2jAW-S-t4Z7sg_jppMI5-IQD7dM-ZwgCxH2NzY3YZ3ZpOF5Y_YEMefJ1rK3ySALbPiMovvMBi_xiDESl4Jemr"},
+  {"slug": "molise", "name": "Molise", "blurb": "Shepherds’ roads, stretched-curd cheese, and white truffles.", "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDM3HpPPNBxXbPDc0sP8_npr_sZLlloM_We1KuwEvKftHq7OhCf-K_Ry7b7XdS7DCRHJWlnqegbA3gvRYJ7QC-m9uy0SIS-vtSpHpnMn_lmAeD6XDSAkY_IeK3EbfEs8RG99-XMzxKVfKYRLVBMKgRLOOFJodvjNeL2jAW-S-t4Z7sg_jppMI5-IQD7dM-ZwgCxH2NzY3YZ3ZpOF5Y_YEMefJ1rK3ySALbPiMovvMBi_xiDESl4Jemr=w1600"},
   {"slug": "piemonte", "name": "Piemonte", "blurb": "Truffles, hazelnuts, and a royal appetite.", "color": "#5B2A4A"},
   {"slug": "puglia", "name": "Puglia", "blurb": "Olive groves, golden wheat, and two seas.", "color": "#8A5A1F"},
   {"slug": "sardegna", "name": "Sardegna", "blurb": "Sheep’s cheese, saffron, and the salt of the lagoons.", "color": "#5C5248"},

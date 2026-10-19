@@ -44,7 +44,7 @@ const sicilia: RegionStory = {
     },
     "imageTag": "Mount Etna · eastern Sicily",
     "heritageNote": "agrodolce",
-    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDGGoAAQMTy7Z0xxOurJ9rSdAn_aIXBpPyaZT4-pJobqKZFx0YwSHOXzJYeVtpoZK7Eix3hQtLG8HmHvhY7RP99IsWjPqkcqcg4G6Y2E8mA5UiDPKkzgvfKMpIu8oiUPtxDKKyeKnXGREk-g3sc6DyXERzE4g_XviNtq_nR3_DvtVOFcZ4NWGpYZ07vymz4nwD_yhs_3TbzMRJGZE2JbANG9q65hDdbQvemjniv9VbFsPNawHKXsC05",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDGGoAAQMTy7Z0xxOurJ9rSdAn_aIXBpPyaZT4-pJobqKZFx0YwSHOXzJYeVtpoZK7Eix3hQtLG8HmHvhY7RP99IsWjPqkcqcg4G6Y2E8mA5UiDPKkzgvfKMpIu8oiUPtxDKKyeKnXGREk-g3sc6DyXERzE4g_XviNtq_nR3_DvtVOFcZ4NWGpYZ07vymz4nwD_yhs_3TbzMRJGZE2JbANG9q65hDdbQvemjniv9VbFsPNawHKXsC05=w1600",
     "imageAlt": "Europe’s tallest active volcano rises over the east, above volcanic slopes and sunbaked plains."
   },
   "intro": [
@@ -68,7 +68,7 @@ const sicilia: RegionStory = {
             "tag": "Volcanic soil",
             "tagTone": "gold",
             "origin": "Bronte",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuA50Y5nKfTahqDmQf6hgNWCLr7xZfxXGLEW3FD8w3BDW2gRLb_IiV_nyWmxu4U106llOMKtCYFK1PawL1oLPwA4ttUc2Ss1nU_NtWixdonqSg4uaTh0syy92HCx4spmsfNjNgTIfZoX66c-zy9WapcF4Jf7FkV1OXPm27VfjqMfLWKox5YDawHhKeorL_LFcRqb5CueBUMSM-XK8mj20hs5Q-lb47vTDEbKxW1Wh7H_wZK1UrDiogAI"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuA50Y5nKfTahqDmQf6hgNWCLr7xZfxXGLEW3FD8w3BDW2gRLb_IiV_nyWmxu4U106llOMKtCYFK1PawL1oLPwA4ttUc2Ss1nU_NtWixdonqSg4uaTh0syy92HCx4spmsfNjNgTIfZoX66c-zy9WapcF4Jf7FkV1OXPm27VfjqMfLWKox5YDawHhKeorL_LFcRqb5CueBUMSM-XK8mj20hs5Q-lb47vTDEbKxW1Wh7H_wZK1UrDiogAI=w1600"
           },
           {
             "id": "sic-pistachio-cream",
@@ -77,7 +77,7 @@ const sicilia: RegionStory = {
             "tag": "Sweet cream",
             "tagTone": "neutral",
             "origin": "Sicily",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDszTSe7WpUNoo8zbA72r8hbr_jQcjEikm1pi8jJTxXjwG3mDZ6lXA9Zr5GWeOwlqGj4EohsChEsPyZjaf_3rlzl-SLsygOJOK-qSrJOz5JkOLVTmWfmLKhoHtD25TeCHHySTfUtj75J-GQWOknJUJZJ-Te7qYQii7dmYNu2rMcU9hD7YwkvNNDwM1I2VcCmVyWMkreZr9Pf5B_FqECmszFxT1EmS1ezyL1li1DGxIubbTT6Gh0tTmU"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDszTSe7WpUNoo8zbA72r8hbr_jQcjEikm1pi8jJTxXjwG3mDZ6lXA9Zr5GWeOwlqGj4EohsChEsPyZjaf_3rlzl-SLsygOJOK-qSrJOz5JkOLVTmWfmLKhoHtD25TeCHHySTfUtj75J-GQWOknJUJZJ-Te7qYQii7dmYNu2rMcU9hD7YwkvNNDwM1I2VcCmVyWMkreZr9Pf5B_FqECmszFxT1EmS1ezyL1li1DGxIubbTT6Gh0tTmU=w1600"
           }
         ]
       },
@@ -94,7 +94,7 @@ const sicilia: RegionStory = {
             "tag": "In oil",
             "tagTone": "neutral",
             "origin": "Sciacca",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBRbfN3ec2j13IDm1PE1_z3XTGyEgtwGUUYTjZPOlr_XSHYQdySu4eni5eOXqrKG29Cl-GM6BIwsg8jt21ndJ7dF_v2T_t34PpNXh1wUwoN-V5yhIMZncJmE1BWFeStFpQRFpjHHXybHWqPAayZearG1M3sELhCkVAU7iqwesHOgc4x6uRnjfY8lqlAzgNDJ36Qk1zYHDXFvRI-S0rfWP25ciszdOMP1PMUS7ci3vjNMzI863KvNVVu"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBRbfN3ec2j13IDm1PE1_z3XTGyEgtwGUUYTjZPOlr_XSHYQdySu4eni5eOXqrKG29Cl-GM6BIwsg8jt21ndJ7dF_v2T_t34PpNXh1wUwoN-V5yhIMZncJmE1BWFeStFpQRFpjHHXybHWqPAayZearG1M3sELhCkVAU7iqwesHOgc4x6uRnjfY8lqlAzgNDJ36Qk1zYHDXFvRI-S0rfWP25ciszdOMP1PMUS7ci3vjNMzI863KvNVVu=w1600"
           },
           {
             "id": "sic-datterino-sauce",
@@ -103,7 +103,7 @@ const sicilia: RegionStory = {
             "tag": "Pantry staple",
             "tagTone": "neutral",
             "origin": "Southeast Sicily",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCFjvRWa-DBPlxV_S8Ks7GNA5P4X6i1CFTAJ7C4mSoGwQ00mOour74TvAfHythsLwS0k-LIo1djI_mqXWWAg5aclBYTgdd_6u4WlUbPsC_rx5ZsFnUG_PsDzsy4gdpU9znzPs83DjfI9VlpJwwTuHEUxq_WAU3pQ-XsuL72Bk4zcV7x_Ef_q01OARW3aAl4aiqgIARwJWA0Z8KD1qj5MQHPM_2gtt-Lh7igH3xqg1EWe7RYSMeb9efu"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCFjvRWa-DBPlxV_S8Ks7GNA5P4X6i1CFTAJ7C4mSoGwQ00mOour74TvAfHythsLwS0k-LIo1djI_mqXWWAg5aclBYTgdd_6u4WlUbPsC_rx5ZsFnUG_PsDzsy4gdpU9znzPs83DjfI9VlpJwwTuHEUxq_WAU3pQ-XsuL72Bk4zcV7x_Ef_q01OARW3aAl4aiqgIARwJWA0Z8KD1qj5MQHPM_2gtt-Lh7igH3xqg1EWe7RYSMeb9efu=w1600"
           }
         ]
       },
@@ -120,7 +120,7 @@ const sicilia: RegionStory = {
             "tag": "IGP",
             "tagTone": "green",
             "origin": "Pantelleria",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq=w1600"
           },
           {
             "id": "sic-castelvetrano-olives",
@@ -129,7 +129,7 @@ const sicilia: RegionStory = {
             "tag": "Nocellara",
             "tagTone": "neutral",
             "origin": "Valle del Belice",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr=w1600"
           }
         ]
       },
@@ -146,7 +146,7 @@ const sicilia: RegionStory = {
             "tag": "Avola almonds",
             "tagTone": "neutral",
             "origin": "Sciacca",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo=w1600"
           }
         ]
       },
@@ -163,7 +163,7 @@ const sicilia: RegionStory = {
             "tag": "DOP",
             "tagTone": "green",
             "origin": "Across the island",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBU3O0qjc03YxJyeGreRcupZwz17tHGJHD5wHNfJ0p7EiTyJysIhlTpcXRQlU_9eU7JtZ9vYmMG1QkxPwTjQ1M4HKGKnp6G_wR77H9L92h6P1WFxFkdXdSnxzj1rYtIuYOHP3y1GFX7qLppRyyiuuFh143IYV753SuLjQLV1IN1Ux5-xM3ZgRGf1d7Bb4jjk31RDCfQ-Hqhx2JvDbAWSwuRQ51e8ensDs4uGSlEgC2bmSQ1QRP27a6w=w1600"
           }
         ]
       },
@@ -180,7 +180,7 @@ const sicilia: RegionStory = {
             "tag": "IGP",
             "tagTone": "green",
             "origin": "Modica",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuC66Qz_O1vxGNBZSyhKBG7E11V9J_ynfSiGuUL5GLDjS-pp7xx0eqw_gmnVIRMXOEiaJ2wLNz9eDe-dRv1HJffGFDGWKIH-9TlU0UBDIw940qDCkUbeXjZjdsjLtKuD3B7Gg0GWHngYfm0d0u9xYun-FrttGnejAkzJLWV7HyuC_ZCA_QHWryHtkt4PkqDJFzQjJqtsSDMMGOLlU2E8sTTNiKXafW91SYmjA9P72M1cR5KetKzCi5cq"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuC66Qz_O1vxGNBZSyhKBG7E11V9J_ynfSiGuUL5GLDjS-pp7xx0eqw_gmnVIRMXOEiaJ2wLNz9eDe-dRv1HJffGFDGWKIH-9TlU0UBDIw940qDCkUbeXjZjdsjLtKuD3B7Gg0GWHngYfm0d0u9xYun-FrttGnejAkzJLWV7HyuC_ZCA_QHWryHtkt4PkqDJFzQjJqtsSDMMGOLlU2E8sTTNiKXafW91SYmjA9P72M1cR5KetKzCi5cq=w1600"
           }
         ]
       }
@@ -195,28 +195,28 @@ const sicilia: RegionStory = {
         "where": "Catania",
         "body": "Tomato, fried eggplant, basil, and salty ricotta salata. Generous and restrained at once, and the best first dish for anyone new to Sicilian cooking.",
         "tip": "[Cook it below](#norma)",
-        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl=w1600"
       },
       {
         "title": "Caponata",
         "where": "Across the island",
         "body": "Eggplant, celery, tomato, olives, and capers in a sweet-and-sour agrodolce. Serve at room temperature as an antipasto, beside grilled fish, or on toasted bread. In Palermo, many cooks add raisins and pine nuts.",
         "tip": "Skip the hour at the stove with [a ready-made jar](product:sic-caponata).",
-        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuC66Qz_O1vxGNBZSyhKBG7E11V9J_ynfSiGuUL5GLDjS-pp7xx0eqw_gmnVIRMXOEiaJ2wLNz9eDe-dRv1HJffGFDGWKIH-9TlU0UBDIw940qDCkUbeXjZjdsjLtKuD3B7Gg0GWHngYfm0d0u9xYun-FrttGnejAkzJLWV7HyuC_ZCA_QHWryHtkt4PkqDJFzQjJqtsSDMMGOLlU2E8sTTNiKXafW91SYmjA9P72M1cR5KetKzCi5cq"
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuC66Qz_O1vxGNBZSyhKBG7E11V9J_ynfSiGuUL5GLDjS-pp7xx0eqw_gmnVIRMXOEiaJ2wLNz9eDe-dRv1HJffGFDGWKIH-9TlU0UBDIw940qDCkUbeXjZjdsjLtKuD3B7Gg0GWHngYfm0d0u9xYun-FrttGnejAkzJLWV7HyuC_ZCA_QHWryHtkt4PkqDJFzQjJqtsSDMMGOLlU2E8sTTNiKXafW91SYmjA9P72M1cR5KetKzCi5cq=w1600"
       },
       {
         "title": "Pasta con le sarde",
         "where": "Palermo",
         "body": "Sardines, wild fennel, raisins, pine nuts, saffron, and toasted breadcrumbs. The raisins, pine nuts, and saffron arrived with Arab rule in the ninth century and never left Palermo’s kitchens.",
         "tip": "Can’t find wild fennel? Use cultivated fennel fronds plus a pinch of [wild fennel seed](product:sic-wild-fennel).",
-        "image": "https://lh3.googleusercontent.com/aida/AEtjO1XH3ztoRKkRdH9fjeZ7zGSvG7Z5lVtTJVcPxnxpnLlAyQgVptrChhD3aGe8eyAqVjd0t1vRNzKDPEjlQjVZ-Eo-tmswH65MCECJXC1QT7I-lJ124iYZKFjt2HHrSOK_zqbBcVos3Jg8CZW5bSAW6GQ8NC2GTMPbtiRRx9g9oxW6L3gS7A49QEWznJIYITZoOmWrGC6LiYi1Idw4k1vthGnlg7ZvP6f6Il5_lhaoAml5HXicCLGHPJRAbg"
+        "image": "https://lh3.googleusercontent.com/aida/AEtjO1XH3ztoRKkRdH9fjeZ7zGSvG7Z5lVtTJVcPxnxpnLlAyQgVptrChhD3aGe8eyAqVjd0t1vRNzKDPEjlQjVZ-Eo-tmswH65MCECJXC1QT7I-lJ124iYZKFjt2HHrSOK_zqbBcVos3Jg8CZW5bSAW6GQ8NC2GTMPbtiRRx9g9oxW6L3gS7A49QEWznJIYITZoOmWrGC6LiYi1Idw4k1vthGnlg7ZvP6f6Il5_lhaoAml5HXicCLGHPJRAbg=w1600"
       },
       {
         "title": "Cannoli and granita",
         "where": "Sweet Sicily",
         "body": "Crisp fried shells with sweetened sheep’s-milk ricotta; icy granita of coffee, almond, or lemon. Both are built on contrast.",
         "tip": "For the table: [pistachio-filled cannoli](product:sic-cannoli).",
-        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDjU6UvYZUkSS18t8CQRRZnaNRc0VACKEjhPlfVfFdQ5pc54Xgy2GXOEcxNifnA64xYFhIvY_BUqA0MS-JHhIaxXG7ywJwi-c-2MoMLZQYjN7ECQUWQ30CTSnJyq3Tm7zn-7BkZHvprZQ0C9r6FYA64tnvr49FJHlvmY9kt2p8vCcOUoVi5fnGJfnDaU2kugnGZmTBxsCTHRKgMprbhUPLgw98lDHWUqoVhS2_XltgdYBMo8Wdajv2i"
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDjU6UvYZUkSS18t8CQRRZnaNRc0VACKEjhPlfVfFdQ5pc54Xgy2GXOEcxNifnA64xYFhIvY_BUqA0MS-JHhIaxXG7ywJwi-c-2MoMLZQYjN7ECQUWQ30CTSnJyq3Tm7zn-7BkZHvprZQ0C9r6FYA64tnvr49FJHlvmY9kt2p8vCcOUoVi5fnGJfnDaU2kugnGZmTBxsCTHRKgMprbhUPLgw98lDHWUqoVhS2_XltgdYBMo8Wdajv2i=w1600"
       }
     ],
     "eyebrow": "Culinary canon"
@@ -230,17 +230,17 @@ const sicilia: RegionStory = {
     ],
     "photos": [
       {
-        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBRbfN3ec2j13IDm1PE1_z3XTGyEgtwGUUYTjZPOlr_XSHYQdySu4eni5eOXqrKG29Cl-GM6BIwsg8jt21ndJ7dF_v2T_t34PpNXh1wUwoN-V5yhIMZncJmE1BWFeStFpQRFpjHHXybHWqPAayZearG1M3sELhCkVAU7iqwesHOgc4x6uRnjfY8lqlAzgNDJ36Qk1zYHDXFvRI-S0rfWP25ciszdOMP1PMUS7ci3vjNMzI863KvNVVu",
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBRbfN3ec2j13IDm1PE1_z3XTGyEgtwGUUYTjZPOlr_XSHYQdySu4eni5eOXqrKG29Cl-GM6BIwsg8jt21ndJ7dF_v2T_t34PpNXh1wUwoN-V5yhIMZncJmE1BWFeStFpQRFpjHHXybHWqPAayZearG1M3sELhCkVAU7iqwesHOgc4x6uRnjfY8lqlAzgNDJ36Qk1zYHDXFvRI-S0rfWP25ciszdOMP1PMUS7ci3vjNMzI863KvNVVu=w1600",
         "alt": "Organic family farm · Sciacca",
         "caption": "Organic family farm · Sciacca"
       },
       {
-        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq",
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq=w1600",
         "alt": "Family kitchen · Campo D’Oro",
         "caption": "Family kitchen · Campo D’Oro"
       },
       {
-        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAnmv_x6pp8pedaJCwB3KpOyHiwoux-_Zw7UEg-8tHQA_WJGaPfnDtGodkrZjSiPXFoiIM0lbvgYcoOUCfJSy5AbEl111xwfxRWxfyGgSnyKAinmiguDsYDuxWCvIiDR15Qwm2ZKdjCzGHWmTjzYB1abwN7YqA65e_DwIc2qf_h09V0xMNEdJKbcLMYZFXc3RN2UXvi9uOgM0JYY1X1L5Wl1aUwDP0dBBQfz6uOjhWBl1K0MoFePgpE",
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAnmv_x6pp8pedaJCwB3KpOyHiwoux-_Zw7UEg-8tHQA_WJGaPfnDtGodkrZjSiPXFoiIM0lbvgYcoOUCfJSy5AbEl111xwfxRWxfyGgSnyKAinmiguDsYDuxWCvIiDR15Qwm2ZKdjCzGHWmTjzYB1abwN7YqA65e_DwIc2qf_h09V0xMNEdJKbcLMYZFXc3RN2UXvi9uOgM0JYY1X1L5Wl1aUwDP0dBBQfz6uOjhWBl1K0MoFePgpE=w1600",
         "alt": "Campo D’Oro jars · Sciacca",
         "caption": "Campo D’Oro jars · Sciacca"
       }
@@ -268,7 +268,7 @@ const sicilia: RegionStory = {
         "tag": "Family recipe",
         "tagTone": "neutral",
         "origin": "Sciacca",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDMH2M-VN1-Pz9hCbkXgdgup639qKPj1bgJo2jf1PgPm9NKzrgAY_T6MZujPmHAC4Z5W83H6bgIwaOrwcCLEuI-3an8k7c44fESuTzHNkXQYSCN_pESKkZUsjfCP-01ZMORW4JuJXmElmpAAAxPwRTi5o5Crpmlu_bVRSOXjhggx377vb87iOfKRdkb1LjsaiX1pF73K7pXrg-DIruRvIfEPidPaOJoOlRNnbEwUK6fqguV0N3VVklu"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDMH2M-VN1-Pz9hCbkXgdgup639qKPj1bgJo2jf1PgPm9NKzrgAY_T6MZujPmHAC4Z5W83H6bgIwaOrwcCLEuI-3an8k7c44fESuTzHNkXQYSCN_pESKkZUsjfCP-01ZMORW4JuJXmElmpAAAxPwRTi5o5Crpmlu_bVRSOXjhggx377vb87iOfKRdkb1LjsaiX1pF73K7pXrg-DIruRvIfEPidPaOJoOlRNnbEwUK6fqguV0N3VVklu=w1600"
       },
       {
         "id": "sic-pesto-trapanese",
@@ -277,7 +277,7 @@ const sicilia: RegionStory = {
         "tag": "Avola almonds",
         "tagTone": "neutral",
         "origin": "Sciacca",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo=w1600"
       },
       {
         "id": "sic-sundried-tomatoes",
@@ -286,7 +286,7 @@ const sicilia: RegionStory = {
         "tag": "In oil",
         "tagTone": "neutral",
         "origin": "Sciacca",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBRbfN3ec2j13IDm1PE1_z3XTGyEgtwGUUYTjZPOlr_XSHYQdySu4eni5eOXqrKG29Cl-GM6BIwsg8jt21ndJ7dF_v2T_t34PpNXh1wUwoN-V5yhIMZncJmE1BWFeStFpQRFpjHHXybHWqPAayZearG1M3sELhCkVAU7iqwesHOgc4x6uRnjfY8lqlAzgNDJ36Qk1zYHDXFvRI-S0rfWP25ciszdOMP1PMUS7ci3vjNMzI863KvNVVu"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBRbfN3ec2j13IDm1PE1_z3XTGyEgtwGUUYTjZPOlr_XSHYQdySu4eni5eOXqrKG29Cl-GM6BIwsg8jt21ndJ7dF_v2T_t34PpNXh1wUwoN-V5yhIMZncJmE1BWFeStFpQRFpjHHXybHWqPAayZearG1M3sELhCkVAU7iqwesHOgc4x6uRnjfY8lqlAzgNDJ36Qk1zYHDXFvRI-S0rfWP25ciszdOMP1PMUS7ci3vjNMzI863KvNVVu=w1600"
       },
       {
         "id": "sic-blood-orange-marmalade",
@@ -295,7 +295,7 @@ const sicilia: RegionStory = {
         "tag": "Marmalade",
         "tagTone": "neutral",
         "origin": "Sciacca",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDjU6UvYZUkSS18t8CQRRZnaNRc0VACKEjhPlfVfFdQ5pc54Xgy2GXOEcxNifnA64xYFhIvY_BUqA0MS-JHhIaxXG7ywJwi-c-2MoMLZQYjN7ECQUWQ30CTSnJyq3Tm7zn-7BkZHvprZQ0C9r6FYA64tnvr49FJHlvmY9kt2p8vCcOUoVi5fnGJfnDaU2kugnGZmTBxsCTHRKgMprbhUPLgw98lDHWUqoVhS2_XltgdYBMo8Wdajv2i"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDjU6UvYZUkSS18t8CQRRZnaNRc0VACKEjhPlfVfFdQ5pc54Xgy2GXOEcxNifnA64xYFhIvY_BUqA0MS-JHhIaxXG7ywJwi-c-2MoMLZQYjN7ECQUWQ30CTSnJyq3Tm7zn-7BkZHvprZQ0C9r6FYA64tnvr49FJHlvmY9kt2p8vCcOUoVi5fnGJfnDaU2kugnGZmTBxsCTHRKgMprbhUPLgw98lDHWUqoVhS2_XltgdYBMo8Wdajv2i=w1600"
       }
     ]
   },
@@ -349,7 +349,7 @@ const sicilia: RegionStory = {
           "tag": "Pantry staple",
           "tagTone": "neutral",
           "origin": "Sicily",
-          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBY4455DEX1zjjpdq7-_mNILuWUJRUYyvMxMXx4jMQYd55DK_wV9oy-PIMx-rP1tMRkt8iwhkFiYgazb05uFnI6rs1jFuEPynANvN6XO5Q_mSnHWHJH7MXg9cvrDWA3798HSfMlbXyd0ju2P_NXo2Qv8uEjZgBuH4jKkJLmoPYvIgiiMvli6aTlEQ3pQ0aD3-aKYdw8BfdknHP3ri2lylIohY914kchXuH9Q7icchs3wAuR2FxKDpvCKg"
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBY4455DEX1zjjpdq7-_mNILuWUJRUYyvMxMXx4jMQYd55DK_wV9oy-PIMx-rP1tMRkt8iwhkFiYgazb05uFnI6rs1jFuEPynANvN6XO5Q_mSnHWHJH7MXg9cvrDWA3798HSfMlbXyd0ju2P_NXo2Qv8uEjZgBuH4jKkJLmoPYvIgiiMvli6aTlEQ3pQ0aD3-aKYdw8BfdknHP3ri2lylIohY914kchXuH9Q7icchs3wAuR2FxKDpvCKg=w1600"
         },
         {
           "id": "sic-trapani-salt",
@@ -358,7 +358,7 @@ const sicilia: RegionStory = {
           "tag": "Hand-harvested",
           "tagTone": "neutral",
           "origin": "Trapani",
-          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCZhnC6OD1VrmeoAkesXcV61vBh25ZoqFu3NKi1EWxScFq08esuCcNzj28MeLyPLME1eJ4rqHGka5Va1TpbBHJJjtXPwJCp0j6OcrdBzYqdqkNECgc1aIdIrdUQ-3yQ49QItc5wh4ZkdvFaJm6-EOJLmg_-fEa9Y74OCjgdx1yeFqlC35iIO1cg2THDFfbVWTTKfIfoC35P_lksCF2Ua-5Tn5iAP5Amgfwuc-v6kUOIJSkESvhpWyfq"
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCZhnC6OD1VrmeoAkesXcV61vBh25ZoqFu3NKi1EWxScFq08esuCcNzj28MeLyPLME1eJ4rqHGka5Va1TpbBHJJjtXPwJCp0j6OcrdBzYqdqkNECgc1aIdIrdUQ-3yQ49QItc5wh4ZkdvFaJm6-EOJLmg_-fEa9Y74OCjgdx1yeFqlC35iIO1cg2THDFfbVWTTKfIfoC35P_lksCF2Ua-5Tn5iAP5Amgfwuc-v6kUOIJSkESvhpWyfq=w1600"
         }
       ],
       "schema": {
@@ -378,7 +378,7 @@ const sicilia: RegionStory = {
         ]
       },
       "imageCaption": "Catania classic · about 50 minutes",
-      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl=w1600"
     },
     "shortcut": {
       "title": "Ten minutes in Trapani",
@@ -391,7 +391,7 @@ const sicilia: RegionStory = {
           "tag": "Durum wheat",
           "tagTone": "neutral",
           "origin": "Western Sicily",
-          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl=w1600"
         },
         {
           "id": "sic-pesto-trapanese",
@@ -400,7 +400,7 @@ const sicilia: RegionStory = {
           "tag": "Avola almonds",
           "tagTone": "neutral",
           "origin": "Sciacca",
-          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo"
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo=w1600"
         }
       ],
       "eyebrow": "Trapani shortcut",
@@ -421,7 +421,7 @@ const sicilia: RegionStory = {
         "tag": "Volcanic soil",
         "tagTone": "gold",
         "origin": "Bronte",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuA50Y5nKfTahqDmQf6hgNWCLr7xZfxXGLEW3FD8w3BDW2gRLb_IiV_nyWmxu4U106llOMKtCYFK1PawL1oLPwA4ttUc2Ss1nU_NtWixdonqSg4uaTh0syy92HCx4spmsfNjNgTIfZoX66c-zy9WapcF4Jf7FkV1OXPm27VfjqMfLWKox5YDawHhKeorL_LFcRqb5CueBUMSM-XK8mj20hs5Q-lb47vTDEbKxW1Wh7H_wZK1UrDiogAI"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuA50Y5nKfTahqDmQf6hgNWCLr7xZfxXGLEW3FD8w3BDW2gRLb_IiV_nyWmxu4U106llOMKtCYFK1PawL1oLPwA4ttUc2Ss1nU_NtWixdonqSg4uaTh0syy92HCx4spmsfNjNgTIfZoX66c-zy9WapcF4Jf7FkV1OXPm27VfjqMfLWKox5YDawHhKeorL_LFcRqb5CueBUMSM-XK8mj20hs5Q-lb47vTDEbKxW1Wh7H_wZK1UrDiogAI=w1600"
       },
       {
         "id": "sic-pesto-trapanese",
@@ -430,7 +430,7 @@ const sicilia: RegionStory = {
         "tag": "Avola almonds",
         "tagTone": "neutral",
         "origin": "Sciacca",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo=w1600"
       },
       {
         "id": "sic-caponata",
@@ -439,7 +439,7 @@ const sicilia: RegionStory = {
         "tag": "Family recipe",
         "tagTone": "neutral",
         "origin": "Sciacca",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDMH2M-VN1-Pz9hCbkXgdgup639qKPj1bgJo2jf1PgPm9NKzrgAY_T6MZujPmHAC4Z5W83H6bgIwaOrwcCLEuI-3an8k7c44fESuTzHNkXQYSCN_pESKkZUsjfCP-01ZMORW4JuJXmElmpAAAxPwRTi5o5Crpmlu_bVRSOXjhggx377vb87iOfKRdkb1LjsaiX1pF73K7pXrg-DIruRvIfEPidPaOJoOlRNnbEwUK6fqguV0N3VVklu"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDMH2M-VN1-Pz9hCbkXgdgup639qKPj1bgJo2jf1PgPm9NKzrgAY_T6MZujPmHAC4Z5W83H6bgIwaOrwcCLEuI-3an8k7c44fESuTzHNkXQYSCN_pESKkZUsjfCP-01ZMORW4JuJXmElmpAAAxPwRTi5o5Crpmlu_bVRSOXjhggx377vb87iOfKRdkb1LjsaiX1pF73K7pXrg-DIruRvIfEPidPaOJoOlRNnbEwUK6fqguV0N3VVklu=w1600"
       },
       {
         "id": "sic-castelvetrano-olives",
@@ -448,7 +448,7 @@ const sicilia: RegionStory = {
         "tag": "Nocellara",
         "tagTone": "neutral",
         "origin": "Valle del Belice",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr=w1600"
       },
       {
         "id": "sic-busiate",
@@ -457,7 +457,7 @@ const sicilia: RegionStory = {
         "tag": "Durum wheat",
         "tagTone": "neutral",
         "origin": "Western Sicily",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl=w1600"
       },
       {
         "id": "sic-trapani-salt",
@@ -466,7 +466,7 @@ const sicilia: RegionStory = {
         "tag": "Hand-harvested",
         "tagTone": "neutral",
         "origin": "Trapani",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCZhnC6OD1VrmeoAkesXcV61vBh25ZoqFu3NKi1EWxScFq08esuCcNzj28MeLyPLME1eJ4rqHGka5Va1TpbBHJJjtXPwJCp0j6OcrdBzYqdqkNECgc1aIdIrdUQ-3yQ49QItc5wh4ZkdvFaJm6-EOJLmg_-fEa9Y74OCjgdx1yeFqlC35iIO1cg2THDFfbVWTTKfIfoC35P_lksCF2Ua-5Tn5iAP5Amgfwuc-v6kUOIJSkESvhpWyfq"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCZhnC6OD1VrmeoAkesXcV61vBh25ZoqFu3NKi1EWxScFq08esuCcNzj28MeLyPLME1eJ4rqHGka5Va1TpbBHJJjtXPwJCp0j6OcrdBzYqdqkNECgc1aIdIrdUQ-3yQ49QItc5wh4ZkdvFaJm6-EOJLmg_-fEa9Y74OCjgdx1yeFqlC35iIO1cg2THDFfbVWTTKfIfoC35P_lksCF2Ua-5Tn5iAP5Amgfwuc-v6kUOIJSkESvhpWyfq=w1600"
       },
       {
         "id": "sic-oregano",
@@ -475,7 +475,7 @@ const sicilia: RegionStory = {
         "tag": "On the stem",
         "tagTone": "neutral",
         "origin": "Sicily",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAVGYQ04rZ-nKR0Oz5lhG8ivLp6cW06G3MC69sYYbwZJs2pqjQrdmZo7GAMNt3U-WCjFmmx3uy9XT2Yx-9gh8tZO3EqFRsZUkPQmYsYt8-Uyx8O7ojZ-JUvRro8eR6r34iv4LETSR7WsPUnhlxtF8trSRL7T5VcCPBar3UfqjOT1RKVlbvzIAzIcArvfdgViGqDu8HffvvgRjxkKj-0D1p64LmHiXZDq9r4px6GXqS2NLFf_mbKHECS"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuAVGYQ04rZ-nKR0Oz5lhG8ivLp6cW06G3MC69sYYbwZJs2pqjQrdmZo7GAMNt3U-WCjFmmx3uy9XT2Yx-9gh8tZO3EqFRsZUkPQmYsYt8-Uyx8O7ojZ-JUvRro8eR6r34iv4LETSR7WsPUnhlxtF8trSRL7T5VcCPBar3UfqjOT1RKVlbvzIAzIcArvfdgViGqDu8HffvvgRjxkKj-0D1p64LmHiXZDq9r4px6GXqS2NLFf_mbKHECS=w1600"
       },
       {
         "id": "sic-blood-orange-marmalade",
@@ -484,7 +484,7 @@ const sicilia: RegionStory = {
         "tag": "Marmalade",
         "tagTone": "neutral",
         "origin": "Sciacca",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDjU6UvYZUkSS18t8CQRRZnaNRc0VACKEjhPlfVfFdQ5pc54Xgy2GXOEcxNifnA64xYFhIvY_BUqA0MS-JHhIaxXG7ywJwi-c-2MoMLZQYjN7ECQUWQ30CTSnJyq3Tm7zn-7BkZHvprZQ0C9r6FYA64tnvr49FJHlvmY9kt2p8vCcOUoVi5fnGJfnDaU2kugnGZmTBxsCTHRKgMprbhUPLgw98lDHWUqoVhS2_XltgdYBMo8Wdajv2i"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDjU6UvYZUkSS18t8CQRRZnaNRc0VACKEjhPlfVfFdQ5pc54Xgy2GXOEcxNifnA64xYFhIvY_BUqA0MS-JHhIaxXG7ywJwi-c-2MoMLZQYjN7ECQUWQ30CTSnJyq3Tm7zn-7BkZHvprZQ0C9r6FYA64tnvr49FJHlvmY9kt2p8vCcOUoVi5fnGJfnDaU2kugnGZmTBxsCTHRKgMprbhUPLgw98lDHWUqoVhS2_XltgdYBMo8Wdajv2i=w1600"
       }
     ],
     "eyebrow": "Limited curation · Parcel N° 01"

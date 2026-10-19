@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import { seedProducts } from './shared/seed';
+import { hiRes } from './shared/hiRes';
 import { defaultSettings, type Product, type Settings } from './shared/types';
+
+const sharpen = (p: Product): Product => ({ ...p, img: hiRes(p.img), ...(p.images ? { images: p.images.map((u) => hiRes(u)) } : {}) });
 
 let settingsCache: Promise<Settings> | null = null;
 
@@ -30,7 +33,7 @@ export function useCatalog() {
     let live = true;
     fetch('/api/products')
       .then((r) => (r.ok ? r.json() : Promise.reject()))
-      .then((list: Product[]) => live && setState({ products: Array.isArray(list) ? list : seedProducts, loaded: true }))
+      .then((list: Product[]) => live && setState({ products: Array.isArray(list) ? list.map(sharpen) : seedProducts, loaded: true }))
       .catch(() => live && setState((s) => ({ ...s, loaded: true })));
     return () => {
       live = false;

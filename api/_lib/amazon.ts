@@ -1,3 +1,4 @@
+import { hiRes } from '../../src/shared/hiRes.js';
 // Reads an Amazon product link and looks the product up through Canopy API (canopyapi.co),
 // a paid Amazon product-data service. Without CANOPY_API_KEY we can still take the ASIN and
 // the name from the link itself.
@@ -113,7 +114,7 @@ export async function lookupAmazon(asin: string, domain: string, slugName: strin
   const main = asString(p.mainImageUrl) || asString((p.mainImage as Record<string, unknown> | undefined)?.url) || asString(p.mainImage) || asString(p.image);
   const more = Array.isArray(p.imageUrls) ? p.imageUrls : Array.isArray(p.images) ? p.images : [];
   const images = [...new Set([main, ...more.map((i) => (typeof i === 'string' ? i : asString((i as Record<string, unknown>)?.link) || asString((i as Record<string, unknown>)?.url)))]
-    .map(https).filter((u) => u.startsWith('https://')))].slice(0, 8);
+    .map(https).map((u) => hiRes(u)).filter((u) => u.startsWith('https://')))].slice(0, 8);
   const bulletsRaw = Array.isArray(p.featureBullets) ? p.featureBullets : Array.isArray(p.feature_bullets) ? p.feature_bullets : Array.isArray(p.bullets) ? p.bullets : [];
   const bullets = bulletsRaw.filter((b): b is string => typeof b === 'string').map((b) => plain(b).slice(0, 500)).filter(Boolean).slice(0, 12);
   const description = plain(asString(p.description) || asString(p.productDescription) || asString(p.bookDescription)).slice(0, 6000);

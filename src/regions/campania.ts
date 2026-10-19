@@ -44,7 +44,7 @@ const campania: RegionStory = {
       "body": "Vesuvius rises above the bay, and its volcanic soil feeds San Marzano and Piennolo tomatoes."
     },
     "imageTag": "Bay of Naples, Campania",
-    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCancaWcvr--MM2tr0GDdQuPcAOwypF6zphNOVp4xeYR089Myw4zQfintCrigDfvqHJ4Orccyq3Y9fadY4lV-yTcHvjEqrOpX2YRq7zenTQxLHuOuOei5EIU7sI26-3Up0_WpBmjSD_4qnBTgAZSH05ehZdTGt0ibXvB8CsFPOAePS-m5wjL6kn31Yufdvk8n0wef8jlqS_n0bMAO_TPxPy7AXH_fsXx66ChBs244ezrmGIJ-gV5iF0",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCancaWcvr--MM2tr0GDdQuPcAOwypF6zphNOVp4xeYR089Myw4zQfintCrigDfvqHJ4Orccyq3Y9fadY4lV-yTcHvjEqrOpX2YRq7zenTQxLHuOuOei5EIU7sI26-3Up0_WpBmjSD_4qnBTgAZSH05ehZdTGt0ibXvB8CsFPOAePS-m5wjL6kn31Yufdvk8n0wef8jlqS_n0bMAO_TPxPy7AXH_fsXx66ChBs244ezrmGIJ-gV5iF0=w1600",
     "imageAlt": "The Campanian coast on the Bay of Naples."
   },
   "intro": [
@@ -68,7 +68,7 @@ const campania: RegionStory = {
             "tag": "DOP",
             "tagTone": "green",
             "origin": "Agro Sarnese-Nocerino",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBY4455DEX1zjjpdq7-_mNILuWUJRUYyvMxMXx4jMQYd55DK_wV9oy-PIMx-rP1tMRkt8iwhkFiYgazb05uFnI6rs1jFuEPynANvN6XO5Q_mSnHWHJH7MXg9cvrDWA3798HSfMlbXyd0ju2P_NXo2Qv8uEjZgBuH4jKkJLmoPYvIgiiMvli6aTlEQ3pQ0aD3-aKYdw8BfdknHP3ri2lylIohY914kchXuH9Q7icchs3wAuR2FxKDpvCKg"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBY4455DEX1zjjpdq7-_mNILuWUJRUYyvMxMXx4jMQYd55DK_wV9oy-PIMx-rP1tMRkt8iwhkFiYgazb05uFnI6rs1jFuEPynANvN6XO5Q_mSnHWHJH7MXg9cvrDWA3798HSfMlbXyd0ju2P_NXo2Qv8uEjZgBuH4jKkJLmoPYvIgiiMvli6aTlEQ3pQ0aD3-aKYdw8BfdknHP3ri2lylIohY914kchXuH9Q7icchs3wAuR2FxKDpvCKg=w1600"
           }
         ]
       },
@@ -85,7 +85,7 @@ const campania: RegionStory = {
             "tag": "DOP",
             "tagTone": "green",
             "origin": "Vesuvius",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCFjvRWa-DBPlxV_S8Ks7GNA5P4X6i1CFTAJ7C4mSoGwQ00mOour74TvAfHythsLwS0k-LIo1djI_mqXWWAg5aclBYTgdd_6u4WlUbPsC_rx5ZsFnUG_PsDzsy4gdpU9znzPs83DjfI9VlpJwwTuHEUxq_WAU3pQ-XsuL72Bk4zcV7x_Ef_q01OARW3aAl4aiqgIARwJWA0Z8KD1qj5MQHPM_2gtt-Lh7igH3xqg1EWe7RYSMeb9efu"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCFjvRWa-DBPlxV_S8Ks7GNA5P4X6i1CFTAJ7C4mSoGwQ00mOour74TvAfHythsLwS0k-LIo1djI_mqXWWAg5aclBYTgdd_6u4WlUbPsC_rx5ZsFnUG_PsDzsy4gdpU9znzPs83DjfI9VlpJwwTuHEUxq_WAU3pQ-XsuL72Bk4zcV7x_Ef_q01OARW3aAl4aiqgIARwJWA0Z8KD1qj5MQHPM_2gtt-Lh7igH3xqg1EWe7RYSMeb9efu=w1600"
           }
         ]
       },
@@ -102,7 +102,7 @@ const campania: RegionStory = {
             "tag": "Cold ship",
             "tagTone": "neutral",
             "origin": "Caserta and Salerno",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDqmbMaaWotLnqd7h746aY6nsFALWzvjqbkrArYOxWH0YaS3R83fCAwa_zPopqfTC19b2rndKbS0X7Nj0tC5mW1iAtX3KmPVZsS3ZsFiP0HIvHEAkj179Jhwx4pyyijMtfmbJUWOuzPdOd5gogteAa_cNezVDsRpXU2pkT0vo_nXW3O0JbzNZUqjoeSjms0C0zSftPsOjvMIjrOBbhGg700irDxZk2EN0lXZPe4eI9aZMgxn7bkIl7z"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDqmbMaaWotLnqd7h746aY6nsFALWzvjqbkrArYOxWH0YaS3R83fCAwa_zPopqfTC19b2rndKbS0X7Nj0tC5mW1iAtX3KmPVZsS3ZsFiP0HIvHEAkj179Jhwx4pyyijMtfmbJUWOuzPdOd5gogteAa_cNezVDsRpXU2pkT0vo_nXW3O0JbzNZUqjoeSjms0C0zSftPsOjvMIjrOBbhGg700irDxZk2EN0lXZPe4eI9aZMgxn7bkIl7z=w1600"
           }
         ]
       },
@@ -119,7 +119,7 @@ const campania: RegionStory = {
             "tag": "IGP",
             "tagTone": "green",
             "origin": "Gragnano",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCKGNMKnw-D1ZK_Ug_RKV4Fxmy4s5ZTELECDXA8LO9y5p3-IsuawSvQt6iy70Q755dV-4fC-34i_gZOdFRJ6ogB45Is2Id7om670aTj0rwdIIcWbK9k4OpbfcpBqnGeLaClFdhBqdgmHSPU0A4o-YTmNdSNHHzalQIPDRd_yKhI8YinNY_U4nPcP10ABbOdi2YRwD58rMC9UsaDegHlySm0TWHVt1KMmkVFyNGarOPDMG75Kuf1GDKb"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCKGNMKnw-D1ZK_Ug_RKV4Fxmy4s5ZTELECDXA8LO9y5p3-IsuawSvQt6iy70Q755dV-4fC-34i_gZOdFRJ6ogB45Is2Id7om670aTj0rwdIIcWbK9k4OpbfcpBqnGeLaClFdhBqdgmHSPU0A4o-YTmNdSNHHzalQIPDRd_yKhI8YinNY_U4nPcP10ABbOdi2YRwD58rMC9UsaDegHlySm0TWHVt1KMmkVFyNGarOPDMG75Kuf1GDKb=w1600"
           },
           {
             "id": "cam-gragnano-mista",
@@ -128,7 +128,7 @@ const campania: RegionStory = {
             "tag": "IGP",
             "tagTone": "green",
             "origin": "Gragnano",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBuu-55MbiPe-szWTH9E1hG3CcnVy6to8ZunZKOjIg61w2peM2Vn6ZISQaaH88xpMxtSbDGApSqNZ-OLPhN3mg9K8KULfFusDjfdPqTjPlisxyugwq-e9xqbSDGZ0dai_yPLwmYmP0cz-Fu44oStBWA75QNFXDqida20AXkmaLVYzS7kXJHLN-QEkKqnjEbfJLOMY6x7HMI6inDZ3W03-1wHElpjUxinenBCFsTnNtSq_EVFpyULClr"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBuu-55MbiPe-szWTH9E1hG3CcnVy6to8ZunZKOjIg61w2peM2Vn6ZISQaaH88xpMxtSbDGApSqNZ-OLPhN3mg9K8KULfFusDjfdPqTjPlisxyugwq-e9xqbSDGZ0dai_yPLwmYmP0cz-Fu44oStBWA75QNFXDqida20AXkmaLVYzS7kXJHLN-QEkKqnjEbfJLOMY6x7HMI6inDZ3W03-1wHElpjUxinenBCFsTnNtSq_EVFpyULClr=w1600"
           }
         ]
       },
@@ -145,7 +145,7 @@ const campania: RegionStory = {
             "tag": "IGP lemons",
             "tagTone": "gold",
             "origin": "Amalfi Coast",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDn_rWoQOHRNzDNeDoMv-rFzGJPGl1Wd9FVbVn5rEhaanOXPSVUFZi_3uQJ4FPBKBPNcKlAHg-_n3jY8d-pgbP7eMVBH0nw9gWCNDSyBZTRtbCD2LysPAGzUyRDNmWleKxTmCYoj-RpaZJ_1jnnG0bv5pLZZTCk2SB_CwHJ9uT91WL4dLADqqn1_7eZUxTlC1SCLiXfb1izxdN_9Hcu-J_LF29XKSvokz2qw7Vlc6b3nlKIELwkAegl"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDn_rWoQOHRNzDNeDoMv-rFzGJPGl1Wd9FVbVn5rEhaanOXPSVUFZi_3uQJ4FPBKBPNcKlAHg-_n3jY8d-pgbP7eMVBH0nw9gWCNDSyBZTRtbCD2LysPAGzUyRDNmWleKxTmCYoj-RpaZJ_1jnnG0bv5pLZZTCk2SB_CwHJ9uT91WL4dLADqqn1_7eZUxTlC1SCLiXfb1izxdN_9Hcu-J_LF29XKSvokz2qw7Vlc6b3nlKIELwkAegl=w1600"
           }
         ]
       },
@@ -162,7 +162,7 @@ const campania: RegionStory = {
             "tag": "DOP",
             "tagTone": "green",
             "origin": "Cetara",
-            "img": "https://lh3.googleusercontent.com/aida/AEtjO1UGaqDggIi3G7sIgIf0_eKWQUrjTiO4829HFnphdKotI21OyoXWY9wGL1lcZ-1iBcFoPdpPECFdmXrBsBYb7fpBdfU-sLxaW72c8eMu0iRXFRRqoXxvR77zKCvV2K6bSVrXK10C38pYILAkf3WAKGmFac2FHIpLMWlYBI-9SyO3Owz0ICJ76DPk5KQk40HBt7c5EK4d5zbSPxmji-wqP2WomT2fZUxTbiME8vrMcqmxae7ChNI8PqHqALA"
+            "img": "https://lh3.googleusercontent.com/aida/AEtjO1UGaqDggIi3G7sIgIf0_eKWQUrjTiO4829HFnphdKotI21OyoXWY9wGL1lcZ-1iBcFoPdpPECFdmXrBsBYb7fpBdfU-sLxaW72c8eMu0iRXFRRqoXxvR77zKCvV2K6bSVrXK10C38pYILAkf3WAKGmFac2FHIpLMWlYBI-9SyO3Owz0ICJ76DPk5KQk40HBt7c5EK4d5zbSPxmji-wqP2WomT2fZUxTbiME8vrMcqmxae7ChNI8PqHqALA=w1600"
           }
         ]
       }
@@ -177,28 +177,28 @@ const campania: RegionStory = {
         "where": "Naples",
         "body": "Pasta and potatoes cooked together in one pot until creamy, then made stringy with smoked provola. In Naples it is a point of pride to make it thick enough that the plate can be turned over.",
         "tip": "[Cook it below](#pastaepatate)",
-        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCDO2dHEd2gKCpo_yr9KgEF0Tgbqr9F7FlQZxOGwJHyIkfAdtlOgvZNCBIhM3Zn6HZBzp7pcSx3_RjhWX24YDP0p4LzHMNJvLV2XwoUy5dewJqPdUpQghD21Ou3Rjq9cATfIyUmn5qo6WytT82URkho-8Jjl_dynP6pxmSqYVXUn0SFd1tP2CT0vAHgYei0bOd8uTW5co7AHHS8gUL8TI0WSvapJmGqCjgq6dB4rV63LznGuf5irNj5"
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCDO2dHEd2gKCpo_yr9KgEF0Tgbqr9F7FlQZxOGwJHyIkfAdtlOgvZNCBIhM3Zn6HZBzp7pcSx3_RjhWX24YDP0p4LzHMNJvLV2XwoUy5dewJqPdUpQghD21Ou3Rjq9cATfIyUmn5qo6WytT82URkho-8Jjl_dynP6pxmSqYVXUn0SFd1tP2CT0vAHgYei0bOd8uTW5co7AHHS8gUL8TI0WSvapJmGqCjgq6dB4rV63LznGuf5irNj5=w1600"
       },
       {
         "title": "Pizza napoletana",
         "where": "Naples",
         "body": "A soft crust with a puffy rim, baked in a wood-fired oven at about 485°C for 60 to 90 seconds. Pizza Napoletana is a protected Traditional Speciality Guaranteed, and in 2017 UNESCO recognized the art of the Neapolitan pizzaiuolo as intangible cultural heritage.",
         "tip": "At home, start with [San Marzano DOP tomatoes](product:cam-san-marzano).",
-        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBRbfN3ec2j13IDm1PE1_z3XTGyEgtwGUUYTjZPOlr_XSHYQdySu4eni5eOXqrKG29Cl-GM6BIwsg8jt21ndJ7dF_v2T_t34PpNXh1wUwoN-V5yhIMZncJmE1BWFeStFpQRFpjHHXybHWqPAayZearG1M3sELhCkVAU7iqwesHOgc4x6uRnjfY8lqlAzgNDJ36Qk1zYHDXFvRI-S0rfWP25ciszdOMP1PMUS7ci3vjNMzI863KvNVVu"
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBRbfN3ec2j13IDm1PE1_z3XTGyEgtwGUUYTjZPOlr_XSHYQdySu4eni5eOXqrKG29Cl-GM6BIwsg8jt21ndJ7dF_v2T_t34PpNXh1wUwoN-V5yhIMZncJmE1BWFeStFpQRFpjHHXybHWqPAayZearG1M3sELhCkVAU7iqwesHOgc4x6uRnjfY8lqlAzgNDJ36Qk1zYHDXFvRI-S0rfWP25ciszdOMP1PMUS7ci3vjNMzI863KvNVVu=w1600"
       },
       {
         "title": "Ragù napoletano",
         "where": "Naples, on Sundays",
         "body": "Large whole cuts of beef and pork, never minced, simmered in tomato for at least six hours until the sauce is dark and dense. Neapolitans call its slow bubbling pippiare, the sound of Sunday at home.",
         "tip": "Serve with [Gragnano pasta](product:cam-gragnano-spaghetti) such as ziti or rigatoni.",
-        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCrmH1O59xmE1Y77HZpjEBj-SfPVSMI9QI2fReWIfLlVNEUybRQbrmraXSxPdj_0TZ6CjRPClwypuyIngcZSdQWF4weTNTdt-l-5RO3ibWgN6HH8xkThDZsvE7bz7UiaPReDRpXaMUqNJH1oaFLo_S-GTC0lKEf3yFp0zpZx38Kiu2jCKbD9HzJ_dxxPK_L-qOMvLjTWVxK06o0_MKQKpEWnqHA6Go1bsRugfGn5xEMf7bDWgo5inpz"
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCrmH1O59xmE1Y77HZpjEBj-SfPVSMI9QI2fReWIfLlVNEUybRQbrmraXSxPdj_0TZ6CjRPClwypuyIngcZSdQWF4weTNTdt-l-5RO3ibWgN6HH8xkThDZsvE7bz7UiaPReDRpXaMUqNJH1oaFLo_S-GTC0lKEf3yFp0zpZx38Kiu2jCKbD9HzJ_dxxPK_L-qOMvLjTWVxK06o0_MKQKpEWnqHA6Go1bsRugfGn5xEMf7bDWgo5inpz=w1600"
       },
       {
         "title": "Sfogliatella and babà",
         "where": "Sweet Naples",
         "body": "Sfogliatella comes riccia, a crisp shell of countless thin layers, or frolla, in smooth short pastry; both are filled with semolina, ricotta, and candied citrus. Babà is a soft yeast cake soaked in rum syrup, first brought to Naples by French cooks.",
         "note": "Naples’ pastry counter",
-        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDn_rWoQOHRNzDNeDoMv-rFzGJPGl1Wd9FVbVn5rEhaanOXPSVUFZi_3uQJ4FPBKBPNcKlAHg-_n3jY8d-pgbP7eMVBH0nw9gWCNDSyBZTRtbCD2LysPAGzUyRDNmWleKxTmCYoj-RpaZJ_1jnnG0bv5pLZZTCk2SB_CwHJ9uT91WL4dLADqqn1_7eZUxTlC1SCLiXfb1izxdN_9Hcu-J_LF29XKSvokz2qw7Vlc6b3nlKIELwkAegl"
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDn_rWoQOHRNzDNeDoMv-rFzGJPGl1Wd9FVbVn5rEhaanOXPSVUFZi_3uQJ4FPBKBPNcKlAHg-_n3jY8d-pgbP7eMVBH0nw9gWCNDSyBZTRtbCD2LysPAGzUyRDNmWleKxTmCYoj-RpaZJ_1jnnG0bv5pLZZTCk2SB_CwHJ9uT91WL4dLADqqn1_7eZUxTlC1SCLiXfb1izxdN_9Hcu-J_LF29XKSvokz2qw7Vlc6b3nlKIELwkAegl=w1600"
       }
     ]
   },
@@ -211,17 +211,17 @@ const campania: RegionStory = {
     ],
     "photos": [
       {
-        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBNLulfCNOqIJkwnyUIIoCPTqTY7LEzdTe377AN2rqSLoV4tSIEv_p2xY9BamnnPcgwsbsctoAkCcIAel3LYYgIN9nDCvwCVYBP-VKsMHhCYGsfnwwZ-IiebitE4Woj_3gJgsMimtbfAuuS1eKncJ1cDjLLGE4Nm0fD1WPphwQ2pQehVfn83csjapgIuIL02aYSUM0anZGi_KH7UTGOBbx0Ao-OTdTVgK78XeoXrTmQ03SNA5diF3J_",
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBNLulfCNOqIJkwnyUIIoCPTqTY7LEzdTe377AN2rqSLoV4tSIEv_p2xY9BamnnPcgwsbsctoAkCcIAel3LYYgIN9nDCvwCVYBP-VKsMHhCYGsfnwwZ-IiebitE4Woj_3gJgsMimtbfAuuS1eKncJ1cDjLLGE4Nm0fD1WPphwQ2pQehVfn83csjapgIuIL02aYSUM0anZGi_KH7UTGOBbx0Ao-OTdTVgK78XeoXrTmQ03SNA5diF3J_=w1600",
         "alt": "A Gragnano pasta workshop",
         "caption": "The pastificio · Gragnano"
       },
       {
-        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCDO2dHEd2gKCpo_yr9KgEF0Tgbqr9F7FlQZxOGwJHyIkfAdtlOgvZNCBIhM3Zn6HZBzp7pcSx3_RjhWX24YDP0p4LzHMNJvLV2XwoUy5dewJqPdUpQghD21Ou3Rjq9cATfIyUmn5qo6WytT82URkho-8Jjl_dynP6pxmSqYVXUn0SFd1tP2CT0vAHgYei0bOd8uTW5co7AHHS8gUL8TI0WSvapJmGqCjgq6dB4rV63LznGuf5irNj5",
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCDO2dHEd2gKCpo_yr9KgEF0Tgbqr9F7FlQZxOGwJHyIkfAdtlOgvZNCBIhM3Zn6HZBzp7pcSx3_RjhWX24YDP0p4LzHMNJvLV2XwoUy5dewJqPdUpQghD21Ou3Rjq9cATfIyUmn5qo6WytT82URkho-8Jjl_dynP6pxmSqYVXUn0SFd1tP2CT0vAHgYei0bOd8uTW5co7AHHS8gUL8TI0WSvapJmGqCjgq6dB4rV63LznGuf5irNj5=w1600",
         "alt": "Bronze-die pasta drying",
         "caption": "Slow drying, max 48°C"
       },
       {
-        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBttmXPJCBW9_ZLNcfZFuvjeUSSELY3ckrx_31Vhe-fib1ZLyiZh_1HJQTSGujX63yBX_wWHxFk5gWPlVmHvcu5JMJ096nvBB6XFjFv723OXXh51gZEsncp7fyRja6vKksjuPMdd0sEoDItrgzrDmsJzvhhjCycL1DC6JI1F6ja3O11VoiEgZtydMWferBHxwtLMl1kY0IIShRuLvQ_m_SzyI5jLkH4d8XsBMflTXiHS8SmA9CSnPEk3g",
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBttmXPJCBW9_ZLNcfZFuvjeUSSELY3ckrx_31Vhe-fib1ZLyiZh_1HJQTSGujX63yBX_wWHxFk5gWPlVmHvcu5JMJ096nvBB6XFjFv723OXXh51gZEsncp7fyRja6vKksjuPMdd0sEoDItrgzrDmsJzvhhjCycL1DC6JI1F6ja3O11VoiEgZtydMWferBHxwtLMl1kY0IIShRuLvQ_m_SzyI5jLkH4d8XsBMflTXiHS8SmA9CSnPEk3g=w1600",
         "alt": "Gragnano IGP paccheri",
         "caption": "Pasta di Gragnano IGP"
       }
@@ -249,7 +249,7 @@ const campania: RegionStory = {
         "tag": "Since 1907",
         "tagTone": "gold",
         "origin": "Gragnano",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDHIngNXqXC8tcH8ODgpxoOHTYHckQGXn-xfVr6KD5LHNFEKft3VnuYCLLZPvGlxkonCP2clRkP7zRPCikVtFoaoSXxpIQqRh5VAEkRfqsefnukBu8lvQup8712nVVRyrn6GqUzhY4KCE0UjJlE4-ABJnvdYz0aPau9_MStrxSUyeBfCLFvA8Gf9i4mRYqHPqqsIu8EP1p24FKSDIxdWvAIrVrXx2gHbefim2QGENH5Q6D9SLlBL6CE"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDHIngNXqXC8tcH8ODgpxoOHTYHckQGXn-xfVr6KD5LHNFEKft3VnuYCLLZPvGlxkonCP2clRkP7zRPCikVtFoaoSXxpIQqRh5VAEkRfqsefnukBu8lvQup8712nVVRyrn6GqUzhY4KCE0UjJlE4-ABJnvdYz0aPau9_MStrxSUyeBfCLFvA8Gf9i4mRYqHPqqsIu8EP1p24FKSDIxdWvAIrVrXx2gHbefim2QGENH5Q6D9SLlBL6CE=w1600"
       },
       {
         "id": "cam-faella-paccheri",
@@ -258,7 +258,7 @@ const campania: RegionStory = {
         "tag": "Since 1907",
         "tagTone": "gold",
         "origin": "Gragnano",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBttmXPJCBW9_ZLNcfZFuvjeUSSELY3ckrx_31Vhe-fib1ZLyiZh_1HJQTSGujX63yBX_wWHxFk5gWPlVmHvcu5JMJ096nvBB6XFjFv723OXXh51gZEsncp7fyRja6vKksjuPMdd0sEoDItrgzrDmsJzvhhjCycL1DC6JI1F6ja3O11VoiEgZtydMWferBHxwtLMl1kY0IIShRuLvQ_m_SzyI5jLkH4d8XsBMflTXiHS8SmA9CSnPEk3g"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBttmXPJCBW9_ZLNcfZFuvjeUSSELY3ckrx_31Vhe-fib1ZLyiZh_1HJQTSGujX63yBX_wWHxFk5gWPlVmHvcu5JMJ096nvBB6XFjFv723OXXh51gZEsncp7fyRja6vKksjuPMdd0sEoDItrgzrDmsJzvhhjCycL1DC6JI1F6ja3O11VoiEgZtydMWferBHxwtLMl1kY0IIShRuLvQ_m_SzyI5jLkH4d8XsBMflTXiHS8SmA9CSnPEk3g=w1600"
       }
     ]
   },
@@ -272,7 +272,7 @@ const campania: RegionStory = {
       "serves": "4",
       "time": "about 50 minutes",
       "from": "Naples",
-      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBuu-55MbiPe-szWTH9E1hG3CcnVy6to8ZunZKOjIg61w2peM2Vn6ZISQaaH88xpMxtSbDGApSqNZ-OLPhN3mg9K8KULfFusDjfdPqTjPlisxyugwq-e9xqbSDGZ0dai_yPLwmYmP0cz-Fu44oStBWA75QNFXDqida20AXkmaLVYzS7kXJHLN-QEkKqnjEbfJLOMY6x7HMI6inDZ3W03-1wHElpjUxinenBCFsTnNtSq_EVFpyULClr",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBuu-55MbiPe-szWTH9E1hG3CcnVy6to8ZunZKOjIg61w2peM2Vn6ZISQaaH88xpMxtSbDGApSqNZ-OLPhN3mg9K8KULfFusDjfdPqTjPlisxyugwq-e9xqbSDGZ0dai_yPLwmYmP0cz-Fu44oStBWA75QNFXDqida20AXkmaLVYzS7kXJHLN-QEkKqnjEbfJLOMY6x7HMI6inDZ3W03-1wHElpjUxinenBCFsTnNtSq_EVFpyULClr=w1600",
       "imageCaption": "Neapolitan classic · about 50 minutes",
       "steps": [
         {
@@ -313,7 +313,7 @@ const campania: RegionStory = {
           "tag": "IGP",
           "tagTone": "green",
           "origin": "Gragnano",
-          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBuu-55MbiPe-szWTH9E1hG3CcnVy6to8ZunZKOjIg61w2peM2Vn6ZISQaaH88xpMxtSbDGApSqNZ-OLPhN3mg9K8KULfFusDjfdPqTjPlisxyugwq-e9xqbSDGZ0dai_yPLwmYmP0cz-Fu44oStBWA75QNFXDqida20AXkmaLVYzS7kXJHLN-QEkKqnjEbfJLOMY6x7HMI6inDZ3W03-1wHElpjUxinenBCFsTnNtSq_EVFpyULClr"
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBuu-55MbiPe-szWTH9E1hG3CcnVy6to8ZunZKOjIg61w2peM2Vn6ZISQaaH88xpMxtSbDGApSqNZ-OLPhN3mg9K8KULfFusDjfdPqTjPlisxyugwq-e9xqbSDGZ0dai_yPLwmYmP0cz-Fu44oStBWA75QNFXDqida20AXkmaLVYzS7kXJHLN-QEkKqnjEbfJLOMY6x7HMI6inDZ3W03-1wHElpjUxinenBCFsTnNtSq_EVFpyULClr=w1600"
         },
         {
           "id": "cam-provola",
@@ -322,7 +322,7 @@ const campania: RegionStory = {
           "tag": "Smoked",
           "tagTone": "red",
           "origin": "Campania",
-          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBGGA07_nVlJTgYjeOzddTmBAt_mQvF0cv95LcrTGPEO6-6raIvXpZgg-koQ4qOVeP1jiLYGlAdSTfXDKHZZWDT6aGHcJ0jevd6i9a6ibtaO2yKbgKXDNucq_e-bUd67XQTaVuy4bc9lK3eqgnHo7vM_sQTXfS2tdPJY5iAokx4CnvlgV3u63v0o_PkIci80Zan3yKGMrXJwxvFGqC8U06n6d_GubZWR3pz1EFI_56pkgqTCAM9iPf6"
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBGGA07_nVlJTgYjeOzddTmBAt_mQvF0cv95LcrTGPEO6-6raIvXpZgg-koQ4qOVeP1jiLYGlAdSTfXDKHZZWDT6aGHcJ0jevd6i9a6ibtaO2yKbgKXDNucq_e-bUd67XQTaVuy4bc9lK3eqgnHo7vM_sQTXfS2tdPJY5iAokx4CnvlgV3u63v0o_PkIci80Zan3yKGMrXJwxvFGqC8U06n6d_GubZWR3pz1EFI_56pkgqTCAM9iPf6=w1600"
         }
       ],
       "schema": {
@@ -348,7 +348,7 @@ const campania: RegionStory = {
       "eyebrow": "Ten minutes in Cetara",
       "title": "Ten minutes in Cetara",
       "body": "Cook spaghetti in water with only a little salt. Meanwhile, warm olive oil with a sliced garlic clove and a pinch of chili. Toss the drained pasta in the pan, then add a couple of tablespoons of colatura off the heat, with chopped parsley and a little grated lemon zest. It is Cetara’s signature dish.",
-      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCKGNMKnw-D1ZK_Ug_RKV4Fxmy4s5ZTELECDXA8LO9y5p3-IsuawSvQt6iy70Q755dV-4fC-34i_gZOdFRJ6ogB45Is2Id7om670aTj0rwdIIcWbK9k4OpbfcpBqnGeLaClFdhBqdgmHSPU0A4o-YTmNdSNHHzalQIPDRd_yKhI8YinNY_U4nPcP10ABbOdi2YRwD58rMC9UsaDegHlySm0TWHVt1KMmkVFyNGarOPDMG75Kuf1GDKb",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCKGNMKnw-D1ZK_Ug_RKV4Fxmy4s5ZTELECDXA8LO9y5p3-IsuawSvQt6iy70Q755dV-4fC-34i_gZOdFRJ6ogB45Is2Id7om670aTj0rwdIIcWbK9k4OpbfcpBqnGeLaClFdhBqdgmHSPU0A4o-YTmNdSNHHzalQIPDRd_yKhI8YinNY_U4nPcP10ABbOdi2YRwD58rMC9UsaDegHlySm0TWHVt1KMmkVFyNGarOPDMG75Kuf1GDKb=w1600",
       "button": "Get the Cetara pair",
       "products": [
         {
@@ -358,7 +358,7 @@ const campania: RegionStory = {
           "tag": "DOP",
           "tagTone": "green",
           "origin": "Cetara",
-          "img": "https://lh3.googleusercontent.com/aida/AEtjO1UGaqDggIi3G7sIgIf0_eKWQUrjTiO4829HFnphdKotI21OyoXWY9wGL1lcZ-1iBcFoPdpPECFdmXrBsBYb7fpBdfU-sLxaW72c8eMu0iRXFRRqoXxvR77zKCvV2K6bSVrXK10C38pYILAkf3WAKGmFac2FHIpLMWlYBI-9SyO3Owz0ICJ76DPk5KQk40HBt7c5EK4d5zbSPxmji-wqP2WomT2fZUxTbiME8vrMcqmxae7ChNI8PqHqALA"
+          "img": "https://lh3.googleusercontent.com/aida/AEtjO1UGaqDggIi3G7sIgIf0_eKWQUrjTiO4829HFnphdKotI21OyoXWY9wGL1lcZ-1iBcFoPdpPECFdmXrBsBYb7fpBdfU-sLxaW72c8eMu0iRXFRRqoXxvR77zKCvV2K6bSVrXK10C38pYILAkf3WAKGmFac2FHIpLMWlYBI-9SyO3Owz0ICJ76DPk5KQk40HBt7c5EK4d5zbSPxmji-wqP2WomT2fZUxTbiME8vrMcqmxae7ChNI8PqHqALA=w1600"
         },
         {
           "id": "cam-gragnano-spaghetti",
@@ -367,7 +367,7 @@ const campania: RegionStory = {
           "tag": "IGP",
           "tagTone": "green",
           "origin": "Gragnano",
-          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCKGNMKnw-D1ZK_Ug_RKV4Fxmy4s5ZTELECDXA8LO9y5p3-IsuawSvQt6iy70Q755dV-4fC-34i_gZOdFRJ6ogB45Is2Id7om670aTj0rwdIIcWbK9k4OpbfcpBqnGeLaClFdhBqdgmHSPU0A4o-YTmNdSNHHzalQIPDRd_yKhI8YinNY_U4nPcP10ABbOdi2YRwD58rMC9UsaDegHlySm0TWHVt1KMmkVFyNGarOPDMG75Kuf1GDKb"
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCKGNMKnw-D1ZK_Ug_RKV4Fxmy4s5ZTELECDXA8LO9y5p3-IsuawSvQt6iy70Q755dV-4fC-34i_gZOdFRJ6ogB45Is2Id7om670aTj0rwdIIcWbK9k4OpbfcpBqnGeLaClFdhBqdgmHSPU0A4o-YTmNdSNHHzalQIPDRd_yKhI8YinNY_U4nPcP10ABbOdi2YRwD58rMC9UsaDegHlySm0TWHVt1KMmkVFyNGarOPDMG75Kuf1GDKb=w1600"
         }
       ]
     }
@@ -386,7 +386,7 @@ const campania: RegionStory = {
         "tag": "DOP",
         "tagTone": "green",
         "origin": "Agro Sarnese-Nocerino",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBY4455DEX1zjjpdq7-_mNILuWUJRUYyvMxMXx4jMQYd55DK_wV9oy-PIMx-rP1tMRkt8iwhkFiYgazb05uFnI6rs1jFuEPynANvN6XO5Q_mSnHWHJH7MXg9cvrDWA3798HSfMlbXyd0ju2P_NXo2Qv8uEjZgBuH4jKkJLmoPYvIgiiMvli6aTlEQ3pQ0aD3-aKYdw8BfdknHP3ri2lylIohY914kchXuH9Q7icchs3wAuR2FxKDpvCKg"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBY4455DEX1zjjpdq7-_mNILuWUJRUYyvMxMXx4jMQYd55DK_wV9oy-PIMx-rP1tMRkt8iwhkFiYgazb05uFnI6rs1jFuEPynANvN6XO5Q_mSnHWHJH7MXg9cvrDWA3798HSfMlbXyd0ju2P_NXo2Qv8uEjZgBuH4jKkJLmoPYvIgiiMvli6aTlEQ3pQ0aD3-aKYdw8BfdknHP3ri2lylIohY914kchXuH9Q7icchs3wAuR2FxKDpvCKg=w1600"
       },
       {
         "id": "cam-piennolo",
@@ -395,7 +395,7 @@ const campania: RegionStory = {
         "tag": "DOP",
         "tagTone": "green",
         "origin": "Vesuvius",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCFjvRWa-DBPlxV_S8Ks7GNA5P4X6i1CFTAJ7C4mSoGwQ00mOour74TvAfHythsLwS0k-LIo1djI_mqXWWAg5aclBYTgdd_6u4WlUbPsC_rx5ZsFnUG_PsDzsy4gdpU9znzPs83DjfI9VlpJwwTuHEUxq_WAU3pQ-XsuL72Bk4zcV7x_Ef_q01OARW3aAl4aiqgIARwJWA0Z8KD1qj5MQHPM_2gtt-Lh7igH3xqg1EWe7RYSMeb9efu"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCFjvRWa-DBPlxV_S8Ks7GNA5P4X6i1CFTAJ7C4mSoGwQ00mOour74TvAfHythsLwS0k-LIo1djI_mqXWWAg5aclBYTgdd_6u4WlUbPsC_rx5ZsFnUG_PsDzsy4gdpU9znzPs83DjfI9VlpJwwTuHEUxq_WAU3pQ-XsuL72Bk4zcV7x_Ef_q01OARW3aAl4aiqgIARwJWA0Z8KD1qj5MQHPM_2gtt-Lh7igH3xqg1EWe7RYSMeb9efu=w1600"
       },
       {
         "id": "cam-gragnano-spaghetti",
@@ -404,7 +404,7 @@ const campania: RegionStory = {
         "tag": "IGP",
         "tagTone": "green",
         "origin": "Gragnano",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCKGNMKnw-D1ZK_Ug_RKV4Fxmy4s5ZTELECDXA8LO9y5p3-IsuawSvQt6iy70Q755dV-4fC-34i_gZOdFRJ6ogB45Is2Id7om670aTj0rwdIIcWbK9k4OpbfcpBqnGeLaClFdhBqdgmHSPU0A4o-YTmNdSNHHzalQIPDRd_yKhI8YinNY_U4nPcP10ABbOdi2YRwD58rMC9UsaDegHlySm0TWHVt1KMmkVFyNGarOPDMG75Kuf1GDKb"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCKGNMKnw-D1ZK_Ug_RKV4Fxmy4s5ZTELECDXA8LO9y5p3-IsuawSvQt6iy70Q755dV-4fC-34i_gZOdFRJ6ogB45Is2Id7om670aTj0rwdIIcWbK9k4OpbfcpBqnGeLaClFdhBqdgmHSPU0A4o-YTmNdSNHHzalQIPDRd_yKhI8YinNY_U4nPcP10ABbOdi2YRwD58rMC9UsaDegHlySm0TWHVt1KMmkVFyNGarOPDMG75Kuf1GDKb=w1600"
       },
       {
         "id": "cam-gragnano-mista",
@@ -413,7 +413,7 @@ const campania: RegionStory = {
         "tag": "IGP",
         "tagTone": "green",
         "origin": "Gragnano",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBuu-55MbiPe-szWTH9E1hG3CcnVy6to8ZunZKOjIg61w2peM2Vn6ZISQaaH88xpMxtSbDGApSqNZ-OLPhN3mg9K8KULfFusDjfdPqTjPlisxyugwq-e9xqbSDGZ0dai_yPLwmYmP0cz-Fu44oStBWA75QNFXDqida20AXkmaLVYzS7kXJHLN-QEkKqnjEbfJLOMY6x7HMI6inDZ3W03-1wHElpjUxinenBCFsTnNtSq_EVFpyULClr"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBuu-55MbiPe-szWTH9E1hG3CcnVy6to8ZunZKOjIg61w2peM2Vn6ZISQaaH88xpMxtSbDGApSqNZ-OLPhN3mg9K8KULfFusDjfdPqTjPlisxyugwq-e9xqbSDGZ0dai_yPLwmYmP0cz-Fu44oStBWA75QNFXDqida20AXkmaLVYzS7kXJHLN-QEkKqnjEbfJLOMY6x7HMI6inDZ3W03-1wHElpjUxinenBCFsTnNtSq_EVFpyULClr=w1600"
       },
       {
         "id": "cam-colatura",
@@ -422,7 +422,7 @@ const campania: RegionStory = {
         "tag": "DOP",
         "tagTone": "green",
         "origin": "Cetara",
-        "img": "https://lh3.googleusercontent.com/aida/AEtjO1UGaqDggIi3G7sIgIf0_eKWQUrjTiO4829HFnphdKotI21OyoXWY9wGL1lcZ-1iBcFoPdpPECFdmXrBsBYb7fpBdfU-sLxaW72c8eMu0iRXFRRqoXxvR77zKCvV2K6bSVrXK10C38pYILAkf3WAKGmFac2FHIpLMWlYBI-9SyO3Owz0ICJ76DPk5KQk40HBt7c5EK4d5zbSPxmji-wqP2WomT2fZUxTbiME8vrMcqmxae7ChNI8PqHqALA"
+        "img": "https://lh3.googleusercontent.com/aida/AEtjO1UGaqDggIi3G7sIgIf0_eKWQUrjTiO4829HFnphdKotI21OyoXWY9wGL1lcZ-1iBcFoPdpPECFdmXrBsBYb7fpBdfU-sLxaW72c8eMu0iRXFRRqoXxvR77zKCvV2K6bSVrXK10C38pYILAkf3WAKGmFac2FHIpLMWlYBI-9SyO3Owz0ICJ76DPk5KQk40HBt7c5EK4d5zbSPxmji-wqP2WomT2fZUxTbiME8vrMcqmxae7ChNI8PqHqALA=w1600"
       },
       {
         "id": "cam-mozzarella-bufala",
@@ -431,7 +431,7 @@ const campania: RegionStory = {
         "tag": "Cold ship",
         "tagTone": "neutral",
         "origin": "Caserta and Salerno",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDqmbMaaWotLnqd7h746aY6nsFALWzvjqbkrArYOxWH0YaS3R83fCAwa_zPopqfTC19b2rndKbS0X7Nj0tC5mW1iAtX3KmPVZsS3ZsFiP0HIvHEAkj179Jhwx4pyyijMtfmbJUWOuzPdOd5gogteAa_cNezVDsRpXU2pkT0vo_nXW3O0JbzNZUqjoeSjms0C0zSftPsOjvMIjrOBbhGg700irDxZk2EN0lXZPe4eI9aZMgxn7bkIl7z"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDqmbMaaWotLnqd7h746aY6nsFALWzvjqbkrArYOxWH0YaS3R83fCAwa_zPopqfTC19b2rndKbS0X7Nj0tC5mW1iAtX3KmPVZsS3ZsFiP0HIvHEAkj179Jhwx4pyyijMtfmbJUWOuzPdOd5gogteAa_cNezVDsRpXU2pkT0vo_nXW3O0JbzNZUqjoeSjms0C0zSftPsOjvMIjrOBbhGg700irDxZk2EN0lXZPe4eI9aZMgxn7bkIl7z=w1600"
       },
       {
         "id": "cam-provola",
@@ -440,7 +440,7 @@ const campania: RegionStory = {
         "tag": "Smoked",
         "tagTone": "red",
         "origin": "Campania",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBGGA07_nVlJTgYjeOzddTmBAt_mQvF0cv95LcrTGPEO6-6raIvXpZgg-koQ4qOVeP1jiLYGlAdSTfXDKHZZWDT6aGHcJ0jevd6i9a6ibtaO2yKbgKXDNucq_e-bUd67XQTaVuy4bc9lK3eqgnHo7vM_sQTXfS2tdPJY5iAokx4CnvlgV3u63v0o_PkIci80Zan3yKGMrXJwxvFGqC8U06n6d_GubZWR3pz1EFI_56pkgqTCAM9iPf6"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBGGA07_nVlJTgYjeOzddTmBAt_mQvF0cv95LcrTGPEO6-6raIvXpZgg-koQ4qOVeP1jiLYGlAdSTfXDKHZZWDT6aGHcJ0jevd6i9a6ibtaO2yKbgKXDNucq_e-bUd67XQTaVuy4bc9lK3eqgnHo7vM_sQTXfS2tdPJY5iAokx4CnvlgV3u63v0o_PkIci80Zan3yKGMrXJwxvFGqC8U06n6d_GubZWR3pz1EFI_56pkgqTCAM9iPf6=w1600"
       },
       {
         "id": "cam-amalfi-lemon",
@@ -449,7 +449,7 @@ const campania: RegionStory = {
         "tag": "IGP lemons",
         "tagTone": "gold",
         "origin": "Amalfi Coast",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDn_rWoQOHRNzDNeDoMv-rFzGJPGl1Wd9FVbVn5rEhaanOXPSVUFZi_3uQJ4FPBKBPNcKlAHg-_n3jY8d-pgbP7eMVBH0nw9gWCNDSyBZTRtbCD2LysPAGzUyRDNmWleKxTmCYoj-RpaZJ_1jnnG0bv5pLZZTCk2SB_CwHJ9uT91WL4dLADqqn1_7eZUxTlC1SCLiXfb1izxdN_9Hcu-J_LF29XKSvokz2qw7Vlc6b3nlKIELwkAegl"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDn_rWoQOHRNzDNeDoMv-rFzGJPGl1Wd9FVbVn5rEhaanOXPSVUFZi_3uQJ4FPBKBPNcKlAHg-_n3jY8d-pgbP7eMVBH0nw9gWCNDSyBZTRtbCD2LysPAGzUyRDNmWleKxTmCYoj-RpaZJ_1jnnG0bv5pLZZTCk2SB_CwHJ9uT91WL4dLADqqn1_7eZUxTlC1SCLiXfb1izxdN_9Hcu-J_LF29XKSvokz2qw7Vlc6b3nlKIELwkAegl=w1600"
       }
     ]
   },

@@ -2,8 +2,8 @@ import { useEffect, useRef, useState, type FormEvent, type ReactNode } from 'rea
 import Layout from '../components/Layout';
 
 const img = 'https://lh3.googleusercontent.com/aida-public';
-const heroImg = `${img}/AB6AXuCOoG8Tpc32uYMSyV97NPrga5IwkK2BApGhTNVrq6SLFCy0ySh9qrBN_O-CBZKr_vTvNk63h0NLIQ7TEPNxxg2MEMNunOMS3U7KddR_jjh0hFvLK-8IuqlxnexUfYAMjYDhnFsxx6uCgFmne8A2KDPuGr3lxwFxGeypbBRkdYPI9_o__KQxKtVy26V7rFWe7er3dU0oemdFc41KD6lbFapd0EVPRwaxDRvd84tiEI7AWqxnDg7DTvHyFw`;
-const quoteImg = `${img}/AB6AXuAa_C-rU-5fdNPkH5o-XpX4llJyNlx3Fn3w6H-cCjV1bMBsQmboIybm7N-5QHXocpwrv9_74ylyHIGLZNb17DLEEsElcUBpI9Zmdx3I-044h-M_BXglcJyIUeIFeoLUQtyJywxk5v0661FP0PcMyhmhPkUOhDUb32wJhKkVI5fbu4ga2-teRtLZc_LGyf8A8Xqj2jdsmlPlAV2OZvj1DlbU8mfCc3oiSOjOZp5bw_Qjim9MfGj06iyyGQ`;
+const heroImg = `${img}/AB6AXuCOoG8Tpc32uYMSyV97NPrga5IwkK2BApGhTNVrq6SLFCy0ySh9qrBN_O-CBZKr_vTvNk63h0NLIQ7TEPNxxg2MEMNunOMS3U7KddR_jjh0hFvLK-8IuqlxnexUfYAMjYDhnFsxx6uCgFmne8A2KDPuGr3lxwFxGeypbBRkdYPI9_o__KQxKtVy26V7rFWe7er3dU0oemdFc41KD6lbFapd0EVPRwaxDRvd84tiEI7AWqxnDg7DTvHyFw=w1600`;
+const quoteImg = `${img}/AB6AXuAa_C-rU-5fdNPkH5o-XpX4llJyNlx3Fn3w6H-cCjV1bMBsQmboIybm7N-5QHXocpwrv9_74ylyHIGLZNb17DLEEsElcUBpI9Zmdx3I-044h-M_BXglcJyIUeIFeoLUQtyJywxk5v0661FP0PcMyhmhPkUOhDUb32wJhKkVI5fbu4ga2-teRtLZc_LGyf8A8Xqj2jdsmlPlAV2OZvj1DlbU8mfCc3oiSOjOZp5bw_Qjim9MfGj06iyyGQ=w1600`;
 
 const label = 'font-label-caps text-label-caps uppercase';
 const input = 'w-full px-4 py-3 rounded-md border-0 bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-ink-tertiary focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:outline-none transition-all';

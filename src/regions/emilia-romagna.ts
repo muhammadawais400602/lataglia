@@ -44,7 +44,7 @@ const emiliaRomagna: RegionStory = {
     },
     "imageTag": "The Po Valley plain",
     "heritageNote": "la grassa",
-    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD5Lecz0AdqyBGC2Wq3i1tMYZSsTXZU7rnRZwMIRu30HPom7D4g_MfUW37DkKRblH2w8dWakWoHWyqr8ENG84u6u-6r3rZ5sFwy5-3pgKuhaBtRfx1xXZ31MJFmE3Ztyu_6QMYQgorMv4YPjTiOy8VN_nAPK9T04AYFaZUpz-BBzEi6AsIq4gz8Tz0trhIDutSJ6LvYImgTcxiN81LaVqnYvJT-8z_9n2Qh5WTzL5ehPd45ZbZ8PNie",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuD5Lecz0AdqyBGC2Wq3i1tMYZSsTXZU7rnRZwMIRu30HPom7D4g_MfUW37DkKRblH2w8dWakWoHWyqr8ENG84u6u-6r3rZ5sFwy5-3pgKuhaBtRfx1xXZ31MJFmE3Ztyu_6QMYQgorMv4YPjTiOy8VN_nAPK9T04AYFaZUpz-BBzEi6AsIq4gz8Tz0trhIDutSJ6LvYImgTcxiN81LaVqnYvJT-8z_9n2Qh5WTzL5ehPd45ZbZ8PNie=w1600",
     "imageAlt": "A broad, flat plain between the Apennines and the Adriatic, some of the most fertile land in Europe."
   },
   "intro": [
@@ -67,7 +67,7 @@ const emiliaRomagna: RegionStory = {
             "tag": "Aged 24 mos",
             "tagTone": "gold",
             "origin": "Parma, Reggio",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy=w1600"
           }
         ]
       },
@@ -84,7 +84,7 @@ const emiliaRomagna: RegionStory = {
             "tag": "DOP",
             "tagTone": "green",
             "origin": "Langhirano",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq=w1600"
           }
         ]
       },
@@ -101,7 +101,7 @@ const emiliaRomagna: RegionStory = {
             "tag": "Aged 12+ yrs",
             "tagTone": "gold",
             "origin": "Modena",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuB8fNZqrw7_TeLPRVEEG_27bLhKOX_XNqCdzPhwWHZ5bLTyo7JBuBG7nuLUONxaWfTWjzKpwLufbGDQGMZpw9aC92xt7ZAcbhTPrMmYlaCy6jdyFMiwErNuyU4WWyzRPIVkvjpNhXaLksOXB9Cu3ZN-VdxwvM8OPNbVZGzjbI-INRp9b-ATgVayuCc_lE_QPClNYuWawfQf4JMKOJJU235NCk7vRde5n1RHDnQvA4n98iandjWQZQvd"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuB8fNZqrw7_TeLPRVEEG_27bLhKOX_XNqCdzPhwWHZ5bLTyo7JBuBG7nuLUONxaWfTWjzKpwLufbGDQGMZpw9aC92xt7ZAcbhTPrMmYlaCy6jdyFMiwErNuyU4WWyzRPIVkvjpNhXaLksOXB9Cu3ZN-VdxwvM8OPNbVZGzjbI-INRp9b-ATgVayuCc_lE_QPClNYuWawfQf4JMKOJJU235NCk7vRde5n1RHDnQvA4n98iandjWQZQvd=w1600"
           },
           {
             "id": "er-balsamico-igp",
@@ -110,7 +110,7 @@ const emiliaRomagna: RegionStory = {
             "tag": "IGP",
             "tagTone": "green",
             "origin": "Modena",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCZyhmRoysTXxSEjhPdYG3L2aauy8GnQG3COaak_T-rq-gH0MIvgRD3YWT8DVg0xncJfT9Kgi264v_koaWGZjr_BkDt--tchO0yaeRu0s9IcA7WGyoAaHkLeWpFkEILzTxRXam4m8uLZSE7fiXX19cOXPaRPT-yW44Vb6evFBHXb5blW8ZnWNV6MyWl056-YbSwFVE6h2MvAJ_x7TRAz-3ObJcmaI9tSjyRZxE_cP8UAfBGYcoCxPH_"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCZyhmRoysTXxSEjhPdYG3L2aauy8GnQG3COaak_T-rq-gH0MIvgRD3YWT8DVg0xncJfT9Kgi264v_koaWGZjr_BkDt--tchO0yaeRu0s9IcA7WGyoAaHkLeWpFkEILzTxRXam4m8uLZSE7fiXX19cOXPaRPT-yW44Vb6evFBHXb5blW8ZnWNV6MyWl056-YbSwFVE6h2MvAJ_x7TRAz-3ObJcmaI9tSjyRZxE_cP8UAfBGYcoCxPH_=w1600"
           }
         ]
       },
@@ -127,7 +127,7 @@ const emiliaRomagna: RegionStory = {
             "tag": "IGP",
             "tagTone": "green",
             "origin": "Bologna",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr=w1600"
           }
         ]
       },
@@ -144,7 +144,7 @@ const emiliaRomagna: RegionStory = {
             "tag": "Rare · DOP",
             "tagTone": "gold",
             "origin": "Zibello",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo=w1600"
           }
         ]
       },
@@ -161,7 +161,7 @@ const emiliaRomagna: RegionStory = {
             "tag": "Egg pasta",
             "tagTone": "neutral",
             "origin": "Bologna",
-            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
+            "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl=w1600"
           },
           {
             "id": "er-tortellini",
@@ -170,7 +170,7 @@ const emiliaRomagna: RegionStory = {
             "tag": "Filled pasta",
             "tagTone": "neutral",
             "origin": "Bologna, Modena",
-            "img": "https://lh3.googleusercontent.com/aida/AEtjO1XH3ztoRKkRdH9fjeZ7zGSvG7Z5lVtTJVcPxnxpnLlAyQgVptrChhD3aGe8eyAqVjd0t1vRNzKDPEjlQjVZ-Eo-tmswH65MCECJXC1QT7I-lJ124iYZKFjt2HHrSOK_zqbBcVos3Jg8CZW5bSAW6GQ8NC2GTMPbtiRRx9g9oxW6L3gS7A49QEWznJIYITZoOmWrGC6LiYi1Idw4k1vthGnlg7ZvP6f6Il5_lhaoAml5HXicCLGHPJRAbg"
+            "img": "https://lh3.googleusercontent.com/aida/AEtjO1XH3ztoRKkRdH9fjeZ7zGSvG7Z5lVtTJVcPxnxpnLlAyQgVptrChhD3aGe8eyAqVjd0t1vRNzKDPEjlQjVZ-Eo-tmswH65MCECJXC1QT7I-lJ124iYZKFjt2HHrSOK_zqbBcVos3Jg8CZW5bSAW6GQ8NC2GTMPbtiRRx9g9oxW6L3gS7A49QEWznJIYITZoOmWrGC6LiYi1Idw4k1vthGnlg7ZvP6f6Il5_lhaoAml5HXicCLGHPJRAbg=w1600"
           }
         ]
       }
@@ -185,28 +185,28 @@ const emiliaRomagna: RegionStory = {
         "where": "Bologna",
         "body": "A slow ragù of beef, pancetta, a little tomato, wine, and milk, tossed with wide ribbons of egg pasta. This is the real dish behind “spaghetti bolognese,” which you won’t find in Bologna.",
         "tip": "[Cook it below](#ragu)",
-        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl=w1600"
       },
       {
         "title": "Tortellini in brodo",
         "where": "Bologna and Modena",
         "body": "Tiny folded pasta filled with pork loin, prosciutto, mortadella, and Parmigiano, served in a clear capon or beef broth. The Christmas dish across Emilia.",
         "tip": "Buy [good tortellini](product:er-tortellini) and put your effort into the broth.",
-        "image": "https://lh3.googleusercontent.com/aida/AEtjO1XH3ztoRKkRdH9fjeZ7zGSvG7Z5lVtTJVcPxnxpnLlAyQgVptrChhD3aGe8eyAqVjd0t1vRNzKDPEjlQjVZ-Eo-tmswH65MCECJXC1QT7I-lJ124iYZKFjt2HHrSOK_zqbBcVos3Jg8CZW5bSAW6GQ8NC2GTMPbtiRRx9g9oxW6L3gS7A49QEWznJIYITZoOmWrGC6LiYi1Idw4k1vthGnlg7ZvP6f6Il5_lhaoAml5HXicCLGHPJRAbg"
+        "image": "https://lh3.googleusercontent.com/aida/AEtjO1XH3ztoRKkRdH9fjeZ7zGSvG7Z5lVtTJVcPxnxpnLlAyQgVptrChhD3aGe8eyAqVjd0t1vRNzKDPEjlQjVZ-Eo-tmswH65MCECJXC1QT7I-lJ124iYZKFjt2HHrSOK_zqbBcVos3Jg8CZW5bSAW6GQ8NC2GTMPbtiRRx9g9oxW6L3gS7A49QEWznJIYITZoOmWrGC6LiYi1Idw4k1vthGnlg7ZvP6f6Il5_lhaoAml5HXicCLGHPJRAbg=w1600"
       },
       {
         "title": "Lasagne verdi",
         "where": "Bologna",
         "body": "Spinach-green egg pasta layered with ragù, béchamel, and Parmigiano, baked until the edges crisp. Lighter than the American version and better for it.",
         "tip": "Make a double batch of ragù on Saturday; this is Sunday lunch.",
-        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCrmH1O59xmE1Y77HZpjEBj-SfPVSMI9QI2fReWIfLlVNEUybRQbrmraXSxPdj_0TZ6CjRPClwypuyIngcZSdQWF4weTNTdt-l-5RO3ibWgN6HH8xkThDZsvE7bz7UiaPReDRpXaMUqNJH1oaFLo_S-GTC0lKEf3yFp0zpZx38Kiu2jCKbD9HzJ_dxxPK_L-qOMvLjTWVxK06o0_MKQKpEWnqHA6Go1bsRugfGn5xEMf7bDWgo5inpz"
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCrmH1O59xmE1Y77HZpjEBj-SfPVSMI9QI2fReWIfLlVNEUybRQbrmraXSxPdj_0TZ6CjRPClwypuyIngcZSdQWF4weTNTdt-l-5RO3ibWgN6HH8xkThDZsvE7bz7UiaPReDRpXaMUqNJH1oaFLo_S-GTC0lKEf3yFp0zpZx38Kiu2jCKbD9HzJ_dxxPK_L-qOMvLjTWVxK06o0_MKQKpEWnqHA6Go1bsRugfGn5xEMf7bDWgo5inpz=w1600"
       },
       {
         "title": "Piadina",
         "where": "Romagna",
         "body": "A thin flatbread cooked on a griddle and folded around prosciutto, soft squacquerone cheese, and arugula. Romagna’s beach-kiosk street food.",
         "tip": "Look for Piadina Romagnola IGP, or [ready-made piadine](product:er-piadina) to warm at home.",
-        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDqmbMaaWotLnqd7h746aY6nsFALWzvjqbkrArYOxWH0YaS3R83fCAwa_zPopqfTC19b2rndKbS0X7Nj0tC5mW1iAtX3KmPVZsS3ZsFiP0HIvHEAkj179Jhwx4pyyijMtfmbJUWOuzPdOd5gogteAa_cNezVDsRpXU2pkT0vo_nXW3O0JbzNZUqjoeSjms0C0zSftPsOjvMIjrOBbhGg700irDxZk2EN0lXZPe4eI9aZMgxn7bkIl7z"
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDqmbMaaWotLnqd7h746aY6nsFALWzvjqbkrArYOxWH0YaS3R83fCAwa_zPopqfTC19b2rndKbS0X7Nj0tC5mW1iAtX3KmPVZsS3ZsFiP0HIvHEAkj179Jhwx4pyyijMtfmbJUWOuzPdOd5gogteAa_cNezVDsRpXU2pkT0vo_nXW3O0JbzNZUqjoeSjms0C0zSftPsOjvMIjrOBbhGg700irDxZk2EN0lXZPe4eI9aZMgxn7bkIl7z=w1600"
       }
     ],
     "eyebrow": "Culinary canon"
@@ -220,17 +220,17 @@ const emiliaRomagna: RegionStory = {
     ],
     "photos": [
       {
-        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuB8fNZqrw7_TeLPRVEEG_27bLhKOX_XNqCdzPhwWHZ5bLTyo7JBuBG7nuLUONxaWfTWjzKpwLufbGDQGMZpw9aC92xt7ZAcbhTPrMmYlaCy6jdyFMiwErNuyU4WWyzRPIVkvjpNhXaLksOXB9Cu3ZN-VdxwvM8OPNbVZGzjbI-INRp9b-ATgVayuCc_lE_QPClNYuWawfQf4JMKOJJU235NCk7vRde5n1RHDnQvA4n98iandjWQZQvd",
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuB8fNZqrw7_TeLPRVEEG_27bLhKOX_XNqCdzPhwWHZ5bLTyo7JBuBG7nuLUONxaWfTWjzKpwLufbGDQGMZpw9aC92xt7ZAcbhTPrMmYlaCy6jdyFMiwErNuyU4WWyzRPIVkvjpNhXaLksOXB9Cu3ZN-VdxwvM8OPNbVZGzjbI-INRp9b-ATgVayuCc_lE_QPClNYuWawfQf4JMKOJJU235NCk7vRde5n1RHDnQvA4n98iandjWQZQvd=w1600",
         "alt": "Barrel room · Modena",
         "caption": "Barrel room · Modena"
       },
       {
-        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCZyhmRoysTXxSEjhPdYG3L2aauy8GnQG3COaak_T-rq-gH0MIvgRD3YWT8DVg0xncJfT9Kgi264v_koaWGZjr_BkDt--tchO0yaeRu0s9IcA7WGyoAaHkLeWpFkEILzTxRXam4m8uLZSE7fiXX19cOXPaRPT-yW44Vb6evFBHXb5blW8ZnWNV6MyWl056-YbSwFVE6h2MvAJ_x7TRAz-3ObJcmaI9tSjyRZxE_cP8UAfBGYcoCxPH_",
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuCZyhmRoysTXxSEjhPdYG3L2aauy8GnQG3COaak_T-rq-gH0MIvgRD3YWT8DVg0xncJfT9Kgi264v_koaWGZjr_BkDt--tchO0yaeRu0s9IcA7WGyoAaHkLeWpFkEILzTxRXam4m8uLZSE7fiXX19cOXPaRPT-yW44Vb6evFBHXb5blW8ZnWNV6MyWl056-YbSwFVE6h2MvAJ_x7TRAz-3ObJcmaI9tSjyRZxE_cP8UAfBGYcoCxPH_=w1600",
         "alt": "Family cellar · Acetaia Giusti",
         "caption": "Family cellar · Acetaia Giusti"
       },
       {
-        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBp68m5lSU6-8ZN67UTUCN5BKNv5QSKDC5KizaTIowwYF5M2EkGtvLJaKDKIsQmF41ZNcJsl0T0Znglr7jklxtT-w22t7njnnntvShori47D3GwKrBVh6T3bUeXq2gEQgCFrtLRh0jucqR1Sm-6qrvqHFqckmsOeZaFDwLq5f77THglUO2sMHowN1KTpK-qNejEDxMSlQdVLQF4BEYjm8mECLtCPBUQwoIi2VJf_UMrLqVcvy2eTRfW",
+        "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBp68m5lSU6-8ZN67UTUCN5BKNv5QSKDC5KizaTIowwYF5M2EkGtvLJaKDKIsQmF41ZNcJsl0T0Znglr7jklxtT-w22t7njnnntvShori47D3GwKrBVh6T3bUeXq2gEQgCFrtLRh0jucqR1Sm-6qrvqHFqckmsOeZaFDwLq5f77THglUO2sMHowN1KTpK-qNejEDxMSlQdVLQF4BEYjm8mECLtCPBUQwoIi2VJf_UMrLqVcvy2eTRfW=w1600",
         "alt": "Giusti balsamic · Modena",
         "caption": "Giusti balsamic · Modena"
       }
@@ -258,7 +258,7 @@ const emiliaRomagna: RegionStory = {
         "tag": "IGP",
         "tagTone": "green",
         "origin": "Modena",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBp68m5lSU6-8ZN67UTUCN5BKNv5QSKDC5KizaTIowwYF5M2EkGtvLJaKDKIsQmF41ZNcJsl0T0Znglr7jklxtT-w22t7njnnntvShori47D3GwKrBVh6T3bUeXq2gEQgCFrtLRh0jucqR1Sm-6qrvqHFqckmsOeZaFDwLq5f77THglUO2sMHowN1KTpK-qNejEDxMSlQdVLQF4BEYjm8mECLtCPBUQwoIi2VJf_UMrLqVcvy2eTRfW"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBp68m5lSU6-8ZN67UTUCN5BKNv5QSKDC5KizaTIowwYF5M2EkGtvLJaKDKIsQmF41ZNcJsl0T0Znglr7jklxtT-w22t7njnnntvShori47D3GwKrBVh6T3bUeXq2gEQgCFrtLRh0jucqR1Sm-6qrvqHFqckmsOeZaFDwLq5f77THglUO2sMHowN1KTpK-qNejEDxMSlQdVLQF4BEYjm8mECLtCPBUQwoIi2VJf_UMrLqVcvy2eTRfW=w1600"
       },
       {
         "id": "er-giusti-tradizionale",
@@ -267,7 +267,7 @@ const emiliaRomagna: RegionStory = {
         "tag": "DOP · 100 ml",
         "tagTone": "gold",
         "origin": "Modena",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuADppUJd9LWAsZ00PeDJAgOzH1vvUIaXbMMSWISu9mdyUJK162Zg7gdzcknUAi3CVTNMQWHZWZQToMZgmy3j8F5DbRW32wuGj4UXpsVdEJ5DsBAAFNcaat_J7X0b_Jnq4khHowo02MPWIZ5IjPXbRduzDgjwHgNujKIGsZxaDGl9RwY2807JFgGd0y6QugTckwiJ8gI_a-zmrn2rA7dCUyrP7a3O7URtlL6uZyrAA41iSvDq71BgOmd"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuADppUJd9LWAsZ00PeDJAgOzH1vvUIaXbMMSWISu9mdyUJK162Zg7gdzcknUAi3CVTNMQWHZWZQToMZgmy3j8F5DbRW32wuGj4UXpsVdEJ5DsBAAFNcaat_J7X0b_Jnq4khHowo02MPWIZ5IjPXbRduzDgjwHgNujKIGsZxaDGl9RwY2807JFgGd0y6QugTckwiJ8gI_a-zmrn2rA7dCUyrP7a3O7URtlL6uZyrAA41iSvDq71BgOmd=w1600"
       }
     ]
   },
@@ -323,7 +323,7 @@ const emiliaRomagna: RegionStory = {
           "tag": "Egg pasta",
           "tagTone": "neutral",
           "origin": "Bologna",
-          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl=w1600"
         },
         {
           "id": "er-parmigiano-24",
@@ -332,7 +332,7 @@ const emiliaRomagna: RegionStory = {
           "tag": "Aged 24 mos",
           "tagTone": "gold",
           "origin": "Parma, Reggio",
-          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy=w1600"
         }
       ],
       "schema": {
@@ -357,7 +357,7 @@ const emiliaRomagna: RegionStory = {
         ]
       },
       "imageCaption": "Bologna classic · simmered about 3½ hours",
-      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl=w1600"
     },
     "shortcut": {
       "title": "Ten minutes in Modena",
@@ -370,7 +370,7 @@ const emiliaRomagna: RegionStory = {
           "tag": "Aged 24 mos",
           "tagTone": "gold",
           "origin": "Parma, Reggio",
-          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy=w1600"
         },
         {
           "id": "er-balsamico-igp",
@@ -379,7 +379,7 @@ const emiliaRomagna: RegionStory = {
           "tag": "IGP",
           "tagTone": "green",
           "origin": "Modena",
-          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCZyhmRoysTXxSEjhPdYG3L2aauy8GnQG3COaak_T-rq-gH0MIvgRD3YWT8DVg0xncJfT9Kgi264v_koaWGZjr_BkDt--tchO0yaeRu0s9IcA7WGyoAaHkLeWpFkEILzTxRXam4m8uLZSE7fiXX19cOXPaRPT-yW44Vb6evFBHXb5blW8ZnWNV6MyWl056-YbSwFVE6h2MvAJ_x7TRAz-3ObJcmaI9tSjyRZxE_cP8UAfBGYcoCxPH_"
+          "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCZyhmRoysTXxSEjhPdYG3L2aauy8GnQG3COaak_T-rq-gH0MIvgRD3YWT8DVg0xncJfT9Kgi264v_koaWGZjr_BkDt--tchO0yaeRu0s9IcA7WGyoAaHkLeWpFkEILzTxRXam4m8uLZSE7fiXX19cOXPaRPT-yW44Vb6evFBHXb5blW8ZnWNV6MyWl056-YbSwFVE6h2MvAJ_x7TRAz-3ObJcmaI9tSjyRZxE_cP8UAfBGYcoCxPH_=w1600"
         }
       ],
       "eyebrow": "Modena shortcut",
@@ -400,7 +400,7 @@ const emiliaRomagna: RegionStory = {
         "tag": "Aged 24 mos",
         "tagTone": "gold",
         "origin": "Parma, Reggio",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBZfdJEmUYgFHiabo38UHmLvwd9Y0Psx-MdVvSejnGhXz0buPdpFoOkBRLYbpfeugiIS7X2Byyk-Jl6iQ5ZV3NX8I6EBEC08wKcTlh2_x1WqptPq-EYf0Y1aKTkben9ax6x2dvx6vLRcxDI9Afkv4bxdqmV1rvrkU-p4csGegtzc0rTIvgem-1IsUcORxKDjKdjeZnkxYh9L_SIgJat8Sn5Vi7sv5rIFxSueuPkRhdJx8nHnYbzQzmy=w1600"
       },
       {
         "id": "er-prosciutto-parma",
@@ -409,7 +409,7 @@ const emiliaRomagna: RegionStory = {
         "tag": "DOP",
         "tagTone": "green",
         "origin": "Langhirano",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCzoiY_PbATXMfY1mnz5jOL0IBn1HMArAne7I7zNxjEEuPe3_bBSnSIrWUD8rLBOge1WxNRLC4WLoO5h3B_4izy2UyK37r3BIgyS7hfWNydJTozOLPdKPZh0H_TRLzKp9_a3t5Rxym2DVO8nO5vwdcsos81ypYQldFRJykdsRrebCBDqgt8dDGY7lzt9_rxDJOY7jqDGHh7BoADPjHw1plrAfu9x7Sm5ANsaklc7vq4Udj2Csws3Fwq=w1600"
       },
       {
         "id": "er-mortadella",
@@ -418,7 +418,7 @@ const emiliaRomagna: RegionStory = {
         "tag": "IGP",
         "tagTone": "green",
         "origin": "Bologna",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBdDg5cA20fe1YrMRIOdkt6cKmZ3mhM5ZsIwkFdxlhp0rm81M-AnjTsAmYgyOJcQHbj89qegZOZXh4BG1hhU056oG3vRn6GxrLJAtulKgsCGxM1gX6Nj4u7-S2Re8qPHXkggsorCr7oagYxgNkLuAfe1VubSnTR8fWM8obiHqO2hBVMdzph7UeNF7lhtVpuvIv9bv8AUY1FRxcnY7cdWI4juwMBmq8Tm7TyQL5eAm_waBnms0jkCCsr=w1600"
       },
       {
         "id": "er-culatello",
@@ -427,7 +427,7 @@ const emiliaRomagna: RegionStory = {
         "tag": "Rare · DOP",
         "tagTone": "gold",
         "origin": "Zibello",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBbpfoED5G8sYb-izcprhxTWelGxb0qkCPAO2PUKDyLcE5solcFvSGPpiUmbxz5rdBagZLsld4gYQX9sNQlVCIQtrVb2OwdBlR5eIbscRt2hMuqqWHdW81U0TjvRP7paEhyDy0ZRK7XjuWCQhQLO8w7NjgFhoUWEJteDTbF7-2Rf_wcKvLFL-yTwnXIXLx-0WSnzDMezFAAJs50rrRDQ15AfSstfg1aAQVAwGzBEzJpE0c8WEImGYNo=w1600"
       },
       {
         "id": "er-balsamico-igp",
@@ -436,7 +436,7 @@ const emiliaRomagna: RegionStory = {
         "tag": "IGP",
         "tagTone": "green",
         "origin": "Modena",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCZyhmRoysTXxSEjhPdYG3L2aauy8GnQG3COaak_T-rq-gH0MIvgRD3YWT8DVg0xncJfT9Kgi264v_koaWGZjr_BkDt--tchO0yaeRu0s9IcA7WGyoAaHkLeWpFkEILzTxRXam4m8uLZSE7fiXX19cOXPaRPT-yW44Vb6evFBHXb5blW8ZnWNV6MyWl056-YbSwFVE6h2MvAJ_x7TRAz-3ObJcmaI9tSjyRZxE_cP8UAfBGYcoCxPH_"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuCZyhmRoysTXxSEjhPdYG3L2aauy8GnQG3COaak_T-rq-gH0MIvgRD3YWT8DVg0xncJfT9Kgi264v_koaWGZjr_BkDt--tchO0yaeRu0s9IcA7WGyoAaHkLeWpFkEILzTxRXam4m8uLZSE7fiXX19cOXPaRPT-yW44Vb6evFBHXb5blW8ZnWNV6MyWl056-YbSwFVE6h2MvAJ_x7TRAz-3ObJcmaI9tSjyRZxE_cP8UAfBGYcoCxPH_=w1600"
       },
       {
         "id": "er-tagliatelle",
@@ -445,7 +445,7 @@ const emiliaRomagna: RegionStory = {
         "tag": "Egg pasta",
         "tagTone": "neutral",
         "origin": "Bologna",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuByITNBX-WKPtlq_3uexb5wLBRki8n3vLslVS4T31ERWmhBQJtGElp63Cf4okDOPtV41TDLA3eKNXUvwrwT_DCCFx31iPZZCKzYNbQ1fLysHaWMF4EueHvvpV_AGTIzb3Im3BHXMvr2VRMjXiDayCfccLEC480hCMsAe4pcNhUUJ_1L4PmB2VXlMCGIn33KuplVRTAo8bjV9wChz5pdPB8rHyNqlkB27mUK8VxW3Ylqqb7U-HNKsDgl=w1600"
       },
       {
         "id": "er-tortellini",
@@ -454,7 +454,7 @@ const emiliaRomagna: RegionStory = {
         "tag": "Filled pasta",
         "tagTone": "neutral",
         "origin": "Bologna, Modena",
-        "img": "https://lh3.googleusercontent.com/aida/AEtjO1XH3ztoRKkRdH9fjeZ7zGSvG7Z5lVtTJVcPxnxpnLlAyQgVptrChhD3aGe8eyAqVjd0t1vRNzKDPEjlQjVZ-Eo-tmswH65MCECJXC1QT7I-lJ124iYZKFjt2HHrSOK_zqbBcVos3Jg8CZW5bSAW6GQ8NC2GTMPbtiRRx9g9oxW6L3gS7A49QEWznJIYITZoOmWrGC6LiYi1Idw4k1vthGnlg7ZvP6f6Il5_lhaoAml5HXicCLGHPJRAbg"
+        "img": "https://lh3.googleusercontent.com/aida/AEtjO1XH3ztoRKkRdH9fjeZ7zGSvG7Z5lVtTJVcPxnxpnLlAyQgVptrChhD3aGe8eyAqVjd0t1vRNzKDPEjlQjVZ-Eo-tmswH65MCECJXC1QT7I-lJ124iYZKFjt2HHrSOK_zqbBcVos3Jg8CZW5bSAW6GQ8NC2GTMPbtiRRx9g9oxW6L3gS7A49QEWznJIYITZoOmWrGC6LiYi1Idw4k1vthGnlg7ZvP6f6Il5_lhaoAml5HXicCLGHPJRAbg=w1600"
       },
       {
         "id": "er-piadina",
@@ -463,7 +463,7 @@ const emiliaRomagna: RegionStory = {
         "tag": "IGP",
         "tagTone": "green",
         "origin": "Romagna",
-        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDMH2M-VN1-Pz9hCbkXgdgup639qKPj1bgJo2jf1PgPm9NKzrgAY_T6MZujPmHAC4Z5W83H6bgIwaOrwcCLEuI-3an8k7c44fESuTzHNkXQYSCN_pESKkZUsjfCP-01ZMORW4JuJXmElmpAAAxPwRTi5o5Crpmlu_bVRSOXjhggx377vb87iOfKRdkb1LjsaiX1pF73K7pXrg-DIruRvIfEPidPaOJoOlRNnbEwUK6fqguV0N3VVklu"
+        "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDMH2M-VN1-Pz9hCbkXgdgup639qKPj1bgJo2jf1PgPm9NKzrgAY_T6MZujPmHAC4Z5W83H6bgIwaOrwcCLEuI-3an8k7c44fESuTzHNkXQYSCN_pESKkZUsjfCP-01ZMORW4JuJXmElmpAAAxPwRTi5o5Crpmlu_bVRSOXjhggx377vb87iOfKRdkb1LjsaiX1pF73K7pXrg-DIruRvIfEPidPaOJoOlRNnbEwUK6fqguV0N3VVklu=w1600"
       }
     ],
     "eyebrow": "Limited curation · Parcel N° 02"

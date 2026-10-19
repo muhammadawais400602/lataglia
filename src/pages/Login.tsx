@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react';
 import Layout from '../components/Layout';
 
-const bgImg = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCaXPtI8EnVKIdaDdhAiXO0b0h6IqlIWbNsNksJeGGG4tQp-kUiaqrLrhF0Vs1cExWoxu-c6YRmpHbYUn15oAKJFMKz1fIX10MKgmv73BsluzP-nUXmZj5nfKJH7Y8m4cY4vzRLm8Zuz_bC6LjjNKrWI1OrrrZY3nBnJnt_tp4j95wCjCiGl2v0SbHJUgcuUpD6a1G_D56PuPp649gyYUsqd_r85D0pElq5qnCzPgWWwIcTN5aPDgWVYA';
+const bgImg = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCaXPtI8EnVKIdaDdhAiXO0b0h6IqlIWbNsNksJeGGG4tQp-kUiaqrLrhF0Vs1cExWoxu-c6YRmpHbYUn15oAKJFMKz1fIX10MKgmv73BsluzP-nUXmZj5nfKJH7Y8m4cY4vzRLm8Zuz_bC6LjjNKrWI1OrrrZY3nBnJnt_tp4j95wCjCiGl2v0SbHJUgcuUpD6a1G_D56PuPp649gyYUsqd_r85D0pElq5qnCzPgWWwIcTN5aPDgWVYA=w1600';
 
 const label = 'font-label-caps text-label-caps uppercase';
 const input = 'w-full pl-11 pr-4 py-3.5 rounded-md border-0 bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-ink-tertiary focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary focus:outline-none transition-all';

@@ -17,7 +17,7 @@ const landmark: Record<string, string> = {
   "valle-daosta": 'Aosta Valley',
 };
 
-const KEY = 'lt-region-photos-v1';
+const KEY = 'lt-region-photos-v2';
 const WEEK = 7 * 24 * 3600 * 1000;
 let cache: Record<string, string> | null = null;
 let pending: Promise<Record<string, string>> | null = null;
@@ -33,7 +33,7 @@ function readStored(): Record<string, string> | null {
 
 async function fetchAll(): Promise<Record<string, string>> {
   const titles = Object.values(landmark);
-  const url = `https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&redirects=1&prop=pageimages&piprop=thumbnail&pithumbsize=480&titles=${encodeURIComponent(titles.join('|'))}`;
+  const url = `https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&redirects=1&prop=pageimages&piprop=thumbnail&pithumbsize=1600&titles=${encodeURIComponent(titles.join('|'))}`;
   const body = (await (await fetch(url)).json()) as {
     query?: { pages?: Record<string, { title: string; thumbnail?: { source: string } }>; redirects?: { from: string; to: string }[]; normalized?: { from: string; to: string }[] };
   };
