@@ -1,7 +1,7 @@
 const img = 'https://lh3.googleusercontent.com/aida-public';
 
 // Home banner: Rome (Trevi Fountain, St Peter's, the Colosseum).
-export const heroImg = '/img/hero-rome.jpg';
+export const heroImg = '/img/hero-rome-hd.jpg';
 
 export const promoCards = [
   { href: '#pistachio', icon: 'pistachio', title: 'The World’s Greatest Pistachio', body: 'Everything we love from the slopes of Etna, from pure paste to cannoli.', cta: 'Shop now' },
