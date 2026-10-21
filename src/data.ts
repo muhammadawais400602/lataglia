@@ -1,6 +1,7 @@
 const img = 'https://lh3.googleusercontent.com/aida-public';
 
-export const heroImg = `${img}/AB6AXuCpGuKrD4FiJ1eQd4rJjRT5ep0EsKwmkU6eoINBRcM6ba5GWinJPfjoWFkwdcSLxrQfDHXHZfGaWG3e7QXI5FBq8FrxtpKBqQk9rQM6p3Q2SSsXZa2cCJT_5zIyAdlaooSiW75mG1SwZ_VVxL-W7ibGyarwdCJoVp7jSoiKFep67jnOcgbFfwpbQVGMKgRyovxM3F7Q4U_7qxKFIz7H_ISW1wZ_q7s2CfZX3U1Cc4SROELw9LLHxCQp`;
+// Home banner: Rome (Trevi Fountain, St Peter's, the Colosseum).
+export const heroImg = '/img/hero-rome.jpg';
 
 export const promoCards = [
   { href: '#pistachio', icon: 'pistachio', title: 'The World’s Greatest Pistachio', body: 'Everything we love from the slopes of Etna, from pure paste to cannoli.', cta: 'Shop now' },
