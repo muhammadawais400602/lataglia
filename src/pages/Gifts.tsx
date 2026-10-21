@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react';
 import Layout from '../components/Layout';
 import { useBasket } from '../cartStore';
-import { crestImg, featured, giftFilters, hampers, matches, protocols, tiersCorporate, type GiftFilter, type Hamper } from '../giftData';
+import { featured, giftFilters, hampers, matches, protocols, tiersCorporate, type GiftFilter, type Hamper } from '../giftData';
 
 const label = 'font-label-caps text-label-caps uppercase';
 
@@ -65,9 +65,6 @@ export default function Gifts() {
       <section className="relative w-full bg-surface-parchment overflow-hidden px-6 lg:px-12 py-16 lg:py-24">
         <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-primary/5 via-transparent to-secondary-container/10" />
         <div className="max-w-[1320px] mx-auto relative z-10">
-          <div className="mb-8 max-w-[280px] opacity-90">
-            <img src={crestImg} alt="La Taglia House Crest" className="w-full h-auto object-contain" />
-          </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
             <div className="lg:col-span-8 flex flex-col gap-6">
               <div className="flex items-center gap-3">
