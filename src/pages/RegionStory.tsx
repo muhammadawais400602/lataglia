@@ -6,6 +6,7 @@ import { useCatalog } from '../storeApi';
 import type { Product } from '../shared/types';
 import type { Photo, RegionStory as Story, StoryProduct, Tone } from '../regions/types';
 import { storyPhotoQueries, usePhotos } from '../regions/photos';
+import Icon from '../components/Icon';
 
 type Pic = (p: Photo | undefined, width?: number) => string | undefined;
 
@@ -13,7 +14,6 @@ const wrap = 'max-w-[1280px] mx-auto px-6 lg:px-12';
 const eyebrow = 'text-caption text-primary uppercase font-bold tracking-widest block mb-2';
 const money = (n: number) => `$${n.toFixed(2)}`;
 const toneClass: Record<Tone, string> = { green: 'text-pistachio-light', red: 'text-status-red', gold: 'text-badge-ink', neutral: 'text-ink-secondary' };
-const Icon = ({ name, className = '' }: { name: string; className?: string }) => <span aria-hidden="true" className={`material-symbols-outlined ${className}`}>{name}</span>;
 
 type Catalog = Map<string, Product>;
 

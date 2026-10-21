@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { allRegions, regionHref } from '../regions';
 import { useRegionImage } from '../regions/regionPhotos';
+import Icon from './Icon';
 
 type NavLink = { href: string; label: string; children?: { href: string; label: string }[] };
 const links: NavLink[] = [
@@ -65,7 +66,7 @@ export default function Nav() {
                   <a href={l.href} aria-haspopup="true" aria-expanded={mega} aria-controls="regions-menu"
                     className={`inline-flex items-center gap-0.5 text-sm font-medium transition-colors ${mega ? 'text-primary' : 'text-[#191011] hover:text-primary'}`}>
                     {l.label}
-                    <span aria-hidden="true" className={`material-symbols-outlined text-base transition-transform ${mega ? 'rotate-180' : ''}`}>expand_more</span>
+                    <Icon name="expand_more" className={`text-base transition-transform ${mega ? 'rotate-180' : ''}`} />
                   </a>
                   <div id="regions-menu" className={`absolute inset-x-0 top-full border-t border-[#f1e9ea] bg-surface-container-lowest shadow-xl transition-all duration-200 ${mega ? 'visible opacity-100 translate-y-0' : 'invisible opacity-0 -translate-y-1'}`}>
                     <div className="max-w-[1280px] mx-auto px-6 lg:px-12 py-5 max-h-[calc(100vh-5rem)] overflow-y-auto">
@@ -83,7 +84,7 @@ export default function Nav() {
                 <div key={l.href} className="relative group">
                   <a href={l.href} aria-haspopup="true" className="inline-flex items-center gap-0.5 text-sm font-medium text-[#191011] hover:text-primary group-hover:text-primary transition-colors">
                     {l.label}
-                    <span aria-hidden="true" className="material-symbols-outlined text-base transition-transform group-hover:rotate-180">expand_more</span>
+                    <Icon name="expand_more" className="text-base transition-transform group-hover:rotate-180" />
                   </a>
                   {/* pt-3 bridges the gap so the pointer can move from the link into the panel */}
                   <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-opacity duration-150">
@@ -106,7 +107,7 @@ export default function Nav() {
           <label className="hidden sm:flex flex-col min-w-36 !h-10 max-w-60">
             <div className="flex w-full flex-1 items-stretch rounded h-full bg-[#f1e9ea]">
               <div className="text-[#8e5760] flex border-none items-center justify-center pl-3">
-                <span className="material-symbols-outlined text-lg">search</span>
+                <Icon name="search" className="text-lg" />
               </div>
               <input
                 className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded text-[#191011] focus:outline-none focus:ring-0 border-none bg-transparent h-full placeholder:text-[#8e5760] px-3 text-sm font-normal"
@@ -122,13 +123,13 @@ export default function Nav() {
               onClick={() => setOpen(!open)}
               className="md:hidden flex items-center justify-center rounded h-10 w-10 bg-[#f1e9ea] text-[#191011]"
             >
-              <span className="material-symbols-outlined text-xl">{open ? 'close' : 'menu'}</span>
+              <Icon name={open ? 'close' : 'menu'} className="text-xl" />
             </button>
             <a href="/login" className="flex min-w-[76px] cursor-pointer items-center justify-center overflow-hidden rounded h-10 px-4 bg-primary text-on-primary text-sm font-bold tracking-[0.015em] hover:bg-wine-hover transition-colors">
               <span className="truncate">Sign In</span>
             </a>
             <a href="/cart" aria-label="Shopping bag" className="flex cursor-pointer items-center justify-center rounded h-10 w-10 bg-[#f1e9ea] text-[#191011] hover:bg-outline-variant transition-colors">
-              <span className="material-symbols-outlined text-xl">shopping_bag</span>
+              <Icon name="shopping_bag" className="text-xl" />
             </a>
           </div>
         </div>
@@ -141,7 +142,7 @@ export default function Nav() {
                 <button type="button" onClick={() => setMobileRegions((v) => !v)} aria-expanded={mobileRegions}
                   className="w-full flex items-center justify-between py-3 text-[#191011] text-base font-medium hover:text-primary">
                   {l.label}
-                  <span aria-hidden="true" className={`material-symbols-outlined text-xl transition-transform ${mobileRegions ? 'rotate-180' : ''}`}>expand_more</span>
+                  <Icon name="expand_more" className={`text-xl transition-transform ${mobileRegions ? 'rotate-180' : ''}`} />
                 </button>
                 {mobileRegions && (
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-1 pb-3">

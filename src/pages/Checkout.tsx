@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import { placeOrder, useSettings } from '../storeApi';
 import { priceOrder } from '../shared/types';
 import { useBasket } from '../cartStore';
+import Icon from '../components/Icon';
 
 const label = 'font-label-caps text-label-caps uppercase';
 const input = 'w-full bg-surface-container-low text-on-background rounded-lg border-0 px-4 py-3 font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary focus:bg-surface-container-lowest shadow-sm placeholder:text-ink-tertiary';
@@ -75,14 +76,14 @@ export default function Checkout() {
       <div className="w-full bg-surface-parchment text-secondary py-2.5 px-6 sm:px-12 shadow-sm">
         <div className="max-w-[1320px] mx-auto w-full flex flex-wrap items-center justify-between gap-4 font-body-sm text-body-sm">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="material-symbols-outlined text-pistachio-light text-base" style={{ fontVariationSettings: "'FILL' 1" }}>ac_unit</span>
+            <Icon name="ac_unit" className="text-pistachio-light text-base" filled />
             <span className="font-subheading text-xs tracking-wider uppercase text-secondary">Active Cold-Chain Protocol</span>
             <span className="text-ink-tertiary hidden sm:inline">|</span>
             <span className="text-ink-secondary text-xs">Direct from Modena, Bronte &amp; Gragnano cellars</span>
           </div>
           <div className="flex items-center gap-6 text-xs text-ink-secondary">
-            <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-badge-ink text-sm">verified_user</span> Encrypted checkout</span>
-            <span className={`hidden md:inline-flex items-center gap-1.5 ${label} text-secondary`}><span className="material-symbols-outlined text-sm">support_agent</span> Sommelier Concierge Available</span>
+            <span className="flex items-center gap-1.5"><Icon name="verified_user" className="text-badge-ink text-sm" /> Encrypted checkout</span>
+            <span className={`hidden md:inline-flex items-center gap-1.5 ${label} text-secondary`}><Icon name="support_agent" className="text-sm" /> Sommelier Concierge Available</span>
           </div>
         </div>
       </div>
@@ -93,7 +94,7 @@ export default function Checkout() {
             <section className="bg-surface-container-lowest p-6 sm:p-8 rounded-xl shadow-sm space-y-4">
               <div className="flex items-center justify-between">
                 <span className={`${label} tracking-widest text-ink-tertiary`}>Fast Archival Checkout</span>
-                <span className="font-caption text-caption text-pistachio-light flex items-center gap-1"><span className="material-symbols-outlined text-xs">bolt</span> Instant Dispatch Pass</span>
+                <span className="font-caption text-caption text-pistachio-light flex items-center gap-1"><Icon name="bolt" className="text-xs" /> Instant Dispatch Pass</span>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 <button type="button" aria-label="Express checkout with Apple Pay" className="h-12 bg-on-background text-surface hover:bg-black transition-colors rounded-lg flex items-center justify-center font-button-sm text-button-sm tracking-wide shadow-sm"> Pay</button>
@@ -119,7 +120,7 @@ export default function Checkout() {
             </nav>
 
             <section className="bg-surface-container-lowest p-6 sm:p-8 rounded-xl shadow-sm space-y-6">
-              <StepHeader n={1} title="Contact & Delivery Dossier" aside={<span className="font-caption text-caption text-badge-ink flex items-center gap-1 font-semibold"><span className="material-symbols-outlined text-sm">lock</span> Discretion Assured</span>} />
+              <StepHeader n={1} title="Contact & Delivery Dossier" aside={<span className="font-caption text-caption text-badge-ink flex items-center gap-1 font-semibold"><Icon name="lock" className="text-sm" /> Discretion Assured</span>} />
               <div className="space-y-4">
                 <Field id="contact-email" label="Primary Contact Email">
                   <input id="contact-email" name="email" type="email" required autoComplete="email" placeholder="sommelier@domain.com" className={input} />
@@ -160,7 +161,7 @@ export default function Checkout() {
               <div className="bg-surface-parchment p-4 rounded-lg shadow-sm space-y-2">
                 <div className="flex flex-wrap items-center justify-between gap-2 font-body-sm text-body-sm">
                   <span className="text-secondary font-semibold flex items-center gap-1.5">
-                    <span className="material-symbols-outlined text-secondary-container text-base">local_shipping</span>
+                    <Icon name="local_shipping" className="text-secondary-container text-base" />
                     {remaining > 0 ? `Add ${usd(remaining)} more to qualify for Free Chilled Freight` : 'Free Chilled Express Freight unlocked'}
                   </span>
                   <span className="text-xs text-ink-secondary font-bold">{usd(subtotal)} / {usd(FREE_FREIGHT_AT)} Threshold</span>
@@ -194,7 +195,7 @@ export default function Checkout() {
 
             <section className="bg-surface-container-lowest p-6 sm:p-8 rounded-xl shadow-sm space-y-5">
               <div className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-secondary-container text-2xl">card_giftcard</span>
+                <Icon name="card_giftcard" className="text-secondary-container text-2xl" />
                 <div>
                   <h2 className="font-headline-sm text-headline-sm text-on-background">Bespoke Epicurean Gifting</h2>
                   <p className="font-body-sm text-body-sm text-ink-secondary">Presented in archival black paper and gold foil wax seal</p>
@@ -230,7 +231,7 @@ export default function Checkout() {
             </section>
 
             <section className="bg-surface-container-lowest p-6 sm:p-8 rounded-xl shadow-sm space-y-6">
-              <StepHeader n={3} title="Payment Vault & Cellar Seal" aside={<span className="flex items-center gap-2"><span className="material-symbols-outlined text-pistachio-light text-lg">verified</span><span className={`${label} text-ink-secondary`}>PCI-DSS Tier 1</span></span>} />
+              <StepHeader n={3} title="Payment Vault & Cellar Seal" aside={<span className="flex items-center gap-2"><Icon name="verified" className="text-pistachio-light text-lg" /><span className={`${label} text-ink-secondary`}>PCI-DSS Tier 1</span></span>} />
               <div className="space-y-4" role="radiogroup" aria-label="Payment method">
                 <div className={`p-5 rounded-xl space-y-4 ${pay === 'card' ? 'bg-surface-parchment' : 'bg-surface-container-low'}`}>
                   <div className="flex flex-wrap items-center justify-between gap-2">
@@ -247,7 +248,7 @@ export default function Checkout() {
                       <Field id="card-number" label="Card Number">
                         <div className="relative">
                           <input id="card-number" inputMode="numeric" autoComplete="cc-number" placeholder="1234 5678 9012 3456" className={cardInput} />
-                          <span className="material-symbols-outlined absolute right-3 top-3 text-ink-tertiary">credit_card</span>
+                          <Icon name="credit_card" className="absolute right-3 top-3 text-ink-tertiary" />
                         </div>
                       </Field>
                       <div className="grid grid-cols-2 gap-4">
@@ -255,7 +256,7 @@ export default function Checkout() {
                         <Field id="card-cvv" label="Security Code (CVV)">
                           <div className="relative">
                             <input id="card-cvv" type="password" inputMode="numeric" autoComplete="cc-csc" placeholder="•••" className={cardInput} />
-                            <span className="material-symbols-outlined absolute right-3 top-3 text-ink-tertiary text-lg">help_outline</span>
+                            <Icon name="help_outline" className="absolute right-3 top-3 text-ink-tertiary text-lg" />
                           </div>
                         </Field>
                       </div>
@@ -318,13 +319,13 @@ export default function Checkout() {
                 </ul>
               )}
               <a href="/cart" className="inline-flex items-center gap-1 text-xs font-button-sm uppercase tracking-wider text-primary hover:underline">
-                <span className="material-symbols-outlined text-sm">edit</span> Edit basket
+                <Icon name="edit" className="text-sm" /> Edit basket
               </a>
 
               <div className="space-y-3 bg-surface-container-low p-4 rounded-xl font-body-sm text-body-sm text-ink-secondary">
                 <SumRow label="Provisions Subtotal" value={usd(subtotal)} />
                 {discount > 0 && <SumRow label={`Guild Code ${PROMO.code}`} value={`−${usd(discount)}`} valueClass="text-pistachio-light" />}
-                <SumRow label={<span className="flex items-center gap-1">Thermal Wood-Straw Insulation <span className="material-symbols-outlined text-pistachio-light text-sm">nature</span></span>} value="Complimentary ($0.00)" valueClass="text-pistachio-light" />
+                <SumRow label={<span className="flex items-center gap-1">Thermal Wood-Straw Insulation <Icon name="nature" className="text-pistachio-light text-sm" /></span>} value="Complimentary ($0.00)" valueClass="text-pistachio-light" />
                 <SumRow label="Climate-Controlled Courier" value={freight ? usd(freight) : 'Free'} />
                 <SumRow label={`Estimated Import & State Duty (${Math.round(DUTY_RATE * 100)}%)`} value={usd(duty)} />
                 <div className="flex items-baseline justify-between gap-4 pt-3 text-on-background">
@@ -345,9 +346,9 @@ export default function Checkout() {
                   disabled={!items.length || state !== 'idle'}
                   className={`w-full min-h-14 py-3 px-4 rounded-xl font-button text-button uppercase tracking-widest transition-all duration-200 shadow-md flex items-center justify-center gap-3 group disabled:cursor-default ${state === 'done' ? 'bg-pistachio-light text-white' : 'bg-primary hover:bg-wine-hover text-on-primary disabled:opacity-60'}`}
                 >
-                  {state === 'idle' && (<><span className="material-symbols-outlined text-secondary-container transition-transform group-hover:scale-110">verified</span><span>Seal &amp; Place Order — {usd(total)}</span></>)}
-                  {state === 'sealing' && (<><span className="material-symbols-outlined animate-spin text-secondary-container">progress_activity</span><span>Applying Milan Cellar Wax Seal...</span></>)}
-                  {state === 'done' && (<><span className="material-symbols-outlined">check_circle</span><span>Consignment Sealed &amp; Confirmed!</span></>)}
+                  {state === 'idle' && (<><Icon name="verified" className="text-secondary-container transition-transform group-hover:scale-110" /><span>Seal &amp; Place Order — {usd(total)}</span></>)}
+                  {state === 'sealing' && (<><Icon name="progress_activity" className="animate-spin text-secondary-container" /><span>Applying Milan Cellar Wax Seal...</span></>)}
+                  {state === 'done' && (<><Icon name="check_circle" /><span>Consignment Sealed &amp; Confirmed!</span></>)}
                 </button>
                 <p className="font-caption text-caption text-ink-tertiary text-center leading-normal" aria-live="polite">
                   {failure && <span className="block text-status-red font-semibold mb-1" role="alert">{failure}</span>}
@@ -361,7 +362,7 @@ export default function Checkout() {
             <div className="bg-surface-parchment p-6 rounded-xl shadow-sm space-y-4">
               <div className="flex items-start gap-3">
                 <div className="size-10 rounded-full bg-secondary-container/20 text-secondary flex items-center justify-center flex-shrink-0">
-                  <span className="material-symbols-outlined text-xl">wine_bar</span>
+                  <Icon name="wine_bar" className="text-xl" />
                 </div>
                 <div>
                   <h4 className="font-headline-sm text-base text-secondary font-bold">The La Taglia Provenance Covenant</h4>
@@ -369,13 +370,13 @@ export default function Checkout() {
                 </div>
               </div>
               <div className={`pt-3 flex flex-wrap items-center justify-between gap-2 ${label} text-secondary`}>
-                <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm">phone_in_talk</span> Sommelier Desk: +1 (800) 412-TAGLIA</span>
+                <span className="flex items-center gap-1.5"><Icon name="phone_in_talk" className="text-sm" /> Sommelier Desk: +1 (800) 412-TAGLIA</span>
                 <span className="text-ink-tertiary">Mon-Sun 8am-8pm CET</span>
               </div>
             </div>
 
             <div className="bg-surface-container-high p-4 rounded-xl flex flex-wrap items-center justify-between gap-2 text-xs text-ink-secondary">
-              <span className="flex items-center gap-2"><span className="material-symbols-outlined text-badge-ink text-base">public</span> Batch Dispatch Node: <strong>Aeroporto di Milano-Malpensa (MXP)</strong></span>
+              <span className="flex items-center gap-2"><Icon name="public" className="text-badge-ink text-base" /> Batch Dispatch Node: <strong>Aeroporto di Milano-Malpensa (MXP)</strong></span>
               <span className="font-mono text-[10px] text-badge-ink font-bold">DOC / IGP PROTOCOL</span>
             </div>
           </aside>

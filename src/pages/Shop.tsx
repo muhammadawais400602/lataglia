@@ -4,10 +4,10 @@ import { Toast, useToast } from '../components/Toast';
 import type { Product } from '../shared/types';
 import { useCatalog, useSettings } from '../storeApi';
 import { addProduct, useBasket } from '../cartStore';
+import Icon from '../components/Icon';
 
 const money = (n: number) => (Number.isInteger(n) ? `$${n}` : `$${n.toFixed(2)}`);
 const label = 'font-label-caps text-label-caps uppercase';
-const Icon = ({ name, className = '' }: { name: string; className?: string }) => <span aria-hidden="true" className={`material-symbols-outlined ${className}`}>{name}</span>;
 const PAGE = 16;
 
 const categoryNames: Record<Product['category'], string> = {
@@ -338,7 +338,7 @@ export default function Shop() {
             <p className="text-body-sm text-ink-secondary mt-2">Not sure which oil suits your cooking, or which pasta goes with a sauce? Ask us and we’ll reply by email.</p>
           </div>
           <Help icon="support_agent" title="Ask us anything" sub="We reply by email, usually within a day" href="/about#contact" cta="Send a message →" />
-          <Help icon="redeem" title="Corporate gifting" sub="Gift boxes for clients and teams" href="/gifts#corporate" cta="Plan a gift order →" />
+          <Help icon="gift_send" title="Corporate gifting" sub="Gift boxes for clients and teams" href="/gifts#corporate" cta="Plan a gift order →" />
         </div>
       </section>
     </Layout>
@@ -353,7 +353,7 @@ function Card({ p, fav, onFav, onAdd }: { p: Product; fav: boolean; onFav: () =>
       <div className="relative w-full aspect-square bg-surface-soft rounded overflow-hidden mb-3 sm:mb-4 flex items-center justify-center p-2 sm:p-3">
         {p.badge?.label && <span className={`absolute top-2 left-2 z-10 max-w-[calc(100%-3rem)] truncate px-2 py-0.5 rounded bg-surface-container-lowest text-badge-ink ${label} shadow-sm`}>{p.badge.label}</span>}
         <button aria-label={fav ? 'Remove from favourites' : 'Save to favourites'} aria-pressed={fav} onClick={onFav} className={`absolute top-2 right-2 z-10 size-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center transition-colors ${fav ? 'text-primary' : 'text-ink-secondary hover:text-primary'}`}>
-          <span aria-hidden="true" className="material-symbols-outlined text-lg" style={fav ? { fontVariationSettings: "'FILL' 1" } : undefined}>favorite</span>
+          <Icon name="favorite" className="text-lg" style={fav ? { fontVariationSettings: "'FILL' 1" } : undefined} />
         </button>
         <a href={href} className="size-full"><img className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" src={p.img} alt={p.name} loading="lazy" /></a>
       </div>
