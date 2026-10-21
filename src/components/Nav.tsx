@@ -8,14 +8,7 @@ const links: NavLink[] = [
   { href: '/regions', label: 'Regions' },
   { href: '/gifts', label: 'Gifts' },
   { href: '/blog', label: 'Blog' },
-  {
-    href: '/about',
-    label: 'About Us',
-    children: [
-      { href: '/about#our-story', label: 'Our Story' },
-      { href: '/about#about-us', label: 'About Us' },
-    ],
-  },
+  { href: '/about', label: 'About Us' },
 ];
 
 function RegionCard({ r, compact, onPick }: { r: (typeof allRegions)[number]; compact?: boolean; onPick?: () => void }) {
