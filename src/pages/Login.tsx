@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react';
 import Layout from '../components/Layout';
+import Icon from '../components/Icon';
 
 const bgImg = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCaXPtI8EnVKIdaDdhAiXO0b0h6IqlIWbNsNksJeGGG4tQp-kUiaqrLrhF0Vs1cExWoxu-c6YRmpHbYUn15oAKJFMKz1fIX10MKgmv73BsluzP-nUXmZj5nfKJH7Y8m4cY4vzRLm8Zuz_bC6LjjNKrWI1OrrrZY3nBnJnt_tp4j95wCjCiGl2v0SbHJUgcuUpD6a1G_D56PuPp649gyYUsqd_r85D0pElq5qnCzPgWWwIcTN5aPDgWVYA';
 
@@ -49,7 +50,7 @@ export default function Login() {
         className={`fixed bottom-8 right-4 left-4 sm:left-auto sm:right-8 z-50 transition-all duration-300 pointer-events-none ${toast ? 'translate-y-0 opacity-100' : 'translate-y-24 opacity-0'}`}
       >
         <div className="bg-on-surface text-surface px-5 py-4 rounded-xl shadow-2xl flex items-center gap-3">
-          <span className={`material-symbols-outlined text-secondary-container ${busy ? 'animate-pulse' : ''}`}>key</span>
+          <Icon name="key" className={`text-secondary-container ${busy ? 'animate-pulse' : ''}`} />
           <span className="font-body-sm text-body-sm">{toast}</span>
         </div>
       </aside>
@@ -63,7 +64,7 @@ export default function Login() {
               <div className="flex flex-col gap-8">
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <span className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-secondary-container/50 bg-secondary-container/10 text-secondary-container ${label} tracking-widest`}>
-                    <span className="material-symbols-outlined text-base" style={{ fontVariationSettings: "'FILL' 1" }}>stars</span>
+                    <Icon name="stars" className="text-base" filled />
                     Privileged Allocation
                   </span>
                   <span className="text-[10px] tracking-[0.42em] font-semibold uppercase text-white/50">Fondata 1934</span>
@@ -79,7 +80,7 @@ export default function Login() {
                   {perks.map(([icon, title, body]) => (
                     <div key={title} className="rounded-lg bg-white/5 border border-white/10 p-4 backdrop-blur-sm">
                       <div className="flex items-start gap-2 mb-2">
-                        <span className="material-symbols-outlined text-secondary-container text-lg">{icon}</span>
+                        <Icon name={icon} className="text-secondary-container text-lg" />
                         <span className="font-button-sm text-button-sm text-white leading-tight">{title}</span>
                       </div>
                       <p className="font-body-sm text-body-sm text-white/65 leading-snug">{body}</p>
@@ -88,7 +89,7 @@ export default function Login() {
                 </div>
               </div>
               <div className="border-t border-white/10 pt-8">
-                <span className="material-symbols-outlined text-secondary-container text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>format_quote</span>
+                <Icon name="format_quote" className="text-secondary-container text-3xl" filled />
                 <blockquote className="font-headline-sm text-xl font-normal italic text-white/90 leading-relaxed mt-2 mb-6">
                   “We safeguard the ancient tables of Italy. Every vessel resting in your cellar holds the labor, climate, and soil of families we have known for decades.”
                 </blockquote>
@@ -139,7 +140,7 @@ export default function Login() {
                 <div className="space-y-2">
                   <label htmlFor="cellar-email" className={`block ${label} text-ink-secondary`}>Cellar Inscription Email</label>
                   <div className="relative">
-                    <span className="material-symbols-outlined absolute left-3.5 top-3.5 text-ink-tertiary text-xl pointer-events-none">mail</span>
+                    <Icon name="mail" className="absolute left-3.5 top-3.5 text-ink-tertiary text-xl pointer-events-none" />
                     <input id="cellar-email" name="email" type="email" required autoComplete="email" placeholder="you@example.com" className={input} />
                   </div>
                 </div>
@@ -149,13 +150,13 @@ export default function Login() {
                     <button type="button" onClick={() => notConnected('Password reset')} className="font-button-sm text-button-sm text-wine-dark underline underline-offset-4 hover:text-wine-hover">Forgot your cellar key?</button>
                   </div>
                   <div className="relative">
-                    <span className="material-symbols-outlined absolute left-3.5 top-3.5 text-ink-tertiary text-xl pointer-events-none">lock</span>
+                    <Icon name="lock" className="absolute left-3.5 top-3.5 text-ink-tertiary text-xl pointer-events-none" />
                     <input
                       id="cellar-password" name="password" type={show ? 'text' : 'password'} required autoComplete="current-password" placeholder="••••••••••••"
                       value={pw} onChange={(e) => setPw(e.target.value)} className={`${input} pr-11`}
                     />
                     <button type="button" onClick={() => setShow((s) => !s)} aria-label={show ? 'Hide password' : 'Show password'} className="absolute right-3.5 top-3.5 text-ink-tertiary hover:text-on-surface focus:outline-none">
-                      <span className="material-symbols-outlined text-xl">{show ? 'visibility_off' : 'visibility'}</span>
+                      <Icon name={show ? 'visibility_off' : 'visibility'} className="text-xl" />
                     </button>
                   </div>
                 </div>
@@ -168,14 +169,14 @@ export default function Login() {
                 </div>
                 <button type="submit" disabled={busy} className="w-full py-4 px-8 rounded-md bg-primary hover:bg-wine-hover text-on-primary font-button text-button shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-3 group disabled:opacity-70">
                   <span>{busy ? 'Validating…' : 'Access Cellar & Provisions'}</span>
-                  <span className={`material-symbols-outlined text-xl transition-transform ${busy ? 'animate-spin' : 'group-hover:translate-x-1'}`}>{busy ? 'progress_activity' : 'arrow_forward'}</span>
+                  <Icon name={busy ? 'progress_activity' : 'arrow_forward'} className={`text-xl transition-transform ${busy ? 'animate-spin' : 'group-hover:translate-x-1'}`} />
                 </button>
               </form>
 
               <div className="mt-8 p-5 rounded-lg bg-surface-parchment flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div className="flex items-start gap-4">
                   <div className="size-10 rounded-full bg-secondary-container/30 flex items-center justify-center text-secondary shrink-0">
-                    <span className="material-symbols-outlined">loyalty</span>
+                    <Icon name="loyalty" />
                   </div>
                   <div>
                     <p className="font-button-sm text-button-sm text-on-surface">New to La Taglia?</p>
@@ -187,11 +188,11 @@ export default function Login() {
 
               <div className="mt-8 pt-6 border-t border-surface-container-high">
                 <div className={`flex flex-wrap items-center gap-x-4 gap-y-2 ${label} text-ink-secondary tracking-wider`}>
-                  <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm text-pistachio-light">lock_clock</span>Encrypted Connection</span>
+                  <span className="flex items-center gap-1.5"><Icon name="lock_clock" className="text-sm text-pistachio-light" />Encrypted Connection</span>
                   <span className="text-outline-variant" aria-hidden="true">•</span>
-                  <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm text-badge-ink">verified_user</span>Discretion Assured</span>
+                  <span className="flex items-center gap-1.5"><Icon name="verified_user" className="text-sm text-badge-ink" />Discretion Assured</span>
                   <span className="text-outline-variant" aria-hidden="true">•</span>
-                  <span className="flex items-center gap-1.5"><span className="material-symbols-outlined text-sm text-wine-dark">gavel</span>Direct Consorzio DOP Authentication</span>
+                  <span className="flex items-center gap-1.5"><Icon name="gavel" className="text-sm text-wine-dark" />Direct Consorzio DOP Authentication</span>
                 </div>
               </div>
             </div>

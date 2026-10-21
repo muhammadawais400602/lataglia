@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type FormEvent, type ReactNode } from 'react';
 import Layout from '../components/Layout';
+import Icon from '../components/Icon';
 
 const img = 'https://lh3.googleusercontent.com/aida-public';
 const heroImg = `${img}/AB6AXuCOoG8Tpc32uYMSyV97NPrga5IwkK2BApGhTNVrq6SLFCy0ySh9qrBN_O-CBZKr_vTvNk63h0NLIQ7TEPNxxg2MEMNunOMS3U7KddR_jjh0hFvLK-8IuqlxnexUfYAMjYDhnFsxx6uCgFmne8A2KDPuGr3lxwFxGeypbBRkdYPI9_o__KQxKtVy26V7rFWe7er3dU0oemdFc41KD6lbFapd0EVPRwaxDRvd84tiEI7AWqxnDg7DTvHyFw`;
@@ -68,7 +69,7 @@ export default function Signup() {
       >
         <div className="bg-surface-container-lowest p-5 rounded-xl shadow-xl flex items-center gap-4 bg-gradient-to-r from-pistachio-light/10 to-transparent">
           <div className="w-10 h-10 rounded-full bg-pistachio-light text-on-tertiary flex items-center justify-center flex-shrink-0">
-            <span className="material-symbols-outlined text-xl">check_circle</span>
+            <Icon name="check_circle" className="text-xl" />
           </div>
           <div className="flex-1">
             <h5 className="font-headline-sm text-headline-sm text-on-surface">{notice?.title}</h5>
@@ -90,7 +91,7 @@ export default function Signup() {
             <h1 className="font-headline-lg text-[34px] leading-[40px] sm:text-headline-lg text-on-surface tracking-tight">Guild Inscription &amp; Cellar Membership</h1>
           </div>
           <div className="flex items-center gap-3 text-ink-secondary text-body-sm font-body-sm bg-surface-parchment px-4 py-2.5 rounded-full self-start md:self-auto shadow-sm">
-            <span className="material-symbols-outlined text-secondary text-lg">verified</span>
+            <Icon name="verified" className="text-secondary text-lg" />
             <span>Consorzio Partner Guild · Direct-from-Estate DOP / IGP</span>
           </div>
         </div>
@@ -117,7 +118,7 @@ export default function Signup() {
                 {privileges.map(([icon, title, body]) => (
                   <div key={title} className="flex items-start gap-4 group">
                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
-                      <span className="material-symbols-outlined text-xl">{icon}</span>
+                      <Icon name={icon} className="text-xl" />
                     </div>
                     <div className="space-y-1">
                       <h3 className="font-headline-sm text-headline-sm text-on-surface">{title}</h3>
@@ -132,7 +133,7 @@ export default function Signup() {
                   <p className="font-caption text-caption text-ink-secondary">Cold-Chain Direct Air Dispatch from Malpensa &amp; Catania Hubs</p>
                 </div>
                 <div className="size-10 rounded-full bg-secondary-fixed/50 flex items-center justify-center text-badge-ink shrink-0">
-                  <span className="material-symbols-outlined text-2xl">verified_user</span>
+                  <Icon name="verified_user" className="text-2xl" />
                 </div>
               </div>
             </div>
@@ -182,7 +183,7 @@ export default function Signup() {
                 <Field id="email" text="Primary Email Address">
                   <div className="relative">
                     <input id="email" type="email" required autoComplete="email" placeholder="you@example.com" className={`${input} pr-11`} />
-                    <span className="material-symbols-outlined absolute right-3.5 top-3 text-ink-tertiary text-xl pointer-events-none">mail</span>
+                    <Icon name="mail" className="absolute right-3.5 top-3 text-ink-tertiary text-xl pointer-events-none" />
                   </div>
                   <p className="font-caption text-caption text-ink-tertiary mt-1.5">Used strictly for allocation confirmations and harvest telegrams.</p>
                 </Field>
@@ -198,7 +199,7 @@ export default function Signup() {
                       className={`${input} pr-11`}
                     />
                     <button type="button" onClick={() => setShow((s) => !s)} aria-label={show ? 'Hide password' : 'Show password'} className="absolute right-3.5 top-3 text-ink-tertiary hover:text-on-surface focus:outline-none">
-                      <span className="material-symbols-outlined text-xl">{show ? 'visibility_off' : 'visibility'}</span>
+                      <Icon name={show ? 'visibility_off' : 'visibility'} className="text-xl" />
                     </button>
                   </div>
                   <div className="grid grid-cols-4 gap-1.5 pt-1.5" aria-hidden="true">
@@ -221,7 +222,7 @@ export default function Signup() {
                           key={tag} type="button" onClick={() => toggle(tag)} aria-pressed={on}
                           className={`px-3.5 py-2 rounded-full font-button-sm text-button-sm transition-colors flex items-center gap-1.5 ${on ? 'bg-surface-parchment text-secondary hover:bg-secondary-fixed shadow-sm' : 'bg-surface-soft text-ink-secondary hover:bg-surface-container'}`}
                         >
-                          <span className={`material-symbols-outlined text-base ${on ? '' : 'opacity-0'}`}>check</span>
+                          <Icon name="check" className={`text-base ${on ? '' : 'opacity-0'}`} />
                           <span>{tag}</span>
                         </button>
                       );
@@ -246,14 +247,14 @@ export default function Signup() {
 
                 <button type="submit" className="w-full py-4 px-6 sm:px-8 rounded-full bg-primary hover:bg-wine-hover text-on-primary font-button text-button transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-3 group mt-4">
                   <span>Create Guild Cellar Account — Inscribe Now</span>
-                  <span className="material-symbols-outlined text-xl transition-transform group-hover:translate-x-1">arrow_forward</span>
+                  <Icon name="arrow_forward" className="text-xl transition-transform group-hover:translate-x-1" />
                 </button>
 
                 <div className="text-center pt-2">
                   <span className="font-body-sm text-body-sm text-ink-secondary">Already possess a cellar inscription?</span>
                   <a href="/login" className="font-button-sm text-button-sm text-primary hover:text-wine-hover ml-2 underline font-bold tracking-wider uppercase inline-flex items-center gap-1">
                     <span>Sign In to Your Cellar</span>
-                    <span className="material-symbols-outlined text-sm">arrow_outward</span>
+                    <Icon name="arrow_outward" className="text-sm" />
                   </a>
                 </div>
 
@@ -274,7 +275,7 @@ export default function Signup() {
         <div className="mt-16 bg-surface-parchment rounded-xl p-8 lg:p-10 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-5">
             <div className="size-14 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary flex-shrink-0">
-              <span className="material-symbols-outlined text-3xl">workspace_premium</span>
+              <Icon name="workspace_premium" className="text-3xl" />
             </div>
             <div>
               <h4 className="font-headline-sm text-headline-sm text-primary">Certified Cold-Chain Italian Dispatch</h4>
@@ -307,7 +308,7 @@ function Field({ id, text, children }: { id: string; text: string; children: Rea
 function Seal({ icon, children }: { icon: string; children: ReactNode }) {
   return (
     <span className="flex items-center gap-1.5">
-      <span className="material-symbols-outlined text-sm text-pistachio-light">{icon}</span>
+      <Icon name={icon} className="text-sm text-pistachio-light" />
       <span>{children}</span>
     </span>
   );

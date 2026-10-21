@@ -3,10 +3,10 @@ const img = 'https://lh3.googleusercontent.com/aida-public';
 export const heroImg = `${img}/AB6AXuCpGuKrD4FiJ1eQd4rJjRT5ep0EsKwmkU6eoINBRcM6ba5GWinJPfjoWFkwdcSLxrQfDHXHZfGaWG3e7QXI5FBq8FrxtpKBqQk9rQM6p3Q2SSsXZa2cCJT_5zIyAdlaooSiW75mG1SwZ_VVxL-W7ibGyarwdCJoVp7jSoiKFep67jnOcgbFfwpbQVGMKgRyovxM3F7Q4U_7qxKFIz7H_ISW1wZ_q7s2CfZX3U1Cc4SROELw9LLHxCQp`;
 
 export const promoCards = [
-  { href: '#pistachio', icon: 'arrow_back_ios_new', title: 'The World’s Greatest Pistachio', body: 'Everything we love from the slopes of Etna, from pure paste to cannoli.', cta: 'Shop now' },
-  { href: '/gifts', icon: 'featured_seasonal_and_gifts', title: 'Gifts from Italy', body: 'Regional gift boxes from $59, sent with the stories behind the food.', cta: 'Shop gifts' },
-  { href: '#shop', icon: 'hourglass_empty', title: 'Twelve years in wood', body: 'Traditional Balsamic of Reggio Emilia DOP, judged by master tasters.', cta: 'Discover it' },
-  { href: '/gifts#corporate', icon: 'domain', title: 'Corporate gifting', body: 'Custom cards, volume pricing and delivery to many addresses on your date.', cta: 'Plan an order' },
+  { href: '#pistachio', icon: 'pistachio', title: 'The World’s Greatest Pistachio', body: 'Everything we love from the slopes of Etna, from pure paste to cannoli.', cta: 'Shop now' },
+  { href: '/gifts', icon: 'gift', title: 'Gifts from Italy', body: 'Regional gift boxes from $59, sent with the stories behind the food.', cta: 'Shop gifts' },
+  { href: '#shop', icon: 'barrel', title: 'Twelve years in wood', body: 'Traditional Balsamic of Reggio Emilia DOP, judged by master tasters.', cta: 'Discover it' },
+  { href: '/gifts#corporate', icon: 'gift_send', title: 'Corporate gifting', body: 'Custom cards, volume pricing and delivery to many addresses on your date.', cta: 'Plan an order' },
 ];
 
 export const categories = [

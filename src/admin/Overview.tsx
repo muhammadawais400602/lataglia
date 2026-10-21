@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import { ORDER_STATUSES, type Order, type Product } from '../shared/types';
 import { BarList, ColumnChart, type Point } from './charts';
 import { Card, customerName, Empty, StatusChip, label, shortDate, statusStyle, usd, usd0 } from './ui';
+import Icon from '../components/Icon';
 
 const RANGES = [
   { days: 7, label: '7 days' },
@@ -29,7 +30,7 @@ function Delta({ now, prev }: { now: number; prev: number }) {
   const up = pct >= 0;
   return (
     <span className={`inline-flex items-center gap-0.5 text-xs font-semibold ${up ? 'text-tertiary-container' : 'text-on-error-container'}`}>
-      <span aria-hidden="true" className="material-symbols-outlined text-sm">{up ? 'trending_up' : 'trending_down'}</span>
+      <Icon name={up ? 'trending_up' : 'trending_down'} className="text-sm" />
       {up ? '+' : ''}{pct.toFixed(0)}% vs previous
     </span>
   );
@@ -115,7 +116,7 @@ export default function Overview({ orders, products, onOpenOrder, onGo }: {
           <div key={k.label} className="bg-surface-container-lowest rounded-xl shadow-sm p-5 min-w-0">
             <div className="flex items-center justify-between gap-2 text-ink-secondary">
               <span className={label}>{k.label}</span>
-              <span aria-hidden="true" className="material-symbols-outlined text-xl text-secondary">{k.icon}</span>
+              <Icon name={k.icon} className="text-xl text-secondary" />
             </div>
             <div className="font-headline-md text-2xl sm:text-[32px] sm:leading-10 text-on-surface mt-2 truncate">{k.value}</div>
             <Delta now={k.now} prev={k.prev} />
@@ -158,7 +159,7 @@ export default function Overview({ orders, products, onOpenOrder, onGo }: {
                 <li key={p.id} className="flex items-center justify-between gap-3 text-sm">
                   <span className="truncate text-on-surface">{p.name}</span>
                   <span className={`shrink-0 inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-bold ${p.stock === 0 ? 'bg-error-container text-on-error-container' : 'bg-secondary-fixed text-on-secondary-fixed-variant'}`}>
-                    <span aria-hidden="true" className="material-symbols-outlined text-sm">{p.stock === 0 ? 'block' : 'warning'}</span>
+                    <Icon name={p.stock === 0 ? 'block' : 'warning'} className="text-sm" />
                     {p.stock === 0 ? 'Sold out' : `${p.stock} left`}
                   </span>
                 </li>

@@ -13,6 +13,7 @@ import { allRegions, regionHref } from './regions';
 import { useRegionImage } from './regions/regionPhotos';
 import { posts } from './blog/posts';
 import { PostCard } from './pages/Blog';
+import Icon from './components/Icon';
 
 export default function App() {
   return (
@@ -69,14 +70,14 @@ function PromoCards() {
         {promoCards.map((c) => (
           <a key={c.title} href={c.href} className="group flex flex-col justify-between p-6 bg-surface-container-lowest border border-border-line rounded shadow-sm hover:shadow-md transition-shadow">
             <div>
-              <div className="w-10 h-10 rounded-full bg-surface-parchment flex items-center justify-center text-primary mb-4">
-                <span className="material-symbols-outlined text-xl">{c.icon}</span>
+              <div className="w-11 h-11 rounded-full bg-surface-parchment ring-1 ring-secondary-container/30 flex items-center justify-center text-primary mb-4 transition-colors duration-300 group-hover:bg-primary group-hover:text-on-primary group-hover:ring-primary">
+                <Icon name={c.icon} className="text-xl" />
               </div>
               <h3 className="font-headline-sm text-lg text-on-surface mb-2 group-hover:text-primary transition-colors">{c.title}</h3>
               <p className="text-ink-secondary text-sm leading-relaxed mb-4">{c.body}</p>
             </div>
             <span className="text-primary font-bold text-sm flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-              {c.cta} <span className="material-symbols-outlined text-sm">arrow_forward</span>
+              {c.cta} <Icon name="arrow_forward" className="text-sm" />
             </span>
           </a>
         ))}
@@ -281,7 +282,7 @@ function RegionsGrid() {
       </div>
       <div className="text-center mt-10">
         <a href="/regions" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary hover:bg-wine-hover text-on-primary text-sm font-bold transition-colors">
-          See all {allRegions.length} regions <span aria-hidden="true" className="material-symbols-outlined text-base">arrow_forward</span>
+          See all {allRegions.length} regions <Icon name="arrow_forward" className="text-base" />
         </a>
       </div>
     </section>
@@ -312,7 +313,7 @@ function GiftBoxes() {
                 <ul className="text-xs text-ink-secondary space-y-1.5 border-t border-border-line pt-3 mb-6">
                   {g.items.map((it) => (
                     <li key={it} className="flex items-center gap-2">
-                      <span className="material-symbols-outlined text-sm text-pistachio-light">check_circle</span> {it}
+                      <Icon name="check_circle" className="text-sm text-pistachio-light" /> {it}
                     </li>
                   ))}
                 </ul>
@@ -340,7 +341,7 @@ function FromTheBlog() {
       </div>
       <div className="text-center mt-10">
         <a href="/blog" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary hover:bg-wine-hover text-on-primary text-sm font-bold transition-colors">
-          Read the blog <span aria-hidden="true" className="material-symbols-outlined text-base">arrow_forward</span>
+          Read the blog <Icon name="arrow_forward" className="text-base" />
         </a>
       </div>
     </section>

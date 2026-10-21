@@ -4,9 +4,9 @@ import { posts, type Post } from '../blog/posts';
 import { addProduct, useBasket } from '../cartStore';
 import { Toast, useToast } from '../components/Toast';
 import { useCatalog } from '../storeApi';
+import Icon from '../components/Icon';
 
 const label = 'font-label-caps text-label-caps uppercase tracking-widest';
-const Icon = ({ name, className = '' }: { name: string; className?: string }) => <span aria-hidden="true" className={`material-symbols-outlined ${className}`}>{name}</span>;
 const money = (n: number) => (Number.isInteger(n) ? `$${n}` : `$${n.toFixed(2)}`);
 
 function useTitle(title: string) {

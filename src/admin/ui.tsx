@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import type { Order } from '../shared/types';
+import Icon from '../components/Icon';
 
 export const usd = (n: number) => `$${n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 export const usd0 = (n: number) => `$${Math.round(n).toLocaleString('en-US')}`;
@@ -40,7 +41,7 @@ export function StatusChip({ status }: { status: Order['status'] }) {
   const s = statusStyle[status];
   return (
     <span className={`inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-bold whitespace-nowrap ${s.cls}`}>
-      <span aria-hidden="true" className="material-symbols-outlined text-sm">{s.icon}</span>
+      <Icon name={s.icon} className="text-sm" />
       {s.label}
     </span>
   );
@@ -52,7 +53,7 @@ export function TagChip({ tag, onRemove }: { tag: string; onRemove?: () => void 
       {tag}
       {onRemove && (
         <button type="button" onClick={onRemove} aria-label={`Remove tag ${tag}`} className="hover:text-status-red">
-          <span aria-hidden="true" className="material-symbols-outlined text-xs">close</span>
+          <Icon name="close" className="text-xs" />
         </button>
       )}
     </span>
@@ -62,7 +63,7 @@ export function TagChip({ tag, onRemove }: { tag: string; onRemove?: () => void 
 export function Empty({ icon, title, children }: { icon: string; title: string; children?: ReactNode }) {
   return (
     <div className="flex flex-col items-center text-center py-12 px-4 gap-3">
-      <span aria-hidden="true" className="material-symbols-outlined text-4xl text-ink-tertiary">{icon}</span>
+      <Icon name={icon} className="text-4xl text-ink-tertiary" />
       <p className="font-headline-sm text-lg text-on-surface">{title}</p>
       {children && <div className="text-sm text-ink-secondary max-w-md">{children}</div>}
     </div>
@@ -77,7 +78,7 @@ export function Drawer({ open, onClose, title, children }: { open: boolean; onCl
         <div className="sticky top-0 z-10 flex items-center justify-between gap-4 border-b border-surface-container-high bg-background/95 backdrop-blur px-6 py-4">
           <div className="min-w-0">{title}</div>
           <button type="button" onClick={onClose} aria-label="Close" className="rounded-full p-2 hover:bg-surface-container">
-            <span aria-hidden="true" className="material-symbols-outlined">close</span>
+            <Icon name="close" />
           </button>
         </div>
         <div className="p-6 space-y-6">{children}</div>

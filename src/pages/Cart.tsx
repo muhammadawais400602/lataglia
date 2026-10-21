@@ -4,6 +4,7 @@ import { Toast, useToast } from '../components/Toast';
 import { addOns, type CartItem } from '../cartData';
 import { useSettings } from '../storeApi';
 import { useBasket } from '../cartStore';
+import Icon from '../components/Icon';
 
 const label = 'font-label-caps text-label-caps uppercase';
 const usd = (n: number) => `$${n.toFixed(2)}`;
@@ -78,7 +79,7 @@ export default function Cart() {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-3">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary shrink-0">
-                <span className="material-symbols-outlined text-xl">ac_unit</span>
+                <Icon name="ac_unit" className="text-xl" />
               </div>
               <div>
                 <h2 id="shipping-meter-heading" className="font-subheading text-subheading text-on-surface">Complimentary Cold-Chain Freight &amp; Thermal Straw Packaging</h2>
@@ -99,7 +100,7 @@ export default function Cart() {
           </div>
           <div className="flex justify-between items-center mt-2.5 text-xs font-body-sm">
             <span className="flex items-center gap-1.5 text-tertiary-container font-semibold">
-              <span className="material-symbols-outlined text-sm">nest_eco_leaf</span> Zero-footprint hemp lining active
+              <Icon name="nest_eco_leaf" className="text-sm" /> Zero-footprint hemp lining active
             </span>
             <span className="text-ink-tertiary">{Math.floor(pct)}% Achieved</span>
           </div>
@@ -146,7 +147,7 @@ export default function Cart() {
                         </div>
                         {item.note === 'provenance' && (
                           <div className="mt-3 py-1.5 px-3 bg-surface-parchment rounded-lg inline-flex items-center gap-2 text-xs text-on-surface-variant font-body-sm">
-                            <span className="material-symbols-outlined text-sm text-secondary">verified</span>
+                            <Icon name="verified" className="text-sm text-secondary" />
                             <span>Stone-milled on Mount Etna volcanic slopes using certified slow-roast kernels.</span>
                           </div>
                         )}
@@ -160,7 +161,7 @@ export default function Cart() {
                         {item.note === 'stamp' && (
                           <div className="mt-3 flex flex-wrap items-center gap-2">
                             <span className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-container-high rounded text-xs text-on-surface font-button-sm">
-                              <span className="material-symbols-outlined text-sm text-secondary">verified_user</span>
+                              <Icon name="verified_user" className="text-sm text-secondary" />
                               Numbered Consorzio Stamp #8412
                             </span>
                             <span className="text-xs text-badge-ink font-semibold">Includes Velvet Collector Sleeve</span>
@@ -175,15 +176,15 @@ export default function Cart() {
                         <div className="flex items-center gap-4">
                           <div className="flex items-center bg-surface-container-low rounded-full px-2 py-1">
                             <button aria-label={`Decrease ${item.name}`} disabled={item.qty <= 1} onClick={() => update(item.id, { qty: item.qty - 1 })} className="w-7 h-7 flex items-center justify-center rounded-full hover:bg-surface-container-lowest text-on-surface transition-colors disabled:opacity-40">
-                              <span className="material-symbols-outlined text-sm">remove</span>
+                              <Icon name="remove" className="text-sm" />
                             </button>
                             <span className="w-8 text-center font-button-sm text-button-sm text-on-surface" aria-live="polite">{item.qty}</span>
                             <button aria-label={`Increase ${item.name}`} onClick={() => update(item.id, { qty: item.qty + 1 })} className="w-7 h-7 flex items-center justify-center rounded-full hover:bg-surface-container-lowest text-on-surface transition-colors">
-                              <span className="material-symbols-outlined text-sm">add</span>
+                              <Icon name="add" className="text-sm" />
                             </button>
                           </div>
                           <button aria-label={`Remove ${item.name}`} onClick={() => remove(item.id)} className="text-ink-tertiary hover:text-status-red transition-colors p-1.5">
-                            <span className="material-symbols-outlined text-lg">delete</span>
+                            <Icon name="delete" className="text-lg" />
                           </button>
                         </div>
                       </div>
@@ -216,7 +217,7 @@ export default function Cart() {
                     <div className="mt-4 pt-3 border-t border-surface-container-low flex items-center justify-between">
                       <span className="font-bold text-primary text-sm">+{usd(a.unit)}</span>
                       <button onClick={() => addOn(a)} className="px-3 py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-primary hover:text-on-primary font-button-sm text-xs transition-colors flex items-center gap-1">
-                        <span className="material-symbols-outlined text-sm">add</span> Add
+                        <Icon name="add" className="text-sm" /> Add
                       </button>
                     </div>
                   </div>
@@ -235,7 +236,7 @@ export default function Cart() {
                 <Row label={`Provisions Subtotal (${count} ${count === 1 ? 'item' : 'items'})`} value={usd(subtotal)} />
                 {discount > 0 && <Row label={`Guild Code ${PROMO.code} (−${PROMO.rate * 100}%)`} value={`−${usd(discount)}`} valueClass="text-pistachio-light" />}
                 <Row
-                  label={<span className="flex items-center gap-1.5">Estimated Climate Freight <span className="material-symbols-outlined text-sm text-ink-tertiary cursor-help" title="Direct refrigerated air express ensures organoleptic profile preservation">info</span></span>}
+                  label={<span className="flex items-center gap-1.5">Estimated Climate Freight <Icon name="info" className="text-sm text-ink-tertiary cursor-help" title="Direct refrigerated air express ensures organoleptic profile preservation" /></span>}
                   value={freight ? usd(freight) : 'Complimentary'}
                   valueClass={freight ? '' : 'text-pistachio-light'}
                 />
@@ -246,7 +247,7 @@ export default function Cart() {
                 <Row label="Direct Import Customs & Excise" value="Included" valueClass="text-ink-secondary font-medium" />
                 {remaining > 0 && items.length > 0 && (
                   <div className="p-3 bg-surface-parchment rounded-lg text-xs text-ink-secondary flex items-start gap-2">
-                    <span className="material-symbols-outlined text-sm text-secondary shrink-0 mt-0.5">local_shipping</span>
+                    <Icon name="local_shipping" className="text-sm text-secondary shrink-0 mt-0.5" />
                     <span>Enjoy <strong>Complimentary Climate Freight</strong> by adding {usd(remaining)} more of estate harvest goods.</span>
                   </div>
                 )}
@@ -263,10 +264,10 @@ export default function Cart() {
                 <details className="group" open={promo !== 'none'}>
                   <summary className="flex items-center justify-between text-xs font-button-sm uppercase tracking-wider text-ink-secondary cursor-pointer hover:text-primary list-none">
                     <span className="flex items-center gap-1.5">
-                      <span className="material-symbols-outlined text-base">sell</span>
+                      <Icon name="sell" className="text-base" />
                       Apply Cellar Inscription or Guild Code
                     </span>
-                    <span className="material-symbols-outlined text-sm transition-transform group-open:rotate-180">expand_more</span>
+                    <Icon name="expand_more" className="text-sm transition-transform group-open:rotate-180" />
                   </summary>
                   <form className="mt-3 flex gap-2" onSubmit={(e) => { e.preventDefault(); applyCode(); }}>
                     <input value={code} onChange={(e) => setCode(e.target.value)} aria-label="Guild code" placeholder="e.g. BRONTE15" type="text" className="w-full text-xs font-body-sm px-3 py-2 bg-surface-container-low rounded border border-transparent focus:border-secondary focus:bg-surface-container-lowest focus:outline-none focus:ring-0 uppercase" />
@@ -286,14 +287,14 @@ export default function Cart() {
                   <span>Proceed to Cold-Chain Checkout</span>
                   <span className="font-normal opacity-80">·</span>
                   <span>{usd(total)}</span>
-                  <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                  <Icon name="arrow_forward" className="text-lg group-hover:translate-x-1 transition-transform" />
                 </a>
                 <a href="/shop" className="w-full py-3 px-6 rounded-full hover:bg-surface-container text-on-surface font-button-sm text-button-sm transition-colors text-center block tracking-wider uppercase">
                   Continue Exploring the Pantry
                 </a>
               </div>
               <p className="mt-6 font-caption text-caption text-ink-tertiary flex flex-wrap items-center justify-center gap-1.5 text-center">
-                <span className="material-symbols-outlined text-sm text-secondary">schedule</span>
+                <Icon name="schedule" className="text-sm text-secondary" />
                 Next chilled dispatch leaves Bologna hub: <strong className="text-on-surface">Tomorrow, 14:00 CET</strong>
               </p>
             </div>
@@ -306,7 +307,7 @@ export default function Cart() {
 
             <div className="px-4 py-3 rounded-lg bg-surface-container-high/60 flex items-center justify-between gap-3 text-xs text-ink-secondary">
               <span className="flex items-center gap-1.5">
-                <span className="material-symbols-outlined text-sm">support_agent</span>
+                <Icon name="support_agent" className="text-sm" />
                 Need wine pairings or estate provenance papers?
               </span>
               <a className="font-bold text-primary hover:underline shrink-0" href="mailto:concierge@lataglia.example">Speak with Sommelier</a>
@@ -331,7 +332,7 @@ function Seal({ icon, iconClass, title, body }: { icon: string; iconClass: strin
   return (
     <div className="flex items-start gap-3.5">
       <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 mt-0.5 ${iconClass}`}>
-        <span className="material-symbols-outlined text-lg">{icon}</span>
+        <Icon name={icon} className="text-lg" />
       </div>
       <div>
         <h3 className="font-button-sm text-button-sm text-on-surface uppercase tracking-wide">{title}</h3>

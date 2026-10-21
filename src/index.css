@@ -12,12 +12,16 @@
 }
 
 @layer components {
-  .material-symbols-outlined {
-    /* Fine-line icons to sit with the serif headings. Needs the opsz and GRAD axes in the font link (index.html). */
-    font-variation-settings: 'FILL' 0, 'wght' 250, 'GRAD' -25, 'opsz' 40;
+  /* Icon base size; text-* utilities override it. */
+  .ic {
+    width: 1em;
+    height: 1em;
+    font-size: 24px;
     display: inline-block;
     vertical-align: middle;
-    line-height: 1;
+    flex-shrink: 0;
+    overflow: visible;
+    transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
   .b-pist {
     background: linear-gradient(115deg, #4E6A22 0%, #7F9C38 70%, #93B048 100%);
@@ -55,4 +59,61 @@
   .marquee { overflow-x: auto; }
   .marquee-track { animation: none; }
   .marquee-track > [aria-hidden='true'] { display: none; }
+}
+
+/* ── Icons (src/components/Icon.tsx) ───────────────────────────────────── */
+.ic .ic-tint { opacity: 0.16; transition: opacity 0.3s; }
+.ic .ic-tint-stroke { opacity: 0.2; }
+.ic-filled .ic-body { fill: currentColor; }
+.ic-filled .ic-tint { opacity: 0; }
+.ic-filled .ic-on { stroke: #fff; }
+.ic :is(.ic-lid, .ic-shackle, .ic-flap, .ic-steam, .ic-sun, .ic-sprout, .ic-mercury, .ic-arrow) {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s;
+}
+
+/* Hover motions: play when the icon, or the link / button / .group around it, is hovered. */
+:is(a, button, summary, .group):hover .ic[data-a='right'], .ic[data-a='right']:hover { transform: translateX(3px); }
+:is(a, button, summary, .group):hover .ic[data-a='left'], .ic[data-a='left']:hover { transform: translateX(-3px); }
+:is(a, button, summary, .group):hover .ic[data-a='down'], .ic[data-a='down']:hover { transform: translateY(2px); }
+:is(a, button, summary, .group):hover .ic[data-a='up'] .ic-arrow { transform: translateY(-2px); }
+:is(a, button, summary, .group):hover .ic[data-a='diag'], .ic[data-a='diag']:hover { transform: translate(2px, -2px); }
+:is(a, button, summary, .group):hover .ic[data-a='pop'], .ic[data-a='pop']:hover { transform: scale(1.14); }
+:is(a, button, summary, .group):hover .ic[data-a='tilt'], .ic[data-a='tilt']:hover { transform: rotate(-12deg); }
+:is(a, button, summary, .group):hover .ic[data-a='spin'], .ic[data-a='spin']:hover { transform: rotate(90deg); }
+:is(a, button, summary, .group):hover .ic[data-a='lid'] .ic-lid,
+.ic[data-a='lid']:hover .ic-lid { transform: translateY(-2.5px) rotate(-8deg); }
+:is(a, button, summary, .group):hover .ic[data-a='lid'] .ic-shackle { transform: translateY(-1.5px); }
+:is(a, button, summary, .group):hover .ic[data-a='flap'] .ic-flap { transform: translateY(-1.5px); }
+:is(a, button, summary, .group):hover .ic[data-a='rise'] .ic-steam,
+:is(a, button, summary, .group):hover .ic[data-a='rise'] .ic-sun,
+:is(a, button, summary, .group):hover .ic[data-a='rise'] .ic-sprout { transform: translateY(-1.5px); }
+:is(a, button, summary, .group):hover .ic[data-a='rise'] .ic-mercury { transform: translateY(-2px) scaleY(1.2); }
+:is(a, button, summary, .group):hover .ic[data-a='rise'],
+.ic[data-a='rise']:hover { transform: translateY(-1px); }
+:is(a, button, summary, .group):hover .ic[data-a='drive'], .ic[data-a='drive']:hover { animation: ic-drive 0.6s ease-in-out; }
+:is(a, button, summary, .group):hover .ic[data-a='swing'], .ic[data-a='swing']:hover { animation: ic-swing 0.7s ease-in-out; }
+:is(a, button, summary, .group):hover .ic[data-a='twinkle'], .ic[data-a='twinkle']:hover { animation: ic-twinkle 0.8s ease-in-out; }
+:is(a, button, summary, .group):hover .ic .ic-tint { opacity: 0.28; }
+.animate-spin.ic { transition: none; }
+
+@keyframes ic-swing {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(-10deg); }
+  60% { transform: rotate(7deg); }
+  85% { transform: rotate(-3deg); }
+}
+@keyframes ic-drive {
+  0%, 100% { transform: translateX(0); }
+  40% { transform: translateX(3px) rotate(-2deg); }
+  70% { transform: translateX(1px); }
+}
+@keyframes ic-twinkle {
+  0%, 100% { transform: scale(1) rotate(0); }
+  40% { transform: scale(1.2) rotate(15deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ic, .ic * { transition: none !important; animation: none !important; }
+  :is(a, button, summary, .group):hover .ic, .ic:hover { transform: none !important; }
 }
