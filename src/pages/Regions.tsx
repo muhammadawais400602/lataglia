@@ -16,19 +16,19 @@ export default function Regions() {
         </div>
       </section>
       <section className="max-w-[1320px] mx-auto px-6 lg:px-12 py-14 lg:py-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
           {regionCards.map((r) => {
             const href = regionHref(r.name);
             const Tag = href ? 'a' : 'div';
             return (
               <Tag key={r.name} href={href ?? undefined} className={`group relative rounded-xl overflow-hidden aspect-[4/5] bg-surface-container shadow block ${href ? 'hover:shadow-xl transition-all' : ''}`}>
                 <div className={`size-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105`} style={{ backgroundImage: `url('${imgOf(r)}')` }} />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-6 text-white">
-                  <span className={`inline-block w-max mb-2 rounded px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest ${href ? 'bg-secondary-container text-button-ink' : 'bg-white/20 backdrop-blur'}`}>
-                    {href ? 'Read the story' : 'Story coming soon'}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-3 sm:p-6 text-white">
+                  <span className={`inline-block w-max max-w-full truncate mb-1.5 sm:mb-2 rounded px-1.5 sm:px-2 py-0.5 text-[9px] sm:text-[10px] font-bold uppercase tracking-widest ${href ? 'bg-secondary-container text-button-ink' : 'bg-white/20 backdrop-blur'}`}>
+                    {href ? 'Read the story' : 'Coming soon'}
                   </span>
-                  <h2 className="font-headline-sm text-2xl text-white mb-1">{r.name}</h2>
-                  <p className="text-xs text-white/80 line-clamp-2">{r.blurb}</p>
+                  <h2 className="font-headline-sm text-lg leading-tight sm:text-2xl text-white mb-1">{r.name}</h2>
+                  <p className="text-[11px] sm:text-xs text-white/80 line-clamp-2">{r.blurb}</p>
                 </div>
               </Tag>
             );

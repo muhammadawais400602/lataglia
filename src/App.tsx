@@ -41,18 +41,18 @@ function Hero() {
     >
       <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/20 pointer-events-none" />
       <div className="max-w-[1280px] w-full mx-auto px-6 lg:px-12 relative z-10">
-        <div className="hero-translucent-card rounded p-8 sm:p-12 max-w-[620px] shadow-2xl border border-white/10 text-surface-parchment">
-          <span className="font-label-caps text-xs tracking-[0.2em] text-secondary-container block mb-3 uppercase">
+        <div className="hero-translucent-card rounded p-5 sm:p-12 max-w-[88%] sm:max-w-[620px] shadow-2xl border border-white/10 text-surface-parchment">
+          <span className="font-label-caps text-xs tracking-[0.2em] text-secondary-container block mb-2 sm:mb-3 uppercase">
             Authentic Italian Providore
           </span>
-          <h1 className="font-headline-lg text-4xl sm:text-[52px] sm:leading-[1.12] text-white font-normal mb-5 tracking-tight">
+          <h1 className="font-headline-lg text-[28px] leading-[1.15] sm:text-[52px] sm:leading-[1.12] text-white font-normal mb-3 sm:mb-5 tracking-tight">
             Exceptional foods, discovered in Italy
           </h1>
-          <p className="font-subheading text-surface-parchment text-base sm:text-[17px] leading-relaxed mb-8 opacity-95">
+          <p className="font-subheading text-surface-parchment text-[14px] leading-relaxed sm:text-[17px] mb-4 sm:mb-8 opacity-95">
             From Bronte pistachios to twelve-year traditional balsamic, we find remarkable foods made by Italy's finest producers, so you never have to sort through hundreds of ordinary ones.
           </p>
           <a
-            className="inline-block bg-[#EFA91C] hover:bg-gold-hover text-button-ink font-button text-[14px] sm:text-[15px] font-bold tracking-[0.06em] py-3.5 px-8 rounded-full shadow-lg transition-transform hover:-translate-y-0.5 uppercase"
+            className="inline-block bg-[#EFA91C] hover:bg-gold-hover text-button-ink font-button text-[12px] sm:text-[15px] font-bold tracking-[0.06em] py-2.5 px-6 sm:py-3.5 sm:px-8 rounded-full shadow-lg transition-transform hover:-translate-y-0.5 uppercase"
             href="#shop"
           >
             SHOP THE COLLECTION

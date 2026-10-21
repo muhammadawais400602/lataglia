@@ -115,12 +115,6 @@ export default function About() {
     }
   }
 
-  const producers = new Set(products.map((p) => p.producer).filter(Boolean)).size;
-  const metrics = [
-    { icon: 'diversity_3', tag: 'Makers', tone: 'text-primary', value: String(producers), title: 'Family producers', note: 'Each one found and visited by Jennifer.' },
-    { icon: 'map', tag: 'Geography', tone: 'text-secondary', value: String(regionMeta.length), title: 'Regions explored', note: 'From the Alpine pastures of Alto Adige to the volcanic slopes of Sicily.' },
-    { icon: 'verified_user', tag: 'Honesty', tone: 'text-primary-container', value: '0', title: 'Relabelled products', note: 'Every product keeps its maker’s own label, name and seal.' },
-  ];
 
   return (
     <Layout>
@@ -146,16 +140,18 @@ export default function About() {
             <div className="lg:col-span-7">
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-lowest rounded-sm mb-4">
                 <span className="size-2 rounded-full bg-secondary-container" />
-                <span className={`${label} text-secondary tracking-[0.18em]`}>Our Story</span>
+                <span className={`${label} text-secondary tracking-[0.18em]`}>How La Taglia began</span>
               </div>
               <h1 className="font-display-hero text-[36px] leading-[42px] lg:text-[52px] lg:leading-[60px] text-primary tracking-tight mb-6 [text-wrap:balance]">
-                La Taglia began as a love letter to my wife.
+                Our Story
               </h1>
               <div className="space-y-4 text-body-lg text-ink-secondary leading-relaxed max-w-2xl">
-                <p>For our 25th anniversary, Jennifer and I found ourselves talking about what we wanted the next chapter of our lives to look like. We knew we wanted to build something together, and we wanted it to be inspired by two things we have always loved sharing: beautiful food and our travels through Italy.</p>
-                <p>So, for our anniversary, I gave Jennifer La Taglia.</p>
-                <p>What began as a gift became her passion. With her remarkable taste, curiosity and instinct for finding something special, Jennifer began discovering extraordinary foods and the people throughout Italy who make them.</p>
-                <p className="text-on-surface font-semibold">Today, we get to share those discoveries with you.</p>
+                <p>As our 25th wedding anniversary approached, my wife and I began imagining the next chapter of our lives. We wanted to create something together, something meaningful that celebrated two of our greatest shared passions: exceptional food and the beauty, culture, and traditions of Italy.</p>
+                <p>For our anniversary, I gave my wife La Taglia.</p>
+                <p>What began as a gift soon became her passion. With her extraordinary taste, natural curiosity, and appreciation for life’s finer pleasures, she set out to discover the remarkable foods, artisan producers, and culinary traditions that make Italy so special.</p>
+                <p>From family-run farms and generations-old kitchens to small producers dedicated to their craft, each discovery tells a story of heritage, authenticity, and a love of good food.</p>
+                <p>Today, La Taglia is our way of bringing a little of Italy into your home. Every product is thoughtfully selected, every producer has a story worth telling, and every discovery is something we are genuinely excited to share.</p>
+                <p className="text-on-surface font-semibold">What began as a love letter to my wife has become an invitation to experience the Italy we love.</p>
               </div>
               <p className="mt-8 font-headline-sm text-xl italic text-primary">— MJ Taglia</p>
             </div>
@@ -181,24 +177,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Metrics */}
-      <section className="w-full bg-surface-parchment py-10 lg:py-14">
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-12 grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8">
-          {metrics.map((m) => (
-            <div key={m.title} className="bg-surface-container-lowest p-6 rounded-lg shadow-sm flex flex-col justify-between">
-              <div className="flex items-center justify-between mb-4">
-                <Icon name={m.icon} className={`${m.tone} text-3xl`} />
-                <span className={`${label} text-ink-tertiary tracking-widest`}>{m.tag}</span>
-              </div>
-              <div>
-                <div className={`font-display-hero text-headline-lg ${m.tone} mb-1`}>{m.value}</div>
-                <div className="font-headline-sm text-headline-sm text-on-surface mb-1">{m.title}</div>
-                <p className="text-body-sm text-ink-secondary">{m.note}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
 
       {/* Why we exist */}
       <section className="w-full bg-surface-bright py-16 lg:py-24">
