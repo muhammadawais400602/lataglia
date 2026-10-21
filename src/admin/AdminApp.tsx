@@ -7,6 +7,7 @@ import Overview from './Overview';
 import Products from './Products';
 import SettingsPanel from './SettingsPanel';
 import { label } from './ui';
+import Icon from '../components/Icon';
 
 const TABS = [
   { id: 'overview', label: 'Overview', icon: 'monitoring' },
@@ -41,7 +42,7 @@ export default function AdminApp() {
   }, [refresh]);
 
   if (failed) return <Centered><p className="text-ink-secondary">The admin service isn't reachable. Check that the site deployed with its /api functions.</p></Centered>;
-  if (!session) return <Centered><span aria-hidden="true" className="material-symbols-outlined animate-spin text-primary text-3xl">progress_activity</span></Centered>;
+  if (!session) return <Centered><Icon name="progress_activity" className="animate-spin text-primary text-3xl" /></Centered>;
   if (!session.signedIn) return <AdminLogin session={session} onSignedIn={refresh} />;
   return <Dashboard session={session} onSignedOut={() => setSession({ ...session, signedIn: false })} />;
 }
@@ -103,7 +104,7 @@ function AdminLogin({ session, onSignedIn }: { session: Session; onSignedIn: () 
               <>
                 <label htmlFor="admin-password" className={`block ${label} text-ink-secondary mb-2`}>Password</label>
                 <div className="relative">
-                  <span aria-hidden="true" className="material-symbols-outlined absolute left-3.5 top-3.5 text-ink-tertiary text-xl pointer-events-none">lock</span>
+                  <Icon name="lock" className="absolute left-3.5 top-3.5 text-ink-tertiary text-xl pointer-events-none" />
                   <input
                     id="admin-password" type={show ? 'text' : 'password'} autoComplete="current-password" required autoFocus
                     value={pw} onChange={(e) => setPw(e.target.value)} aria-invalid={Boolean(err)} aria-describedby={err ? 'admin-err' : undefined}
@@ -111,13 +112,13 @@ function AdminLogin({ session, onSignedIn }: { session: Session; onSignedIn: () 
                     placeholder="••••••••••••"
                   />
                   <button type="button" onClick={() => setShow((s) => !s)} aria-label={show ? 'Hide password' : 'Show password'} className="absolute right-3.5 top-3.5 text-ink-tertiary hover:text-on-surface">
-                    <span aria-hidden="true" className="material-symbols-outlined text-xl">{show ? 'visibility_off' : 'visibility'}</span>
+                    <Icon name={show ? 'visibility_off' : 'visibility'} className="text-xl" />
                   </button>
                 </div>
                 {err && <p id="admin-err" role="alert" className="mt-3 text-sm font-semibold text-status-red">{err}</p>}
                 <button type="submit" disabled={busy || !pw} className="mt-6 w-full flex items-center justify-center gap-2 rounded-md bg-primary py-4 font-bold text-on-primary shadow-md hover:bg-wine-hover transition-colors disabled:opacity-60">
                   {busy ? 'Opening…' : 'Open dashboard'}
-                  <span aria-hidden="true" className={`material-symbols-outlined text-xl ${busy ? 'animate-spin' : ''}`}>{busy ? 'progress_activity' : 'arrow_forward'}</span>
+                  <Icon name={busy ? 'progress_activity' : 'arrow_forward'} className={`text-xl ${busy ? 'animate-spin' : ''}`} />
                 </button>
               </>
             )}
@@ -194,7 +195,7 @@ function Dashboard({ session, onSignedOut }: { session: Session; onSignedOut: ()
           key={t.id} type="button" onClick={() => go(t.id)} aria-current={tab === t.id ? 'page' : undefined}
           className={`flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-semibold transition-colors ${tab === t.id ? 'bg-white/15 text-white' : 'text-white/70 hover:bg-white/10 hover:text-white'}`}
         >
-          <span aria-hidden="true" className="material-symbols-outlined text-xl">{t.icon}</span>
+          <Icon name={t.icon} className="text-xl" />
           <span className="flex-1 text-left">{t.label}</span>
           {t.id === 'orders' && openCount > 0 && <span className="rounded-full bg-secondary-container px-2 py-0.5 text-[11px] font-bold text-button-ink">{openCount}</span>}
         </button>
@@ -205,10 +206,10 @@ function Dashboard({ session, onSignedOut }: { session: Session; onSignedOut: ()
   const sideFooter = (
     <div className="flex flex-col gap-1 border-t border-white/10 pt-4">
       <a href="/" target="_blank" rel="noopener" className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-semibold text-white/70 hover:bg-white/10 hover:text-white">
-        <span aria-hidden="true" className="material-symbols-outlined text-xl">storefront</span> View shop
+        <Icon name="storefront" className="text-xl" /> View shop
       </a>
       <button type="button" onClick={signOut} className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-semibold text-white/70 hover:bg-white/10 hover:text-white">
-        <span aria-hidden="true" className="material-symbols-outlined text-xl">logout</span> Sign out
+        <Icon name="logout" className="text-xl" /> Sign out
       </button>
     </div>
   );
@@ -226,7 +227,7 @@ function Dashboard({ session, onSignedOut }: { session: Session; onSignedOut: ()
       <header className="lg:hidden sticky top-0 z-40 flex items-center justify-between bg-primary px-4 py-3">
         <Logo light />
         <button type="button" onClick={() => setMenu((m) => !m)} aria-expanded={menu} aria-label="Menu" className="rounded-lg p-2 text-white hover:bg-white/10">
-          <span aria-hidden="true" className="material-symbols-outlined">{menu ? 'close' : 'menu'}</span>
+          <Icon name={menu ? 'close' : 'menu'} />
         </button>
       </header>
       {menu && <div className="lg:hidden sticky top-[60px] z-30 bg-primary px-4 pb-4 space-y-4 shadow-xl">{nav}{sideFooter}</div>}
@@ -239,13 +240,13 @@ function Dashboard({ session, onSignedOut }: { session: Session; onSignedOut: ()
               <h1 className="font-headline-md text-[28px] leading-9 sm:text-headline-md text-on-surface">{current.label}</h1>
             </div>
             <button type="button" onClick={load} className="inline-flex items-center gap-1.5 text-sm font-semibold text-ink-secondary hover:text-primary">
-              <span aria-hidden="true" className="material-symbols-outlined text-lg">refresh</span> Refresh
+              <Icon name="refresh" className="text-lg" /> Refresh
             </button>
           </div>
 
           {session.storage !== 'database' && (
             <div role="status" className={`rounded-xl px-5 py-4 text-sm ${readOnly ? 'bg-error-container text-on-error-container' : 'bg-secondary-fixed text-on-secondary-fixed'}`}>
-              <p className="font-bold flex items-center gap-2"><span aria-hidden="true" className="material-symbols-outlined text-lg">{readOnly ? 'cloud_off' : 'science'}</span>{readOnly ? 'Database not connected: read-only' : 'Local test mode'}</p>
+              <p className="font-bold flex items-center gap-2"><Icon name={readOnly ? 'cloud_off' : 'science'} className="text-lg" />{readOnly ? 'Database not connected: read-only' : 'Local test mode'}</p>
               <p className="mt-1">
                 {readOnly
                   ? 'Nothing can be saved and checkout cannot record orders. In Vercel, add MONGODB_URI (your MongoDB Atlas connection string) under Settings → Environment Variables, then redeploy.'

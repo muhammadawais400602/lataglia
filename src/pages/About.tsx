@@ -2,10 +2,10 @@ import { useEffect, useRef, useState, type FormEvent } from 'react';
 import Layout from '../components/Layout';
 import { useCatalog } from '../storeApi';
 import { regionMeta } from '../regions/meta';
+import Icon from '../components/Icon';
 
 const img = 'https://lh3.googleusercontent.com/aida-public';
 const label = 'font-label-caps text-label-caps uppercase';
-const Icon = ({ name, className = '' }: { name: string; className?: string }) => <span aria-hidden="true" className={`material-symbols-outlined ${className}`}>{name}</span>;
 
 const pillars = [
   {

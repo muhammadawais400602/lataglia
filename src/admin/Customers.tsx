@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { Order } from '../shared/types';
 import { Card, Empty, TagChip, field, label, shortDate, usd } from './ui';
+import Icon from '../components/Icon';
 
 type Row = { email: string; name: string; city: string; orders: number; spent: number; last: string; tags: string[]; firstId: string };
 
@@ -35,7 +36,7 @@ export default function Customers({ orders, onOpenOrder }: { orders: Order[]; on
           href={`mailto:?bcc=${encodeURIComponent(rows.map((r) => r.email).join(','))}`}
           className={`inline-flex items-center gap-2 rounded-full bg-surface-container px-4 py-2.5 text-sm font-bold text-on-surface hover:bg-surface-container-high ${rows.length ? '' : 'pointer-events-none opacity-50'}`}
         >
-          <span aria-hidden="true" className="material-symbols-outlined text-lg">mail</span> Email these customers
+          <Icon name="mail" className="text-lg" /> Email these customers
         </a>
       </div>
       {rows.length === 0 ? (

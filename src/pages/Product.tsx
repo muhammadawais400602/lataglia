@@ -1,15 +1,15 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import Layout from '../components/Layout';
 import { pairings, pillars, product, reviews } from '../productData';
+import Icon from '../components/Icon';
 
 const label = 'font-label-caps text-label-caps uppercase';
-const filled = { fontVariationSettings: "'FILL' 1" };
 
 function Stars({ size = 'text-base' }: { size?: string }) {
   return (
     <>
       {Array.from({ length: 5 }, (_, i) => (
-        <span key={i} className={`material-symbols-outlined ${size}`} style={filled}>star</span>
+        <Icon name="star" className={`${size}`} filled key={i} />
       ))}
     </>
   );
@@ -81,7 +81,7 @@ export default function Product() {
         role="status"
         className={`fixed top-20 right-6 left-6 sm:left-auto z-50 transition-all duration-500 ease-out pointer-events-none flex items-center gap-3 bg-surface-container-lowest text-on-surface px-5 py-4 rounded-xl shadow-xl border-l-4 border-pistachio-light ${toast ? 'translate-y-0 opacity-100' : '-translate-y-[120%] opacity-0'}`}
       >
-        <span className="material-symbols-outlined text-pistachio-light text-2xl" style={filled}>check_circle</span>
+        <Icon name="check_circle" className="text-pistachio-light text-2xl" filled />
         <div>
           <p className="font-subheading text-subheading text-primary leading-tight font-bold">Aggiunto al carrello</p>
           <p className="font-body-sm text-body-sm text-ink-secondary">{toast}</p>
@@ -115,7 +115,7 @@ export default function Product() {
                 <span className={`bg-primary text-on-primary ${label} px-3 py-1.5 rounded tracking-widest shadow-sm`}>Best Seller</span>
               </div>
               <div className="absolute bottom-6 right-6 bg-surface-container-lowest/90 backdrop-blur-md px-3.5 py-1.5 rounded-full shadow-sm flex items-center gap-2 text-ink-secondary font-caption text-caption z-10">
-                <span className="material-symbols-outlined text-sm text-primary">ac_unit</span>
+                <Icon name="ac_unit" className="text-sm text-primary" />
                 <span>Direct Sicilian Cold-Chain Import</span>
               </div>
               <img key={photo} className="w-full h-full object-contain transition-transform duration-700 ease-out group-hover:scale-105" src={product.gallery[photo]} alt={product.name} />
@@ -135,7 +135,7 @@ export default function Product() {
             </div>
             <div className="bg-surface-container-low p-6 rounded-xl flex items-center gap-5">
               <div className="size-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0 text-primary">
-                <span className="material-symbols-outlined text-2xl">landscape</span>
+                <Icon name="landscape" className="text-2xl" />
               </div>
               <div>
                 <h4 className="font-subheading text-subheading text-on-surface font-bold">Mount Etna Mineral Soils (850m Alt.)</h4>
@@ -173,15 +173,15 @@ export default function Product() {
             <div className="flex flex-col sm:flex-row gap-4 items-stretch mb-6">
               <div className="flex items-center justify-between bg-surface-container rounded-xl px-4 py-3 min-w-[130px]">
                 <button aria-label="Decrease quantity" onClick={() => setQty((q) => Math.max(1, q - 1))} className="text-on-surface hover:text-primary transition-colors flex items-center justify-center p-1">
-                  <span className="material-symbols-outlined text-lg">remove</span>
+                  <Icon name="remove" className="text-lg" />
                 </button>
                 <span className="font-subheading text-subheading text-on-surface font-bold px-4" aria-live="polite">{qty}</span>
                 <button aria-label="Increase quantity" onClick={() => setQty((q) => q + 1)} className="text-on-surface hover:text-primary transition-colors flex items-center justify-center p-1">
-                  <span className="material-symbols-outlined text-lg">add</span>
+                  <Icon name="add" className="text-lg" />
                 </button>
               </div>
               <button onClick={addToBag} className="flex-1 bg-secondary-container hover:bg-gold-hover text-button-ink font-button text-button uppercase tracking-wider py-4 px-8 rounded-xl shadow-md transition-all duration-200 active:scale-[0.99] flex items-center justify-center gap-3">
-                <span className="material-symbols-outlined text-xl">shopping_bag</span>
+                <Icon name="shopping_bag" className="text-xl" />
                 <span>Add to Bag — ${total}</span>
               </button>
             </div>
@@ -195,7 +195,7 @@ export default function Product() {
                 <div className="bg-secondary-container h-full rounded-full transition-all duration-500" style={{ width: `${progress}%` }} />
               </div>
               <p className="font-caption text-caption text-ink-secondary mt-2 flex items-center gap-1.5">
-                <span className="material-symbols-outlined text-sm text-pistachio-light">verified</span>
+                <Icon name="verified" className="text-sm text-pistachio-light" />
                 {away > 0
                   ? `Add $${away % 1 ? away.toFixed(2) : away} more to unlock complimentary refrigerated transit across the US.`
                   : 'Complimentary refrigerated transit across the US unlocked.'}
@@ -211,10 +211,10 @@ export default function Product() {
                     className="w-full p-4 text-left flex items-center justify-between gap-3 font-subheading text-subheading font-bold text-on-surface hover:text-primary transition-colors"
                   >
                     <span className="flex items-center gap-2">
-                      <span className="material-symbols-outlined text-primary text-xl">{a.icon}</span>
+                      <Icon name={a.icon} className="text-primary text-xl" />
                       {a.title}
                     </span>
-                    <span className={`material-symbols-outlined transition-transform duration-300 ${open === i ? 'rotate-180' : ''}`}>expand_more</span>
+                    <Icon name="expand_more" className={`transition-transform duration-300 ${open === i ? 'rotate-180' : ''}`} />
                   </button>
                   {open === i && <div className="px-5 pb-5 text-body-sm font-body-sm text-ink-secondary leading-relaxed space-y-3">{a.body}</div>}
                 </div>
@@ -267,7 +267,7 @@ export default function Product() {
             <div key={p.title} className="bg-surface-container-low rounded-2xl p-8 flex flex-col justify-between hover:bg-surface-parchment transition-colors duration-300">
               <div>
                 <div className="size-14 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary mb-6">
-                  <span className="material-symbols-outlined text-3xl">{p.icon}</span>
+                  <Icon name={p.icon} className="text-3xl" />
                 </div>
                 <span className={`text-primary ${label} tracking-widest`}>{p.tag}</span>
                 <h3 className="font-headline-sm text-headline-sm text-on-surface mt-2 mb-3">{p.title}</h3>
@@ -309,7 +309,7 @@ export default function Product() {
                     onClick={() => notify(`1x ${p.name} (${p.price}) added to your table pairing.`)}
                     className="bg-surface-container hover:bg-secondary-container hover:text-button-ink text-on-surface px-4 py-2.5 rounded-lg font-button-sm text-button-sm uppercase tracking-wider transition-colors flex items-center gap-1.5"
                   >
-                    <span className="material-symbols-outlined text-base">add</span> Add Pair
+                    <Icon name="add" className="text-base" /> Add Pair
                   </button>
                 </div>
               </div>
@@ -343,7 +343,7 @@ export default function Product() {
               <div className="pt-6 mt-6 flex flex-wrap items-center justify-between gap-2 text-xs text-ink-tertiary">
                 <span className="font-semibold text-on-surface">{r.who}</span>
                 <span className="flex items-center gap-1 text-pistachio-light font-bold">
-                  <span className="material-symbols-outlined text-sm">verified</span> Verified Buyer
+                  <Icon name="verified" className="text-sm" /> Verified Buyer
                 </span>
               </div>
             </div>
@@ -365,7 +365,7 @@ export default function Product() {
           <div className="flex items-center justify-end w-full sm:w-auto gap-4">
             <span className="font-headline-sm text-headline-sm text-primary font-bold sm:hidden">${total}</span>
             <button onClick={addToBag} className="w-full sm:w-auto bg-secondary-container hover:bg-gold-hover text-button-ink font-button text-button uppercase tracking-wider py-3.5 px-8 rounded-xl shadow-md transition-all flex items-center justify-center gap-2">
-              <span className="material-symbols-outlined text-lg">shopping_bag</span>
+              <Icon name="shopping_bag" className="text-lg" />
               <span>Quick Add — ${total}</span>
             </button>
           </div>

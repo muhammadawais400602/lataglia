@@ -4,6 +4,7 @@ import { Card, Drawer, Empty, btnGhost, btnPrimary, field, label, usd } from './
 import { BADGE_STYLES, CATEGORIES, CERTS, REGIONS, slug } from './productOptions';
 import ImportProducts from './ImportProducts';
 import AmazonLink from './AmazonLink';
+import Icon from '../components/Icon';
 
 const blank = (): Product => ({
   id: '', name: '', producer: '', place: '', unit: '', price: 10, category: 'pasta', region: 'sicilia', cert: 'estate',
@@ -58,17 +59,17 @@ export default function Products({ products, onSave, readOnly }: { products: Pro
           </div>
           {!readOnly && (
             <button type="button" onClick={() => { setMsg(''); setFromLink(true); }} className={btnGhost}>
-              <span aria-hidden="true" className="material-symbols-outlined text-lg">link</span> Add from Amazon link
+              <Icon name="link" className="text-lg" /> Add from Amazon link
             </button>
           )}
           {!readOnly && (
             <button type="button" onClick={() => { setMsg(''); setImporting(true); }} className={btnGhost}>
-              <span aria-hidden="true" className="material-symbols-outlined text-lg">upload_file</span> Import
+              <Icon name="upload_file" className="text-lg" /> Import
             </button>
           )}
           {!readOnly && (
             <button type="button" onClick={() => setEditing({ product: blank(), isNew: true })} className={btnPrimary}>
-              <span aria-hidden="true" className="material-symbols-outlined text-lg">add</span> Add product
+              <Icon name="add" className="text-lg" /> Add product
             </button>
           )}
         </div>
@@ -119,11 +120,11 @@ export default function Products({ products, onSave, readOnly }: { products: Pro
                     </td>
                     <td className="px-5 sm:px-6 py-3 text-right whitespace-nowrap">
                       <button type="button" onClick={() => setEditing({ product: p, isNew: false })} className="rounded-full p-2 hover:bg-surface-container" aria-label={`Edit ${p.name}`}>
-                        <span aria-hidden="true" className="material-symbols-outlined text-lg">edit</span>
+                        <Icon name="edit" className="text-lg" />
                       </button>
                       {!readOnly && (
                         <button type="button" onClick={() => remove(p)} disabled={busy === p.id} className="rounded-full p-2 hover:bg-error-container hover:text-on-error-container" aria-label={`Delete ${p.name}`}>
-                          <span aria-hidden="true" className="material-symbols-outlined text-lg">delete</span>
+                          <Icon name="delete" className="text-lg" />
                         </button>
                       )}
                     </td>

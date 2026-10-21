@@ -2,6 +2,7 @@ import { useEffect, useRef, useState, type FormEvent } from 'react';
 import Layout from '../components/Layout';
 import { useBasket } from '../cartStore';
 import { crestImg, featured, giftFilters, hampers, matches, protocols, tiersCorporate, type GiftFilter, type Hamper } from '../giftData';
+import Icon from '../components/Icon';
 
 const label = 'font-label-caps text-label-caps uppercase';
 
@@ -88,7 +89,7 @@ export default function Gifts() {
                 ['draw', 'Bespoke Concierge', 'Multi-recipient executive service & wax seal stamps.'],
               ].map(([icon, t, b]) => (
                 <div key={t} className="flex items-start gap-4">
-                  <span className="material-symbols-outlined text-secondary-container text-2xl mt-0.5">{icon}</span>
+                  <Icon name={icon} className="text-secondary-container text-2xl mt-0.5" />
                   <div>
                     <span className="font-headline-sm text-headline-sm text-on-surface block">{t}</span>
                     <p className="font-caption text-caption text-ink-secondary">{b}</p>
@@ -115,7 +116,7 @@ export default function Gifts() {
             ))}
           </div>
           <div className="hidden md:flex items-center gap-3 text-ink-tertiary font-caption text-caption min-w-max">
-            <span className="material-symbols-outlined text-base">lock</span>
+            <Icon name="lock" className="text-base" />
             <span>Guaranteed White Glove Presentation</span>
           </div>
         </div>
@@ -145,7 +146,7 @@ export default function Gifts() {
                     <p className={`${label} tracking-wider text-primary mb-3`}>Itemized Cellar Manifest</p>
                     <ul className="space-y-2.5 font-body-sm text-body-sm text-on-surface">
                       {featured.items.map((it) => (
-                        <li key={it} className="flex items-start gap-2"><span className="material-symbols-outlined text-secondary text-sm mt-1">check_circle</span><span>{it}</span></li>
+                        <li key={it} className="flex items-start gap-2"><Icon name="check_circle" className="text-secondary text-sm mt-1" /><span>{it}</span></li>
                       ))}
                     </ul>
                   </div>
@@ -174,7 +175,7 @@ export default function Gifts() {
                     <p className="font-body-sm text-xs sm:text-body-sm text-ink-secondary mb-3 sm:mb-4 line-clamp-2">{h.blurb}</p>
                     <div className="hidden sm:block bg-surface-parchment p-4 rounded-lg mb-6 space-y-2 text-on-surface font-body-sm text-body-sm">
                       {h.items.map((it) => (
-                        <div key={it} className="flex items-start gap-2"><span className="material-symbols-outlined text-secondary text-sm mt-1">check</span><span>{it}</span></div>
+                        <div key={it} className="flex items-start gap-2"><Icon name="check" className="text-secondary text-sm mt-1" /><span>{it}</span></div>
                       ))}
                     </div>
                   </div>
@@ -194,11 +195,11 @@ export default function Gifts() {
         <div className="max-w-[1320px] mx-auto rounded-2xl bg-primary-container text-on-primary p-8 md:p-14 shadow-2xl relative overflow-hidden">
           <div className="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-primary/40 blur-3xl pointer-events-none" />
           <div className="absolute right-12 top-12 opacity-10 pointer-events-none hidden lg:block">
-            <span className="material-symbols-outlined text-[180px]">card_giftcard</span>
+            <Icon name="card_giftcard" className="text-[180px]" />
           </div>
           <div className="relative z-10 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <span className="material-symbols-outlined text-secondary-container">domain</span>
+              <Icon name="gift_send" className="text-secondary-container" />
               <span className={`${label} tracking-widest text-secondary-fixed`}>Executive Services</span>
             </div>
             <h2 className="font-headline-lg text-[32px] leading-[38px] sm:text-headline-lg text-white mb-6">Corporate Gifting &amp; Bespoke Multi-Address Dispatch</h2>
@@ -218,7 +219,7 @@ export default function Gifts() {
                 Connect with Corporate Concierge
               </button>
               <button onClick={() => notify('The corporate catalogue PDF is not available yet.')} className="bg-white/10 hover:bg-white/20 text-white font-button-sm text-button-sm uppercase tracking-wider py-4 px-8 rounded-full transition-colors flex items-center justify-center gap-2 text-center">
-                <span className="material-symbols-outlined text-sm">download</span>
+                <Icon name="download" className="text-sm" />
                 Download Corporate Catalogue (PDF)
               </button>
             </div>
@@ -236,7 +237,7 @@ export default function Gifts() {
             <div key={p.title} className="bg-surface-container-lowest p-8 rounded-xl shadow-sm flex flex-col justify-between">
               <div>
                 <div className="size-12 rounded-full bg-surface-parchment flex items-center justify-center text-primary mb-6">
-                  <span className="material-symbols-outlined text-2xl">{p.icon}</span>
+                  <Icon name={p.icon} className="text-2xl" />
                 </div>
                 <h4 className="font-headline-sm text-headline-sm text-on-surface mb-3">{p.title}</h4>
                 <p className="font-body-sm text-body-sm text-ink-secondary">{p.body}</p>
@@ -251,7 +252,7 @@ export default function Gifts() {
         <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4" onClick={() => setModal(false)}>
           <div role="dialog" aria-modal="true" aria-labelledby="concierge-title" className="bg-surface-container-lowest max-w-lg w-full rounded-2xl p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
             <button ref={closeRef} aria-label="Close" onClick={() => setModal(false)} className="absolute top-6 right-6 text-ink-secondary hover:text-on-surface">
-              <span className="material-symbols-outlined">close</span>
+              <Icon name="close" />
             </button>
             <span className={`${label} text-secondary tracking-widest block mb-2`}>Private Client Office</span>
             <h3 id="concierge-title" className="font-headline-md text-headline-md text-on-surface mb-4 pr-8">Request Corporate Consultation</h3>

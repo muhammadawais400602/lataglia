@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import { Toast, useToast } from '../components/Toast';
 import { addProduct, useBasket } from '../cartStore';
 import { useCatalog, useSettings } from '../storeApi';
+import Icon from '../components/Icon';
 
 const label = 'font-label-caps text-label-caps uppercase';
 const money = (n: number) => `$${n.toFixed(2)}`;
@@ -63,7 +64,7 @@ export default function ProductDetail({ id }: { id: string }) {
           <div className="lg:col-span-7 flex flex-col gap-4 min-w-0">
             <div className="relative bg-surface-parchment rounded-xl overflow-hidden aspect-square flex items-center justify-center p-8 lg:p-14 shadow-sm">
               {p.badge.label && <span className={`absolute top-5 left-5 z-10 ${label} px-3 py-1.5 rounded tracking-widest shadow-sm ${p.badge.className}`}>{p.badge.label}</span>}
-              {photos[photo] ? <img key={photo} className="w-full h-full object-contain" src={photos[photo]} alt={p.name} /> : <span aria-hidden="true" className="material-symbols-outlined text-6xl text-ink-tertiary">image</span>}
+              {photos[photo] ? <img key={photo} className="w-full h-full object-contain" src={photos[photo]} alt={p.name} /> : <Icon name="image" className="text-6xl text-ink-tertiary" />}
             </div>
             {photos.length > 1 && (
               <div className="grid grid-cols-4 sm:grid-cols-6 gap-3">
@@ -100,16 +101,16 @@ export default function ProductDetail({ id }: { id: string }) {
             <div className="flex flex-col sm:flex-row gap-4 items-stretch mb-6">
               <div className="flex items-center justify-between bg-surface-container rounded-xl px-4 py-3 min-w-[130px]">
                 <button type="button" aria-label="Decrease quantity" disabled={soldOut} onClick={() => setQty((q) => Math.max(1, q - 1))} className="p-1 text-on-surface hover:text-primary disabled:opacity-40">
-                  <span aria-hidden="true" className="material-symbols-outlined text-lg">remove</span>
+                  <Icon name="remove" className="text-lg" />
                 </button>
                 <span className="font-bold text-on-surface px-4" aria-live="polite">{qty}</span>
                 <button type="button" aria-label="Increase quantity" disabled={soldOut || qty >= max} onClick={() => setQty((q) => Math.min(max, q + 1))} className="p-1 text-on-surface hover:text-primary disabled:opacity-40">
-                  <span aria-hidden="true" className="material-symbols-outlined text-lg">add</span>
+                  <Icon name="add" className="text-lg" />
                 </button>
               </div>
               <button type="button" onClick={add} disabled={soldOut}
                 className="flex-1 bg-secondary-container hover:bg-gold-hover text-button-ink font-bold uppercase tracking-wider py-4 px-8 rounded-xl shadow-md transition-all active:scale-[0.99] flex items-center justify-center gap-3 disabled:opacity-50 disabled:pointer-events-none">
-                <span aria-hidden="true" className="material-symbols-outlined text-xl">shopping_bag</span>
+                <Icon name="shopping_bag" className="text-xl" />
                 {soldOut ? 'Sold out' : `Add to Bag · ${money(line)}`}
               </button>
             </div>
@@ -126,7 +127,7 @@ export default function ProductDetail({ id }: { id: string }) {
                 <ul className="space-y-2.5">
                   {p.features.map((f) => (
                     <li key={f} className="flex gap-2.5 text-sm text-ink-secondary leading-relaxed">
-                      <span aria-hidden="true" className="material-symbols-outlined text-base text-pistachio-light mt-0.5">check_circle</span>
+                      <Icon name="check_circle" className="text-base text-pistachio-light mt-0.5" />
                       <span className="min-w-0 break-words">{f}</span>
                     </li>
                   ))}

@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { ORDER_STATUSES, type Order } from '../shared/types';
 import { Card, Drawer, Empty, StatusChip, TagChip, btnGhost, btnPrimary, customerName, dateTime, field, itemCount, label, statusStyle, usd } from './ui';
+import Icon from '../components/Icon';
 
 function csv(orders: Order[]) {
   const esc = (v: unknown) => `"${String(v ?? '').replace(/"/g, '""')}"`;
@@ -71,7 +72,7 @@ export default function Orders({ orders, tagLibrary, focusId, onFocus, onSave, o
             </select>
           </div>
           <button type="button" onClick={exportCsv} disabled={!list.length} className={btnGhost}>
-            <span aria-hidden="true" className="material-symbols-outlined text-lg">download</span> Export CSV
+            <Icon name="download" className="text-lg" /> Export CSV
           </button>
         </div>
 
@@ -234,7 +235,7 @@ function OrderDrawer({ order, tagLibrary, onClose, onSave, readOnly }: {
                   key={t} type="button" onClick={() => toggle(t)} aria-pressed={on} disabled={readOnly}
                   className={`inline-flex items-center gap-1 rounded-full px-3 py-1.5 text-xs font-bold transition-colors ${on ? 'bg-primary text-on-primary' : 'bg-surface-container text-ink-secondary hover:bg-surface-container-high'}`}
                 >
-                  {on && <span aria-hidden="true" className="material-symbols-outlined text-sm">check</span>}
+                  {on && <Icon name="check" className="text-sm" />}
                   {t}
                 </button>
               );
@@ -264,7 +265,7 @@ function OrderDrawer({ order, tagLibrary, onClose, onSave, readOnly }: {
         <div className="flex flex-wrap items-center gap-3">
           <button type="button" onClick={save} disabled={!dirty || saving || readOnly} className={btnPrimary}>{saving ? 'Saving…' : 'Save changes'}</button>
           <a href={`mailto:${c.email}?subject=${encodeURIComponent(`Your La Taglia order ${order.id}`)}`} className={btnGhost}>
-            <span aria-hidden="true" className="material-symbols-outlined text-lg">mail</span> Email customer
+            <Icon name="mail" className="text-lg" /> Email customer
           </a>
           {msg && <span role="status" className={`text-sm font-semibold ${msg === 'Saved' ? 'text-tertiary-container' : 'text-status-red'}`}>{msg}</span>}
         </div>
