@@ -15,7 +15,7 @@ const p = {
 const molise: RegionStory = {
   slug: 'molise',
   name: 'Molise',
-  seoTitle: 'Molisan Food and Pantry Ingredients | Italy Region by Region | La Taglia',
+  seoTitle: 'Molisan Food and Pantry Ingredients | Italy Region by Region | Casa Taglia',
   seoDescription: 'Cook Molise from its pantry: Caciocavallo di Agnone, stracciata, Pecorino di Capracotta, white truffles and cavatelli, with a recipe for cavatelli al ragù di maiale.',
   kicker: 'Region nineteen: the land of the tratturi',
   subtitle: 'Shepherds’ roads, stretched-curd cheese, and white truffles.',
@@ -169,7 +169,7 @@ const molise: RegionStory = {
     ],
   },
   about: [
-    'La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources and our direct field visits.',
+    'Casa Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources and our direct field visits.',
   ],
   sources: 'Italia.it (ENIT) on Molisan food and dishes; Zanichelli regional cuisine notes on Molise; ONAF on Caciocavallo di Agnone; Touring Club Italiano on Agnone; Scatti di Gusto on Molisan traditional products; AGI on Molise truffles; Spiagge.it and Roadsurfer on the tratturi and transhumance; The International Kitchen and Pizza e Pasta Italiana on pampanella; Gazzetta del Gusto, 9colonne, and Expedia listing on Caseificio Di Nucci.',
 };

@@ -6,7 +6,7 @@ import type { RegionStory } from './types';
 const emiliaRomagna: RegionStory = {
   "slug": "emilia-romagna",
   "name": "Emilia-Romagna",
-  "seoTitle": "Emilia-Romagna Food and Pantry Ingredients | Italy Region by Region | La Taglia",
+  "seoTitle": "Emilia-Romagna Food and Pantry Ingredients | Italy Region by Region | Casa Taglia",
   "seoDescription": "Cook Emilia-Romagna from its pantry: Parmigiano Reggiano, Prosciutto di Parma, balsamic vinegar of Modena, mortadella and egg pasta, with a recipe for tagliatelle al ragù.",
   "kicker": "Region two: the food valley",
   "subtitle": "Patience, pork, and the richest plain in Italy.",
@@ -469,7 +469,7 @@ const emiliaRomagna: RegionStory = {
     "eyebrow": "Limited curation · Parcel N° 02"
   },
   "about": [
-    "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
+    "Casa Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
   ],
   "sources": "Consorzio del Formaggio Parmigiano Reggiano; Consorzio del Prosciutto di Parma, “New Production Rules” (2023); Consorzio Tutela Aceto Balsamico Tradizionale di Modena; European Commission eAmbrosia register; Accademia Italiana della Cucina, registered recipe for ragù alla bolognese; Gambero Rosso (2024), Scatti di Gusto, and Pitti Taste exhibitor profile for Acetaia Giusti."
 };

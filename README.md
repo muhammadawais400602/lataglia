@@ -1,4 +1,4 @@
-# La Taglia
+# Casa Taglia
 
 Shop for curated Italian provisions, built with Vite + React + TypeScript + Tailwind, with a small serverless backend in `api/` (Vercel Functions) and an admin dashboard at `/admin`.
 

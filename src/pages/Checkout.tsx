@@ -365,7 +365,7 @@ export default function Checkout() {
                   <Icon name="wine_bar" className="text-xl" />
                 </div>
                 <div>
-                  <h4 className="font-headline-sm text-base text-secondary font-bold">The La Taglia Provenance Covenant</h4>
+                  <h4 className="font-headline-sm text-base text-secondary font-bold">The Casa Taglia Provenance Covenant</h4>
                   <p className="font-body-sm text-body-sm text-ink-secondary mt-1">Dispatched directly from Milan and temperature-buffered during all transatlantic flights. If any olive oil, cured salume, or pistachio cream fails your organoleptic test, our sommelier team will immediately reship an alpine flight at zero fee.</p>
                 </div>
               </div>

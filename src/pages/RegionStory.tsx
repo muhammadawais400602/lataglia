@@ -126,7 +126,7 @@ function useSeo(story: Story) {
     const prevDesc = meta.content;
     meta.content = story.seoDescription;
 
-    const graph: object[] = [{ '@type': 'Article', headline: `${story.name}: the ${story.name} pantry, region by region`, publisher: { '@type': 'Organization', name: 'La Taglia', url: window.location.origin }, about: `${story.name} food and ingredients` }];
+    const graph: object[] = [{ '@type': 'Article', headline: `${story.name}: the ${story.name} pantry, region by region`, publisher: { '@type': 'Organization', name: 'Casa Taglia', url: window.location.origin }, about: `${story.name} food and ingredients` }];
     const r = story.cook?.recipe;
     if (r) {
       const plain = (t: string) => t.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\*+/g, '');
@@ -438,7 +438,7 @@ export default function RegionStory({ story }: { story: Story }) {
                     ))}
                   </ol>
                   <div className="bg-primary text-white p-6 rounded mt-8">
-                    <h5 className="text-xs uppercase font-bold tracking-widest text-secondary-container mb-2 flex items-center gap-2"><Icon name="stars" className="text-sm" /> The La Taglia touch</h5>
+                    <h5 className="text-xs uppercase font-bold tracking-widest text-secondary-container mb-2 flex items-center gap-2"><Icon name="stars" className="text-sm" /> The Casa Taglia touch</h5>
                     <p className="text-sm text-white/90 leading-relaxed"><Rich text={r.touch} catalog={catalog} linkClass="font-bold text-white underline decoration-secondary-container underline-offset-4" /></p>
                   </div>
                 </div>

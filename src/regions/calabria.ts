@@ -6,7 +6,7 @@ import type { RegionStory } from './types';
 const calabria: RegionStory = {
   "slug": "calabria",
   "name": "Calabria",
-  "seoTitle": "Calabrian Food and Pantry Ingredients | Italy Region by Region | La Taglia",
+  "seoTitle": "Calabrian Food and Pantry Ingredients | Italy Region by Region | Casa Taglia",
   "seoDescription": "Cook Calabria from its pantry: ’nduja, Tropea red onions, Calabrian chili, Caciocavallo Silano, licorice and bergamot, with a recipe for pasta con la ’nduja.",
   "kicker": "Region twelve: the toe of the boot",
   "subtitle": "Chili, red onions, and a coastline of citrus.",
@@ -425,7 +425,7 @@ const calabria: RegionStory = {
     "eyebrow": "Limited curation · Parcel N° 12"
   },
   "about": [
-    "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
+    "Casa Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
   ],
   "sources": "ARSAC (Regione Calabria) guide to Calabrian DOP and IGP products; Italia.it on bergamot and Calabrian products; Caciocavallo Silano DOP production specification and ONAF product sheet; Italy Segreta on Caciocavallo Silano; GreenMe on Cipolla Rossa di Tropea IGP; I Calabresi, Gambero Rosso, Vice, and ICE on ’nduja and Calabrian chili; Dissapore on pasta con la ’nduja and on Diamante and stroncatura; Fortune Italia, We Wealth, Il Fatto Alimentare, Gazzetta del Gusto, and Artribune on Amarelli."
 };

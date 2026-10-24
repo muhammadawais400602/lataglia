@@ -36,7 +36,7 @@ const seals = [
 ];
 
 const people = [
-  { name: 'MJ & Jennifer Taglia', role: 'Founders', tone: 'text-primary', photo: `${img}/AB6AXuB82CaSu_9NtzXBDI65gtbiV5ypc9x_tgOAHHGcvLplUAJwTWu7gM0vZ29W8iUbuP2iIsdT1e7xly4CFn2zEi_Ew6Ed3zqjGyqYY6c34AiPawsfvtmdIt84edn5Os6vXFW0t2HAX2-zqddFwQI3Nk7Om-JsHymVv5xjdFDFJoHxYZG4K_Hl3XWpQcNohHpMaokS0WLLSjlYeYYDbcCuOuIa4eVQFI3GUpOGMAUp_l6yGcqgIG2fielh`, body: 'La Taglia began as an anniversary gift from MJ to Jennifer. Today Jennifer leads the search for the foods and families we bring home.', href: '#our-story', link: 'Read our story' },
+  { name: 'MJ & Jennifer Taglia', role: 'Founders', tone: 'text-primary', photo: `${img}/AB6AXuB82CaSu_9NtzXBDI65gtbiV5ypc9x_tgOAHHGcvLplUAJwTWu7gM0vZ29W8iUbuP2iIsdT1e7xly4CFn2zEi_Ew6Ed3zqjGyqYY6c34AiPawsfvtmdIt84edn5Os6vXFW0t2HAX2-zqddFwQI3Nk7Om-JsHymVv5xjdFDFJoHxYZG4K_Hl3XWpQcNohHpMaokS0WLLSjlYeYYDbcCuOuIa4eVQFI3GUpOGMAUp_l6yGcqgIG2fielh`, body: 'Casa Taglia began as an anniversary gift from MJ to Jennifer. Today Jennifer leads the search for the foods and families we bring home.', href: '#our-story', link: 'Read our story' },
   { name: 'Il Borgo del Balsamico', role: 'Balsamic vinegar · Reggio Emilia', tone: 'text-secondary', photo: `${img}/AB6AXuALmcb79Ylnq012GLBxz50Ru0RrX-f_CDq9v5D7GrYG4VYaDUftxJcMek7AK3r_UVf3zxoClSX5-h_AofVyXV3PHPm9Ry7YentNOa6rHMzeWCMiJKjoqbPBiE26jCYRZmTIbKP7UkAFyHw6b_a2tytQWf4p_KeUCYlGCphzX5G3jG1u_NBMyr78TWcNYAhGK1vFatz6u4Dmu-UhGuJffQPhhnRJzu2smJafIAse8l5fBeNWr0JtdAcJ`, contain: true, body: 'The family whose decades-old Aceto Balsamico Tradizionale started it all. Their vinegar ages in a series of wooden barrels in the loft above the house.', href: '/regions/emilia-romagna', link: 'Emilia-Romagna' },
   { name: 'Gusto Etna', role: 'Pistachios · Bronte, Sicily', tone: 'text-coastal-blue', photo: `${img}/AB6AXuCB5J_zjD0IeWCwHRjf0sG4lJAd0GHcNlDHLaX1kPIDRUvJLwh-3LmLGda_6CdNv2yPGX3hh3c-78U4ZRIFZt3jI9PsBS_7hp7i9BjE4FbNpETByK6wJum9XYpMQr81mWFX70BIFYoGbW8hJKc1kplDMozH4hz_cJkmHrsIbUH5n0AhUzx6DC_83aUATV9VqUWc4jMwuJje8ewlbrtT5cagqzyNfUGS1J0pa1yv9CmR9sCMVLrQFuvs`, contain: true, body: 'Pistachios grown on the lava slopes of Mount Etna and picked by hand every other year, made into the creams and spreads in our shop.', href: '/regions/sicilia', link: 'Sicilia' },
   { name: 'Caseificio Di Nucci', role: 'Cheesemakers · Agnone, Molise', tone: 'text-tertiary-container', photo: `${img}/AB6AXuCCmKt0KNZ0ZVs0XegxaaFO6gZmpB0I3t0eN-F0bmWiJOyE2FCk1P6zroUcVP2CX43Nh2zwBFV4tdj6t54RZccUEjSYuLujiWxd2mCahuH6DP0SVRcwjm9qWb24Lv8DoD-UIIZeHA9vO_sDgO413bRgudVZTVkUEEda1gu5pShkPoRlFm5fQH2QziQuyZGEMmDriDxkslw6nujyY9sSQLoi7YmTKWR3c1d3lfgcw-WrcL-JM6H0fgt_`, body: 'A family dairy dating to 1662, still stretching curd by hand and ageing caciocavallo in a cellar of local stone.', href: '/regions/molise', link: 'Molise' },
@@ -69,7 +69,7 @@ export default function About() {
 
   useEffect(() => {
     const prev = document.title;
-    document.title = 'About Us | La Taglia';
+    document.title = 'About Us | Casa Taglia';
     const fromHash = () => window.location.hash === '#contact' && setModal(true);
     fromHash();
     // The page renders after the browser's own jump to #our-story / #about-us, so scroll once it exists.
@@ -140,17 +140,17 @@ export default function About() {
             <div className="lg:col-span-7">
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-lowest rounded-sm mb-4">
                 <span className="size-2 rounded-full bg-secondary-container" />
-                <span className={`${label} text-secondary tracking-[0.18em]`}>How La Taglia began</span>
+                <span className={`${label} text-secondary tracking-[0.18em]`}>How Casa Taglia began</span>
               </div>
               <h1 className="font-display-hero text-[36px] leading-[42px] lg:text-[52px] lg:leading-[60px] text-primary tracking-tight mb-6 [text-wrap:balance]">
                 Our Story
               </h1>
               <div className="space-y-4 text-body-lg text-ink-secondary leading-relaxed max-w-2xl">
                 <p>As our 25th wedding anniversary approached, my wife and I began imagining the next chapter of our lives. We wanted to create something together, something meaningful that celebrated two of our greatest shared passions: exceptional food and the beauty, culture, and traditions of Italy.</p>
-                <p>For our anniversary, I gave my wife La Taglia.</p>
+                <p>For our anniversary, I gave my wife Casa Taglia.</p>
                 <p>What began as a gift soon became her passion. With her extraordinary taste, natural curiosity, and appreciation for life’s finer pleasures, she set out to discover the remarkable foods, artisan producers, and culinary traditions that make Italy so special.</p>
                 <p>From family-run farms and generations-old kitchens to small producers dedicated to their craft, each discovery tells a story of heritage, authenticity, and a love of good food.</p>
-                <p>Today, La Taglia is our way of bringing a little of Italy into your home. Every product is thoughtfully selected, every producer has a story worth telling, and every discovery is something we are genuinely excited to share.</p>
+                <p>Today, Casa Taglia is our way of bringing a little of Italy into your home. Every product is thoughtfully selected, every producer has a story worth telling, and every discovery is something we are genuinely excited to share.</p>
                 <p className="text-on-surface font-semibold">What began as a love letter to my wife has become an invitation to experience the Italy we love.</p>
               </div>
               <p className="mt-8 font-headline-sm text-xl italic text-primary">— MJ Taglia</p>
@@ -165,7 +165,7 @@ export default function About() {
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-surface-parchment rounded-sm mb-4">
               <span className="size-2 rounded-full bg-secondary-container" />
-              <span className={`${label} text-secondary tracking-[0.18em]`}>About La Taglia</span>
+              <span className={`${label} text-secondary tracking-[0.18em]`}>About Casa Taglia</span>
             </div>
             <h2 className="font-display-hero text-[36px] leading-[42px] lg:text-[56px] lg:leading-[64px] text-on-surface tracking-tight mb-6 [text-wrap:balance]">
               Connecting good kitchens with Italy’s small family producers.
@@ -208,7 +208,7 @@ export default function About() {
             <div className="space-y-4 text-body-md text-ink-secondary leading-relaxed">
               <p>Most Italian food sold abroad passes through several hands before it reaches a shop: exporters, brokers, distributors. It often spends months in transit and in warehouses, and heat and time are hard on olive oil and cheese.</p>
               <p>Along the way, the maker often disappears. Bulk oil or vinegar is bought by the tank, blended, and sold under a new label that says little about who made it or where.</p>
-              <p className="text-on-surface font-semibold">La Taglia was started to do the opposite: buy directly, keep the maker’s name on the label, and get the food to you while it still tastes of the place it came from.</p>
+              <p className="text-on-surface font-semibold">Casa Taglia was started to do the opposite: buy directly, keep the maker’s name on the label, and get the food to you while it still tastes of the place it came from.</p>
             </div>
             <div className="mt-8">
               <a className="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-wine-hover text-on-primary text-button-sm font-bold tracking-wider uppercase rounded transition-colors shadow-sm" href="#pillars">
@@ -312,7 +312,7 @@ export default function About() {
               <thead>
                 <tr className={`${label} text-ink-tertiary tracking-wider`}>
                   <th className="p-6 pb-4 font-bold w-1/4">What matters</th>
-                  <th className="p-6 pb-4 font-bold text-primary w-1/4">La Taglia</th>
+                  <th className="p-6 pb-4 font-bold text-primary w-1/4">Casa Taglia</th>
                   <th className="p-6 pb-4 font-bold w-1/4">Typical specialty importers</th>
                   <th className="p-6 pb-4 font-bold w-1/4">Supermarket “Italian” brands</th>
                 </tr>

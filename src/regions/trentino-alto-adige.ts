@@ -6,7 +6,7 @@ import type { RegionStory } from './types';
 const trentinoAltoAdige: RegionStory = {
   "slug": "trentino-alto-adige",
   "name": "Trentino-Alto Adige",
-  "seoTitle": "Trentino-Alto Adige Food and Pantry Ingredients | Italy Region by Region | La Taglia",
+  "seoTitle": "Trentino-Alto Adige Food and Pantry Ingredients | Italy Region by Region | Casa Taglia",
   "seoDescription": "Cook Trentino-Alto Adige from its pantry: Speck Alto Adige, Val di Non apples, Schüttelbrot, Trentingrana, Puzzone di Moena and Stelvio, with a recipe for canederli in broth.",
   "kicker": "Region seventeen: the Dolomites",
   "subtitle": "Speck, mountain cheese, and the apples of the Alps.",
@@ -433,7 +433,7 @@ const trentinoAltoAdige: RegionStory = {
     "eyebrow": "Limited curation · Parcel N° 17"
   },
   "about": [
-    "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
+    "Casa Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
   ],
   "sources": "Consorzio Tutela Speck Alto Adige (speck.it and Google Arts & Culture); Italia.it (ENIT) on Speck Alto Adige IGP; Linkiesta on speck; Quotidiano Nazionale on South Tyrolean products; Visit Trentino and Taste Trentino on Trentino’s apples and cheeses; Visit Val di Sole on Melinda; Scatti di Gusto on Trentingrana; Gambero Rosso on Trentino cheeses; Bartolotta’s Trentino menu notes; Forbes Italia, Speck.it, and Camera di Commercio di Bolzano on Recla."
 };

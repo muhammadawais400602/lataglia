@@ -6,7 +6,7 @@ import type { RegionStory } from './types';
 const sicilia: RegionStory = {
   "slug": "sicilia",
   "name": "Sicilia",
-  "seoTitle": "Sicilian Food and Pantry Ingredients | Italy Region by Region | La Taglia",
+  "seoTitle": "Sicilian Food and Pantry Ingredients | Italy Region by Region | Casa Taglia",
   "seoDescription": "Cook Sicily from its pantry: Bronte pistachios, Pantelleria capers, Avola almonds, Modica chocolate and the dishes they make, with a recipe for pasta alla Norma.",
   "kicker": "Region one: the island",
   "subtitle": "A table shaped by the sea, the sun and centuries of exchange.",
@@ -490,7 +490,7 @@ const sicilia: RegionStory = {
     "eyebrow": "Limited curation · Parcel N° 01"
   },
   "about": [
-    "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
+    "Casa Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
   ],
   "sources": "Italia.it, “Typical Sicilian Products and Dishes”; Visit Sicily, “Sicily Flavours Not to Be Missed”; European Commission eAmbrosia register (Pistacchio Verde di Bronte DOP, Pomodoro di Pachino IGP, Cappero di Pantelleria IGP, Cioccolato di Modica IGP); Forbes Italia, “100 Eccellenze 2024: Campo d’Oro”; Italian Trade Agency and Pitti Taste exhibitor profiles for Campo d’Oro."
 };

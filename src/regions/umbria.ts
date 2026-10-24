@@ -6,7 +6,7 @@ import type { RegionStory } from './types';
 const umbria: RegionStory = {
   "slug": "umbria",
   "name": "Umbria",
-  "seoTitle": "Umbrian Food and Pantry Ingredients | Italy Region by Region | La Taglia",
+  "seoTitle": "Umbrian Food and Pantry Ingredients | Italy Region by Region | Casa Taglia",
   "seoDescription": "Cook Umbria from its pantry: black truffles, Castelluccio lentils, Prosciutto di Norcia, Umbrian olive oil, farro and strangozzi, with a recipe for Castelluccio lentils.",
   "kicker": "Region thirteen: the green heart",
   "subtitle": "Black truffles, tiny lentils, and the butchers of Norcia.",
@@ -440,7 +440,7 @@ const umbria: RegionStory = {
     "eyebrow": "Limited curation · Parcel N° 13"
   },
   "about": [
-    "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
+    "Casa Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
   ],
   "sources": "Umbria Tourism (Regione Umbria) on Lenticchia di Castelluccio IGP and Umbrian food traditions; Regione Umbria traditional product sheet for tartufo nero pregiato; Italo Americano and Gambero Rosso on Castelluccio; Camera di Commercio di Perugia on Norcia products; Dissapore on Umbrian dishes, black truffle, and pasta alla norcina; Michelin Guide and Agriturismo.it on Umbrian olive oil, strangozzi, and torta al testo; Fortune Italia, Museimpresa, and Urbani on Urbani Tartufi."
 };

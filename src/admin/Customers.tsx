@@ -135,7 +135,7 @@ export function Inquiries() {
           {list.map((m) => (
             <li key={m.id} className="py-3 space-y-1">
               <div className="flex flex-wrap items-center justify-between gap-2">
-                <span className="font-semibold text-on-surface">{m.name} · <a href={`mailto:${m.email}?subject=${encodeURIComponent('Your message to La Taglia')}`} className="text-primary hover:underline">{m.email}</a></span>
+                <span className="font-semibold text-on-surface">{m.name} · <a href={`mailto:${m.email}?subject=${encodeURIComponent('Your message to Casa Taglia')}`} className="text-primary hover:underline">{m.email}</a></span>
                 <span className="text-xs text-ink-tertiary">{m.type} · {shortDate(m.createdAt)}</span>
               </div>
               <p className="text-ink-secondary whitespace-pre-line">{m.message}</p>

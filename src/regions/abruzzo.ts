@@ -6,7 +6,7 @@ import type { RegionStory } from './types';
 const abruzzo: RegionStory = {
   "slug": "abruzzo",
   "name": "Abruzzo",
-  "seoTitle": "Abruzzese Food and Pantry Ingredients | Italy Region by Region | La Taglia",
+  "seoTitle": "Abruzzese Food and Pantry Ingredients | Italy Region by Region | Casa Taglia",
   "seoDescription": "Cook Abruzzo from its pantry: L’Aquila saffron, maccheroni alla chitarra, pecorino, Santo Stefano lentils, Abruzzese olive oil and Sulmona confetti, with a recipe for scrippelle ’mbusse.",
   "kicker": "Region fifteen: strong and gentle",
   "subtitle": "Shepherds’ trails, saffron fields, and sugared almonds.",
@@ -430,7 +430,7 @@ const abruzzo: RegionStory = {
     "eyebrow": "Limited curation · Parcel N° 15"
   },
   "about": [
-    "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
+    "Casa Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
   ],
   "sources": "Italia.it (ENIT) guides to Abruzzese food, saffron, arrosticini, and maccheroni alla chitarra; Agriturismo.it and Eroica Fenice on Abruzzese dishes; Il Sole 24 Ore, Internazionale, Gambero Rosso, Inside the Vatican, Epicurean Traveler, and Life in Abruzzo on Confetti Pelino and Sulmona."
 };

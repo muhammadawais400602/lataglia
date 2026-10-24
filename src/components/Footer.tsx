@@ -1,11 +1,13 @@
+import Wordmark from './Wordmark';
+
 export default function Footer() {
   return (
     <footer className="bg-primary text-white pt-16 pb-12 border-t border-primary-container">
       <div className="max-w-[1280px] mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
           <div className="lg:col-span-2">
-            <a href="/" className="inline-block mb-5" aria-label="La Taglia, home">
-              <img src="/logo-white.png" alt="La Taglia · Artisanal Italy" width={1057} height={259} loading="lazy" className="h-14 w-auto" />
+            <a href="/" className="inline-block mb-5" aria-label="Casa Taglia, home">
+              <Wordmark size="lg" light />
             </a>
             <p className="text-white/80 text-sm max-w-sm leading-relaxed mb-6 font-body-sm">
               Curators of fine regional Italian culinary heritage. Direct discovery from multi-generational family producers across Sicilia, Campania, Emilia-Romagna and beyond.
@@ -31,7 +33,7 @@ export default function Footer() {
           ]} />
         </div>
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/60 gap-4">
-          <p>© {new Date().getFullYear()} La Taglia LLC. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Casa Taglia LLC. All rights reserved.</p>
           <div className="flex gap-6">
             <a className="hover:underline" href="#">Privacy Policy</a>
             <a className="hover:underline" href="#">Terms of Service</a>

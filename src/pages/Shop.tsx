@@ -52,7 +52,7 @@ export default function Shop() {
 
   useEffect(() => {
     const prev = document.title;
-    document.title = 'Shop | La Taglia';
+    document.title = 'Shop | Casa Taglia';
     return () => {
       document.title = prev;
     };
