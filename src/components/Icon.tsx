@@ -1,7 +1,7 @@
 import type { CSSProperties, ReactNode } from 'react';
 
 /*
-  La Taglia icon set: hand-drawn, fine-line SVGs on a 24px grid.
+  Casa Taglia icon set: hand-drawn, fine-line SVGs on a 24px grid.
   - Stroke follows the text colour, sized at 1em, so Tailwind text-* classes keep working.
   - Soft tinted fills (A) give each icon depth without extra colours.
   - data-a names a small hover motion (see .ic rules in index.css); it plays when the

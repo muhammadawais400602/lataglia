@@ -6,7 +6,7 @@ import type { RegionStory } from './types';
 const veneto: RegionStory = {
   "slug": "veneto",
   "name": "Veneto",
-  "seoTitle": "Venetian Food and Pantry Ingredients | Italy Region by Region | La Taglia",
+  "seoTitle": "Venetian Food and Pantry Ingredients | Italy Region by Region | Casa Taglia",
   "seoDescription": "Cook Veneto from its pantry: Radicchio di Treviso, Vialone Nano rice, Asiago, stockfish, white polenta and Sopressa Vicentina, with a recipe for risotto al radicchio.",
   "kicker": "Region nine: the lagoon",
   "subtitle": "Rice, polenta, radicchio, and the spice routes of Venice.",
@@ -454,7 +454,7 @@ const veneto: RegionStory = {
     "eyebrow": "Limited curation · Parcel N° 09"
   },
   "about": [
-    "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
+    "Casa Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
   ],
   "sources": "European Commission, Riso Nano Vialone Veronese IGP product page; Radicchio Rosso di Treviso IGP production specification; ONAF and Consorzio Tutela Formaggio Asiago product sheets; Il Post and Gazzetta del Gusto on Radicchio di Treviso; Visit Italy, Quotidiano Nazionale, and Adrijo on Venetian stockfish and Pietro Querini; Italoamericano on risi e bisi and sarde in saor; Regione Veneto and Gambero Rosso on Riseria Ferron and the Pila Vecia; Gazzetta del Gusto interview with Gabriele Ferron; MagicoVeneto on Venetian corn varieties; Agriturismo.it on Sopressa Vicentina."
 };

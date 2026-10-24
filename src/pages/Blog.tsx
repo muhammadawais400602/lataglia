@@ -39,7 +39,7 @@ export function PostCard({ p }: { p: Post }) {
 }
 
 export default function Blog() {
-  useTitle('Blog | La Taglia');
+  useTitle('Blog | Casa Taglia');
   return (
     <Layout>
       <section className="w-full bg-surface-parchment py-10 lg:py-14">
@@ -49,7 +49,7 @@ export default function Blog() {
             <span className="text-outline-variant">/</span>
             <span className="text-primary font-semibold">Blog</span>
           </nav>
-          <span className={`${label} text-secondary`}>The La Taglia blog</span>
+          <span className={`${label} text-secondary`}>The Casa Taglia blog</span>
           <h1 className="font-display-hero text-[40px] leading-[46px] lg:text-[56px] lg:leading-[64px] text-primary tracking-tight mt-2 mb-4">Notes from the Italian pantry</h1>
           <p className="text-body-lg text-ink-secondary max-w-2xl">What we learn on the road: how the foods we love are made, how to read their labels, and how to cook with them.</p>
         </div>
@@ -64,7 +64,7 @@ export default function Blog() {
 }
 
 export function BlogPost({ post }: { post: Post }) {
-  useTitle(`${post.title} | La Taglia`);
+  useTitle(`${post.title} | Casa Taglia`);
   const { products } = useCatalog();
   const [, setBasket] = useBasket();
   const toast = useToast();

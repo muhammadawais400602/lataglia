@@ -6,7 +6,7 @@ import type { RegionStory } from './types';
 const campania: RegionStory = {
   "slug": "campania",
   "name": "Campania",
-  "seoTitle": "Campania Food and Pantry Ingredients | Italy Region by Region | La Taglia",
+  "seoTitle": "Campania Food and Pantry Ingredients | Italy Region by Region | Casa Taglia",
   "seoDescription": "Cook Campania from its pantry: San Marzano tomatoes, mozzarella di bufala, Gragnano pasta, Amalfi lemons and colatura, with a recipe for Neapolitan pasta e patate.",
   "kicker": "Region three: the bay",
   "subtitle": "Volcanic soil, a turquoise bay, and the genius of Naples.",
@@ -454,7 +454,7 @@ const campania: RegionStory = {
     ]
   },
   "about": [
-    "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
+    "Casa Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
   ],
   "sources": "Il Fatto Alimentare, Taste Cooking, and the Italian Senate on San Marzano DOP; Pomodorino del Piennolo del Vesuvio DOP production specification; ONAF and Consorzio Mozzarella di Bufala Campana materials, and the EU product summary; Meer and Gustiamo on Gragnano pasta; Visit Italy, Positano.com, Gazzetta del Gusto, and Touring Club Italiano on Amalfi lemons and Cetara colatura; Pizza Napoletana STG specification, Sky TG24, and Gazzetta del Gusto on Neapolitan pizza; Dissapore, Do Eat Better, ADR, and Travel365 on Neapolitan dishes; Culinary Backstreets, Pitti Taste, and Gambero Rosso on Pastificio Faella."
 };

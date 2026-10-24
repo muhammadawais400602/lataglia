@@ -6,7 +6,7 @@ import type { RegionStory } from './types';
 const lazio: RegionStory = {
   "slug": "lazio",
   "name": "Lazio",
-  "seoTitle": "Roman and Lazio Food and Pantry Ingredients | Italy Region by Region | La Taglia",
+  "seoTitle": "Roman and Lazio Food and Pantry Ingredients | Italy Region by Region | Casa Taglia",
   "seoDescription": "Cook Lazio from its pantry: Pecorino Romano, guanciale, Romanesco artichokes, Porchetta di Ariccia, Ricotta Romana and Sabina olive oil, with a recipe for spaghetti all’amatriciana.",
   "kicker": "Region eight: the eternal city",
   "subtitle": "Shepherds’ cheese, pork cheek, and the cooking of Rome.",
@@ -432,7 +432,7 @@ const lazio: RegionStory = {
     "eyebrow": "Limited curation · Parcel N° 08"
   },
   "about": [
-    "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP, IGP, and STG) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
+    "Casa Taglia explores Italy through its food, traditions, and places. Protected designations (DOP, IGP, and STG) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
   ],
   "sources": "ARSIAL (Regione Lazio) product sheets for Pecorino Romano DOP, Porchetta di Ariccia IGP, and Sabina DOP oil, and the Amatriciana Tradizionale STG specification; Ricotta Romana DOP production specification (European Commission); Turismo Roma on Pecorino Romano and coda alla vaccinara; Gambero Rosso on Pecorino Romano producers, Casearia Agri In, and Ricotta Romana; Michelin Guide on Roman artichokes; Wikipedia on amatriciana and Pecorino Romano."
 };

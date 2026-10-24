@@ -6,7 +6,7 @@ import type { RegionStory } from './types';
 const piemonte: RegionStory = {
   "slug": "piemonte",
   "name": "Piemonte",
-  "seoTitle": "Piedmont Food and Pantry Ingredients | Italy Region by Region | La Taglia",
+  "seoTitle": "Piedmont Food and Pantry Ingredients | Italy Region by Region | Casa Taglia",
   "seoDescription": "Cook Piedmont from its pantry: Nocciola Piemonte hazelnuts, white truffles from Alba, Carnaroli rice, Castelmagno and grissini, with a recipe for risotto al Castelmagno.",
   "kicker": "Region five: the foot of the mountains",
   "subtitle": "Truffles, hazelnuts, and a royal appetite.",
@@ -443,7 +443,7 @@ const piemonte: RegionStory = {
     "eyebrow": "Limited curation · Parcel N° 05"
   },
   "about": [
-    "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
+    "Casa Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
   ],
   "sources": "Consorzio Tutela Nocciola Piemonte IGP; Consorzio per la Tutela del Formaggio Castelmagno DOP; Consorzio di Tutela Robiola di Roccaverano DOP; Ente Nazionale Risi; European Commission eAmbrosia register; Linkiesta (2021) and First&Food interview with Guido Gobino."
 };

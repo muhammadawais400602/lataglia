@@ -6,7 +6,7 @@ import type { RegionStory } from './types';
 const toscana: RegionStory = {
   "slug": "toscana",
   "name": "Toscana",
-  "seoTitle": "Tuscan Food and Pantry Ingredients | Italy Region by Region | La Taglia",
+  "seoTitle": "Tuscan Food and Pantry Ingredients | Italy Region by Region | Casa Taglia",
   "seoDescription": "Cook Tuscany from its pantry: new-harvest olive oil, Pecorino Toscano, cannellini beans, finocchiona, lardo di Colonnata and farro, with a recipe for ribollita.",
   "kicker": "Region four: the hills",
   "subtitle": "Great oil, honest bread, and nothing wasted.",
@@ -452,7 +452,7 @@ const toscana: RegionStory = {
     "eyebrow": "Limited curation · Parcel N° 04"
   },
   "about": [
-    "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
+    "Casa Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
   ],
   "sources": "Consorzio per la Tutela dell’Olio Extravergine di Oliva Toscano IGP; Consorzio Tutela Pecorino Toscano DOP; Consorzio Tutela Finocchiona IGP; European Commission eAmbrosia register; Visit Tuscany; Pitti Taste exhibitor profile and Cibus company profile for Biscottificio Antonio Mattei."
 };

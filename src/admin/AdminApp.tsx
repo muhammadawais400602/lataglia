@@ -1,3 +1,4 @@
+import Wordmark from '../components/Wordmark';
 import { useCallback, useEffect, useState, type FormEvent } from 'react';
 import type { Order, Product, Settings } from '../shared/types';
 import { adminApi, ApiError, type Session } from './api';
@@ -25,7 +26,7 @@ const tabFromHash = (): Tab => {
 
 function Logo({ light }: { light?: boolean }) {
   return (
-    <img src={light ? '/logo-white.png' : '/logo.png'} alt="La Taglia" width={1057} height={259} className="h-8 w-auto" />
+    <Wordmark size="sm" light={light} />
   );
 }
 
@@ -37,7 +38,7 @@ export default function AdminApp() {
     adminApi.session().then(setSession).catch(() => setFailed(true));
   }, []);
   useEffect(() => {
-    document.title = 'La Taglia · Admin';
+    document.title = 'Casa Taglia · Admin';
     refresh();
   }, [refresh]);
 
@@ -79,7 +80,7 @@ function AdminLogin({ session, onSignedIn }: { session: Session; onSignedIn: () 
         <div className="relative max-w-md">
           <p className={`${label} text-secondary-fixed mb-4`}>Cellar Office · Riservato</p>
           <h1 className="font-headline-lg text-headline-lg text-white mb-5">The keeper's ledger.</h1>
-          <p className="text-white/80 leading-relaxed">Orders, provisions, customers and the shop's settings, in one place for the people who run La Taglia.</p>
+          <p className="text-white/80 leading-relaxed">Orders, provisions, customers and the shop's settings, in one place for the people who run Casa Taglia.</p>
         </div>
         <p className="relative text-xs text-white/50">Fondata 1934 · Reggio Emilia &amp; New York</p>
       </aside>
@@ -236,7 +237,7 @@ function Dashboard({ session, onSignedOut }: { session: Session; onSignedOut: ()
         <div className="max-w-[1240px] mx-auto space-y-6">
           <div className="flex flex-wrap items-end justify-between gap-3">
             <div>
-              <p className={`${label} text-secondary`}>La Taglia admin</p>
+              <p className={`${label} text-secondary`}>Casa Taglia admin</p>
               <h1 className="font-headline-md text-[28px] leading-9 sm:text-headline-md text-on-surface">{current.label}</h1>
             </div>
             <button type="button" onClick={load} className="inline-flex items-center gap-1.5 text-sm font-semibold text-ink-secondary hover:text-primary">

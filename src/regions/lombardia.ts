@@ -6,7 +6,7 @@ import type { RegionStory } from './types';
 const lombardia: RegionStory = {
   "slug": "lombardia",
   "name": "Lombardia",
-  "seoTitle": "Lombard and Milanese Food and Pantry Ingredients | Italy Region by Region | La Taglia",
+  "seoTitle": "Lombard and Milanese Food and Pantry Ingredients | Italy Region by Region | Casa Taglia",
   "seoDescription": "Cook Lombardy from its pantry: Taleggio, Gorgonzola, Grana Padano, bresaola, pizzoccheri and panettone, with a recipe for risotto alla milanese.",
   "kicker": "Region ten: the lakes and the plain",
   "subtitle": "Butter, rice, saffron, and the cheeses of the Alps.",
@@ -452,7 +452,7 @@ const lombardia: RegionStory = {
     "eyebrow": "Limited curation · Parcel N° 10"
   },
   "about": [
-    "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
+    "Casa Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
   ],
   "sources": "Gorgonzola DOP production specification (Regione Piemonte bulletin); Il Giorno on the Taleggio consortium; Linkiesta and Italy Segreta on Lombard cheeses; In Lombardia (Regione Lombardia) on bresaola and risotto alla milanese; Il Giorno, First&Food, and Dissapore on pizzoccheri; Milanofree and Dissapore on Milanese recipes; Gambero Rosso and Calendar Cheese on Mauri."
 };

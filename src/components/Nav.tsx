@@ -1,3 +1,4 @@
+import Wordmark from './Wordmark';
 import { useEffect, useRef, useState } from 'react';
 import { allRegions, regionHref } from '../regions';
 import { useRegionImage } from '../regions/regionPhotos';
@@ -56,8 +57,8 @@ export default function Nav() {
     <header className="w-full bg-[#fbf9f9] border-b border-solid border-b-[#f1e9ea] sticky top-0 z-50">
       <div className="max-w-[1280px] mx-auto flex items-center justify-between whitespace-nowrap px-6 lg:px-12 py-3">
         <div className="flex items-center gap-8">
-          <a className="flex items-center shrink-0" href="/" aria-label="La Taglia, home">
-            <img src="/logo.png" alt="La Taglia · Artisanal Italy" width={1057} height={259} className="h-9 sm:h-11 w-auto" />
+          <a className="flex items-center shrink-0" href="/" aria-label="Casa Taglia, home">
+            <Wordmark />
           </a>
           <nav className="hidden md:flex items-center gap-7">
             {links.map((l) =>

@@ -6,7 +6,7 @@ import type { RegionStory } from './types';
 const sardegna: RegionStory = {
   "slug": "sardegna",
   "name": "Sardegna",
-  "seoTitle": "Sardinian Food and Pantry Ingredients | Italy Region by Region | La Taglia",
+  "seoTitle": "Sardinian Food and Pantry Ingredients | Italy Region by Region | Casa Taglia",
   "seoDescription": "Cook Sardinia from its pantry: Fiore Sardo, pane carasau, malloreddus, fregola, Cabras bottarga and Sardinian saffron, with a recipe for malloreddus alla campidanese.",
   "kicker": "Region eleven: the island of shepherds",
   "subtitle": "Sheep’s cheese, saffron, and the salt of the lagoons.",
@@ -442,7 +442,7 @@ const sardegna: RegionStory = {
     "eyebrow": "Limited curation · Parcel N° 11"
   },
   "about": [
-    "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
+    "Casa Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
   ],
   "sources": "Sardegna Turismo on Sardinian saffron; Geopop on the nuraghi and on Catalan in Alghero; Dissapore on Fiore Sardo DOP and Cabras bottarga; Slow Food Foundation on Fiore Sardo dei pastori; Ilisso on Sardinian DOP cheeses; Sardegna Turismo (Regione Sardegna) on Sardinian pasta; Moby, Grimaldi Lines, Lonely Planet, Italy Segreta, and WeRoad on Sardinian dishes; Charming Sardinia on malloreddus alla campidanese; Gambero Rosso and L’Unione Sarda on the Consorzio Pontis, the Cabras lagoon, and its Slow Food Presidium."
 };

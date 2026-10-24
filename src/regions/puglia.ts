@@ -6,7 +6,7 @@ import type { RegionStory } from './types';
 const puglia: RegionStory = {
   "slug": "puglia",
   "name": "Puglia",
-  "seoTitle": "Puglian Food and Pantry Ingredients | Italy Region by Region | La Taglia",
+  "seoTitle": "Puglian Food and Pantry Ingredients | Italy Region by Region | Casa Taglia",
   "seoDescription": "Cook Puglia from its pantry: Coratina olive oil, burrata di Andria, orecchiette, taralli, Cerignola olives and Canestrato Pugliese, with a recipe for orecchiette con le cime di rapa.",
   "kicker": "Region six: the heel",
   "subtitle": "Olive groves, golden wheat, and two seas.",
@@ -431,7 +431,7 @@ const puglia: RegionStory = {
     "eyebrow": "Limited curation · Parcel N° 06"
   },
   "about": [
-    "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
+    "Casa Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
   ],
   "sources": "Consorzio di Tutela Burrata di Andria IGP; Consorzio di Tutela La Bella della Daunia DOP; Regione Puglia; European Commission eAmbrosia register; Pitti Taste exhibitor profile for Frantoio Muraglia."
 };

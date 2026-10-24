@@ -18,7 +18,7 @@ export type Hamper = {
 export const crestImg = `${img}/AB6AXuDdfUxLXOcRh8j8Tf8msbbFgqTDQOyozGZvx4e9s20W7uZUYqTCpY9Yxgq-3Varv4m_9McHAvy4f6Z0UaULSKQGkEWT3xCkN8WhTQg_Nb6EfxYijYlM3qlEUj62jDUvDNctZR2pPnzqNCX0cPepR_5Z4D2h9Gl5ayZwAz_AG2rFpCXkWIVzDMzAyLucIgFh2OaQ5TIeunj8LZp-0stosdVGUAyrDHkfCkkpAu9VyGVXhcxRTfnUg9cwZNEUgvBqKYiqTw`;
 
 export const featured: Hamper = {
-  id: 'grand-tour', name: 'La Taglia Grand Tour Cellar Hamper', price: 399, kind: 'cellar',
+  id: 'grand-tour', name: 'Casa Taglia Grand Tour Cellar Hamper', price: 399, kind: 'cellar',
   eyebrow: '6-Region Curated Masterwork', badge: 'Grand Luxury',
   blurb: 'Our magnum opus cellar hamper. An archival expedition across Campania, Emilia-Romagna, Sicilia, and Piemonte presented in an heirloom reclaimed chestnut crate with stamped brass clasps.',
   items: [

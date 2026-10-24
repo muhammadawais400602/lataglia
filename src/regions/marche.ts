@@ -6,7 +6,7 @@ import type { RegionStory } from './types';
 const marche: RegionStory = {
   "slug": "marche",
   "name": "Marche",
-  "seoTitle": "Food and Pantry Ingredients of the Marche | Italy Region by Region | La Taglia",
+  "seoTitle": "Food and Pantry Ingredients of the Marche | Italy Region by Region | Casa Taglia",
   "seoDescription": "Cook the Marche from their pantry: Ascolana olives, ciauscolo, Maccheroncini di Campofilone, Casciotta d’Urbino, Prosciutto di Carpegna and Cartoceto olive oil, with a recipe for maccheroncini al ragù.",
   "kicker": "Region fourteen: between the mountains and the Adriatic",
   "subtitle": "Stuffed olives, fine egg pasta, and fish soup by the sea.",
@@ -451,7 +451,7 @@ const marche: RegionStory = {
     "eyebrow": "Limited curation · Parcel N° 14"
   },
   "about": [
-    "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
+    "Casa Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
   ],
   "sources": "Italia.it (ENIT) guides to the food of the Marche; Marche Tourism (Regione Marche) on regional dishes and cheeses; Michelin Guide, Visit Italy, Rolling Stone Italia, and Gazzetta del Gusto on Oliva Ascolana del Piceno DOP; Quotidiano Nazionale on Marche specialties; CSQA on Maccheroncini di Campofilone IGP; Gambero Rosso on vincisgrassi and on Spinosi; Eroica Fenice on brodetto; ICE company profile and catalog, and Quotidiano Nazionale, on Spinosi."
 };

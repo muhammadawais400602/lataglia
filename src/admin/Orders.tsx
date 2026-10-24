@@ -264,7 +264,7 @@ function OrderDrawer({ order, tagLibrary, onClose, onSave, readOnly }: {
 
         <div className="flex flex-wrap items-center gap-3">
           <button type="button" onClick={save} disabled={!dirty || saving || readOnly} className={btnPrimary}>{saving ? 'Saving…' : 'Save changes'}</button>
-          <a href={`mailto:${c.email}?subject=${encodeURIComponent(`Your La Taglia order ${order.id}`)}`} className={btnGhost}>
+          <a href={`mailto:${c.email}?subject=${encodeURIComponent(`Your Casa Taglia order ${order.id}`)}`} className={btnGhost}>
             <Icon name="mail" className="text-lg" /> Email customer
           </a>
           {msg && <span role="status" className={`text-sm font-semibold ${msg === 'Saved' ? 'text-tertiary-container' : 'text-status-red'}`}>{msg}</span>}

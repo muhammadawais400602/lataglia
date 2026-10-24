@@ -240,7 +240,7 @@ export default function Product() {
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center font-bold text-primary font-headline-sm">JT</div>
                 <div>
                   <p className="font-subheading text-subheading text-on-surface font-bold">MJ &amp; Jennifer Taglia</p>
-                  <p className="font-caption text-caption text-ink-secondary">Founders &amp; Culinary Scouts, La Taglia</p>
+                  <p className="font-caption text-caption text-ink-secondary">Founders &amp; Culinary Scouts, Casa Taglia</p>
                 </div>
               </div>
             </div>

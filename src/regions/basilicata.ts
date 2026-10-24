@@ -6,7 +6,7 @@ import type { RegionStory } from './types';
 const basilicata: RegionStory = {
   "slug": "basilicata",
   "name": "Basilicata",
-  "seoTitle": "Food and Pantry Ingredients of Basilicata | Italy Region by Region | La Taglia",
+  "seoTitle": "Food and Pantry Ingredients of Basilicata | Italy Region by Region | Casa Taglia",
   "seoDescription": "Cook Basilicata from its pantry: Senise peppers, Pane di Matera, Sarconi beans, Canestrato di Moliterno, red eggplant of Rotonda and lucanica, with a recipe for pasta with peperoni cruschi.",
   "kicker": "Region eighteen: the land of Lucania",
   "subtitle": "Crisp red peppers, durum-wheat bread, and the cave city of Matera.",
@@ -429,7 +429,7 @@ const basilicata: RegionStory = {
     "eyebrow": "Limited curation · Parcel N° 18"
   },
   "about": [
-    "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
+    "Casa Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
   ],
   "sources": "Italia.it (ENIT) on Pane di Matera and peperoni cruschi; APT Basilicata, “Basilicata enogastronomica”; Scatti di Gusto, Gambero Rosso, La Voce di New York, and Sapere Sapori on Pane di Matera; Dissapore and Agriturismo.it on Lucanian products; Eroica Fenice on Lucanian dishes; Blitz Quotidiano (ANSA) and Gambero Rosso on the Perrone family bakery."
 };

@@ -6,7 +6,7 @@ import type { RegionStory } from './types';
 const friuliVeneziaGiulia: RegionStory = {
   "slug": "friuli-venezia-giulia",
   "name": "Friuli-Venezia Giulia",
-  "seoTitle": "Friulian Food and Pantry Ingredients | Italy Region by Region | La Taglia",
+  "seoTitle": "Friulian Food and Pantry Ingredients | Italy Region by Region | Casa Taglia",
   "seoDescription": "Cook Friuli-Venezia Giulia from its pantry: Prosciutto di San Daniele, Montasio, Prosciutto di Sauris, brovada, smoked ricotta and gubana, with a recipe for frico con patate.",
   "kicker": "Region sixteen: where three cultures meet",
   "subtitle": "Prosciutto, mountain cheese, and the coffeehouses of Trieste.",
@@ -444,7 +444,7 @@ const friuliVeneziaGiulia: RegionStory = {
     "eyebrow": "Limited curation · Parcel N° 16"
   },
   "about": [
-    "La Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
+    "Casa Taglia explores Italy through its food, traditions, and places. Protected designations (DOP and IGP) are named as guides to what to look for; a product carries one only when its own label says so. Producer profiles are introductions written from public sources."
   ],
   "sources": "Regione Friuli Venezia Giulia and Consorzio del Prosciutto di San Daniele on San Daniele DOP; Italia.it (ENIT) on San Daniele; ONAF on Montasio DOP; University of Trieste course notes on regional DOP and IGP products; Turismo FVG on regional cuisine; Eroica Fenice, Travel365, Italy Segreta, Volagratis, GoNOMAD, and Linkiesta on Friulian and Triestine dishes; Trieste in Cucina (Guido Tommasi) on jota; Decanter on Trieste; Il Nordest, Sauris.org, Cibus, and Gambero Rosso on Prosciuttificio Wolf."
 };

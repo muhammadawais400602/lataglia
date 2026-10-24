@@ -35,7 +35,7 @@ export default function Gifts() {
       const items = found
         ? b.items.map((i) => (i.id === h.id ? { ...i, qty: i.qty + 1 } : i))
         : [...b.items, {
-            id: h.id, maker: `La Taglia Gift Hamper · ${h.eyebrow}`, name: h.name, meta: h.items.join(' · '),
+            id: h.id, maker: `Casa Taglia Gift Hamper · ${h.eyebrow}`, name: h.name, meta: h.items.join(' · '),
             unit: h.price, qty: 1, wrap: true, badge: { label: h.badge, className: 'text-badge-ink' }, img: h.img,
           }];
       return { ...b, items };
@@ -226,7 +226,7 @@ export default function Gifts() {
 
       <section className="max-w-[1320px] mx-auto px-6 lg:px-12 py-16 lg:py-24 w-full">
         <div className="text-center max-w-xl mx-auto mb-14">
-          <span className={`${label} text-secondary tracking-widest block mb-2`}>The La Taglia Standards</span>
+          <span className={`${label} text-secondary tracking-widest block mb-2`}>The Casa Taglia Standards</span>
           <h3 className="font-headline-md text-headline-md text-on-surface">Uncompromising Gifting Protocols</h3>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

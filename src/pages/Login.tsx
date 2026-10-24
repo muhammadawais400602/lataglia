@@ -179,7 +179,7 @@ export default function Login() {
                     <Icon name="loyalty" />
                   </div>
                   <div>
-                    <p className="font-button-sm text-button-sm text-on-surface">New to La Taglia?</p>
+                    <p className="font-button-sm text-button-sm text-on-surface">New to Casa Taglia?</p>
                     <p className="font-body-sm text-body-sm text-ink-secondary">Inscribe for Guild Membership &amp; First Harvest Allocations.</p>
                   </div>
                 </div>

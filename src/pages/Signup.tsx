@@ -101,7 +101,7 @@ export default function Signup() {
             <div className="relative overflow-hidden rounded-xl bg-surface-parchment p-8 lg:p-10 shadow-sm flex flex-col justify-between">
               <div className="space-y-4">
                 <span className="text-[10px] leading-3 tracking-widest uppercase text-secondary font-bold block">Providore Monograph · Folio N° IX</span>
-                <h2 className="font-headline-md text-headline-md text-primary font-normal leading-tight">Join the La Taglia Epicurean Guild.</h2>
+                <h2 className="font-headline-md text-headline-md text-primary font-normal leading-tight">Join the Casa Taglia Epicurean Guild.</h2>
                 <p className="font-body-md text-body-md text-ink-secondary leading-relaxed">
                   An intimate fraternity of connoisseurs granted access to guarded pantry reserves, autumn millings, and micro-parcels from Italy’s last true artisanal dynasts.
                 </p>
